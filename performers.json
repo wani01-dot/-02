@@ -1,0 +1,49 @@
+{
+  "performers": [
+    {
+      "id": "donde",
+      "name": "ドンデコルテ",
+      "color": "#d94343",
+      "sources": [
+        "fany"
+      ]
+    },
+    {
+      "id": "city",
+      "name": "CITY",
+      "color": "#3978c9",
+      "sources": [
+        "fany"
+      ]
+    },
+    {
+      "id": "sutekijanai",
+      "name": "素敵じゃないか",
+      "color": "#e4aa20",
+      "sources": [
+        "fany"
+      ]
+    },
+    {
+      "id": "nansui",
+      "name": "軟水",
+      "color": "#39a66b",
+      "sources": [
+        "fany"
+      ],
+      "notify": true
+    }
+  ],
+  "sources": {
+    "fany": {
+      "enabled": true,
+      "search_url": "https://ticket.fany.lol/search/event"
+    }
+  },
+  "notification": {
+    "enabled": true,
+    "performer_ids": [
+      "nansui"
+    ]
+  }
+}
