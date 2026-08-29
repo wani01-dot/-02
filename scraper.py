@@ -107,7 +107,7 @@ def scrape_performer(p):
     return list(unique.values())
 
 def main():
-    cfg=json.load(open("config/performers.json",encoding="utf-8"))
+    cfg=json.load(open("performers.json", encoding="utf-8"))
     old=json.load(open("data/events.json",encoding="utf-8"))
     all_events=[]
     for p in cfg["performers"]:
