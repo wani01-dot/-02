@@ -118,7 +118,7 @@ def main():
     # Keep future/past records returned by FANY; the site itself determines availability.
     performers=cfg["performers"]
     payload={"syncedAt":datetime.now(timezone.utc).astimezone().strftime("%Y-%m-%d %H:%M:%S %z"),"performers":performers,"events":all_events}
-    json.dump(payload,open("data/events.new.json","w",encoding="utf-8"),ensure_ascii=False,indent=2)
+    json.dump(payload,open("events.new.json","w",encoding="utf-8"),ensure_ascii=False,indent=2)
     # New-event detection for notifications: compare stable event IDs based on performer/date/title/venue/time.
     def key(e): return "|".join([e.get("performerId",""),e.get("date",""),e.get("title",""),e.get("venue",""),e.get("startTime","")])
     oldkeys={key(e) for e in old.get("events",[])}
