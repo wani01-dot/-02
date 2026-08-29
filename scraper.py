@@ -448,4 +448,4 @@ def main():
         "new_events.json",
         "w",
         encoding="utf-8"
-    ) as f
+    ) as f:
