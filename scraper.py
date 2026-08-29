@@ -9,126 +9,156 @@ import requests
 from bs4 import BeautifulSoup
 
 
+# =========================================================
+# 基本設定
+# =========================================================
+
 SEARCH_URL = "https://ticket.fany.lol/search/event"
 
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) "
-        "AppleWebKit/605.1.15 Version/18.0 Mobile/15E148 Safari/604.1"
+        "AppleWebKit/605.1.15 "
+        "(KHTML, like Gecko) Version/18.0 "
+        "Mobile/15E148 Safari/604.1"
     ),
     "Accept-Language": "ja-JP,ja;q=0.9,en;q=0.8",
 }
 
 
+# =========================================================
+# 共通処理
+# =========================================================
+
 def clean(text):
+    """空白や改行を整理する"""
     return re.sub(r"\s+", " ", text or "").strip()
 
 
 def fetch(url):
+    """FANYのHTMLを取得する"""
+
     response = requests.get(
         url,
         headers=HEADERS,
-        timeout=30
+        timeout=30,
     )
+
     response.raise_for_status()
+
     response.encoding = response.apparent_encoding
+
     return response.text
 
 
 def event_key(event):
+    """
+    前回データとの比較に使うキー。
+    同じ出演者・日時・タイトル・会場なら同じ公演扱い。
+    """
+
     return "|".join([
         event.get("performerId", ""),
         event.get("date", ""),
+        event.get("startTime", ""),
         event.get("title", ""),
         event.get("venue", ""),
-        event.get("startTime", ""),
     ])
 
 
+# =========================================================
+# 日付関連
+# =========================================================
+
 def is_date_line(line):
-    return re.search(
-        r"^20\d{2}/\d{1,2}/\d{1,2}\([^)]+\)",
-        line
-    ) is not None
+    """
+    例:
+    2026/09/05(土)
+    2026/09/05(土) 開場 10:30 開演 11:00
+    """
+
+    return bool(
+        re.search(
+            r"^20\d{2}/\d{1,2}/\d{1,2}",
+            line
+        )
+    )
 
 
 def parse_date(line):
-    m = re.search(
+
+    match = re.search(
         r"^(20\d{2})/(\d{1,2})/(\d{1,2})",
-        line
+        line,
     )
 
-    if not m:
+    if not match:
         return ""
 
-    return (
-        f"{int(m.group(1)):04d}-"
-        f"{int(m.group(2)):02d}-"
-        f"{int(m.group(3)):02d}"
-    )
+    year = int(match.group(1))
+    month = int(match.group(2))
+    day = int(match.group(3))
+
+    return f"{year:04d}-{month:02d}-{day:02d}"
 
 
 def parse_start_time(line):
-    m = re.search(
+
+    match = re.search(
         r"開演\s*(\d{1,2}:\d{2})",
-        line
+        line,
     )
 
-    return m.group(1) if m else ""
+    if not match:
+        return ""
+
+    return match.group(1)
 
 
-def looks_like_venue(line):
-    # FANYの会場名は多くの場合「（東京都）」等で終わる
-    if re.search(
-        r"（(?:東京都|北海道|大阪府|京都府|.{2,3}県)）$",
-        line
-    ):
-        return True
-
-    # 念のため劇場系名称も許可
-    venue_words = [
-        "劇場",
-        "THEATER",
-        "シアター",
-        "ホール",
-        "シネマ",
-        "幕張",
-        "ルミネ",
-        "森ノ宮",
-        "神保町",
-        "渋谷",
-        "なんば",
-    ]
-
-    return any(word in line for word in venue_words)
-
+# =========================================================
+# 不要テキスト判定
+# =========================================================
 
 def is_noise(line):
+
     if not line:
         return True
 
     exact_noise = {
         "出演",
+        "検索",
         "検索結果",
         "絞り込み検索",
         "詳細検索",
         "クリア",
-        "検索",
+        "月",
+        "火",
+        "水",
+        "木",
+        "金",
+        "土",
+        "日",
+        "祝",
     }
 
     if line in exact_noise:
         return True
 
-    prefixes = [
-        "先着発売",
-        "抽選受付",
+    bad_prefixes = [
+        "先着",
+        "抽選",
         "一般発売",
         "FANY ID",
         "●FANY ID",
-        "受付期間：",
+        "受付期間",
+        "販売期間",
+        "発売開始",
     ]
 
-    if any(line.startswith(p) for p in prefixes):
+    if any(
+        line.startswith(prefix)
+        for prefix in bad_prefixes
+    ):
         return True
 
     if "受付期間：" in line:
@@ -137,66 +167,141 @@ def is_noise(line):
     return False
 
 
-def parse_search_results(html, performer, search_url):
-    soup = BeautifulSoup(html, "html.parser")
+# =========================================================
+# 会場判定
+# =========================================================
 
-    for tag in soup(["script", "style", "noscript"]):
+def looks_like_venue(line):
+
+    # 都道府県表記があるもの
+    if re.search(
+        r"（(?:東京都|北海道|大阪府|京都府|.{2,3}県)）",
+        line,
+    ):
+        return True
+
+    venue_words = [
+        "劇場",
+        "ホール",
+        "シアター",
+        "THEATER",
+        "ルミネ",
+        "神保町",
+        "幕張",
+        "森ノ宮",
+        "よしもと漫才劇場",
+        "なんばグランド花月",
+        "渋谷よしもと",
+    ]
+
+    return any(
+        word in line
+        for word in venue_words
+    )
+
+
+# =========================================================
+# FANY検索結果解析
+# =========================================================
+
+def parse_search_results(
+    html,
+    performer,
+    search_url,
+):
+
+    soup = BeautifulSoup(
+        html,
+        "html.parser",
+    )
+
+    # JSやCSSは消す
+    for tag in soup(
+        ["script", "style", "noscript"]
+    ):
         tag.decompose()
 
-    lines = [
-        clean(x)
-        for x in soup.get_text("\n").splitlines()
-        if clean(x)
-    ]
+    raw_text = soup.get_text("\n")
 
-    date_indexes = [
-        i
-        for i, line in enumerate(lines)
-        if is_date_line(line)
-    ]
+    lines = []
+
+    for raw_line in raw_text.splitlines():
+
+        line = clean(raw_line)
+
+        if line:
+            lines.append(line)
+
+    # ---------------------------------------------
+    # 日付の開始位置を全部探す
+    # ---------------------------------------------
+
+    date_indexes = []
+
+    for index, line in enumerate(lines):
+
+        if is_date_line(line):
+            date_indexes.append(index)
 
     print(
-        f"  検索結果内の日付ブロック: {len(date_indexes)}件"
+        f"  検索結果内の日付ブロック: "
+        f"{len(date_indexes)}件"
     )
 
     events = []
 
-    for pos, start in enumerate(date_indexes):
+    # ---------------------------------------------
+    # 日付ごとにブロックを分割
+    # ---------------------------------------------
 
-        end = (
-            date_indexes[pos + 1]
-            if pos + 1 < len(date_indexes)
-            else len(lines)
-        )
+    for position, start_index in enumerate(
+        date_indexes
+    ):
 
-        block = lines[start:end]
+        if position + 1 < len(date_indexes):
+            end_index = date_indexes[
+                position + 1
+            ]
+        else:
+            end_index = len(lines)
+
+        block = lines[
+            start_index:end_index
+        ]
 
         if not block:
             continue
 
         date_line = block[0]
-        date = parse_date(date_line)
-        start_time = parse_start_time(date_line)
 
-        # --------------------------------
-        # 出演欄位置
-        # --------------------------------
+        date = parse_date(
+            date_line
+        )
+
+        start_time = parse_start_time(
+            date_line
+        )
+
+        # -----------------------------------------
+        # 「出演」の位置を探す
+        # -----------------------------------------
 
         try:
-            cast_index = block.index("出演")
+            cast_index = block.index(
+                "出演"
+            )
         except ValueError:
-            cast_index = -1
-
-        if cast_index == -1:
             continue
 
-        # --------------------------------
-        # 出演者欄
-        # --------------------------------
+        # -----------------------------------------
+        # 出演者一覧を作る
+        # -----------------------------------------
 
         cast_lines = []
 
-        for line in block[cast_index + 1:]:
+        for line in block[
+            cast_index + 1:
+        ]:
 
             if (
                 line.startswith("先着")
@@ -211,59 +316,74 @@ def parse_search_results(html, performer, search_url):
             if not is_noise(line):
                 cast_lines.append(line)
 
-        cast_text = " ".join(cast_lines)
+        cast_text = " ".join(
+            cast_lines
+        )
 
-        # 本当に出演している公演だけ
+        # 本当に出演者欄に名前があるか確認
         if performer["name"] not in cast_text:
             continue
 
-        # --------------------------------
-        # 出演より前だけを見る
-        # date / title / venue の順
-        # --------------------------------
+        # -----------------------------------------
+        # 出演欄より前
+        #
+        # 日付
+        # 公演タイトル
+        # 会場
+        # 出演
+        #
+        # を想定
+        # -----------------------------------------
 
-        header_lines = [
-            line
-            for line in block[1:cast_index]
-            if not is_noise(line)
-        ]
+        header_lines = []
+
+        for line in block[
+            1:cast_index
+        ]:
+
+            if not is_noise(line):
+                header_lines.append(line)
 
         if not header_lines:
             continue
 
-        # --------------------------------
-        # 会場
-        # --------------------------------
+        # -----------------------------------------
+        # 会場を探す
+        # -----------------------------------------
 
         venue = ""
 
-        for line in reversed(header_lines):
+        for line in reversed(
+            header_lines
+        ):
+
             if looks_like_venue(line):
+
                 venue = line
                 break
 
-        # --------------------------------
-        # タイトル
-        # --------------------------------
+        # -----------------------------------------
+        # タイトルを探す
+        # -----------------------------------------
 
         title = ""
 
         for line in header_lines:
 
-            # 会場自身は除外
             if line == venue:
                 continue
 
-            # 曜日単体などを除外
-            if line in {
-                "月", "火", "水",
-                "木", "金", "土", "日",
-                "祝",
-            }:
+            if is_noise(line):
                 continue
 
-            # 短すぎる文字列はタイトル扱いしない
             if len(line) <= 1:
+                continue
+
+            # 時刻だけなどを除外
+            if re.fullmatch(
+                r"\d{1,2}:\d{2}",
+                line
+            ):
                 continue
 
             title = line
@@ -271,203 +391,10 @@ def parse_search_results(html, performer, search_url):
 
         if not title:
             print(
-                f"  タイトル取得失敗: {date}",
-                file=sys.stderr
+                f"  タイトル取得失敗: "
+                f"{date}",
+                file=sys.stderr,
             )
             continue
 
-        event = {
-            "performerId": performer["id"],
-            "date": date,
-            "title": title,
-            "venue": venue,
-            "startTime": start_time,
-            "sourceUrl": search_url,
-        }
-
-        events.append(event)
-
-        print(
-            f"    {date} / {title} / {venue}"
-        )
-
-    # 重複除去
-    unique = {}
-
-    for event in events:
-        unique[event_key(event)] = event
-
-    return list(unique.values())
-
-
-def scrape_performer(performer):
-    name = performer["name"]
-
-    params = {
-        "keywords": name,
-        "search_type": "search_string",
-    }
-
-    url = SEARCH_URL + "?" + urlencode(params)
-
-    print("")
-    print("==============================")
-    print(f"scraping {name}")
-    print(url)
-
-    try:
-        html = fetch(url)
-    except Exception as error:
-        print(
-            f"検索ページ取得失敗: {name}: {error}",
-            file=sys.stderr
-        )
-        return []
-
-    events = parse_search_results(
-        html,
-        performer,
-        url
-    )
-
-    print(
-        f"  → {name}: {len(events)}件取得"
-    )
-
-    return events
-
-
-def main():
-
-    with open(
-        "performers.json",
-        encoding="utf-8"
-    ) as f:
-        config = json.load(f)
-
-    performers = config.get(
-        "performers",
-        []
-    )
-
-    try:
-        with open(
-            "events.json",
-            encoding="utf-8"
-        ) as f:
-            old_data = json.load(f)
-    except Exception:
-        old_data = {
-            "events": []
-        }
-
-    old_events = old_data.get(
-        "events",
-        []
-    )
-
-    old_keys = {
-        event_key(event)
-        for event in old_events
-    }
-
-    all_events = []
-
-    for performer in performers:
-
-        if "fany" not in performer.get(
-            "sources",
-            []
-        ):
-            continue
-
-        events = scrape_performer(
-            performer
-        )
-
-        all_events.extend(events)
-
-        time.sleep(1)
-
-    # --------------------------------
-    # 重複削除
-    # --------------------------------
-
-    unique = {}
-
-    for event in all_events:
-        unique[event_key(event)] = event
-
-    all_events = list(
-        unique.values()
-    )
-
-    all_events.sort(
-        key=lambda e: (
-            e.get("date", ""),
-            e.get("startTime", ""),
-            e.get("title", ""),
-            e.get("performerId", ""),
-        )
-    )
-
-    # --------------------------------
-    # 新規公演
-    # --------------------------------
-
-    new_events = [
         event
-        for event in all_events
-        if event_key(event) not in old_keys
-    ]
-
-    payload = {
-        "syncedAt": (
-            datetime.now(timezone.utc)
-            .astimezone()
-            .strftime("%Y-%m-%d %H:%M:%S %z")
-        ),
-        "performers": performers,
-        "events": all_events,
-    }
-
-    with open(
-        "events.json",
-        "w",
-        encoding="utf-8"
-    ) as f:
-
-        json.dump(
-            payload,
-            f,
-            ensure_ascii=False,
-            indent=2
-        )
-
-    with open(
-        "new_events.json",
-        "w",
-        encoding="utf-8"
-    ) as f:
-        json.dump(
-            new_events,
-            f,
-            ensure_ascii=False,
-            indent=2
-        )   
-    
-        with open(
-        "new_events.json",
-        "w",
-        encoding="utf-8"
-    ) as f:
-        json.dump(
-            new_events,
-            f,
-            ensure_ascii=False,
-            indent=2
-        )
-
-
-if __name__ == "__main__":
-    main()
