@@ -1,248 +1,130 @@
 {
-  "syncedAt": "2026-08-29 15:27:35 +0000",
+  "syncedAt": "2026-08-29T22:26:29.248032+00:00",
   "performers": [
     {
-      "id": "donde",
-      "name": "ドンデコルテ",
-      "color": "#d94343",
+      "id": "maison",
+      "name": "めぞん",
+      "color": "#E74C3C",
       "sources": [
-        "fany"
-      ]
+        "fany",
+        "tiget",
+        "livepocket"
+      ],
+      "notify": false
     },
     {
-      "id": "city",
-      "name": "CITY",
-      "color": "#3978c9",
+      "id": "pyuto",
+      "name": "ピュート",
+      "color": "#F4C430",
       "sources": [
-        "fany"
-      ]
-    },
-    {
-      "id": "sutekijanai",
-      "name": "素敵じゃないか",
-      "color": "#e4aa20",
-      "sources": [
-        "fany"
-      ]
+        "fany",
+        "tiget",
+        "livepocket"
+      ],
+      "notify": true
     },
     {
       "id": "nansui",
       "name": "軟水",
-      "color": "#39a66b",
+      "color": "#3498DB",
       "sources": [
-        "fany"
+        "fany",
+        "tiget",
+        "livepocket"
       ],
       "notify": true
     }
   ],
   "events": [
     {
-      "performerId": "donde",
+      "performerId": "pyuto",
       "date": "2026-08-30",
-      "title": "日",
-      "venue": "ルミネtheよしもと（東京都）",
-      "startTime": "",
-      "sourceUrl": "https://ticket.fany.lol/search/event?keywords=%E3%83%89%E3%83%B3%E3%83%87%E3%82%B3%E3%83%AB%E3%83%86&search_type=search_string"
-    },
-    {
-      "performerId": "donde",
-      "date": "2026-08-30",
-      "title": "日",
-      "venue": "渋谷よしもと漫才劇場（東京都）",
-      "startTime": "",
-      "sourceUrl": "https://ticket.fany.lol/search/event?keywords=%E3%83%89%E3%83%B3%E3%83%87%E3%82%B3%E3%83%AB%E3%83%86&search_type=search_string"
-    },
-    {
-      "performerId": "donde",
-      "date": "2026-08-30",
-      "title": "日",
-      "venue": "神保町よしもと漫才劇場（東京都）",
-      "startTime": "",
-      "sourceUrl": "https://ticket.fany.lol/search/event?keywords=%E3%83%89%E3%83%B3%E3%83%87%E3%82%B3%E3%83%AB%E3%83%86&search_type=search_string"
+      "startTime": "21:00",
+      "title": "コントノウズ のチケット購入・予約は TIGET から",
+      "venue": "銀座お笑いPLACE(東京都) イベントのお問い合わせ 以下より主催者へお問い合わせください。 お問い合わせフォーム",
+      "source": "tiget",
+      "sourceUrl": "https://tiget.net/events/510709"
     },
     {
       "performerId": "nansui",
-      "date": "2026-08-30",
-      "title": "日",
-      "venue": "渋谷よしもと漫才劇場（東京都）",
-      "startTime": "",
-      "sourceUrl": "https://ticket.fany.lol/search/event?keywords=%E8%BB%9F%E6%B0%B4&search_type=search_string"
+      "date": "2026-09-08",
+      "startTime": "19:30",
+      "title": "催眠術×お笑いライブ 2026 のチケット購入・予約は TIGET から",
+      "venue": "】 座・高円寺2 【時間】",
+      "source": "tiget",
+      "sourceUrl": "https://tiget.net/events/510457"
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-09-08",
+      "startTime": "19:30",
+      "title": "催眠術×お笑いライブ 2026 のチケット購入・予約は TIGET から",
+      "venue": "】 座・高円寺2 【時間】",
+      "source": "tiget",
+      "sourceUrl": "https://tiget.net/events/510457"
     },
     {
       "performerId": "nansui",
-      "date": "2026-08-30",
-      "title": "日",
-      "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-      "startTime": "",
-      "sourceUrl": "https://ticket.fany.lol/search/event?keywords=%E8%BB%9F%E6%B0%B4&search_type=search_string"
+      "date": "2026-09-09",
+      "startTime": "19:00",
+      "title": "コン獣 のチケット購入・予約は TIGET から",
+      "venue": "",
+      "source": "tiget",
+      "sourceUrl": "https://tiget.net/events/512235"
     },
     {
-      "performerId": "sutekijanai",
-      "date": "2026-08-30",
-      "title": "日",
-      "venue": "渋谷よしもと漫才劇場（東京都）",
-      "startTime": "",
-      "sourceUrl": "https://ticket.fany.lol/search/event?keywords=%E7%B4%A0%E6%95%B5%E3%81%98%E3%82%83%E3%81%AA%E3%81%84%E3%81%8B&search_type=search_string"
-    },
-    {
-      "performerId": "sutekijanai",
-      "date": "2026-08-31",
-      "title": "月",
-      "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-      "startTime": "",
-      "sourceUrl": "https://ticket.fany.lol/search/event?keywords=%E7%B4%A0%E6%95%B5%E3%81%98%E3%82%83%E3%81%AA%E3%81%84%E3%81%8B&search_type=search_string"
-    },
-    {
-      "performerId": "city",
-      "date": "2026-09-01",
-      "title": "火",
-      "venue": "神保町よしもと漫才劇場（東京都）",
-      "startTime": "",
-      "sourceUrl": "https://ticket.fany.lol/search/event?keywords=CITY&search_type=search_string"
-    },
-    {
-      "performerId": "donde",
-      "date": "2026-09-01",
-      "title": "火",
-      "venue": "よしもと幕張イオンモール劇場（千葉県）",
-      "startTime": "",
-      "sourceUrl": "https://ticket.fany.lol/search/event?keywords=%E3%83%89%E3%83%B3%E3%83%87%E3%82%B3%E3%83%AB%E3%83%86&search_type=search_string"
-    },
-    {
-      "performerId": "donde",
-      "date": "2026-09-01",
-      "title": "火",
-      "venue": "渋谷よしもと漫才劇場（東京都）",
-      "startTime": "",
-      "sourceUrl": "https://ticket.fany.lol/search/event?keywords=%E3%83%89%E3%83%B3%E3%83%87%E3%82%B3%E3%83%AB%E3%83%86&search_type=search_string"
+      "performerId": "pyuto",
+      "date": "2026-09-09",
+      "startTime": "19:00",
+      "title": "コン獣 のチケット購入・予約は TIGET から",
+      "venue": "",
+      "source": "tiget",
+      "sourceUrl": "https://tiget.net/events/512235"
     },
     {
       "performerId": "nansui",
-      "date": "2026-09-01",
-      "title": "火",
-      "venue": "渋谷よしもと漫才劇場（東京都）",
-      "startTime": "",
-      "sourceUrl": "https://ticket.fany.lol/search/event?keywords=%E8%BB%9F%E6%B0%B4&search_type=search_string"
+      "date": "2026-09-09",
+      "startTime": "21:00",
+      "title": "沼る寄席 #5 のチケット購入・予約は TIGET から",
+      "venue": "",
+      "source": "tiget",
+      "sourceUrl": "https://tiget.net/events/512237"
     },
     {
-      "performerId": "city",
-      "date": "2026-09-02",
-      "title": "水",
-      "venue": "神保町よしもと漫才劇場（東京都）",
-      "startTime": "",
-      "sourceUrl": "https://ticket.fany.lol/search/event?keywords=CITY&search_type=search_string"
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-09-02",
-      "title": "水",
-      "venue": "渋谷よしもと漫才劇場（東京都）",
-      "startTime": "",
-      "sourceUrl": "https://ticket.fany.lol/search/event?keywords=%E8%BB%9F%E6%B0%B4&search_type=search_string"
-    },
-    {
-      "performerId": "sutekijanai",
-      "date": "2026-09-02",
-      "title": "水",
-      "venue": "渋谷よしもと漫才劇場（東京都）",
-      "startTime": "",
-      "sourceUrl": "https://ticket.fany.lol/search/event?keywords=%E7%B4%A0%E6%95%B5%E3%81%98%E3%82%83%E3%81%AA%E3%81%84%E3%81%8B&search_type=search_string"
-    },
-    {
-      "performerId": "city",
-      "date": "2026-09-03",
-      "title": "木",
-      "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-      "startTime": "",
-      "sourceUrl": "https://ticket.fany.lol/search/event?keywords=CITY&search_type=search_string"
-    },
-    {
-      "performerId": "sutekijanai",
-      "date": "2026-09-03",
-      "title": "木",
-      "venue": "渋谷よしもと漫才劇場（東京都）",
-      "startTime": "",
-      "sourceUrl": "https://ticket.fany.lol/search/event?keywords=%E7%B4%A0%E6%95%B5%E3%81%98%E3%82%83%E3%81%AA%E3%81%84%E3%81%8B&search_type=search_string"
-    },
-    {
-      "performerId": "city",
-      "date": "2026-09-04",
-      "title": "金",
-      "venue": "渋谷よしもと漫才劇場（東京都）",
-      "startTime": "",
-      "sourceUrl": "https://ticket.fany.lol/search/event?keywords=CITY&search_type=search_string"
+      "performerId": "pyuto",
+      "date": "2026-09-09",
+      "startTime": "21:00",
+      "title": "沼る寄席 #5 のチケット購入・予約は TIGET から",
+      "venue": "",
+      "source": "tiget",
+      "sourceUrl": "https://tiget.net/events/512237"
     },
     {
       "performerId": "nansui",
-      "date": "2026-09-04",
-      "title": "金",
-      "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-      "startTime": "",
-      "sourceUrl": "https://ticket.fany.lol/search/event?keywords=%E8%BB%9F%E6%B0%B4&search_type=search_string"
+      "date": "2026-09-13",
+      "startTime": "19:20",
+      "title": "9/13(日)バティオスで#ワイガヤ《3部》 のチケット購入・予約は TIGET から",
+      "venue": "",
+      "source": "tiget",
+      "sourceUrl": "https://tiget.net/events/515874"
     },
     {
-      "performerId": "sutekijanai",
-      "date": "2026-09-04",
-      "title": "金",
-      "venue": "ルミネtheよしもと（東京都）",
-      "startTime": "",
-      "sourceUrl": "https://ticket.fany.lol/search/event?keywords=%E7%B4%A0%E6%95%B5%E3%81%98%E3%82%83%E3%81%AA%E3%81%84%E3%81%8B&search_type=search_string"
+      "performerId": "pyuto",
+      "date": "2026-09-14",
+      "startTime": "21:00",
+      "title": "やりたい放題デラックス のチケット購入・予約は TIGET から",
+      "venue": "銀座お笑いPLACE イベントのお問い合わせ 以下より主催者へお問い合わせください。 お問い合わせフォーム",
+      "source": "tiget",
+      "sourceUrl": "https://tiget.net/events/517547"
     },
     {
-      "performerId": "city",
-      "date": "2026-09-05",
-      "title": "土",
-      "venue": "神保町よしもと漫才劇場（東京都）",
-      "startTime": "",
-      "sourceUrl": "https://ticket.fany.lol/search/event?keywords=CITY&search_type=search_string"
-    },
-    {
-      "performerId": "donde",
-      "date": "2026-09-05",
-      "title": "土",
-      "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-      "startTime": "",
-      "sourceUrl": "https://ticket.fany.lol/search/event?keywords=%E3%83%89%E3%83%B3%E3%83%87%E3%82%B3%E3%83%AB%E3%83%86&search_type=search_string"
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-09-05",
-      "title": "土",
-      "venue": "渋谷よしもと漫才劇場（東京都）",
-      "startTime": "",
-      "sourceUrl": "https://ticket.fany.lol/search/event?keywords=%E8%BB%9F%E6%B0%B4&search_type=search_string"
-    },
-    {
-      "performerId": "city",
-      "date": "2026-09-06",
-      "title": "日",
-      "venue": "歌舞伎町Sparkle（東京都）",
-      "startTime": "",
-      "sourceUrl": "https://ticket.fany.lol/search/event?keywords=CITY&search_type=search_string"
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-09-06",
-      "title": "日",
-      "venue": "THEATER MILANO-Za（東京都）",
-      "startTime": "",
-      "sourceUrl": "https://ticket.fany.lol/search/event?keywords=%E8%BB%9F%E6%B0%B4&search_type=search_string"
-    },
-    {
-      "performerId": "city",
-      "date": "2026-09-07",
-      "title": "月",
-      "venue": "GINZA ART BOX 7（東京都）",
-      "startTime": "",
-      "sourceUrl": "https://ticket.fany.lol/search/event?keywords=CITY&search_type=search_string"
-    },
-    {
-      "performerId": "city",
-      "date": "2026-09-12",
-      "title": "土",
-      "venue": "神保町よしもと漫才劇場（東京都）",
-      "startTime": "",
-      "sourceUrl": "https://ticket.fany.lol/search/event?keywords=CITY&search_type=search_string"
+      "performerId": "pyuto",
+      "date": "2026-09-24",
+      "startTime": "19:15",
+      "title": "アークのネタコナ 31 のチケット購入・予約は TIGET から",
+      "venue": "について】 地上にてお待ちください。",
+      "source": "tiget",
+      "sourceUrl": "https://tiget.net/events/516532"
     }
   ]
 }
