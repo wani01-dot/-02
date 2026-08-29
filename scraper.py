@@ -449,3 +449,9 @@ def main():
         "w",
         encoding="utf-8"
     ) as f:
+        json.dump(
+            new_events,
+            f,
+            ensure_ascii=False,
+            indent=2
+        )
