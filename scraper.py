@@ -455,3 +455,21 @@ def main():
             ensure_ascii=False,
             indent=2
         )
+            print("")
+    print("==============================")
+    print("FANY同期完了")
+    print(f"全公演数: {len(all_events)}")
+    print(f"新規公演数: {len(new_events)}")
+
+    for performer in performers:
+        count = sum(
+            1
+            for event in all_events
+            if event.get("performerId") == performer.get("id")
+        )
+
+        print(f"{performer.get('name')}: {count}件")
+
+
+if __name__ == "__main__":
+    main()
