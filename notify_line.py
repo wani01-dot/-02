@@ -20,11 +20,11 @@ target_ids = set(notification_config.get("performer_ids", []))
 targets = []
 
 for event in new_events:
-    performer_ids = set(event.get("performer_ids", []))
+    performer_id = event.get("performerId", "")
 
-    if performer_ids & target_ids:
+    if performer_id in target_ids:
         targets.append(event)
-
+        
 # 通知対象が0件なら何も送らず正常終了
 if not targets:
     print("通知対象の新規公演はありません。")
