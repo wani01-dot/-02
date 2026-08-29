@@ -1,0 +1,45 @@
+name: Sync FANY events
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/5 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Scrape FANY
+        run: |
+          python scraper.py
+
+      - name: Notify LINE
+        env:
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          LINE_TO: ${{ secrets.LINE_TO }}
+        run: |
+          python notify_line.py
+
+      - name: Save updated events
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add events.json
+          git diff --cached --quiet || git commit -m "Update FANY events"
+          git push
