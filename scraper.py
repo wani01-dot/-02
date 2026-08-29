@@ -108,7 +108,7 @@ def scrape_performer(p):
 
 def main():
     cfg=json.load(open("performers.json", encoding="utf-8"))
-    old=json.load(open("data/events.json",encoding="utf-8"))
+    old=json.load(open("events.json",encoding="utf-8"))
     all_events=[]
     for p in cfg["performers"]:
         if "fany" not in p.get("sources",[]): continue
