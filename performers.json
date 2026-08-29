@@ -1,25 +1,18 @@
 {
+  "syncedAt": null,
   "performers": [
     {
-      "id": "donde",
-      "name": "ドンデコルテ",
+      "id": "maison",
+      "name": "めぞん",
       "color": "#d94343",
       "sources": [
         "fany"
       ]
     },
     {
-      "id": "city",
-      "name": "CITY",
+      "id": "pyuto",
+      "name": "ピュート",
       "color": "#3978c9",
-      "sources": [
-        "fany"
-      ]
-    },
-    {
-      "id": "sutekijanai",
-      "name": "素敵じゃないか",
-      "color": "#e4aa20",
       "sources": [
         "fany"
       ]
@@ -34,16 +27,5 @@
       "notify": true
     }
   ],
-  "sources": {
-    "fany": {
-      "enabled": true,
-      "search_url": "https://ticket.fany.lol/search/event"
-    }
-  },
-  "notification": {
-    "enabled": true,
-    "performer_ids": [
-      "nansui"
-    ]
-  }
+  "events": []
 }
