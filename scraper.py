@@ -123,6 +123,6 @@ def main():
     def key(e): return "|".join([e.get("performerId",""),e.get("date",""),e.get("title",""),e.get("venue",""),e.get("startTime","")])
     oldkeys={key(e) for e in old.get("events",[])}
     new=[e for e in all_events if key(e) not in oldkeys]
-    json.dump(new,open("data/new_events.json","w",encoding="utf-8"),ensure_ascii=False,indent=2)
+    json.dump(new,open("new_events.json","w",encoding="utf-8"),ensure_ascii=False,indent=2)
     print(f"events={len(all_events)} new={len(new)}")
 if __name__=="__main__": main()
