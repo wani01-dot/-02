@@ -7,7 +7,7 @@ if not TOKEN or not TO:
     raise SystemExit(0)
 
 events=json.load(open("new_events.json",encoding="utf-8"))
-targets=set(json.load(open("config/performers.json",encoding="utf-8")).get("notification",{}).get("performer_ids",[]))
+targets=set(json.load(open("performers.json",encoding="utf-8")).get("notification",{}).get("performer_ids",[]))
 events=[e for e in events if e.get("performerId") in targets]
 if not events:
     print("No new tracked-performer events.")
