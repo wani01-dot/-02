@@ -106,6 +106,22 @@ def normalize_title(text):
     return text
 
 
+def normalize_venue(text):
+    text = clean(text).lower()
+
+    text = text.replace(
+        " ",
+        ""
+    )
+
+    text = text.replace(
+        "　",
+        ""
+    )
+
+    return text
+
+
 def make_date(
     year,
     month,
@@ -119,7 +135,7 @@ def make_date(
 
 
 # ==========================================
-# 同一イベント判定
+# 新規判定キー
 # ==========================================
 
 def identity_key(event):
@@ -139,16 +155,55 @@ def identity_key(event):
         ""
     )
 
+    # TIGETはURLが固有なので最優先
     if (
         source == "tiget"
         and source_url
     ):
-        return (
-            "tiget|"
-            + performer_id
-            + "|"
-            + source_url
+        return "|".join([
+            "tiget",
+            performer_id,
+            source_url
+        ])
+
+    # FANY
+    # タイトルの修正では再通知しにくくする
+    if source == "fany":
+
+        date = event.get(
+            "date",
+            ""
         )
+
+        venue = normalize_venue(
+            event.get(
+                "venue",
+                ""
+            )
+        )
+
+        start_time = event.get(
+            "startTime",
+            ""
+        )
+
+        # 時間が取れている場合
+        if start_time:
+            return "|".join([
+                "fany",
+                performer_id,
+                date,
+                venue,
+                start_time
+            ])
+
+        # 時間がない場合
+        return "|".join([
+            "fany",
+            performer_id,
+            date,
+            venue
+        ])
 
     return "|".join([
         source,
@@ -169,6 +224,34 @@ def identity_key(event):
         ),
     ])
 
+
+# ==========================================
+# FANY再通知防止用の緩いキー
+# ==========================================
+
+def fany_loose_key(event):
+
+    return "|".join([
+        event.get(
+            "performerId",
+            ""
+        ),
+        event.get(
+            "date",
+            ""
+        ),
+        normalize_venue(
+            event.get(
+                "venue",
+                ""
+            )
+        )
+    ])
+
+
+# ==========================================
+# カレンダー重複キー
+# ==========================================
 
 def calendar_key(event):
 
@@ -458,15 +541,6 @@ def scrape_fany(
 
         # ----------------------------------
         # タイトル
-        #
-        # FANY実データ:
-        #
-        # [00] 日付
-        # [01] 曜日
-        # [02] )
-        # [03] 開場 / 開演
-        # [04] タイトル
-        # [05] 会場
         # ----------------------------------
 
         title = ""
@@ -491,7 +565,6 @@ def scrape_fany(
                 title = candidate
 
 
-        # 保険
         if not title:
 
             noise = {
@@ -873,7 +946,7 @@ def scrape_tiget(
 
 
         # ----------------------------------
-        # 開演時間
+        # 開演
         # ----------------------------------
 
         start_time = ""
@@ -1050,13 +1123,10 @@ def main():
 
 
     config = load_json(
-
         PERFORMERS_FILE,
-
         {
             "performers": []
         }
-
     )
 
 
@@ -1082,13 +1152,10 @@ def main():
 
 
     old_data = load_json(
-
         EVENTS_FILE,
-
         {
             "events": []
         }
-
     )
 
 
@@ -1097,34 +1164,27 @@ def main():
         list
     ):
 
-        old_events = (
-            old_data
-        )
+        old_events = old_data
 
     else:
 
-        old_events = (
-            old_data.get(
-                "events",
-                []
-            )
+        old_events = old_data.get(
+            "events",
+            []
         )
 
+
+    # ======================================
+    # 旧データ判定
+    # ======================================
 
     old_identity_keys = {
-
-        identity_key(
-            event
-        )
-
-        for event
-        in old_events
-
+        identity_key(event)
+        for event in old_events
     }
 
 
     old_tiget_urls = {
-
         (
             event.get(
                 "performerId",
@@ -1135,20 +1195,26 @@ def main():
                 ""
             )
         )
-
-        for event
-        in old_events
-
+        for event in old_events
         if (
             event.get(
                 "source"
-            )
-            == "tiget"
+            ) == "tiget"
             and event.get(
                 "sourceUrl"
             )
         )
+    }
 
+
+    old_fany_loose_keys = {
+        fany_loose_key(event)
+        for event in old_events
+        if (
+            event.get(
+                "source"
+            ) == "fany"
+        )
     }
 
 
@@ -1161,6 +1227,10 @@ def main():
 
     all_events = []
 
+
+    # ======================================
+    # 取得
+    # ======================================
 
     for performer in performers:
 
@@ -1201,7 +1271,6 @@ def main():
         )
 
 
-        # FANY
         if "fany" in sources:
 
             try:
@@ -1218,12 +1287,10 @@ def main():
             except Exception as error:
 
                 print(
-                    "FANYエラー: "
-                    f"{error}"
+                    f"FANYエラー: {error}"
                 )
 
 
-        # TIGET
         if "tiget" in sources:
 
             try:
@@ -1240,12 +1307,14 @@ def main():
             except Exception as error:
 
                 print(
-                    "TIGETエラー: "
-                    f"{error}"
+                    f"TIGETエラー: {error}"
                 )
 
 
-    # 重複削除
+    # ======================================
+    # 重複整理
+    # ======================================
+
     all_events = (
         remove_exact_duplicates(
             all_events
@@ -1253,7 +1322,6 @@ def main():
     )
 
 
-    # FANY / TIGET統合
     all_events = (
         merge_cross_site(
             all_events
@@ -1261,33 +1329,25 @@ def main():
     )
 
 
-    # 並び替え
     all_events.sort(
-
         key=lambda event: (
-
             event.get(
                 "date",
                 ""
             ),
-
             event.get(
                 "startTime",
                 ""
             ),
-
             event.get(
                 "performerId",
                 ""
             ),
-
             event.get(
                 "title",
                 ""
-            ),
-
+            )
         )
-
     )
 
 
@@ -1305,6 +1365,7 @@ def main():
         )
 
 
+        # 完全一致
         if (
             identity
             in old_identity_keys
@@ -1312,33 +1373,55 @@ def main():
             continue
 
 
-        # TIGETはURLが同じなら
-        # 情報修正されても再通知しない
+        # ----------------------------------
+        # TIGET
+        # ----------------------------------
+
         if (
             event.get(
                 "source"
-            )
-            == "tiget"
+            ) == "tiget"
         ):
 
             key = (
-
                 event.get(
                     "performerId",
                     ""
                 ),
-
                 event.get(
                     "sourceUrl",
                     ""
                 )
-
             )
-
 
             if (
                 key
                 in old_tiget_urls
+            ):
+                continue
+
+
+        # ----------------------------------
+        # FANY
+        # ----------------------------------
+
+        if (
+            event.get(
+                "source"
+            ) == "fany"
+        ):
+
+            loose_key = (
+                fany_loose_key(
+                    event
+                )
+            )
+
+            # 同じ芸人・同じ日・同じ会場が
+            # すでにあれば再通知しない
+            if (
+                loose_key
+                in old_fany_loose_keys
             ):
                 continue
 
@@ -1390,50 +1473,36 @@ def main():
     )
 
     print(
-        f"全公演数: "
-        f"{len(all_events)}件"
+        f"全公演数: {len(all_events)}件"
     )
 
     print(
-        f"新規公演数: "
-        f"{len(new_events)}件"
+        f"新規公演数: {len(new_events)}件"
     )
 
 
     for performer in performers:
 
-        performer_id = (
-            performer.get(
-                "id",
-                ""
-            )
+        performer_id = performer.get(
+            "id",
+            ""
         )
 
-        performer_name = (
-            performer.get(
-                "name",
-                performer_id
-            )
+        performer_name = performer.get(
+            "name",
+            performer_id
         )
-
 
         count = sum(
-
             1
-
-            for event
-            in all_events
-
+            for event in all_events
             if (
                 event.get(
                     "performerId"
                 )
-                ==
-                performer_id
+                == performer_id
             )
-
         )
-
 
         print(
             f"{performer_name}: "
@@ -1448,21 +1517,15 @@ def main():
             "=== 新規公演 ==="
         )
 
-
         for event in new_events:
 
             performer_name = next(
-
                 (
-
                     p.get(
                         "name",
                         ""
                     )
-
-                    for p
-                    in performers
-
+                    for p in performers
                     if (
                         p.get(
                             "id"
@@ -1472,19 +1535,14 @@ def main():
                             "performerId"
                         )
                     )
-
                 ),
-
                 event.get(
                     "performerId",
                     ""
                 )
-
             )
 
-
             print(
-
                 f"{performer_name}"
                 f" | "
                 f"{event.get('date', '')}"
@@ -1496,7 +1554,6 @@ def main():
                 f"{event.get('venue', '')}"
                 f" | "
                 f"{event.get('source', '')}"
-
             )
 
 
