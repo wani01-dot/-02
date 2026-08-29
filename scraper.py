@@ -455,5 +455,19 @@ def main():
             ensure_ascii=False,
             indent=2
         )   
-        if __name__ == "__main__":
-            main()
+    
+        with open(
+        "new_events.json",
+        "w",
+        encoding="utf-8"
+    ) as f:
+        json.dump(
+            new_events,
+            f,
+            ensure_ascii=False,
+            indent=2
+        )
+
+
+if __name__ == "__main__":
+    main()
