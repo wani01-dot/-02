@@ -4,28 +4,35 @@
     {
       "id": "maison",
       "name": "めぞん",
-      "color": "#d94343",
+      "color": "#E74C3C",
       "sources": [
-        "fany"
-      ]
+        "fany",
+        "tiget",
+        "livepocket"
+      ],
+      "notify": false
     },
     {
       "id": "pyuto",
       "name": "ピュート",
-      "color": "#3978c9",
+      "color": "#F4C430",
       "sources": [
-        "fany"
-      ]
+        "fany",
+        "tiget",
+        "livepocket"
+      ],
+      "notify": true
     },
     {
       "id": "nansui",
       "name": "軟水",
-      "color": "#39a66b",
+      "color": "#3498DB",
       "sources": [
-        "fany"
+        "fany",
+        "tiget",
+        "livepocket"
       ],
       "notify": true
     }
-  ],
-  "events": []
+  ]
 }
