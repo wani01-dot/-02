@@ -1,17 +1,43 @@
+name: Sync FANY events
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/5 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4
+
       - name: Scrape FANY
         run: |
           python scraper.py
 
           if [ ! -f new_events.json ]; then
-            echo "new_events.json が無いため空配列を作成します"
+            echo "new_events.json not found. Creating empty file."
             echo "[]" > new_events.json
           fi
 
-          echo "=== generated files ==="
-          ls -la
-
           echo "=== new_events.json ==="
           cat new_events.json
+
       - name: Notify LINE
         env:
           LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
@@ -23,6 +49,12 @@
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add events.json
-          git diff --cached --quiet || git commit -m "Update FANY events"
-          git push
+
+          if git diff --cached --quiet; then
+            echo "No changes to save."
+          else
+            git commit -m "Update FANY events"
+            git push
+          fi
