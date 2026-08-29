@@ -821,4 +821,19 @@ def main():
                     f"   ❌ TIGETエラー：{e}"
                 )
 
-        if "livepocket
+                if "livepocket" in sources:
+
+            try:
+                events = scrape_livepocket(
+                    session,
+                    performer
+                )
+
+                all_events.extend(
+                    events
+                )
+
+            except Exception as e:
+                print(
+                    f"   ❌ LivePocketエラー：{e}"
+                )
