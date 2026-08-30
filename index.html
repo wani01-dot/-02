@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
 
@@ -10,19 +11,21 @@
 
   <title>芸人出演カレンダー</title>
 
-  <!-- FullCalendar -->
-  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"
+  ></script>
 
   <style>
+
     * {
       box-sizing: border-box;
     }
 
     body {
       margin: 0;
-      padding: 0;
-      background: #f4f4f4;
+      background: #f3f3f3;
       color: #222;
+
       font-family:
         -apple-system,
         BlinkMacSystemFont,
@@ -32,565 +35,535 @@
         sans-serif;
     }
 
+
     .wrapper {
       width: 100%;
-      max-width: 700px;
+      max-width: 760px;
       margin: 0 auto;
-      padding: 16px 12px 40px;
+      padding: 14px 8px 50px;
     }
+
 
     h1 {
+      margin: 4px 4px 12px;
       font-size: 22px;
-      margin: 4px 0 14px;
     }
 
-    /* =========================
-       出演者
-    ========================= */
 
-    .performers {
+    /* =====================================
+       芸人フィルター
+    ===================================== */
+
+    .filters {
       display: flex;
-      flex-wrap: wrap;
       gap: 8px;
-      margin-bottom: 16px;
+      flex-wrap: wrap;
+      margin: 0 4px 14px;
     }
 
-    .performer-button {
+
+    .filter-button {
       border: none;
-      border-radius: 999px;
+      border-radius: 100px;
+
       padding: 8px 14px;
+
       font-size: 14px;
-      font-weight: bold;
+      font-weight: 700;
+
       cursor: pointer;
-      color: #111;
-      opacity: 1;
-      transition: 0.2s;
+
+      transition: 0.15s;
     }
 
-    .performer-button.off {
+
+    .filter-button.off {
       opacity: 0.25;
     }
 
-    .performer-maison {
+
+    .maison {
       background: #E74C3C;
       color: white;
     }
 
-    .performer-pyuto {
+
+    .pyuto {
       background: #F4C430;
       color: #111;
     }
 
-    .performer-nansui {
+
+    .nansui {
       background: #3498DB;
       color: white;
     }
 
-    /* =========================
+
+    /* =====================================
        カレンダー
-    ========================= */
+    ===================================== */
 
     #calendar {
       background: white;
+
+      padding: 8px;
+
       border-radius: 14px;
-      padding: 10px;
+
       box-shadow:
-        0 2px 12px rgba(0,0,0,0.08);
+        0 2px 12px
+        rgba(0, 0, 0, 0.07);
     }
 
+
     .fc .fc-toolbar-title {
-      font-size: 20px;
+      font-size: 19px;
     }
+
 
     .fc .fc-button {
       font-size: 13px;
       padding: 5px 9px;
     }
 
+
     .fc-event {
-      cursor: pointer;
       border: none !important;
-      font-size: 11px;
-      padding: 1px 2px;
+      cursor: pointer;
+
+      font-size: 10px;
+      line-height: 1.3;
+
+      padding: 2px 3px;
+
+      border-radius: 5px;
     }
+
 
     .fc-daygrid-day-number {
       color: #222;
       text-decoration: none;
     }
 
+
     .fc-col-header-cell-cushion {
-      color: #444;
+      color: #555;
       text-decoration: none;
       font-size: 12px;
     }
 
-    /* =========================
-       公演詳細
-    ========================= */
+
+    /* =====================================
+       詳細
+    ===================================== */
 
     .detail-area {
       margin-top: 18px;
     }
 
-    .detail-title {
+
+    #detail-title {
+      margin: 0 4px 10px;
+
       font-size: 18px;
       font-weight: bold;
-      margin-bottom: 10px;
     }
+
 
     .event-card {
       background: white;
-      border-radius: 14px;
-      padding: 14px;
+
       margin-bottom: 10px;
+
+      padding: 14px;
+
+      border-radius: 14px;
+
       box-shadow:
-        0 2px 10px rgba(0,0,0,0.06);
-      border-left: 6px solid #ccc;
+        0 2px 10px
+        rgba(0,0,0,0.06);
     }
 
-    .event-performer {
+
+    .performer-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+
+      margin-bottom: 9px;
+    }
+
+
+    .performer-label {
+      display: inline-block;
+
+      border-radius: 100px;
+
+      padding: 4px 9px;
+
+      font-size: 12px;
       font-weight: bold;
-      font-size: 15px;
-      margin-bottom: 7px;
     }
 
-    .event-name {
+
+    .label-maison {
+      background: #E74C3C;
+      color: white;
+    }
+
+
+    .label-pyuto {
+      background: #F4C430;
+      color: #111;
+    }
+
+
+    .label-nansui {
+      background: #3498DB;
+      color: white;
+    }
+
+
+    .event-title {
       font-size: 16px;
       font-weight: bold;
-      line-height: 1.5;
+
+      line-height: 1.45;
+
       margin-bottom: 8px;
     }
+
 
     .event-info {
       font-size: 14px;
       line-height: 1.8;
+
       color: #444;
     }
 
-    .event-link {
+
+    .source-badge {
       display: inline-block;
-      margin-top: 9px;
-      font-size: 14px;
-      color: #1677ff;
-      text-decoration: none;
+
+      margin-top: 6px;
+
+      padding: 3px 7px;
+
+      border-radius: 5px;
+
+      background: #eee;
+
+      font-size: 11px;
       font-weight: bold;
     }
 
-    .empty {
-      color: #777;
+
+    .event-link {
+      display: inline-block;
+
+      margin-top: 9px;
+
+      color: #1677ff;
+
       font-size: 14px;
-      padding: 10px 2px;
+      font-weight: bold;
+
+      text-decoration: none;
     }
 
-    /* =========================
-       最終更新
-    ========================= */
+
+    .empty {
+      padding: 14px;
+
+      background: white;
+
+      border-radius: 12px;
+
+      font-size: 14px;
+      color: #777;
+    }
+
+
+    /* =====================================
+       更新日時
+    ===================================== */
 
     #synced {
-      margin-top: 14px;
-      font-size: 12px;
-      color: #888;
+      margin-top: 12px;
+      padding-right: 4px;
+
       text-align: right;
+
+      font-size: 11px;
+      color: #999;
     }
 
-    @media (max-width: 500px) {
+
+    /* =====================================
+       スマホ
+    ===================================== */
+
+    @media(max-width: 520px) {
+
       .wrapper {
-        padding-left: 8px;
-        padding-right: 8px;
+        padding-left: 6px;
+        padding-right: 6px;
       }
+
 
       #calendar {
-        padding: 6px;
+        padding: 5px;
       }
+
 
       .fc .fc-toolbar-title {
-        font-size: 18px;
+        font-size: 17px;
       }
 
+
       .fc-event {
-        font-size: 10px;
+        font-size: 9px;
       }
+
     }
+
   </style>
 </head>
 
+
 <body>
 
-  <div class="wrapper">
-
-    <h1>🎙️ 芸人出演カレンダー</h1>
-
-    <!-- 出演者フィルター -->
-
-    <div class="performers">
-
-      <button
-        class="performer-button performer-maison"
-        data-id="maison"
-      >
-        めぞん
-      </button>
-
-      <button
-        class="performer-button performer-pyuto"
-        data-id="pyuto"
-      >
-        ピュート
-      </button>
-
-      <button
-        class="performer-button performer-nansui"
-        data-id="nansui"
-      >
-        軟水
-      </button>
-
-    </div>
+<div class="wrapper">
 
 
-    <!-- カレンダー -->
-
-    <div id="calendar"></div>
+  <h1>🎙 芸人出演カレンダー</h1>
 
 
-    <!-- 公演詳細 -->
+  <!-- ===================================
+       芸人フィルター
+  ==================================== -->
 
-    <div class="detail-area">
+  <div class="filters">
 
-      <div
-        class="detail-title"
-        id="detail-title"
-      >
-        公演情報
-      </div>
-
-      <div id="detail-list">
-
-        <div class="empty">
-          カレンダーのライブをタップすると詳細が表示されます。
-        </div>
-
-      </div>
-
-    </div>
+    <button
+      class="filter-button maison"
+      data-performer="maison"
+    >
+      めぞん
+    </button>
 
 
-    <div id="synced"></div>
+    <button
+      class="filter-button pyuto"
+      data-performer="pyuto"
+    >
+      ピュート
+    </button>
+
+
+    <button
+      class="filter-button nansui"
+      data-performer="nansui"
+    >
+      軟水
+    </button>
 
   </div>
 
 
-  <script>
+  <!-- カレンダー -->
 
-    /* =====================================
-       出演者設定
-    ===================================== */
-
-    const performerMap = {
-
-      maison: {
-        name: "めぞん",
-        color: "#E74C3C",
-        textColor: "#FFFFFF"
-      },
-
-      pyuto: {
-        name: "ピュート",
-        color: "#F4C430",
-        textColor: "#111111"
-      },
-
-      nansui: {
-        name: "軟水",
-        color: "#3498DB",
-        textColor: "#FFFFFF"
-      }
-
-    };
+  <div id="calendar"></div>
 
 
-    /* =====================================
-       表示ON/OFF
-    ===================================== */
+  <!-- 詳細 -->
 
-    const enabledPerformers = new Set([
-      "maison",
-      "pyuto",
-      "nansui"
-    ]);
+  <div class="detail-area">
 
+    <div id="detail-title">
+      公演情報
+    </div>
 
-    let allEvents = [];
+    <div id="detail-list">
 
-    let calendar;
+      <div class="empty">
+        日付またはライブをタップすると詳細が表示されます。
+      </div>
 
+    </div>
 
-    /* =====================================
-       JSON取得
-    ===================================== */
-
-    async function loadData() {
-
-      try {
-
-        /*
-          GitHub Pagesで古いJSONが
-          キャッシュされるのを防ぐため
-          ?t=現在時刻 を追加
-        */
-
-        const response = await fetch(
-          "events.json?t=" + Date.now()
-        );
+  </div>
 
 
-        if (!response.ok) {
-
-          throw new Error(
-            "events.jsonを取得できませんでした"
-          );
-
-        }
+  <div id="synced"></div>
 
 
-        const data = await response.json();
+</div>
 
 
-        /*
-          events.json が
 
-          {
-            "events": [...]
-          }
-
-          の場合にも
-
-          [
-            ...
-          ]
-
-          の場合にも対応
-        */
-
-        if (Array.isArray(data)) {
-
-          allEvents = data;
-
-        } else {
-
-          allEvents = data.events || [];
-
-        }
+<script>
 
 
-        /* 最終更新 */
+/* =========================================
+   芸人
+========================================= */
 
-        if (data.syncedAt) {
+const performerMap = {
 
-          const syncedDate =
-            new Date(data.syncedAt);
+  maison: {
+    name: "めぞん",
+    color: "#E74C3C",
+    textColor: "#FFFFFF",
+    className: "label-maison"
+  },
 
-          document.getElementById(
-            "synced"
-          ).textContent =
-            "最終更新：" +
-            syncedDate.toLocaleString(
-              "ja-JP"
-            );
+  pyuto: {
+    name: "ピュート",
+    color: "#F4C430",
+    textColor: "#111111",
+    className: "label-pyuto"
+  },
 
-        }
+  nansui: {
+    name: "軟水",
+    color: "#3498DB",
+    textColor: "#FFFFFF",
+    className: "label-nansui"
+  }
+
+};
 
 
-        renderCalendar();
 
-      }
+/* =========================================
+   状態
+========================================= */
 
-      catch (error) {
+const enabledPerformers = new Set([
+  "maison",
+  "pyuto",
+  "nansui"
+]);
 
-        console.error(error);
 
-        document.getElementById(
-          "detail-list"
-        ).innerHTML = `
-          <div class="empty">
-            公演データの読み込みに失敗しました。
-          </div>
-        `;
+let allEvents = [];
 
-      }
+let calendar;
+
+
+
+/* =========================================
+   events.json取得
+========================================= */
+
+async function loadEvents() {
+
+  try {
+
+    const response = await fetch(
+      "events.json?t=" + Date.now()
+    );
+
+
+    if (!response.ok) {
+
+      throw new Error(
+        "events.jsonを取得できません"
+      );
 
     }
 
 
-    /* =====================================
-       FullCalendar用イベント作成
-    ===================================== */
-
-    function makeCalendarEvents() {
-
-      return allEvents
-
-        .filter(event => {
-
-          return enabledPerformers.has(
-            event.performerId
-          );
-
-        })
-
-        .filter(event => {
-
-          /*
-            旧芸人の情報がevents.jsonに
-            残っていても表示しない
-          */
-
-          return !!performerMap[
-            event.performerId
-          ];
-
-        })
-
-        .map(event => {
-
-          const performer =
-            performerMap[
-              event.performerId
-            ];
+    const data = await response.json();
 
 
-          let start = event.date;
+    if (Array.isArray(data)) {
 
+      allEvents = data;
 
-          if (event.startTime) {
+    } else {
 
-            start =
-              event.date +
-              "T" +
-              event.startTime;
-
-          }
-
-
-          return {
-
-            title:
-              performer.name +
-              "｜" +
-              (
-                event.title ||
-                "公演"
-              ),
-
-            start: start,
-
-            allDay:
-              !event.startTime,
-
-            backgroundColor:
-              performer.color,
-
-            borderColor:
-              performer.color,
-
-            textColor:
-              performer.textColor,
-
-            extendedProps: {
-              originalEvent: event
-            }
-
-          };
-
-        });
+      allEvents = data.events || [];
 
     }
 
 
-    /* =====================================
-       カレンダー描画
-    ===================================== */
+    if (data.syncedAt) {
 
-    function renderCalendar() {
-
-      const calendarElement =
-        document.getElementById(
-          "calendar"
-        );
-
-
-      if (calendar) {
-
-        calendar.destroy();
-
-      }
-
-
-      calendar = new FullCalendar.Calendar(
-        calendarElement,
-        {
-
-          locale: "ja",
-
-          initialView:
-            "dayGridMonth",
-
-          height: "auto",
-
-          firstDay: 1,
-
-          headerToolbar: {
-
-            left: "prev",
-
-            center: "title",
-
-            right: "next"
-
-          },
-
-          buttonText: {
-            today: "今日"
-          },
-
-          dayMaxEvents: 3,
-
-          events:
-            makeCalendarEvents(),
-
-          eventClick: function(info) {
-
-            const event =
-              info.event.extendedProps
-                .originalEvent;
-
-            showEventDetail(event);
-
-          },
-
-          dateClick: function(info) {
-
-            showDateEvents(
-              info.dateStr
-            );
-
-          }
-
-        }
+      const date = new Date(
+        data.syncedAt
       );
 
 
-      calendar.render();
+      document.getElementById(
+        "synced"
+      ).textContent =
+        "最終更新：" +
+        date.toLocaleString(
+          "ja-JP"
+        );
 
     }
 
 
-    /* =====================================
-       1公演の詳細
-    ===================================== */
+    renderCalendar();
 
-    function showEventDetail(event) {
+  }
+
+  catch(error) {
+
+    console.error(error);
+
+
+    document.getElementById(
+      "detail-list"
+    ).innerHTML = `
+
+      <div class="empty">
+
+        events.jsonを読み込めませんでした。
+
+      </div>
+
+    `;
+
+  }
+
+}
+
+
+
+/* =========================================
+   有効なイベント
+========================================= */
+
+function filteredEvents() {
+
+  return allEvents.filter(
+    event =>
+      enabledPerformers.has(
+        event.performerId
+      )
+      &&
+      performerMap[
+        event.performerId
+      ]
+  );
+
+}
+
+
+
+/* =========================================
+   カレンダー用データ
+========================================= */
+
+function makeCalendarEvents() {
+
+  return filteredEvents().map(
+    event => {
 
       const performer =
         performerMap[
@@ -598,322 +571,666 @@
         ];
 
 
-      if (!performer) {
-        return;
+      let start = event.date;
+
+
+      if (
+        event.startTime
+      ) {
+
+        start +=
+          "T" +
+          event.startTime;
+
       }
 
 
-      const titleElement =
-        document.getElementById(
-          "detail-title"
-        );
+      return {
 
+        title:
+          performer.name +
+          "｜" +
+          (
+            event.title ||
+            "公演"
+          ),
 
-      titleElement.textContent =
-        event.date +
-        " の公演";
+        start: start,
 
+        allDay:
+          !event.startTime,
 
-      document.getElementById(
-        "detail-list"
-      ).innerHTML =
-        createEventCard(
-          event,
-          performer
-        );
+        backgroundColor:
+          performer.color,
+
+        borderColor:
+          performer.color,
+
+        textColor:
+          performer.textColor,
+
+        extendedProps: {
+          originalEvent:
+            event
+        }
+
+      };
 
     }
+  );
+
+}
 
 
-    /* =====================================
-       日付を押したとき
-    ===================================== */
 
-    function showDateEvents(date) {
+/* =========================================
+   カレンダー
+========================================= */
 
-      const events = allEvents.filter(
-        event => {
+function renderCalendar() {
 
-          return (
-            event.date === date &&
-            enabledPerformers.has(
-              event.performerId
-            ) &&
-            performerMap[
-              event.performerId
-            ]
+  const element =
+    document.getElementById(
+      "calendar"
+    );
+
+
+  if (calendar) {
+
+    calendar.destroy();
+
+  }
+
+
+  calendar =
+    new FullCalendar.Calendar(
+      element,
+      {
+
+        locale: "ja",
+
+        initialView:
+          "dayGridMonth",
+
+        height:
+          "auto",
+
+        firstDay:
+          1,
+
+
+        headerToolbar: {
+
+          left:
+            "prev",
+
+          center:
+            "title",
+
+          right:
+            "next"
+
+        },
+
+
+        dayMaxEvents:
+          4,
+
+
+        events:
+          makeCalendarEvents(),
+
+
+        eventClick(info) {
+
+          const event =
+            info.event
+              .extendedProps
+              .originalEvent;
+
+
+          showDateEvents(
+            event.date
           );
+
+        },
+
+
+        dateClick(info) {
+
+          showDateEvents(
+            info.dateStr
+          );
+
+        }
+
+      }
+    );
+
+
+  calendar.render();
+
+}
+
+
+
+/* =========================================
+   同じライブをまとめる
+========================================= */
+
+function groupEvents(events) {
+
+  const groups = {};
+
+
+  events.forEach(
+    event => {
+
+      const key = [
+
+        event.date || "",
+
+        event.startTime || "",
+
+        event.title || "",
+
+        event.venue || ""
+
+      ].join("|");
+
+
+      if (!groups[key]) {
+
+        groups[key] = {
+
+          date:
+            event.date || "",
+
+          startTime:
+            event.startTime || "",
+
+          title:
+            event.title || "",
+
+          venue:
+            event.venue || "",
+
+          performers:
+            [],
+
+          sources:
+            [],
+
+          urls:
+            []
+
+        };
+
+      }
+
+
+      const performerId =
+        event.performerId;
+
+
+      if (
+        performerId
+        &&
+        !groups[key]
+          .performers
+          .includes(
+            performerId
+          )
+      ) {
+
+        groups[key]
+          .performers
+          .push(
+            performerId
+          );
+
+      }
+
+
+      const source =
+        event.source || "";
+
+
+      if (
+        source
+        &&
+        !groups[key]
+          .sources
+          .includes(
+            source
+          )
+      ) {
+
+        groups[key]
+          .sources
+          .push(
+            source
+          );
+
+      }
+
+
+      const url =
+        event.sourceUrl
+        ||
+        event.url
+        ||
+        "";
+
+
+      if (
+        url
+        &&
+        !groups[key]
+          .urls
+          .includes(
+            url
+          )
+      ) {
+
+        groups[key]
+          .urls
+          .push(
+            url
+          );
+
+      }
+
+    }
+  );
+
+
+  return Object.values(
+    groups
+  );
+
+}
+
+
+
+/* =========================================
+   日付詳細
+========================================= */
+
+function showDateEvents(date) {
+
+  const events =
+    filteredEvents()
+      .filter(
+        event =>
+          event.date === date
+      );
+
+
+  const grouped =
+    groupEvents(
+      events
+    );
+
+
+  grouped.sort(
+    (a, b) =>
+      (
+        a.startTime || ""
+      ).localeCompare(
+        b.startTime || ""
+      )
+  );
+
+
+  document.getElementById(
+    "detail-title"
+  ).textContent =
+    formatDate(date) +
+    " の公演";
+
+
+  if (
+    grouped.length === 0
+  ) {
+
+    document.getElementById(
+      "detail-list"
+    ).innerHTML = `
+
+      <div class="empty">
+
+        この日の公演はありません。
+
+      </div>
+
+    `;
+
+    return;
+
+  }
+
+
+  document.getElementById(
+    "detail-list"
+  ).innerHTML =
+    grouped
+      .map(
+        createEventCard
+      )
+      .join("");
+
+}
+
+
+
+/* =========================================
+   公演カード
+========================================= */
+
+function createEventCard(event) {
+
+  const performerLabels =
+    event.performers
+      .map(
+        id => {
+
+          const performer =
+            performerMap[id];
+
+
+          if (!performer) {
+            return "";
+          }
+
+
+          return `
+
+            <span
+              class="
+                performer-label
+                ${performer.className}
+              "
+            >
+
+              ${escapeHtml(
+                performer.name
+              )}
+
+            </span>
+
+          `;
+
+        }
+      )
+      .join("");
+
+
+  const sourceText =
+    event.sources
+      .map(
+        source =>
+          source.toUpperCase()
+      )
+      .join(" / ");
+
+
+  let link = "";
+
+
+  if (
+    event.urls.length > 0
+  ) {
+
+    link = `
+
+      <a
+        class="event-link"
+        href="${escapeHtml(
+          event.urls[0]
+        )}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        チケット・詳細を見る →
+
+      </a>
+
+    `;
+
+  }
+
+
+  return `
+
+    <div class="event-card">
+
+
+      <div class="performer-row">
+
+        ${performerLabels}
+
+      </div>
+
+
+      <div class="event-title">
+
+        ${escapeHtml(
+          event.title
+          ||
+          "公演名不明"
+        )}
+
+      </div>
+
+
+      <div class="event-info">
+
+
+        ${
+          event.startTime
+          ?
+          `
+          <div>
+            ⏰ 開演
+            ${escapeHtml(
+              event.startTime
+            )}
+          </div>
+          `
+          :
+          ""
+        }
+
+
+        ${
+          event.venue
+          ?
+          `
+          <div>
+            📍
+            ${escapeHtml(
+              event.venue
+            )}
+          </div>
+          `
+          :
+          ""
+        }
+
+
+        ${
+          sourceText
+          ?
+          `
+          <div>
+            <span
+              class="source-badge"
+            >
+              ${escapeHtml(
+                sourceText
+              )}
+            </span>
+          </div>
+          `
+          :
+          ""
+        }
+
+
+      </div>
+
+
+      ${link}
+
+
+    </div>
+
+  `;
+
+}
+
+
+
+/* =========================================
+   芸人ON/OFF
+========================================= */
+
+document
+  .querySelectorAll(
+    ".filter-button"
+  )
+  .forEach(
+    button => {
+
+      button.addEventListener(
+        "click",
+        () => {
+
+          const id =
+            button.dataset
+              .performer;
+
+
+          if (
+            enabledPerformers.has(
+              id
+            )
+          ) {
+
+            enabledPerformers.delete(
+              id
+            );
+
+            button
+              .classList
+              .add(
+                "off"
+              );
+
+          }
+
+          else {
+
+            enabledPerformers.add(
+              id
+            );
+
+            button
+              .classList
+              .remove(
+                "off"
+              );
+
+          }
+
+
+          renderCalendar();
 
         }
       );
 
-
-      document.getElementById(
-        "detail-title"
-      ).textContent =
-        date +
-        " の公演";
-
-
-      if (events.length === 0) {
-
-        document.getElementById(
-          "detail-list"
-        ).innerHTML = `
-          <div class="empty">
-            この日の公演はありません。
-          </div>
-        `;
-
-        return;
-
-      }
-
-
-      events.sort((a, b) => {
-
-        return (
-          a.startTime || ""
-        ).localeCompare(
-          b.startTime || ""
-        );
-
-      });
-
-
-      document.getElementById(
-        "detail-list"
-      ).innerHTML =
-        events
-          .map(event => {
-
-            const performer =
-              performerMap[
-                event.performerId
-              ];
-
-            return createEventCard(
-              event,
-              performer
-            );
-
-          })
-          .join("");
-
     }
+  );
 
 
-    /* =====================================
-       公演カード
-    ===================================== */
 
-    function createEventCard(
-      event,
-      performer
-    ) {
+/* =========================================
+   日付表示
+========================================= */
 
-      const time =
-        event.startTime
-          ? `⏰ ${escapeHtml(
-              event.startTime
-            )}`
-          : "";
+function formatDate(dateString) {
+
+  const date = new Date(
+    dateString +
+    "T00:00:00"
+  );
 
 
-      const venue =
-        event.venue
-          ? `📍 ${escapeHtml(
-              event.venue
-            )}`
-          : "";
+  return (
+    (date.getMonth() + 1)
+    +
+    "月"
+    +
+    date.getDate()
+    +
+    "日"
+  );
+
+}
 
 
-      const source =
-        event.source
-          ? `掲載元：${escapeHtml(
-              event.source.toUpperCase()
-            )}`
-          : "";
+
+/* =========================================
+   HTML安全化
+========================================= */
+
+function escapeHtml(value) {
+
+  return String(
+    value ?? ""
+  )
+
+    .replaceAll(
+      "&",
+      "&amp;"
+    )
+
+    .replaceAll(
+      "<",
+      "&lt;"
+    )
+
+    .replaceAll(
+      ">",
+      "&gt;"
+    )
+
+    .replaceAll(
+      '"',
+      "&quot;"
+    )
+
+    .replaceAll(
+      "'",
+      "&#039;"
+    );
+
+}
 
 
-      const url =
-        event.sourceUrl ||
-        event.url ||
-        "";
+
+/* =========================================
+   開始
+========================================= */
+
+loadEvents();
 
 
-      const link = url
-        ? `
-          <a
-            class="event-link"
-            href="${escapeAttribute(url)}"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            チケットページを見る →
-          </a>
-        `
-        : "";
+</script>
 
-
-      return `
-
-        <div
-          class="event-card"
-          style="
-            border-left-color:
-            ${performer.color};
-          "
-        >
-
-          <div
-            class="event-performer"
-            style="
-              color:
-              ${performer.color};
-            "
-          >
-            ${escapeHtml(
-              performer.name
-            )}
-          </div>
-
-          <div class="event-name">
-            ${escapeHtml(
-              event.title ||
-              "公演名不明"
-            )}
-          </div>
-
-          <div class="event-info">
-
-            ${
-              time
-                ? `<div>${time}</div>`
-                : ""
-            }
-
-            ${
-              venue
-                ? `<div>${venue}</div>`
-                : ""
-            }
-
-            ${
-              source
-                ? `<div>${source}</div>`
-                : ""
-            }
-
-          </div>
-
-          ${link}
-
-        </div>
-
-      `;
-
-    }
-
-
-    /* =====================================
-       フィルターボタン
-    ===================================== */
-
-    document
-      .querySelectorAll(
-        ".performer-button"
-      )
-      .forEach(button => {
-
-        button.addEventListener(
-          "click",
-          () => {
-
-            const id =
-              button.dataset.id;
-
-
-            if (
-              enabledPerformers.has(id)
-            ) {
-
-              enabledPerformers.delete(
-                id
-              );
-
-              button.classList.add(
-                "off"
-              );
-
-            }
-
-            else {
-
-              enabledPerformers.add(
-                id
-              );
-
-              button.classList.remove(
-                "off"
-              );
-
-            }
-
-
-            renderCalendar();
-
-          }
-        );
-
-      });
-
-
-    /* =====================================
-       HTML安全化
-    ===================================== */
-
-    function escapeHtml(value) {
-
-      return String(value ?? "")
-        .replaceAll(
-          "&",
-          "&amp;"
-        )
-        .replaceAll(
-          "<",
-          "&lt;"
-        )
-        .replaceAll(
-          ">",
-          "&gt;"
-        )
-        .replaceAll(
-          '"',
-          "&quot;"
-        )
-        .replaceAll(
-          "'",
-          "&#039;"
-        );
-
-    }
-
-
-    function escapeAttribute(value) {
-
-      return escapeHtml(value);
-
-    }
-
-
-    /* =====================================
-       開始
-    ===================================== */
-
-    loadData();
-
-  </script>
 
 </body>
+
 </html>
