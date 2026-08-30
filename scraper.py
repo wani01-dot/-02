@@ -15,6 +15,7 @@ from bs4 import BeautifulSoup
 PERFORMERS_FILE = "performers.json"
 EVENTS_FILE = "events.json"
 NEW_EVENTS_FILE = "new_events.json"
+NOTIFIED_FILE = "notified_events.json"
 
 FANY_SEARCH_URL = "https://ticket.fany.lol/search/event"
 FANY_BASE = "https://ticket.fany.lol"
@@ -22,9 +23,7 @@ FANY_BASE = "https://ticket.fany.lol"
 TIGET_SEARCH_URL = "https://tiget.net/events"
 TIGET_BASE = "https://tiget.net"
 
-JST = timezone(
-    timedelta(hours=9)
-)
+JST = timezone(timedelta(hours=9))
 
 FUTURE_DAYS = 365
 FANY_PAGE_LIMIT = 10
@@ -47,26 +46,14 @@ HEADERS = {
 
 def load_json(path, default):
     try:
-        with open(
-            path,
-            "r",
-            encoding="utf-8"
-        ) as f:
+        with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
-
-    except (
-        FileNotFoundError,
-        json.JSONDecodeError
-    ):
+    except (FileNotFoundError, json.JSONDecodeError):
         return default
 
 
 def save_json(path, data):
-    with open(
-        path,
-        "w",
-        encoding="utf-8"
-    ) as f:
+    with open(path, "w", encoding="utf-8") as f:
         json.dump(
             data,
             f,
@@ -88,9 +75,7 @@ def clean(text):
 
 
 def normalize_title(text):
-    text = clean(
-        text
-    ).lower()
+    text = clean(text).lower()
 
     for char in [
         " ",
@@ -108,11 +93,10 @@ def normalize_title(text):
         "?",
         "：",
         ":",
+        "〜",
+        "～",
     ]:
-        text = text.replace(
-            char,
-            ""
-        )
+        text = text.replace(char, "")
 
     return text
 
@@ -126,11 +110,7 @@ def normalize_venue(text):
     )
 
 
-def make_date(
-    year,
-    month,
-    day
-):
+def make_date(year, month, day):
     return (
         f"{int(year):04d}-"
         f"{int(month):02d}-"
@@ -139,31 +119,103 @@ def make_date(
 
 
 def today_jst():
-    return datetime.now(
-        JST
-    ).date()
+    return datetime.now(JST).date()
 
 
-def is_today_or_future(
-    date_string
-):
+def is_today_or_future(date_string):
     try:
         event_date = datetime.strptime(
             date_string,
             "%Y-%m-%d"
         ).date()
 
-        return (
-            event_date
-            >= today_jst()
-        )
+        return event_date >= today_jst()
 
     except ValueError:
         return False
 
 
 # =========================================================
-# FANY用日付
+# 通知済み判定キー
+# =========================================================
+
+def stable_notification_key(event):
+    """
+    LINE再通知防止用の安定キー。
+
+    FANY/TIGETでURLやタイトル表記が変わっても、
+    同じ芸人・日付・時間・会場なら同じ公演として扱う。
+    """
+
+    performer_id = event.get(
+        "performerId",
+        ""
+    )
+
+    event_date = event.get(
+        "date",
+        ""
+    )
+
+    start_time = event.get(
+        "startTime",
+        ""
+    )
+
+    venue = normalize_venue(
+        event.get(
+            "venue",
+            ""
+        )
+    )
+
+    return "|".join([
+        performer_id,
+        event_date,
+        start_time,
+        venue,
+    ])
+
+
+def loose_notification_key(event):
+    """
+    時刻変更にも強くする保険キー。
+    """
+
+    performer_id = event.get(
+        "performerId",
+        ""
+    )
+
+    event_date = event.get(
+        "date",
+        ""
+    )
+
+    venue = normalize_venue(
+        event.get(
+            "venue",
+            ""
+        )
+    )
+
+    title = normalize_title(
+        event.get(
+            "title",
+            ""
+        )
+    )
+
+    return "|".join([
+        performer_id,
+        event_date,
+        venue,
+        title,
+    ])
+
+
+# =========================================================
+# FANY日付
 # =========================================================
 
 WEEKDAYS_JA = [
@@ -183,9 +235,7 @@ def fany_date_string(value):
     ]
 
     return (
-        value.strftime(
-            "%Y/%m/%d"
-        )
+        value.strftime("%Y/%m/%d")
         + f"({weekday})"
     )
 
@@ -195,25 +245,18 @@ def build_month_ranges():
 
     final_date = (
         start
-        + timedelta(
-            days=FUTURE_DAYS
-        )
+        + timedelta(days=FUTURE_DAYS)
     )
 
     ranges = []
 
     current = start
 
-    while (
-        current
-        <= final_date
-    ):
-        last_day = (
-            calendar.monthrange(
-                current.year,
-                current.month
-            )[1]
-        )
+    while current <= final_date:
+        last_day = calendar.monthrange(
+            current.year,
+            current.month
+        )[1]
 
         month_end = date(
             current.year,
@@ -221,13 +264,8 @@ def build_month_ranges():
             last_day
         )
 
-        if (
-            month_end
-            > final_date
-        ):
-            month_end = (
-                final_date
-            )
+        if month_end > final_date:
+            month_end = final_date
 
         ranges.append(
             (
@@ -238,9 +276,7 @@ def build_month_ranges():
 
         current = (
             month_end
-            + timedelta(
-                days=1
-            )
+            + timedelta(days=1)
         )
 
     return ranges
@@ -322,29 +358,6 @@ def identity_key(event):
     ])
 
 
-def fany_loose_key(event):
-    return "|".join([
-        event.get(
-            "performerId",
-            ""
-        ),
-        event.get(
-            "date",
-            ""
-        ),
-        event.get(
-            "startTime",
-            ""
-        ),
-        normalize_venue(
-            event.get(
-                "venue",
-                ""
-            )
-        ),
-    ])
-
-
 def calendar_key(event):
     return "|".join([
         event.get(
@@ -382,10 +395,6 @@ FANY_START_RE = re.compile(
     r"開演\s*(\d{1,2}:\d{2})"
 )
 
-FANY_RECEPTION_RE = re.compile(
-    r"/reception/\d+/\d+"
-)
-
 
 def is_sales_line(line):
     words = [
@@ -419,14 +428,10 @@ def html_to_lines(html):
         "\n"
     ).splitlines():
 
-        line = clean(
-            raw
-        )
+        line = clean(raw)
 
         if line:
-            lines.append(
-                line
-            )
+            lines.append(line)
 
     return lines
 
@@ -473,19 +478,13 @@ def parse_fany_text_events(
     ):
         if (
             number + 1
-            < len(
-                event_indexes
-            )
+            < len(event_indexes)
         ):
-            end_index = (
-                event_indexes[
-                    number + 1
-                ]
-            )
+            end_index = event_indexes[
+                number + 1
+            ]
         else:
-            end_index = len(
-                lines
-            )
+            end_index = len(lines)
 
         block = lines[
             start_index:end_index
@@ -494,7 +493,6 @@ def parse_fany_text_events(
         if not block:
             continue
 
-        # 日付
         date_match = FANY_DATE_RE.match(
             block[0]
         )
@@ -517,7 +515,6 @@ def parse_fany_text_events(
         ):
             continue
 
-        # 出演者
         performer_text = ""
 
         try:
@@ -554,25 +551,17 @@ def parse_fany_text_events(
         ):
             continue
 
-        # 開演
         start_time = ""
 
-        for line in block[
-            :12
-        ]:
-            match = (
-                FANY_START_RE.search(
-                    line
-                )
+        for line in block[:12]:
+            match = FANY_START_RE.search(
+                line
             )
 
             if match:
-                start_time = (
-                    match.group(1)
-                )
+                start_time = match.group(1)
                 break
 
-        # 会場
         venue = ""
         venue_index = None
 
@@ -587,7 +576,6 @@ def parse_fany_text_events(
                 venue_index = index
                 break
 
-        # タイトル
         title = ""
 
         if (
@@ -613,45 +601,7 @@ def parse_fany_text_events(
                 title = candidate
 
         if not title:
-            noise = {
-                "日",
-                "月",
-                "火",
-                "水",
-                "木",
-                "金",
-                "土",
-                ")",
-                "出演",
-            }
-
-            for line in block[
-                1:12
-            ]:
-                if line in noise:
-                    continue
-
-                if line == venue:
-                    continue
-
-                if (
-                    "開場" in line
-                    or "開演" in line
-                ):
-                    continue
-
-                if is_sales_line(
-                    line
-                ):
-                    continue
-
-                title = line
-                break
-
-        if not title:
-            title = (
-                "公演名不明"
-            )
+            title = "公演名不明"
 
         events.append({
             "performerId":
@@ -678,331 +628,6 @@ def parse_fany_text_events(
 
     return events
 
-
-# =========================================================
-# FANY受付URL
-# =========================================================
-
-def find_reception_candidates(html):
-    soup = BeautifulSoup(
-        html,
-        "html.parser"
-    )
-
-    result = []
-    seen = set()
-
-    for link in soup.find_all(
-        "a",
-        href=True
-    ):
-        href = link.get(
-            "href",
-            ""
-        )
-
-        if not FANY_RECEPTION_RE.search(
-            href
-        ):
-            continue
-
-        url = urljoin(
-            FANY_BASE,
-            href
-        )
-
-        if url in seen:
-            continue
-
-        seen.add(
-            url
-        )
-
-        link_text = clean(
-            link.get_text(
-                " ",
-                strip=True
-            )
-        )
-
-        container = link
-        selected_lines = []
-
-        for _ in range(10):
-            if not container:
-                break
-
-            container = (
-                container.parent
-            )
-
-            if not container:
-                break
-
-            lines = []
-
-            for raw in container.get_text(
-                "\n"
-            ).splitlines():
-
-                text = clean(
-                    raw
-                )
-
-                if text:
-                    lines.append(
-                        text
-                    )
-
-            date_count = sum(
-                1
-                for line in lines
-                if FANY_DATE_RE.match(
-                    line
-                )
-            )
-
-            if (
-                date_count == 1
-                and "出演" in lines
-            ):
-                selected_lines = (
-                    lines
-                )
-                break
-
-        if not selected_lines:
-            continue
-
-        result.append({
-            "url":
-                url,
-
-            "linkText":
-                link_text,
-
-            "lines":
-                selected_lines,
-        })
-
-    return result
-
-
-def reception_candidate_info(
-    candidate
-):
-    lines = candidate[
-        "lines"
-    ]
-
-    date_value = ""
-    start_time = ""
-    title = ""
-    venue = ""
-
-    venue_index = None
-
-    for line in lines:
-        match = FANY_DATE_RE.match(
-            line
-        )
-
-        if match:
-            year, month, day = (
-                match.groups()
-            )
-
-            date_value = make_date(
-                year,
-                month,
-                day
-            )
-
-            break
-
-    for line in lines:
-        match = FANY_START_RE.search(
-            line
-        )
-
-        if match:
-            start_time = (
-                match.group(1)
-            )
-            break
-
-    for index, line in enumerate(
-        lines
-    ):
-        if re.search(
-            r"（[^）]*(?:都|道|府|県)）$",
-            line
-        ):
-            venue = line
-            venue_index = index
-            break
-
-    if (
-        venue_index is not None
-        and venue_index > 0
-    ):
-        candidate_title = clean(
-            lines[
-                venue_index - 1
-            ]
-        )
-
-        if (
-            candidate_title
-            and candidate_title != ")"
-            and "開演"
-                not in candidate_title
-            and "開場"
-                not in candidate_title
-        ):
-            title = (
-                candidate_title
-            )
-
-    return {
-        "date":
-            date_value,
-
-        "startTime":
-            start_time,
-
-        "title":
-            title,
-
-        "venue":
-            venue,
-
-        "url":
-            candidate[
-                "url"
-            ],
-
-        "linkText":
-            candidate.get(
-                "linkText",
-                ""
-            ),
-    }
-
-
-def attach_fany_reception_urls(
-    events,
-    html
-):
-    candidates = find_reception_candidates(
-        html
-    )
-
-    infos = [
-        reception_candidate_info(
-            candidate
-        )
-        for candidate
-        in candidates
-    ]
-
-    success = 0
-
-    for event in events:
-        best = None
-        best_score = -1
-
-        for info in infos:
-            if (
-                info["date"]
-                != event.get(
-                    "date",
-                    ""
-                )
-            ):
-                continue
-
-            score = 5
-
-            if (
-                info["startTime"]
-                and
-                info["startTime"]
-                ==
-                event.get(
-                    "startTime",
-                    ""
-                )
-            ):
-                score += 5
-
-            if (
-                normalize_venue(
-                    info["venue"]
-                )
-                and
-                normalize_venue(
-                    info["venue"]
-                )
-                ==
-                normalize_venue(
-                    event.get(
-                        "venue",
-                        ""
-                    )
-                )
-            ):
-                score += 4
-
-            if (
-                normalize_title(
-                    info["title"]
-                )
-                and
-                normalize_title(
-                    info["title"]
-                )
-                ==
-                normalize_title(
-                    event.get(
-                        "title",
-                        ""
-                    )
-                )
-            ):
-                score += 5
-
-            if (
-                "一般発売"
-                in info.get(
-                    "linkText",
-                    ""
-                )
-            ):
-                score += 1
-
-            if score > best_score:
-                best_score = score
-                best = info
-
-        if (
-            best
-            and best_score >= 9
-        ):
-            event[
-                "sourceUrl"
-            ] = best[
-                "url"
-            ]
-
-            success += 1
-
-    return success
-
-
-# =========================================================
-# FANY検索
-# =========================================================
 
 def request_fany_range(
     session,
@@ -1053,10 +678,8 @@ def request_fany_range(
 
     response.raise_for_status()
 
-    html = response.text
-
     lines = html_to_lines(
-        html
+        response.text
     )
 
     block_count = (
@@ -1065,25 +688,15 @@ def request_fany_range(
         )
     )
 
-    events = (
-        parse_fany_text_events(
-            lines,
-            performer,
-            search_url
-        )
-    )
-
-    reception_success = (
-        attach_fany_reception_urls(
-            events,
-            html
-        )
+    events = parse_fany_text_events(
+        lines,
+        performer,
+        search_url
     )
 
     return (
         block_count,
-        events,
-        reception_success
+        events
     )
 
 
@@ -1094,15 +707,12 @@ def scrape_fany_range(
     end_date,
     depth=0
 ):
-    indent = (
-        "  " * depth
-    )
+    indent = "  " * depth
 
     try:
         (
             block_count,
-            events,
-            reception_success
+            events
         ) = request_fany_range(
             session,
             performer,
@@ -1130,16 +740,8 @@ def scrape_fany_range(
         + str(end_date)
         + " 表示="
         + str(block_count)
-        + "件"
-        + " / 対象="
-        + str(
-            len(events)
-        )
-        + "件"
-        + " / 個別URL="
-        + str(
-            reception_success
-        )
+        + "件 / 対象="
+        + str(len(events))
         + "件"
     )
 
@@ -1169,9 +771,7 @@ def scrape_fany_range(
 
     right_start = (
         middle
-        + timedelta(
-            days=1
-        )
+        + timedelta(days=1)
     )
 
     left = scrape_fany_range(
@@ -1231,39 +831,11 @@ def scrape_fany(
     unique = {}
 
     for event in all_events:
-        key = identity_key(
-            event
-        )
-
-        if key in unique:
-            current = unique[
-                key
-            ]
-
-            current_url = current.get(
-                "sourceUrl",
-                ""
+        unique[
+            identity_key(
+                event
             )
-
-            new_url = event.get(
-                "sourceUrl",
-                ""
-            )
-
-            if (
-                "/reception/"
-                not in current_url
-                and "/reception/"
-                in new_url
-            ):
-                unique[
-                    key
-                ] = event
-
-        else:
-            unique[
-                key
-            ] = event
+        ] = event
 
     result = list(
         unique.values()
@@ -1358,19 +930,11 @@ def clean_tiget_title(
     )
 
 
-# =========================================================
-# TIGET タイトル候補
-# =========================================================
-
 def get_tiget_title_from_detail(
     detail_soup,
     lines,
     search_title
 ):
-    # -------------------------------------
-    # 1. og:title
-    # -------------------------------------
-
     og_title = detail_soup.find(
         "meta",
         attrs={
@@ -1395,39 +959,6 @@ def get_tiget_title_from_detail(
             candidate
         ):
             return candidate
-
-    # -------------------------------------
-    # 2. twitter:title
-    # -------------------------------------
-
-    twitter_title = detail_soup.find(
-        "meta",
-        attrs={
-            "name":
-                "twitter:title"
-        }
-    )
-
-    if (
-        twitter_title
-        and twitter_title.get(
-            "content"
-        )
-    ):
-        candidate = clean_tiget_title(
-            twitter_title.get(
-                "content"
-            )
-        )
-
-        if not is_bad_tiget_title(
-            candidate
-        ):
-            return candidate
-
-    # -------------------------------------
-    # 3. h1 / h2 / h3
-    # -------------------------------------
 
     for tag_name in [
         "h1",
@@ -1461,88 +992,10 @@ def get_tiget_title_from_detail(
             ]:
                 continue
 
-            if len(
-                candidate
-            ) < 3:
+            if len(candidate) < 3:
                 continue
 
             return candidate
-
-    # -------------------------------------
-    # 4. 本文中の開催日より前
-    # -------------------------------------
-
-    stop_index = len(
-        lines
-    )
-
-    for marker in [
-        "出演者",
-        "開催日",
-        "会場",
-    ]:
-        try:
-            index = lines.index(
-                marker
-            )
-
-            stop_index = min(
-                stop_index,
-                index
-            )
-
-        except ValueError:
-            pass
-
-    for line in lines[
-        :stop_index
-    ]:
-        candidate = clean_tiget_title(
-            line
-        )
-
-        if not candidate:
-            continue
-
-        if is_bad_tiget_title(
-            candidate
-        ):
-            continue
-
-        if re.search(
-            r"20\d{2}[年/\-]"
-            r"\d{1,2}[月/\-]"
-            r"\d{1,2}",
-            candidate
-        ):
-            continue
-
-        if re.search(
-            r"開場|開演|前売|当日|料金|受付",
-            candidate
-        ):
-            continue
-
-        if candidate in [
-            "TIGET",
-            "チケット",
-            "イベント",
-            "ログイン",
-            "新規登録",
-            "ホーム",
-        ]:
-            continue
-
-        if len(
-            candidate
-        ) < 3:
-            continue
-
-        return candidate
-
-    # -------------------------------------
-    # 5. 検索結果
-    # -------------------------------------
 
     candidate = clean_tiget_title(
         search_title
@@ -1550,32 +1003,11 @@ def get_tiget_title_from_detail(
 
     if (
         candidate
-        and
-        not is_bad_tiget_title(
+        and not is_bad_tiget_title(
             candidate
         )
-        and len(
-            candidate
-        ) >= 3
     ):
         return candidate
-
-    # -------------------------------------
-    # 6. HTML title
-    # -------------------------------------
-
-    if detail_soup.title:
-        candidate = clean_tiget_title(
-            detail_soup.title.get_text()
-        )
-
-        if (
-            candidate
-            and not is_bad_tiget_title(
-                candidate
-            )
-        ):
-            return candidate
 
     return "公演名不明"
 
@@ -1630,10 +1062,6 @@ def scrape_tiget(
 
     event_map = {}
 
-    # =====================================================
-    # TIGET検索結果からURLとタイトル候補を回収
-    # =====================================================
-
     for link in soup.find_all(
         "a",
         href=True
@@ -1665,9 +1093,7 @@ def scrape_tiget(
         )
 
         if (
-            len(
-                search_title
-            ) < 3
+            len(search_title) < 3
             or is_bad_tiget_title(
                 search_title
             )
@@ -1678,27 +1104,6 @@ def scrape_tiget(
             event_map[
                 event_url
             ] = search_title
-
-        else:
-            old = event_map[
-                event_url
-            ]
-
-            if (
-                not old
-                and search_title
-            ):
-                event_map[
-                    event_url
-                ] = search_title
-
-    print(
-        "TIGET候補: "
-        + str(
-            len(event_map)
-        )
-        + "件"
-    )
 
     events = []
 
@@ -1717,13 +1122,7 @@ def scrape_tiget(
 
             detail.raise_for_status()
 
-        except Exception as error:
-            print(
-                "TIGET詳細取得失敗: "
-                + event_url
-                + " "
-                + str(error)
-            )
+        except Exception:
             continue
 
         detail_soup = BeautifulSoup(
@@ -1750,52 +1149,11 @@ def scrape_tiget(
             lines
         )
 
-        # ----------------------------------
-        # 出演者
-        # ----------------------------------
-
-        performer_section = ""
-
-        try:
-            performer_index = lines.index(
-                "出演者"
-            )
-
-            parts = []
-
-            for line in lines[
-                performer_index + 1:
-            ]:
-                if line in [
-                    "開催日",
-                    "会場",
-                    "主催または登録者",
-                    "イベントのお問い合わせ",
-                ]:
-                    break
-
-                parts.append(
-                    line
-                )
-
-            performer_section = " ".join(
-                parts
-            )
-
-        except ValueError:
-            performer_section = (
-                whole_text
-            )
-
         if (
             performer_name
-            not in performer_section
+            not in whole_text
         ):
             continue
-
-        # ----------------------------------
-        # タイトル
-        # ----------------------------------
 
         title = (
             get_tiget_title_from_detail(
@@ -1805,29 +1163,12 @@ def scrape_tiget(
             )
         )
 
-        # ----------------------------------
-        # 日付
-        # ----------------------------------
-
-        date_text = get_next_value(
-            lines,
-            "開催日"
-        )
-
         date_match = re.search(
             r"(20\d{2})年"
             r"(\d{1,2})月"
             r"(\d{1,2})日",
-            date_text
+            whole_text
         )
-
-        if not date_match:
-            date_match = re.search(
-                r"(20\d{2})年"
-                r"(\d{1,2})月"
-                r"(\d{1,2})日",
-                whole_text
-            )
 
         if not date_match:
             continue
@@ -1847,10 +1188,6 @@ def scrape_tiget(
         ):
             continue
 
-        # ----------------------------------
-        # 開演
-        # ----------------------------------
-
         start_time = ""
 
         time_match = re.search(
@@ -1863,10 +1200,6 @@ def scrape_tiget(
             start_time = (
                 time_match.group(1)
             )
-
-        # ----------------------------------
-        # 会場
-        # ----------------------------------
 
         venue = clean(
             get_next_value(
@@ -1897,15 +1230,6 @@ def scrape_tiget(
             "sourceUrl":
                 event_url,
         })
-
-        print(
-            "TIGET取得: "
-            + event_date
-            + " "
-            + start_time
-            + " / "
-            + title
-        )
 
     print(
         "TIGET "
@@ -2015,14 +1339,7 @@ def main():
     )
 
     print(
-        "FANY＋TIGET タイトル改善版"
-    )
-
-    print(
-        "今日(JST): "
-        + str(
-            today_jst()
-        )
+        "再通知防止版"
     )
 
     print(
@@ -2042,93 +1359,35 @@ def main():
     )
 
     if not performers:
-        print(
-            "performers.jsonに"
-            "芸人がありません"
-        )
-
         save_json(
             NEW_EVENTS_FILE,
             []
         )
-
         return
 
-    old_data = load_json(
-        EVENTS_FILE,
+    notified_data = load_json(
+        NOTIFIED_FILE,
         {
-            "events": []
+            "stableKeys": [],
+            "looseKeys": [],
         }
     )
 
-    if isinstance(
-        old_data,
-        list
-    ):
-        old_events = (
-            old_data
-        )
-    else:
-        old_events = old_data.get(
-            "events",
+    notified_stable = set(
+        notified_data.get(
+            "stableKeys",
             []
         )
-
-    old_events = [
-        event
-        for event in old_events
-        if is_today_or_future(
-            event.get(
-                "date",
-                ""
-            )
-        )
-    ]
-
-    old_identity_keys = {
-        identity_key(
-            event
-        )
-        for event in old_events
-    }
-
-    old_fany_loose_keys = {
-        fany_loose_key(
-            event
-        )
-        for event in old_events
-        if (
-            event.get(
-                "source"
-            ) == "fany"
-        )
-    }
-
-    old_tiget_urls = {
-        (
-            event.get(
-                "performerId",
-                ""
-            ),
-            event.get(
-                "sourceUrl",
-                ""
-            )
-        )
-        for event in old_events
-        if (
-            event.get(
-                "source"
-            ) == "tiget"
-            and event.get(
-                "sourceUrl"
-            )
-        )
-    }
-
-    session = (
-        requests.Session()
     )
+
+    notified_loose = set(
+        notified_data.get(
+            "looseKeys",
+            []
+        )
+    )
+
+    session = requests.Session()
 
     session.headers.update(
         HEADERS
@@ -2137,34 +1396,13 @@ def main():
     all_events = []
 
     for performer in performers:
-        performer_id = performer.get(
-            "id",
-            ""
-        )
-
         performer_name = performer.get(
             "name",
             ""
         )
 
-        if (
-            not performer_id
-            or not performer_name
-        ):
+        if not performer_name:
             continue
-
-        print("")
-        print(
-            "################################"
-        )
-
-        print(
-            performer_name
-        )
-
-        print(
-            "################################"
-        )
 
         sources = performer.get(
             "sources",
@@ -2176,36 +1414,30 @@ def main():
 
         if "fany" in sources:
             try:
-                events = scrape_fany(
-                    session,
-                    performer
-                )
-
                 all_events.extend(
-                    events
+                    scrape_fany(
+                        session,
+                        performer
+                    )
                 )
-
             except Exception as error:
                 print(
-                    "FANYエラー: "
-                    + str(error)
+                    "FANYエラー:",
+                    error
                 )
 
         if "tiget" in sources:
             try:
-                events = scrape_tiget(
-                    session,
-                    performer
-                )
-
                 all_events.extend(
-                    events
+                    scrape_tiget(
+                        session,
+                        performer
+                    )
                 )
-
             except Exception as error:
                 print(
-                    "TIGETエラー: "
-                    + str(error)
+                    "TIGETエラー:",
+                    error
                 )
 
     all_events = [
@@ -2219,16 +1451,12 @@ def main():
         )
     ]
 
-    all_events = (
-        remove_exact_duplicates(
-            all_events
-        )
+    all_events = remove_exact_duplicates(
+        all_events
     )
 
-    all_events = (
-        merge_cross_site(
-            all_events
-        )
+    all_events = merge_cross_site(
+        all_events
     )
 
     all_events.sort(
@@ -2245,66 +1473,29 @@ def main():
                 "performerId",
                 ""
             ),
-            event.get(
-                "title",
-                ""
-            ),
         )
     )
 
     # =====================================================
-    # 新規
+    # 通知候補
     # =====================================================
 
     new_events = []
 
     for event in all_events:
-        identity = identity_key(
+        stable_key = stable_notification_key(
             event
         )
 
-        if (
-            identity
-            in old_identity_keys
-        ):
+        loose_key = loose_notification_key(
+            event
+        )
+
+        if stable_key in notified_stable:
             continue
 
-        if (
-            event.get(
-                "source"
-            ) == "fany"
-        ):
-            loose_key = fany_loose_key(
-                event
-            )
-
-            if (
-                loose_key
-                in old_fany_loose_keys
-            ):
-                continue
-
-        if (
-            event.get(
-                "source"
-            ) == "tiget"
-        ):
-            tiget_key = (
-                event.get(
-                    "performerId",
-                    ""
-                ),
-                event.get(
-                    "sourceUrl",
-                    ""
-                )
-            )
-
-            if (
-                tiget_key
-                in old_tiget_urls
-            ):
-                continue
+        if loose_key in notified_loose:
+            continue
 
         new_events.append(
             event
@@ -2337,153 +1528,15 @@ def main():
         new_events
     )
 
-    # =====================================================
-    # ログ
-    # =====================================================
-
     print("")
     print(
-        "================================"
+        "今日以降の全公演数:",
+        len(all_events)
     )
 
     print(
-        "今日以降の全公演数: "
-        + str(
-            len(all_events)
-        )
-        + "件"
-    )
-
-    print(
-        "新規公演数: "
-        + str(
-            len(new_events)
-        )
-        + "件"
-    )
-
-    for performer in performers:
-        pid = performer.get(
-            "id",
-            ""
-        )
-
-        name = performer.get(
-            "name",
-            pid
-        )
-
-        count = sum(
-            1
-            for event in all_events
-            if (
-                event.get(
-                    "performerId"
-                )
-                == pid
-            )
-        )
-
-        print(
-            name
-            + ": "
-            + str(count)
-            + "件"
-        )
-
-    fany_events = [
-        event
-        for event in all_events
-        if (
-            event.get(
-                "source"
-            ) == "fany"
-        )
-    ]
-
-    reception_count = sum(
-        1
-        for event in fany_events
-        if (
-            "/reception/"
-            in event.get(
-                "sourceUrl",
-                ""
-            )
-        )
-    )
-
-    fallback_count = (
-        len(fany_events)
-        - reception_count
-    )
-
-    print("")
-    print(
-        "FANY個別URL成功: "
-        + str(
-            reception_count
-        )
-        + "件"
-    )
-
-    print(
-        "FANY検索URL代用: "
-        + str(
-            fallback_count
-        )
-        + "件"
-    )
-
-    bad_tiget_count = sum(
-        1
-        for event in all_events
-        if (
-            event.get(
-                "source"
-            ) == "tiget"
-            and is_bad_tiget_title(
-                event.get(
-                    "title",
-                    ""
-                )
-            )
-        )
-    )
-
-    unknown_tiget_count = sum(
-        1
-        for event in all_events
-        if (
-            event.get(
-                "source"
-            ) == "tiget"
-            and event.get(
-                "title",
-                ""
-            )
-            == "公演名不明"
-        )
-    )
-
-    print(
-        "TIGET共通タイトル残り: "
-        + str(
-            bad_tiget_count
-        )
-        + "件"
-    )
-
-    print(
-        "TIGET公演名不明: "
-        + str(
-            unknown_tiget_count
-        )
-        + "件"
-    )
-
-    print(
-        "================================"
+        "LINE通知候補:",
+        len(new_events)
     )
 
 
