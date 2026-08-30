@@ -1218,4 +1218,6 @@ def is_bad_tiget_title(
     ]
 
     return any(
-        word
+        word in title
+        for word in bad_words
+    )
