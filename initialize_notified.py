@@ -8,26 +8,14 @@ NOTIFIED_FILE = "notified_events.json"
 
 def load_json(path, default):
     try:
-        with open(
-            path,
-            "r",
-            encoding="utf-8"
-        ) as f:
+        with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
-
-    except (
-        FileNotFoundError,
-        json.JSONDecodeError
-    ):
+    except (FileNotFoundError, json.JSONDecodeError):
         return default
 
 
 def save_json(path, data):
-    with open(
-        path,
-        "w",
-        encoding="utf-8"
-    ) as f:
+    with open(path, "w", encoding="utf-8") as f:
         json.dump(
             data,
             f,
@@ -45,9 +33,7 @@ def clean(text):
 
 
 def normalize_title(text):
-    text = clean(
-        text
-    ).lower()
+    text = clean(text).lower()
 
     for char in [
         " ",
@@ -68,10 +54,7 @@ def normalize_title(text):
         "〜",
         "～",
     ]:
-        text = text.replace(
-            char,
-            ""
-        )
+        text = text.replace(char, "")
 
     return text
 
@@ -87,50 +70,75 @@ def normalize_venue(text):
 
 def stable_notification_key(event):
     return "|".join([
-        event.get(
-            "performerId",
-            ""
-        ),
-        event.get(
-            "date",
-            ""
-        ),
-        event.get(
-            "startTime",
-            ""
-        ),
+        event.get("performerId", ""),
+        event.get("date", ""),
+        event.get("startTime", ""),
         normalize_venue(
-            event.get(
-                "venue",
-                ""
-            )
+            event.get("venue", "")
         ),
     ])
 
 
 def loose_notification_key(event):
     return "|".join([
-        event.get(
-            "performerId",
-            ""
-        ),
-        event.get(
-            "date",
-            ""
-        ),
+        event.get("performerId", ""),
+        event.get("date", ""),
         normalize_venue(
-            event.get(
-                "venue",
-                ""
-            )
+            event.get("venue", "")
         ),
         normalize_title(
-            event.get(
-                "title",
-                ""
-            )
+            event.get("title", "")
         ),
     ])
+
+
+def source_notification_key(event):
+    source = event.get(
+        "source",
+        ""
+    )
+
+    performer_id = event.get(
+        "performerId",
+        ""
+    )
+
+    url = event.get(
+        "sourceUrl",
+        ""
+    )
+
+    if source == "tiget":
+        match = re.search(
+            r"/events/(\d+)",
+            url
+        )
+
+        if match:
+            return (
+                "tiget|"
+                + performer_id
+                + "|"
+                + match.group(1)
+            )
+
+    if source == "fany":
+        match = re.search(
+            r"/reception/(\d+)/(\d+)",
+            url
+        )
+
+        if match:
+            return (
+                "fany|"
+                + performer_id
+                + "|"
+                + match.group(1)
+                + "|"
+                + match.group(2)
+            )
+
+    return ""
 
 
 def main():
@@ -141,10 +149,7 @@ def main():
         }
     )
 
-    if isinstance(
-        data,
-        list
-    ):
+    if isinstance(data, list):
         events = data
     else:
         events = data.get(
@@ -152,8 +157,31 @@ def main():
             []
         )
 
-    stable_keys = set()
-    loose_keys = set()
+    old_notified = load_json(
+        NOTIFIED_FILE,
+        {}
+    )
+
+    stable_keys = set(
+        old_notified.get(
+            "stableKeys",
+            []
+        )
+    )
+
+    loose_keys = set(
+        old_notified.get(
+            "looseKeys",
+            []
+        )
+    )
+
+    source_keys = set(
+        old_notified.get(
+            "sourceKeys",
+            []
+        )
+    )
 
     for event in events:
         stable_keys.add(
@@ -168,16 +196,26 @@ def main():
             )
         )
 
+        source_key = (
+            source_notification_key(
+                event
+            )
+        )
+
+        if source_key:
+            source_keys.add(
+                source_key
+            )
+
     output = {
         "stableKeys":
-            sorted(
-                stable_keys
-            ),
+            sorted(stable_keys),
 
         "looseKeys":
-            sorted(
-                loose_keys
-            ),
+            sorted(loose_keys),
+
+        "sourceKeys":
+            sorted(source_keys),
     }
 
     save_json(
@@ -202,6 +240,11 @@ def main():
     print(
         "looseKeys:",
         len(loose_keys)
+    )
+
+    print(
+        "sourceKeys:",
+        len(source_keys)
     )
 
 
