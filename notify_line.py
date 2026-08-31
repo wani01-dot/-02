@@ -1,14 +1,13 @@
 import json
 import os
+import re
+
 import requests
 
 
-# ==========================================
-# 設定
-# ==========================================
-
 NEW_EVENTS_FILE = "new_events.json"
 PERFORMERS_FILE = "performers.json"
+NOTIFIED_FILE = "notified_events.json"
 
 LINE_TOKEN = os.environ.get(
     "LINE_CHANNEL_ACCESS_TOKEN",
@@ -25,9 +24,9 @@ LINE_API_URL = (
 )
 
 
-# ==========================================
-# JSON読み込み
-# ==========================================
+# =========================================================
+# JSON
+# =========================================================
 
 def load_json(path, default):
     try:
@@ -45,48 +44,92 @@ def load_json(path, default):
         return default
 
 
-# ==========================================
-# 文字整理
-# ==========================================
+def save_json(path, data):
+    with open(
+        path,
+        "w",
+        encoding="utf-8"
+    ) as f:
+        json.dump(
+            data,
+            f,
+            ensure_ascii=False,
+            indent=2
+        )
+
+
+# =========================================================
+# 共通
+# =========================================================
 
 def clean(text):
-    return str(
-        text or ""
+    return re.sub(
+        r"\s+",
+        " ",
+        str(text or "")
     ).strip()
 
 
-# ==========================================
-# 公演まとめ用キー
-# ==========================================
+def normalize_title(text):
+    text = clean(
+        text
+    ).lower()
 
-def performance_key(event):
-    """
-    同じ公演をまとめる。
+    for char in [
+        " ",
+        "　",
+        "「",
+        "」",
+        "『",
+        "』",
+        "【",
+        "】",
+        "・",
+        "！",
+        "!",
+        "？",
+        "?",
+        "：",
+        ":",
+        "〜",
+        "～",
+    ]:
+        text = text.replace(
+            char,
+            ""
+        )
 
-    同日・同時間・同タイトル・同会場
-    なら同じライブとして扱う。
-    """
+    return text
 
+
+def normalize_venue(text):
+    return (
+        clean(text)
+        .lower()
+        .replace(" ", "")
+        .replace("　", "")
+    )
+
+
+# =========================================================
+# 通知キー
+# =========================================================
+
+def stable_notification_key(event):
     return "|".join([
-        clean(
-            event.get(
-                "date",
-                ""
-            )
+        event.get(
+            "performerId",
+            ""
         ),
-        clean(
-            event.get(
-                "startTime",
-                ""
-            )
+        event.get(
+            "date",
+            ""
         ),
-        clean(
-            event.get(
-                "title",
-                ""
-            )
+        event.get(
+            "startTime",
+            ""
         ),
-        clean(
+        normalize_venue(
             event.get(
                 "venue",
                 ""
@@ -95,24 +138,96 @@ def performance_key(event):
     ])
 
 
-# ==========================================
-# LINE送信
-# ==========================================
+def loose_notification_key(event):
+    return "|".join([
+        event.get(
+            "performerId",
+            ""
+        ),
+        event.get(
+            "date",
+            ""
+        ),
+        normalize_venue(
+            event.get(
+                "venue",
+                ""
+            )
+        ),
+        normalize_title(
+            event.get(
+                "title",
+                ""
+            )
+        ),
+    ])
+
+
+def source_notification_key(event):
+    source = event.get(
+        "source",
+        ""
+    )
+
+    performer_id = event.get(
+        "performerId",
+        ""
+    )
+
+    url = event.get(
+        "sourceUrl",
+        ""
+    )
+
+    # TIGETはイベント番号で固定
+    if source == "tiget":
+        match = re.search(
+            r"/events/(\d+)",
+            url
+        )
+
+        if match:
+            return (
+                "tiget|"
+                + performer_id
+                + "|"
+                + match.group(1)
+            )
+
+    # FANYは受付番号で固定
+    if source == "fany":
+        match = re.search(
+            r"/reception/(\d+)/(\d+)",
+            url
+        )
+
+        if match:
+            return (
+                "fany|"
+                + performer_id
+                + "|"
+                + match.group(1)
+                + "|"
+                + match.group(2)
+            )
+
+    return ""
+
+
+# =========================================================
+# LINE
+# =========================================================
 
 def send_line(text):
-
     if not LINE_TOKEN:
-        print(
-            "LINE_CHANNEL_ACCESS_TOKEN"
-            " が設定されていません"
+        raise RuntimeError(
+            "LINE_CHANNEL_ACCESS_TOKEN がありません"
         )
-        return False
 
     if not LINE_TO:
-        print(
-            "LINE_TO が設定されていません"
+        raise RuntimeError(
+            "LINE_TO がありません"
         )
-        return False
 
     response = requests.post(
         LINE_API_URL,
@@ -131,8 +246,11 @@ def send_line(text):
 
             "messages": [
                 {
-                    "type": "text",
-                    "text": text
+                    "type":
+                        "text",
+
+                    "text":
+                        text,
                 }
             ],
         },
@@ -152,19 +270,12 @@ def send_line(text):
 
     response.raise_for_status()
 
-    return True
 
-
-# ==========================================
-# メイン
-# ==========================================
+# =========================================================
+# MAIN
+# =========================================================
 
 def main():
-
-    # --------------------------------------
-    # 新規公演
-    # --------------------------------------
-
     new_events = load_json(
         NEW_EVENTS_FILE,
         []
@@ -175,11 +286,6 @@ def main():
         list
     ):
         new_events = []
-
-
-    # --------------------------------------
-    # 出演者設定
-    # --------------------------------------
 
     config = load_json(
         PERFORMERS_FILE,
@@ -193,35 +299,57 @@ def main():
         []
     )
 
-
     performer_map = {
         performer.get(
             "id"
         ):
         performer
+
         for performer
         in performers
-        if performer.get(
-            "id"
-        )
     }
 
+    # =====================================================
+    # 通知済み履歴
+    # =====================================================
 
-    # --------------------------------------
-    # notify=trueだけ
-    # --------------------------------------
+    notified = load_json(
+        NOTIFIED_FILE,
+        {}
+    )
 
-    target_events = []
+    stable_keys = set(
+        notified.get(
+            "stableKeys",
+            []
+        )
+    )
+
+    loose_keys = set(
+        notified.get(
+            "looseKeys",
+            []
+        )
+    )
+
+    source_keys = set(
+        notified.get(
+            "sourceKeys",
+            []
+        )
+    )
+
+    # =====================================================
+    # LINE送信直前の再チェック
+    # =====================================================
+
+    send_events = []
 
     for event in new_events:
-
-        performer_id = event.get(
-            "performerId",
-            ""
-        )
-
         performer = performer_map.get(
-            performer_id
+            event.get(
+                "performerId"
+            )
         )
 
         if not performer:
@@ -233,244 +361,225 @@ def main():
         ):
             continue
 
-        target_events.append(
+        source_key = (
+            source_notification_key(
+                event
+            )
+        )
+
+        stable_key = (
+            stable_notification_key(
+                event
+            )
+        )
+
+        loose_key = (
+            loose_notification_key(
+                event
+            )
+        )
+
+        if (
+            source_key
+            and source_key in source_keys
+        ):
+            print(
+                "通知済みURLのためスキップ:",
+                source_key
+            )
+            continue
+
+        if stable_key in stable_keys:
+            print(
+                "通知済みstableKeyのためスキップ:",
+                stable_key
+            )
+            continue
+
+        if loose_key in loose_keys:
+            print(
+                "通知済みlooseKeyのためスキップ:",
+                loose_key
+            )
+            continue
+
+        send_events.append(
             event
         )
 
-
-    # --------------------------------------
-    # 0件なら終了
-    # --------------------------------------
-
-    if not target_events:
-
+    if not send_events:
         print(
             "通知対象の新規公演はありません。"
         )
-
         return
 
-
-    # --------------------------------------
+    # =====================================================
     # 同じ公演をまとめる
-    # --------------------------------------
+    # =====================================================
 
     grouped = {}
 
-
-    for event in target_events:
-
-        key = performance_key(
-            event
+    for event in send_events:
+        source_key = (
+            source_notification_key(
+                event
+            )
         )
 
-        performer_id = event.get(
-            "performerId",
-            ""
-        )
+        if source_key:
+            group_key = (
+                event.get(
+                    "source",
+                    ""
+                )
+                + "|"
+                + re.sub(
+                    r"^[^|]+\|[^|]+\|",
+                    "",
+                    source_key
+                )
+            )
 
-        performer = performer_map.get(
-            performer_id,
-            {}
-        )
+        else:
+            group_key = "|".join([
+                event.get(
+                    "date",
+                    ""
+                ),
+                event.get(
+                    "startTime",
+                    ""
+                ),
+                normalize_title(
+                    event.get(
+                        "title",
+                        ""
+                    )
+                ),
+                normalize_venue(
+                    event.get(
+                        "venue",
+                        ""
+                    )
+                ),
+            ])
 
-        performer_name = performer.get(
-            "name",
-            performer_id
-        )
+        if group_key not in grouped:
+            grouped[
+                group_key
+            ] = {
+                "event":
+                    event,
 
-
-        if key not in grouped:
-
-            grouped[key] = {
-
-                "date":
-                    clean(
-                        event.get(
-                            "date",
-                            ""
-                        )
-                    ),
-
-                "startTime":
-                    clean(
-                        event.get(
-                            "startTime",
-                            ""
-                        )
-                    ),
-
-                "title":
-                    clean(
-                        event.get(
-                            "title",
-                            ""
-                        )
-                    ),
-
-                "venue":
-                    clean(
-                        event.get(
-                            "venue",
-                            ""
-                        )
-                    ),
-
-                "source":
-                    clean(
-                        event.get(
-                            "source",
-                            ""
-                        )
-                    ),
-
-                "sourceUrl":
-                    clean(
-                        event.get(
-                            "sourceUrl",
-                            ""
-                        )
-                    ),
-
-                "performers":
+                "events":
                     [],
             }
 
-
-        if (
-            performer_name
-            not in grouped[
-                key
-            ][
-                "performers"
-            ]
-        ):
-
-            grouped[
-                key
-            ][
-                "performers"
-            ].append(
-                performer_name
-            )
-
-
-    # --------------------------------------
-    # 並び替え
-    # --------------------------------------
-
-    performances = list(
-        grouped.values()
-    )
-
-    performances.sort(
-        key=lambda item: (
-            item.get(
-                "date",
-                ""
-            ),
-            item.get(
-                "startTime",
-                ""
-            ),
-            item.get(
-                "title",
-                ""
-            )
+        grouped[
+            group_key
+        ][
+            "events"
+        ].append(
+            event
         )
-    )
 
-
-    # --------------------------------------
-    # メッセージ作成
-    # --------------------------------------
+    # =====================================================
+    # メッセージ
+    # =====================================================
 
     blocks = []
 
+    for group in grouped.values():
+        event = group[
+            "event"
+        ]
 
-    for item in performances:
+        names = []
 
-        performer_text = "・".join(
-            item.get(
-                "performers",
-                []
+        for item in group[
+            "events"
+        ]:
+            performer = performer_map.get(
+                item.get(
+                    "performerId"
+                ),
+                {}
             )
-        )
 
-        date = item.get(
-            "date",
-            ""
-        )
+            name = performer.get(
+                "name",
+                item.get(
+                    "performerId",
+                    ""
+                )
+            )
 
-        start_time = item.get(
-            "startTime",
-            ""
-        )
+            if name not in names:
+                names.append(
+                    name
+                )
 
-        title = item.get(
-            "title",
-            ""
-        )
+        lines = [
+            "🎙 "
+            + "・".join(
+                names
+            ),
 
-        venue = item.get(
-            "venue",
-            ""
-        )
+            "📅 "
+            + event.get(
+                "date",
+                ""
+            ),
 
-        source = item.get(
-            "source",
-            ""
-        )
+            "🎫 "
+            + event.get(
+                "title",
+                "公演名不明"
+            ),
+        ]
 
-        source_url = item.get(
-            "sourceUrl",
-            ""
-        )
-
-
-        lines = []
-
-
-        lines.append(
-            f"🎙 {performer_text}"
-        )
-
-
-        if date:
+        if event.get(
+            "venue"
+        ):
             lines.append(
-                f"📅 {date}"
+                "📍 "
+                + event.get(
+                    "venue"
+                )
             )
 
-
-        if title:
+        if event.get(
+            "startTime"
+        ):
             lines.append(
-                f"🎫 {title}"
+                "⏰ 開演 "
+                + event.get(
+                    "startTime"
+                )
             )
 
+        source_name = (
+            event.get(
+                "source",
+                ""
+            ).upper()
+        )
 
-        if venue:
+        if source_name:
             lines.append(
-                f"📍 {venue}"
+                "掲載元："
+                + source_name
             )
 
-
-        if start_time:
+        if event.get(
+            "sourceUrl"
+        ):
             lines.append(
-                f"⏰ 開演 {start_time}"
+                "🔗 "
+                + event.get(
+                    "sourceUrl"
+                )
             )
-
-
-        if source:
-            lines.append(
-                f"掲載元：{source.upper()}"
-            )
-
-
-        if source_url:
-            lines.append(
-                f"🔗 {source_url}"
-            )
-
 
         blocks.append(
             "\n".join(
@@ -478,81 +587,84 @@ def main():
             )
         )
 
-
-    # --------------------------------------
-    # LINEの1メッセージ上限対策
-    # --------------------------------------
-
-    messages = []
-
-    current = (
+    message = (
         "【新しい出演情報】\n\n"
+        + "\n\n".join(
+            blocks
+        )
     )
 
-
-    for block in blocks:
-
-        addition = (
-            block
-            + "\n\n"
-        )
-
-        # LINEテキスト上限より
-        # 余裕を持って4500文字程度
-        if (
-            len(current)
-            + len(addition)
-            > 4500
-        ):
-
-            messages.append(
-                current.rstrip()
-            )
-
-            current = (
-                "【新しい出演情報 続き】\n\n"
-                + addition
-            )
-
-        else:
-
-            current += addition
-
-
-    if current.strip():
-
-        messages.append(
-            current.rstrip()
-        )
-
-
-    # --------------------------------------
+    # =====================================================
     # LINE送信
-    # --------------------------------------
+    # =====================================================
 
-    sent_count = 0
+    send_line(
+        message
+    )
 
+    # =====================================================
+    # LINE送信成功後だけ履歴追加
+    # =====================================================
 
-    for message in messages:
+    for event in send_events:
+        stable_keys.add(
+            stable_notification_key(
+                event
+            )
+        )
 
-        if send_line(
-            message
-        ):
+        loose_keys.add(
+            loose_notification_key(
+                event
+            )
+        )
 
-            sent_count += 1
+        source_key = (
+            source_notification_key(
+                event
+            )
+        )
 
+        if source_key:
+            source_keys.add(
+                source_key
+            )
+
+            print(
+                "通知済みID登録:",
+                source_key
+            )
+
+    save_json(
+        NOTIFIED_FILE,
+        {
+            "stableKeys":
+                sorted(
+                    stable_keys
+                ),
+
+            "looseKeys":
+                sorted(
+                    loose_keys
+                ),
+
+            "sourceKeys":
+                sorted(
+                    source_keys
+                ),
+        }
+    )
 
     print(
-        f"{len(performances)}件の"
-        "新規公演を"
-        f"{sent_count}通のLINEで"
-        "通知しました。"
+        len(send_events),
+        "件をLINE通知しました。"
     )
 
+    print(
+        "現在の通知済みsourceKeys:",
+        len(source_keys)
+    )
 
-# ==========================================
-# 実行
-# ==========================================
 
 if __name__ == "__main__":
     main()
