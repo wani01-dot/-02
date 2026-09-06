@@ -1,0 +1,44 @@
+name: Theater schedule probe
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install playwright
+
+      - name: Install Chromium
+        run: |
+          python -m playwright install chromium
+
+      - name: Run theater probe
+        run: |
+          python theater_probe.py
+
+      - name: Show result summary
+        run: |
+          echo "=== theater_probe.json ==="
+          cat theater_probe.json
+
+      - name: Upload probe result
+        uses: actions/upload-artifact@v4
+        with:
+          name: theater-probe-result
+          path: theater_probe.json
