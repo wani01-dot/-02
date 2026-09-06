@@ -19,12 +19,11 @@ FANY_BASE = "https://ticket.fany.lol"
 TIGET_SEARCH_URL = "https://tiget.net/events"
 TIGET_BASE = "https://tiget.net"
 
-JST = timezone(
-    timedelta(hours=9)
-)
+JST = timezone(timedelta(hours=9))
 
 FUTURE_DAYS = 365
 FANY_PAGE_LIMIT = 10
+NEW_HOURS = 48
 
 HEADERS = {
     "User-Agent": (
@@ -34,8 +33,7 @@ HEADERS = {
         "(KHTML, like Gecko) "
         "Version/18.0 Mobile/15E148 Safari/604.1"
     ),
-    "Accept-Language":
-        "ja-JP,ja;q=0.9",
+    "Accept-Language": "ja-JP,ja;q=0.9",
 }
 
 
@@ -145,6 +143,18 @@ def today_jst():
 def now_iso():
     return datetime.now(
         timezone.utc
+    ).isoformat()
+
+
+def new_until_iso():
+    return (
+        datetime.now(
+            timezone.utc
+        )
+        +
+        timedelta(
+            hours=NEW_HOURS
+        )
     ).isoformat()
 
 
@@ -310,7 +320,8 @@ def fany_date_string(value):
         value.strftime(
             "%Y/%m/%d"
         )
-        + f"({weekday})"
+        +
+        f"({weekday})"
     )
 
 
@@ -319,13 +330,13 @@ def build_month_ranges():
 
     final_date = (
         start
-        + timedelta(
+        +
+        timedelta(
             days=FUTURE_DAYS
         )
     )
 
     ranges = []
-
     current = start
 
     while current <= final_date:
@@ -352,7 +363,10 @@ def build_month_ranges():
 
         current = (
             month_end
-            + timedelta(days=1)
+            +
+            timedelta(
+                days=1
+            )
         )
 
     return ranges
@@ -363,10 +377,8 @@ def build_month_ranges():
 # =========================================================
 
 def identity_key(event):
-    source_key = (
-        source_notification_key(
-            event
-        )
+    source_key = source_notification_key(
+        event
     )
 
     if source_key:
@@ -461,9 +473,7 @@ def html_to_lines(html):
 # 日時解析
 # =========================================================
 
-def parse_japanese_datetime(
-    text
-):
+def parse_japanese_datetime(text):
     text = clean(text)
 
     patterns = [
@@ -471,21 +481,21 @@ def parse_japanese_datetime(
             r"(20\d{2})年"
             r"(\d{1,2})月"
             r"(\d{1,2})日"
-            r"[^\d]{0,12}"
+            r"[^\d]{0,20}"
             r"(\d{1,2}):(\d{2})"
         ),
         (
             r"(20\d{2})/"
             r"(\d{1,2})/"
             r"(\d{1,2})"
-            r"[^\d]{0,12}"
+            r"[^\d]{0,20}"
             r"(\d{1,2}):(\d{2})"
         ),
         (
             r"(20\d{2})-"
             r"(\d{1,2})-"
             r"(\d{1,2})"
-            r"[^\d]{0,12}"
+            r"[^\d]{0,20}"
             r"(\d{1,2}):(\d{2})"
         ),
     ]
@@ -499,9 +509,13 @@ def parse_japanese_datetime(
         if not match:
             continue
 
-        year, month, day, hour, minute = (
-            match.groups()
-        )
+        (
+            year,
+            month,
+            day,
+            hour,
+            minute
+        ) = match.groups()
 
         try:
             value = datetime(
@@ -543,22 +557,109 @@ FANY_RECEPTION_RE = re.compile(
     r"/reception/\d+/\d+"
 )
 
+PRICE_RE = re.compile(
+    r"(?:￥|¥)\s*[\d,]+(?:円)?"
+)
+
+
+# =========================================================
+# FANY販売情報
+# =========================================================
+
+def normalize_ticket_status(line):
+    text = clean(line)
+
+    mapping = [
+        (
+            "予定数終了",
+            "予定数終了"
+        ),
+        (
+            "予定枚数終了",
+            "予定数終了"
+        ),
+        (
+            "残りわずか",
+            "残りわずか"
+        ),
+        (
+            "残席わずか",
+            "残りわずか"
+        ),
+        (
+            "販売中",
+            "販売中"
+        ),
+        (
+            "受付中",
+            "受付中"
+        ),
+        (
+            "販売終了",
+            "販売終了"
+        ),
+        (
+            "受付終了",
+            "受付終了"
+        ),
+        (
+            "完売",
+            "予定数終了"
+        ),
+    ]
+
+    for source, result in mapping:
+        if text == source:
+            return result
+
+    return ""
+
+
+def is_ticket_type(line):
+    text = clean(line)
+
+    return bool(
+        re.fullmatch(
+            r"(?:"
+            r"前売|当日|"
+            r"前売券|当日券|"
+            r"一般|一般券|"
+            r"大人|小人|"
+            r"学生|学生券|"
+            r"学割|"
+            r"高校生|大学生|"
+            r"中学生|小学生|"
+            r"シニア"
+            r")",
+            text
+        )
+    )
+
+
+def extract_price(line):
+    match = PRICE_RE.search(
+        clean(line)
+    )
+
+    if not match:
+        return ""
+
+    return clean(
+        match.group(0)
+    )
+
 
 def is_sales_line(line):
     words = [
         "発売",
-        "販売",
+        "販売開始",
         "受付期間",
-        "受付中",
-        "受付終了",
-        "受付前",
+        "受付開始",
         "抽選",
         "先着",
         "FANY ID",
         "プレミアムメンバー",
         "FANYコミュ",
-        "予定数終了",
-        "残りわずか",
     ]
 
     return any(
@@ -566,6 +667,345 @@ def is_sales_line(line):
         for word in words
     )
 
+
+def is_ticket_option_name_candidate(
+    line
+):
+    text = clean(line)
+
+    if not text:
+        return False
+
+    if len(text) > 70:
+        return False
+
+    if normalize_ticket_status(
+        text
+    ):
+        return False
+
+    if is_ticket_type(
+        text
+    ):
+        return False
+
+    if extract_price(
+        text
+    ):
+        return False
+
+    if FANY_DATE_RE.match(
+        text
+    ):
+        return False
+
+    bad_words = [
+        "開場",
+        "開演",
+        "出演",
+        "会場",
+        "料金",
+        "発売",
+        "販売",
+        "受付",
+        "抽選",
+        "先着",
+        "お問い合わせ",
+        "注意事項",
+        "公演概要",
+        "FANY ID",
+        "プレミアム",
+        "閉じる",
+        "PAGE TOP",
+    ]
+
+    if any(
+        word in text
+        for word in bad_words
+    ):
+        return False
+
+    if re.search(
+        r"（[^）]*(?:都|道|府|県)）$",
+        text
+    ):
+        return False
+
+    return True
+
+
+def find_previous_ticket_type(
+    lines,
+    status_index
+):
+    start = max(
+        0,
+        status_index - 4
+    )
+
+    for index in range(
+        status_index - 1,
+        start - 1,
+        -1
+    ):
+        if is_ticket_type(
+            lines[index]
+        ):
+            return (
+                index,
+                clean(
+                    lines[index]
+                )
+            )
+
+    return (
+        None,
+        ""
+    )
+
+
+def find_ticket_option_name(
+    lines,
+    before_index
+):
+    start = max(
+        0,
+        before_index - 7
+    )
+
+    for index in range(
+        before_index - 1,
+        start - 1,
+        -1
+    ):
+        line = clean(
+            lines[index]
+        )
+
+        if is_ticket_option_name_candidate(
+            line
+        ):
+            return line
+
+    return ""
+
+
+def find_ticket_price(
+    lines,
+    status_index
+):
+    start = max(
+        0,
+        status_index - 2
+    )
+
+    end = min(
+        len(lines),
+        status_index + 5
+    )
+
+    # ステータスの後ろを優先
+    for index in range(
+        status_index + 1,
+        end
+    ):
+        price = extract_price(
+            lines[index]
+        )
+
+        if price:
+            return price
+
+    for index in range(
+        status_index - 1,
+        start - 1,
+        -1
+    ):
+        price = extract_price(
+            lines[index]
+        )
+
+        if price:
+            return price
+
+    return ""
+
+
+def get_fany_ticket_options(
+    lines
+):
+    options = []
+    seen = set()
+
+    for index, line in enumerate(
+        lines
+    ):
+        status = normalize_ticket_status(
+            line
+        )
+
+        if not status:
+            continue
+
+        (
+            type_index,
+            ticket_type
+        ) = find_previous_ticket_type(
+            lines,
+            index
+        )
+
+        name_before = (
+            type_index
+            if type_index is not None
+            else index
+        )
+
+        name = find_ticket_option_name(
+            lines,
+            name_before
+        )
+
+        price = find_ticket_price(
+            lines,
+            index
+        )
+
+        # 「先着販売中」など、
+        # 座席販売枠ではない表示を弾く
+        if (
+            not name
+            and not ticket_type
+            and not price
+        ):
+            continue
+
+        # 販売種別も価格もない場合は
+        # 誤検出しやすいので除外
+        if (
+            not ticket_type
+            and not price
+        ):
+            continue
+
+        key = (
+            name,
+            ticket_type,
+            status,
+            price
+        )
+
+        if key in seen:
+            continue
+
+        seen.add(
+            key
+        )
+
+        options.append({
+            "name":
+                name,
+
+            "type":
+                ticket_type,
+
+            "status":
+                status,
+
+            "price":
+                price,
+        })
+
+    return options
+
+
+def summarize_ticket_status(
+    ticket_options,
+    lines
+):
+    statuses = [
+        option.get(
+            "status",
+            ""
+        )
+        for option
+        in ticket_options
+        if option.get(
+            "status"
+        )
+    ]
+
+    if statuses:
+        if (
+            "残りわずか"
+            in statuses
+        ):
+            return "残りわずか"
+
+        ended_statuses = {
+            "予定数終了",
+            "販売終了",
+            "受付終了",
+        }
+
+        active_statuses = {
+            "販売中",
+            "受付中",
+            "残りわずか",
+        }
+
+        has_ended = any(
+            status in ended_statuses
+            for status in statuses
+        )
+
+        has_active = any(
+            status in active_statuses
+            for status in statuses
+        )
+
+        if (
+            has_ended
+            and has_active
+        ):
+            return "一部予定数終了"
+
+        if (
+            statuses
+            and all(
+                status
+                in ended_statuses
+                for status
+                in statuses
+            )
+        ):
+            if (
+                "予定数終了"
+                in statuses
+            ):
+                return "予定数終了"
+
+            return "販売終了"
+
+        if has_active:
+            return "販売中"
+
+    text = " ".join(
+        lines
+    )
+
+    if "残りわずか" in text:
+        return "残りわずか"
+
+    if "予定数終了" in text:
+        return "予定数終了"
+
+    return ""
+
+
+# =========================================================
+# FANY検索結果
+# =========================================================
 
 def count_fany_blocks(lines):
     return sum(
@@ -609,13 +1049,16 @@ def parse_fany_text_events(
     ):
         if (
             number + 1
-            < len(event_indexes)
+            <
+            len(event_indexes)
         ):
             end_index = event_indexes[
                 number + 1
             ]
         else:
-            end_index = len(lines)
+            end_index = len(
+                lines
+            )
 
         block = lines[
             start_index:end_index
@@ -631,9 +1074,11 @@ def parse_fany_text_events(
         if not date_match:
             continue
 
-        year, month, day = (
-            date_match.groups()
-        )
+        (
+            year,
+            month,
+            day
+        ) = date_match.groups()
 
         event_date = make_date(
             year,
@@ -690,8 +1135,8 @@ def parse_fany_text_events(
             )
 
             if match:
-                start_time = (
-                    match.group(1)
+                start_time = match.group(
+                    1
                 )
                 break
 
@@ -703,8 +1148,8 @@ def parse_fany_text_events(
             )
 
             if match:
-                open_time = (
-                    match.group(1)
+                open_time = match.group(
+                    1
                 )
                 break
 
@@ -737,10 +1182,8 @@ def parse_fany_text_events(
             if (
                 candidate
                 and candidate != ")"
-                and "開場"
-                    not in candidate
-                and "開演"
-                    not in candidate
+                and "開場" not in candidate
+                and "開演" not in candidate
                 and candidate != "出演"
             ):
                 title = candidate
@@ -748,20 +1191,26 @@ def parse_fany_text_events(
         if not title:
             title = "公演名不明"
 
-        ticket_status = ""
-
         block_text = " ".join(
             block
         )
 
-        if "予定数終了" in block_text:
-            ticket_status = (
-                "予定数終了"
-            )
+        ticket_status = ""
 
-        elif "残りわずか" in block_text:
+        if (
+            "残りわずか"
+            in block_text
+        ):
             ticket_status = (
                 "残りわずか"
+            )
+
+        elif (
+            "予定数終了"
+            in block_text
+        ):
+            ticket_status = (
+                "予定数終了"
             )
 
         events.append({
@@ -792,6 +1241,9 @@ def parse_fany_text_events(
             "ticketStatus":
                 ticket_status,
 
+            "ticketOptions":
+                [],
+
             "saleStartAt":
                 "",
 
@@ -802,7 +1254,9 @@ def parse_fany_text_events(
     return events
 
 
-def find_reception_candidates(html):
+def find_reception_candidates(
+    html
+):
     soup = BeautifulSoup(
         html,
         "html.parser"
@@ -838,16 +1292,15 @@ def find_reception_candidates(html):
         )
 
         container = link
-
         selected_lines = []
 
-        for _ in range(10):
+        for _ in range(
+            10
+        ):
             if not container:
                 break
 
-            container = (
-                container.parent
-            )
+            container = container.parent
 
             if not container:
                 break
@@ -886,6 +1339,7 @@ def find_reception_candidates(html):
             result.append({
                 "url":
                     url,
+
                 "lines":
                     selected_lines,
             })
@@ -893,7 +1347,9 @@ def find_reception_candidates(html):
     return result
 
 
-def candidate_info(candidate):
+def candidate_info(
+    candidate
+):
     lines = candidate[
         "lines"
     ]
@@ -908,9 +1364,11 @@ def candidate_info(candidate):
         )
 
         if match:
-            year, month, day = (
-                match.groups()
-            )
+            (
+                year,
+                month,
+                day
+            ) = match.groups()
 
             event_date = make_date(
                 year,
@@ -926,8 +1384,8 @@ def candidate_info(candidate):
         )
 
         if match:
-            start_time = (
-                match.group(1)
+            start_time = match.group(
+                1
             )
             break
 
@@ -976,10 +1434,9 @@ def attach_fany_urls(
 
         for candidate in candidates:
             if (
-                candidate[
-                    "date"
-                ]
-                != event.get(
+                candidate["date"]
+                !=
+                event.get(
                     "date",
                     ""
                 )
@@ -996,7 +1453,8 @@ def attach_fany_urls(
                 candidate[
                     "startTime"
                 ]
-                == event.get(
+                ==
+                event.get(
                     "startTime",
                     ""
                 )
@@ -1035,24 +1493,8 @@ def attach_fany_urls(
 
 
 # =========================================================
-# FANY詳細ページ解析
+# FANY詳細ページ
 # =========================================================
-
-def get_fany_ticket_status(
-    lines
-):
-    text = " ".join(
-        lines
-    )
-
-    if "予定数終了" in text:
-        return "予定数終了"
-
-    if "残りわずか" in text:
-        return "残りわずか"
-
-    return ""
-
 
 def get_fany_open_time(
     lines
@@ -1063,7 +1505,9 @@ def get_fany_open_time(
         )
 
         if match:
-            return match.group(1)
+            return match.group(
+                1
+            )
 
     return ""
 
@@ -1100,12 +1544,10 @@ def get_fany_sale_start(
             )
         ]
 
-        candidate_text = " ".join(
-            candidate_lines
-        )
-
         parsed = parse_japanese_datetime(
-            candidate_text
+            " ".join(
+                candidate_lines
+            )
         )
 
         if parsed:
@@ -1118,7 +1560,6 @@ def get_fany_performers(
     lines
 ):
     performers = []
-
     start_index = None
 
     for index, line in enumerate(
@@ -1128,7 +1569,9 @@ def get_fany_performers(
             "出演",
             "出演者",
         ]:
-            start_index = index + 1
+            start_index = (
+                index + 1
+            )
             break
 
     if start_index is None:
@@ -1156,22 +1599,20 @@ def get_fany_performers(
         ):
             break
 
-        text = clean(line)
+        text = clean(
+            line
+        )
 
         if not text:
             continue
 
-        if (
-            re.match(
-                r"^20\d{2}[/-]\d",
-                text
-            )
+        if re.match(
+            r"^20\d{2}[/-]\d",
+            text
         ):
             break
 
-        if (
-            len(text) > 120
-        ):
+        if len(text) > 120:
             continue
 
         performers.append(
@@ -1182,12 +1623,14 @@ def get_fany_performers(
 
     for line in performers:
         parts = re.split(
-            r"[／/、,，・]+",
+            r"[／/、,，]+",
             line
         )
 
         for part in parts:
-            part = clean(part)
+            part = clean(
+                part
+            )
 
             if not part:
                 continue
@@ -1241,9 +1684,19 @@ def enrich_fany_event(
                 response.text
             )
 
+            ticket_options = (
+                get_fany_ticket_options(
+                    lines
+                )
+            )
+
             detail = {
+                "ticketOptions":
+                    ticket_options,
+
                 "ticketStatus":
-                    get_fany_ticket_status(
+                    summarize_ticket_status(
+                        ticket_options,
                         lines
                     ),
 
@@ -1275,6 +1728,17 @@ def enrich_fany_event(
         detail_cache[
             url
         ] = detail
+
+    if (
+        "ticketOptions"
+        in detail
+    ):
+        event[
+            "ticketOptions"
+        ] = detail.get(
+            "ticketOptions",
+            []
+        )
 
     if detail.get(
         "ticketStatus"
@@ -1323,7 +1787,9 @@ def request_fany_range(
 ):
     params = {
         "keywords":
-            performer["name"],
+            performer[
+                "name"
+            ],
 
         "from":
             fany_date_string(
@@ -1347,8 +1813,12 @@ def request_fany_range(
 
     search_url = (
         FANY_SEARCH_URL
-        + "?"
-        + urlencode(params)
+        +
+        "?"
+        +
+        urlencode(
+            params
+        )
     )
 
     response = session.get(
@@ -1362,12 +1832,10 @@ def request_fany_range(
         response.text
     )
 
-    events = (
-        parse_fany_text_events(
-            lines,
-            performer,
-            search_url
-        )
+    events = parse_fany_text_events(
+        lines,
+        performer,
+        search_url
     )
 
     attach_fany_urls(
@@ -1411,7 +1879,8 @@ def scrape_fany_range(
 
     if (
         block_count
-        < FANY_PAGE_LIMIT
+        <
+        FANY_PAGE_LIMIT
     ):
         return events
 
@@ -1420,12 +1889,14 @@ def scrape_fany_range(
 
     total_days = (
         end_date
-        - start_date
+        -
+        start_date
     ).days
 
     middle = (
         start_date
-        + timedelta(
+        +
+        timedelta(
             days=total_days // 2
         )
     )
@@ -1443,7 +1914,10 @@ def scrape_fany_range(
             session,
             performer,
             middle
-            + timedelta(days=1),
+            +
+            timedelta(
+                days=1
+            ),
             end_date,
             depth + 1
         )
@@ -1457,7 +1931,9 @@ def scrape_fany(
 ):
     print(
         "FANY検索:",
-        performer["name"]
+        performer[
+            "name"
+        ]
     )
 
     events = []
@@ -1502,8 +1978,12 @@ def scrape_fany(
 
     print(
         "FANY",
-        performer["name"],
-        len(enriched),
+        performer[
+            "name"
+        ],
+        len(
+            enriched
+        ),
         "件"
     )
 
@@ -1539,7 +2019,9 @@ def get_next_value(
     return ""
 
 
-def is_bad_tiget_title(title):
+def is_bad_tiget_title(
+    title
+):
     title = clean(
         title
     )
@@ -1560,7 +2042,9 @@ def is_bad_tiget_title(title):
     )
 
 
-def clean_tiget_title(title):
+def clean_tiget_title(
+    title
+):
     title = clean(
         title
     )
@@ -1586,10 +2070,8 @@ def get_tiget_title(
     soup,
     search_title
 ):
-    search_title = (
-        clean_tiget_title(
-            search_title
-        )
+    search_title = clean_tiget_title(
+        search_title
     )
 
     if (
@@ -1687,7 +2169,6 @@ def get_tiget_performers(
     lines
 ):
     performers = []
-
     start_index = None
 
     for index, line in enumerate(
@@ -1697,7 +2178,9 @@ def get_tiget_performers(
             "出演者",
             "出演",
         ]:
-            start_index = index + 1
+            start_index = (
+                index + 1
+            )
             break
 
     if start_index is None:
@@ -1724,7 +2207,9 @@ def get_tiget_performers(
         ):
             break
 
-        text = clean(line)
+        text = clean(
+            line
+        )
 
         if not text:
             continue
@@ -1739,13 +2224,11 @@ def get_tiget_performers(
     result = []
 
     for line in performers:
-        parts = re.split(
-            r"[／/、,，・]+",
-            line
-        )
-
         result.extend(
-            parts
+            re.split(
+                r"[／/、,，]+",
+                line
+            )
         )
 
     return unique_strings(
@@ -1807,8 +2290,10 @@ def scrape_tiget(
 
         event_url = (
             TIGET_BASE
-            + "/events/"
-            + match.group(1)
+            +
+            "/events/"
+            +
+            match.group(1)
         )
 
         title = clean(
@@ -1818,7 +2303,10 @@ def scrape_tiget(
             )
         )
 
-        if event_url not in event_map:
+        if (
+            event_url
+            not in event_map
+        ):
             event_map[
                 event_url
             ] = title
@@ -1870,7 +2358,10 @@ def scrape_tiget(
             lines
         )
 
-        if performer_name not in whole_text:
+        if (
+            performer_name
+            not in whole_text
+        ):
             continue
 
         date_match = re.search(
@@ -1883,9 +2374,11 @@ def scrape_tiget(
         if not date_match:
             continue
 
-        year, month, day = (
-            date_match.groups()
-        )
+        (
+            year,
+            month,
+            day
+        ) = date_match.groups()
 
         event_date = make_date(
             year,
@@ -1968,6 +2461,9 @@ def scrape_tiget(
             "ticketStatus":
                 "",
 
+            "ticketOptions":
+                [],
+
             "saleStartAt":
                 "",
 
@@ -1978,7 +2474,9 @@ def scrape_tiget(
     print(
         "TIGET",
         performer_name,
-        len(events),
+        len(
+            events
+        ),
         "件"
     )
 
@@ -1989,7 +2487,9 @@ def scrape_tiget(
 # 重複整理
 # =========================================================
 
-def remove_duplicates(events):
+def remove_duplicates(
+    events
+):
     result = []
     seen = set()
 
@@ -2013,16 +2513,21 @@ def remove_duplicates(events):
 
 
 # =========================================================
-# firstSeenAt
+# 過去イベント照合
 # =========================================================
 
 def build_old_event_maps(
     old_events
 ):
     maps = {
-        "source": {},
-        "stable": {},
-        "loose": {},
+        "source":
+            {},
+
+        "stable":
+            {},
+
+        "loose":
+            {},
     }
 
     for event in old_events:
@@ -2035,7 +2540,9 @@ def build_old_event_maps(
         if source_key:
             maps[
                 "source"
-            ][source_key] = event
+            ][
+                source_key
+            ] = event
 
         maps[
             "stable"
@@ -2069,11 +2576,15 @@ def find_old_event(
     if (
         source_key
         and source_key
-        in old_maps["source"]
+        in old_maps[
+            "source"
+        ]
     ):
         return old_maps[
             "source"
-        ][source_key]
+        ][
+            source_key
+        ]
 
     stable_key = (
         stable_notification_key(
@@ -2083,11 +2594,15 @@ def find_old_event(
 
     if (
         stable_key
-        in old_maps["stable"]
+        in old_maps[
+            "stable"
+        ]
     ):
         return old_maps[
             "stable"
-        ][stable_key]
+        ][
+            stable_key
+        ]
 
     loose_key = (
         loose_notification_key(
@@ -2097,26 +2612,41 @@ def find_old_event(
 
     if (
         loose_key
-        in old_maps["loose"]
+        in old_maps[
+            "loose"
+        ]
     ):
         return old_maps[
             "loose"
-        ][loose_key]
+        ][
+            loose_key
+        ]
 
     return None
 
 
-def preserve_first_seen(
+# =========================================================
+# 新着情報
+# =========================================================
+
+def apply_discovery_metadata(
     events,
-    old_events
+    old_events,
+    new_events
 ):
-    old_maps = (
-        build_old_event_maps(
-            old_events
-        )
+    old_maps = build_old_event_maps(
+        old_events
     )
 
+    new_keys = {
+        identity_key(
+            event
+        )
+        for event in new_events
+    }
+
     current_time = now_iso()
+    until_time = new_until_iso()
 
     for event in events:
         old_event = find_old_event(
@@ -2139,14 +2669,37 @@ def preserve_first_seen(
                 current_time
             )
 
+            # 以前からnewUntilが付いていた
+            # 本当の新着だけ期限を維持
+            event[
+                "newUntil"
+            ] = old_event.get(
+                "newUntil",
+                ""
+            )
+
         else:
             event[
                 "firstSeenAt"
             ] = current_time
 
+            if (
+                identity_key(
+                    event
+                )
+                in new_keys
+            ):
+                event[
+                    "newUntil"
+                ] = until_time
+            else:
+                event[
+                    "newUntil"
+                ] = ""
+
 
 # =========================================================
-# 同一ライブに追跡芸人を付与
+# 追跡芸人
 # =========================================================
 
 def attach_tracked_performers(
@@ -2164,11 +2717,9 @@ def attach_tracked_performers(
             []
         )
 
-        performer_id = (
-            event.get(
-                "performerId",
-                ""
-            )
+        performer_id = event.get(
+            "performerId",
+            ""
         )
 
         if (
@@ -2176,7 +2727,9 @@ def attach_tracked_performers(
             and performer_id
             not in groups[key]
         ):
-            groups[key].append(
+            groups[
+                key
+            ].append(
                 performer_id
             )
 
@@ -2205,7 +2758,7 @@ def main():
     )
 
     print(
-        "詳細情報＋firstSeenAt版"
+        "販売枠＋新着48時間版"
     )
 
     print(
@@ -2215,7 +2768,8 @@ def main():
     config = load_json(
         PERFORMERS_FILE,
         {
-            "performers": []
+            "performers":
+                []
         }
     )
 
@@ -2227,7 +2781,8 @@ def main():
     old_data = load_json(
         EVENTS_FILE,
         {
-            "events": []
+            "events":
+                []
         }
     )
 
@@ -2274,7 +2829,7 @@ def main():
     )
 
     # =====================================================
-    # 既存公演は通知済み扱い
+    # 既存公演を通知済みに登録
     # =====================================================
 
     for event in old_events:
@@ -2323,17 +2878,21 @@ def main():
 
     print(
         "既存公演を通知済みに登録:",
-        len(old_events),
+        len(
+            old_events
+        ),
         "件"
     )
 
     print(
         "通知済みURL/ID:",
-        len(source_keys)
+        len(
+            source_keys
+        )
     )
 
     # =====================================================
-    # セッション
+    # スクレイピング
     # =====================================================
 
     session = requests.Session()
@@ -2344,13 +2903,7 @@ def main():
 
     all_events = []
 
-    # FANY詳細URLは同じページを
-    # 芸人ごとに何度も読まないようキャッシュ
     fany_detail_cache = {}
-
-    # =====================================================
-    # スクレイピング
-    # =====================================================
 
     for performer in performers:
         if not performer.get(
@@ -2412,25 +2965,64 @@ def main():
         )
     ]
 
-    # =====================================================
-    # 同じ芸人・同じ公演の重複除去
-    # =====================================================
-
     all_events = remove_duplicates(
         all_events
     )
 
     # =====================================================
-    # firstSeenAtを維持
+    # 本当の新規公演
     # =====================================================
 
-    preserve_first_seen(
+    new_events = []
+
+    for event in all_events:
+        source_key = (
+            source_notification_key(
+                event
+            )
+        )
+
+        stable_key = (
+            stable_notification_key(
+                event
+            )
+        )
+
+        loose_key = (
+            loose_notification_key(
+                event
+            )
+        )
+
+        if (
+            source_key
+            and source_key
+            in source_keys
+        ):
+            continue
+
+        if stable_key in stable_keys:
+            continue
+
+        if loose_key in loose_keys:
+            continue
+
+        new_events.append(
+            event
+        )
+
+    # =====================================================
+    # firstSeenAt / newUntil
+    # =====================================================
+
+    apply_discovery_metadata(
         all_events,
-        old_events
+        old_events,
+        new_events
     )
 
     # =====================================================
-    # 同じライブに出る追跡芸人一覧
+    # 共演情報
     # =====================================================
 
     attach_tracked_performers(
@@ -2457,50 +3049,6 @@ def main():
             ),
         )
     )
-
-    # =====================================================
-    # 本当に新しい公演だけ
-    # =====================================================
-
-    new_events = []
-
-    for event in all_events:
-        source_key = (
-            source_notification_key(
-                event
-            )
-        )
-
-        stable_key = (
-            stable_notification_key(
-                event
-            )
-        )
-
-        loose_key = (
-            loose_notification_key(
-                event
-            )
-        )
-
-        # TIGET公演ID / FANY受付ID
-        if (
-            source_key
-            and source_key in source_keys
-        ):
-            continue
-
-        # 日付＋時間＋会場
-        if stable_key in stable_keys:
-            continue
-
-        # 日付＋会場＋タイトル
-        if loose_key in loose_keys:
-            continue
-
-        new_events.append(
-            event
-        )
 
     # =====================================================
     # 保存
@@ -2539,6 +3087,24 @@ def main():
         )
     )
 
+    ticket_option_event_count = sum(
+        1
+        for event in all_events
+        if event.get(
+            "ticketOptions"
+        )
+    )
+
+    ticket_option_total = sum(
+        len(
+            event.get(
+                "ticketOptions",
+                []
+            )
+        )
+        for event in all_events
+    )
+
     sale_start_count = sum(
         1
         for event in all_events
@@ -2563,6 +3129,14 @@ def main():
         )
     )
 
+    new_until_count = sum(
+        1
+        for event in all_events
+        if event.get(
+            "newUntil"
+        )
+    )
+
     print("")
     print(
         "================================"
@@ -2570,12 +3144,26 @@ def main():
 
     print(
         "現在の公演数:",
-        len(all_events)
+        len(
+            all_events
+        )
     )
 
     print(
         "販売状況取得:",
         status_count,
+        "件"
+    )
+
+    print(
+        "販売枠取得公演:",
+        ticket_option_event_count,
+        "件"
+    )
+
+    print(
+        "販売枠合計:",
+        ticket_option_total,
         "件"
     )
 
@@ -2598,8 +3186,16 @@ def main():
     )
 
     print(
+        "48時間NEW:",
+        new_until_count,
+        "件"
+    )
+
+    print(
         "本当の新規公演:",
-        len(new_events)
+        len(
+            new_events
+        )
     )
 
     for event in new_events:
