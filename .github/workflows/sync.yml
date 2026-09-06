@@ -11,8 +11,11 @@ permissions:
   pages: write
   id-token: write
 
+# ==========================================
+# 同時に複数の同期処理を走らせない
+# ==========================================
 concurrency:
-  group: "pages"
+  group: sync-events-and-pages
   cancel-in-progress: false
 
 jobs:
@@ -25,6 +28,16 @@ jobs:
       # ==========================================
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # ==========================================
+      # 実行開始時点の最新mainに合わせる
+      # ==========================================
+      - name: Update to latest main
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
 
       # ==========================================
       # Python
@@ -43,7 +56,7 @@ jobs:
           pip install requests beautifulsoup4
 
       # ==========================================
-      # FANY + TIGETを取得
+      # FANY + TIGET + イープラス等を取得
       # ==========================================
       - name: Scrape events
         run: |
@@ -70,24 +83,72 @@ jobs:
       # events.json
       # notified_events.json
       # をGitHubに保存
+      #
+      # rebaseは使わず、
+      # 最新mainを土台に生成済みJSONを載せ直す
       # ==========================================
       - name: Save updated events
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add events.json
+          # 今回生成したファイルを一時退避
+          cp events.json /tmp/events.json
 
           if [ -f notified_events.json ]; then
-            git add notified_events.json
+            cp notified_events.json /tmp/notified_events.json
           fi
 
-          if git diff --cached --quiet; then
-            echo "No changes to save."
-          else
+          SAVE_SUCCESS=false
+
+          for ATTEMPT in 1 2 3
+          do
+            echo "================================"
+            echo "Save attempt: ${ATTEMPT}/3"
+            echo "================================"
+
+            # 保存直前の最新mainを取得
+            git fetch origin main
+            git reset --hard origin/main
+
+            # 今回生成したデータを戻す
+            cp /tmp/events.json events.json
+
+            if [ -f /tmp/notified_events.json ]; then
+              cp /tmp/notified_events.json notified_events.json
+            fi
+
+            git add events.json
+
+            if [ -f notified_events.json ]; then
+              git add notified_events.json
+            fi
+
+            # 変更がなければ保存不要
+            if git diff --cached --quiet; then
+              echo "No changes to save."
+              SAVE_SUCCESS=true
+              break
+            fi
+
             git commit -m "Update events and notification history"
-            git pull --rebase origin main
-            git push origin main
+
+            # push成功なら終了
+            if git push origin HEAD:main; then
+              echo "Push succeeded."
+              SAVE_SUCCESS=true
+              break
+            fi
+
+            echo "Push failed because main changed."
+            echo "Retrying with the latest main..."
+
+            sleep 2
+          done
+
+          if [ "$SAVE_SUCCESS" != "true" ]; then
+            echo "Failed to save after 3 attempts."
+            exit 1
           fi
 
       # ==========================================
