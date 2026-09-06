@@ -8,6 +8,7 @@ import requests
 from bs4 import BeautifulSoup
 
 from eplus_scraper import scrape_eplus
+from livepocket_scraper import scrape_livepocket
 
 PERFORMERS_FILE = "performers.json"
 EVENTS_FILE = "events.json"
