@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-06T14:50:01.325460+00:00",
+  "syncedAt": "2026-09-06T14:55:38.909088+00:00",
   "performers": [
     {
       "id": "maison",
@@ -2349,6 +2349,7 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison",
+        "pyuto",
         "nansui"
       ]
     },
@@ -2404,6 +2405,63 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison",
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-09-19",
+      "openTime": "14:30",
+      "startTime": "15:30",
+      "title": "トーキョーマンゲキフェス2026ー渋神三世代決戦ー",
+      "venue": "LINE CUBE SHIBUYA（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/63814/51190",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "SS席",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥12,000"
+        },
+        {
+          "name": "S席",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥10,000"
+        },
+        {
+          "name": "A席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥8,000"
+        },
+        {
+          "name": "B席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥7,000"
+        }
+      ],
+      "saleStartAt": "2026-08-30T10:00:00+09:00",
+      "performersText": [
+        "東京15期－18期チーム",
+        "チームリーダー： ダンビラムーチョ",
+        "滝音",
+        "東京19期－23期チーム",
+        "チームリーダー：エバース",
+        "9番街レトロ",
+        "東京24期－31期チーム",
+        "チームリーダー：金魚番長",
+        "ゼロカラン"
+      ],
+      "firstSeenAt": "2026-09-06T14:55:38.906351+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison",
+        "pyuto",
         "nansui"
       ]
     },
@@ -2448,7 +2506,53 @@
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
       "newUntil": "",
       "trackedPerformers": [
-        "maison"
+        "maison",
+        "pyuto"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-09-20",
+      "openTime": "10:45",
+      "startTime": "11:00",
+      "title": "神保町マンゲキお笑いライブ",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/61274/49831",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
+      "saleStartAt": "2026-08-05T10:00:00+09:00",
+      "performersText": [
+        "[ネタ出演者]滝音",
+        "めぞん",
+        "kento fukaya",
+        "やさしいズ",
+        "田津原理音",
+        "おミュータンツ",
+        "太鵬",
+        "ピュート",
+        "金魚番長",
+        "ドンココ",
+        "他"
+      ],
+      "firstSeenAt": "2026-09-06T14:55:38.906351+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison",
+        "pyuto"
       ]
     },
     {
@@ -2492,7 +2596,53 @@
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
       "newUntil": "",
       "trackedPerformers": [
-        "maison"
+        "maison",
+        "pyuto"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-09-20",
+      "openTime": "12:45",
+      "startTime": "13:00",
+      "title": "神保町マンゲキお笑いライブ",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/61274/49830",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
+      "saleStartAt": "2026-08-05T10:00:00+09:00",
+      "performersText": [
+        "[ネタ出演者]滝音",
+        "めぞん",
+        "kento fukaya",
+        "やさしいズ",
+        "田津原理音",
+        "おミュータンツ",
+        "太鵬",
+        "ピュート",
+        "金魚番長",
+        "ドンココ",
+        "他"
+      ],
+      "firstSeenAt": "2026-09-06T14:55:38.906351+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison",
+        "pyuto"
       ]
     },
     {
@@ -2536,7 +2686,53 @@
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
       "newUntil": "",
       "trackedPerformers": [
-        "maison"
+        "maison",
+        "pyuto"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-09-20",
+      "openTime": "14:45",
+      "startTime": "15:00",
+      "title": "神保町マンゲキお笑いライブ",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/61274/49846",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
+      "saleStartAt": "2026-08-05T10:00:00+09:00",
+      "performersText": [
+        "[ネタ出演者]滝音",
+        "めぞん",
+        "kento fukaya",
+        "やさしいズ",
+        "田津原理音",
+        "おミュータンツ",
+        "太鵬",
+        "ピュート",
+        "金魚番長",
+        "ドンココ",
+        "他"
+      ],
+      "firstSeenAt": "2026-09-06T14:55:38.906351+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison",
+        "pyuto"
       ]
     },
     {
@@ -2729,6 +2925,7 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison",
+        "pyuto",
         "nansui"
       ]
     },
@@ -2922,7 +3119,233 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison",
+        "pyuto",
         "nansui"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-09-21",
+      "openTime": "09:30",
+      "startTime": "10:30",
+      "title": "【3日通し券・前半2日通し券・9/21(月)1日券】KOYABU SONIC 2026",
+      "venue": "インテックス大阪 4号館、5号館（大阪府）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/54840/45208",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "前売フォートナイト大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥35,500"
+        },
+        {
+          "name": "前売フォートナイト中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥12,500"
+        },
+        {
+          "name": "前売フォートナイトこども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥35,500"
+        },
+        {
+          "name": "前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥12,500"
+        },
+        {
+          "name": "前売 こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売フォートナイト大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥26,000"
+        },
+        {
+          "name": "前売フォートナイト中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥9,000"
+        },
+        {
+          "name": "前売フォートナイトこども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥4,500"
+        },
+        {
+          "name": "前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥26,000"
+        },
+        {
+          "name": "前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥9,000"
+        },
+        {
+          "name": "前売 こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥4,500"
+        },
+        {
+          "name": "前売フォートナイト大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥15,500"
+        },
+        {
+          "name": "前売フォートナイト中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売フォートナイトこども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,500"
+        },
+        {
+          "name": "前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥15,500"
+        },
+        {
+          "name": "前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売 こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,500"
+        }
+      ],
+      "saleStartAt": "2026-07-29T11:00:00+09:00",
+      "performersText": [
+        "≪9",
+        "21 出演アーティスト≫",
+        "新しい学校のリーダーズ",
+        "カジヒデキ",
+        "くまま",
+        "サニーデイ・サービス",
+        "サバシスター",
+        "竹下☆ぱらだいす×MADAMADA",
+        "ニガミ17才",
+        "ブランデー戦記",
+        "Red Eye",
+        "21 出演芸人≫",
+        "21 フォートナイトエリア≫",
+        "Unger",
+        "今別府直之",
+        "宇都宮まき",
+        "かめてぃん",
+        "川畑泰史",
+        "キャプテンしょーた",
+        "しゅんてゃん",
+        "土屋翼(ミカボ)",
+        "寺本航(テンプルカントリー)",
+        "吉田裕",
+        "らいと",
+        "らいふがーど",
+        "LiaqN",
+        "--------------------",
+        "22 出演アーティスト≫",
+        "22 出演芸人≫",
+        "22 フォートナイトエリア≫",
+        "酒井藍",
+        "すっちー",
+        "諸見里大介",
+        "23 出演アーティスト≫",
+        "EGO-WRAPPIN'",
+        "コレサワ",
+        "サンボマスター",
+        "ジェニーハイ",
+        "水曜日のカンパネラ",
+        "スチャダラパー",
+        "モナキ",
+        "yama",
+        "and more...",
+        "23 出演芸人≫",
+        "今井らいぱち",
+        "エルフ",
+        "蛙亭",
+        "金属バット",
+        "コットン",
+        "ジャルジャル",
+        "滝音",
+        "ニッポンの社長",
+        "バッテリィズ",
+        "ぱーてぃーちゃん",
+        "藤崎マーケット",
+        "紅しょうが",
+        "マユリカ",
+        "ミルクボーイ",
+        "矢野・兵動",
+        "ロングコートダディ",
+        "23 フォートナイトエリア≫",
+        "bykn",
+        "Minipiyo"
+      ],
+      "firstSeenAt": "2026-09-06T14:55:38.906351+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison",
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-09-21",
+      "openTime": "16:15",
+      "startTime": "16:30",
+      "title": "11月のリサ&ピュートと大阪交友",
+      "venue": "よしもと道頓堀シアター（大阪府）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/65690/52648",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "整理番号付自由席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,800"
+        }
+      ],
+      "saleStartAt": "2026-09-03T10:00:00+09:00",
+      "performersText": [
+        "11月のリサ",
+        "ピュート",
+        "うただ",
+        "シカノシンプ"
+      ],
+      "firstSeenAt": "2026-09-06T14:55:38.906351+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "pyuto"
       ]
     },
     {
@@ -3079,6 +3502,7 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison",
+        "pyuto",
         "nansui"
       ]
     },
@@ -3236,6 +3660,165 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison",
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-09-22",
+      "openTime": "09:30",
+      "startTime": "10:30",
+      "title": "【後半2日通し券・9/22(火)1日券】KOYABU SONIC 2026",
+      "venue": "インテックス大阪 4号館、5号館（大阪府）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/54840/45209",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "前売フォートナイト大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥26,000"
+        },
+        {
+          "name": "前売フォートナイト中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥9,000"
+        },
+        {
+          "name": "前売フォートナイトこども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥4,500"
+        },
+        {
+          "name": "前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥26,000"
+        },
+        {
+          "name": "前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥9,000"
+        },
+        {
+          "name": "前売 こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥4,500"
+        },
+        {
+          "name": "前売フォートナイト大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥15,500"
+        },
+        {
+          "name": "前売フォートナイト中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売フォートナイトこども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,500"
+        },
+        {
+          "name": "前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥15,500"
+        },
+        {
+          "name": "前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売 こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,500"
+        }
+      ],
+      "saleStartAt": "2026-07-29T11:00:00+09:00",
+      "performersText": [
+        "≪9",
+        "21 出演アーティスト≫",
+        "新しい学校のリーダーズ",
+        "カジヒデキ",
+        "くまま",
+        "サニーデイ・サービス",
+        "サバシスター",
+        "竹下☆ぱらだいす×MADAMADA",
+        "ニガミ17才",
+        "ブランデー戦記",
+        "Red Eye",
+        "21 出演芸人≫",
+        "21 フォートナイトエリア≫",
+        "Unger",
+        "今別府直之",
+        "宇都宮まき",
+        "かめてぃん",
+        "川畑泰史",
+        "キャプテンしょーた",
+        "しゅんてゃん",
+        "土屋翼(ミカボ)",
+        "寺本航(テンプルカントリー)",
+        "吉田裕",
+        "らいと",
+        "らいふがーど",
+        "LiaqN",
+        "--------------------",
+        "22 出演アーティスト≫",
+        "22 出演芸人≫",
+        "22 フォートナイトエリア≫",
+        "酒井藍",
+        "すっちー",
+        "諸見里大介",
+        "23 出演アーティスト≫",
+        "EGO-WRAPPIN'",
+        "コレサワ",
+        "サンボマスター",
+        "ジェニーハイ",
+        "水曜日のカンパネラ",
+        "スチャダラパー",
+        "モナキ",
+        "yama",
+        "and more...",
+        "23 出演芸人≫",
+        "今井らいぱち",
+        "エルフ",
+        "蛙亭",
+        "金属バット",
+        "コットン",
+        "ジャルジャル",
+        "滝音",
+        "ニッポンの社長",
+        "バッテリィズ",
+        "ぱーてぃーちゃん",
+        "藤崎マーケット",
+        "紅しょうが",
+        "マユリカ",
+        "ミルクボーイ",
+        "矢野・兵動",
+        "ロングコートダディ",
+        "23 フォートナイトエリア≫",
+        "bykn",
+        "Minipiyo"
+      ],
+      "firstSeenAt": "2026-09-06T14:55:38.906351+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison",
+        "pyuto",
         "nansui"
       ]
     },
@@ -3500,6 +4083,35 @@
       ]
     },
     {
+      "performerId": "pyuto",
+      "date": "2026-09-22",
+      "openTime": "19:15",
+      "startTime": "19:30",
+      "title": "イワサキトークライブ～やめな？～",
+      "venue": "高円寺ジュンジョー（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/65568/52584",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "整理番号付自由席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
+      "saleStartAt": "2026-08-27T10:00:00+09:00",
+      "performersText": [
+        "イワサキ",
+        "ピュート"
+      ],
+      "firstSeenAt": "2026-09-06T14:55:38.906351+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "pyuto"
+      ]
+    },
+    {
       "performerId": "maison",
       "date": "2026-09-23",
       "openTime": "09:30",
@@ -3617,6 +4229,7 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison",
+        "pyuto",
         "nansui"
       ]
     },
@@ -3738,6 +4351,129 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison",
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-09-23",
+      "openTime": "09:30",
+      "startTime": "10:30",
+      "title": "【9/23(水)1日券】KOYABU SONIC 2026",
+      "venue": "インテックス大阪 4号館、5号館（大阪府）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/54840/45210",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "前売フォートナイト大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥15,500"
+        },
+        {
+          "name": "前売フォートナイト中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売フォートナイトこども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,500"
+        },
+        {
+          "name": "前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥15,500"
+        },
+        {
+          "name": "前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売 こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,500"
+        }
+      ],
+      "saleStartAt": "2026-07-29T11:00:00+09:00",
+      "performersText": [
+        "≪9",
+        "21 出演アーティスト≫",
+        "新しい学校のリーダーズ",
+        "カジヒデキ",
+        "くまま",
+        "サニーデイ・サービス",
+        "サバシスター",
+        "竹下☆ぱらだいす×MADAMADA",
+        "ニガミ17才",
+        "ブランデー戦記",
+        "Red Eye",
+        "21 出演芸人≫",
+        "21 フォートナイトエリア≫",
+        "Unger",
+        "今別府直之",
+        "宇都宮まき",
+        "かめてぃん",
+        "川畑泰史",
+        "キャプテンしょーた",
+        "しゅんてゃん",
+        "土屋翼(ミカボ)",
+        "寺本航(テンプルカントリー)",
+        "吉田裕",
+        "らいと",
+        "らいふがーど",
+        "LiaqN",
+        "--------------------",
+        "22 出演アーティスト≫",
+        "22 出演芸人≫",
+        "22 フォートナイトエリア≫",
+        "酒井藍",
+        "すっちー",
+        "諸見里大介",
+        "23 出演アーティスト≫",
+        "EGO-WRAPPIN'",
+        "コレサワ",
+        "サンボマスター",
+        "ジェニーハイ",
+        "水曜日のカンパネラ",
+        "スチャダラパー",
+        "モナキ",
+        "yama",
+        "and more...",
+        "23 出演芸人≫",
+        "今井らいぱち",
+        "エルフ",
+        "蛙亭",
+        "金属バット",
+        "コットン",
+        "ジャルジャル",
+        "滝音",
+        "ニッポンの社長",
+        "バッテリィズ",
+        "ぱーてぃーちゃん",
+        "藤崎マーケット",
+        "紅しょうが",
+        "マユリカ",
+        "ミルクボーイ",
+        "矢野・兵動",
+        "ロングコートダディ",
+        "23 フォートナイトエリア≫",
+        "bykn",
+        "Minipiyo"
+      ],
+      "firstSeenAt": "2026-09-06T14:55:38.906351+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison",
+        "pyuto",
         "nansui"
       ]
     },
