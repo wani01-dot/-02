@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-06T16:21:32.010773+00:00",
+  "syncedAt": "2026-09-06T16:29:05.657909+00:00",
   "performers": [
     {
       "id": "maison",
@@ -57,7 +57,7 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61159/49783",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [
         {
           "name": "全席指定",
@@ -81,7 +81,7 @@
         {
           "name": "立見（整理番号付）",
           "type": "当日",
-          "status": "予定数終了",
+          "status": "残りわずか",
           "price": "￥3,300",
           "salePeriods": [
             {
@@ -139,7 +139,7 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61159/49783",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [
         {
           "name": "全席指定",
@@ -163,7 +163,7 @@
         {
           "name": "立見（整理番号付）",
           "type": "当日",
-          "status": "予定数終了",
+          "status": "残りわずか",
           "price": "￥3,300",
           "salePeriods": [
             {
@@ -11425,71 +11425,13 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/60996/49609",
-      "ticketStatus": "販売中",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "前売",
-          "status": "販売中",
-          "price": "￥2,000",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-28T19:00:00+09:00",
-              "saleKey": "fany|maison|60996|49609|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-28T19:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        },
-        {
-          "name": "立見（整理番号付）",
-          "type": "前売",
-          "status": "販売中",
-          "price": "￥2,000",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-28T19:00:00+09:00",
-              "saleKey": "fany|maison|60996|49609|立見（整理番号付）|前売|first_come|2026-08-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-28T19:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-08-05T10:00:00+09:00",
-      "saleEndAt": "2026-09-28T19:00:00+09:00",
-      "saleCategory": "first_come",
-      "salePeriods": [
-        {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-08-05T10:00:00+09:00",
-          "endAt": "2026-09-28T19:00:00+09:00"
-        }
-      ],
-      "performersText": [
-        "[企画ライブ]めぞん",
-        "金魚番長",
-        "伝書鳩",
-        "木本悠斗",
-        "江頭一馬",
-        "ニセほっけ",
-        "タケゾウ",
-        "ネネネ",
-        "美バンブー",
-        "スピード",
-        "MC：ビューティフルトーキョーマンズ 鈴木バイダン"
-      ],
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
       "newUntil": "",
       "trackedPerformers": [
