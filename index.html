@@ -21,8 +21,13 @@
       box-sizing: border-box;
     }
 
+    html,
     body {
       margin: 0;
+      min-height: 100%;
+    }
+
+    body {
       background: #f3f3f3;
       color: #222;
 
@@ -36,17 +41,321 @@
     }
 
 
+    body.menu-open {
+      overflow: hidden;
+    }
+
+
+    /* =====================================
+       ヘッダー
+    ===================================== */
+
+    .topbar {
+      width: 100%;
+      max-width: 760px;
+
+      margin: 0 auto;
+
+      padding: 12px 10px 0;
+
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+
+    .menu-button {
+      flex: 0 0 auto;
+
+      width: 42px;
+      height: 42px;
+
+      border: none;
+      border-radius: 12px;
+
+      background: white;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 24px;
+      line-height: 1;
+
+      cursor: pointer;
+
+      box-shadow:
+        0 2px 10px
+        rgba(0,0,0,0.06);
+    }
+
+
+    .title-block {
+      min-width: 0;
+      padding-top: 1px;
+    }
+
+
+    .site-title {
+      margin: 0;
+
+      font-size: 22px;
+      line-height: 1.25;
+    }
+
+
+    .site-subtitle {
+      margin-top: 4px;
+
+      font-size: 13px;
+      color: #7b8492;
+    }
+
+
+    /* =====================================
+       ページ
+    ===================================== */
+
     .wrapper {
       width: 100%;
       max-width: 760px;
       margin: 0 auto;
-      padding: 14px 8px 50px;
+      padding: 12px 8px 50px;
     }
 
 
-    h1 {
-      margin: 4px 4px 12px;
-      font-size: 22px;
+    /* =====================================
+       サイドメニュー
+    ===================================== */
+
+    .menu-overlay {
+      position: fixed;
+
+      inset: 0;
+
+      z-index: 9998;
+
+      background:
+        rgba(20, 32, 48, 0.48);
+
+      opacity: 0;
+      visibility: hidden;
+
+      transition:
+        opacity 0.22s ease,
+        visibility 0.22s ease;
+    }
+
+
+    .menu-overlay.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+
+    .side-menu {
+      position: fixed;
+
+      top: 0;
+      left: 0;
+      bottom: 0;
+
+      z-index: 9999;
+
+      width: min(86vw, 355px);
+
+      background: #ffffff;
+
+      transform:
+        translateX(-104%);
+
+      transition:
+        transform 0.25s ease;
+
+      box-shadow:
+        8px 0 30px
+        rgba(0, 0, 0, 0.16);
+
+      display: flex;
+      flex-direction: column;
+
+      overflow-y: auto;
+
+      -webkit-overflow-scrolling: touch;
+    }
+
+
+    .side-menu.open {
+      transform:
+        translateX(0);
+    }
+
+
+    .side-menu-inner {
+      padding:
+        max(18px, env(safe-area-inset-top))
+        18px
+        calc(
+          18px +
+          env(safe-area-inset-bottom)
+        );
+    }
+
+
+    .side-menu-close {
+      width: 42px;
+      height: 42px;
+
+      border: none;
+
+      background: transparent;
+
+      padding: 0;
+
+      margin-bottom: 8px;
+
+      font-size: 36px;
+      font-weight: 200;
+      line-height: 1;
+
+      color: #102039;
+
+      cursor: pointer;
+    }
+
+
+    .side-menu-title {
+      margin: 0;
+
+      font-size: 24px;
+      font-weight: 800;
+      color: #102039;
+    }
+
+
+    .side-menu-subtitle {
+      margin:
+        6px
+        0
+        18px;
+
+      font-size: 14px;
+      line-height: 1.5;
+
+      color: #7b8492;
+    }
+
+
+    .menu-section {
+      padding:
+        4px
+        0
+        14px;
+    }
+
+
+    .menu-section + .menu-section {
+      border-top:
+        1px solid
+        #e9edf2;
+
+      padding-top:
+        14px;
+    }
+
+
+    .side-menu-item {
+      width: 100%;
+
+      border: none;
+
+      background: transparent;
+
+      padding:
+        11px
+        12px;
+
+      border-radius: 14px;
+
+      display: flex;
+      align-items: center;
+      gap: 13px;
+
+      text-align: left;
+
+      color: #102039;
+
+      font-size: 16px;
+      font-weight: 700;
+
+      cursor: pointer;
+    }
+
+
+    .side-menu-item.active {
+      background:
+        #e8f2ff;
+
+      color:
+        #1677e8;
+    }
+
+
+    .menu-icon {
+      width: 28px;
+
+      flex: 0 0 28px;
+
+      text-align: center;
+
+      font-size: 23px;
+      line-height: 1;
+    }
+
+
+    .menu-label {
+      min-width: 0;
+      flex: 1;
+    }
+
+
+    .menu-badge {
+      min-width: 28px;
+      height: 28px;
+
+      padding:
+        0
+        8px;
+
+      border-radius: 999px;
+
+      display: none;
+      align-items: center;
+      justify-content: center;
+
+      background:
+        #ee4169;
+
+      color: white;
+
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+
+    .menu-badge.show {
+      display: flex;
+    }
+
+
+    .menu-version {
+      margin-top: 26px;
+
+      text-align: center;
+
+      color: #a1a9b5;
+
+      font-size: 12px;
     }
 
 
@@ -306,6 +615,12 @@
 
     @media(max-width: 520px) {
 
+      .topbar {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+
+
       .wrapper {
         padding-left: 6px;
         padding-right: 6px;
@@ -334,10 +649,258 @@
 
 <body>
 
+
+<!-- ===================================
+     サイドメニュー背景
+==================================== -->
+
+<div
+  id="menu-overlay"
+  class="menu-overlay"
+></div>
+
+
+<!-- ===================================
+     サイドメニュー
+==================================== -->
+
+<aside
+  id="side-menu"
+  class="side-menu"
+  aria-hidden="true"
+>
+
+  <div class="side-menu-inner">
+
+    <button
+      id="side-menu-close"
+      class="side-menu-close"
+      type="button"
+      aria-label="メニューを閉じる"
+    >
+      ×
+    </button>
+
+
+    <h2 class="side-menu-title">
+      ライブカレンダー
+    </h2>
+
+
+    <div class="side-menu-subtitle">
+      今日のライブ追いかけよう
+    </div>
+
+
+    <div class="menu-section">
+
+      <button
+        class="side-menu-item active"
+        type="button"
+        data-menu="calendar"
+      >
+        <span class="menu-icon">
+          📅
+        </span>
+
+        <span class="menu-label">
+          カレンダー
+        </span>
+      </button>
+
+
+      <button
+        class="side-menu-item"
+        type="button"
+        data-menu="new"
+      >
+        <span class="menu-icon">
+          ☆
+        </span>
+
+        <span class="menu-label">
+          新着ライブ
+        </span>
+
+        <span
+          id="new-live-badge"
+          class="menu-badge"
+        >
+          0
+        </span>
+      </button>
+
+
+      <button
+        class="side-menu-item"
+        type="button"
+        data-menu="favorite"
+      >
+        <span class="menu-icon">
+          ♡
+        </span>
+
+        <span class="menu-label">
+          行きたいライブ
+        </span>
+
+        <span
+          id="favorite-badge"
+          class="menu-badge"
+        >
+          0
+        </span>
+      </button>
+
+
+      <button
+        class="side-menu-item"
+        type="button"
+        data-menu="sale"
+      >
+        <span class="menu-icon">
+          🎫
+        </span>
+
+        <span class="menu-label">
+          販売開始が近いもの
+        </span>
+
+        <span
+          id="sale-badge"
+          class="menu-badge"
+        >
+          0
+        </span>
+      </button>
+
+    </div>
+
+
+    <div class="menu-section">
+
+      <button
+        class="side-menu-item"
+        type="button"
+        data-menu="search"
+      >
+        <span class="menu-icon">
+          🔍
+        </span>
+
+        <span class="menu-label">
+          ライブを検索
+        </span>
+      </button>
+
+
+      <button
+        class="side-menu-item"
+        type="button"
+        data-menu="performers"
+      >
+        <span class="menu-icon">
+          👥
+        </span>
+
+        <span class="menu-label">
+          出演者一覧
+        </span>
+      </button>
+
+
+      <button
+        class="side-menu-item"
+        type="button"
+        data-menu="coappearance"
+      >
+        <span class="menu-icon">
+          🎭
+        </span>
+
+        <span class="menu-label">
+          共演検索
+        </span>
+      </button>
+
+    </div>
+
+
+    <div class="menu-section">
+
+      <button
+        class="side-menu-item"
+        type="button"
+        data-menu="settings"
+      >
+        <span class="menu-icon">
+          ⚙️
+        </span>
+
+        <span class="menu-label">
+          設定
+        </span>
+      </button>
+
+
+      <button
+        class="side-menu-item"
+        type="button"
+        data-menu="help"
+      >
+        <span class="menu-icon">
+          ❔
+        </span>
+
+        <span class="menu-label">
+          ヘルプ・使い方
+        </span>
+      </button>
+
+    </div>
+
+
+    <div class="menu-version">
+      v1.0.0
+    </div>
+
+  </div>
+
+</aside>
+
+
+<!-- ===================================
+     ヘッダー
+==================================== -->
+
+<header class="topbar">
+
+  <button
+    id="menu-button"
+    class="menu-button"
+    type="button"
+    aria-label="メニューを開く"
+  >
+    ☰
+  </button>
+
+
+  <div class="title-block">
+
+    <h1 class="site-title">
+      🎙 芸人出演カレンダー
+    </h1>
+
+    <div class="site-subtitle">
+      今日のライブ追いかけよう
+    </div>
+
+  </div>
+
+</header>
+
+
 <div class="wrapper">
-
-
-  <h1>🎙 芸人出演カレンダー</h1>
 
 
   <!-- ===================================
@@ -404,6 +967,170 @@
 
 
 <script>
+
+
+/* =========================================
+   サイドメニュー
+========================================= */
+
+const menuButton =
+  document.getElementById(
+    "menu-button"
+  );
+
+const sideMenu =
+  document.getElementById(
+    "side-menu"
+  );
+
+const menuOverlay =
+  document.getElementById(
+    "menu-overlay"
+  );
+
+const sideMenuClose =
+  document.getElementById(
+    "side-menu-close"
+  );
+
+
+function openSideMenu() {
+
+  sideMenu.classList.add(
+    "open"
+  );
+
+  menuOverlay.classList.add(
+    "open"
+  );
+
+  document.body.classList.add(
+    "menu-open"
+  );
+
+  sideMenu.setAttribute(
+    "aria-hidden",
+    "false"
+  );
+
+}
+
+
+function closeSideMenu() {
+
+  sideMenu.classList.remove(
+    "open"
+  );
+
+  menuOverlay.classList.remove(
+    "open"
+  );
+
+  document.body.classList.remove(
+    "menu-open"
+  );
+
+  sideMenu.setAttribute(
+    "aria-hidden",
+    "true"
+  );
+
+}
+
+
+menuButton.addEventListener(
+  "click",
+  openSideMenu
+);
+
+
+sideMenuClose.addEventListener(
+  "click",
+  closeSideMenu
+);
+
+
+menuOverlay.addEventListener(
+  "click",
+  closeSideMenu
+);
+
+
+document.addEventListener(
+  "keydown",
+  event => {
+
+    if (
+      event.key ===
+      "Escape"
+    ) {
+
+      closeSideMenu();
+
+    }
+
+  }
+);
+
+
+/* 今はカレンダーだけ動作させる */
+document
+  .querySelectorAll(
+    ".side-menu-item"
+  )
+  .forEach(
+    item => {
+
+      item.addEventListener(
+        "click",
+        () => {
+
+          const menu =
+            item.dataset.menu;
+
+
+          if (
+            menu ===
+            "calendar"
+          ) {
+
+            document
+              .querySelectorAll(
+                ".side-menu-item"
+              )
+              .forEach(
+                button =>
+                  button
+                    .classList
+                    .remove(
+                      "active"
+                    )
+              );
+
+
+            item
+              .classList
+              .add(
+                "active"
+              );
+
+
+            closeSideMenu();
+
+
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth"
+            });
+
+          }
+
+        }
+      );
+
+    }
+  );
+
 
 
 /* =========================================
