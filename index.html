@@ -125,9 +125,7 @@
 
     .menu-overlay {
       position: fixed;
-
       inset: 0;
-
       z-index: 9998;
 
       background:
@@ -169,9 +167,6 @@
         8px 0 30px
         rgba(0, 0, 0, 0.16);
 
-      display: flex;
-      flex-direction: column;
-
       overflow-y: auto;
 
       -webkit-overflow-scrolling: touch;
@@ -197,11 +192,9 @@
       height: 42px;
 
       border: none;
-
       background: transparent;
 
       padding: 0;
-
       margin-bottom: 8px;
 
       font-size: 36px;
@@ -222,22 +215,14 @@
     }
 
     .side-menu-subtitle {
-      margin:
-        6px
-        0
-        18px;
+      margin: 6px 0 18px;
 
       font-size: 14px;
-      line-height: 1.5;
-
       color: #7b8492;
     }
 
     .menu-section {
-      padding:
-        4px
-        0
-        14px;
+      padding: 4px 0 14px;
     }
 
     .menu-section + .menu-section {
@@ -245,20 +230,16 @@
         1px solid
         #e9edf2;
 
-      padding-top:
-        14px;
+      padding-top: 14px;
     }
 
     .side-menu-item {
       width: 100%;
 
       border: none;
-
       background: transparent;
 
-      padding:
-        11px
-        12px;
+      padding: 11px 12px;
 
       border-radius: 14px;
 
@@ -277,22 +258,17 @@
     }
 
     .side-menu-item.active {
-      background:
-        #e8f2ff;
-
-      color:
-        #1677e8;
+      background: #e8f2ff;
+      color: #1677e8;
     }
 
     .menu-icon {
       width: 28px;
-
       flex: 0 0 28px;
 
       text-align: center;
 
-      font-size: 23px;
-      line-height: 1;
+      font-size: 22px;
     }
 
     .menu-label {
@@ -304,9 +280,7 @@
       min-width: 28px;
       height: 28px;
 
-      padding:
-        0
-        8px;
+      padding: 0 8px;
 
       border-radius: 999px;
 
@@ -314,9 +288,7 @@
       align-items: center;
       justify-content: center;
 
-      background:
-        #ee4169;
-
+      background: #ee4169;
       color: white;
 
       font-size: 13px;
@@ -346,6 +318,7 @@
       display: flex;
       gap: 8px;
       flex-wrap: wrap;
+
       margin: 0 4px 14px;
     }
 
@@ -359,8 +332,6 @@
       font-weight: 700;
 
       cursor: pointer;
-
-      transition: 0.15s;
     }
 
     .filter-button.off {
@@ -399,6 +370,10 @@
         rgba(0, 0, 0, 0.07);
     }
 
+    .calendar-hidden {
+      display: none !important;
+    }
+
     .fc .fc-toolbar-title {
       font-size: 19px;
     }
@@ -410,6 +385,7 @@
 
     .fc-event {
       border: none !important;
+
       cursor: pointer;
 
       font-size: 10px;
@@ -433,7 +409,7 @@
 
 
     /* =====================================
-       詳細
+       コンテンツ
     ===================================== */
 
     .detail-area {
@@ -443,11 +419,13 @@
     #detail-title {
       margin: 0 4px 10px;
 
-      font-size: 18px;
-      font-weight: bold;
+      font-size: 19px;
+      font-weight: 800;
     }
 
     .event-card {
+      position: relative;
+
       background: white;
 
       margin-bottom: 10px;
@@ -461,6 +439,33 @@
         rgba(0,0,0,0.06);
     }
 
+    .favorite-button {
+      position: absolute;
+
+      top: 10px;
+      right: 10px;
+
+      width: 38px;
+      height: 38px;
+
+      border: none;
+      border-radius: 50%;
+
+      background: #f4f6f8;
+
+      font-size: 24px;
+      line-height: 1;
+
+      color: #aeb5bd;
+
+      cursor: pointer;
+    }
+
+    .favorite-button.active {
+      color: #f1b900;
+      background: #fff8d7;
+    }
+
     .new-badge {
       display: inline-block;
 
@@ -471,6 +476,23 @@
       border-radius: 999px;
 
       background: #ee4169;
+      color: white;
+
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .sale-near-badge {
+      display: inline-block;
+
+      margin-bottom: 8px;
+      margin-right: 5px;
+
+      padding: 4px 8px;
+
+      border-radius: 999px;
+
+      background: #8a5cff;
       color: white;
 
       font-size: 11px;
@@ -490,6 +512,8 @@
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
+
+      padding-right: 42px;
 
       margin-bottom: 9px;
     }
@@ -521,6 +545,8 @@
     }
 
     .event-title {
+      padding-right: 38px;
+
       font-size: 16px;
       font-weight: bold;
 
@@ -577,6 +603,195 @@
 
 
     /* =====================================
+       検索・設定系
+    ===================================== */
+
+    .tool-card {
+      background: white;
+
+      padding: 16px;
+
+      margin-bottom: 12px;
+
+      border-radius: 14px;
+
+      box-shadow:
+        0 2px 10px
+        rgba(0,0,0,0.06);
+    }
+
+    .tool-label {
+      display: block;
+
+      margin-bottom: 7px;
+
+      font-size: 13px;
+      font-weight: 700;
+
+      color: #666;
+    }
+
+    .text-input {
+      width: 100%;
+
+      border:
+        1px solid
+        #d9dfe7;
+
+      border-radius: 12px;
+
+      padding: 12px;
+
+      font-size: 16px;
+
+      background: white;
+
+      outline: none;
+    }
+
+    .text-input:focus {
+      border-color: #1677e8;
+    }
+
+    .primary-button {
+      width: 100%;
+
+      margin-top: 10px;
+
+      border: none;
+      border-radius: 12px;
+
+      padding: 12px 14px;
+
+      background: #1677e8;
+
+      color: white;
+
+      font-size: 15px;
+      font-weight: 800;
+
+      cursor: pointer;
+    }
+
+    .secondary-button {
+      width: 100%;
+
+      margin-top: 10px;
+
+      border:
+        1px solid
+        #d9dfe7;
+
+      border-radius: 12px;
+
+      padding: 12px 14px;
+
+      background: white;
+
+      color: #222;
+
+      font-size: 15px;
+      font-weight: 700;
+
+      cursor: pointer;
+    }
+
+    .danger-button {
+      width: 100%;
+
+      margin-top: 10px;
+
+      border: none;
+      border-radius: 12px;
+
+      padding: 12px 14px;
+
+      background: #fff0f2;
+
+      color: #d72645;
+
+      font-size: 15px;
+      font-weight: 800;
+
+      cursor: pointer;
+    }
+
+    .checkbox-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      padding: 12px 4px;
+
+      border-bottom:
+        1px solid
+        #eef1f4;
+
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .checkbox-row:last-child {
+      border-bottom: none;
+    }
+
+    .checkbox-row input {
+      width: 20px;
+      height: 20px;
+    }
+
+    .performer-list-item {
+      display: flex;
+      align-items: center;
+
+      gap: 10px;
+
+      padding: 12px 4px;
+
+      border-bottom:
+        1px solid
+        #eef1f4;
+
+      cursor: pointer;
+    }
+
+    .performer-list-item:last-child {
+      border-bottom: none;
+    }
+
+    .performer-list-name {
+      flex: 1;
+
+      font-size: 16px;
+      font-weight: 800;
+    }
+
+    .performer-count {
+      font-size: 13px;
+      color: #777;
+    }
+
+    .help-title {
+      margin:
+        14px
+        0
+        5px;
+
+      font-size: 15px;
+      font-weight: 800;
+    }
+
+    .help-text {
+      margin: 0;
+
+      font-size: 14px;
+      line-height: 1.7;
+
+      color: #555;
+    }
+
+
+    /* =====================================
        更新日時
     ===================================== */
 
@@ -590,10 +805,6 @@
       color: #999;
     }
 
-
-    /* =====================================
-       スマホ
-    ===================================== */
 
     @media(max-width: 520px) {
 
@@ -628,19 +839,11 @@
 <body>
 
 
-<!-- ===================================
-     サイドメニュー背景
-==================================== -->
-
 <div
   id="menu-overlay"
   class="menu-overlay"
 ></div>
 
-
-<!-- ===================================
-     サイドメニュー
-==================================== -->
 
 <aside
   id="side-menu"
@@ -654,16 +857,13 @@
       id="side-menu-close"
       class="side-menu-close"
       type="button"
-      aria-label="メニューを閉じる"
     >
       ×
     </button>
 
-
     <h2 class="side-menu-title">
       ライブカレンダー
     </h2>
-
 
     <div class="side-menu-subtitle">
       今日のライブ追いかけよう
@@ -674,31 +874,19 @@
 
       <button
         class="side-menu-item active"
-        type="button"
         data-menu="calendar"
       >
-        <span class="menu-icon">
-          📅
-        </span>
-
-        <span class="menu-label">
-          カレンダー
-        </span>
+        <span class="menu-icon">📅</span>
+        <span class="menu-label">カレンダー</span>
       </button>
 
 
       <button
         class="side-menu-item"
-        type="button"
         data-menu="new"
       >
-        <span class="menu-icon">
-          ☆
-        </span>
-
-        <span class="menu-label">
-          新着ライブ
-        </span>
+        <span class="menu-icon">✨</span>
+        <span class="menu-label">新着ライブ</span>
 
         <span
           id="new-live-badge"
@@ -711,16 +899,10 @@
 
       <button
         class="side-menu-item"
-        type="button"
         data-menu="favorite"
       >
-        <span class="menu-icon">
-          ♡
-        </span>
-
-        <span class="menu-label">
-          行きたいライブ
-        </span>
+        <span class="menu-icon">⭐</span>
+        <span class="menu-label">行きたいライブ</span>
 
         <span
           id="favorite-badge"
@@ -733,16 +915,10 @@
 
       <button
         class="side-menu-item"
-        type="button"
         data-menu="sale"
       >
-        <span class="menu-icon">
-          🎫
-        </span>
-
-        <span class="menu-label">
-          販売開始が近いもの
-        </span>
+        <span class="menu-icon">🎫</span>
+        <span class="menu-label">販売開始が近いもの</span>
 
         <span
           id="sale-badge"
@@ -759,46 +935,28 @@
 
       <button
         class="side-menu-item"
-        type="button"
         data-menu="search"
       >
-        <span class="menu-icon">
-          🔍
-        </span>
-
-        <span class="menu-label">
-          ライブを検索
-        </span>
+        <span class="menu-icon">🔍</span>
+        <span class="menu-label">ライブを検索</span>
       </button>
 
 
       <button
         class="side-menu-item"
-        type="button"
         data-menu="performers"
       >
-        <span class="menu-icon">
-          👥
-        </span>
-
-        <span class="menu-label">
-          出演者一覧
-        </span>
+        <span class="menu-icon">👥</span>
+        <span class="menu-label">出演者一覧</span>
       </button>
 
 
       <button
         class="side-menu-item"
-        type="button"
         data-menu="coappearance"
       >
-        <span class="menu-icon">
-          🎭
-        </span>
-
-        <span class="menu-label">
-          共演検索
-        </span>
+        <span class="menu-icon">🎭</span>
+        <span class="menu-label">共演検索</span>
       </button>
 
     </div>
@@ -808,38 +966,26 @@
 
       <button
         class="side-menu-item"
-        type="button"
         data-menu="settings"
       >
-        <span class="menu-icon">
-          ⚙️
-        </span>
-
-        <span class="menu-label">
-          設定
-        </span>
+        <span class="menu-icon">⚙️</span>
+        <span class="menu-label">設定</span>
       </button>
 
 
       <button
         class="side-menu-item"
-        type="button"
         data-menu="help"
       >
-        <span class="menu-icon">
-          ❔
-        </span>
-
-        <span class="menu-label">
-          ヘルプ・使い方
-        </span>
+        <span class="menu-icon">❔</span>
+        <span class="menu-label">ヘルプ・使い方</span>
       </button>
 
     </div>
 
 
     <div class="menu-version">
-      v1.1.0
+      v2.0.0
     </div>
 
   </div>
@@ -847,21 +993,15 @@
 </aside>
 
 
-<!-- ===================================
-     ヘッダー
-==================================== -->
-
 <header class="topbar">
 
   <button
     id="menu-button"
     class="menu-button"
     type="button"
-    aria-label="メニューを開く"
   >
     ☰
   </button>
-
 
   <div class="title-block">
 
@@ -881,10 +1021,6 @@
 <div class="wrapper">
 
 
-  <!-- ===================================
-       芸人フィルター
-  ==================================== -->
-
   <div class="filters">
 
     <button
@@ -894,14 +1030,12 @@
       めぞん
     </button>
 
-
     <button
       class="filter-button pyuto"
       data-performer="pyuto"
     >
       ピュート
     </button>
-
 
     <button
       class="filter-button nansui"
@@ -913,12 +1047,8 @@
   </div>
 
 
-  <!-- カレンダー -->
-
   <div id="calendar"></div>
 
-
-  <!-- 詳細 -->
 
   <div class="detail-area">
 
@@ -945,6 +1075,143 @@
 
 
 <script>
+
+
+/* =========================================
+   基本データ
+========================================= */
+
+const performerMap = {
+
+  maison: {
+    name: "めぞん",
+    color: "#E74C3C",
+    textColor: "#FFFFFF",
+    className: "label-maison"
+  },
+
+  pyuto: {
+    name: "ピュート",
+    color: "#F4C430",
+    textColor: "#111111",
+    className: "label-pyuto"
+  },
+
+  nansui: {
+    name: "軟水",
+    color: "#3498DB",
+    textColor: "#FFFFFF",
+    className: "label-nansui"
+  }
+
+};
+
+
+const enabledPerformers =
+  new Set([
+    "maison",
+    "pyuto",
+    "nansui"
+  ]);
+
+
+let allEvents = [];
+
+let newEvents = [];
+
+let calendar;
+
+let currentView =
+  "calendar";
+
+
+
+/* =========================================
+   お気に入り
+========================================= */
+
+const FAVORITE_STORAGE_KEY =
+  "live-calendar-favorites-v1";
+
+
+function loadFavorites() {
+
+  try {
+
+    const value =
+      localStorage.getItem(
+        FAVORITE_STORAGE_KEY
+      );
+
+
+    const data =
+      value
+      ?
+      JSON.parse(value)
+      :
+      [];
+
+
+    return new Set(
+      Array.isArray(data)
+      ?
+      data
+      :
+      []
+    );
+
+  }
+
+  catch {
+
+    return new Set();
+
+  }
+
+}
+
+
+let favoriteKeys =
+  loadFavorites();
+
+
+function saveFavorites() {
+
+  localStorage.setItem(
+    FAVORITE_STORAGE_KEY,
+    JSON.stringify(
+      Array.from(
+        favoriteKeys
+      )
+    )
+  );
+
+
+  updateFavoriteBadge();
+
+}
+
+
+function makeEventKey(event) {
+
+  return [
+
+    event.date || "",
+
+    event.startTime || "",
+
+    normalizeText(
+      event.title || ""
+    ),
+
+    normalizeText(
+      event.venue || ""
+    )
+
+  ].join("|");
+
+}
+
 
 
 /* =========================================
@@ -986,11 +1253,6 @@ function openSideMenu() {
     "menu-open"
   );
 
-  sideMenu.setAttribute(
-    "aria-hidden",
-    "false"
-  );
-
 }
 
 
@@ -1006,11 +1268,6 @@ function closeSideMenu() {
 
   document.body.classList.remove(
     "menu-open"
-  );
-
-  sideMenu.setAttribute(
-    "aria-hidden",
-    "true"
   );
 
 }
@@ -1034,85 +1291,47 @@ menuOverlay.addEventListener(
 );
 
 
-document.addEventListener(
-  "keydown",
-  event => {
+function setActiveMenu(
+  menuName
+) {
 
-    if (
-      event.key ===
-      "Escape"
-    ) {
-
-      closeSideMenu();
-
-    }
-
-  }
-);
+  currentView =
+    menuName;
 
 
+  document
+    .querySelectorAll(
+      ".side-menu-item"
+    )
+    .forEach(
+      button => {
 
-/* =========================================
-   芸人
-========================================= */
+        button.classList.toggle(
+          "active",
+          button.dataset.menu ===
+          menuName
+        );
 
-const performerMap = {
+      }
+    );
 
-  maison: {
-    name: "めぞん",
-    color: "#E74C3C",
-    textColor: "#FFFFFF",
-    className: "label-maison"
-  },
-
-  pyuto: {
-    name: "ピュート",
-    color: "#F4C430",
-    textColor: "#111111",
-    className: "label-pyuto"
-  },
-
-  nansui: {
-    name: "軟水",
-    color: "#3498DB",
-    textColor: "#FFFFFF",
-    className: "label-nansui"
-  }
-
-};
+}
 
 
 
 /* =========================================
-   状態
-========================================= */
-
-const enabledPerformers = new Set([
-  "maison",
-  "pyuto",
-  "nansui"
-]);
-
-
-let allEvents = [];
-
-let newEvents = [];
-
-let calendar;
-
-
-
-/* =========================================
-   events.json取得
+   JSON取得
 ========================================= */
 
 async function loadEvents() {
 
   try {
 
-    const response = await fetch(
-      "events.json?t=" + Date.now()
-    );
+    const response =
+      await fetch(
+        "events.json?t=" +
+        Date.now()
+      );
 
 
     if (!response.ok) {
@@ -1124,25 +1343,31 @@ async function loadEvents() {
     }
 
 
-    const data = await response.json();
+    const data =
+      await response.json();
 
 
-    if (Array.isArray(data)) {
-
-      allEvents = data;
-
-    } else {
-
-      allEvents = data.events || [];
-
-    }
-
-
-    if (data.syncedAt) {
-
-      const date = new Date(
-        data.syncedAt
+    allEvents =
+      Array.isArray(data)
+      ?
+      data
+      :
+      (
+        data.events ||
+        []
       );
+
+
+    if (
+      !Array.isArray(data)
+      &&
+      data.syncedAt
+    ) {
+
+      const date =
+        new Date(
+          data.syncedAt
+        );
 
 
       document.getElementById(
@@ -1158,6 +1383,10 @@ async function loadEvents() {
 
     renderCalendar();
 
+    updateFavoriteBadge();
+
+    updateSaleBadge();
+
   }
 
   catch(error) {
@@ -1170,9 +1399,7 @@ async function loadEvents() {
     ).innerHTML = `
 
       <div class="empty">
-
         events.jsonを読み込めませんでした。
-
       </div>
 
     `;
@@ -1183,17 +1410,15 @@ async function loadEvents() {
 
 
 
-/* =========================================
-   new_events.json取得
-========================================= */
-
 async function loadNewEvents() {
 
   try {
 
-    const response = await fetch(
-      "new_events.json?t=" + Date.now()
-    );
+    const response =
+      await fetch(
+        "new_events.json?t=" +
+        Date.now()
+      );
 
 
     if (!response.ok) {
@@ -1211,32 +1436,22 @@ async function loadNewEvents() {
       await response.json();
 
 
-    if (Array.isArray(data)) {
-
-      newEvents = data;
-
-    }
-
-    else {
-
-      newEvents =
+    newEvents =
+      Array.isArray(data)
+      ?
+      data
+      :
+      (
         data.events ||
-        [];
-
-    }
+        []
+      );
 
 
     updateNewEventBadge();
 
   }
 
-  catch(error) {
-
-    console.error(
-      "new_events.json読み込みエラー",
-      error
-    );
-
+  catch {
 
     newEvents = [];
 
@@ -1249,176 +1464,97 @@ async function loadNewEvents() {
 
 
 /* =========================================
-   新着件数
+   バッジ
 ========================================= */
 
-function updateNewEventBadge() {
-
-  const validNewEvents =
-    newEvents.filter(
-      event =>
-        performerMap[
-          event.performerId
-        ]
-    );
-
-
-  const grouped =
-    groupEvents(
-      validNewEvents
-    );
-
+function setBadge(
+  id,
+  count
+) {
 
   const badge =
     document.getElementById(
-      "new-live-badge"
+      id
     );
 
 
   badge.textContent =
-    grouped.length;
+    count;
 
 
-  if (
-    grouped.length > 0
-  ) {
-
-    badge
-      .classList
-      .add(
-        "show"
-      );
-
-  }
-
-  else {
-
-    badge
-      .classList
-      .remove(
-        "show"
-      );
-
-  }
-
-}
-
-
-
-/* =========================================
-   メニュー選択
-========================================= */
-
-function setActiveMenu(
-  menuName
-) {
-
-  document
-    .querySelectorAll(
-      ".side-menu-item"
-    )
-    .forEach(
-      button => {
-
-        if (
-          button.dataset.menu ===
-          menuName
-        ) {
-
-          button
-            .classList
-            .add(
-              "active"
-            );
-
-        }
-
-        else {
-
-          button
-            .classList
-            .remove(
-              "active"
-            );
-
-        }
-
-      }
-    );
-
-}
-
-
-
-/* =========================================
-   メニュー操作
-========================================= */
-
-document
-  .querySelectorAll(
-    ".side-menu-item"
-  )
-  .forEach(
-    item => {
-
-      item.addEventListener(
-        "click",
-        () => {
-
-          const menu =
-            item.dataset.menu;
-
-
-          if (
-            menu ===
-            "calendar"
-          ) {
-
-            setActiveMenu(
-              "calendar"
-            );
-
-            closeSideMenu();
-
-
-            window.scrollTo({
-              top: 0,
-              behavior: "smooth"
-            });
-
-
-            return;
-
-          }
-
-
-          if (
-            menu ===
-            "new"
-          ) {
-
-            setActiveMenu(
-              "new"
-            );
-
-            closeSideMenu();
-
-            showNewEvents();
-
-            return;
-
-          }
-
-        }
-      );
-
-    }
+  badge.classList.toggle(
+    "show",
+    count > 0
   );
 
+}
+
+
+function updateNewEventBadge() {
+
+  const grouped =
+    groupEvents(
+      newEvents.filter(
+        event =>
+          performerMap[
+            event.performerId
+          ]
+      )
+    );
+
+
+  setBadge(
+    "new-live-badge",
+    grouped.length
+  );
+
+}
+
+
+function updateFavoriteBadge() {
+
+  const grouped =
+    groupEvents(
+      allEvents
+    );
+
+
+  const count =
+    grouped.filter(
+      event =>
+        favoriteKeys.has(
+          makeEventKey(
+            event
+          )
+        )
+    ).length;
+
+
+  setBadge(
+    "favorite-badge",
+    count
+  );
+
+}
+
+
+function updateSaleBadge() {
+
+  const events =
+    getSaleNearEvents();
+
+
+  setBadge(
+    "sale-badge",
+    events.length
+  );
+
+}
+
 
 
 /* =========================================
-   有効なイベント
+   カレンダー
 ========================================= */
 
 function filteredEvents() {
@@ -1436,11 +1572,6 @@ function filteredEvents() {
 
 }
 
-
-
-/* =========================================
-   カレンダー用データ
-========================================= */
 
 function makeCalendarEvents() {
 
@@ -1506,11 +1637,6 @@ function makeCalendarEvents() {
 }
 
 
-
-/* =========================================
-   カレンダー
-========================================= */
-
 function renderCalendar() {
 
   const element =
@@ -1531,8 +1657,7 @@ function renderCalendar() {
       element,
       {
 
-        locale:
-          "ja",
+        locale: "ja",
 
         initialView:
           "dayGridMonth",
@@ -1542,7 +1667,6 @@ function renderCalendar() {
 
         firstDay:
           1,
-
 
         headerToolbar: {
 
@@ -1557,21 +1681,15 @@ function renderCalendar() {
 
         },
 
-
         dayMaxEvents:
           4,
-
 
         events:
           makeCalendarEvents(),
 
-
         eventClick(info) {
 
-          setActiveMenu(
-            "calendar"
-          );
-
+          showCalendar();
 
           const event =
             info.event
@@ -1585,13 +1703,9 @@ function renderCalendar() {
 
         },
 
-
         dateClick(info) {
 
-          setActiveMenu(
-            "calendar"
-          );
-
+          showCalendar();
 
           showDateEvents(
             info.dateStr
@@ -1610,7 +1724,7 @@ function renderCalendar() {
 
 
 /* =========================================
-   同じライブをまとめる
+   イベント統合
 ========================================= */
 
 function groupEvents(events) {
@@ -1621,17 +1735,10 @@ function groupEvents(events) {
   events.forEach(
     event => {
 
-      const key = [
-
-        event.date || "",
-
-        event.startTime || "",
-
-        event.title || "",
-
-        event.venue || ""
-
-      ].join("|");
+      const key =
+        makeEventKey(
+          event
+        );
 
 
       if (!groups[key]) {
@@ -1657,54 +1764,51 @@ function groupEvents(events) {
             [],
 
           urls:
-            []
+            [],
+
+          saleStart:
+            getSaleStart(
+              event
+            )
 
         };
 
       }
 
 
-      const performerId =
-        event.performerId;
-
-
       if (
-        performerId
+        event.performerId
         &&
         !groups[key]
           .performers
           .includes(
-            performerId
+            event.performerId
           )
       ) {
 
         groups[key]
           .performers
           .push(
-            performerId
+            event.performerId
           );
 
       }
 
 
-      const source =
-        event.source || "";
-
-
       if (
-        source
+        event.source
         &&
         !groups[key]
           .sources
           .includes(
-            source
+            event.source
           )
       ) {
 
         groups[key]
           .sources
           .push(
-            source
+            event.source
           );
 
       }
@@ -1736,6 +1840,18 @@ function groupEvents(events) {
 
       }
 
+
+      if (
+        !groups[key].saleStart
+      ) {
+
+        groups[key].saleStart =
+          getSaleStart(
+            event
+          );
+
+      }
+
     }
   );
 
@@ -1749,60 +1865,210 @@ function groupEvents(events) {
 
 
 /* =========================================
-   新着ライブ表示
+   メニュー
 ========================================= */
 
-function showNewEvents() {
+document
+  .querySelectorAll(
+    ".side-menu-item"
+  )
+  .forEach(
+    item => {
 
-  const validEvents =
-    newEvents.filter(
-      event =>
-        performerMap[
-          event.performerId
-        ]
-    );
+      item.addEventListener(
+        "click",
+        () => {
 
-
-  const grouped =
-    groupEvents(
-      validEvents
-    );
+          const menu =
+            item.dataset.menu;
 
 
-  grouped.sort(
-    (a, b) => {
-
-      const dateCompare =
-        (
-          a.date || ""
-        ).localeCompare(
-          b.date || ""
-        );
+          closeSideMenu();
 
 
-      if (
-        dateCompare !== 0
-      ) {
+          if (
+            menu ===
+            "calendar"
+          ) {
 
-        return dateCompare;
+            showCalendar();
 
-      }
+          }
 
 
-      return (
-        a.startTime || ""
-      ).localeCompare(
-        b.startTime || ""
+          if (
+            menu ===
+            "new"
+          ) {
+
+            showNewEvents();
+
+          }
+
+
+          if (
+            menu ===
+            "favorite"
+          ) {
+
+            showFavorites();
+
+          }
+
+
+          if (
+            menu ===
+            "sale"
+          ) {
+
+            showSaleNear();
+
+          }
+
+
+          if (
+            menu ===
+            "search"
+          ) {
+
+            showSearch();
+
+          }
+
+
+          if (
+            menu ===
+            "performers"
+          ) {
+
+            showPerformers();
+
+          }
+
+
+          if (
+            menu ===
+            "coappearance"
+          ) {
+
+            showCoappearance();
+
+          }
+
+
+          if (
+            menu ===
+            "settings"
+          ) {
+
+            showSettings();
+
+          }
+
+
+          if (
+            menu ===
+            "help"
+          ) {
+
+            showHelp();
+
+          }
+
+        }
       );
 
     }
   );
 
 
+
+/* =========================================
+   カレンダー表示
+========================================= */
+
+function showCalendar() {
+
+  setActiveMenu(
+    "calendar"
+  );
+
+
+  document.getElementById(
+    "calendar"
+  ).classList.remove(
+    "calendar-hidden"
+  );
+
+
   document.getElementById(
     "detail-title"
   ).textContent =
-    "新着ライブ";
+    "公演情報";
+
+
+  document.getElementById(
+    "detail-list"
+  ).innerHTML = `
+
+    <div class="empty">
+      日付またはライブをタップすると詳細が表示されます。
+    </div>
+
+  `;
+
+
+  setTimeout(
+    () => {
+
+      if (calendar) {
+
+        calendar.updateSize();
+
+      }
+
+    },
+    50
+  );
+
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+
+}
+
+
+
+/* =========================================
+   共通一覧表示
+========================================= */
+
+function showEventList(
+  title,
+  events,
+  options = {}
+) {
+
+  hideCalendar();
+
+
+  document.getElementById(
+    "detail-title"
+  ).textContent =
+    title;
+
+
+  const grouped =
+    groupEvents(
+      events
+    );
+
+
+  grouped.sort(
+    sortEvents
+  );
 
 
   if (
@@ -1814,9 +2080,12 @@ function showNewEvents() {
     ).innerHTML = `
 
       <div class="empty">
-
-        現在、新着ライブはありません。
-
+        ${
+          escapeHtml(
+            options.emptyText ||
+            "該当するライブはありません。"
+          )
+        }
       </div>
 
     `;
@@ -1837,8 +2106,16 @@ function showNewEvents() {
         event =>
           createEventCard(
             event,
-            true,
-            true
+            {
+              showDate: true,
+              showNewBadge:
+                options.showNewBadge
+                === true,
+
+              showSaleBadge:
+                options.showSaleBadge
+                === true
+            }
           )
       )
       .join("");
@@ -1851,10 +2128,999 @@ function showNewEvents() {
 
 
 /* =========================================
+   新着
+========================================= */
+
+function showNewEvents() {
+
+  setActiveMenu(
+    "new"
+  );
+
+
+  showEventList(
+    "新着ライブ",
+    newEvents,
+    {
+      showNewBadge: true,
+      emptyText:
+        "現在、新着ライブはありません。"
+    }
+  );
+
+}
+
+
+
+/* =========================================
+   行きたい
+========================================= */
+
+function showFavorites() {
+
+  setActiveMenu(
+    "favorite"
+  );
+
+
+  const grouped =
+    groupEvents(
+      allEvents
+    );
+
+
+  const favorites =
+    grouped.filter(
+      event =>
+        favoriteKeys.has(
+          makeEventKey(
+            event
+          )
+        )
+    );
+
+
+  showGroupedEventList(
+    "⭐ 行きたいライブ",
+    favorites,
+    "星を付けたライブはまだありません。"
+  );
+
+}
+
+
+
+/* =========================================
+   販売開始
+========================================= */
+
+function getSaleStart(event) {
+
+  return (
+    event.saleStart
+    ||
+    event.saleStartAt
+    ||
+    event.ticketSaleStart
+    ||
+    event.ticketSaleStartAt
+    ||
+    ""
+  );
+
+}
+
+
+function parseSaleDate(
+  value
+) {
+
+  if (!value) {
+
+    return null;
+
+  }
+
+
+  const date =
+    new Date(value);
+
+
+  if (
+    Number.isNaN(
+      date.getTime()
+    )
+  ) {
+
+    return null;
+
+  }
+
+
+  return date;
+
+}
+
+
+function getSaleNearEvents() {
+
+  const now =
+    new Date();
+
+
+  const limit =
+    new Date(
+      now.getTime()
+      +
+      7
+      *
+      24
+      *
+      60
+      *
+      60
+      *
+      1000
+    );
+
+
+  return groupEvents(
+    allEvents
+  ).filter(
+    event => {
+
+      const date =
+        parseSaleDate(
+          event.saleStart
+        );
+
+
+      return (
+        date
+        &&
+        date >= now
+        &&
+        date <= limit
+      );
+
+    }
+  );
+
+}
+
+
+function showSaleNear() {
+
+  setActiveMenu(
+    "sale"
+  );
+
+
+  const events =
+    getSaleNearEvents();
+
+
+  showGroupedEventList(
+    "🎫 販売開始が近いもの",
+    events,
+    "今後7日以内に販売開始するライブはありません。販売開始日時の取得機能は後で強化できます。",
+    {
+      showSaleBadge: true
+    }
+  );
+
+}
+
+
+
+/* =========================================
+   検索
+========================================= */
+
+function showSearch() {
+
+  setActiveMenu(
+    "search"
+  );
+
+  hideCalendar();
+
+
+  document.getElementById(
+    "detail-title"
+  ).textContent =
+    "🔍 ライブを検索";
+
+
+  document.getElementById(
+    "detail-list"
+  ).innerHTML = `
+
+    <div class="tool-card">
+
+      <label class="tool-label">
+        ライブ名・会場・芸人名
+      </label>
+
+      <input
+        id="live-search-input"
+        class="text-input"
+        type="search"
+        placeholder="例：新宿、ピュート、漫才"
+      >
+
+      <button
+        id="live-search-button"
+        class="primary-button"
+      >
+        検索
+      </button>
+
+    </div>
+
+    <div id="search-results"></div>
+
+  `;
+
+
+  const input =
+    document.getElementById(
+      "live-search-input"
+    );
+
+
+  const button =
+    document.getElementById(
+      "live-search-button"
+    );
+
+
+  function executeSearch() {
+
+    const query =
+      normalizeText(
+        input.value
+      );
+
+
+    const resultArea =
+      document.getElementById(
+        "search-results"
+      );
+
+
+    if (!query) {
+
+      resultArea.innerHTML = `
+
+        <div class="empty">
+          検索する言葉を入力してください。
+        </div>
+
+      `;
+
+      return;
+
+    }
+
+
+    const grouped =
+      groupEvents(
+        allEvents
+      );
+
+
+    const results =
+      grouped.filter(
+        event => {
+
+          const performerNames =
+            event.performers
+              .map(
+                id =>
+                  performerMap[id]
+                  ?
+                  performerMap[id].name
+                  :
+                  ""
+              )
+              .join(" ");
+
+
+          const target =
+            normalizeText(
+              [
+                event.title,
+                event.venue,
+                performerNames
+              ].join(" ")
+            );
+
+
+          return target.includes(
+            query
+          );
+
+        }
+      );
+
+
+    results.sort(
+      sortEvents
+    );
+
+
+    if (
+      results.length === 0
+    ) {
+
+      resultArea.innerHTML = `
+
+        <div class="empty">
+          該当するライブはありません。
+        </div>
+
+      `;
+
+      return;
+
+    }
+
+
+    resultArea.innerHTML =
+      results
+        .map(
+          event =>
+            createEventCard(
+              event,
+              {
+                showDate: true
+              }
+            )
+        )
+        .join("");
+
+  }
+
+
+  button.addEventListener(
+    "click",
+    executeSearch
+  );
+
+
+  input.addEventListener(
+    "keydown",
+    event => {
+
+      if (
+        event.key ===
+        "Enter"
+      ) {
+
+        executeSearch();
+
+      }
+
+    }
+  );
+
+
+  scrollToDetail();
+
+}
+
+
+
+/* =========================================
+   出演者一覧
+========================================= */
+
+function showPerformers() {
+
+  setActiveMenu(
+    "performers"
+  );
+
+  hideCalendar();
+
+
+  document.getElementById(
+    "detail-title"
+  ).textContent =
+    "👥 出演者一覧";
+
+
+  const grouped =
+    groupEvents(
+      allEvents
+    );
+
+
+  const html =
+    Object.entries(
+      performerMap
+    )
+      .map(
+        ([id, performer]) => {
+
+          const count =
+            grouped.filter(
+              event =>
+                event.performers.includes(
+                  id
+                )
+            ).length;
+
+
+          return `
+
+            <div
+              class="performer-list-item"
+              data-performer-list="${escapeHtml(id)}"
+            >
+
+              <span
+                class="
+                  performer-label
+                  ${performer.className}
+                "
+              >
+                ${escapeHtml(
+                  performer.name
+                )}
+              </span>
+
+              <span class="performer-list-name">
+                ${escapeHtml(
+                  performer.name
+                )}
+              </span>
+
+              <span class="performer-count">
+                ${count}公演
+              </span>
+
+            </div>
+
+          `;
+
+        }
+      )
+      .join("");
+
+
+  document.getElementById(
+    "detail-list"
+  ).innerHTML = `
+
+    <div class="tool-card">
+      ${html}
+    </div>
+
+  `;
+
+
+  document
+    .querySelectorAll(
+      "[data-performer-list]"
+    )
+    .forEach(
+      item => {
+
+        item.addEventListener(
+          "click",
+          () => {
+
+            const id =
+              item.dataset
+                .performerList;
+
+
+            const performer =
+              performerMap[id];
+
+
+            const events =
+              allEvents.filter(
+                event =>
+                  event.performerId
+                  === id
+              );
+
+
+            showEventList(
+              performer.name +
+              " のライブ",
+              events
+            );
+
+          }
+        );
+
+      }
+    );
+
+
+  scrollToDetail();
+
+}
+
+
+
+/* =========================================
+   共演検索
+========================================= */
+
+function showCoappearance() {
+
+  setActiveMenu(
+    "coappearance"
+  );
+
+  hideCalendar();
+
+
+  document.getElementById(
+    "detail-title"
+  ).textContent =
+    "🎭 共演検索";
+
+
+  document.getElementById(
+    "detail-list"
+  ).innerHTML = `
+
+    <div class="tool-card">
+
+      <div class="tool-label">
+        2組以上選んでください
+      </div>
+
+      <label class="checkbox-row">
+        <input
+          type="checkbox"
+          value="maison"
+          class="coappearance-check"
+        >
+        めぞん
+      </label>
+
+      <label class="checkbox-row">
+        <input
+          type="checkbox"
+          value="pyuto"
+          class="coappearance-check"
+        >
+        ピュート
+      </label>
+
+      <label class="checkbox-row">
+        <input
+          type="checkbox"
+          value="nansui"
+          class="coappearance-check"
+        >
+        軟水
+      </label>
+
+      <button
+        id="coappearance-search-button"
+        class="primary-button"
+      >
+        この組み合わせで検索
+      </button>
+
+    </div>
+
+    <div id="coappearance-results"></div>
+
+  `;
+
+
+  document.getElementById(
+    "coappearance-search-button"
+  ).addEventListener(
+    "click",
+    () => {
+
+      const selected =
+        Array.from(
+          document.querySelectorAll(
+            ".coappearance-check:checked"
+          )
+        )
+        .map(
+          checkbox =>
+            checkbox.value
+        );
+
+
+      const resultArea =
+        document.getElementById(
+          "coappearance-results"
+        );
+
+
+      if (
+        selected.length < 2
+      ) {
+
+        resultArea.innerHTML = `
+
+          <div class="empty">
+            2組以上選んでください。
+          </div>
+
+        `;
+
+        return;
+
+      }
+
+
+      const grouped =
+        groupEvents(
+          allEvents
+        );
+
+
+      const results =
+        grouped.filter(
+          event =>
+            selected.every(
+              id =>
+                event.performers.includes(
+                  id
+                )
+            )
+        );
+
+
+      results.sort(
+        sortEvents
+      );
+
+
+      const title =
+        selected
+          .map(
+            id =>
+              performerMap[id].name
+          )
+          .join(" × ");
+
+
+      if (
+        results.length === 0
+      ) {
+
+        resultArea.innerHTML = `
+
+          <div class="empty">
+            ${escapeHtml(title)}
+            の共演ライブはありません。
+          </div>
+
+        `;
+
+        return;
+
+      }
+
+
+      resultArea.innerHTML = `
+
+        <div
+          style="
+            margin:0 4px 10px;
+            font-size:15px;
+            font-weight:800;
+          "
+        >
+          ${escapeHtml(title)}
+          ・${results.length}公演
+        </div>
+
+        ${
+          results
+            .map(
+              event =>
+                createEventCard(
+                  event,
+                  {
+                    showDate: true
+                  }
+                )
+            )
+            .join("")
+        }
+
+      `;
+
+    }
+  );
+
+
+  scrollToDetail();
+
+}
+
+
+
+/* =========================================
+   設定
+========================================= */
+
+function showSettings() {
+
+  setActiveMenu(
+    "settings"
+  );
+
+  hideCalendar();
+
+
+  document.getElementById(
+    "detail-title"
+  ).textContent =
+    "⚙️ 設定";
+
+
+  document.getElementById(
+    "detail-list"
+  ).innerHTML = `
+
+    <div class="tool-card">
+
+      <div class="tool-label">
+        カレンダーに表示する芸人
+      </div>
+
+      ${
+        Object.entries(
+          performerMap
+        )
+          .map(
+            ([id, performer]) => `
+
+              <label class="checkbox-row">
+
+                <input
+                  type="checkbox"
+                  class="settings-performer"
+                  value="${escapeHtml(id)}"
+                  ${
+                    enabledPerformers.has(id)
+                    ?
+                    "checked"
+                    :
+                    ""
+                  }
+                >
+
+                ${escapeHtml(
+                  performer.name
+                )}
+
+              </label>
+
+            `
+          )
+          .join("")
+      }
+
+      <button
+        id="settings-save-button"
+        class="primary-button"
+      >
+        表示設定を保存
+      </button>
+
+    </div>
+
+
+    <div class="tool-card">
+
+      <div class="tool-label">
+        行きたいライブ
+      </div>
+
+      <div
+        style="
+          font-size:14px;
+          line-height:1.7;
+          color:#555;
+        "
+      >
+        星を付けたライブはこのiPhoneのブラウザ内に保存されています。
+      </div>
+
+      <button
+        id="favorites-clear-button"
+        class="danger-button"
+      >
+        行きたいライブをすべて解除
+      </button>
+
+    </div>
+
+  `;
+
+
+  document.getElementById(
+    "settings-save-button"
+  ).addEventListener(
+    "click",
+    () => {
+
+      const checked =
+        Array.from(
+          document.querySelectorAll(
+            ".settings-performer:checked"
+          )
+        )
+        .map(
+          input =>
+            input.value
+        );
+
+
+      enabledPerformers.clear();
+
+
+      checked.forEach(
+        id =>
+          enabledPerformers.add(
+            id
+          )
+      );
+
+
+      syncFilterButtons();
+
+      renderCalendar();
+
+
+      alert(
+        "表示設定を保存しました。"
+      );
+
+    }
+  );
+
+
+  document.getElementById(
+    "favorites-clear-button"
+  ).addEventListener(
+    "click",
+    () => {
+
+      const result =
+        confirm(
+          "行きたいライブをすべて解除しますか？"
+        );
+
+
+      if (!result) {
+
+        return;
+
+      }
+
+
+      favoriteKeys.clear();
+
+      saveFavorites();
+
+      showSettings();
+
+    }
+  );
+
+
+  scrollToDetail();
+
+}
+
+
+
+/* =========================================
+   ヘルプ
+========================================= */
+
+function showHelp() {
+
+  setActiveMenu(
+    "help"
+  );
+
+  hideCalendar();
+
+
+  document.getElementById(
+    "detail-title"
+  ).textContent =
+    "❔ ヘルプ・使い方";
+
+
+  document.getElementById(
+    "detail-list"
+  ).innerHTML = `
+
+    <div class="tool-card">
+
+      <div class="help-title">
+        📅 カレンダー
+      </div>
+
+      <p class="help-text">
+        日付やライブ名をタップすると、その日の公演情報を確認できます。
+      </p>
+
+
+      <div class="help-title">
+        ✨ 新着ライブ
+      </div>
+
+      <p class="help-text">
+        自動取得で新しく見つかった公演を確認できます。
+      </p>
+
+
+      <div class="help-title">
+        ⭐ 行きたいライブ
+      </div>
+
+      <p class="help-text">
+        公演カード右上の星を押すと保存できます。もう一度押すと解除できます。
+      </p>
+
+
+      <div class="help-title">
+        🎫 販売開始が近いもの
+      </div>
+
+      <p class="help-text">
+        販売開始日時を取得できた公演のうち、7日以内に販売が始まるものを表示します。
+      </p>
+
+
+      <div class="help-title">
+        🔍 ライブ検索
+      </div>
+
+      <p class="help-text">
+        ライブ名、会場名、芸人名から検索できます。
+      </p>
+
+
+      <div class="help-title">
+        🎭 共演検索
+      </div>
+
+      <p class="help-text">
+        2組または3組を選ぶと、その組み合わせが同じライブに出演する公演だけを探せます。
+      </p>
+
+    </div>
+
+  `;
+
+
+  scrollToDetail();
+
+}
+
+
+
+/* =========================================
    日付詳細
 ========================================= */
 
-function showDateEvents(date) {
+function showDateEvents(
+  date
+) {
 
   const events =
     filteredEvents()
@@ -1872,19 +3138,17 @@ function showDateEvents(date) {
 
 
   grouped.sort(
-    (a, b) =>
-      (
-        a.startTime || ""
-      ).localeCompare(
-        b.startTime || ""
-      )
+    sortEvents
   );
 
 
   document.getElementById(
     "detail-title"
   ).textContent =
-    formatDate(date) +
+    formatDate(
+      date
+    )
+    +
     " の公演";
 
 
@@ -1897,9 +3161,7 @@ function showDateEvents(date) {
     ).innerHTML = `
 
       <div class="empty">
-
         この日の公演はありません。
-
       </div>
 
     `;
@@ -1916,9 +3178,7 @@ function showDateEvents(date) {
       .map(
         event =>
           createEventCard(
-            event,
-            false,
-            false
+            event
           )
       )
       .join("");
@@ -1928,14 +3188,25 @@ function showDateEvents(date) {
 
 
 /* =========================================
-   公演カード
+   カード
 ========================================= */
 
 function createEventCard(
   event,
-  showNewBadge = false,
-  showDate = false
+  options = {}
 ) {
+
+  const key =
+    makeEventKey(
+      event
+    );
+
+
+  const favorite =
+    favoriteKeys.has(
+      key
+    );
+
 
   const performerLabels =
     event.performers
@@ -1961,11 +3232,9 @@ function createEventCard(
                 ${performer.className}
               "
             >
-
               ${escapeHtml(
                 performer.name
               )}
-
             </span>
 
           `;
@@ -1984,63 +3253,29 @@ function createEventCard(
       .join(" / ");
 
 
-  let link = "";
+  const links =
+    event.urls
+      .map(
+        url => `
+
+          <a
+            class="event-link"
+            href="${escapeHtml(url)}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            チケット・詳細を見る →
+          </a>
+
+        `
+      )
+      .join("<br>");
 
 
-  if (
-    event.urls.length > 0
-  ) {
-
-    link = `
-
-      <a
-        class="event-link"
-        href="${escapeHtml(
-          event.urls[0]
-        )}"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-
-        チケット・詳細を見る →
-
-      </a>
-
-    `;
-
-  }
-
-
-  const newBadgeHtml =
-    showNewBadge
-    ?
-    `
-      <div>
-        <span class="new-badge">
-          NEW
-        </span>
-      </div>
-    `
-    :
-    "";
-
-
-  const dateHtml =
-    showDate
-    &&
-    event.date
-    ?
-    `
-      <div class="event-date">
-        ${escapeHtml(
-          formatDateWithWeekday(
-            event.date
-          )
-        )}
-      </div>
-    `
-    :
-    "";
+  const saleDate =
+    parseSaleDate(
+      event.saleStart
+    );
 
 
   return `
@@ -2048,43 +3283,106 @@ function createEventCard(
     <div class="event-card">
 
 
-      ${newBadgeHtml}
+      <button
+        class="
+          favorite-button
+          ${
+            favorite
+            ?
+            "active"
+            :
+            ""
+          }
+        "
+        data-favorite-key="${escapeHtml(
+          encodeURIComponent(
+            key
+          )
+        )}"
+        type="button"
+        aria-label="行きたいライブ"
+      >
+        ${
+          favorite
+          ?
+          "★"
+          :
+          "☆"
+        }
+      </button>
 
 
-      ${dateHtml}
+      ${
+        options.showNewBadge
+        ?
+        `
+          <span class="new-badge">
+            NEW
+          </span>
+        `
+        :
+        ""
+      }
+
+
+      ${
+        options.showSaleBadge
+        ?
+        `
+          <span class="sale-near-badge">
+            まもなく販売
+          </span>
+        `
+        :
+        ""
+      }
+
+
+      ${
+        options.showDate
+        &&
+        event.date
+        ?
+        `
+          <div class="event-date">
+            ${escapeHtml(
+              formatDateWithWeekday(
+                event.date
+              )
+            )}
+          </div>
+        `
+        :
+        ""
+      }
 
 
       <div class="performer-row">
-
         ${performerLabels}
-
       </div>
 
 
       <div class="event-title">
-
         ${escapeHtml(
           event.title
           ||
           "公演名不明"
         )}
-
       </div>
 
 
       <div class="event-info">
 
-
         ${
           event.startTime
           ?
           `
-          <div>
-            ⏰ 開演
-            ${escapeHtml(
-              event.startTime
-            )}
-          </div>
+            <div>
+              ⏰ 開演
+              ${escapeHtml(
+                event.startTime
+              )}
+            </div>
           `
           :
           ""
@@ -2095,12 +3393,30 @@ function createEventCard(
           event.venue
           ?
           `
-          <div>
-            📍
-            ${escapeHtml(
-              event.venue
-            )}
-          </div>
+            <div>
+              📍
+              ${escapeHtml(
+                event.venue
+              )}
+            </div>
+          `
+          :
+          ""
+        }
+
+
+        ${
+          saleDate
+          ?
+          `
+            <div>
+              🎫 販売開始
+              ${escapeHtml(
+                formatDateTime(
+                  saleDate
+                )
+              )}
+            </div>
           `
           :
           ""
@@ -2111,25 +3427,22 @@ function createEventCard(
           sourceText
           ?
           `
-          <div>
-            <span
-              class="source-badge"
-            >
-              ${escapeHtml(
-                sourceText
-              )}
-            </span>
-          </div>
+            <div>
+              <span class="source-badge">
+                ${escapeHtml(
+                  sourceText
+                )}
+              </span>
+            </div>
           `
           :
           ""
         }
 
-
       </div>
 
 
-      ${link}
+      ${links}
 
 
     </div>
@@ -2141,44 +3454,91 @@ function createEventCard(
 
 
 /* =========================================
-   詳細までスクロール
+   星ボタン
 ========================================= */
 
-function scrollToDetail() {
+document
+  .getElementById(
+    "detail-list"
+  )
+  .addEventListener(
+    "click",
+    event => {
 
-  const detailArea =
-    document.querySelector(
-      ".detail-area"
-    );
+      const button =
+        event.target.closest(
+          "[data-favorite-key]"
+        );
 
 
-  if (
-    detailArea
-  ) {
+      if (!button) {
 
-    setTimeout(
-      () => {
+        return;
 
-        detailArea.scrollIntoView({
-          behavior:
-            "smooth",
+      }
 
-          block:
-            "start"
-        });
 
-      },
-      120
-    );
+      const key =
+        decodeURIComponent(
+          button.dataset
+            .favoriteKey
+        );
 
-  }
 
-}
+      if (
+        favoriteKeys.has(
+          key
+        )
+      ) {
+
+        favoriteKeys.delete(
+          key
+        );
+
+        button.classList.remove(
+          "active"
+        );
+
+        button.textContent =
+          "☆";
+
+      }
+
+      else {
+
+        favoriteKeys.add(
+          key
+        );
+
+        button.classList.add(
+          "active"
+        );
+
+        button.textContent =
+          "★";
+
+      }
+
+
+      saveFavorites();
+
+
+      if (
+        currentView ===
+        "favorite"
+      ) {
+
+        showFavorites();
+
+      }
+
+    }
+  );
 
 
 
 /* =========================================
-   芸人ON/OFF
+   フィルター
 ========================================= */
 
 document
@@ -2207,12 +3567,6 @@ document
               id
             );
 
-            button
-              .classList
-              .add(
-                "off"
-              );
-
           }
 
           else {
@@ -2221,19 +3575,10 @@ document
               id
             );
 
-            button
-              .classList
-              .remove(
-                "off"
-              );
-
           }
 
 
-          setActiveMenu(
-            "calendar"
-          );
-
+          syncFilterButtons();
 
           renderCalendar();
 
@@ -2244,10 +3589,157 @@ document
   );
 
 
+function syncFilterButtons() {
+
+  document
+    .querySelectorAll(
+      ".filter-button"
+    )
+    .forEach(
+      button => {
+
+        button.classList.toggle(
+          "off",
+          !enabledPerformers.has(
+            button.dataset
+              .performer
+          )
+        );
+
+      }
+    );
+
+}
+
+
 
 /* =========================================
-   日付表示
+   補助
 ========================================= */
+
+function hideCalendar() {
+
+  document.getElementById(
+    "calendar"
+  ).classList.add(
+    "calendar-hidden"
+  );
+
+}
+
+
+function showGroupedEventList(
+  title,
+  grouped,
+  emptyText,
+  options = {}
+) {
+
+  hideCalendar();
+
+
+  document.getElementById(
+    "detail-title"
+  ).textContent =
+    title;
+
+
+  grouped.sort(
+    sortEvents
+  );
+
+
+  if (
+    grouped.length === 0
+  ) {
+
+    document.getElementById(
+      "detail-list"
+    ).innerHTML = `
+
+      <div class="empty">
+        ${escapeHtml(
+          emptyText
+        )}
+      </div>
+
+    `;
+
+    scrollToDetail();
+
+    return;
+
+  }
+
+
+  document.getElementById(
+    "detail-list"
+  ).innerHTML =
+    grouped
+      .map(
+        event =>
+          createEventCard(
+            event,
+            {
+              showDate: true,
+              showSaleBadge:
+                options.showSaleBadge
+                === true
+            }
+          )
+      )
+      .join("");
+
+
+  scrollToDetail();
+
+}
+
+
+function sortEvents(
+  a,
+  b
+) {
+
+  const dateCompare =
+    (
+      a.date || ""
+    ).localeCompare(
+      b.date || ""
+    );
+
+
+  if (
+    dateCompare !== 0
+  ) {
+
+    return dateCompare;
+
+  }
+
+
+  return (
+    a.startTime || ""
+  ).localeCompare(
+    b.startTime || ""
+  );
+
+}
+
+
+function normalizeText(
+  value
+) {
+
+  return String(
+    value || ""
+  )
+    .toLowerCase()
+    .replace(/\s+/g, "")
+    .normalize("NFKC");
+
+}
+
 
 function formatDate(
   dateString
@@ -2275,11 +3767,6 @@ function formatDate(
 
 }
 
-
-
-/* =========================================
-   日付＋曜日表示
-========================================= */
 
 function formatDateWithWeekday(
   dateString
@@ -2325,12 +3812,59 @@ function formatDateWithWeekday(
 }
 
 
+function formatDateTime(
+  date
+) {
 
-/* =========================================
-   HTML安全化
-========================================= */
+  return date.toLocaleString(
+    "ja-JP",
+    {
+      month:
+        "numeric",
 
-function escapeHtml(value) {
+      day:
+        "numeric",
+
+      hour:
+        "2-digit",
+
+      minute:
+        "2-digit"
+    }
+  );
+
+}
+
+
+function scrollToDetail() {
+
+  const area =
+    document.querySelector(
+      ".detail-area"
+    );
+
+
+  setTimeout(
+    () => {
+
+      area.scrollIntoView({
+        behavior:
+          "smooth",
+
+        block:
+          "start"
+      });
+
+    },
+    80
+  );
+
+}
+
+
+function escapeHtml(
+  value
+) {
 
   return String(
     value ?? ""
