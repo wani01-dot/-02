@@ -28,7 +28,7 @@
     }
 
     body {
-      background: #f3f3f3;
+      background: #f3f4f6;
       color: #222;
 
       font-family:
@@ -78,7 +78,6 @@
       justify-content: center;
 
       font-size: 24px;
-      line-height: 1;
 
       cursor: pointer;
 
@@ -114,7 +113,9 @@
     .wrapper {
       width: 100%;
       max-width: 760px;
+
       margin: 0 auto;
+
       padding: 12px 8px 50px;
     }
 
@@ -126,6 +127,7 @@
     .menu-overlay {
       position: fixed;
       inset: 0;
+
       z-index: 9998;
 
       background:
@@ -181,10 +183,7 @@
       padding:
         max(18px, env(safe-area-inset-top))
         18px
-        calc(
-          18px +
-          env(safe-area-inset-bottom)
-        );
+        calc(18px + env(safe-area-inset-bottom));
     }
 
     .side-menu-close {
@@ -195,6 +194,7 @@
       background: transparent;
 
       padding: 0;
+
       margin-bottom: 8px;
 
       font-size: 36px;
@@ -211,6 +211,7 @@
 
       font-size: 24px;
       font-weight: 800;
+
       color: #102039;
     }
 
@@ -218,6 +219,7 @@
       margin: 6px 0 18px;
 
       font-size: 14px;
+
       color: #7b8492;
     }
 
@@ -259,6 +261,7 @@
 
     .side-menu-item.active {
       background: #e8f2ff;
+
       color: #1677e8;
     }
 
@@ -367,7 +370,7 @@
 
       box-shadow:
         0 2px 12px
-        rgba(0, 0, 0, 0.07);
+        rgba(0,0,0,0.07);
     }
 
     .calendar-hidden {
@@ -404,12 +407,13 @@
     .fc-col-header-cell-cushion {
       color: #555;
       text-decoration: none;
+
       font-size: 12px;
     }
 
 
     /* =====================================
-       コンテンツ
+       詳細
     ===================================== */
 
     .detail-area {
@@ -428,11 +432,11 @@
 
       background: white;
 
-      margin-bottom: 10px;
+      margin-bottom: 12px;
 
-      padding: 14px;
+      padding: 15px;
 
-      border-radius: 14px;
+      border-radius: 16px;
 
       box-shadow:
         0 2px 10px
@@ -442,8 +446,8 @@
     .favorite-button {
       position: absolute;
 
-      top: 10px;
-      right: 10px;
+      top: 11px;
+      right: 11px;
 
       width: 38px;
       height: 38px;
@@ -466,41 +470,77 @@
       background: #fff8d7;
     }
 
-    .new-badge {
-      display: inline-block;
+
+    /* =====================================
+       バッジ
+    ===================================== */
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+
+      padding-right: 44px;
 
       margin-bottom: 8px;
+    }
+
+    .small-badge {
+      display: inline-flex;
+      align-items: center;
+
+      min-height: 24px;
 
       padding: 4px 8px;
 
       border-radius: 999px;
 
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .new-badge {
       background: #ee4169;
       color: white;
-
-      font-size: 11px;
-      font-weight: 800;
     }
 
-    .sale-near-badge {
-      display: inline-block;
-
-      margin-bottom: 8px;
-      margin-right: 5px;
-
-      padding: 4px 8px;
-
-      border-radius: 999px;
-
-      background: #8a5cff;
-      color: white;
-
-      font-size: 11px;
-      font-weight: 800;
+    .source-fany {
+      background: #ffe8ef;
+      color: #dc315c;
     }
+
+    .source-tiget {
+      background: #e6f3ff;
+      color: #1474c9;
+    }
+
+    .source-other {
+      background: #edf0f3;
+      color: #626b75;
+    }
+
+    .status-few {
+      background: #fff0f2;
+      color: #d82949;
+    }
+
+    .status-ended {
+      background: #edf0f4;
+      color: #59636e;
+    }
+
+    .sale-near {
+      background: #eee8ff;
+      color: #6b42d8;
+    }
+
+
+    /* =====================================
+       公演本文
+    ===================================== */
 
     .event-date {
-      margin-bottom: 8px;
+      margin-bottom: 7px;
 
       color: #777;
 
@@ -545,49 +585,104 @@
     }
 
     .event-title {
-      padding-right: 38px;
+      padding-right: 42px;
+
+      margin-bottom: 10px;
 
       font-size: 16px;
-      font-weight: bold;
-
-      line-height: 1.45;
-
-      margin-bottom: 8px;
+      font-weight: 800;
+      line-height: 1.5;
     }
 
     .event-info {
       font-size: 14px;
-      line-height: 1.8;
+      line-height: 1.9;
 
       color: #444;
     }
 
-    .source-badge {
-      display: inline-block;
+    .event-info-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 7px;
+    }
 
-      margin-top: 6px;
+    .info-icon {
+      flex: 0 0 20px;
+    }
 
-      padding: 3px 7px;
+    .performer-detail-box {
+      margin-top: 12px;
 
-      border-radius: 5px;
+      padding: 11px 12px;
 
-      background: #eee;
+      border-radius: 12px;
 
-      font-size: 11px;
-      font-weight: bold;
+      background: #f7f8fa;
+    }
+
+    .performer-detail-title {
+      margin-bottom: 5px;
+
+      font-size: 12px;
+      font-weight: 800;
+
+      color: #69727c;
+    }
+
+    .performer-detail-text {
+      font-size: 14px;
+      line-height: 1.65;
+
+      color: #333;
+
+      word-break: break-word;
+    }
+
+    .sale-info-box {
+      margin-top: 11px;
+
+      padding: 10px 12px;
+
+      border-radius: 12px;
+
+      background: #f7f4ff;
+
+      color: #5533af;
+
+      font-size: 13px;
+      line-height: 1.6;
     }
 
     .event-link {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
 
-      margin-top: 9px;
+      width: 100%;
 
-      color: #1677ff;
+      margin-top: 12px;
+
+      padding: 11px;
+
+      border-radius: 12px;
+
+      background: #1677e8;
+
+      color: white;
 
       font-size: 14px;
-      font-weight: bold;
+      font-weight: 800;
 
       text-decoration: none;
+    }
+
+    .event-link.fany-link {
+      background: #e83e6d;
+    }
+
+    .event-link + .event-link {
+      margin-top: 7px;
     }
 
     .empty {
@@ -603,7 +698,7 @@
 
 
     /* =====================================
-       検索・設定系
+       検索など
     ===================================== */
 
     .tool-card {
@@ -673,29 +768,6 @@
       cursor: pointer;
     }
 
-    .secondary-button {
-      width: 100%;
-
-      margin-top: 10px;
-
-      border:
-        1px solid
-        #d9dfe7;
-
-      border-radius: 12px;
-
-      padding: 12px 14px;
-
-      background: white;
-
-      color: #222;
-
-      font-size: 15px;
-      font-weight: 700;
-
-      cursor: pointer;
-    }
-
     .danger-button {
       width: 100%;
 
@@ -743,7 +815,6 @@
     .performer-list-item {
       display: flex;
       align-items: center;
-
       gap: 10px;
 
       padding: 12px 4px;
@@ -772,10 +843,7 @@
     }
 
     .help-title {
-      margin:
-        14px
-        0
-        5px;
+      margin: 14px 0 5px;
 
       font-size: 15px;
       font-weight: 800;
@@ -797,6 +865,7 @@
 
     #synced {
       margin-top: 12px;
+
       padding-right: 4px;
 
       text-align: right;
@@ -861,9 +930,11 @@
       ×
     </button>
 
+
     <h2 class="side-menu-title">
       ライブカレンダー
     </h2>
+
 
     <div class="side-menu-subtitle">
       今日のライブ追いかけよう
@@ -985,12 +1056,13 @@
 
 
     <div class="menu-version">
-      v2.0.0
+      v2.1.0
     </div>
 
   </div>
 
 </aside>
+
 
 
 <header class="topbar">
@@ -1002,6 +1074,7 @@
   >
     ☰
   </button>
+
 
   <div class="title-block">
 
@@ -1018,6 +1091,7 @@
 </header>
 
 
+
 <div class="wrapper">
 
 
@@ -1030,12 +1104,14 @@
       めぞん
     </button>
 
+
     <button
       class="filter-button pyuto"
       data-performer="pyuto"
     >
       ピュート
     </button>
+
 
     <button
       class="filter-button nansui"
@@ -1069,7 +1145,6 @@
 
   <div id="synced"></div>
 
-
 </div>
 
 
@@ -1078,7 +1153,7 @@
 
 
 /* =========================================
-   基本データ
+   芸人
 ========================================= */
 
 const performerMap = {
@@ -1107,6 +1182,11 @@ const performerMap = {
 };
 
 
+
+/* =========================================
+   状態
+========================================= */
+
 const enabledPerformers =
   new Set([
     "maison",
@@ -1117,12 +1197,15 @@ const enabledPerformers =
 
 let allEvents = [];
 
-let newEvents = [];
-
 let calendar;
 
 let currentView =
   "calendar";
+
+
+const NEW_HOURS = 48;
+
+const SALE_NEAR_DAYS = 7;
 
 
 
@@ -1138,16 +1221,16 @@ function loadFavorites() {
 
   try {
 
-    const value =
+    const raw =
       localStorage.getItem(
         FAVORITE_STORAGE_KEY
       );
 
 
     const data =
-      value
+      raw
       ?
-      JSON.parse(value)
+      JSON.parse(raw)
       :
       [];
 
@@ -1291,6 +1374,23 @@ menuOverlay.addEventListener(
 );
 
 
+document.addEventListener(
+  "keydown",
+  event => {
+
+    if (
+      event.key ===
+      "Escape"
+    ) {
+
+      closeSideMenu();
+
+    }
+
+  }
+);
+
+
 function setActiveMenu(
   menuName
 ) {
@@ -1320,7 +1420,7 @@ function setActiveMenu(
 
 
 /* =========================================
-   JSON取得
+   events.json
 ========================================= */
 
 async function loadEvents() {
@@ -1383,15 +1483,15 @@ async function loadEvents() {
 
     renderCalendar();
 
-    updateFavoriteBadge();
-
-    updateSaleBadge();
+    updateAllBadges();
 
   }
 
   catch(error) {
 
-    console.error(error);
+    console.error(
+      error
+    );
 
 
     document.getElementById(
@@ -1410,54 +1510,65 @@ async function loadEvents() {
 
 
 
-async function loadNewEvents() {
+/* =========================================
+   NEW判定
+========================================= */
 
-  try {
+function isNewEvent(
+  event
+) {
 
-    const response =
-      await fetch(
-        "new_events.json?t=" +
-        Date.now()
-      );
+  if (
+    !event.firstSeenAt
+  ) {
 
-
-    if (!response.ok) {
-
-      newEvents = [];
-
-      updateNewEventBadge();
-
-      return;
-
-    }
-
-
-    const data =
-      await response.json();
-
-
-    newEvents =
-      Array.isArray(data)
-      ?
-      data
-      :
-      (
-        data.events ||
-        []
-      );
-
-
-    updateNewEventBadge();
+    return false;
 
   }
 
-  catch {
 
-    newEvents = [];
+  const firstSeen =
+    new Date(
+      event.firstSeenAt
+    );
 
-    updateNewEventBadge();
+
+  if (
+    Number.isNaN(
+      firstSeen.getTime()
+    )
+  ) {
+
+    return false;
 
   }
+
+
+  const now =
+    new Date();
+
+
+  const hours =
+    (
+      now.getTime()
+      -
+      firstSeen.getTime()
+    )
+    /
+    (
+      1000
+      *
+      60
+      *
+      60
+    );
+
+
+  return (
+    hours >= 0
+    &&
+    hours <= NEW_HOURS
+  );
 
 }
 
@@ -1490,15 +1601,23 @@ function setBadge(
 }
 
 
+function updateAllBadges() {
+
+  updateNewEventBadge();
+
+  updateFavoriteBadge();
+
+  updateSaleBadge();
+
+}
+
+
 function updateNewEventBadge() {
 
   const grouped =
     groupEvents(
-      newEvents.filter(
-        event =>
-          performerMap[
-            event.performerId
-          ]
+      allEvents.filter(
+        isNewEvent
       )
     );
 
@@ -1540,13 +1659,9 @@ function updateFavoriteBadge() {
 
 function updateSaleBadge() {
 
-  const events =
-    getSaleNearEvents();
-
-
   setBadge(
     "sale-badge",
-    events.length
+    getSaleNearEvents().length
   );
 
 }
@@ -1602,8 +1717,18 @@ function makeCalendarEvents() {
       return {
 
         title:
-          performer.name +
-          "｜" +
+          (
+            isNewEvent(event)
+            ?
+            "NEW "
+            :
+            ""
+          )
+          +
+          performer.name
+          +
+          "｜"
+          +
           (
             event.title ||
             "公演"
@@ -1645,7 +1770,9 @@ function renderCalendar() {
     );
 
 
-  if (calendar) {
+  if (
+    calendar
+  ) {
 
     calendar.destroy();
 
@@ -1657,7 +1784,8 @@ function renderCalendar() {
       element,
       {
 
-        locale: "ja",
+        locale:
+          "ja",
 
         initialView:
           "dayGridMonth",
@@ -1727,7 +1855,9 @@ function renderCalendar() {
    イベント統合
 ========================================= */
 
-function groupEvents(events) {
+function groupEvents(
+  events
+) {
 
   const groups = {};
 
@@ -1741,12 +1871,17 @@ function groupEvents(events) {
         );
 
 
-      if (!groups[key]) {
+      if (
+        !groups[key]
+      ) {
 
         groups[key] = {
 
           date:
             event.date || "",
+
+          openTime:
+            event.openTime || "",
 
           startTime:
             event.startTime || "",
@@ -1760,16 +1895,26 @@ function groupEvents(events) {
           performers:
             [],
 
+          trackedPerformers:
+            [],
+
+          performerDetails:
+            [],
+
           sources:
             [],
 
           urls:
             [],
 
-          saleStart:
-            getSaleStart(
-              event
-            )
+          ticketStatus:
+            event.ticketStatus || "",
+
+          saleStartAt:
+            event.saleStartAt || "",
+
+          firstSeenAt:
+            event.firstSeenAt || ""
 
         };
 
@@ -1790,6 +1935,80 @@ function groupEvents(events) {
           .performers
           .push(
             event.performerId
+          );
+
+      }
+
+
+      if (
+        Array.isArray(
+          event.trackedPerformers
+        )
+      ) {
+
+        event.trackedPerformers
+          .forEach(
+            id => {
+
+              if (
+                id
+                &&
+                !groups[key]
+                  .trackedPerformers
+                  .includes(
+                    id
+                  )
+              ) {
+
+                groups[key]
+                  .trackedPerformers
+                  .push(
+                    id
+                  );
+
+              }
+
+            }
+          );
+
+      }
+
+
+      if (
+        Array.isArray(
+          event.performersText
+        )
+      ) {
+
+        event.performersText
+          .forEach(
+            name => {
+
+              name =
+                String(
+                  name || ""
+                ).trim();
+
+
+              if (
+                name
+                &&
+                !groups[key]
+                  .performerDetails
+                  .includes(
+                    name
+                  )
+              ) {
+
+                groups[key]
+                  .performerDetails
+                  .push(
+                    name
+                  );
+
+              }
+
+            }
           );
 
       }
@@ -1827,28 +2046,109 @@ function groupEvents(events) {
         &&
         !groups[key]
           .urls
-          .includes(
-            url
+          .some(
+            item =>
+              item.url ===
+              url
           )
       ) {
 
         groups[key]
           .urls
-          .push(
-            url
-          );
+          .push({
+            url:
+              url,
+
+            source:
+              event.source || ""
+          });
 
       }
 
 
       if (
-        !groups[key].saleStart
+        !groups[key].ticketStatus
+        &&
+        event.ticketStatus
       ) {
 
-        groups[key].saleStart =
-          getSaleStart(
-            event
-          );
+        groups[key].ticketStatus =
+          event.ticketStatus;
+
+      }
+
+
+      if (
+        !groups[key].saleStartAt
+        &&
+        event.saleStartAt
+      ) {
+
+        groups[key].saleStartAt =
+          event.saleStartAt;
+
+      }
+
+
+      if (
+        !groups[key].openTime
+        &&
+        event.openTime
+      ) {
+
+        groups[key].openTime =
+          event.openTime;
+
+      }
+
+
+      if (
+        event.firstSeenAt
+      ) {
+
+        if (
+          !groups[key].firstSeenAt
+        ) {
+
+          groups[key].firstSeenAt =
+            event.firstSeenAt;
+
+        }
+
+        else {
+
+          const oldDate =
+            new Date(
+              groups[key].firstSeenAt
+            );
+
+
+          const newDate =
+            new Date(
+              event.firstSeenAt
+            );
+
+
+          if (
+            !Number.isNaN(
+              newDate.getTime()
+            )
+            &&
+            (
+              Number.isNaN(
+                oldDate.getTime()
+              )
+              ||
+              newDate < oldDate
+            )
+          ) {
+
+            groups[key].firstSeenAt =
+              event.firstSeenAt;
+
+          }
+
+        }
 
       }
 
@@ -1890,89 +2190,63 @@ document
             menu ===
             "calendar"
           ) {
-
             showCalendar();
-
           }
-
 
           if (
             menu ===
             "new"
           ) {
-
             showNewEvents();
-
           }
-
 
           if (
             menu ===
             "favorite"
           ) {
-
             showFavorites();
-
           }
-
 
           if (
             menu ===
             "sale"
           ) {
-
             showSaleNear();
-
           }
-
 
           if (
             menu ===
             "search"
           ) {
-
             showSearch();
-
           }
-
 
           if (
             menu ===
             "performers"
           ) {
-
             showPerformers();
-
           }
-
 
           if (
             menu ===
             "coappearance"
           ) {
-
             showCoappearance();
-
           }
-
 
           if (
             menu ===
             "settings"
           ) {
-
             showSettings();
-
           }
-
 
           if (
             menu ===
             "help"
           ) {
-
             showHelp();
-
           }
 
         }
@@ -2021,7 +2295,9 @@ function showCalendar() {
   setTimeout(
     () => {
 
-      if (calendar) {
+      if (
+        calendar
+      ) {
 
         calendar.updateSize();
 
@@ -2042,93 +2318,7 @@ function showCalendar() {
 
 
 /* =========================================
-   共通一覧表示
-========================================= */
-
-function showEventList(
-  title,
-  events,
-  options = {}
-) {
-
-  hideCalendar();
-
-
-  document.getElementById(
-    "detail-title"
-  ).textContent =
-    title;
-
-
-  const grouped =
-    groupEvents(
-      events
-    );
-
-
-  grouped.sort(
-    sortEvents
-  );
-
-
-  if (
-    grouped.length === 0
-  ) {
-
-    document.getElementById(
-      "detail-list"
-    ).innerHTML = `
-
-      <div class="empty">
-        ${
-          escapeHtml(
-            options.emptyText ||
-            "該当するライブはありません。"
-          )
-        }
-      </div>
-
-    `;
-
-
-    scrollToDetail();
-
-    return;
-
-  }
-
-
-  document.getElementById(
-    "detail-list"
-  ).innerHTML =
-    grouped
-      .map(
-        event =>
-          createEventCard(
-            event,
-            {
-              showDate: true,
-              showNewBadge:
-                options.showNewBadge
-                === true,
-
-              showSaleBadge:
-                options.showSaleBadge
-                === true
-            }
-          )
-      )
-      .join("");
-
-
-  scrollToDetail();
-
-}
-
-
-
-/* =========================================
-   新着
+   NEW
 ========================================= */
 
 function showNewEvents() {
@@ -2138,13 +2328,21 @@ function showNewEvents() {
   );
 
 
+  const events =
+    allEvents.filter(
+      isNewEvent
+    );
+
+
   showEventList(
-    "新着ライブ",
-    newEvents,
+    "✨ 新着ライブ",
+    events,
     {
-      showNewBadge: true,
+      showNewBadge:
+        true,
+
       emptyText:
-        "現在、新着ライブはありません。"
+        "48時間以内に追加されたライブはありません。"
     }
   );
 
@@ -2194,28 +2392,13 @@ function showFavorites() {
    販売開始
 ========================================= */
 
-function getSaleStart(event) {
-
-  return (
-    event.saleStart
-    ||
-    event.saleStartAt
-    ||
-    event.ticketSaleStart
-    ||
-    event.ticketSaleStartAt
-    ||
-    ""
-  );
-
-}
-
-
-function parseSaleDate(
+function parseDateValue(
   value
 ) {
 
-  if (!value) {
+  if (
+    !value
+  ) {
 
     return null;
 
@@ -2223,7 +2406,9 @@ function parseSaleDate(
 
 
   const date =
-    new Date(value);
+    new Date(
+      value
+    );
 
 
   if (
@@ -2252,7 +2437,7 @@ function getSaleNearEvents() {
     new Date(
       now.getTime()
       +
-      7
+      SALE_NEAR_DAYS
       *
       24
       *
@@ -2269,18 +2454,18 @@ function getSaleNearEvents() {
   ).filter(
     event => {
 
-      const date =
-        parseSaleDate(
-          event.saleStart
+      const saleDate =
+        parseDateValue(
+          event.saleStartAt
         );
 
 
       return (
-        date
+        saleDate
         &&
-        date >= now
+        saleDate >= now
         &&
-        date <= limit
+        saleDate <= limit
       );
 
     }
@@ -2303,9 +2488,10 @@ function showSaleNear() {
   showGroupedEventList(
     "🎫 販売開始が近いもの",
     events,
-    "今後7日以内に販売開始するライブはありません。販売開始日時の取得機能は後で強化できます。",
+    "今後7日以内に販売開始するライブはありません。",
     {
-      showSaleBadge: true
+      showSaleBadge:
+        true
     }
   );
 
@@ -2339,7 +2525,7 @@ function showSearch() {
     <div class="tool-card">
 
       <label class="tool-label">
-        ライブ名・会場・芸人名
+        ライブ名・会場・出演者
       </label>
 
       <input
@@ -2369,12 +2555,6 @@ function showSearch() {
     );
 
 
-  const button =
-    document.getElementById(
-      "live-search-button"
-    );
-
-
   function executeSearch() {
 
     const query =
@@ -2389,7 +2569,9 @@ function showSearch() {
       );
 
 
-    if (!query) {
+    if (
+      !query
+    ) {
 
       resultArea.innerHTML = `
 
@@ -2414,7 +2596,7 @@ function showSearch() {
       grouped.filter(
         event => {
 
-          const performerNames =
+          const trackedNames =
             event.performers
               .map(
                 id =>
@@ -2432,7 +2614,8 @@ function showSearch() {
               [
                 event.title,
                 event.venue,
-                performerNames
+                trackedNames,
+                event.performerDetails.join(" ")
               ].join(" ")
             );
 
@@ -2474,7 +2657,8 @@ function showSearch() {
             createEventCard(
               event,
               {
-                showDate: true
+                showDate:
+                  true
               }
             )
         )
@@ -2483,7 +2667,9 @@ function showSearch() {
   }
 
 
-  button.addEventListener(
+  document.getElementById(
+    "live-search-button"
+  ).addEventListener(
     "click",
     executeSearch
   );
@@ -2624,8 +2810,8 @@ function showPerformers() {
             const events =
               allEvents.filter(
                 event =>
-                  event.performerId
-                  === id
+                  event.performerId ===
+                  id
               );
 
 
@@ -2767,13 +2953,21 @@ function showCoappearance() {
 
       const results =
         grouped.filter(
-          event =>
-            selected.every(
+          event => {
+
+            const ids =
+              new Set([
+                ...event.performers,
+                ...event.trackedPerformers
+              ]);
+
+
+            return selected.every(
               id =>
-                event.performers.includes(
-                  id
-                )
-            )
+                ids.has(id)
+            );
+
+          }
         );
 
 
@@ -2829,7 +3023,8 @@ function showCoappearance() {
                 createEventCard(
                   event,
                   {
-                    showDate: true
+                    showDate:
+                      true
                   }
                 )
             )
@@ -2933,7 +3128,7 @@ function showSettings() {
           color:#555;
         "
       >
-        星を付けたライブはこのiPhoneのブラウザ内に保存されています。
+        星を付けたライブは、このiPhoneのブラウザ内に保存されます。
       </div>
 
       <button
@@ -3002,7 +3197,9 @@ function showSettings() {
         );
 
 
-      if (!result) {
+      if (
+        !result
+      ) {
 
         return;
 
@@ -3051,20 +3248,11 @@ function showHelp() {
     <div class="tool-card">
 
       <div class="help-title">
-        📅 カレンダー
-      </div>
-
-      <p class="help-text">
-        日付やライブ名をタップすると、その日の公演情報を確認できます。
-      </p>
-
-
-      <div class="help-title">
         ✨ 新着ライブ
       </div>
 
       <p class="help-text">
-        自動取得で新しく見つかった公演を確認できます。
+        初めて取得してから48時間以内の公演をNEWとして表示します。
       </p>
 
 
@@ -3073,7 +3261,7 @@ function showHelp() {
       </div>
 
       <p class="help-text">
-        公演カード右上の星を押すと保存できます。もう一度押すと解除できます。
+        公演カード右上の星を押すと保存できます。
       </p>
 
 
@@ -3082,25 +3270,25 @@ function showHelp() {
       </div>
 
       <p class="help-text">
-        販売開始日時を取得できた公演のうち、7日以内に販売が始まるものを表示します。
+        今後7日以内に販売が始まる公演を表示します。
       </p>
 
 
       <div class="help-title">
-        🔍 ライブ検索
+        販売状況
       </div>
 
       <p class="help-text">
-        ライブ名、会場名、芸人名から検索できます。
+        FANYで「残りわずか」「予定数終了」と表示されている場合、公演カードにも表示します。
       </p>
 
 
       <div class="help-title">
-        🎭 共演検索
+        👥 出演者
       </div>
 
       <p class="help-text">
-        2組または3組を選ぶと、その組み合わせが同じライブに出演する公演だけを探せます。
+        FANY・TIGETから取得できた出演者情報を公演カード内に表示します。
       </p>
 
     </div>
@@ -3145,11 +3333,17 @@ function showDateEvents(
   document.getElementById(
     "detail-title"
   ).textContent =
-    formatDate(
+    formatDateWithWeekday(
       date
     )
     +
-    " の公演";
+    " の公演"
+    +
+    "（"
+    +
+    grouped.length
+    +
+    "件）";
 
 
   if (
@@ -3188,7 +3382,164 @@ function showDateEvents(
 
 
 /* =========================================
-   カード
+   共通一覧
+========================================= */
+
+function showEventList(
+  title,
+  events,
+  options = {}
+) {
+
+  hideCalendar();
+
+
+  document.getElementById(
+    "detail-title"
+  ).textContent =
+    title;
+
+
+  const grouped =
+    groupEvents(
+      events
+    );
+
+
+  grouped.sort(
+    sortEvents
+  );
+
+
+  if (
+    grouped.length === 0
+  ) {
+
+    document.getElementById(
+      "detail-list"
+    ).innerHTML = `
+
+      <div class="empty">
+        ${escapeHtml(
+          options.emptyText ||
+          "該当するライブはありません。"
+        )}
+      </div>
+
+    `;
+
+
+    scrollToDetail();
+
+    return;
+
+  }
+
+
+  document.getElementById(
+    "detail-list"
+  ).innerHTML =
+    grouped
+      .map(
+        event =>
+          createEventCard(
+            event,
+            {
+              showDate:
+                true,
+
+              showNewBadge:
+                options.showNewBadge
+                === true,
+
+              showSaleBadge:
+                options.showSaleBadge
+                === true
+            }
+          )
+      )
+      .join("");
+
+
+  scrollToDetail();
+
+}
+
+
+function showGroupedEventList(
+  title,
+  grouped,
+  emptyText,
+  options = {}
+) {
+
+  hideCalendar();
+
+
+  document.getElementById(
+    "detail-title"
+  ).textContent =
+    title;
+
+
+  grouped.sort(
+    sortEvents
+  );
+
+
+  if (
+    grouped.length === 0
+  ) {
+
+    document.getElementById(
+      "detail-list"
+    ).innerHTML = `
+
+      <div class="empty">
+        ${escapeHtml(
+          emptyText
+        )}
+      </div>
+
+    `;
+
+
+    scrollToDetail();
+
+    return;
+
+  }
+
+
+  document.getElementById(
+    "detail-list"
+  ).innerHTML =
+    grouped
+      .map(
+        event =>
+          createEventCard(
+            event,
+            {
+              showDate:
+                true,
+
+              showSaleBadge:
+                options.showSaleBadge
+                === true
+            }
+          )
+      )
+      .join("");
+
+
+  scrollToDetail();
+
+}
+
+
+
+/* =========================================
+   公演カード
 ========================================= */
 
 function createEventCard(
@@ -3208,8 +3559,23 @@ function createEventCard(
     );
 
 
+  const newEvent =
+    isNewEvent(
+      event
+    );
+
+
+  const performerIds =
+    Array.from(
+      new Set([
+        ...event.performers,
+        ...event.trackedPerformers
+      ])
+    );
+
+
   const performerLabels =
-    event.performers
+    performerIds
       .map(
         id => {
 
@@ -3217,7 +3583,9 @@ function createEventCard(
             performerMap[id];
 
 
-          if (!performer) {
+          if (
+            !performer
+          ) {
 
             return "";
 
@@ -3244,38 +3612,177 @@ function createEventCard(
       .join("");
 
 
-  const sourceText =
+  const sourceBadges =
     event.sources
       .map(
-        source =>
-          source.toUpperCase()
+        source => {
+
+          const lower =
+            String(
+              source || ""
+            ).toLowerCase();
+
+
+          let className =
+            "source-other";
+
+
+          if (
+            lower ===
+            "fany"
+          ) {
+
+            className =
+              "source-fany";
+
+          }
+
+
+          if (
+            lower ===
+            "tiget"
+          ) {
+
+            className =
+              "source-tiget";
+
+          }
+
+
+          return `
+
+            <span
+              class="
+                small-badge
+                ${className}
+              "
+            >
+              ${escapeHtml(
+                lower.toUpperCase()
+              )}
+            </span>
+
+          `;
+
+        }
       )
-      .join(" / ");
+      .join("");
+
+
+  let statusBadge = "";
+
+
+  if (
+    event.ticketStatus ===
+    "残りわずか"
+  ) {
+
+    statusBadge = `
+
+      <span
+        class="
+          small-badge
+          status-few
+        "
+      >
+        残りわずか
+      </span>
+
+    `;
+
+  }
+
+
+  if (
+    event.ticketStatus ===
+    "予定数終了"
+  ) {
+
+    statusBadge = `
+
+      <span
+        class="
+          small-badge
+          status-ended
+        "
+      >
+        予定数終了
+      </span>
+
+    `;
+
+  }
+
+
+  const saleDate =
+    parseDateValue(
+      event.saleStartAt
+    );
+
+
+  const performerDetailText =
+    event.performerDetails.length > 0
+    ?
+    event.performerDetails.join(
+      " / "
+    )
+    :
+    "";
 
 
   const links =
     event.urls
       .map(
-        url => `
+        item => {
 
-          <a
-            class="event-link"
-            href="${escapeHtml(url)}"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            チケット・詳細を見る →
-          </a>
+          const source =
+            String(
+              item.source || ""
+            ).toLowerCase();
 
-        `
+
+          const className =
+            source === "fany"
+            ?
+            "event-link fany-link"
+            :
+            "event-link";
+
+
+          const label =
+            source === "fany"
+            ?
+            "FANYでチケット・詳細を見る ↗"
+            :
+            (
+              source === "tiget"
+              ?
+              "TIGETでチケット・詳細を見る ↗"
+              :
+              "チケット・詳細を見る ↗"
+            );
+
+
+          return `
+
+            <a
+              class="${className}"
+              href="${escapeHtml(
+                item.url
+              )}"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ${escapeHtml(
+                label
+              )}
+            </a>
+
+          `;
+
+        }
       )
-      .join("<br>");
-
-
-  const saleDate =
-    parseSaleDate(
-      event.saleStart
-    );
+      .join("");
 
 
   return `
@@ -3300,7 +3807,6 @@ function createEventCard(
           )
         )}"
         type="button"
-        aria-label="行きたいライブ"
       >
         ${
           favorite
@@ -3312,30 +3818,51 @@ function createEventCard(
       </button>
 
 
-      ${
-        options.showNewBadge
-        ?
-        `
-          <span class="new-badge">
-            NEW
-          </span>
-        `
-        :
-        ""
-      }
+      <div class="badge-row">
 
+        ${
+          (
+            options.showNewBadge
+            ||
+            newEvent
+          )
+          ?
+          `
+            <span
+              class="
+                small-badge
+                new-badge
+              "
+            >
+              NEW
+            </span>
+          `
+          :
+          ""
+        }
 
-      ${
-        options.showSaleBadge
-        ?
-        `
-          <span class="sale-near-badge">
-            まもなく販売
-          </span>
-        `
-        :
-        ""
-      }
+        ${sourceBadges}
+
+        ${statusBadge}
+
+        ${
+          options.showSaleBadge
+          ?
+          `
+            <span
+              class="
+                small-badge
+                sale-near
+              "
+            >
+              まもなく販売
+            </span>
+          `
+          :
+          ""
+        }
+
+      </div>
 
 
       ${
@@ -3364,8 +3891,7 @@ function createEventCard(
 
       <div class="event-title">
         ${escapeHtml(
-          event.title
-          ||
+          event.title ||
           "公演名不明"
         )}
       </div>
@@ -3373,15 +3899,38 @@ function createEventCard(
 
       <div class="event-info">
 
+
         ${
           event.startTime
           ?
           `
-            <div>
-              ⏰ 開演
-              ${escapeHtml(
-                event.startTime
-              )}
+            <div class="event-info-row">
+
+              <span class="info-icon">
+                🕒
+              </span>
+
+              <span>
+                ${
+                  event.openTime
+                  ?
+                  "開場 "
+                  +
+                  escapeHtml(
+                    event.openTime
+                  )
+                  +
+                  "　"
+                  :
+                  ""
+                }
+
+                開演
+                ${escapeHtml(
+                  event.startTime
+                )}
+              </span>
+
             </div>
           `
           :
@@ -3393,46 +3942,18 @@ function createEventCard(
           event.venue
           ?
           `
-            <div>
-              📍
-              ${escapeHtml(
-                event.venue
-              )}
-            </div>
-          `
-          :
-          ""
-        }
+            <div class="event-info-row">
 
+              <span class="info-icon">
+                📍
+              </span>
 
-        ${
-          saleDate
-          ?
-          `
-            <div>
-              🎫 販売開始
-              ${escapeHtml(
-                formatDateTime(
-                  saleDate
-                )
-              )}
-            </div>
-          `
-          :
-          ""
-        }
-
-
-        ${
-          sourceText
-          ?
-          `
-            <div>
-              <span class="source-badge">
+              <span>
                 ${escapeHtml(
-                  sourceText
+                  event.venue
                 )}
               </span>
+
             </div>
           `
           :
@@ -3440,6 +3961,51 @@ function createEventCard(
         }
 
       </div>
+
+
+      ${
+        saleDate
+        ?
+        `
+          <div class="sale-info-box">
+
+            🎫 販売開始：
+            <strong>
+              ${escapeHtml(
+                formatDateTime(
+                  saleDate
+                )
+              )}
+            </strong>
+
+          </div>
+        `
+        :
+        ""
+      }
+
+
+      ${
+        performerDetailText
+        ?
+        `
+          <div class="performer-detail-box">
+
+            <div class="performer-detail-title">
+              👥 出演者
+            </div>
+
+            <div class="performer-detail-text">
+              ${escapeHtml(
+                performerDetailText
+              )}
+            </div>
+
+          </div>
+        `
+        :
+        ""
+      }
 
 
       ${links}
@@ -3454,7 +4020,7 @@ function createEventCard(
 
 
 /* =========================================
-   星ボタン
+   お気に入りボタン
 ========================================= */
 
 document
@@ -3471,7 +4037,9 @@ document
         );
 
 
-      if (!button) {
+      if (
+        !button
+      ) {
 
         return;
 
@@ -3538,7 +4106,7 @@ document
 
 
 /* =========================================
-   フィルター
+   芸人フィルター
 ========================================= */
 
 document
@@ -3628,74 +4196,6 @@ function hideCalendar() {
 }
 
 
-function showGroupedEventList(
-  title,
-  grouped,
-  emptyText,
-  options = {}
-) {
-
-  hideCalendar();
-
-
-  document.getElementById(
-    "detail-title"
-  ).textContent =
-    title;
-
-
-  grouped.sort(
-    sortEvents
-  );
-
-
-  if (
-    grouped.length === 0
-  ) {
-
-    document.getElementById(
-      "detail-list"
-    ).innerHTML = `
-
-      <div class="empty">
-        ${escapeHtml(
-          emptyText
-        )}
-      </div>
-
-    `;
-
-    scrollToDetail();
-
-    return;
-
-  }
-
-
-  document.getElementById(
-    "detail-list"
-  ).innerHTML =
-    grouped
-      .map(
-        event =>
-          createEventCard(
-            event,
-            {
-              showDate: true,
-              showSaleBadge:
-                options.showSaleBadge
-                === true
-            }
-          )
-      )
-      .join("");
-
-
-  scrollToDetail();
-
-}
-
-
 function sortEvents(
   a,
   b
@@ -3741,33 +4241,6 @@ function normalizeText(
 }
 
 
-function formatDate(
-  dateString
-) {
-
-  const date =
-    new Date(
-      dateString +
-      "T00:00:00"
-    );
-
-
-  return (
-    (
-      date.getMonth() +
-      1
-    )
-    +
-    "月"
-    +
-    date.getDate()
-    +
-    "日"
-  );
-
-}
-
-
 function formatDateWithWeekday(
   dateString
 ) {
@@ -3791,8 +4264,13 @@ function formatDateWithWeekday(
 
 
   return (
+    date.getFullYear()
+    +
+    "年"
+    +
     (
-      date.getMonth() +
+      date.getMonth()
+      +
       1
     )
     +
@@ -3829,7 +4307,10 @@ function formatDateTime(
         "2-digit",
 
       minute:
-        "2-digit"
+        "2-digit",
+
+      hour12:
+        false
     }
   );
 
@@ -3904,8 +4385,6 @@ function escapeHtml(
 ========================================= */
 
 loadEvents();
-
-loadNewEvents();
 
 
 </script>
