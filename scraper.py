@@ -3729,7 +3729,7 @@ def main():
             ],
         )
 
-        if "fany" in sources:
+                if "fany" in sources:
             try:
                 all_events.extend(
                     scrape_fany(
@@ -3759,7 +3759,7 @@ def main():
                     "TIGETエラー:",
                     error,
                 )
-                
+
         if "eplus" in sources:
             try:
                 all_events.extend(
@@ -3774,8 +3774,8 @@ def main():
                     "イープラスエラー:",
                     error,
                 )
-                
-                        if "livepocket" in sources:
+
+        if "livepocket" in sources:
             try:
                 all_events.extend(
                     scrape_livepocket(
