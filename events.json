@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-06T16:04:57.159328+00:00",
+  "syncedAt": "2026-09-06T16:21:32.010773+00:00",
   "performers": [
     {
       "id": "maison",
@@ -11,6 +11,9 @@
         "eplus",
         "livepocket"
       ],
+      "sourceUrls": {
+        "eplus": "https://eplus.jp/sf/word/0000149584"
+      },
       "notify": false
     },
     {
@@ -23,6 +26,9 @@
         "eplus",
         "livepocket"
       ],
+      "sourceUrls": {
+        "eplus": "https://eplus.jp/sf/word/0000149575"
+      },
       "notify": true
     },
     {
@@ -35,6 +41,9 @@
         "eplus",
         "livepocket"
       ],
+      "sourceUrls": {
+        "eplus": "https://eplus.jp/sf/word/0000149574"
+      },
       "notify": true
     }
   ],
@@ -4452,6 +4461,318 @@
     {
       "performerId": "maison",
       "date": "2026-09-21",
+      "openTime": "",
+      "startTime": "09:00",
+      "title": "KOYABU SONIC 2026",
+      "venue": "インテックス大阪4号館5号館（大阪府）",
+      "source": "eplus",
+      "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021004?P1=0175",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-19T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-19T23:59:00+09:00",
+              "saleKey": "eplus|maison|2026-09-21|09:00|インテックス大阪4号館5号館（大阪府）|koyabusonic2026|先着|先着|first_come|2026-07-29T11:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-07-01T11:00:00+09:00",
+          "saleEndAt": "2026-07-28T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-01T11:00:00+09:00",
+              "endAt": "2026-07-28T23:59:00+09:00",
+              "saleKey": "eplus|maison|2026-09-21|09:00|インテックス大阪4号館5号館（大阪府）|koyabusonic2026|先着|先着|first_come|2026-07-01T11:00:00+09:00"
+            }
+          ]
+        }
+      ],
+      "saleStartAt": "2026-07-01T11:00:00+09:00",
+      "saleEndAt": "2026-07-28T23:59:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-29T11:00:00+09:00",
+          "endAt": "2026-09-19T23:59:00+09:00"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-01T11:00:00+09:00",
+          "endAt": "2026-07-28T23:59:00+09:00"
+        }
+      ],
+      "performersText": [
+        "【9",
+        "21】",
+        "≪出演アーティスト≫",
+        "新しい学校のリーダーズ",
+        "カジヒデキ",
+        "くまま",
+        "サニーデイ･サービス",
+        "サバシスター",
+        "竹下☆ぱらだいす×MADAMADA",
+        "ニガミ17才",
+        "ブランデー戦記",
+        "Red Eye",
+        "≪出演芸人≫",
+        "≪フォートナイトエリア≫",
+        "Unger",
+        "今別府直之",
+        "宇都宮まき",
+        "かめてぃん",
+        "川畑泰史",
+        "キャプテンしょーた",
+        "しゅんてゃん",
+        "土屋翼(ミカボ)",
+        "寺本航(テンプルカントリー)",
+        "吉田裕",
+        "らいと",
+        "らいふがーど",
+        "LiaqN"
+      ],
+      "firstSeenAt": "2026-09-06T16:21:32.006591+00:00",
+      "newUntil": "2026-09-08T16:21:32.006596+00:00",
+      "trackedPerformers": [
+        "maison",
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-09-21",
+      "openTime": "",
+      "startTime": "09:00",
+      "title": "KOYABU SONIC 2026",
+      "venue": "インテックス大阪4号館5号館（大阪府）",
+      "source": "eplus",
+      "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021004?P1=0175",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-19T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-19T23:59:00+09:00",
+              "saleKey": "eplus|nansui|2026-09-21|09:00|インテックス大阪4号館5号館（大阪府）|koyabusonic2026|先着|先着|first_come|2026-07-29T11:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-07-01T11:00:00+09:00",
+          "saleEndAt": "2026-07-28T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-01T11:00:00+09:00",
+              "endAt": "2026-07-28T23:59:00+09:00",
+              "saleKey": "eplus|nansui|2026-09-21|09:00|インテックス大阪4号館5号館（大阪府）|koyabusonic2026|先着|先着|first_come|2026-07-01T11:00:00+09:00"
+            }
+          ]
+        }
+      ],
+      "saleStartAt": "2026-07-01T11:00:00+09:00",
+      "saleEndAt": "2026-07-28T23:59:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-29T11:00:00+09:00",
+          "endAt": "2026-09-19T23:59:00+09:00"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-01T11:00:00+09:00",
+          "endAt": "2026-07-28T23:59:00+09:00"
+        }
+      ],
+      "performersText": [
+        "【9",
+        "21】",
+        "≪出演アーティスト≫",
+        "新しい学校のリーダーズ",
+        "カジヒデキ",
+        "くまま",
+        "サニーデイ･サービス",
+        "サバシスター",
+        "竹下☆ぱらだいす×MADAMADA",
+        "ニガミ17才",
+        "ブランデー戦記",
+        "Red Eye",
+        "≪出演芸人≫",
+        "≪フォートナイトエリア≫",
+        "Unger",
+        "今別府直之",
+        "宇都宮まき",
+        "かめてぃん",
+        "川畑泰史",
+        "キャプテンしょーた",
+        "しゅんてゃん",
+        "土屋翼(ミカボ)",
+        "寺本航(テンプルカントリー)",
+        "吉田裕",
+        "らいと",
+        "らいふがーど",
+        "LiaqN"
+      ],
+      "firstSeenAt": "2026-09-06T16:21:32.006591+00:00",
+      "newUntil": "2026-09-08T16:21:32.006596+00:00",
+      "trackedPerformers": [
+        "maison",
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-09-21",
+      "openTime": "",
+      "startTime": "09:00",
+      "title": "KOYABU SONIC 2026",
+      "venue": "インテックス大阪4号館5号館（大阪府）",
+      "source": "eplus",
+      "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021004?P1=0175",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-19T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-19T23:59:00+09:00",
+              "saleKey": "eplus|pyuto|2026-09-21|09:00|インテックス大阪4号館5号館（大阪府）|koyabusonic2026|先着|先着|first_come|2026-07-29T11:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-07-01T11:00:00+09:00",
+          "saleEndAt": "2026-07-28T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-01T11:00:00+09:00",
+              "endAt": "2026-07-28T23:59:00+09:00",
+              "saleKey": "eplus|pyuto|2026-09-21|09:00|インテックス大阪4号館5号館（大阪府）|koyabusonic2026|先着|先着|first_come|2026-07-01T11:00:00+09:00"
+            }
+          ]
+        }
+      ],
+      "saleStartAt": "2026-07-01T11:00:00+09:00",
+      "saleEndAt": "2026-07-28T23:59:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-29T11:00:00+09:00",
+          "endAt": "2026-09-19T23:59:00+09:00"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-01T11:00:00+09:00",
+          "endAt": "2026-07-28T23:59:00+09:00"
+        }
+      ],
+      "performersText": [
+        "【9",
+        "21】",
+        "≪出演アーティスト≫",
+        "新しい学校のリーダーズ",
+        "カジヒデキ",
+        "くまま",
+        "サニーデイ･サービス",
+        "サバシスター",
+        "竹下☆ぱらだいす×MADAMADA",
+        "ニガミ17才",
+        "ブランデー戦記",
+        "Red Eye",
+        "≪出演芸人≫",
+        "≪フォートナイトエリア≫",
+        "Unger",
+        "今別府直之",
+        "宇都宮まき",
+        "かめてぃん",
+        "川畑泰史",
+        "キャプテンしょーた",
+        "しゅんてゃん",
+        "土屋翼(ミカボ)",
+        "寺本航(テンプルカントリー)",
+        "吉田裕",
+        "らいと",
+        "らいふがーど",
+        "LiaqN"
+      ],
+      "firstSeenAt": "2026-09-06T16:21:32.006591+00:00",
+      "newUntil": "2026-09-08T16:21:32.006596+00:00",
+      "trackedPerformers": [
+        "maison",
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-09-21",
       "openTime": "09:30",
       "startTime": "10:30",
       "title": "【3日通し券・前半2日通し券・9/21(月)1日券】KOYABU SONIC 2026",
@@ -4881,6 +5202,110 @@
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
       "newUntil": "",
+      "trackedPerformers": [
+        "maison",
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-09-21",
+      "openTime": "09:30",
+      "startTime": "10:30",
+      "title": "KOYABU SONIC 2026",
+      "venue": "インテックス大阪4号館5号館（大阪府）",
+      "source": "eplus",
+      "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021001?P1=0175",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-19T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-19T23:59:00+09:00",
+              "saleKey": "eplus|maison|2026-09-21|10:30|インテックス大阪4号館5号館（大阪府）|koyabusonic2026|先着|先着|first_come|2026-07-29T11:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-07-01T11:00:00+09:00",
+          "saleEndAt": "2026-07-28T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-01T11:00:00+09:00",
+              "endAt": "2026-07-28T23:59:00+09:00",
+              "saleKey": "eplus|maison|2026-09-21|10:30|インテックス大阪4号館5号館（大阪府）|koyabusonic2026|先着|先着|first_come|2026-07-01T11:00:00+09:00"
+            }
+          ]
+        }
+      ],
+      "saleStartAt": "2026-07-01T11:00:00+09:00",
+      "saleEndAt": "2026-07-28T23:59:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-29T11:00:00+09:00",
+          "endAt": "2026-09-19T23:59:00+09:00"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-01T11:00:00+09:00",
+          "endAt": "2026-07-28T23:59:00+09:00"
+        }
+      ],
+      "performersText": [
+        "【9",
+        "21】",
+        "≪出演アーティスト≫",
+        "新しい学校のリーダーズ",
+        "カジヒデキ",
+        "くまま",
+        "サニーデイ･サービス",
+        "サバシスター",
+        "竹下☆ぱらだいす×MADAMADA",
+        "ニガミ17才",
+        "ブランデー戦記",
+        "Red Eye",
+        "≪出演芸人≫",
+        "≪フォートナイトエリア≫",
+        "Unger",
+        "今別府直之",
+        "宇都宮まき",
+        "かめてぃん",
+        "川畑泰史",
+        "キャプテンしょーた",
+        "しゅんてゃん",
+        "土屋翼(ミカボ)",
+        "寺本航(テンプルカントリー)",
+        "吉田裕",
+        "らいと",
+        "らいふがーど",
+        "LiaqN"
+      ],
+      "firstSeenAt": "2026-09-06T16:21:32.006591+00:00",
+      "newUntil": "2026-09-08T16:21:32.006596+00:00",
       "trackedPerformers": [
         "maison",
         "pyuto",
@@ -5326,6 +5751,110 @@
       ]
     },
     {
+      "performerId": "nansui",
+      "date": "2026-09-21",
+      "openTime": "09:30",
+      "startTime": "10:30",
+      "title": "KOYABU SONIC 2026",
+      "venue": "インテックス大阪4号館5号館（大阪府）",
+      "source": "eplus",
+      "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021001?P1=0175",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-19T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-19T23:59:00+09:00",
+              "saleKey": "eplus|nansui|2026-09-21|10:30|インテックス大阪4号館5号館（大阪府）|koyabusonic2026|先着|先着|first_come|2026-07-29T11:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-07-01T11:00:00+09:00",
+          "saleEndAt": "2026-07-28T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-01T11:00:00+09:00",
+              "endAt": "2026-07-28T23:59:00+09:00",
+              "saleKey": "eplus|nansui|2026-09-21|10:30|インテックス大阪4号館5号館（大阪府）|koyabusonic2026|先着|先着|first_come|2026-07-01T11:00:00+09:00"
+            }
+          ]
+        }
+      ],
+      "saleStartAt": "2026-07-01T11:00:00+09:00",
+      "saleEndAt": "2026-07-28T23:59:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-29T11:00:00+09:00",
+          "endAt": "2026-09-19T23:59:00+09:00"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-01T11:00:00+09:00",
+          "endAt": "2026-07-28T23:59:00+09:00"
+        }
+      ],
+      "performersText": [
+        "【9",
+        "21】",
+        "≪出演アーティスト≫",
+        "新しい学校のリーダーズ",
+        "カジヒデキ",
+        "くまま",
+        "サニーデイ･サービス",
+        "サバシスター",
+        "竹下☆ぱらだいす×MADAMADA",
+        "ニガミ17才",
+        "ブランデー戦記",
+        "Red Eye",
+        "≪出演芸人≫",
+        "≪フォートナイトエリア≫",
+        "Unger",
+        "今別府直之",
+        "宇都宮まき",
+        "かめてぃん",
+        "川畑泰史",
+        "キャプテンしょーた",
+        "しゅんてゃん",
+        "土屋翼(ミカボ)",
+        "寺本航(テンプルカントリー)",
+        "吉田裕",
+        "らいと",
+        "らいふがーど",
+        "LiaqN"
+      ],
+      "firstSeenAt": "2026-09-06T16:21:32.006591+00:00",
+      "newUntil": "2026-09-08T16:21:32.006596+00:00",
+      "trackedPerformers": [
+        "maison",
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
       "performerId": "pyuto",
       "date": "2026-09-21",
       "openTime": "09:30",
@@ -5766,6 +6295,422 @@
     {
       "performerId": "pyuto",
       "date": "2026-09-21",
+      "openTime": "09:30",
+      "startTime": "10:30",
+      "title": "KOYABU SONIC 2026",
+      "venue": "インテックス大阪4号館5号館（大阪府）",
+      "source": "eplus",
+      "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021001?P1=0175",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-19T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-19T23:59:00+09:00",
+              "saleKey": "eplus|pyuto|2026-09-21|10:30|インテックス大阪4号館5号館（大阪府）|koyabusonic2026|先着|先着|first_come|2026-07-29T11:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-07-01T11:00:00+09:00",
+          "saleEndAt": "2026-07-28T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-01T11:00:00+09:00",
+              "endAt": "2026-07-28T23:59:00+09:00",
+              "saleKey": "eplus|pyuto|2026-09-21|10:30|インテックス大阪4号館5号館（大阪府）|koyabusonic2026|先着|先着|first_come|2026-07-01T11:00:00+09:00"
+            }
+          ]
+        }
+      ],
+      "saleStartAt": "2026-07-01T11:00:00+09:00",
+      "saleEndAt": "2026-07-28T23:59:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-29T11:00:00+09:00",
+          "endAt": "2026-09-19T23:59:00+09:00"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-01T11:00:00+09:00",
+          "endAt": "2026-07-28T23:59:00+09:00"
+        }
+      ],
+      "performersText": [
+        "【9",
+        "21】",
+        "≪出演アーティスト≫",
+        "新しい学校のリーダーズ",
+        "カジヒデキ",
+        "くまま",
+        "サニーデイ･サービス",
+        "サバシスター",
+        "竹下☆ぱらだいす×MADAMADA",
+        "ニガミ17才",
+        "ブランデー戦記",
+        "Red Eye",
+        "≪出演芸人≫",
+        "≪フォートナイトエリア≫",
+        "Unger",
+        "今別府直之",
+        "宇都宮まき",
+        "かめてぃん",
+        "川畑泰史",
+        "キャプテンしょーた",
+        "しゅんてゃん",
+        "土屋翼(ミカボ)",
+        "寺本航(テンプルカントリー)",
+        "吉田裕",
+        "らいと",
+        "らいふがーど",
+        "LiaqN"
+      ],
+      "firstSeenAt": "2026-09-06T16:21:32.006591+00:00",
+      "newUntil": "2026-09-08T16:21:32.006596+00:00",
+      "trackedPerformers": [
+        "maison",
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-09-21",
+      "openTime": "",
+      "startTime": "11:00",
+      "title": "KOYABU SONIC 2026",
+      "venue": "インテックス大阪4号館5号館（大阪府）",
+      "source": "eplus",
+      "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021006?P1=0175",
+      "ticketStatus": "予定数終了",
+      "ticketOptions": [
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "予定数終了",
+          "price": "",
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-19T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-19T23:59:00+09:00",
+              "saleKey": "eplus|maison|2026-09-21|11:00|インテックス大阪4号館5号館（大阪府）|koyabusonic2026|先着|先着|first_come|2026-07-29T11:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-07-01T11:00:00+09:00",
+          "saleEndAt": "2026-07-28T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-01T11:00:00+09:00",
+              "endAt": "2026-07-28T23:59:00+09:00",
+              "saleKey": "eplus|maison|2026-09-21|11:00|インテックス大阪4号館5号館（大阪府）|koyabusonic2026|先着|先着|first_come|2026-07-01T11:00:00+09:00"
+            }
+          ]
+        }
+      ],
+      "saleStartAt": "2026-07-01T11:00:00+09:00",
+      "saleEndAt": "2026-07-28T23:59:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-29T11:00:00+09:00",
+          "endAt": "2026-09-19T23:59:00+09:00"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-01T11:00:00+09:00",
+          "endAt": "2026-07-28T23:59:00+09:00"
+        }
+      ],
+      "performersText": [
+        "【9",
+        "21】",
+        "≪出演アーティスト≫",
+        "新しい学校のリーダーズ",
+        "カジヒデキ",
+        "くまま",
+        "サニーデイ･サービス",
+        "サバシスター",
+        "竹下☆ぱらだいす×MADAMADA",
+        "ニガミ17才",
+        "ブランデー戦記",
+        "Red Eye",
+        "≪出演芸人≫",
+        "≪フォートナイトエリア≫",
+        "Unger",
+        "今別府直之",
+        "宇都宮まき",
+        "かめてぃん",
+        "川畑泰史",
+        "キャプテンしょーた",
+        "しゅんてゃん",
+        "土屋翼(ミカボ)",
+        "寺本航(テンプルカントリー)",
+        "吉田裕",
+        "らいと",
+        "らいふがーど",
+        "LiaqN"
+      ],
+      "firstSeenAt": "2026-09-06T16:21:32.006591+00:00",
+      "newUntil": "2026-09-08T16:21:32.006596+00:00",
+      "trackedPerformers": [
+        "maison",
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-09-21",
+      "openTime": "",
+      "startTime": "11:00",
+      "title": "KOYABU SONIC 2026",
+      "venue": "インテックス大阪4号館5号館（大阪府）",
+      "source": "eplus",
+      "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021006?P1=0175",
+      "ticketStatus": "予定数終了",
+      "ticketOptions": [
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "予定数終了",
+          "price": "",
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-19T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-19T23:59:00+09:00",
+              "saleKey": "eplus|nansui|2026-09-21|11:00|インテックス大阪4号館5号館（大阪府）|koyabusonic2026|先着|先着|first_come|2026-07-29T11:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-07-01T11:00:00+09:00",
+          "saleEndAt": "2026-07-28T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-01T11:00:00+09:00",
+              "endAt": "2026-07-28T23:59:00+09:00",
+              "saleKey": "eplus|nansui|2026-09-21|11:00|インテックス大阪4号館5号館（大阪府）|koyabusonic2026|先着|先着|first_come|2026-07-01T11:00:00+09:00"
+            }
+          ]
+        }
+      ],
+      "saleStartAt": "2026-07-01T11:00:00+09:00",
+      "saleEndAt": "2026-07-28T23:59:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-29T11:00:00+09:00",
+          "endAt": "2026-09-19T23:59:00+09:00"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-01T11:00:00+09:00",
+          "endAt": "2026-07-28T23:59:00+09:00"
+        }
+      ],
+      "performersText": [
+        "【9",
+        "21】",
+        "≪出演アーティスト≫",
+        "新しい学校のリーダーズ",
+        "カジヒデキ",
+        "くまま",
+        "サニーデイ･サービス",
+        "サバシスター",
+        "竹下☆ぱらだいす×MADAMADA",
+        "ニガミ17才",
+        "ブランデー戦記",
+        "Red Eye",
+        "≪出演芸人≫",
+        "≪フォートナイトエリア≫",
+        "Unger",
+        "今別府直之",
+        "宇都宮まき",
+        "かめてぃん",
+        "川畑泰史",
+        "キャプテンしょーた",
+        "しゅんてゃん",
+        "土屋翼(ミカボ)",
+        "寺本航(テンプルカントリー)",
+        "吉田裕",
+        "らいと",
+        "らいふがーど",
+        "LiaqN"
+      ],
+      "firstSeenAt": "2026-09-06T16:21:32.006591+00:00",
+      "newUntil": "2026-09-08T16:21:32.006596+00:00",
+      "trackedPerformers": [
+        "maison",
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-09-21",
+      "openTime": "",
+      "startTime": "11:00",
+      "title": "KOYABU SONIC 2026",
+      "venue": "インテックス大阪4号館5号館（大阪府）",
+      "source": "eplus",
+      "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021006?P1=0175",
+      "ticketStatus": "予定数終了",
+      "ticketOptions": [
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "予定数終了",
+          "price": "",
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-19T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-19T23:59:00+09:00",
+              "saleKey": "eplus|pyuto|2026-09-21|11:00|インテックス大阪4号館5号館（大阪府）|koyabusonic2026|先着|先着|first_come|2026-07-29T11:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-07-01T11:00:00+09:00",
+          "saleEndAt": "2026-07-28T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-01T11:00:00+09:00",
+              "endAt": "2026-07-28T23:59:00+09:00",
+              "saleKey": "eplus|pyuto|2026-09-21|11:00|インテックス大阪4号館5号館（大阪府）|koyabusonic2026|先着|先着|first_come|2026-07-01T11:00:00+09:00"
+            }
+          ]
+        }
+      ],
+      "saleStartAt": "2026-07-01T11:00:00+09:00",
+      "saleEndAt": "2026-07-28T23:59:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-29T11:00:00+09:00",
+          "endAt": "2026-09-19T23:59:00+09:00"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-01T11:00:00+09:00",
+          "endAt": "2026-07-28T23:59:00+09:00"
+        }
+      ],
+      "performersText": [
+        "【9",
+        "21】",
+        "≪出演アーティスト≫",
+        "新しい学校のリーダーズ",
+        "カジヒデキ",
+        "くまま",
+        "サニーデイ･サービス",
+        "サバシスター",
+        "竹下☆ぱらだいす×MADAMADA",
+        "ニガミ17才",
+        "ブランデー戦記",
+        "Red Eye",
+        "≪出演芸人≫",
+        "≪フォートナイトエリア≫",
+        "Unger",
+        "今別府直之",
+        "宇都宮まき",
+        "かめてぃん",
+        "川畑泰史",
+        "キャプテンしょーた",
+        "しゅんてゃん",
+        "土屋翼(ミカボ)",
+        "寺本航(テンプルカントリー)",
+        "吉田裕",
+        "らいと",
+        "らいふがーど",
+        "LiaqN"
+      ],
+      "firstSeenAt": "2026-09-06T16:21:32.006591+00:00",
+      "newUntil": "2026-09-08T16:21:32.006596+00:00",
+      "trackedPerformers": [
+        "maison",
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-09-21",
       "openTime": "16:15",
       "startTime": "16:30",
       "title": "11月のリサ&ピュートと大阪交友",
@@ -5815,6 +6760,318 @@
       "newUntil": "",
       "trackedPerformers": [
         "pyuto"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-09-22",
+      "openTime": "",
+      "startTime": "10:00",
+      "title": "KOYABU SONIC 2026",
+      "venue": "インテックス大阪4号館5号館（大阪府）",
+      "source": "eplus",
+      "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021005?P1=0175",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-20T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-20T23:59:00+09:00",
+              "saleKey": "eplus|maison|2026-09-22|10:00|インテックス大阪4号館5号館（大阪府）|koyabusonic2026|先着|先着|first_come|2026-07-29T11:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-07-01T11:00:00+09:00",
+          "saleEndAt": "2026-07-28T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-01T11:00:00+09:00",
+              "endAt": "2026-07-28T23:59:00+09:00",
+              "saleKey": "eplus|maison|2026-09-22|10:00|インテックス大阪4号館5号館（大阪府）|koyabusonic2026|先着|先着|first_come|2026-07-01T11:00:00+09:00"
+            }
+          ]
+        }
+      ],
+      "saleStartAt": "2026-07-01T11:00:00+09:00",
+      "saleEndAt": "2026-07-28T23:59:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-29T11:00:00+09:00",
+          "endAt": "2026-09-20T23:59:00+09:00"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-01T11:00:00+09:00",
+          "endAt": "2026-07-28T23:59:00+09:00"
+        }
+      ],
+      "performersText": [
+        "【9",
+        "21】",
+        "≪出演アーティスト≫",
+        "新しい学校のリーダーズ",
+        "カジヒデキ",
+        "くまま",
+        "サニーデイ･サービス",
+        "サバシスター",
+        "竹下☆ぱらだいす×MADAMADA",
+        "ニガミ17才",
+        "ブランデー戦記",
+        "Red Eye",
+        "≪出演芸人≫",
+        "≪フォートナイトエリア≫",
+        "Unger",
+        "今別府直之",
+        "宇都宮まき",
+        "かめてぃん",
+        "川畑泰史",
+        "キャプテンしょーた",
+        "しゅんてゃん",
+        "土屋翼(ミカボ)",
+        "寺本航(テンプルカントリー)",
+        "吉田裕",
+        "らいと",
+        "らいふがーど",
+        "LiaqN"
+      ],
+      "firstSeenAt": "2026-09-06T16:21:32.006591+00:00",
+      "newUntil": "2026-09-08T16:21:32.006596+00:00",
+      "trackedPerformers": [
+        "maison",
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-09-22",
+      "openTime": "",
+      "startTime": "10:00",
+      "title": "KOYABU SONIC 2026",
+      "venue": "インテックス大阪4号館5号館（大阪府）",
+      "source": "eplus",
+      "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021005?P1=0175",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-20T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-20T23:59:00+09:00",
+              "saleKey": "eplus|nansui|2026-09-22|10:00|インテックス大阪4号館5号館（大阪府）|koyabusonic2026|先着|先着|first_come|2026-07-29T11:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-07-01T11:00:00+09:00",
+          "saleEndAt": "2026-07-28T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-01T11:00:00+09:00",
+              "endAt": "2026-07-28T23:59:00+09:00",
+              "saleKey": "eplus|nansui|2026-09-22|10:00|インテックス大阪4号館5号館（大阪府）|koyabusonic2026|先着|先着|first_come|2026-07-01T11:00:00+09:00"
+            }
+          ]
+        }
+      ],
+      "saleStartAt": "2026-07-01T11:00:00+09:00",
+      "saleEndAt": "2026-07-28T23:59:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-29T11:00:00+09:00",
+          "endAt": "2026-09-20T23:59:00+09:00"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-01T11:00:00+09:00",
+          "endAt": "2026-07-28T23:59:00+09:00"
+        }
+      ],
+      "performersText": [
+        "【9",
+        "21】",
+        "≪出演アーティスト≫",
+        "新しい学校のリーダーズ",
+        "カジヒデキ",
+        "くまま",
+        "サニーデイ･サービス",
+        "サバシスター",
+        "竹下☆ぱらだいす×MADAMADA",
+        "ニガミ17才",
+        "ブランデー戦記",
+        "Red Eye",
+        "≪出演芸人≫",
+        "≪フォートナイトエリア≫",
+        "Unger",
+        "今別府直之",
+        "宇都宮まき",
+        "かめてぃん",
+        "川畑泰史",
+        "キャプテンしょーた",
+        "しゅんてゃん",
+        "土屋翼(ミカボ)",
+        "寺本航(テンプルカントリー)",
+        "吉田裕",
+        "らいと",
+        "らいふがーど",
+        "LiaqN"
+      ],
+      "firstSeenAt": "2026-09-06T16:21:32.006591+00:00",
+      "newUntil": "2026-09-08T16:21:32.006596+00:00",
+      "trackedPerformers": [
+        "maison",
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-09-22",
+      "openTime": "",
+      "startTime": "10:00",
+      "title": "KOYABU SONIC 2026",
+      "venue": "インテックス大阪4号館5号館（大阪府）",
+      "source": "eplus",
+      "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021005?P1=0175",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-20T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-20T23:59:00+09:00",
+              "saleKey": "eplus|pyuto|2026-09-22|10:00|インテックス大阪4号館5号館（大阪府）|koyabusonic2026|先着|先着|first_come|2026-07-29T11:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-07-01T11:00:00+09:00",
+          "saleEndAt": "2026-07-28T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-01T11:00:00+09:00",
+              "endAt": "2026-07-28T23:59:00+09:00",
+              "saleKey": "eplus|pyuto|2026-09-22|10:00|インテックス大阪4号館5号館（大阪府）|koyabusonic2026|先着|先着|first_come|2026-07-01T11:00:00+09:00"
+            }
+          ]
+        }
+      ],
+      "saleStartAt": "2026-07-01T11:00:00+09:00",
+      "saleEndAt": "2026-07-28T23:59:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-29T11:00:00+09:00",
+          "endAt": "2026-09-20T23:59:00+09:00"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-01T11:00:00+09:00",
+          "endAt": "2026-07-28T23:59:00+09:00"
+        }
+      ],
+      "performersText": [
+        "【9",
+        "21】",
+        "≪出演アーティスト≫",
+        "新しい学校のリーダーズ",
+        "カジヒデキ",
+        "くまま",
+        "サニーデイ･サービス",
+        "サバシスター",
+        "竹下☆ぱらだいす×MADAMADA",
+        "ニガミ17才",
+        "ブランデー戦記",
+        "Red Eye",
+        "≪出演芸人≫",
+        "≪フォートナイトエリア≫",
+        "Unger",
+        "今別府直之",
+        "宇都宮まき",
+        "かめてぃん",
+        "川畑泰史",
+        "キャプテンしょーた",
+        "しゅんてゃん",
+        "土屋翼(ミカボ)",
+        "寺本航(テンプルカントリー)",
+        "吉田裕",
+        "らいと",
+        "らいふがーど",
+        "LiaqN"
+      ],
+      "firstSeenAt": "2026-09-06T16:21:32.006591+00:00",
+      "newUntil": "2026-09-08T16:21:32.006596+00:00",
+      "trackedPerformers": [
+        "maison",
+        "pyuto",
+        "nansui"
       ]
     },
     {
@@ -6142,6 +7399,110 @@
       ]
     },
     {
+      "performerId": "maison",
+      "date": "2026-09-22",
+      "openTime": "09:30",
+      "startTime": "10:30",
+      "title": "KOYABU SONIC 2026",
+      "venue": "インテックス大阪4号館5号館（大阪府）",
+      "source": "eplus",
+      "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021002?P1=0175",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-20T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-20T23:59:00+09:00",
+              "saleKey": "eplus|maison|2026-09-22|10:30|インテックス大阪4号館5号館（大阪府）|koyabusonic2026|先着|先着|first_come|2026-07-29T11:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-07-01T11:00:00+09:00",
+          "saleEndAt": "2026-07-28T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-01T11:00:00+09:00",
+              "endAt": "2026-07-28T23:59:00+09:00",
+              "saleKey": "eplus|maison|2026-09-22|10:30|インテックス大阪4号館5号館（大阪府）|koyabusonic2026|先着|先着|first_come|2026-07-01T11:00:00+09:00"
+            }
+          ]
+        }
+      ],
+      "saleStartAt": "2026-07-01T11:00:00+09:00",
+      "saleEndAt": "2026-07-28T23:59:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-29T11:00:00+09:00",
+          "endAt": "2026-09-20T23:59:00+09:00"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-01T11:00:00+09:00",
+          "endAt": "2026-07-28T23:59:00+09:00"
+        }
+      ],
+      "performersText": [
+        "【9",
+        "21】",
+        "≪出演アーティスト≫",
+        "新しい学校のリーダーズ",
+        "カジヒデキ",
+        "くまま",
+        "サニーデイ･サービス",
+        "サバシスター",
+        "竹下☆ぱらだいす×MADAMADA",
+        "ニガミ17才",
+        "ブランデー戦記",
+        "Red Eye",
+        "≪出演芸人≫",
+        "≪フォートナイトエリア≫",
+        "Unger",
+        "今別府直之",
+        "宇都宮まき",
+        "かめてぃん",
+        "川畑泰史",
+        "キャプテンしょーた",
+        "しゅんてゃん",
+        "土屋翼(ミカボ)",
+        "寺本航(テンプルカントリー)",
+        "吉田裕",
+        "らいと",
+        "らいふがーど",
+        "LiaqN"
+      ],
+      "firstSeenAt": "2026-09-06T16:21:32.006591+00:00",
+      "newUntil": "2026-09-08T16:21:32.006596+00:00",
+      "trackedPerformers": [
+        "maison",
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
       "performerId": "nansui",
       "date": "2026-09-22",
       "openTime": "09:30",
@@ -6466,6 +7827,110 @@
       ]
     },
     {
+      "performerId": "nansui",
+      "date": "2026-09-22",
+      "openTime": "09:30",
+      "startTime": "10:30",
+      "title": "KOYABU SONIC 2026",
+      "venue": "インテックス大阪4号館5号館（大阪府）",
+      "source": "eplus",
+      "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021002?P1=0175",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-20T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-20T23:59:00+09:00",
+              "saleKey": "eplus|nansui|2026-09-22|10:30|インテックス大阪4号館5号館（大阪府）|koyabusonic2026|先着|先着|first_come|2026-07-29T11:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-07-01T11:00:00+09:00",
+          "saleEndAt": "2026-07-28T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-01T11:00:00+09:00",
+              "endAt": "2026-07-28T23:59:00+09:00",
+              "saleKey": "eplus|nansui|2026-09-22|10:30|インテックス大阪4号館5号館（大阪府）|koyabusonic2026|先着|先着|first_come|2026-07-01T11:00:00+09:00"
+            }
+          ]
+        }
+      ],
+      "saleStartAt": "2026-07-01T11:00:00+09:00",
+      "saleEndAt": "2026-07-28T23:59:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-29T11:00:00+09:00",
+          "endAt": "2026-09-20T23:59:00+09:00"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-01T11:00:00+09:00",
+          "endAt": "2026-07-28T23:59:00+09:00"
+        }
+      ],
+      "performersText": [
+        "【9",
+        "21】",
+        "≪出演アーティスト≫",
+        "新しい学校のリーダーズ",
+        "カジヒデキ",
+        "くまま",
+        "サニーデイ･サービス",
+        "サバシスター",
+        "竹下☆ぱらだいす×MADAMADA",
+        "ニガミ17才",
+        "ブランデー戦記",
+        "Red Eye",
+        "≪出演芸人≫",
+        "≪フォートナイトエリア≫",
+        "Unger",
+        "今別府直之",
+        "宇都宮まき",
+        "かめてぃん",
+        "川畑泰史",
+        "キャプテンしょーた",
+        "しゅんてゃん",
+        "土屋翼(ミカボ)",
+        "寺本航(テンプルカントリー)",
+        "吉田裕",
+        "らいと",
+        "らいふがーど",
+        "LiaqN"
+      ],
+      "firstSeenAt": "2026-09-06T16:21:32.006591+00:00",
+      "newUntil": "2026-09-08T16:21:32.006596+00:00",
+      "trackedPerformers": [
+        "maison",
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
       "performerId": "pyuto",
       "date": "2026-09-22",
       "openTime": "09:30",
@@ -6783,6 +8248,110 @@
       ],
       "firstSeenAt": "2026-09-06T14:55:38.906351+00:00",
       "newUntil": "",
+      "trackedPerformers": [
+        "maison",
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-09-22",
+      "openTime": "09:30",
+      "startTime": "10:30",
+      "title": "KOYABU SONIC 2026",
+      "venue": "インテックス大阪4号館5号館（大阪府）",
+      "source": "eplus",
+      "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021002?P1=0175",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-20T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-20T23:59:00+09:00",
+              "saleKey": "eplus|pyuto|2026-09-22|10:30|インテックス大阪4号館5号館（大阪府）|koyabusonic2026|先着|先着|first_come|2026-07-29T11:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-07-01T11:00:00+09:00",
+          "saleEndAt": "2026-07-28T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-01T11:00:00+09:00",
+              "endAt": "2026-07-28T23:59:00+09:00",
+              "saleKey": "eplus|pyuto|2026-09-22|10:30|インテックス大阪4号館5号館（大阪府）|koyabusonic2026|先着|先着|first_come|2026-07-01T11:00:00+09:00"
+            }
+          ]
+        }
+      ],
+      "saleStartAt": "2026-07-01T11:00:00+09:00",
+      "saleEndAt": "2026-07-28T23:59:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-29T11:00:00+09:00",
+          "endAt": "2026-09-20T23:59:00+09:00"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-01T11:00:00+09:00",
+          "endAt": "2026-07-28T23:59:00+09:00"
+        }
+      ],
+      "performersText": [
+        "【9",
+        "21】",
+        "≪出演アーティスト≫",
+        "新しい学校のリーダーズ",
+        "カジヒデキ",
+        "くまま",
+        "サニーデイ･サービス",
+        "サバシスター",
+        "竹下☆ぱらだいす×MADAMADA",
+        "ニガミ17才",
+        "ブランデー戦記",
+        "Red Eye",
+        "≪出演芸人≫",
+        "≪フォートナイトエリア≫",
+        "Unger",
+        "今別府直之",
+        "宇都宮まき",
+        "かめてぃん",
+        "川畑泰史",
+        "キャプテンしょーた",
+        "しゅんてゃん",
+        "土屋翼(ミカボ)",
+        "寺本航(テンプルカントリー)",
+        "吉田裕",
+        "らいと",
+        "らいふがーど",
+        "LiaqN"
+      ],
+      "firstSeenAt": "2026-09-06T16:21:32.006591+00:00",
+      "newUntil": "2026-09-08T16:21:32.006596+00:00",
       "trackedPerformers": [
         "maison",
         "pyuto",
@@ -15012,6 +16581,61 @@
       ]
     },
     {
+      "performerId": "maison",
+      "date": "2026-10-21",
+      "openTime": "19:15",
+      "startTime": "19:30",
+      "title": "VSバラエティ",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64847/52188",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-21T17:30:00+09:00",
+              "saleKey": "fany|maison|64847|52188|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-21T17:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-21T17:30:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-21T17:30:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[企画ライブ]ドンココ",
+        "生ファラオ",
+        "めぞん",
+        "しんや",
+        "ナユタ"
+      ],
+      "firstSeenAt": "2026-09-06T16:21:32.006591+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
       "performerId": "nansui",
       "date": "2026-10-21",
       "openTime": "20:45",
@@ -15187,6 +16811,60 @@
       ]
     },
     {
+      "performerId": "maison",
+      "date": "2026-10-22",
+      "openTime": "20:20",
+      "startTime": "20:30",
+      "title": "シシガシラpresents おじさんと遊んでくれませんか？",
+      "venue": "大宮ラクーンよしもと劇場（埼玉県）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64979/52394",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,800",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-22T18:30:00+09:00",
+              "saleKey": "fany|maison|64979|52394|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-22T18:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-22T18:30:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-22T18:30:00+09:00"
+        }
+      ],
+      "performersText": [
+        "シシガシラ",
+        "うるとらブギーズ",
+        "たくろう",
+        "めぞん"
+      ],
+      "firstSeenAt": "2026-09-06T16:21:32.006591+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
       "performerId": "nansui",
       "date": "2026-10-23",
       "openTime": "17:00",
@@ -15265,6 +16943,136 @@
       ]
     },
     {
+      "performerId": "maison",
+      "date": "2026-10-23",
+      "openTime": "19:00",
+      "startTime": "19:15",
+      "title": "とりせん新ネタライブ「コンセントレーション」",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64848/52202",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-23T17:15:00+09:00",
+              "saleKey": "fany|maison|64848|52202|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-23T17:15:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-23T17:15:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-23T17:15:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[企画ライブ]とりせん",
+        "めぞん",
+        "世界クジラ",
+        "兄弟"
+      ],
+      "firstSeenAt": "2026-09-06T16:21:32.006591+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-10-23",
+      "openTime": "20:45",
+      "startTime": "21:00",
+      "title": "risa and...？",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64602/52162",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-23T19:00:00+09:00",
+              "saleKey": "fany|pyuto|64602|52162|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-23T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-23T19:00:00+09:00",
+              "saleKey": "fany|pyuto|64602|52162|立見（整理番号付）|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-23T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-23T19:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-23T19:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[企画ライブ]11月のリサ",
+        "ケビンス 山口",
+        "素敵じゃないか 吉野晋右",
+        "世間知らズ さおり",
+        "ピュート",
+        "めぞん 吉野"
+      ],
+      "firstSeenAt": "2026-09-06T16:21:32.006591+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison",
+        "pyuto"
+      ]
+    },
+    {
       "performerId": "pyuto",
       "date": "2026-10-23",
       "openTime": "20:45",
@@ -15336,7 +17144,80 @@
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
       "newUntil": "",
       "trackedPerformers": [
+        "maison",
         "pyuto"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-10-24",
+      "openTime": "14:30",
+      "startTime": "15:00",
+      "title": "幕張土日祝ネタＳＰ１５時",
+      "venue": "よしもと幕張イオンモール劇場（千葉県）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/66334/52774",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-07T10:00:00+09:00",
+      "saleEndAt": "2026-10-24T13:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-07T10:00:00+09:00",
+          "endAt": "2026-10-24T13:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ]ザ・パンチ",
+        "イチキップリン",
+        "ビスケットブラザーズ",
+        "マユリカ",
+        "めぞん",
+        "他"
+      ],
+      "firstSeenAt": "2026-09-06T16:21:32.006591+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-10-24",
+      "openTime": "16:30",
+      "startTime": "17:00",
+      "title": "幕張土日祝ネタＳＰ１７時",
+      "venue": "よしもと幕張イオンモール劇場（千葉県）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/66334/52775",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-07T10:00:00+09:00",
+      "saleEndAt": "2026-10-24T15:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-07T10:00:00+09:00",
+          "endAt": "2026-10-24T15:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ]ザ・パンチ",
+        "イチキップリン",
+        "ビスケットブラザーズ",
+        "マユリカ",
+        "めぞん",
+        "他"
+      ],
+      "firstSeenAt": "2026-09-06T16:21:32.006591+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
       ]
     },
     {
