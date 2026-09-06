@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-06T17:31:30.139700+00:00",
+  "syncedAt": "2026-09-06T17:37:57.142082+00:00",
   "performers": [
     {
       "id": "maison",
@@ -12600,13 +12600,70 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64937/52356",
-      "ticketStatus": "",
-      "ticketOptions": [],
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "salePeriods": [],
-      "performersText": [],
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-03T10:45:00+09:00",
+              "saleKey": "fany|maison|64937|52356|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-03T10:45:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-03T10:45:00+09:00",
+              "saleKey": "fany|maison|64937|52356|立見（整理番号付）|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-03T10:45:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-03T10:45:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-03T10:45:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]ヘンダーソン",
+        "ダブルヒガシ",
+        "めぞん",
+        "今井らいぱち",
+        "オフローズ",
+        "シンクロニシティ",
+        "インテイク",
+        "ゼロカラン",
+        "ぎょうぶ",
+        "他"
+      ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
       "newUntil": "",
       "trackedPerformers": [
