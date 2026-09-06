@@ -725,6 +725,175 @@
       color: #53606e;
     }
 
+    .ticket-sale-periods {
+      margin-top: 9px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .ticket-sale-period {
+      padding: 7px 8px;
+
+      border-radius: 9px;
+
+      background: #f7f4ff;
+
+      color: #5533af;
+
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+
+    /* =====================================
+       販売一覧
+    ===================================== */
+
+    .sale-section {
+      margin-bottom: 22px;
+    }
+
+    .sale-section-title {
+      margin: 0 4px 9px;
+
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      font-size: 17px;
+      font-weight: 900;
+    }
+
+    .sale-section-count {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-width: 26px;
+      height: 26px;
+
+      padding: 0 8px;
+
+      border-radius: 999px;
+
+      background: #e9edf3;
+
+      color: #4c5867;
+
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .sale-ticket-card {
+      background: white;
+
+      margin-bottom: 10px;
+
+      padding: 14px;
+
+      border-radius: 15px;
+
+      box-shadow:
+        0 2px 10px
+        rgba(0,0,0,0.06);
+    }
+
+    .sale-ticket-category {
+      display: inline-flex;
+      align-items: center;
+
+      margin-bottom: 8px;
+
+      padding: 4px 8px;
+
+      border-radius: 999px;
+
+      font-size: 11px;
+      font-weight: 900;
+    }
+
+    .sale-ticket-category.advance {
+      background: #ffe8f0;
+      color: #d52e62;
+    }
+
+    .sale-ticket-category.first-come {
+      background: #e8f2ff;
+      color: #176dcc;
+    }
+
+    .sale-ticket-category.started {
+      background: #eaf8ef;
+      color: #23733d;
+    }
+
+    .sale-ticket-title {
+      margin-bottom: 7px;
+
+      font-size: 16px;
+      font-weight: 900;
+      line-height: 1.45;
+    }
+
+    .sale-ticket-name {
+      margin-bottom: 8px;
+
+      font-size: 14px;
+      font-weight: 800;
+
+      color: #4c5663;
+    }
+
+    .sale-ticket-time {
+      margin-top: 8px;
+
+      padding: 9px 10px;
+
+      border-radius: 10px;
+
+      background: #f7f4ff;
+
+      color: #5533af;
+
+      font-size: 13px;
+      line-height: 1.55;
+      font-weight: 700;
+    }
+
+    .sale-ticket-meta {
+      margin-top: 8px;
+
+      font-size: 13px;
+      line-height: 1.7;
+
+      color: #555;
+    }
+
+    .sale-ticket-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 100%;
+
+      margin-top: 11px;
+
+      padding: 10px;
+
+      border-radius: 11px;
+
+      background: #e83e6d;
+
+      color: white;
+
+      font-size: 13px;
+      font-weight: 800;
+
+      text-decoration: none;
+    }
+
 
     /* =====================================
        出演者など
@@ -1175,7 +1344,7 @@
 
 
     <div class="menu-version">
-      v2.2.0
+      v2.3.0
     </div>
 
   </div>
@@ -1323,6 +1492,8 @@ let currentView =
 
 
 const SALE_NEAR_DAYS = 7;
+
+const SALE_STARTED_DAYS = 5;
 
 
 
@@ -1672,6 +1843,46 @@ function isNewEvent(
 
 
 /* =========================================
+   日時
+========================================= */
+
+function parseDateValue(
+  value
+) {
+
+  if (
+    !value
+  ) {
+
+    return null;
+
+  }
+
+
+  const date =
+    new Date(
+      value
+    );
+
+
+  if (
+    Number.isNaN(
+      date.getTime()
+    )
+  ) {
+
+    return null;
+
+  }
+
+
+  return date;
+
+}
+
+
+
+/* =========================================
    バッジ
 ========================================= */
 
@@ -1756,9 +1967,21 @@ function updateFavoriteBadge() {
 
 function updateSaleBadge() {
 
+  const saleData =
+    getTicketSaleGroups();
+
+
+  const count =
+    saleData.advance.length
+    +
+    saleData.firstCome.length
+    +
+    saleData.started.length;
+
+
   setBadge(
     "sale-badge",
-    getSaleNearEvents().length
+    count
   );
 
 }
@@ -2013,6 +2236,15 @@ function groupEvents(
           saleStartAt:
             event.saleStartAt || "",
 
+          saleEndAt:
+            event.saleEndAt || "",
+
+          saleCategory:
+            event.saleCategory || "",
+
+          salePeriods:
+            [],
+
           firstSeenAt:
             event.firstSeenAt || "",
 
@@ -2128,6 +2360,7 @@ function groupEvents(
             option => {
 
               const normalized = {
+
                 name:
                   String(
                     option?.name || ""
@@ -2146,7 +2379,64 @@ function groupEvents(
                 price:
                   String(
                     option?.price || ""
-                  ).trim()
+                  ).trim(),
+
+                saleStartAt:
+                  String(
+                    option?.saleStartAt || ""
+                  ).trim(),
+
+                saleEndAt:
+                  String(
+                    option?.saleEndAt || ""
+                  ).trim(),
+
+                saleCategory:
+                  String(
+                    option?.saleCategory || ""
+                  ).trim(),
+
+                saleLabel:
+                  String(
+                    option?.saleLabel || ""
+                  ).trim(),
+
+                salePeriods:
+                  Array.isArray(
+                    option?.salePeriods
+                  )
+                  ?
+                  option.salePeriods.map(
+                    period => ({
+                      category:
+                        String(
+                          period?.category || ""
+                        ).trim(),
+
+                      label:
+                        String(
+                          period?.label || ""
+                        ).trim(),
+
+                      startAt:
+                        String(
+                          period?.startAt || ""
+                        ).trim(),
+
+                      endAt:
+                        String(
+                          period?.endAt || ""
+                        ).trim(),
+
+                      saleKey:
+                        String(
+                          period?.saleKey || ""
+                        ).trim()
+                    })
+                  )
+                  :
+                  []
+
               };
 
 
@@ -2158,17 +2448,17 @@ function groupEvents(
               ].join("|");
 
 
-              const exists =
+              const existing =
                 groups[key]
                   .ticketOptions
-                  .some(
-                    existing => {
+                  .find(
+                    item => {
 
                       const existingKey = [
-                        existing.name || "",
-                        existing.type || "",
-                        existing.status || "",
-                        existing.price || ""
+                        item.name || "",
+                        item.type || "",
+                        item.status || "",
+                        item.price || ""
                       ].join("|");
 
 
@@ -2182,11 +2472,183 @@ function groupEvents(
 
 
               if (
-                !exists
+                !existing
               ) {
 
                 groups[key]
                   .ticketOptions
+                  .push(
+                    normalized
+                  );
+
+              }
+
+              else {
+
+                normalized.salePeriods
+                  .forEach(
+                    period => {
+
+                      const periodKey = [
+                        period.category,
+                        period.label,
+                        period.startAt,
+                        period.endAt
+                      ].join("|");
+
+
+                      const exists =
+                        existing.salePeriods
+                          .some(
+                            saved => [
+                              saved.category,
+                              saved.label,
+                              saved.startAt,
+                              saved.endAt
+                            ].join("|")
+                            ===
+                            periodKey
+                          );
+
+
+                      if (
+                        !exists
+                      ) {
+
+                        existing.salePeriods.push(
+                          period
+                        );
+
+                      }
+
+                    }
+                  );
+
+
+                if (
+                  !existing.saleStartAt
+                  &&
+                  normalized.saleStartAt
+                ) {
+
+                  existing.saleStartAt =
+                    normalized.saleStartAt;
+
+                }
+
+
+                if (
+                  !existing.saleEndAt
+                  &&
+                  normalized.saleEndAt
+                ) {
+
+                  existing.saleEndAt =
+                    normalized.saleEndAt;
+
+                }
+
+
+                if (
+                  !existing.saleCategory
+                  &&
+                  normalized.saleCategory
+                ) {
+
+                  existing.saleCategory =
+                    normalized.saleCategory;
+
+                }
+
+
+                if (
+                  !existing.saleLabel
+                  &&
+                  normalized.saleLabel
+                ) {
+
+                  existing.saleLabel =
+                    normalized.saleLabel;
+
+                }
+
+              }
+
+            }
+          );
+
+      }
+
+
+      if (
+        Array.isArray(
+          event.salePeriods
+        )
+      ) {
+
+        event.salePeriods
+          .forEach(
+            period => {
+
+              const normalized = {
+
+                category:
+                  String(
+                    period?.category || ""
+                  ).trim(),
+
+                label:
+                  String(
+                    period?.label || ""
+                  ).trim(),
+
+                startAt:
+                  String(
+                    period?.startAt || ""
+                  ).trim(),
+
+                endAt:
+                  String(
+                    period?.endAt || ""
+                  ).trim(),
+
+                saleKey:
+                  String(
+                    period?.saleKey || ""
+                  ).trim()
+
+              };
+
+
+              const periodKey = [
+                normalized.category,
+                normalized.label,
+                normalized.startAt,
+                normalized.endAt
+              ].join("|");
+
+
+              const exists =
+                groups[key]
+                  .salePeriods
+                  .some(
+                    saved => [
+                      saved.category,
+                      saved.label,
+                      saved.startAt,
+                      saved.endAt
+                    ].join("|")
+                    ===
+                    periodKey
+                  );
+
+
+              if (
+                !exists
+              ) {
+
+                groups[key]
+                  .salePeriods
                   .push(
                     normalized
                   );
@@ -2271,6 +2733,30 @@ function groupEvents(
 
         groups[key].saleStartAt =
           event.saleStartAt;
+
+      }
+
+
+      if (
+        !groups[key].saleEndAt
+        &&
+        event.saleEndAt
+      ) {
+
+        groups[key].saleEndAt =
+          event.saleEndAt;
+
+      }
+
+
+      if (
+        !groups[key].saleCategory
+        &&
+        event.saleCategory
+      ) {
+
+        groups[key].saleCategory =
+          event.saleCategory;
 
       }
 
@@ -2560,48 +3046,183 @@ function showFavorites() {
    販売開始
 ========================================= */
 
-function parseDateValue(
-  value
+function getOptionSalePeriods(
+  option
 ) {
 
   if (
-    !value
+    Array.isArray(
+      option.salePeriods
+    )
+    &&
+    option.salePeriods.length > 0
   ) {
 
-    return null;
+    return option.salePeriods;
 
   }
-
-
-  const date =
-    new Date(
-      value
-    );
 
 
   if (
-    Number.isNaN(
-      date.getTime()
-    )
+    option.saleStartAt
   ) {
 
-    return null;
+    return [{
+      category:
+        option.saleCategory || "",
+
+      label:
+        option.saleLabel || "",
+
+      startAt:
+        option.saleStartAt || "",
+
+      endAt:
+        option.saleEndAt || "",
+
+      saleKey:
+        ""
+    }];
 
   }
 
 
-  return date;
+  return [];
 
 }
 
 
-function getSaleNearEvents() {
+function getTicketSaleItems() {
+
+  const grouped =
+    groupEvents(
+      allEvents
+    );
+
+
+  const items = [];
+
+
+  grouped.forEach(
+    event => {
+
+      if (
+        !Array.isArray(
+          event.ticketOptions
+        )
+      ) {
+
+        return;
+
+      }
+
+
+      event.ticketOptions
+        .forEach(
+          (
+            option,
+            optionIndex
+          ) => {
+
+            const periods =
+              getOptionSalePeriods(
+                option
+              );
+
+
+            periods.forEach(
+              (
+                period,
+                periodIndex
+              ) => {
+
+                const startDate =
+                  parseDateValue(
+                    period.startAt
+                  );
+
+
+                if (
+                  !startDate
+                ) {
+
+                  return;
+
+                }
+
+
+                const endDate =
+                  parseDateValue(
+                    period.endAt
+                  );
+
+
+                const category =
+                  period.category
+                  ||
+                  option.saleCategory
+                  ||
+                  "";
+
+
+                items.push({
+
+                  event:
+                    event,
+
+                  option:
+                    option,
+
+                  period:
+                    period,
+
+                  category:
+                    category,
+
+                  startDate:
+                    startDate,
+
+                  endDate:
+                    endDate,
+
+                  key:
+                    period.saleKey
+                    ||
+                    [
+                      makeEventKey(
+                        event
+                      ),
+                      optionIndex,
+                      periodIndex,
+                      category,
+                      period.startAt || "",
+                      period.endAt || ""
+                    ].join("|")
+
+                });
+
+              }
+            );
+
+          }
+        );
+
+    }
+  );
+
+
+  return items;
+
+}
+
+
+function getTicketSaleGroups() {
 
   const now =
     new Date();
 
 
-  const limit =
+  const nearLimit =
     new Date(
       now.getTime()
       +
@@ -2617,27 +3238,150 @@ function getSaleNearEvents() {
     );
 
 
-  return groupEvents(
-    allEvents
-  ).filter(
-    event => {
+  const startedLimit =
+    new Date(
+      now.getTime()
+      -
+      SALE_STARTED_DAYS
+      *
+      24
+      *
+      60
+      *
+      60
+      *
+      1000
+    );
 
-      const saleDate =
-        parseDateValue(
-          event.saleStartAt
-        );
+
+  const advance = [];
+
+  const firstCome = [];
+
+  const started = [];
 
 
-      return (
-        saleDate
-        &&
-        saleDate >= now
-        &&
-        saleDate <= limit
-      );
+  getTicketSaleItems()
+    .forEach(
+      item => {
 
-    }
+        const {
+          category,
+          startDate,
+          endDate
+        } = item;
+
+
+        if (
+          category ===
+          "advance"
+        ) {
+
+          const startedAlready =
+            startDate <= now;
+
+
+          const notEnded =
+            !endDate
+            ||
+            endDate >= now;
+
+
+          if (
+            startedAlready
+            &&
+            notEnded
+          ) {
+
+            advance.push(
+              item
+            );
+
+          }
+
+
+          return;
+
+        }
+
+
+        if (
+          category !==
+          "first_come"
+        ) {
+
+          return;
+
+        }
+
+
+        if (
+          startDate > now
+          &&
+          startDate <= nearLimit
+        ) {
+
+          firstCome.push(
+            item
+          );
+
+
+          return;
+
+        }
+
+
+        if (
+          startDate <= now
+          &&
+          startDate >= startedLimit
+        ) {
+
+          started.push(
+            item
+          );
+
+        }
+
+      }
+    );
+
+
+  advance.sort(
+    (
+      a,
+      b
+    ) =>
+      a.startDate -
+      b.startDate
   );
+
+
+  firstCome.sort(
+    (
+      a,
+      b
+    ) =>
+      a.startDate -
+      b.startDate
+  );
+
+
+  started.sort(
+    (
+      a,
+      b
+    ) =>
+      b.startDate -
+      a.startDate
+  );
+
+
+  return {
+    advance,
+    firstCome,
+    started
+  };
 
 }
 
@@ -2648,20 +3392,424 @@ function showSaleNear() {
     "sale"
   );
 
-
-  const events =
-    getSaleNearEvents();
+  hideCalendar();
 
 
-  showGroupedEventList(
-    "🎫 販売開始が近いもの",
-    events,
-    "今後7日以内に販売開始するライブはありません。",
-    {
-      showSaleBadge:
-        true
+  document.getElementById(
+    "detail-title"
+  ).textContent =
+    "🎫 販売開始が近いもの";
+
+
+  const {
+    advance,
+    firstCome,
+    started
+  } =
+    getTicketSaleGroups();
+
+
+  const html = `
+
+    ${createSaleSectionHtml(
+      "先行販売",
+      advance,
+      "advance",
+      "現在、先行期間中の販売はありません。"
+    )}
+
+    ${createSaleSectionHtml(
+      "先着販売",
+      firstCome,
+      "first-come",
+      "今後7日以内に販売開始する先着販売はありません。"
+    )}
+
+    ${createSaleSectionHtml(
+      "販売開始済み",
+      started,
+      "started",
+      "直近5日以内に販売開始した先着販売はありません。"
+    )}
+
+  `;
+
+
+  document.getElementById(
+    "detail-list"
+  ).innerHTML =
+    html;
+
+
+  scrollToDetail();
+
+}
+
+
+function createSaleSectionHtml(
+  title,
+  items,
+  type,
+  emptyText
+) {
+
+  const icon =
+    type === "advance"
+    ?
+    "🎟"
+    :
+    (
+      type === "started"
+      ?
+      "✅"
+      :
+      "⏰"
+    );
+
+
+  return `
+
+    <section class="sale-section">
+
+      <div class="sale-section-title">
+
+        <span>
+          ${icon}
+          ${escapeHtml(
+            title
+          )}
+        </span>
+
+        <span class="sale-section-count">
+          ${items.length}
+        </span>
+
+      </div>
+
+      ${
+        items.length > 0
+        ?
+        items
+          .map(
+            item =>
+              createSaleTicketCard(
+                item,
+                type
+              )
+          )
+          .join("")
+        :
+        `
+          <div class="empty">
+            ${escapeHtml(
+              emptyText
+            )}
+          </div>
+        `
+      }
+
+    </section>
+
+  `;
+
+}
+
+
+function createSaleTicketCard(
+  item,
+  type
+) {
+
+  const event =
+    item.event;
+
+
+  const option =
+    item.option;
+
+
+  const period =
+    item.period;
+
+
+  const categoryClass =
+    type === "advance"
+    ?
+    "advance"
+    :
+    (
+      type === "started"
+      ?
+      "started"
+      :
+      "first-come"
+    );
+
+
+  const categoryLabel =
+    type === "advance"
+    ?
+    (
+      period.label
+      ||
+      "先行販売"
+    )
+    :
+    (
+      type === "started"
+      ?
+      "販売開始済み"
+      :
+      (
+        period.label
+        ||
+        "先着販売"
+      )
+    );
+
+
+  const ticketName = [
+    option.name || "チケット",
+    option.type || ""
+  ]
+    .filter(Boolean)
+    .join(" / ");
+
+
+  const performerLabels =
+    Array.from(
+      new Set([
+        ...event.performers,
+        ...event.trackedPerformers
+      ])
+    )
+      .map(
+        id => {
+
+          const performer =
+            performerMap[id];
+
+
+          if (
+            !performer
+          ) {
+
+            return "";
+
+          }
+
+
+          return `
+
+            <span
+              class="
+                performer-label
+                ${performer.className}
+              "
+            >
+              ${escapeHtml(
+                performer.name
+              )}
+            </span>
+
+          `;
+
+        }
+      )
+      .join("");
+
+
+  const sourceUrl =
+    event.urls.length > 0
+    ?
+    event.urls[0].url
+    :
+    "";
+
+
+  let saleTimeText = "";
+
+
+  if (
+    type ===
+    "advance"
+  ) {
+
+    saleTimeText =
+      "先行開始："
+      +
+      formatFullDateTime(
+        item.startDate
+      );
+
+
+    if (
+      item.endDate
+    ) {
+
+      saleTimeText +=
+        "<br>先行終了："
+        +
+        formatFullDateTime(
+          item.endDate
+        );
+
     }
-  );
+
+  }
+
+  else if (
+    type ===
+    "started"
+  ) {
+
+    saleTimeText =
+      "販売開始："
+      +
+      formatFullDateTime(
+        item.startDate
+      );
+
+  }
+
+  else {
+
+    saleTimeText =
+      "販売開始："
+      +
+      formatFullDateTime(
+        item.startDate
+      );
+
+  }
+
+
+  return `
+
+    <div class="sale-ticket-card">
+
+      <div
+        class="
+          sale-ticket-category
+          ${categoryClass}
+        "
+      >
+        ${escapeHtml(
+          categoryLabel
+        )}
+      </div>
+
+
+      <div class="performer-row">
+        ${performerLabels}
+      </div>
+
+
+      <div class="sale-ticket-title">
+        ${escapeHtml(
+          event.title ||
+          "公演名不明"
+        )}
+      </div>
+
+
+      <div class="sale-ticket-name">
+        🎫
+        ${escapeHtml(
+          ticketName
+        )}
+      </div>
+
+
+      <div class="sale-ticket-meta">
+
+        ${
+          event.date
+          ?
+          `
+            📅
+            ${escapeHtml(
+              formatDateWithWeekday(
+                event.date
+              )
+            )}
+            <br>
+          `
+          :
+          ""
+        }
+
+        ${
+          event.venue
+          ?
+          `
+            📍
+            ${escapeHtml(
+              event.venue
+            )}
+            <br>
+          `
+          :
+          ""
+        }
+
+        ${
+          option.status
+          ?
+          `
+            状況：
+            ${escapeHtml(
+              option.status
+            )}
+            <br>
+          `
+          :
+          ""
+        }
+
+        ${
+          option.price
+          ?
+          `
+            料金：
+            ${escapeHtml(
+              option.price
+            )}
+          `
+          :
+          ""
+        }
+
+      </div>
+
+
+      <div class="sale-ticket-time">
+        ${saleTimeText}
+      </div>
+
+
+      ${
+        sourceUrl
+        ?
+        `
+          <a
+            class="sale-ticket-link"
+            href="${escapeHtml(
+              sourceUrl
+            )}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            チケット・詳細を見る ↗
+          </a>
+        `
+        :
+        ""
+      }
+
+    </div>
+
+  `;
 
 }
 
@@ -2785,7 +3933,8 @@ function showSearch() {
                     option.name,
                     option.type,
                     option.status,
-                    option.price
+                    option.price,
+                    option.saleLabel
                   ].join(" ")
               )
               .join(" ");
@@ -3453,7 +4602,34 @@ function showHelp() {
       </div>
 
       <p class="help-text">
-        今後7日以内に販売が始まる公演を表示します。
+        券種ごとに、先行販売・先着販売・販売開始済みに分けて表示します。
+      </p>
+
+
+      <div class="help-title">
+        先行販売
+      </div>
+
+      <p class="help-text">
+        先行販売は先行期間中だけ表示します。終了後に販売開始済みへ移動することはありません。
+      </p>
+
+
+      <div class="help-title">
+        先着販売
+      </div>
+
+      <p class="help-text">
+        今後7日以内に販売開始する先着販売を、券種ごとに表示します。
+      </p>
+
+
+      <div class="help-title">
+        販売開始済み
+      </div>
+
+      <p class="help-text">
+        先着販売が開始したあと5日間だけ表示します。販売開始日時が新しいものから並びます。
       </p>
 
 
@@ -3462,7 +4638,7 @@ function showHelp() {
       </div>
 
       <p class="help-text">
-        FANYで複数の券種がある場合、それぞれの販売状況・券種・価格を分けて表示します。
+        FANYで複数の券種がある場合、それぞれの販売状況・券種・価格・販売期間を分けて表示します。
       </p>
 
 
@@ -3633,10 +4809,6 @@ function showEventList(
 
               showNewBadge:
                 options.showNewBadge
-                === true,
-
-              showSaleBadge:
-                options.showSaleBadge
                 === true
             }
           )
@@ -3652,8 +4824,7 @@ function showEventList(
 function showGroupedEventList(
   title,
   grouped,
-  emptyText,
-  options = {}
+  emptyText
 ) {
 
   hideCalendar();
@@ -3704,11 +4875,7 @@ function showGroupedEventList(
             event,
             {
               showDate:
-                true,
-
-              showSaleBadge:
-                options.showSaleBadge
-                === true
+                true
             }
           )
       )
@@ -3785,6 +4952,124 @@ function ticketStatusClass(
 
 
   return "other";
+
+}
+
+
+function createSalePeriodsHtml(
+  option
+) {
+
+  const periods =
+    getOptionSalePeriods(
+      option
+    );
+
+
+  if (
+    periods.length === 0
+  ) {
+
+    return "";
+
+  }
+
+
+  return `
+
+    <div class="ticket-sale-periods">
+
+      ${
+        periods
+          .map(
+            period => {
+
+              const start =
+                parseDateValue(
+                  period.startAt
+                );
+
+
+              const end =
+                parseDateValue(
+                  period.endAt
+                );
+
+
+              const label =
+                period.label
+                ||
+                (
+                  period.category ===
+                  "advance"
+                  ?
+                  "先行販売"
+                  :
+                  "先着販売"
+                );
+
+
+              return `
+
+                <div class="ticket-sale-period">
+
+                  <strong>
+                    ${escapeHtml(
+                      label
+                    )}
+                  </strong>
+
+                  ${
+                    start
+                    ?
+                    `
+                      <br>
+                      ${
+                        period.category ===
+                        "advance"
+                        ?
+                        "開始"
+                        :
+                        "販売開始"
+                      }：
+                      ${escapeHtml(
+                        formatFullDateTime(
+                          start
+                        )
+                      )}
+                    `
+                    :
+                    ""
+                  }
+
+                  ${
+                    end
+                    ?
+                    `
+                      <br>
+                      終了：
+                      ${escapeHtml(
+                        formatFullDateTime(
+                          end
+                        )
+                      )}
+                    `
+                    :
+                    ""
+                  }
+
+                </div>
+
+              `;
+
+            }
+          )
+          .join("")
+      }
+
+    </div>
+
+  `;
 
 }
 
@@ -3891,6 +5176,11 @@ function createTicketOptionsHtml(
 
               </div>
 
+
+              ${createSalePeriodsHtml(
+                option
+              )}
+
             </div>
 
           `;
@@ -3913,6 +5203,151 @@ function createTicketOptionsHtml(
     </div>
 
   `;
+
+}
+
+
+
+/* =========================================
+   販売状況集約
+========================================= */
+
+function getTicketSummaryStatus(
+  ticketOptions
+) {
+
+  if (
+    !Array.isArray(
+      ticketOptions
+    )
+    ||
+    ticketOptions.length === 0
+  ) {
+
+    return "";
+
+  }
+
+
+  const statuses =
+    ticketOptions
+      .map(
+        option =>
+          String(
+            option.status || ""
+          )
+      )
+      .filter(Boolean);
+
+
+  if (
+    statuses.length === 0
+  ) {
+
+    return "";
+
+  }
+
+
+  const endedWords = [
+    "予定数終了",
+    "販売終了",
+    "受付終了",
+    "完売"
+  ];
+
+
+  const activeWords = [
+    "販売中",
+    "受付中",
+    "残りわずか"
+  ];
+
+
+  const hasFew =
+    statuses.some(
+      status =>
+        status.includes(
+          "残りわずか"
+        )
+    );
+
+
+  const hasEnded =
+    statuses.some(
+      status =>
+        endedWords.some(
+          word =>
+            status.includes(
+              word
+            )
+        )
+    );
+
+
+  const hasActive =
+    statuses.some(
+      status =>
+        activeWords.some(
+          word =>
+            status.includes(
+              word
+            )
+        )
+    );
+
+
+  const allEnded =
+    statuses.every(
+      status =>
+        endedWords.some(
+          word =>
+            status.includes(
+              word
+            )
+        )
+    );
+
+
+  if (
+    hasEnded
+    &&
+    hasActive
+  ) {
+
+    return "一部予定数終了";
+
+  }
+
+
+  if (
+    allEnded
+  ) {
+
+    return "予定数終了";
+
+  }
+
+
+  if (
+    hasFew
+  ) {
+
+    return "残りわずか";
+
+  }
+
+
+  if (
+    hasActive
+  ) {
+
+    return "販売中";
+
+  }
+
+
+  return "";
 
 }
 
@@ -4049,95 +5484,99 @@ function createEventCard(
       .join("");
 
 
+  const calculatedStatus =
+    getTicketSummaryStatus(
+      event.ticketOptions
+    )
+    ||
+    event.ticketStatus
+    ||
+    "";
+
+
   let summaryStatusBadge = "";
 
 
   if (
-    event.ticketOptions.length === 0
+    calculatedStatus ===
+    "残りわずか"
   ) {
 
-    if (
-      event.ticketStatus ===
-      "残りわずか"
-    ) {
+    summaryStatusBadge = `
 
-      summaryStatusBadge = `
+      <span
+        class="
+          small-badge
+          status-few
+        "
+      >
+        残りわずか
+      </span>
 
-        <span
-          class="
-            small-badge
-            status-few
-          "
-        >
-          残りわずか
-        </span>
+    `;
 
-      `;
-
-    }
+  }
 
 
-    else if (
-      event.ticketStatus ===
-      "予定数終了"
-    ) {
+  else if (
+    calculatedStatus ===
+    "予定数終了"
+  ) {
 
-      summaryStatusBadge = `
+    summaryStatusBadge = `
 
-        <span
-          class="
-            small-badge
-            status-ended
-          "
-        >
-          予定数終了
-        </span>
+      <span
+        class="
+          small-badge
+          status-ended
+        "
+      >
+        予定数終了
+      </span>
 
-      `;
+    `;
 
-    }
-
-
-    else if (
-      event.ticketStatus ===
-      "一部予定数終了"
-    ) {
-
-      summaryStatusBadge = `
-
-        <span
-          class="
-            small-badge
-            status-partial
-          "
-        >
-          一部予定数終了
-        </span>
-
-      `;
-
-    }
+  }
 
 
-    else if (
-      event.ticketStatus ===
-      "販売中"
-    ) {
+  else if (
+    calculatedStatus ===
+    "一部予定数終了"
+  ) {
 
-      summaryStatusBadge = `
+    summaryStatusBadge = `
 
-        <span
-          class="
-            small-badge
-            status-active
-          "
-        >
-          販売中
-        </span>
+      <span
+        class="
+          small-badge
+          status-partial
+        "
+      >
+        一部予定数終了
+      </span>
 
-      `;
+    `;
 
-    }
+  }
+
+
+  else if (
+    calculatedStatus ===
+    "販売中"
+  ) {
+
+    summaryStatusBadge = `
+
+      <span
+        class="
+          small-badge
+          status-active
+        "
+      >
+        販売中
+      </span>
+
+    `;
 
   }
 
@@ -4272,23 +5711,6 @@ function createEventCard(
         ${sourceBadges}
 
         ${summaryStatusBadge}
-
-        ${
-          options.showSaleBadge
-          ?
-          `
-            <span
-              class="
-                small-badge
-                sale-near
-              "
-            >
-              まもなく販売
-            </span>
-          `
-          :
-          ""
-        }
 
       </div>
 
@@ -4730,6 +6152,36 @@ function formatDateTime(
   return date.toLocaleString(
     "ja-JP",
     {
+      month:
+        "numeric",
+
+      day:
+        "numeric",
+
+      hour:
+        "2-digit",
+
+      minute:
+        "2-digit",
+
+      hour12:
+        false
+    }
+  );
+
+}
+
+
+function formatFullDateTime(
+  date
+) {
+
+  return date.toLocaleString(
+    "ja-JP",
+    {
+      year:
+        "numeric",
+
       month:
         "numeric",
 
