@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-06T12:54:49.848903+00:00",
+  "syncedAt": "2026-09-06T13:01:23.388211+00:00",
   "performers": [
     {
       "id": "maison",
@@ -46,6 +46,7 @@
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61272/49825",
       "ticketStatus": "",
+      "ticketOptions": [],
       "saleStartAt": "",
       "performersText": [
         "[ネタ出演者]めぞん",
@@ -62,6 +63,7 @@
         "[コーナー出演者]MC：ゼロカラン"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -76,6 +78,7 @@
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61272/49824",
       "ticketStatus": "",
+      "ticketOptions": [],
       "saleStartAt": "",
       "performersText": [
         "[ネタ出演者]めぞん",
@@ -92,6 +95,7 @@
         "[コーナー出演者]MC：ミカボ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -106,6 +110,7 @@
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61272/49843",
       "ticketStatus": "",
+      "ticketOptions": [],
       "saleStartAt": "",
       "performersText": [
         "[ネタ出演者]めぞん",
@@ -123,6 +128,7 @@
         "めぞん"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -137,17 +143,16 @@
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/60130/48985",
       "ticketStatus": "",
+      "ticketOptions": [],
       "saleStartAt": "",
       "performersText": [
         "cacao",
         "コットン",
-        "ザ",
-        "ギース",
-        "マミィ",
+        "ザ・ギース",
+        "ザ・マミィ",
         "サルゴリラ",
         "しずる",
-        "トム",
-        "ブラウン",
+        "トム・ブラウン",
         "軟水",
         "ニッポンの社長",
         "破壊ありがとう",
@@ -159,6 +164,7 @@
         "ラブレターズ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -173,6 +179,20 @@
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61159/49783",
       "ticketStatus": "予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥3,000"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥3,000"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]中田カウス 漫才のDENDO NEXT",
@@ -189,6 +209,7 @@
         "ダイタク"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "nansui"
@@ -204,6 +225,20 @@
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61159/49783",
       "ticketStatus": "予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥3,000"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥3,000"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]中田カウス 漫才のDENDO NEXT",
@@ -220,6 +255,7 @@
         "ダイタク"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "nansui"
@@ -234,7 +270,15 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/62156/50368",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "鉄人小町",
@@ -246,6 +290,7 @@
         "ボブのコーラ 本田たかお"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -259,7 +304,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61198/49768",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]オフローズ 明賀愛貴",
@@ -269,6 +328,7 @@
         "ザンゾウ ベントウ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -283,6 +343,7 @@
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/510457",
       "ticketStatus": "",
+      "ticketOptions": [],
       "saleStartAt": "",
       "performersText": [
         "十文字幻斎",
@@ -304,6 +365,7 @@
         "＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -319,6 +381,7 @@
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/510457",
       "ticketStatus": "",
+      "ticketOptions": [],
       "saleStartAt": "",
       "performersText": [
         "十文字幻斎",
@@ -340,6 +403,7 @@
         "＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -354,7 +418,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/60962/49579",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]生ファラオ",
@@ -364,6 +442,7 @@
         "アケガラス"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -378,6 +457,7 @@
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/512235",
       "ticketStatus": "",
+      "ticketOptions": [],
       "saleStartAt": "",
       "performersText": [
         "おミュータンツ",
@@ -405,6 +485,7 @@
         "池田亮"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -420,6 +501,7 @@
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/512235",
       "ticketStatus": "",
+      "ticketOptions": [],
       "saleStartAt": "",
       "performersText": [
         "おミュータンツ",
@@ -447,6 +529,7 @@
         "池田亮"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -462,6 +545,7 @@
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/512237",
       "ticketStatus": "",
+      "ticketOptions": [],
       "saleStartAt": "",
       "performersText": [
         "おミュータンツ",
@@ -486,6 +570,7 @@
         "池田亮"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -501,6 +586,7 @@
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/512237",
       "ticketStatus": "",
+      "ticketOptions": [],
       "saleStartAt": "",
       "performersText": [
         "おミュータンツ",
@@ -525,6 +611,7 @@
         "池田亮"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -539,7 +626,15 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61292/49796",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "整理番号付き自由席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "サルゴリラ",
@@ -554,6 +649,7 @@
         "アリハガ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -567,15 +663,28 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/60602/49458",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]さや香",
         "西村ヒロチョ",
         "そいつどいつ",
         "ぱろぱろ",
-        "スーパーサイズ",
-        "ミー",
+        "スーパーサイズ・ミー",
         "素敵じゃないか",
         "スパジーニ",
         "軟水",
@@ -583,6 +692,7 @@
         "鉄人小町"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -596,7 +706,15 @@
       "venue": "大宮ラクーンよしもと劇場（埼玉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/63019/50651",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,800"
+        }
+      ],
       "saleStartAt": "2026-08-06T10:00:00+09:00",
       "performersText": [
         "タモンズ",
@@ -607,6 +725,7 @@
         "めぞん"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -620,7 +739,15 @@
       "venue": "大宮ラクーンよしもと劇場（埼玉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61945/50333",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-08-01T10:00:00+09:00",
       "performersText": [
         "カゲヤマ",
@@ -630,6 +757,7 @@
         "きっと君はくるさ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -643,7 +771,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61296/49868",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]相席スタート",
@@ -659,6 +801,7 @@
         "ゼロカラン"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -673,7 +816,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61296/49868",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]相席スタート",
@@ -689,6 +846,7 @@
         "ゼロカラン"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -703,7 +861,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61296/49878",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]相席スタート",
@@ -719,6 +891,7 @@
         "ゼロカラン"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -733,7 +906,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61296/49878",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]相席スタート",
@@ -749,6 +936,7 @@
         "ゼロカラン"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -763,7 +951,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61296/49888",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]相席スタート",
@@ -779,6 +981,7 @@
         "ゼロカラン"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -793,7 +996,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61296/49888",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]相席スタート",
@@ -809,6 +1026,7 @@
         "ゼロカラン"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -823,7 +1041,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/60967/49605",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]ブラゴーリ",
@@ -832,6 +1064,7 @@
         "ゼロカラン"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -845,7 +1078,15 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/60776/49552",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]ぺ",
@@ -853,6 +1094,7 @@
         "ピュート"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto"
       ]
@@ -866,7 +1108,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61296/49869",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]バイク川崎バイク",
@@ -880,6 +1136,7 @@
         "ザンゾウ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -893,7 +1150,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61274/49829",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]ダンビラムーチョ",
@@ -909,6 +1180,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -922,7 +1194,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61296/49879",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]バイク川崎バイク",
@@ -936,6 +1222,7 @@
         "ザンゾウ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -949,7 +1236,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61274/49828",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]ダンビラムーチョ",
@@ -965,6 +1266,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -978,7 +1280,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61296/49889",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]バイク川崎バイク",
@@ -993,6 +1309,7 @@
         "ザンゾウ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -1006,7 +1323,27 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/60605/49474",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥3,000"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,300"
+        },
+        {
+          "name": "★★★★★【子ども割】",
+          "type": "",
+          "status": "販売中",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "ガリットチュウ",
@@ -1022,6 +1359,7 @@
         "喫茶ムーン"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto"
       ]
@@ -1035,7 +1373,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61274/49845",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]ダンビラムーチョ",
@@ -1051,6 +1403,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -1064,7 +1417,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61201/49774",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]ピュート",
@@ -1075,6 +1442,7 @@
         "ゲスト：滝音"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto"
       ]
@@ -1089,6 +1457,7 @@
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/515874",
       "ticketStatus": "",
+      "ticketOptions": [],
       "saleStartAt": "",
       "performersText": [
         "あなたとネ",
@@ -1112,10 +1481,11 @@
         "事務所の垣根を越えてみんなで仲良くなろう！！がコンセプトのライブです。",
         "ネタと企画orトークの約2時間のライブを予定しています✨",
         "【注意事項】",
-        "公演中の私語は全編禁止です。",
-        "未就学児～小学生を含むお子様のご来場はご遠慮下さい。"
+        "・公演中の私語は全編禁止です。",
+        "・未就学児～小学生を含むお子様のご来場はご遠慮下さい。"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -1129,7 +1499,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/60594/49451",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]9番街レトロ",
@@ -1137,14 +1521,14 @@
         "スロッピ",
         "セッツァー",
         "鶴亀",
-        "スーパーサイズ",
-        "ミー",
+        "スーパーサイズ・ミー",
         "ブラゴーリ",
         "ペッパーGuys",
         "シンクロニシティ",
         "軟水"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -1159,6 +1543,7 @@
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/518742",
       "ticketStatus": "",
+      "ticketOptions": [],
       "saleStartAt": "",
       "performersText": [
         "オッパショ石",
@@ -1172,11 +1557,12 @@
         "百恵",
         "ネタと長めのトークをゆったりとお楽しみいただける70分のライブです🎪",
         "【注意事項】",
-        "ご入場順:TiGET整理番号順→当日券",
-        "お支払い方法:現金のみ(当日支払い)",
-        "出待ち:演者所属事務所のルールをご確認ください。"
+        "・ご入場順:TiGET整理番号順→当日券",
+        "・お支払い方法:現金のみ(当日支払い)",
+        "・出待ち:演者所属事務所のルールをご確認ください。"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto"
       ]
@@ -1191,6 +1577,14 @@
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/60779/49558",
       "ticketStatus": "予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]金魚番長",
@@ -1200,6 +1594,7 @@
         "イチキップリン"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -1214,6 +1609,7 @@
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/517547",
       "ticketStatus": "",
+      "ticketOptions": [],
       "saleStartAt": "",
       "performersText": [
         "ドンココ",
@@ -1236,6 +1632,7 @@
         "他出演者追加の可能性あり"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto"
       ]
@@ -1249,7 +1646,15 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61292/49797",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "整理番号付き自由席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "ヘンダーソン",
@@ -1263,6 +1668,7 @@
         "伝書鳩"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -1276,7 +1682,15 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/62120/50359",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "整理番号付き自由席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "軟水",
@@ -1290,6 +1704,7 @@
         "MC：コウミ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -1304,7 +1719,15 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/62120/50359",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "整理番号付き自由席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "軟水",
@@ -1318,6 +1741,7 @@
         "MC：コウミ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -1332,7 +1756,15 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61292/49798",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "整理番号付き自由席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "ななまがり",
@@ -1347,6 +1779,7 @@
         "ぺ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -1361,7 +1794,15 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61292/49798",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "整理番号付き自由席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "ななまがり",
@@ -1376,6 +1817,7 @@
         "ぺ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -1390,7 +1832,21 @@
       "venue": "よしもと幕張イオンモール劇場（千葉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61093/49713",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,300"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "ななまがり",
@@ -1403,6 +1859,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -1416,7 +1873,21 @@
       "venue": "よしもと幕張イオンモール劇場（千葉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61093/49714",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,300"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "ななまがり",
@@ -1429,6 +1900,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -1443,6 +1915,20 @@
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/60497/49415",
       "ticketStatus": "予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥1,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]9番街レトロ",
@@ -1452,6 +1938,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -1467,6 +1954,20 @@
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/60497/49415",
       "ticketStatus": "予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥1,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]9番街レトロ",
@@ -1476,6 +1977,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -1490,16 +1992,30 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61203/49769",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
-        "[企画ライブ]スーパーサイズ",
-        "ミー",
+        "[企画ライブ]スーパーサイズ・ミー",
         "おミュータンツ",
         "ピュート",
         "定点計画"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto"
       ]
@@ -1513,7 +2029,15 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/63895/51232",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "整理番号付き自由席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-08-19T10:00:00+09:00",
       "performersText": [
         "エレガント人生",
@@ -1524,6 +2048,7 @@
         "イワサキ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -1537,7 +2062,21 @@
       "venue": "Zepp Sapporo（北海道）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/59426/48123",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "1Fスタンディング（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥5,000"
+        },
+        {
+          "name": "2F指定席",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥5,500"
+        }
+      ],
       "saleStartAt": "2026-07-18T10:00:00+09:00",
       "performersText": [
         "エバース",
@@ -1556,6 +2095,7 @@
         "ゆにばーす"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -1569,7 +2109,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/60594/49453",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]ヨネダ2000",
@@ -1578,13 +2132,13 @@
         "くらげ",
         "ワラバランス",
         "そいつどいつ",
-        "スーパーサイズ",
-        "ミー",
+        "スーパーサイズ・ミー",
         "生ファラオ",
         "バリカタ友情飯",
         "ピュート"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto"
       ]
@@ -1598,7 +2152,15 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61292/49800",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "整理番号付き自由席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "レインボー",
@@ -1610,6 +2172,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -1623,7 +2186,21 @@
       "venue": "Zepp Sapporo（北海道）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/59426/48124",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "1Fスタンディング（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥5,000"
+        },
+        {
+          "name": "2F指定席",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥5,500"
+        }
+      ],
       "saleStartAt": "2026-07-18T10:00:00+09:00",
       "performersText": [
         "エバース",
@@ -1642,6 +2219,7 @@
         "ゆにばーす"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -1655,7 +2233,15 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/62136/50365",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "整理番号付き自由席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "軟水",
@@ -1663,6 +2249,7 @@
         "き展"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -1676,7 +2263,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/60978/49595",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-08-16T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]ビューティフルトーキョーマンズ 鈴木バイダン",
@@ -1691,6 +2292,7 @@
         "ナユタ おのはら"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto"
       ]
@@ -1704,7 +2306,33 @@
       "venue": "LINE CUBE SHIBUYA（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/63814/51190",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "SS席",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥12,000"
+        },
+        {
+          "name": "S席",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥10,000"
+        },
+        {
+          "name": "A席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥8,000"
+        },
+        {
+          "name": "B席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥7,000"
+        }
+      ],
       "saleStartAt": "2026-08-30T10:00:00+09:00",
       "performersText": [
         "東京15期－18期チーム",
@@ -1718,6 +2346,7 @@
         "ゼロカラン"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto",
@@ -1733,7 +2362,33 @@
       "venue": "LINE CUBE SHIBUYA（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/63814/51190",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "SS席",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥12,000"
+        },
+        {
+          "name": "S席",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥10,000"
+        },
+        {
+          "name": "A席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥8,000"
+        },
+        {
+          "name": "B席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥7,000"
+        }
+      ],
       "saleStartAt": "2026-08-30T10:00:00+09:00",
       "performersText": [
         "東京15期－18期チーム",
@@ -1747,6 +2402,7 @@
         "ゼロカラン"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto",
@@ -1762,7 +2418,33 @@
       "venue": "LINE CUBE SHIBUYA（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/63814/51190",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "SS席",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥12,000"
+        },
+        {
+          "name": "S席",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥10,000"
+        },
+        {
+          "name": "A席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥8,000"
+        },
+        {
+          "name": "B席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥7,000"
+        }
+      ],
       "saleStartAt": "2026-08-30T10:00:00+09:00",
       "performersText": [
         "東京15期－18期チーム",
@@ -1776,6 +2458,7 @@
         "ゼロカラン"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto",
@@ -1791,7 +2474,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61274/49831",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]滝音",
@@ -1807,6 +2504,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto"
@@ -1821,7 +2519,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61274/49831",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]滝音",
@@ -1837,6 +2549,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto"
@@ -1851,7 +2564,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61274/49830",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]滝音",
@@ -1867,6 +2594,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto"
@@ -1881,7 +2609,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61274/49830",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]滝音",
@@ -1897,6 +2639,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto"
@@ -1911,7 +2654,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61274/49846",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]滝音",
@@ -1927,6 +2684,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto"
@@ -1941,7 +2699,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61274/49846",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]滝音",
@@ -1957,6 +2729,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto"
@@ -1971,7 +2744,117 @@
       "venue": "インテックス大阪 4号館、5号館（大阪府）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/54840/45208",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "前売フォートナイト大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥35,500"
+        },
+        {
+          "name": "前売フォートナイト中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥12,500"
+        },
+        {
+          "name": "前売フォートナイトこども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥35,500"
+        },
+        {
+          "name": "前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥12,500"
+        },
+        {
+          "name": "前売 こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売フォートナイト大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥26,000"
+        },
+        {
+          "name": "前売フォートナイト中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥9,000"
+        },
+        {
+          "name": "前売フォートナイトこども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥4,500"
+        },
+        {
+          "name": "前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥26,000"
+        },
+        {
+          "name": "前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥9,000"
+        },
+        {
+          "name": "前売 こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥4,500"
+        },
+        {
+          "name": "前売フォートナイト大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥15,500"
+        },
+        {
+          "name": "前売フォートナイト中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売フォートナイトこども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,500"
+        },
+        {
+          "name": "前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥15,500"
+        },
+        {
+          "name": "前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売 こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,500"
+        }
+      ],
       "saleStartAt": "2026-07-29T11:00:00+09:00",
       "performersText": [
         "≪9",
@@ -1979,8 +2862,7 @@
         "新しい学校のリーダーズ",
         "カジヒデキ",
         "くまま",
-        "サニーデイ",
-        "サービス",
+        "サニーデイ・サービス",
         "サバシスター",
         "竹下☆ぱらだいす×MADAMADA",
         "ニガミ17才",
@@ -2033,14 +2915,14 @@
         "紅しょうが",
         "マユリカ",
         "ミルクボーイ",
-        "矢野",
-        "兵動",
+        "矢野・兵動",
         "ロングコートダディ",
         "23 フォートナイトエリア≫",
         "bykn",
         "Minipiyo"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto",
@@ -2056,7 +2938,117 @@
       "venue": "インテックス大阪 4号館、5号館（大阪府）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/54840/45208",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "前売フォートナイト大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥35,500"
+        },
+        {
+          "name": "前売フォートナイト中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥12,500"
+        },
+        {
+          "name": "前売フォートナイトこども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥35,500"
+        },
+        {
+          "name": "前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥12,500"
+        },
+        {
+          "name": "前売 こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売フォートナイト大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥26,000"
+        },
+        {
+          "name": "前売フォートナイト中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥9,000"
+        },
+        {
+          "name": "前売フォートナイトこども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥4,500"
+        },
+        {
+          "name": "前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥26,000"
+        },
+        {
+          "name": "前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥9,000"
+        },
+        {
+          "name": "前売 こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥4,500"
+        },
+        {
+          "name": "前売フォートナイト大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥15,500"
+        },
+        {
+          "name": "前売フォートナイト中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売フォートナイトこども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,500"
+        },
+        {
+          "name": "前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥15,500"
+        },
+        {
+          "name": "前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売 こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,500"
+        }
+      ],
       "saleStartAt": "2026-07-29T11:00:00+09:00",
       "performersText": [
         "≪9",
@@ -2064,8 +3056,7 @@
         "新しい学校のリーダーズ",
         "カジヒデキ",
         "くまま",
-        "サニーデイ",
-        "サービス",
+        "サニーデイ・サービス",
         "サバシスター",
         "竹下☆ぱらだいす×MADAMADA",
         "ニガミ17才",
@@ -2118,14 +3109,14 @@
         "紅しょうが",
         "マユリカ",
         "ミルクボーイ",
-        "矢野",
-        "兵動",
+        "矢野・兵動",
         "ロングコートダディ",
         "23 フォートナイトエリア≫",
         "bykn",
         "Minipiyo"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto",
@@ -2141,7 +3132,117 @@
       "venue": "インテックス大阪 4号館、5号館（大阪府）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/54840/45208",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "前売フォートナイト大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥35,500"
+        },
+        {
+          "name": "前売フォートナイト中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥12,500"
+        },
+        {
+          "name": "前売フォートナイトこども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥35,500"
+        },
+        {
+          "name": "前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥12,500"
+        },
+        {
+          "name": "前売 こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売フォートナイト大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥26,000"
+        },
+        {
+          "name": "前売フォートナイト中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥9,000"
+        },
+        {
+          "name": "前売フォートナイトこども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥4,500"
+        },
+        {
+          "name": "前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥26,000"
+        },
+        {
+          "name": "前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥9,000"
+        },
+        {
+          "name": "前売 こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥4,500"
+        },
+        {
+          "name": "前売フォートナイト大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥15,500"
+        },
+        {
+          "name": "前売フォートナイト中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売フォートナイトこども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,500"
+        },
+        {
+          "name": "前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥15,500"
+        },
+        {
+          "name": "前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売 こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,500"
+        }
+      ],
       "saleStartAt": "2026-07-29T11:00:00+09:00",
       "performersText": [
         "≪9",
@@ -2149,8 +3250,7 @@
         "新しい学校のリーダーズ",
         "カジヒデキ",
         "くまま",
-        "サニーデイ",
-        "サービス",
+        "サニーデイ・サービス",
         "サバシスター",
         "竹下☆ぱらだいす×MADAMADA",
         "ニガミ17才",
@@ -2203,14 +3303,14 @@
         "紅しょうが",
         "マユリカ",
         "ミルクボーイ",
-        "矢野",
-        "兵動",
+        "矢野・兵動",
         "ロングコートダディ",
         "23 フォートナイトエリア≫",
         "bykn",
         "Minipiyo"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto",
@@ -2226,7 +3326,15 @@
       "venue": "よしもと道頓堀シアター（大阪府）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/65690/52648",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "整理番号付自由席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,800"
+        }
+      ],
       "saleStartAt": "2026-09-03T10:00:00+09:00",
       "performersText": [
         "11月のリサ",
@@ -2235,6 +3343,7 @@
         "シカノシンプ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto"
       ]
@@ -2248,7 +3357,81 @@
       "venue": "インテックス大阪 4号館、5号館（大阪府）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/54840/45209",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "前売フォートナイト大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥26,000"
+        },
+        {
+          "name": "前売フォートナイト中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥9,000"
+        },
+        {
+          "name": "前売フォートナイトこども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥4,500"
+        },
+        {
+          "name": "前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥26,000"
+        },
+        {
+          "name": "前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥9,000"
+        },
+        {
+          "name": "前売 こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥4,500"
+        },
+        {
+          "name": "前売フォートナイト大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥15,500"
+        },
+        {
+          "name": "前売フォートナイト中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売フォートナイトこども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,500"
+        },
+        {
+          "name": "前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥15,500"
+        },
+        {
+          "name": "前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売 こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,500"
+        }
+      ],
       "saleStartAt": "2026-07-29T11:00:00+09:00",
       "performersText": [
         "≪9",
@@ -2256,8 +3439,7 @@
         "新しい学校のリーダーズ",
         "カジヒデキ",
         "くまま",
-        "サニーデイ",
-        "サービス",
+        "サニーデイ・サービス",
         "サバシスター",
         "竹下☆ぱらだいす×MADAMADA",
         "ニガミ17才",
@@ -2310,14 +3492,14 @@
         "紅しょうが",
         "マユリカ",
         "ミルクボーイ",
-        "矢野",
-        "兵動",
+        "矢野・兵動",
         "ロングコートダディ",
         "23 フォートナイトエリア≫",
         "bykn",
         "Minipiyo"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto",
@@ -2333,7 +3515,81 @@
       "venue": "インテックス大阪 4号館、5号館（大阪府）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/54840/45209",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "前売フォートナイト大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥26,000"
+        },
+        {
+          "name": "前売フォートナイト中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥9,000"
+        },
+        {
+          "name": "前売フォートナイトこども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥4,500"
+        },
+        {
+          "name": "前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥26,000"
+        },
+        {
+          "name": "前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥9,000"
+        },
+        {
+          "name": "前売 こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥4,500"
+        },
+        {
+          "name": "前売フォートナイト大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥15,500"
+        },
+        {
+          "name": "前売フォートナイト中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売フォートナイトこども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,500"
+        },
+        {
+          "name": "前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥15,500"
+        },
+        {
+          "name": "前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売 こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,500"
+        }
+      ],
       "saleStartAt": "2026-07-29T11:00:00+09:00",
       "performersText": [
         "≪9",
@@ -2341,8 +3597,7 @@
         "新しい学校のリーダーズ",
         "カジヒデキ",
         "くまま",
-        "サニーデイ",
-        "サービス",
+        "サニーデイ・サービス",
         "サバシスター",
         "竹下☆ぱらだいす×MADAMADA",
         "ニガミ17才",
@@ -2395,14 +3650,14 @@
         "紅しょうが",
         "マユリカ",
         "ミルクボーイ",
-        "矢野",
-        "兵動",
+        "矢野・兵動",
         "ロングコートダディ",
         "23 フォートナイトエリア≫",
         "bykn",
         "Minipiyo"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto",
@@ -2418,7 +3673,81 @@
       "venue": "インテックス大阪 4号館、5号館（大阪府）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/54840/45209",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "前売フォートナイト大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥26,000"
+        },
+        {
+          "name": "前売フォートナイト中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥9,000"
+        },
+        {
+          "name": "前売フォートナイトこども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥4,500"
+        },
+        {
+          "name": "前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥26,000"
+        },
+        {
+          "name": "前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥9,000"
+        },
+        {
+          "name": "前売 こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥4,500"
+        },
+        {
+          "name": "前売フォートナイト大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥15,500"
+        },
+        {
+          "name": "前売フォートナイト中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売フォートナイトこども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,500"
+        },
+        {
+          "name": "前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥15,500"
+        },
+        {
+          "name": "前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売 こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,500"
+        }
+      ],
       "saleStartAt": "2026-07-29T11:00:00+09:00",
       "performersText": [
         "≪9",
@@ -2426,8 +3755,7 @@
         "新しい学校のリーダーズ",
         "カジヒデキ",
         "くまま",
-        "サニーデイ",
-        "サービス",
+        "サニーデイ・サービス",
         "サバシスター",
         "竹下☆ぱらだいす×MADAMADA",
         "ニガミ17才",
@@ -2480,14 +3808,14 @@
         "紅しょうが",
         "マユリカ",
         "ミルクボーイ",
-        "矢野",
-        "兵動",
+        "矢野・兵動",
         "ロングコートダディ",
         "23 フォートナイトエリア≫",
         "bykn",
         "Minipiyo"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto",
@@ -2503,11 +3831,24 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61296/49872",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
-        "[ネタ＆コーナーライブ]ザ",
-        "パンチ",
+        "[ネタ＆コーナーライブ]ザ・パンチ",
         "ななまがり",
         "ダンビラムーチョ",
         "めぞん",
@@ -2515,12 +3856,12 @@
         "イチゴ",
         "やさしいズ",
         "田津原理音",
-        "スーパーサイズ",
-        "ミー",
+        "スーパーサイズ・ミー",
         "素敵じゃないか",
         "太鵬"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -2534,7 +3875,15 @@
       "venue": "大宮ラクーンよしもと劇場（埼玉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/63051/50654",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-08-06T10:00:00+09:00",
       "performersText": [
         "GAG",
@@ -2543,6 +3892,7 @@
         "軟水"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -2556,11 +3906,24 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61296/49882",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
-        "[ネタ＆コーナーライブ]ザ",
-        "パンチ",
+        "[ネタ＆コーナーライブ]ザ・パンチ",
         "ななまがり",
         "ダンビラムーチョ",
         "めぞん",
@@ -2568,12 +3931,12 @@
         "イチゴ",
         "やさしいズ",
         "田津原理音",
-        "スーパーサイズ",
-        "ミー",
+        "スーパーサイズ・ミー",
         "素敵じゃないか",
         "太鵬"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -2587,11 +3950,24 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61296/49892",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
-        "[ネタ＆コーナーライブ]ザ",
-        "パンチ",
+        "[ネタ＆コーナーライブ]ザ・パンチ",
         "ななまがり",
         "ダンビラムーチョ",
         "めぞん",
@@ -2599,12 +3975,12 @@
         "イチゴ",
         "やさしいズ",
         "田津原理音",
-        "スーパーサイズ",
-        "ミー",
+        "スーパーサイズ・ミー",
         "素敵じゃないか",
         "太鵬"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -2618,7 +3994,15 @@
       "venue": "大宮ラクーンよしもと劇場（埼玉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/63115/50669",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-08-06T10:00:00+09:00",
       "performersText": [
         "GAG",
@@ -2627,6 +4011,7 @@
         "軟水"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -2640,7 +4025,15 @@
       "venue": "大宮ラクーンよしもと劇場（埼玉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/63123/50671",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-08-06T10:00:00+09:00",
       "performersText": [
         "ジェラードン",
@@ -2648,6 +4041,7 @@
         "軟水"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -2662,6 +4056,14 @@
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/60787/49555",
       "ticketStatus": "残りわずか",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "残りわずか",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]喫茶ムーン",
@@ -2675,6 +4077,7 @@
         "おばあちゃん"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -2688,13 +4091,22 @@
       "venue": "高円寺ジュンジョー（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/65568/52584",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "整理番号付自由席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-08-27T10:00:00+09:00",
       "performersText": [
         "イワサキ",
         "ピュート"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto"
       ]
@@ -2708,7 +4120,45 @@
       "venue": "インテックス大阪 4号館、5号館（大阪府）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/54840/45210",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "前売フォートナイト大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥15,500"
+        },
+        {
+          "name": "前売フォートナイト中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売フォートナイトこども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,500"
+        },
+        {
+          "name": "前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥15,500"
+        },
+        {
+          "name": "前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売 こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,500"
+        }
+      ],
       "saleStartAt": "2026-07-29T11:00:00+09:00",
       "performersText": [
         "≪9",
@@ -2716,8 +4166,7 @@
         "新しい学校のリーダーズ",
         "カジヒデキ",
         "くまま",
-        "サニーデイ",
-        "サービス",
+        "サニーデイ・サービス",
         "サバシスター",
         "竹下☆ぱらだいす×MADAMADA",
         "ニガミ17才",
@@ -2770,14 +4219,14 @@
         "紅しょうが",
         "マユリカ",
         "ミルクボーイ",
-        "矢野",
-        "兵動",
+        "矢野・兵動",
         "ロングコートダディ",
         "23 フォートナイトエリア≫",
         "bykn",
         "Minipiyo"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto",
@@ -2793,7 +4242,45 @@
       "venue": "インテックス大阪 4号館、5号館（大阪府）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/54840/45210",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "前売フォートナイト大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥15,500"
+        },
+        {
+          "name": "前売フォートナイト中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売フォートナイトこども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,500"
+        },
+        {
+          "name": "前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥15,500"
+        },
+        {
+          "name": "前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売 こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,500"
+        }
+      ],
       "saleStartAt": "2026-07-29T11:00:00+09:00",
       "performersText": [
         "≪9",
@@ -2801,8 +4288,7 @@
         "新しい学校のリーダーズ",
         "カジヒデキ",
         "くまま",
-        "サニーデイ",
-        "サービス",
+        "サニーデイ・サービス",
         "サバシスター",
         "竹下☆ぱらだいす×MADAMADA",
         "ニガミ17才",
@@ -2855,14 +4341,14 @@
         "紅しょうが",
         "マユリカ",
         "ミルクボーイ",
-        "矢野",
-        "兵動",
+        "矢野・兵動",
         "ロングコートダディ",
         "23 フォートナイトエリア≫",
         "bykn",
         "Minipiyo"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto",
@@ -2878,7 +4364,45 @@
       "venue": "インテックス大阪 4号館、5号館（大阪府）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/54840/45210",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "前売フォートナイト大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥15,500"
+        },
+        {
+          "name": "前売フォートナイト中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売フォートナイトこども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,500"
+        },
+        {
+          "name": "前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥15,500"
+        },
+        {
+          "name": "前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500"
+        },
+        {
+          "name": "前売 こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,500"
+        }
+      ],
       "saleStartAt": "2026-07-29T11:00:00+09:00",
       "performersText": [
         "≪9",
@@ -2886,8 +4410,7 @@
         "新しい学校のリーダーズ",
         "カジヒデキ",
         "くまま",
-        "サニーデイ",
-        "サービス",
+        "サニーデイ・サービス",
         "サバシスター",
         "竹下☆ぱらだいす×MADAMADA",
         "ニガミ17才",
@@ -2940,14 +4463,14 @@
         "紅しょうが",
         "マユリカ",
         "ミルクボーイ",
-        "矢野",
-        "兵動",
+        "矢野・兵動",
         "ロングコートダディ",
         "23 フォートナイトエリア≫",
         "bykn",
         "Minipiyo"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto",
@@ -2963,7 +4486,27 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/60605/49468",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥3,000"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,300"
+        },
+        {
+          "name": "★★★★★【子ども割】",
+          "type": "",
+          "status": "販売中",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "佐久間一行",
@@ -2978,6 +4521,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -2991,7 +4535,27 @@
       "venue": "大宮ラクーンよしもと劇場（埼玉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61301/49902",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,700"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        },
+        {
+          "name": "中学生以下",
+          "type": "",
+          "status": "販売中",
+          "price": "￥1,800"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "あべこうじ",
@@ -3004,6 +4568,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -3017,7 +4582,27 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/60605/49481",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥3,000"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,300"
+        },
+        {
+          "name": "★★★★★【子ども割】",
+          "type": "",
+          "status": "販売中",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "佐久間一行",
@@ -3033,6 +4618,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -3046,7 +4632,27 @@
       "venue": "大宮ラクーンよしもと劇場（埼玉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61301/49903",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,700"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        },
+        {
+          "name": "中学生以下",
+          "type": "",
+          "status": "販売中",
+          "price": "￥1,800"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "あべこうじ",
@@ -3059,6 +4665,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -3072,7 +4679,27 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/60605/49482",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥3,000"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,300"
+        },
+        {
+          "name": "★★★★★【子ども割】",
+          "type": "",
+          "status": "販売中",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "佐久間一行",
@@ -3088,6 +4715,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -3101,7 +4729,15 @@
       "venue": "大宮ラクーンよしもと劇場（埼玉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/63124/50667",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,800"
+        }
+      ],
       "saleStartAt": "2026-08-06T10:00:00+09:00",
       "performersText": [
         "素敵じゃないか",
@@ -3110,6 +4746,7 @@
         "めぞん"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -3123,7 +4760,15 @@
       "venue": "大宮ラクーンよしもと劇場（埼玉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/63125/50666",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,800"
+        }
+      ],
       "saleStartAt": "2026-08-06T10:00:00+09:00",
       "performersText": [
         "マリーマリー",
@@ -3132,6 +4777,7 @@
         "めぞん"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -3145,7 +4791,15 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/62728/50502",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "チョコレートプラネット",
@@ -3155,6 +4809,7 @@
         "DOG FOOD PARTY"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -3168,7 +4823,15 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61292/49801",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "整理番号付き自由席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "サルゴリラ",
@@ -3183,6 +4846,7 @@
         "喫茶ムーン"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -3197,6 +4861,7 @@
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/516532",
       "ticketStatus": "",
+      "ticketOptions": [],
       "saleStartAt": "",
       "performersText": [
         "Yes!アキト",
@@ -3212,6 +4877,7 @@
         "2026年9月24日(木)"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto"
       ]
@@ -3225,7 +4891,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/60594/49454",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]CITY",
@@ -3239,6 +4919,7 @@
         "軟水"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -3252,7 +4933,15 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61292/49802",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "整理番号付き自由席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "ライス",
@@ -3267,6 +4956,7 @@
         "定点計画"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto"
       ]
@@ -3280,7 +4970,15 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/62134/50364",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "整理番号付き自由席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "ピュート",
@@ -3288,6 +4986,7 @@
         "MC：てぃーし"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto"
       ]
@@ -3301,7 +5000,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61209/49773",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "残りわずか",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "残りわずか",
+          "price": "￥1,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]軟水",
@@ -3309,6 +5022,7 @@
         "伝書鳩"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -3322,20 +5036,34 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61274/49839",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]滝音",
         "めぞん",
         "まちるだ",
-        "スーパーサイズ",
-        "ミー",
+        "スーパーサイズ・ミー",
         "ぶったま",
         "スパジーニ",
         "軟水",
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "nansui"
@@ -3350,20 +5078,34 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61274/49839",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]滝音",
         "めぞん",
         "まちるだ",
-        "スーパーサイズ",
-        "ミー",
+        "スーパーサイズ・ミー",
         "ぶったま",
         "スパジーニ",
         "軟水",
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "nansui"
@@ -3378,7 +5120,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61274/49838",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]ダンビラムーチョ",
@@ -3386,12 +5142,12 @@
         "めぞん",
         "まちるだ",
         "九条ジョー",
-        "スーパーサイズ",
-        "ミー",
+        "スーパーサイズ・ミー",
         "ぶったま",
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -3405,7 +5161,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61274/49850",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]ダンビラムーチョ",
@@ -3413,12 +5183,12 @@
         "めぞん",
         "まちるだ",
         "九条ジョー",
-        "スーパーサイズ",
-        "ミー",
+        "スーパーサイズ・ミー",
         "ぶったま",
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -3433,12 +5203,21 @@
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/60792/49571",
       "ticketStatus": "予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]軟水",
         "三遊間"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -3453,12 +5232,21 @@
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/63107/50683",
       "ticketStatus": "予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥3,000"
+        }
+      ],
       "saleStartAt": "2026-08-23T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]マリーマリー",
         "軟水"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -3472,7 +5260,15 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/62697/50491",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "整理番号付き自由席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "うるとらブギーズ",
@@ -3482,6 +5278,7 @@
         "伝書鳩"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto"
       ]
@@ -3495,7 +5292,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61274/49841",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]ゆにばーす",
@@ -3509,6 +5320,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto"
       ]
@@ -3522,7 +5334,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61274/49840",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]ゆにばーす",
@@ -3536,6 +5362,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto"
       ]
@@ -3549,7 +5376,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61274/49851",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]ゆにばーす",
@@ -3563,6 +5404,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto"
       ]
@@ -3577,6 +5419,14 @@
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/63088/50678",
       "ticketStatus": "予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥3,000"
+        }
+      ],
       "saleStartAt": "2026-08-15T10:00:00+09:00",
       "performersText": [
         "めぞん",
@@ -3584,6 +5434,7 @@
         "春とヒコーキ（タイタン）"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -3597,7 +5448,21 @@
       "venue": "よしもと漫才劇場（大阪府）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/62331/50083",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "指定席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        },
+        {
+          "name": "立見（整理番号）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "うただ",
@@ -3606,6 +5471,7 @@
         "シンクロニシティ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -3619,7 +5485,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/60594/49490",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]滝音",
@@ -3634,6 +5514,7 @@
         "鉄人小町"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -3647,7 +5528,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/60996/49609",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]めぞん",
@@ -3663,6 +5558,7 @@
         "MC：ビューティフルトーキョーマンズ 鈴木バイダン"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -3676,7 +5572,15 @@
       "venue": "科学技術館 サイエンスホール（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/65619/52621",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-08-28T10:00:00+09:00",
       "performersText": [
         "ミカボ",
@@ -3690,6 +5594,7 @@
         "ナユタ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -3703,7 +5608,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/60594/49491",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]さや香",
@@ -3718,6 +5637,7 @@
         "インテイク"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -3731,7 +5651,15 @@
       "venue": "大須演芸場（愛知県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/63975/51229",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-08-23T10:00:00+09:00",
       "performersText": [
         "ピュート",
@@ -3741,6 +5669,7 @@
         "くみ子バビ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto"
       ]
@@ -3754,13 +5683,22 @@
       "venue": "大須演芸場（愛知県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/63987/51230",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-08-23T10:00:00+09:00",
       "performersText": [
         "ピュート",
         "紅点"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto"
       ]
@@ -3774,7 +5712,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/60497/49418",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]からし蓮根",
@@ -3785,6 +5737,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -3799,6 +5752,14 @@
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/63335/50900",
       "ticketStatus": "予定数終了",
+      "ticketOptions": [
+        {
+          "name": "整理番号付入場券",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-08-23T10:00:00+09:00",
       "performersText": [
         "つるまる（軟水）",
@@ -3809,6 +5770,7 @@
         "なんぶ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto",
@@ -3825,6 +5787,14 @@
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/63335/50900",
       "ticketStatus": "予定数終了",
+      "ticketOptions": [
+        {
+          "name": "整理番号付入場券",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-08-23T10:00:00+09:00",
       "performersText": [
         "つるまる（軟水）",
@@ -3835,6 +5805,7 @@
         "なんぶ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto",
@@ -3851,6 +5822,14 @@
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/63335/50900",
       "ticketStatus": "予定数終了",
+      "ticketOptions": [
+        {
+          "name": "整理番号付入場券",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-08-23T10:00:00+09:00",
       "performersText": [
         "つるまる（軟水）",
@@ -3861,6 +5840,7 @@
         "なんぶ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto",
@@ -3876,7 +5856,15 @@
       "venue": "ルミネtheよしもと（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/63605/51078",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥3,500"
+        }
+      ],
       "saleStartAt": "2026-08-15T10:00:00+09:00",
       "performersText": [
         "タカアンドトシ",
@@ -3889,6 +5877,7 @@
         "ゼロカラン"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -3903,12 +5892,21 @@
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/66201/52714",
       "ticketStatus": "予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-09-02T10:00:00+09:00",
       "performersText": [
         "めぞん",
         "ヨネダ2000"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -3922,7 +5920,15 @@
       "venue": "大宮ラクーンよしもと劇場（埼玉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/66476/52833",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,300"
+        }
+      ],
       "saleStartAt": "2026-09-06T10:00:00+09:00",
       "performersText": [
         "ツートライブ",
@@ -3932,6 +5938,7 @@
         "ヨネダ2000"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -3945,7 +5952,15 @@
       "venue": "大宮ラクーンよしもと劇場（埼玉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/66484/52832",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,300"
+        }
+      ],
       "saleStartAt": "2026-09-06T10:00:00+09:00",
       "performersText": [
         "ツートライブ",
@@ -3955,6 +5970,7 @@
         "ヨネダ2000"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -3968,7 +5984,15 @@
       "venue": "八千代市市民会館 大ホール（千葉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/63313/50890",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥4,500"
+        }
+      ],
       "saleStartAt": "2026-08-15T10:00:00+09:00",
       "performersText": [
         "レイザーラモン",
@@ -3983,6 +6007,7 @@
         "めぞん"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -3997,6 +6022,7 @@
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/519689",
       "ticketStatus": "",
+      "ticketOptions": [],
       "saleStartAt": "",
       "performersText": [
         "ソルトレイク",
@@ -4019,6 +6045,7 @@
         "2026年10月2日(金)"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -4034,6 +6061,7 @@
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/519689",
       "ticketStatus": "",
+      "ticketOptions": [],
       "saleStartAt": "",
       "performersText": [
         "ソルトレイク",
@@ -4056,34 +6084,7 @@
         "2026年10月2日(金)"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
-      "trackedPerformers": [
-        "pyuto",
-        "nansui"
-      ]
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-10-02",
-      "openTime": "21:00",
-      "startTime": "21:15",
-      "title": "エレクトリカルコーナーライブ",
-      "venue": "神保町よしもと漫才劇場（東京都）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/65052/52415",
-      "ticketStatus": "予定数終了",
-      "saleStartAt": "2026-09-05T10:00:00+09:00",
-      "performersText": [
-        "[企画ライブ]喫茶ムーン",
-        "オダウエダ",
-        "おミュータンツ",
-        "ぶったま",
-        "オフローズ",
-        "軟水",
-        "ピュート",
-        "エグい速さ",
-        "プリズンクイズチャンネル"
-      ],
-      "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -4098,7 +6099,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/65052/52415",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]喫茶ムーン",
@@ -4112,9 +6127,9 @@
         "プリズンクイズチャンネル"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
-        "pyuto",
-        "nansui"
+        "pyuto"
       ]
     },
     {
@@ -4126,7 +6141,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64937/52355",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]ヘンダーソン",
@@ -4141,6 +6170,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -4154,7 +6184,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64937/52356",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]ヘンダーソン",
@@ -4169,6 +6213,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -4182,7 +6227,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64937/52357",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]ヘンダーソン",
@@ -4197,30 +6256,9 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
-      ]
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-10-03",
-      "openTime": "17:00",
-      "startTime": "17:15",
-      "title": "ごきげん会？ポポポポーン？",
-      "venue": "神保町よしもと漫才劇場（東京都）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/64819/52170",
-      "ticketStatus": "",
-      "saleStartAt": "2026-09-05T10:00:00+09:00",
-      "performersText": [
-        "[企画ライブ]軟水",
-        "シンクロニシティ",
-        "ぎょうぶ",
-        "うただ"
-      ],
-      "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
-      "trackedPerformers": [
-        "nansui"
       ]
     },
     {
@@ -4232,7 +6270,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/65054/52417",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]ラニーノーズ",
@@ -4241,35 +6293,9 @@
         "ヘンダーソン"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto"
-      ]
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-10-04",
-      "openTime": "10:45",
-      "startTime": "11:00",
-      "title": "神保町マンゲキお笑いライブ",
-      "venue": "神保町よしもと漫才劇場（東京都）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/64655/52230",
-      "ticketStatus": "予定数終了",
-      "saleStartAt": "2026-09-05T10:00:00+09:00",
-      "performersText": [
-        "[ネタ出演者]ダブルヒガシ",
-        "くらげ",
-        "シモリュウ",
-        "オダウエダ",
-        "太鵬",
-        "軟水",
-        "インテイク",
-        "生姜猫",
-        "他"
-      ],
-      "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
-      "trackedPerformers": [
-        "nansui"
       ]
     },
     {
@@ -4281,7 +6307,27 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64258/51726",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,300"
+        },
+        {
+          "name": "★★★★★【子ども割】",
+          "type": "",
+          "status": "販売中",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "ネルソンズ",
@@ -4295,35 +6341,9 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto"
-      ]
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-10-04",
-      "openTime": "12:45",
-      "startTime": "13:00",
-      "title": "神保町マンゲキお笑いライブ",
-      "venue": "神保町よしもと漫才劇場（東京都）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/64655/52231",
-      "ticketStatus": "予定数終了",
-      "saleStartAt": "2026-09-05T10:00:00+09:00",
-      "performersText": [
-        "[ネタ出演者]ダブルヒガシ",
-        "くらげ",
-        "シモリュウ",
-        "オダウエダ",
-        "太鵬",
-        "軟水",
-        "インテイク",
-        "生姜猫",
-        "他"
-      ],
-      "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
-      "trackedPerformers": [
-        "nansui"
       ]
     },
     {
@@ -4335,7 +6355,27 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64258/51731",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,300"
+        },
+        {
+          "name": "★★★★★【子ども割】",
+          "type": "",
+          "status": "販売中",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "ネルソンズ",
@@ -4349,57 +6389,9 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto"
-      ]
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-10-04",
-      "openTime": "14:45",
-      "startTime": "15:00",
-      "title": "神保町マンゲキお笑いライブ",
-      "venue": "神保町よしもと漫才劇場（東京都）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/64655/52232",
-      "ticketStatus": "予定数終了",
-      "saleStartAt": "2026-09-05T10:00:00+09:00",
-      "performersText": [
-        "[ネタ出演者]ダブルヒガシ",
-        "くらげ",
-        "シモリュウ",
-        "オダウエダ",
-        "太鵬",
-        "軟水",
-        "インテイク",
-        "生姜猫",
-        "他"
-      ],
-      "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
-      "trackedPerformers": [
-        "nansui"
-      ]
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-10-04",
-      "openTime": "17:00",
-      "startTime": "17:15",
-      "title": "セカンドロット新ネタライブ「全マシ」",
-      "venue": "神保町よしもと漫才劇場（東京都）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/64820/52174",
-      "ticketStatus": "",
-      "saleStartAt": "2026-09-05T10:00:00+09:00",
-      "performersText": [
-        "[企画ライブ]セカンドロット",
-        "カベポスター",
-        "おミュータンツ",
-        "軟水"
-      ],
-      "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
-      "trackedPerformers": [
-        "nansui"
       ]
     },
     {
@@ -4412,6 +6404,14 @@
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64824/52171",
       "ticketStatus": "予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]イチゴ",
@@ -4422,6 +6422,7 @@
         "美バンブー"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -4435,15 +6436,28 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64323/51811",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]シカゴ実業",
         "デニス",
         "西村ヒロチョ",
         "からし蓮根",
-        "スーパーサイズ",
-        "ミー",
+        "スーパーサイズ・ミー",
         "アズーロ24",
         "軟水",
         "ピュート",
@@ -4451,41 +6465,10 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
-        "pyuto",
-        "nansui"
-      ]
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-10-06",
-      "openTime": "17:00",
-      "startTime": "17:15",
-      "title": "渋谷Kiwami極LIVE",
-      "venue": "渋谷よしもと漫才劇場（東京都）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/64323/51811",
-      "ticketStatus": "",
-      "saleStartAt": "2026-09-05T10:00:00+09:00",
-      "performersText": [
-        "[ネタ＆コーナーライブ]シカゴ実業",
-        "デニス",
-        "西村ヒロチョ",
-        "からし蓮根",
-        "スーパーサイズ",
-        "ミー",
-        "アズーロ24",
-        "軟水",
-        "ピュート",
-        "めぞん",
-        "他"
-      ],
-      "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
-      "trackedPerformers": [
-        "maison",
-        "pyuto",
-        "nansui"
+        "pyuto"
       ]
     },
     {
@@ -4497,15 +6480,28 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64323/51811",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]シカゴ実業",
         "デニス",
         "西村ヒロチョ",
         "からし蓮根",
-        "スーパーサイズ",
-        "ミー",
+        "スーパーサイズ・ミー",
         "アズーロ24",
         "軟水",
         "ピュート",
@@ -4513,10 +6509,10 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
-        "pyuto",
-        "nansui"
+        "pyuto"
       ]
     },
     {
@@ -4528,7 +6524,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64580/52131",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]生ファラオ",
@@ -4538,37 +6548,9 @@
         "アケガラス"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
-      ]
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-10-08",
-      "openTime": "19:45",
-      "startTime": "20:00",
-      "title": "つるまる軍団トークライブ",
-      "venue": "ハイジアV-1（東京都）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/65494/52545",
-      "ticketStatus": "予定数終了",
-      "saleStartAt": "2026-08-27T10:00:00+09:00",
-      "performersText": [
-        "軟水 つるまる",
-        "世界クジラ 和泉",
-        "サンタモニカ ポール",
-        "狛犬 櫛野",
-        "金魚番長 古市",
-        "大王 山内",
-        "今夜はブルース タニグチ",
-        "ほの字 Bりょう",
-        "シングシング 森主",
-        "デジタルバッハ 加藤",
-        "兄弟 体制"
-      ],
-      "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
-      "trackedPerformers": [
-        "nansui"
       ]
     },
     {
@@ -4580,11 +6562,24 @@
       "venue": "よしもと幕張イオンモール劇場（千葉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64915/52277",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,300"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
-        "[ネタ]ザ",
-        "パンチ",
+        "[ネタ]ザ・パンチ",
         "ジェラードン",
         "相席スタート",
         "カゲヤマ",
@@ -4594,6 +6589,7 @@
         "めぞん"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -4607,11 +6603,24 @@
       "venue": "よしもと幕張イオンモール劇場（千葉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64915/52278",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,300"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
-        "[ネタ]ザ",
-        "パンチ",
+        "[ネタ]ザ・パンチ",
         "ジェラードン",
         "相席スタート",
         "カゲヤマ",
@@ -4621,6 +6630,7 @@
         "めぞん"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -4634,19 +6644,27 @@
       "venue": "よしもと幕張イオンモール劇場（千葉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/65353/52479",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,300"
+        }
+      ],
       "saleStartAt": "2026-08-30T10:00:00+09:00",
       "performersText": [
         "めぞん",
         "カゲヤマ",
         "生ファラオ",
-        "ソマオ",
-        "ミートボール",
+        "ソマオ・ミートボール",
         "プリズンクイズチャンネル",
         "ボブのコーラ",
         "【MC】ビューティフルトーキョーマンズ 鈴木バイダン"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -4661,6 +6679,14 @@
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/62814/50566",
       "ticketStatus": "予定数終了",
+      "ticketOptions": [
+        {
+          "name": "1Fスタンディング（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥5,000"
+        }
+      ],
       "saleStartAt": "2026-08-08T10:00:00+09:00",
       "performersText": [
         "銀シャリ",
@@ -4679,6 +6705,7 @@
         "ランジャタイ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -4692,7 +6719,15 @@
       "venue": "仙台PIT（宮城県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/62814/50567",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "1Fスタンディング（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥5,000"
+        }
+      ],
       "saleStartAt": "2026-08-08T10:00:00+09:00",
       "performersText": [
         "笑い飯",
@@ -4711,6 +6746,7 @@
         "ランジャタイ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -4724,13 +6760,22 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/65392/52466",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "軟水",
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -4744,7 +6789,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64655/52236",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]めぞん",
@@ -4758,6 +6817,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto",
@@ -4773,7 +6833,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64655/52236",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]めぞん",
@@ -4787,6 +6861,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto",
@@ -4802,7 +6877,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64655/52236",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]めぞん",
@@ -4816,6 +6905,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto",
@@ -4831,7 +6921,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64655/52237",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]めぞん",
@@ -4845,6 +6949,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto",
@@ -4860,7 +6965,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64655/52237",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]めぞん",
@@ -4874,6 +6993,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto",
@@ -4889,7 +7009,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64655/52237",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]めぞん",
@@ -4903,6 +7037,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto",
@@ -4918,7 +7053,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64655/52238",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]めぞん",
@@ -4932,6 +7081,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto",
@@ -4947,7 +7097,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64655/52238",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]めぞん",
@@ -4961,6 +7125,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto",
@@ -4976,7 +7141,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64655/52238",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]めぞん",
@@ -4990,6 +7169,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto",
@@ -5005,16 +7185,30 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/65057/52413",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
-        "[企画ライブ]スーパーサイズ",
-        "ミー",
+        "[企画ライブ]スーパーサイズ・ミー",
         "おミュータンツ",
         "ピュート",
         "定点計画"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto"
       ]
@@ -5029,6 +7223,20 @@
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/65058/52411",
       "ticketStatus": "予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥1,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]伝書鳩",
@@ -5037,6 +7245,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -5050,7 +7259,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64937/52367",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]ツートライブ",
@@ -5060,12 +7283,12 @@
         "シカゴ実業",
         "キンボシ",
         "まんじろう",
-        "スーパーサイズ",
-        "ミー",
+        "スーパーサイズ・ミー",
         "大王",
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -5079,7 +7302,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64937/52368",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]ツートライブ",
@@ -5089,12 +7326,12 @@
         "シカゴ実業",
         "キンボシ",
         "まんじろう",
-        "スーパーサイズ",
-        "ミー",
+        "スーパーサイズ・ミー",
         "大王",
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -5108,7 +7345,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64937/52369",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]ツートライブ",
@@ -5118,12 +7369,12 @@
         "シカゴ実業",
         "キンボシ",
         "まんじろう",
-        "スーパーサイズ",
-        "ミー",
+        "スーパーサイズ・ミー",
         "大王",
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -5137,7 +7388,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64589/52142",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]めぞん",
@@ -5149,6 +7414,7 @@
         "カゲヤマ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -5162,7 +7428,15 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64833/52189",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]ザンゾウ",
@@ -5175,6 +7449,7 @@
         "今夜はブルース"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -5189,7 +7464,15 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64833/52189",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]ザンゾウ",
@@ -5202,6 +7485,7 @@
         "今夜はブルース"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -5216,7 +7500,15 @@
       "venue": "あうるすぽっと（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/63824/51202",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥3,500"
+        }
+      ],
       "saleStartAt": "2026-08-15T10:00:00+09:00",
       "performersText": [
         "GAG",
@@ -5228,6 +7520,7 @@
         "軟水"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "nansui"
@@ -5242,7 +7535,15 @@
       "venue": "あうるすぽっと（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/63824/51202",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥3,500"
+        }
+      ],
       "saleStartAt": "2026-08-15T10:00:00+09:00",
       "performersText": [
         "GAG",
@@ -5254,6 +7555,7 @@
         "軟水"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "nansui"
@@ -5268,7 +7570,15 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/66152/52692",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "ぺ",
@@ -5278,6 +7588,7 @@
         "あなたとネ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -5291,7 +7602,15 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/66153/52701",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "世間知らズ",
@@ -5301,6 +7620,7 @@
         "ヨネダ2000"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -5315,7 +7635,15 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/66153/52701",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "世間知らズ",
@@ -5325,6 +7653,7 @@
         "ヨネダ2000"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -5339,7 +7668,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64333/51827",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]滝音",
@@ -5354,6 +7697,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -5367,7 +7711,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64596/52157",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]めぞん",
@@ -5383,6 +7741,7 @@
         "MC：ビューティフルトーキョーマンズ 鈴木バイダン"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -5396,7 +7755,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64655/52242",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]滝音",
@@ -5411,6 +7784,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -5424,7 +7798,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64655/52243",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]滝音",
@@ -5439,6 +7827,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -5452,7 +7841,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64655/52244",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]滝音",
@@ -5467,6 +7870,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -5480,7 +7884,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64355/51911",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "残りわずか",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,300"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "残りわずか",
+          "price": "￥2,300"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ランキングバトルライブ]CITY",
@@ -5504,6 +7922,7 @@
         "サンタモニカ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto"
       ]
@@ -5517,10 +7936,25 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64355/51912",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,300"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,300"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "nansui"
@@ -5535,10 +7969,25 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64355/51912",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,300"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,300"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "nansui"
@@ -5554,6 +8003,7 @@
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/66751/52989",
       "ticketStatus": "",
+      "ticketOptions": [],
       "saleStartAt": "",
       "performersText": [
         "ギャロップ",
@@ -5568,6 +8018,7 @@
         "金魚番長"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -5581,7 +8032,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64323/51815",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]めぞん",
@@ -5596,6 +8061,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -5609,19 +8075,33 @@
       "venue": "よしもと漫才劇場（大阪府）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/65884/52102",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "指定席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        },
+        {
+          "name": "立見（整理番号）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "三遊間",
         "バッテリィズ",
         "華山",
-        "ドーナツ",
-        "ピーナツ",
+        "ドーナツ・ピーナツ",
         "愛凛冴",
         "ぎょうぶ",
         "軟水"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -5635,7 +8115,15 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64847/52188",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]ドンココ",
@@ -5645,6 +8133,7 @@
         "ナユタ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -5658,7 +8147,15 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/66155/52699",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "ぶったま",
@@ -5668,6 +8165,7 @@
         "伝書鳩"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -5681,13 +8179,20 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/65398/52477",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "軟水",
         "オフローズ",
-        "ソマオ",
-        "ミートボール",
+        "ソマオ・ミートボール",
         "ぶったま",
         "ピュート",
         "なでなでボーイ",
@@ -5696,6 +8201,7 @@
         "MC：コウミ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -5710,13 +8216,20 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/65398/52477",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "軟水",
         "オフローズ",
-        "ソマオ",
-        "ミートボール",
+        "ソマオ・ミートボール",
         "ぶったま",
         "ピュート",
         "なでなでボーイ",
@@ -5725,6 +8238,7 @@
         "MC：コウミ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -5739,7 +8253,15 @@
       "venue": "大宮ラクーンよしもと劇場（埼玉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64979/52394",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,800"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "シシガシラ",
@@ -5748,6 +8270,7 @@
         "めぞん"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -5761,7 +8284,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64323/51816",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]さや香",
@@ -5775,6 +8312,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -5788,7 +8326,15 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64848/52202",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]とりせん",
@@ -5797,6 +8343,7 @@
         "兄弟"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -5810,7 +8357,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64602/52162",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]11月のリサ",
@@ -5821,6 +8382,7 @@
         "めぞん 吉野"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto"
@@ -5835,7 +8397,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64602/52162",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]11月のリサ",
@@ -5846,6 +8422,7 @@
         "めぞん 吉野"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto"
@@ -5861,10 +8438,10 @@
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/66334/52774",
       "ticketStatus": "",
+      "ticketOptions": [],
       "saleStartAt": "2026-09-07T10:00:00+09:00",
       "performersText": [
-        "[ネタ]ザ",
-        "パンチ",
+        "[ネタ]ザ・パンチ",
         "イチキップリン",
         "ビスケットブラザーズ",
         "マユリカ",
@@ -5872,6 +8449,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -5886,10 +8464,10 @@
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/66334/52775",
       "ticketStatus": "",
+      "ticketOptions": [],
       "saleStartAt": "2026-09-07T10:00:00+09:00",
       "performersText": [
-        "[ネタ]ザ",
-        "パンチ",
+        "[ネタ]ザ・パンチ",
         "イチキップリン",
         "ビスケットブラザーズ",
         "マユリカ",
@@ -5897,6 +8475,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -5910,7 +8489,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/65063/52414",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]軟水",
@@ -5918,6 +8511,7 @@
         "伝書鳩"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -5931,7 +8525,15 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64850/52203",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]私東京",
@@ -5940,6 +8542,7 @@
         "ピュート"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto"
       ]
@@ -5953,7 +8556,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64937/52379",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]しずる",
@@ -5967,6 +8584,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "nansui"
@@ -5981,7 +8599,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64937/52379",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]しずる",
@@ -5995,6 +8627,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "nansui"
@@ -6009,7 +8642,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64937/52380",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]しずる",
@@ -6023,6 +8670,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "nansui"
@@ -6037,7 +8685,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64937/52380",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]しずる",
@@ -6051,6 +8713,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "nansui"
@@ -6065,7 +8728,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64937/52381",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]しずる",
@@ -6080,6 +8757,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "nansui"
@@ -6094,7 +8772,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64937/52381",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]しずる",
@@ -6109,6 +8801,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "nansui"
@@ -6123,7 +8816,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64319/51766",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ出演者]ケビンス",
@@ -6133,6 +8840,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -6147,6 +8855,7 @@
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/518800",
       "ticketStatus": "",
+      "ticketOptions": [],
       "saleStartAt": "",
       "performersText": [
         "おちもり",
@@ -6173,6 +8882,7 @@
         "2026年10月26日(月)"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto"
       ]
@@ -6186,7 +8896,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64333/51831",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]ヨネダ2000",
@@ -6201,6 +8925,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -6215,6 +8940,7 @@
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/66669/52967",
       "ticketStatus": "",
+      "ticketOptions": [],
       "saleStartAt": "",
       "performersText": [
         "ダイタク",
@@ -6224,6 +8950,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -6237,7 +8964,15 @@
       "venue": "よしもと幕張イオンモール劇場（千葉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/66273/52747",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-09-02T10:00:00+09:00",
       "performersText": [
         "大王",
@@ -6251,6 +8986,7 @@
         "マリーマリー"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -6264,7 +9000,21 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/65064/52416",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]ピュート",
@@ -6275,6 +9025,7 @@
         "ゲスト：カゲヤマ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto"
       ]
@@ -6288,7 +9039,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64608/52150",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,000"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]エバース",
@@ -6299,6 +9064,7 @@
         "ゼロカラン"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -6312,7 +9078,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64323/51818",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]めぞん",
@@ -6326,6 +9106,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -6339,7 +9120,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64609/52148",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,000"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]ピュート",
@@ -6349,6 +9144,7 @@
         "喫茶ムーン"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto"
@@ -6363,7 +9159,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64609/52148",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,000"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]ピュート",
@@ -6373,6 +9183,7 @@
         "喫茶ムーン"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto"
@@ -6387,7 +9198,27 @@
       "venue": "Zepp Fukuoka（福岡県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/62826/50569",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "1Fスタンディング（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥5,000"
+        },
+        {
+          "name": "2Fスタンディング（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥5,000"
+        },
+        {
+          "name": "2F指定席",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥5,500"
+        }
+      ],
       "saleStartAt": "2026-08-08T10:00:00+09:00",
       "performersText": [
         "囲碁将棋",
@@ -6406,6 +9237,7 @@
         "ヨネダ2000"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -6419,7 +9251,15 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/65400/52471",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "ピュート",
@@ -6432,6 +9272,7 @@
         "デジタルバッハ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto"
       ]
@@ -6445,7 +9286,27 @@
       "venue": "Zepp Fukuoka（福岡県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/62826/50570",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "1Fスタンディング（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥5,000"
+        },
+        {
+          "name": "2Fスタンディング（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥5,000"
+        },
+        {
+          "name": "2F指定席",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥5,500"
+        }
+      ],
       "saleStartAt": "2026-08-08T10:00:00+09:00",
       "performersText": [
         "囲碁将棋",
@@ -6464,6 +9325,7 @@
         "ヨネダ2000"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
@@ -6477,7 +9339,15 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64860/52200",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]世間知らズ",
@@ -6486,6 +9356,7 @@
         "イワサキ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "nansui"
       ]
@@ -6499,7 +9370,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64937/52382",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]さや香",
@@ -6514,6 +9399,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -6528,7 +9414,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64937/52382",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]さや香",
@@ -6543,6 +9443,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -6557,7 +9458,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64937/52383",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]さや香",
@@ -6572,6 +9487,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -6586,7 +9502,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64937/52383",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]さや香",
@@ -6601,6 +9531,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -6615,7 +9546,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64937/52384",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]さや香",
@@ -6630,6 +9575,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -6644,7 +9590,21 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64937/52384",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[ネタ＆コーナーライブ]さや香",
@@ -6659,6 +9619,7 @@
         "他"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -6674,6 +9635,14 @@
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64863/52190",
       "ticketStatus": "予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]喫茶ムーン",
@@ -6688,6 +9657,7 @@
         "あなたとネ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -6703,6 +9673,14 @@
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64863/52190",
       "ticketStatus": "予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥1,500"
+        }
+      ],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "performersText": [
         "[企画ライブ]喫茶ムーン",
@@ -6717,6 +9695,7 @@
         "あなたとネ"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "pyuto",
         "nansui"
@@ -6731,7 +9710,63 @@
       "venue": "万博記念公園もみじ川芝生広場 （大阪府）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/59452/48112",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "一般 前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥16,000"
+        },
+        {
+          "name": "一般 前売 高校生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥7,500"
+        },
+        {
+          "name": "一般 前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,000"
+        },
+        {
+          "name": "一般 前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥9,000"
+        },
+        {
+          "name": "一般 前売 高校生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥4,500"
+        },
+        {
+          "name": "一般 前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,000"
+        },
+        {
+          "name": "一般 前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥4,000"
+        },
+        {
+          "name": "一般 前売 高校生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥2,000"
+        },
+        {
+          "name": "一般 前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥1,000"
+        }
+      ],
       "saleStartAt": "2026-08-01T10:00:00+09:00",
       "performersText": [
         "11",
@@ -6747,8 +9782,7 @@
         "豪快キャプテン",
         "カベポスター",
         "ダブルヒガシ",
-        "ドーナツ",
-        "ピーナツ",
+        "ドーナツ・ピーナツ",
         "バッテリィズ",
         "天才ピアニスト",
         "フースーヤ",
@@ -6756,8 +9790,7 @@
         "ヨネダ2000",
         "■リバイバル万博",
         "荒牧陽子",
-        "イチャ",
-        "ザハラ",
+        "イチャ・ザハラ",
         "ダブルネーム",
         "たむたむ",
         "レイザーラモンRG",
@@ -6782,6 +9815,7 @@
         "くまま ほか"
       ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison"
       ]
