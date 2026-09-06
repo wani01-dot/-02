@@ -3775,6 +3775,21 @@ def main():
                     error,
                 )
                 
+                        if "livepocket" in sources:
+            try:
+                all_events.extend(
+                    scrape_livepocket(
+                        session,
+                        performer,
+                    )
+                )
+
+            except Exception as error:
+                print(
+                    "LivePocketエラー:",
+                    error,
+                )
+                
     # =====================================================
     # 過去公演除外
     # =====================================================
