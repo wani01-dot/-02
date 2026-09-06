@@ -529,6 +529,16 @@
       color: #59636e;
     }
 
+    .status-active {
+      background: #eaf8ef;
+      color: #23733d;
+    }
+
+    .status-partial {
+      background: #fff4e6;
+      color: #b86500;
+    }
+
     .sale-near {
       background: #eee8ff;
       color: #6b42d8;
@@ -610,6 +620,115 @@
     .info-icon {
       flex: 0 0 20px;
     }
+
+
+    /* =====================================
+       販売状況
+    ===================================== */
+
+    .ticket-status-box {
+      margin-top: 13px;
+
+      border-radius: 14px;
+
+      background: #fafafa;
+
+      border:
+        1px solid
+        #eceff2;
+
+      overflow: hidden;
+    }
+
+    .ticket-status-header {
+      padding: 11px 12px;
+
+      background: #f5f6f8;
+
+      font-size: 13px;
+      font-weight: 800;
+
+      color: #4d5661;
+    }
+
+    .ticket-option {
+      padding: 12px;
+
+      border-top:
+        1px solid
+        #eceff2;
+    }
+
+    .ticket-option-name {
+      margin-bottom: 8px;
+
+      font-size: 15px;
+      font-weight: 800;
+
+      line-height: 1.4;
+    }
+
+    .ticket-option-detail {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 7px 10px;
+
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .ticket-type {
+      color: #666;
+    }
+
+    .ticket-price {
+      margin-left: auto;
+
+      font-size: 14px;
+      font-weight: 800;
+
+      color: #222;
+    }
+
+    .ticket-status-pill {
+      display: inline-flex;
+      align-items: center;
+
+      min-height: 24px;
+
+      padding: 4px 8px;
+
+      border-radius: 999px;
+
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .ticket-status-pill.active {
+      background: #eaf8ef;
+      color: #23733d;
+    }
+
+    .ticket-status-pill.few {
+      background: #fff0f2;
+      color: #d82949;
+    }
+
+    .ticket-status-pill.ended {
+      background: #edf0f4;
+      color: #59636e;
+    }
+
+    .ticket-status-pill.other {
+      background: #eef2f7;
+      color: #53606e;
+    }
+
+
+    /* =====================================
+       出演者など
+    ===================================== */
 
     .performer-detail-box {
       margin-top: 12px;
@@ -1056,7 +1175,7 @@
 
 
     <div class="menu-version">
-      v2.1.0
+      v2.2.0
     </div>
 
   </div>
@@ -1202,8 +1321,6 @@ let calendar;
 let currentView =
   "calendar";
 
-
-const NEW_HOURS = 48;
 
 const SALE_NEAR_DAYS = 7;
 
@@ -1519,7 +1636,7 @@ function isNewEvent(
 ) {
 
   if (
-    !event.firstSeenAt
+    !event.newUntil
   ) {
 
     return false;
@@ -1527,15 +1644,15 @@ function isNewEvent(
   }
 
 
-  const firstSeen =
+  const until =
     new Date(
-      event.firstSeenAt
+      event.newUntil
     );
 
 
   if (
     Number.isNaN(
-      firstSeen.getTime()
+      until.getTime()
     )
   ) {
 
@@ -1544,30 +1661,10 @@ function isNewEvent(
   }
 
 
-  const now =
-    new Date();
-
-
-  const hours =
-    (
-      now.getTime()
-      -
-      firstSeen.getTime()
-    )
-    /
-    (
-      1000
-      *
-      60
-      *
-      60
-    );
-
-
   return (
-    hours >= 0
-    &&
-    hours <= NEW_HOURS
+    until.getTime()
+    >
+    Date.now()
   );
 
 }
@@ -1910,11 +2007,17 @@ function groupEvents(
           ticketStatus:
             event.ticketStatus || "",
 
+          ticketOptions:
+            [],
+
           saleStartAt:
             event.saleStartAt || "",
 
           firstSeenAt:
-            event.firstSeenAt || ""
+            event.firstSeenAt || "",
+
+          newUntil:
+            event.newUntil || ""
 
         };
 
@@ -2015,6 +2118,88 @@ function groupEvents(
 
 
       if (
+        Array.isArray(
+          event.ticketOptions
+        )
+      ) {
+
+        event.ticketOptions
+          .forEach(
+            option => {
+
+              const normalized = {
+                name:
+                  String(
+                    option?.name || ""
+                  ).trim(),
+
+                type:
+                  String(
+                    option?.type || ""
+                  ).trim(),
+
+                status:
+                  String(
+                    option?.status || ""
+                  ).trim(),
+
+                price:
+                  String(
+                    option?.price || ""
+                  ).trim()
+              };
+
+
+              const optionKey = [
+                normalized.name,
+                normalized.type,
+                normalized.status,
+                normalized.price
+              ].join("|");
+
+
+              const exists =
+                groups[key]
+                  .ticketOptions
+                  .some(
+                    existing => {
+
+                      const existingKey = [
+                        existing.name || "",
+                        existing.type || "",
+                        existing.status || "",
+                        existing.price || ""
+                      ].join("|");
+
+
+                      return (
+                        existingKey ===
+                        optionKey
+                      );
+
+                    }
+                  );
+
+
+              if (
+                !exists
+              ) {
+
+                groups[key]
+                  .ticketOptions
+                  .push(
+                    normalized
+                  );
+
+              }
+
+            }
+          );
+
+      }
+
+
+      if (
         event.source
         &&
         !groups[key]
@@ -2103,50 +2288,33 @@ function groupEvents(
 
 
       if (
-        event.firstSeenAt
+        event.newUntil
       ) {
 
+        const current =
+          parseDateValue(
+            groups[key].newUntil
+          );
+
+
+        const candidate =
+          parseDateValue(
+            event.newUntil
+          );
+
+
         if (
-          !groups[key].firstSeenAt
+          candidate
+          &&
+          (
+            !current
+            ||
+            candidate > current
+          )
         ) {
 
-          groups[key].firstSeenAt =
-            event.firstSeenAt;
-
-        }
-
-        else {
-
-          const oldDate =
-            new Date(
-              groups[key].firstSeenAt
-            );
-
-
-          const newDate =
-            new Date(
-              event.firstSeenAt
-            );
-
-
-          if (
-            !Number.isNaN(
-              newDate.getTime()
-            )
-            &&
-            (
-              Number.isNaN(
-                oldDate.getTime()
-              )
-              ||
-              newDate < oldDate
-            )
-          ) {
-
-            groups[key].firstSeenAt =
-              event.firstSeenAt;
-
-          }
+          groups[key].newUntil =
+            event.newUntil;
 
         }
 
@@ -2342,7 +2510,7 @@ function showNewEvents() {
         true,
 
       emptyText:
-        "48時間以内に追加されたライブはありません。"
+        "現在、新着ライブはありません。"
     }
   );
 
@@ -2609,13 +2777,28 @@ function showSearch() {
               .join(" ");
 
 
+          const ticketText =
+            event.ticketOptions
+              .map(
+                option =>
+                  [
+                    option.name,
+                    option.type,
+                    option.status,
+                    option.price
+                  ].join(" ")
+              )
+              .join(" ");
+
+
           const target =
             normalizeText(
               [
                 event.title,
                 event.venue,
                 trackedNames,
-                event.performerDetails.join(" ")
+                event.performerDetails.join(" "),
+                ticketText
               ].join(" ")
             );
 
@@ -3252,7 +3435,7 @@ function showHelp() {
       </div>
 
       <p class="help-text">
-        初めて取得してから48時間以内の公演をNEWとして表示します。
+        本当に新しく見つかったライブだけを48時間NEWとして表示します。
       </p>
 
 
@@ -3275,11 +3458,11 @@ function showHelp() {
 
 
       <div class="help-title">
-        販売状況
+        🎟 販売状況
       </div>
 
       <p class="help-text">
-        FANYで「残りわずか」「予定数終了」と表示されている場合、公演カードにも表示します。
+        FANYで複数の券種がある場合、それぞれの販売状況・券種・価格を分けて表示します。
       </p>
 
 
@@ -3288,7 +3471,7 @@ function showHelp() {
       </div>
 
       <p class="help-text">
-        FANY・TIGETから取得できた出演者情報を公演カード内に表示します。
+        FANY・TIGETから取得できた出演者情報を表示します。
       </p>
 
     </div>
@@ -3539,6 +3722,203 @@ function showGroupedEventList(
 
 
 /* =========================================
+   販売状況表示
+========================================= */
+
+function ticketStatusClass(
+  status
+) {
+
+  const value =
+    String(
+      status || ""
+    );
+
+
+  if (
+    value.includes(
+      "残りわずか"
+    )
+  ) {
+
+    return "few";
+
+  }
+
+
+  if (
+    value.includes(
+      "予定数終了"
+    )
+    ||
+    value.includes(
+      "販売終了"
+    )
+    ||
+    value.includes(
+      "受付終了"
+    )
+    ||
+    value.includes(
+      "完売"
+    )
+  ) {
+
+    return "ended";
+
+  }
+
+
+  if (
+    value.includes(
+      "販売中"
+    )
+    ||
+    value.includes(
+      "受付中"
+    )
+  ) {
+
+    return "active";
+
+  }
+
+
+  return "other";
+
+}
+
+
+function createTicketOptionsHtml(
+  event
+) {
+
+  if (
+    !Array.isArray(
+      event.ticketOptions
+    )
+    ||
+    event.ticketOptions.length === 0
+  ) {
+
+    return "";
+
+  }
+
+
+  const rows =
+    event.ticketOptions
+      .map(
+        option => {
+
+          const name =
+            option.name ||
+            "チケット";
+
+
+          const type =
+            option.type || "";
+
+
+          const status =
+            option.status || "";
+
+
+          const price =
+            option.price || "";
+
+
+          return `
+
+            <div class="ticket-option">
+
+              <div class="ticket-option-name">
+                ${escapeHtml(
+                  name
+                )}
+              </div>
+
+              <div class="ticket-option-detail">
+
+                ${
+                  type
+                  ?
+                  `
+                    <span class="ticket-type">
+                      ${escapeHtml(
+                        type
+                      )}
+                    </span>
+                  `
+                  :
+                  ""
+                }
+
+                ${
+                  status
+                  ?
+                  `
+                    <span
+                      class="
+                        ticket-status-pill
+                        ${ticketStatusClass(
+                          status
+                        )}
+                      "
+                    >
+                      ${escapeHtml(
+                        status
+                      )}
+                    </span>
+                  `
+                  :
+                  ""
+                }
+
+                ${
+                  price
+                  ?
+                  `
+                    <span class="ticket-price">
+                      ${escapeHtml(
+                        price
+                      )}
+                    </span>
+                  `
+                  :
+                  ""
+                }
+
+              </div>
+
+            </div>
+
+          `;
+
+        }
+      )
+      .join("");
+
+
+  return `
+
+    <div class="ticket-status-box">
+
+      <div class="ticket-status-header">
+        🎫 販売状況
+      </div>
+
+      ${rows}
+
+    </div>
+
+  `;
+
+}
+
+
+
+/* =========================================
    公演カード
 ========================================= */
 
@@ -3669,47 +4049,95 @@ function createEventCard(
       .join("");
 
 
-  let statusBadge = "";
+  let summaryStatusBadge = "";
 
 
   if (
-    event.ticketStatus ===
-    "残りわずか"
+    event.ticketOptions.length === 0
   ) {
 
-    statusBadge = `
+    if (
+      event.ticketStatus ===
+      "残りわずか"
+    ) {
 
-      <span
-        class="
-          small-badge
-          status-few
-        "
-      >
-        残りわずか
-      </span>
+      summaryStatusBadge = `
 
-    `;
+        <span
+          class="
+            small-badge
+            status-few
+          "
+        >
+          残りわずか
+        </span>
 
-  }
+      `;
+
+    }
 
 
-  if (
-    event.ticketStatus ===
-    "予定数終了"
-  ) {
+    else if (
+      event.ticketStatus ===
+      "予定数終了"
+    ) {
 
-    statusBadge = `
+      summaryStatusBadge = `
 
-      <span
-        class="
-          small-badge
-          status-ended
-        "
-      >
-        予定数終了
-      </span>
+        <span
+          class="
+            small-badge
+            status-ended
+          "
+        >
+          予定数終了
+        </span>
 
-    `;
+      `;
+
+    }
+
+
+    else if (
+      event.ticketStatus ===
+      "一部予定数終了"
+    ) {
+
+      summaryStatusBadge = `
+
+        <span
+          class="
+            small-badge
+            status-partial
+          "
+        >
+          一部予定数終了
+        </span>
+
+      `;
+
+    }
+
+
+    else if (
+      event.ticketStatus ===
+      "販売中"
+    ) {
+
+      summaryStatusBadge = `
+
+        <span
+          class="
+            small-badge
+            status-active
+          "
+        >
+          販売中
+        </span>
+
+      `;
+
+    }
 
   }
 
@@ -3843,7 +4271,7 @@ function createEventCard(
 
         ${sourceBadges}
 
-        ${statusBadge}
+        ${summaryStatusBadge}
 
         ${
           options.showSaleBadge
@@ -3985,6 +4413,11 @@ function createEventCard(
       }
 
 
+      ${createTicketOptionsHtml(
+        event
+      )}
+
+
       ${
         performerDetailText
         ?
@@ -4020,7 +4453,7 @@ function createEventCard(
 
 
 /* =========================================
-   お気に入りボタン
+   お気に入り
 ========================================= */
 
 document
