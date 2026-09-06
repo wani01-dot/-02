@@ -1,4 +1,4 @@
-name: Theater schedule probe
+name: Theater schedule test
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ permissions:
   contents: read
 
 jobs:
-  probe:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,7 +19,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install Python dependencies
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install playwright
@@ -28,17 +28,17 @@ jobs:
         run: |
           python -m playwright install chromium
 
-      - name: Run theater probe
+      - name: Run theater scraper
         run: |
-          python theater_probe.py
+          python theater_scraper.py
 
-      - name: Show result summary
+      - name: Show theater events
         run: |
-          echo "=== theater_probe.json ==="
-          cat theater_probe.json
+          echo "=== theater_events.json ==="
+          cat theater_events.json
 
-      - name: Upload probe result
+      - name: Upload theater events
         uses: actions/upload-artifact@v4
         with:
-          name: theater-probe-result
-          path: theater_probe.json
+          name: theater-events
+          path: theater_events.json
