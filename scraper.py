@@ -7,6 +7,7 @@ from urllib.parse import urlencode, urljoin
 import requests
 from bs4 import BeautifulSoup
 
+from eplus_scraper import scrape_eplus
 
 PERFORMERS_FILE = "performers.json"
 EVENTS_FILE = "events.json"
