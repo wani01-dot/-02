@@ -10,6 +10,7 @@ from bs4 import BeautifulSoup
 from eplus_scraper import scrape_eplus
 from livepocket_scraper import scrape_livepocket
 
+
 PERFORMERS_FILE = "performers.json"
 EVENTS_FILE = "events.json"
 NEW_EVENTS_FILE = "new_events.json"
@@ -47,6 +48,7 @@ def load_json(path, default):
     try:
         with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
+
     except (
         FileNotFoundError,
         json.JSONDecodeError,
@@ -285,6 +287,34 @@ def source_notification_key(event):
                 + match.group(1)
                 + "|"
                 + match.group(2)
+            )
+
+    if source == "eplus":
+        match = re.search(
+            r"/sf/detail/([^/?#]+)",
+            url,
+        )
+
+        if match:
+            return (
+                "eplus|"
+                + performer_id
+                + "|"
+                + match.group(1)
+            )
+
+    if source == "livepocket":
+        match = re.search(
+            r"/e/([^/?#]+)",
+            url,
+        )
+
+        if match:
+            return (
+                "livepocket|"
+                + performer_id
+                + "|"
+                + match.group(1)
             )
 
     return ""
@@ -3568,6 +3598,10 @@ def main():
     )
 
     print(
+        "FANY + TIGET + イープラス + LivePocket"
+    )
+
+    print(
         "券種別販売期間＋販売分類＋新着48時間版"
     )
 
@@ -3729,7 +3763,7 @@ def main():
             ],
         )
 
-                if "fany" in sources:
+        if "fany" in sources:
             try:
                 all_events.extend(
                     scrape_fany(
@@ -3789,7 +3823,7 @@ def main():
                     "LivePocketエラー:",
                     error,
                 )
-                
+
     # =====================================================
     # 過去公演除外
     # =====================================================
@@ -4005,6 +4039,38 @@ def main():
         )
     )
 
+    fany_count = sum(
+        1
+        for event in all_events
+        if event.get(
+            "source"
+        ) == "fany"
+    )
+
+    tiget_count = sum(
+        1
+        for event in all_events
+        if event.get(
+            "source"
+        ) == "tiget"
+    )
+
+    eplus_count = sum(
+        1
+        for event in all_events
+        if event.get(
+            "source"
+        ) == "eplus"
+    )
+
+    livepocket_count = sum(
+        1
+        for event in all_events
+        if event.get(
+            "source"
+        ) == "livepocket"
+    )
+
     print("")
     print(
         "================================"
@@ -4015,6 +4081,30 @@ def main():
         len(
             all_events
         ),
+    )
+
+    print(
+        "FANY公演:",
+        fany_count,
+        "件",
+    )
+
+    print(
+        "TIGET公演:",
+        tiget_count,
+        "件",
+    )
+
+    print(
+        "イープラス公演:",
+        eplus_count,
+        "件",
+    )
+
+    print(
+        "LivePocket公演:",
+        livepocket_count,
+        "件",
     )
 
     print(
