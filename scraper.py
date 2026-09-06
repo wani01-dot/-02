@@ -3758,7 +3758,22 @@ def main():
                     "TIGETエラー:",
                     error,
                 )
+                
+        if "eplus" in sources:
+            try:
+                all_events.extend(
+                    scrape_eplus(
+                        session,
+                        performer,
+                    )
+                )
 
+            except Exception as error:
+                print(
+                    "イープラスエラー:",
+                    error,
+                )
+                
     # =====================================================
     # 過去公演除外
     # =====================================================
