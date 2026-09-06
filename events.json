@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-06T17:13:08.731532+00:00",
+  "syncedAt": "2026-09-06T17:23:35.113579+00:00",
   "performers": [
     {
       "id": "maison",
@@ -2760,13 +2760,68 @@
       "venue": "よしもと幕張イオンモール劇場（千葉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61093/49713",
-      "ticketStatus": "",
-      "ticketOptions": [],
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "salePeriods": [],
-      "performersText": [],
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-17T12:00:00+09:00",
+              "saleKey": "fany|maison|61093|49713|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-17T12:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,300",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-17T12:00:00+09:00",
+              "saleKey": "fany|maison|61093|49713|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-17T12:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-08-05T10:00:00+09:00",
+      "saleEndAt": "2026-09-17T12:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-08-05T10:00:00+09:00",
+          "endAt": "2026-09-17T12:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "ななまがり",
+        "ヘンダーソン",
+        "相席スタート",
+        "ダンビラムーチョ",
+        "ミカボ",
+        "めぞん",
+        "ゼロカラン",
+        "他"
+      ],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
       "newUntil": "",
       "trackedPerformers": [
