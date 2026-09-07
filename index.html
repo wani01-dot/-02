@@ -1,4127 +1,4014 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
 
   <meta
     name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  />
 
-  <title>芸人出演カレンダー</title>
+  <meta
+    name="theme-color"
+    content="#f5f7fa"
+  />
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"
-  ></script>
+  <title>ワラいどっとこむ</title>
 
   <style>
+    :root {
+      --bg: #f4f6f9;
+      --card: #ffffff;
+      --text: #111827;
+      --sub: #687386;
+      --border: #e4e9f0;
+      --soft: #f1f4f8;
+
+      --maison: #e74c3c;
+      --pyuto: #f4c430;
+      --nansui: #3498db;
+
+      --accent: #1f6ed4;
+      --danger: #ed4d43;
+
+      --shadow:
+        0 7px 28px rgba(20, 32, 54, 0.06);
+
+      --radius: 20px;
+    }
 
     * {
       box-sizing: border-box;
     }
 
-    html,
-    body {
-      margin: 0;
-      min-height: 100%;
+    html {
+      -webkit-text-size-adjust: 100%;
+      background: var(--bg);
     }
 
     body {
-      background: #f3f4f6;
-      color: #222;
-
+      margin: 0;
+      background:
+        linear-gradient(
+          180deg,
+          #fafbfd 0,
+          #f3f5f8 100%
+        );
+      color: var(--text);
       font-family:
         -apple-system,
         BlinkMacSystemFont,
-        "Helvetica Neue",
+        "Hiragino Sans",
         "Yu Gothic",
-        "Hiragino Kaku Gothic ProN",
+        "Noto Sans JP",
         sans-serif;
     }
 
-    body.menu-open {
-      overflow: hidden;
+    button,
+    input {
+      font: inherit;
     }
 
+    button {
+      -webkit-tap-highlight-color: transparent;
+    }
 
-    /* =====================================
-       ヘッダー
-    ===================================== */
+    a {
+      color: inherit;
+    }
 
-    .topbar {
+    .app {
       width: 100%;
       max-width: 760px;
-
+      min-height: 100vh;
       margin: 0 auto;
+      padding:
+        calc(18px + env(safe-area-inset-top))
+        14px
+        calc(40px + env(safe-area-inset-bottom));
+    }
 
-      padding: 12px 10px 0;
+    /* ========================================
+       HEADER
+    ======================================== */
 
+    .app-header {
       display: flex;
-      align-items: flex-start;
-      gap: 10px;
+      align-items: center;
+      gap: 12px;
+      padding: 2px 10px 15px;
+    }
+
+    .brand-logo {
+      width: 55px;
+      height: 55px;
+      flex: 0 0 55px;
+    }
+
+    .brand-text {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .brand-title {
+      margin: 0;
+      font-size: clamp(25px, 7vw, 35px);
+      line-height: 1.05;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      white-space: nowrap;
+    }
+
+    .brand-subtitle {
+      margin-top: 5px;
+      color: #5f6c80;
+      font-size: 14px;
+      font-weight: 700;
     }
 
     .menu-button {
-      flex: 0 0 auto;
-
-      width: 42px;
-      height: 42px;
-
-      border: none;
-      border-radius: 12px;
-
-      background: white;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      font-size: 24px;
-
-      cursor: pointer;
-
-      box-shadow:
-        0 2px 10px
-        rgba(0,0,0,0.06);
-    }
-
-    .title-block {
-      min-width: 0;
-      padding-top: 1px;
-    }
-
-    .site-title {
-      margin: 0;
-
-      font-size: 22px;
-      line-height: 1.25;
-    }
-
-    .site-subtitle {
-      margin-top: 4px;
-
-      font-size: 13px;
-      color: #7b8492;
-    }
-
-
-    /* =====================================
-       ページ
-    ===================================== */
-
-    .wrapper {
-      width: 100%;
-      max-width: 760px;
-
-      margin: 0 auto;
-
-      padding: 12px 8px 50px;
-    }
-
-
-    /* =====================================
-       サイドメニュー
-    ===================================== */
-
-    .menu-overlay {
-      position: fixed;
-      inset: 0;
-
-      z-index: 9998;
-
-      background:
-        rgba(20, 32, 48, 0.48);
-
-      opacity: 0;
-      visibility: hidden;
-
-      transition:
-        opacity 0.22s ease,
-        visibility 0.22s ease;
-    }
-
-    .menu-overlay.open {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    .side-menu {
-      position: fixed;
-
-      top: 0;
-      left: 0;
-      bottom: 0;
-
-      z-index: 9999;
-
-      width: min(86vw, 355px);
-
-      background: #ffffff;
-
-      transform:
-        translateX(-104%);
-
-      transition:
-        transform 0.25s ease;
-
-      box-shadow:
-        8px 0 30px
-        rgba(0, 0, 0, 0.16);
-
-      overflow-y: auto;
-
-      -webkit-overflow-scrolling: touch;
-    }
-
-    .side-menu.open {
-      transform:
-        translateX(0);
-    }
-
-    .side-menu-inner {
-      padding:
-        max(18px, env(safe-area-inset-top))
-        18px
-        calc(18px + env(safe-area-inset-bottom));
-    }
-
-    .side-menu-close {
-      width: 42px;
-      height: 42px;
-
-      border: none;
-      background: transparent;
-
-      padding: 0;
-
-      margin-bottom: 8px;
-
-      font-size: 36px;
-      font-weight: 200;
-      line-height: 1;
-
-      color: #102039;
-
-      cursor: pointer;
-    }
-
-    .side-menu-title {
-      margin: 0;
-
-      font-size: 24px;
-      font-weight: 800;
-
-      color: #102039;
-    }
-
-    .side-menu-subtitle {
-      margin: 6px 0 18px;
-
-      font-size: 14px;
-
-      color: #7b8492;
-    }
-
-    .menu-section {
-      padding: 4px 0 14px;
-    }
-
-    .menu-section + .menu-section {
-      border-top:
-        1px solid
-        #e9edf2;
-
-      padding-top: 14px;
-    }
-
-    .side-menu-item {
-      width: 100%;
-
-      border: none;
-      background: transparent;
-
-      padding: 11px 12px;
-
-      border-radius: 14px;
-
-      display: flex;
-      align-items: center;
-      gap: 13px;
-
-      text-align: left;
-
-      color: #102039;
-
-      font-size: 16px;
-      font-weight: 700;
-
-      cursor: pointer;
-    }
-
-    .side-menu-item.active {
-      background: #e8f2ff;
-
-      color: #1677e8;
-    }
-
-    .menu-icon {
-      width: 28px;
-      flex: 0 0 28px;
-
-      text-align: center;
-
-      font-size: 22px;
-    }
-
-    .menu-label {
-      min-width: 0;
-      flex: 1;
-    }
-
-    .menu-badge {
-      min-width: 28px;
-      height: 28px;
-
-      padding: 0 8px;
-
-      border-radius: 999px;
-
-      display: none;
-      align-items: center;
-      justify-content: center;
-
-      background: #ee4169;
-      color: white;
-
-      font-size: 13px;
-      font-weight: 800;
-    }
-
-    .menu-badge.show {
-      display: flex;
-    }
-
-    .menu-version {
-      margin-top: 26px;
-
-      text-align: center;
-
-      color: #a1a9b5;
-
-      font-size: 12px;
-    }
-
-
-    /* =====================================
-       芸人フィルター
-    ===================================== */
-
-    .filters {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-
-      margin: 0 4px 14px;
-    }
-
-    .filter-button {
-      border: none;
-      border-radius: 100px;
-
-      padding: 8px 14px;
-
-      font-size: 14px;
-      font-weight: 700;
-
-      cursor: pointer;
-    }
-
-    .filter-button.off {
-      opacity: 0.25;
-    }
-
-    .maison {
-      background: #E74C3C;
-      color: white;
-    }
-
-    .pyuto {
-      background: #F4C430;
-      color: #111;
-    }
-
-    .nansui {
-      background: #3498DB;
-      color: white;
-    }
-
-
-    /* =====================================
-       カレンダー
-    ===================================== */
-
-    #calendar {
-      background: white;
-
-      padding: 8px;
-
-      border-radius: 14px;
-
-      box-shadow:
-        0 2px 12px
-        rgba(0,0,0,0.07);
-    }
-
-    .calendar-hidden {
-      display: none !important;
-    }
-
-    .fc .fc-toolbar-title {
-      font-size: 19px;
-    }
-
-    .fc .fc-button {
-      font-size: 13px;
-      padding: 5px 9px;
-    }
-
-    .fc-event {
-      border: none !important;
-
-      cursor: pointer;
-
-      font-size: 10px;
-      line-height: 1.3;
-
-      padding: 2px 3px;
-
-      border-radius: 5px;
-    }
-
-    .fc-daygrid-day-number {
-      color: #222;
-      text-decoration: none;
-    }
-
-    .fc-col-header-cell-cushion {
-      color: #555;
-      text-decoration: none;
-
-      font-size: 12px;
-    }
-
-
-    /* =====================================
-       詳細
-    ===================================== */
-
-    .detail-area {
-      margin-top: 18px;
-    }
-
-    #detail-title {
-      margin: 0 4px 10px;
-
-      font-size: 19px;
-      font-weight: 800;
-    }
-
-    .event-card {
-      position: relative;
-
-      background: white;
-
-      margin-bottom: 12px;
-
-      padding: 15px;
-
-      border-radius: 16px;
-
-      box-shadow:
-        0 2px 10px
-        rgba(0,0,0,0.06);
-    }
-
-    .favorite-button {
-      position: absolute;
-
-      top: 11px;
-      right: 11px;
-
-      width: 38px;
-      height: 38px;
-
-      border: none;
+      width: 48px;
+      height: 48px;
+      border: 0;
       border-radius: 50%;
-
-      background: #f4f6f8;
-
-      font-size: 24px;
+      background: transparent;
+      color: #1f2937;
+      font-size: 34px;
       line-height: 1;
-
-      color: #aeb5bd;
-
       cursor: pointer;
     }
 
-    .favorite-button.active {
-      color: #f1b900;
-      background: #fff8d7;
-    }
+    /* ========================================
+       LEGEND
+    ======================================== */
 
-
-    /* =====================================
-       バッジ
-    ===================================== */
-
-    .badge-row {
+    .legend {
       display: flex;
-      flex-wrap: wrap;
-      gap: 5px;
-
-      padding-right: 44px;
-
-      margin-bottom: 8px;
+      align-items: center;
+      gap: 16px;
+      overflow-x: auto;
+      padding: 14px 17px;
+      margin-bottom: 14px;
+      border: 1px solid #edf0f4;
+      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.94);
+      box-shadow: var(--shadow);
+      scrollbar-width: none;
     }
 
-    .small-badge {
+    .legend::-webkit-scrollbar {
+      display: none;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex: 0 0 auto;
+      font-size: 16px;
+      font-weight: 800;
+    }
+
+    .legend-dot {
+      width: 27px;
+      height: 27px;
+      border-radius: 50%;
+      flex: 0 0 27px;
+    }
+
+    .legend-help {
+      padding-left: 15px;
+      border-left: 1px solid var(--border);
+      color: #697588;
+      white-space: nowrap;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    /* ========================================
+       CARD
+    ======================================== */
+
+    .surface {
+      border: 1px solid #edf0f4;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.97);
+      box-shadow: var(--shadow);
+    }
+
+    /* ========================================
+       CALENDAR
+    ======================================== */
+
+    .calendar-card {
+      padding: 10px 6px 8px;
+    }
+
+    .month-header {
+      display: grid;
+      grid-template-columns: 54px 1fr 54px;
+      align-items: center;
+      padding: 2px 5px 10px;
+    }
+
+    .month-title {
+      text-align: center;
+      font-size: clamp(25px, 7vw, 34px);
+      font-weight: 900;
+      letter-spacing: -0.03em;
+    }
+
+    .month-button {
+      width: 50px;
+      height: 50px;
+      border: 0;
+      border-radius: 50%;
+      background: #f3f5f8;
+      color: #132033;
+      font-size: 36px;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    .week-row,
+    .calendar-grid {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+    }
+
+    .week-row {
+      padding: 0 1px;
+    }
+
+    .weekday {
+      padding: 7px 0 10px;
+      text-align: center;
+      color: #526075;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .calendar-grid {
+      overflow: hidden;
+      border-top: 1px solid var(--border);
+      border-left: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .day-cell {
+      position: relative;
+      min-width: 0;
+      min-height: 104px;
+      padding: 8px 6px 5px;
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      background: #fff;
+      cursor: pointer;
+    }
+
+    .day-cell.other-month {
+      background: #fafbfc;
+      color: #b9c0ca;
+    }
+
+    .day-cell.selected {
+      z-index: 1;
+      background:
+        linear-gradient(
+          135deg,
+          #fff7f6,
+          #fffafa
+        );
+      box-shadow:
+        inset 0 0 0 1.5px #ffb7b2;
+    }
+
+    .day-number {
+      min-height: 25px;
+      font-size: 19px;
+      line-height: 1;
+      font-weight: 900;
+    }
+
+    .day-cell.selected .day-number {
+      color: #cf251d;
+    }
+
+    .performer-counts {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+      margin-top: 3px;
+    }
+
+    .performer-count {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      min-width: 0;
+      font-weight: 800;
+      font-size: 15px;
+    }
+
+    .mini-badge {
       display: inline-flex;
       align-items: center;
-
-      min-height: 24px;
-
-      padding: 4px 8px;
-
-      border-radius: 999px;
-
-      font-size: 11px;
-      font-weight: 800;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 1;
+      flex: 0 0 30px;
     }
 
-    .new-badge {
-      background: #ee4169;
-      color: white;
-    }
-
-    .source-fany {
-      background: #ffe8ef;
-      color: #dc315c;
-    }
-
-    .source-tiget {
-      background: #e6f3ff;
-      color: #1474c9;
-    }
-
-    .source-other {
-      background: #edf0f3;
-      color: #626b75;
-    }
-
-    .status-few {
-      background: #fff0f2;
-      color: #d82949;
-    }
-
-    .status-ended {
-      background: #edf0f4;
-      color: #59636e;
-    }
-
-    .status-active {
-      background: #eaf8ef;
-      color: #23733d;
-    }
-
-    .status-partial {
-      background: #fff4e6;
-      color: #b86500;
-    }
-
-    .sale-near {
-      background: #eee8ff;
-      color: #6b42d8;
-    }
-
-
-    /* =====================================
-       公演本文
-    ===================================== */
-
-    .event-date {
-      margin-bottom: 7px;
-
-      color: #777;
-
+    .day-total {
+      position: absolute;
+      right: 7px;
+      bottom: 6px;
+      color: #68758a;
       font-size: 13px;
       font-weight: 700;
     }
 
-    .performer-row {
+    /* ========================================
+       DAY EVENTS
+    ======================================== */
+
+    .day-section {
+      margin-top: 14px;
+      padding: 15px 10px 11px;
+    }
+
+    .day-section-head {
       display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 0 4px 12px;
+    }
+
+    .day-section-title {
+      margin: 0;
+      font-size: clamp(23px, 7vw, 32px);
+      line-height: 1;
+      font-weight: 900;
+      letter-spacing: -0.035em;
+    }
+
+    .day-section-count {
+      color: #657286;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .selected-label {
+      margin-left: auto;
+      padding: 10px 15px;
+      border-radius: 999px;
+      background: #fff0ef;
+      color: #ec4c43;
+      font-size: 13px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .event-list {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      background: #fff;
+    }
+
+    .event-row {
+      display: grid;
+      grid-template-columns: 78px auto 1fr 26px;
+      align-items: center;
+      gap: 8px;
+      min-height: 67px;
+      padding: 8px 8px;
+      border: 0;
+      border-bottom: 1px solid var(--border);
+      background: #fff;
+      width: 100%;
+      text-align: left;
+      color: var(--text);
+      cursor: pointer;
+    }
+
+    .event-row:last-child {
+      border-bottom: 0;
+    }
+
+    .event-time {
+      padding-left: 6px;
+      font-size: 17px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .event-badges {
+      display: flex;
+      gap: 5px;
       flex-wrap: wrap;
-      gap: 6px;
-
-      padding-right: 42px;
-
-      margin-bottom: 9px;
+      max-width: 75px;
     }
 
-    .performer-label {
-      display: inline-block;
-
-      border-radius: 100px;
-
-      padding: 4px 9px;
-
-      font-size: 12px;
-      font-weight: bold;
+    .event-badges .mini-badge {
+      width: 37px;
+      height: 37px;
+      flex-basis: 37px;
+      font-size: 15px;
     }
 
-    .label-maison {
-      background: #E74C3C;
-      color: white;
-    }
-
-    .label-pyuto {
-      background: #F4C430;
-      color: #111;
-    }
-
-    .label-nansui {
-      background: #3498DB;
-      color: white;
+    .event-main {
+      min-width: 0;
     }
 
     .event-title {
-      padding-right: 42px;
-
-      margin-bottom: 10px;
-
-      font-size: 16px;
-      font-weight: 800;
-      line-height: 1.5;
-    }
-
-    .event-info {
-      font-size: 14px;
-      line-height: 1.9;
-
-      color: #444;
-    }
-
-    .event-info-row {
-      display: flex;
-      align-items: flex-start;
-      gap: 7px;
-    }
-
-    .info-icon {
-      flex: 0 0 20px;
-    }
-
-
-    /* =====================================
-       販売状況
-    ===================================== */
-
-    .ticket-status-box {
-      margin-top: 13px;
-
-      border-radius: 14px;
-
-      background: #fafafa;
-
-      border:
-        1px solid
-        #eceff2;
-
       overflow: hidden;
+      margin-bottom: 3px;
+      font-size: 14px;
+      font-weight: 900;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
 
-    .ticket-status-header {
-      padding: 11px 12px;
-
-      background: #f5f6f8;
-
-      font-size: 13px;
-      font-weight: 800;
-
-      color: #4d5661;
+    .event-venue {
+      overflow: hidden;
+      color: #6f7b8e;
+      font-size: 12px;
+      font-weight: 600;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
 
-    .ticket-option {
-      padding: 12px;
-
-      border-top:
-        1px solid
-        #eceff2;
+    .event-arrow {
+      color: #758195;
+      font-size: 27px;
+      font-weight: 300;
     }
 
-    .ticket-option-name {
-      margin-bottom: 8px;
-
+    .view-all-button {
+      display: block;
+      width: 100%;
+      margin-top: 12px;
+      padding: 15px 12px;
+      border: 0;
+      border-radius: 999px;
+      background: #f2f4f7;
+      color: #172033;
       font-size: 15px;
-      font-weight: 800;
-
-      line-height: 1.4;
-    }
-
-    .ticket-option-detail {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 7px 10px;
-
-      font-size: 13px;
-      line-height: 1.5;
-    }
-
-    .ticket-type {
-      color: #666;
-    }
-
-    .ticket-price {
-      margin-left: auto;
-
-      font-size: 14px;
-      font-weight: 800;
-
-      color: #222;
-    }
-
-    .ticket-status-pill {
-      display: inline-flex;
-      align-items: center;
-
-      min-height: 24px;
-
-      padding: 4px 8px;
-
-      border-radius: 999px;
-
-      font-size: 11px;
-      font-weight: 800;
-    }
-
-    .ticket-status-pill.active {
-      background: #eaf8ef;
-      color: #23733d;
-    }
-
-    .ticket-status-pill.few {
-      background: #fff0f2;
-      color: #d82949;
-    }
-
-    .ticket-status-pill.ended {
-      background: #edf0f4;
-      color: #59636e;
-    }
-
-    .ticket-status-pill.other {
-      background: #eef2f7;
-      color: #53606e;
-    }
-
-    .ticket-sale-periods {
-      margin-top: 9px;
-
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-    }
-
-    .ticket-sale-period {
-      padding: 7px 8px;
-
-      border-radius: 9px;
-
-      background: #f7f4ff;
-
-      color: #5533af;
-
-      font-size: 12px;
-      line-height: 1.5;
-    }
-
-
-    /* =====================================
-       販売一覧
-    ===================================== */
-
-    .sale-section {
-      margin-bottom: 22px;
-    }
-
-    .sale-section-title {
-      margin: 0 4px 9px;
-
-      display: flex;
-      align-items: center;
-      gap: 8px;
-
-      font-size: 17px;
       font-weight: 900;
+      cursor: pointer;
     }
 
-    .sale-section-count {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-
-      min-width: 26px;
-      height: 26px;
-
-      padding: 0 8px;
-
-      border-radius: 999px;
-
-      background: #e9edf3;
-
-      color: #4c5867;
-
-      font-size: 12px;
-      font-weight: 800;
-    }
-
-    .sale-ticket-card {
-      background: white;
-
-      margin-bottom: 10px;
-
-      padding: 14px;
-
-      border-radius: 15px;
-
-      box-shadow:
-        0 2px 10px
-        rgba(0,0,0,0.06);
-    }
-
-    .sale-ticket-category {
-      display: inline-flex;
-      align-items: center;
-
-      margin-bottom: 8px;
-
-      padding: 4px 8px;
-
-      border-radius: 999px;
-
-      font-size: 11px;
-      font-weight: 900;
-    }
-
-    .sale-ticket-category.advance {
-      background: #ffe8f0;
-      color: #d52e62;
-    }
-
-    .sale-ticket-category.first-come {
-      background: #e8f2ff;
-      color: #176dcc;
-    }
-
-    .sale-ticket-category.started {
-      background: #eaf8ef;
-      color: #23733d;
-    }
-
-    .sale-ticket-title {
-      margin-bottom: 7px;
-
-      font-size: 16px;
-      font-weight: 900;
-      line-height: 1.45;
-    }
-
-    .sale-ticket-name {
-      margin-bottom: 8px;
-
-      font-size: 14px;
-      font-weight: 800;
-
-      color: #4c5663;
-    }
-
-    .sale-ticket-time {
-      margin-top: 8px;
-
-      padding: 9px 10px;
-
-      border-radius: 10px;
-
-      background: #f7f4ff;
-
-      color: #5533af;
-
-      font-size: 13px;
-      line-height: 1.55;
+    .empty-message {
+      padding: 27px 15px;
+      text-align: center;
+      color: #7c8797;
       font-weight: 700;
     }
 
-    .sale-ticket-meta {
-      margin-top: 8px;
+    /* ========================================
+       DRAWER
+    ======================================== */
 
-      font-size: 13px;
-      line-height: 1.7;
-
-      color: #555;
+    .drawer-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      visibility: hidden;
+      background: rgba(15, 23, 42, 0);
+      transition:
+        background 0.2s,
+        visibility 0.2s;
     }
 
-    .sale-ticket-link {
-      display: inline-flex;
+    .drawer-overlay.open {
+      visibility: visible;
+      background: rgba(15, 23, 42, 0.42);
+    }
+
+    .drawer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: min(82vw, 390px);
+      height: 100%;
+      overflow-y: auto;
+      padding:
+        calc(20px + env(safe-area-inset-top))
+        17px
+        calc(25px + env(safe-area-inset-bottom));
+      background: #fff;
+      transform: translateX(-102%);
+      transition: transform 0.23s ease;
+      box-shadow: 15px 0 40px rgba(15, 23, 42, 0.15);
+    }
+
+    .drawer-overlay.open .drawer {
+      transform: translateX(0);
+    }
+
+    .drawer-close {
+      width: 43px;
+      height: 43px;
+      border: 0;
+      border-radius: 50%;
+      background: #f3f5f7;
+      font-size: 25px;
+      cursor: pointer;
+    }
+
+    .drawer-title {
+      margin: 18px 6px 2px;
+      font-size: 25px;
+      font-weight: 900;
+    }
+
+    .drawer-subtitle {
+      margin: 0 6px 18px;
+      color: #6c788b;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .drawer-menu {
+      display: grid;
+      gap: 5px;
+    }
+
+    .drawer-item {
+      display: flex;
       align-items: center;
-      justify-content: center;
-
+      gap: 12px;
       width: 100%;
-
-      margin-top: 11px;
-
-      padding: 10px;
-
-      border-radius: 11px;
-
-      background: #e83e6d;
-
-      color: white;
-
-      font-size: 13px;
-      font-weight: 800;
-
-      text-decoration: none;
-    }
-
-
-    /* =====================================
-       出演者など
-    ===================================== */
-
-    .performer-detail-box {
-      margin-top: 12px;
-
-      padding: 11px 12px;
-
+      padding: 13px 12px;
+      border: 0;
       border-radius: 12px;
-
-      background: #f7f8fa;
-    }
-
-    .performer-detail-title {
-      margin-bottom: 5px;
-
-      font-size: 12px;
+      background: transparent;
+      color: #1b2535;
+      text-align: left;
       font-weight: 800;
-
-      color: #69727c;
+      cursor: pointer;
     }
 
-    .performer-detail-text {
-      font-size: 14px;
-      line-height: 1.65;
-
-      color: #333;
-
-      word-break: break-word;
+    .drawer-item.active {
+      background: #edf5ff;
+      color: #1669c9;
     }
 
-    .sale-info-box {
-      margin-top: 11px;
+    .drawer-icon {
+      width: 23px;
+      text-align: center;
+      font-size: 19px;
+    }
 
-      padding: 10px 12px;
+    .drawer-badge {
+      min-width: 24px;
+      margin-left: auto;
+      padding: 3px 7px;
+      border-radius: 999px;
+      background: #f35467;
+      color: #fff;
+      text-align: center;
+      font-size: 11px;
+      font-weight: 900;
+    }
 
-      border-radius: 12px;
+    .drawer-divider {
+      height: 1px;
+      margin: 8px 3px;
+      background: var(--border);
+    }
 
-      background: #f7f4ff;
+    .drawer-version {
+      padding: 20px 8px 0;
+      color: #9aa3af;
+      font-size: 11px;
+    }
 
-      color: #5533af;
+    /* ========================================
+       GENERIC PAGE
+    ======================================== */
 
+    .page-section {
+      display: none;
+      padding: 17px;
+    }
+
+    .page-section.show {
+      display: block;
+    }
+
+    .page-title {
+      margin: 0 0 16px;
+      font-size: 26px;
+      font-weight: 900;
+    }
+
+    .page-subtitle {
+      margin: -9px 0 17px;
+      color: #748094;
       font-size: 13px;
       line-height: 1.6;
     }
 
-    .event-link {
+    .content-card {
+      padding: 14px;
+      margin-bottom: 10px;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      background: #fff;
+    }
+
+    .content-card-title {
+      margin-bottom: 6px;
+      font-size: 15px;
+      font-weight: 900;
+    }
+
+    .content-card-sub {
+      color: #6d798b;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 14px 16px;
+      margin-bottom: 15px;
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      outline: none;
+      background: #fff;
+      font-size: 16px;
+    }
+
+    .section-label {
+      margin: 18px 0 9px;
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    .source-pill,
+    .status-pill,
+    .performer-pill {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-
-      width: 100%;
-
-      margin-top: 12px;
-
-      padding: 11px;
-
-      border-radius: 12px;
-
-      background: #1677e8;
-
-      color: white;
-
-      font-size: 14px;
-      font-weight: 800;
-
-      text-decoration: none;
-    }
-
-    .event-link.fany-link {
-      background: #e83e6d;
-    }
-
-    .event-link + .event-link {
-      margin-top: 7px;
-    }
-
-    .empty {
-      padding: 14px;
-
-      background: white;
-
-      border-radius: 12px;
-
-      font-size: 14px;
-      color: #777;
-    }
-
-
-    /* =====================================
-       検索など
-    ===================================== */
-
-    .tool-card {
-      background: white;
-
-      padding: 16px;
-
-      margin-bottom: 12px;
-
-      border-radius: 14px;
-
-      box-shadow:
-        0 2px 10px
-        rgba(0,0,0,0.06);
-    }
-
-    .tool-label {
-      display: block;
-
-      margin-bottom: 7px;
-
-      font-size: 13px;
-      font-weight: 700;
-
-      color: #666;
-    }
-
-    .text-input {
-      width: 100%;
-
-      border:
-        1px solid
-        #d9dfe7;
-
-      border-radius: 12px;
-
-      padding: 12px;
-
-      font-size: 16px;
-
-      background: white;
-
-      outline: none;
-    }
-
-    .text-input:focus {
-      border-color: #1677e8;
-    }
-
-    .primary-button {
-      width: 100%;
-
-      margin-top: 10px;
-
-      border: none;
-      border-radius: 12px;
-
-      padding: 12px 14px;
-
-      background: #1677e8;
-
-      color: white;
-
-      font-size: 15px;
-      font-weight: 800;
-
-      cursor: pointer;
-    }
-
-    .danger-button {
-      width: 100%;
-
-      margin-top: 10px;
-
-      border: none;
-      border-radius: 12px;
-
-      padding: 12px 14px;
-
-      background: #fff0f2;
-
-      color: #d72645;
-
-      font-size: 15px;
-      font-weight: 800;
-
-      cursor: pointer;
-    }
-
-    .checkbox-row {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-
-      padding: 12px 4px;
-
-      border-bottom:
-        1px solid
-        #eef1f4;
-
-      font-size: 15px;
-      font-weight: 700;
-    }
-
-    .checkbox-row:last-child {
-      border-bottom: none;
-    }
-
-    .checkbox-row input {
-      width: 20px;
-      height: 20px;
-    }
-
-    .performer-list-item {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-
-      padding: 12px 4px;
-
-      border-bottom:
-        1px solid
-        #eef1f4;
-
-      cursor: pointer;
-    }
-
-    .performer-list-item:last-child {
-      border-bottom: none;
-    }
-
-    .performer-list-name {
-      flex: 1;
-
-      font-size: 16px;
-      font-weight: 800;
-    }
-
-    .performer-count {
-      font-size: 13px;
-      color: #777;
-    }
-
-    .help-title {
-      margin: 14px 0 5px;
-
-      font-size: 15px;
-      font-weight: 800;
-    }
-
-    .help-text {
-      margin: 0;
-
-      font-size: 14px;
-      line-height: 1.7;
-
-      color: #555;
-    }
-
-
-    /* =====================================
-       更新日時
-    ===================================== */
-
-    #synced {
-      margin-top: 12px;
-
-      padding-right: 4px;
-
-      text-align: right;
-
+      padding: 5px 9px;
+      border-radius: 999px;
       font-size: 11px;
-      color: #999;
+      font-weight: 900;
     }
 
+    .source-pill {
+      background: #eef2f6;
+      color: #3f4b5e;
+    }
 
-    @media(max-width: 520px) {
+    .status-pill {
+      background: #fff0ef;
+      color: #d93f36;
+    }
 
-      .topbar {
+    .performer-pill {
+      color: #fff;
+    }
+
+    .result-row {
+      width: 100%;
+      padding: 13px;
+      margin-bottom: 8px;
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      background: #fff;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .result-date {
+      margin-bottom: 4px;
+      color: #667286;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .result-title {
+      font-size: 15px;
+      font-weight: 900;
+    }
+
+    .result-sub {
+      margin-top: 4px;
+      color: #758094;
+      font-size: 12px;
+    }
+
+    .settings-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      padding: 15px 3px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .settings-row:last-child {
+      border-bottom: 0;
+    }
+
+    .toggle {
+      width: 52px;
+      height: 31px;
+      position: relative;
+      border: 0;
+      border-radius: 999px;
+      background: #d7dce3;
+      cursor: pointer;
+    }
+
+    .toggle::after {
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: #fff;
+      content: "";
+      box-shadow: 0 2px 5px rgba(0,0,0,.15);
+      transition: .18s;
+    }
+
+    .toggle.on {
+      background: #3183df;
+    }
+
+    .toggle.on::after {
+      left: 24px;
+    }
+
+    /* ========================================
+       DETAIL SHEET
+    ======================================== */
+
+    .sheet-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 150;
+      display: none;
+      align-items: flex-end;
+      justify-content: center;
+      background: rgba(15, 23, 42, 0.44);
+    }
+
+    .sheet-overlay.open {
+      display: flex;
+    }
+
+    .sheet {
+      width: 100%;
+      max-width: 760px;
+      max-height: 88vh;
+      overflow-y: auto;
+      padding:
+        22px 18px
+        calc(28px + env(safe-area-inset-bottom));
+      border-radius: 25px 25px 0 0;
+      background: #fff;
+      box-shadow:
+        0 -15px 50px rgba(15, 23, 42, 0.14);
+    }
+
+    .sheet-handle {
+      width: 48px;
+      height: 5px;
+      margin: -8px auto 17px;
+      border-radius: 999px;
+      background: #cdd3db;
+    }
+
+    .sheet-close {
+      float: right;
+      width: 41px;
+      height: 41px;
+      border: 0;
+      border-radius: 50%;
+      background: #f1f3f6;
+      font-size: 23px;
+      cursor: pointer;
+    }
+
+    .sheet-title {
+      clear: none;
+      padding-right: 50px;
+      font-size: 24px;
+      line-height: 1.35;
+      font-weight: 900;
+    }
+
+    .sheet-meta {
+      margin-top: 11px;
+      color: #606d80;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .sheet-block {
+      margin-top: 20px;
+      padding-top: 17px;
+      border-top: 1px solid var(--border);
+    }
+
+    .sheet-block-title {
+      margin-bottom: 9px;
+      font-size: 16px;
+      font-weight: 900;
+    }
+
+    .ticket-option {
+      padding: 11px;
+      margin-bottom: 8px;
+      border-radius: 12px;
+      background: #f7f8fa;
+    }
+
+    .source-link {
+      display: block;
+      margin-top: 8px;
+      padding: 12px;
+      border-radius: 11px;
+      background: #edf5ff;
+      color: #176ac7;
+      text-decoration: none;
+      font-weight: 900;
+    }
+
+    .favorite-button {
+      width: 100%;
+      padding: 14px;
+      margin-top: 18px;
+      border: 1px solid #e2e6ec;
+      border-radius: 999px;
+      background: #fff;
+      color: #1b2535;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .favorite-button.active {
+      border-color: #ffd56a;
+      background: #fff8dd;
+    }
+
+    /* ========================================
+       DESKTOP / LARGE PHONE
+    ======================================== */
+
+    @media (min-width: 600px) {
+      .day-cell {
+        min-height: 120px;
+      }
+
+      .event-title {
+        font-size: 15px;
+      }
+
+      .calendar-card {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      .app {
         padding-left: 8px;
         padding-right: 8px;
       }
 
-      .wrapper {
-        padding-left: 6px;
-        padding-right: 6px;
+      .legend {
+        gap: 11px;
+        padding-left: 11px;
+        padding-right: 11px;
       }
 
-      #calendar {
-        padding: 5px;
+      .legend-help {
+        display: none;
       }
 
-      .fc .fc-toolbar-title {
-        font-size: 17px;
+      .day-cell {
+        min-height: 94px;
+        padding-left: 4px;
+        padding-right: 4px;
       }
 
-      .fc-event {
-        font-size: 9px;
+      .mini-badge {
+        width: 27px;
+        height: 27px;
+        flex-basis: 27px;
+        font-size: 12px;
       }
 
+      .performer-count {
+        gap: 3px;
+        font-size: 13px;
+      }
+
+      .event-row {
+        grid-template-columns: 63px auto 1fr 21px;
+        gap: 5px;
+      }
+
+      .event-time {
+        padding-left: 2px;
+        font-size: 15px;
+      }
+
+      .event-badges .mini-badge {
+        width: 32px;
+        height: 32px;
+        flex-basis: 32px;
+      }
     }
-
   </style>
 </head>
 
-
 <body>
 
+  <main class="app">
 
-<div
-  id="menu-overlay"
-  class="menu-overlay"
-></div>
+    <!-- ======================================
+         HEADER
+    ======================================= -->
 
+    <header class="app-header">
 
-<aside
-  id="side-menu"
-  class="side-menu"
-  aria-hidden="true"
->
-
-  <div class="side-menu-inner">
-
-    <button
-      id="side-menu-close"
-      class="side-menu-close"
-      type="button"
-    >
-      ×
-    </button>
-
-
-    <h2 class="side-menu-title">
-      ライブカレンダー
-    </h2>
-
-
-    <div class="side-menu-subtitle">
-      今日のライブ追いかけよう
-    </div>
-
-
-    <div class="menu-section">
-
-      <button
-        class="side-menu-item active"
-        data-menu="calendar"
+      <svg
+        class="brand-logo"
+        viewBox="0 0 100 100"
+        aria-hidden="true"
       >
-        <span class="menu-icon">📅</span>
-        <span class="menu-label">カレンダー</span>
-      </button>
+        <circle
+          cx="50"
+          cy="53"
+          r="37"
+          fill="#fff"
+          stroke="#111827"
+          stroke-width="0"
+        />
 
+        <path
+          d="M15 49C15 20 34 9 52 9c22 0 35 13 36 33-12-2-25-8-34-17-8 12-20 20-39 24z"
+          fill="#101827"
+        />
 
-      <button
-        class="side-menu-item"
-        data-menu="new"
-      >
-        <span class="menu-icon">✨</span>
-        <span class="menu-label">新着ライブ</span>
+        <circle cx="36" cy="52" r="5" fill="#101827"/>
+        <circle cx="65" cy="52" r="5" fill="#101827"/>
 
-        <span
-          id="new-live-badge"
-          class="menu-badge"
-        >
-          0
-        </span>
-      </button>
+        <path
+          d="M37 70c8 8 19 8 27 0"
+          fill="none"
+          stroke="#101827"
+          stroke-width="6"
+          stroke-linecap="round"
+        />
+      </svg>
 
+      <div class="brand-text">
+        <h1 class="brand-title">
+          ワラいどっとこむ
+        </h1>
 
-      <button
-        class="side-menu-item"
-        data-menu="favorite"
-      >
-        <span class="menu-icon">⭐</span>
-        <span class="menu-label">行きたいライブ</span>
-
-        <span
-          id="favorite-badge"
-          class="menu-badge"
-        >
-          0
-        </span>
-      </button>
-
-
-      <button
-        class="side-menu-item"
-        data-menu="sale"
-      >
-        <span class="menu-icon">🎫</span>
-        <span class="menu-label">販売開始が近いもの</span>
-
-        <span
-          id="sale-badge"
-          class="menu-badge"
-        >
-          0
-        </span>
-      </button>
-
-    </div>
-
-
-    <div class="menu-section">
-
-      <button
-        class="side-menu-item"
-        data-menu="search"
-      >
-        <span class="menu-icon">🔍</span>
-        <span class="menu-label">ライブを検索</span>
-      </button>
-
-
-      <button
-        class="side-menu-item"
-        data-menu="performers"
-      >
-        <span class="menu-icon">👥</span>
-        <span class="menu-label">出演者一覧</span>
-      </button>
-
-
-      <button
-        class="side-menu-item"
-        data-menu="coappearance"
-      >
-        <span class="menu-icon">🎭</span>
-        <span class="menu-label">共演検索</span>
-      </button>
-
-    </div>
-
-
-    <div class="menu-section">
-
-      <button
-        class="side-menu-item"
-        data-menu="settings"
-      >
-        <span class="menu-icon">⚙️</span>
-        <span class="menu-label">設定</span>
-      </button>
-
-
-      <button
-        class="side-menu-item"
-        data-menu="help"
-      >
-        <span class="menu-icon">❔</span>
-        <span class="menu-label">ヘルプ・使い方</span>
-      </button>
-
-    </div>
-
-
-    <div class="menu-version">
-      v2.3.0
-    </div>
-
-  </div>
-
-</aside>
-
-
-
-<header class="topbar">
-
-  <button
-    id="menu-button"
-    class="menu-button"
-    type="button"
-  >
-    ☰
-  </button>
-
-
-  <div class="title-block">
-
-    <h1 class="site-title">
-      🎙 芸人出演カレンダー
-    </h1>
-
-    <div class="site-subtitle">
-      今日のライブ追いかけよう
-    </div>
-
-  </div>
-
-</header>
-
-
-
-<div class="wrapper">
-
-
-  <div class="filters">
-
-    <button
-      class="filter-button maison"
-      data-performer="maison"
-    >
-      めぞん
-    </button>
-
-
-    <button
-      class="filter-button pyuto"
-      data-performer="pyuto"
-    >
-      ピュート
-    </button>
-
-
-    <button
-      class="filter-button nansui"
-      data-performer="nansui"
-    >
-      軟水
-    </button>
-
-  </div>
-
-
-  <div id="calendar"></div>
-
-
-  <div class="detail-area">
-
-    <div id="detail-title">
-      公演情報
-    </div>
-
-    <div id="detail-list">
-
-      <div class="empty">
-        日付またはライブをタップすると詳細が表示されます。
+        <div class="brand-subtitle">
+          お笑いライブのスケジュール
+        </div>
       </div>
 
+      <button
+        id="menuButton"
+        class="menu-button"
+        aria-label="メニュー"
+      >
+        ☰
+      </button>
+
+    </header>
+
+    <!-- ======================================
+         LEGEND
+    ======================================= -->
+
+    <div
+      id="legend"
+      class="legend"
+    ></div>
+
+    <!-- ======================================
+         CALENDAR VIEW
+    ======================================= -->
+
+    <div id="calendarView">
+
+      <section class="surface calendar-card">
+
+        <div class="month-header">
+
+          <button
+            id="prevMonth"
+            class="month-button"
+            aria-label="前の月"
+          >
+            ‹
+          </button>
+
+          <div
+            id="monthTitle"
+            class="month-title"
+          ></div>
+
+          <button
+            id="nextMonth"
+            class="month-button"
+            aria-label="次の月"
+          >
+            ›
+          </button>
+
+        </div>
+
+        <div class="week-row">
+          <div class="weekday">月</div>
+          <div class="weekday">火</div>
+          <div class="weekday">水</div>
+          <div class="weekday">木</div>
+          <div class="weekday">金</div>
+          <div class="weekday">土</div>
+          <div class="weekday">日</div>
+        </div>
+
+        <div
+          id="calendarGrid"
+          class="calendar-grid"
+        ></div>
+
+      </section>
+
+      <section
+        id="daySection"
+        class="surface day-section"
+      ></section>
+
     </div>
+
+    <!-- ======================================
+         OTHER PAGES
+    ======================================= -->
+
+    <section
+      id="pageSection"
+      class="surface page-section"
+    ></section>
+
+  </main>
+
+  <!-- ========================================
+       DRAWER
+  ========================================= -->
+
+  <div
+    id="drawerOverlay"
+    class="drawer-overlay"
+  >
+
+    <aside
+      id="drawer"
+      class="drawer"
+    >
+
+      <button
+        id="drawerClose"
+        class="drawer-close"
+      >
+        ×
+      </button>
+
+      <div class="drawer-title">
+        ワラいどっとこむ
+      </div>
+
+      <div class="drawer-subtitle">
+        今日のライブ追いかけよう
+      </div>
+
+      <div class="drawer-menu">
+
+        <button
+          class="drawer-item active"
+          data-page="calendar"
+        >
+          <span class="drawer-icon">▣</span>
+          カレンダー
+        </button>
+
+        <button
+          class="drawer-item"
+          data-page="new"
+        >
+          <span class="drawer-icon">✨</span>
+          新着ライブ
+          <span
+            id="newBadge"
+            class="drawer-badge"
+          >0</span>
+        </button>
+
+        <button
+          class="drawer-item"
+          data-page="favorites"
+        >
+          <span class="drawer-icon">⭐</span>
+          行きたいライブ
+          <span
+            id="favoriteBadge"
+            class="drawer-badge"
+          >0</span>
+        </button>
+
+        <button
+          class="drawer-item"
+          data-page="sales"
+        >
+          <span class="drawer-icon">🎫</span>
+          販売開始が近いもの
+          <span
+            id="saleBadge"
+            class="drawer-badge"
+          >0</span>
+        </button>
+
+        <div class="drawer-divider"></div>
+
+        <button
+          class="drawer-item"
+          data-page="search"
+        >
+          <span class="drawer-icon">⌕</span>
+          ライブを検索
+        </button>
+
+        <button
+          class="drawer-item"
+          data-page="performers"
+        >
+          <span class="drawer-icon">♟</span>
+          出演者一覧
+        </button>
+
+        <button
+          class="drawer-item"
+          data-page="coappearance"
+        >
+          <span class="drawer-icon">🎭</span>
+          共演検索
+        </button>
+
+        <div class="drawer-divider"></div>
+
+        <button
+          class="drawer-item"
+          data-page="settings"
+        >
+          <span class="drawer-icon">⚙</span>
+          設定
+        </button>
+
+        <button
+          class="drawer-item"
+          data-page="help"
+        >
+          <span class="drawer-icon">?</span>
+          ヘルプ・使い方
+        </button>
+
+      </div>
+
+      <div class="drawer-version">
+        v2.4.0
+      </div>
+
+    </aside>
 
   </div>
 
+  <!-- ========================================
+       DETAIL SHEET
+  ========================================= -->
 
-  <div id="synced"></div>
+  <div
+    id="sheetOverlay"
+    class="sheet-overlay"
+  >
 
-</div>
+    <div
+      id="sheet"
+      class="sheet"
+    ></div>
 
-
+  </div>
 
 <script>
+(() => {
 
+  /* =========================================
+     基本設定
+  ========================================= */
 
-/* =========================================
-   芸人
-========================================= */
+  const DEFAULT_PERFORMERS = [
+    {
+      id: "maison",
+      name: "めぞん",
+      color: "#E74C3C",
+      short: "め",
+    },
+    {
+      id: "pyuto",
+      name: "ピュート",
+      color: "#F4C430",
+      short: "ピ",
+    },
+    {
+      id: "nansui",
+      name: "軟水",
+      color: "#3498DB",
+      short: "軟",
+    },
+  ];
 
-const performerMap = {
+  const WEEKDAYS = [
+    "日",
+    "月",
+    "火",
+    "水",
+    "木",
+    "金",
+    "土",
+  ];
 
-  maison: {
-    name: "めぞん",
-    color: "#E74C3C",
-    textColor: "#FFFFFF",
-    className: "label-maison"
-  },
+  const FAVORITES_KEY =
+    "warai-dot-com-favorites";
 
-  pyuto: {
-    name: "ピュート",
-    color: "#F4C430",
-    textColor: "#111111",
-    className: "label-pyuto"
-  },
+  const VISIBLE_KEY =
+    "warai-dot-com-visible-performers";
 
-  nansui: {
-    name: "軟水",
-    color: "#3498DB",
-    textColor: "#FFFFFF",
-    className: "label-nansui"
-  }
+  const SALE_NEAR_DAYS = 7;
+  const SALE_STARTED_DAYS = 5;
 
-};
+  let rawEvents = [];
+  let groups = [];
 
+  let performers = [
+    ...DEFAULT_PERFORMERS
+  ];
 
+  let performerMap = {};
 
-/* =========================================
-   状態
-========================================= */
-
-const enabledPerformers =
-  new Set([
-    "maison",
-    "pyuto",
-    "nansui"
-  ]);
-
-
-let allEvents = [];
-
-let calendar;
-
-let currentView =
-  "calendar";
-
-
-const SALE_NEAR_DAYS = 7;
-
-const SALE_STARTED_DAYS = 5;
-
-
-
-/* =========================================
-   お気に入り
-========================================= */
-
-const FAVORITE_STORAGE_KEY =
-  "live-calendar-favorites-v1";
-
-
-function loadFavorites() {
-
-  try {
-
-    const raw =
-      localStorage.getItem(
-        FAVORITE_STORAGE_KEY
-      );
-
-
-    const data =
-      raw
-      ?
-      JSON.parse(raw)
-      :
-      [];
-
-
-    return new Set(
-      Array.isArray(data)
-      ?
-      data
-      :
-      []
+  let favorites =
+    new Set(
+      readStorageArray(
+        FAVORITES_KEY
+      )
     );
 
-  }
-
-  catch {
-
-    return new Set();
-
-  }
-
-}
-
-
-let favoriteKeys =
-  loadFavorites();
-
-
-function saveFavorites() {
-
-  localStorage.setItem(
-    FAVORITE_STORAGE_KEY,
-    JSON.stringify(
-      Array.from(
-        favoriteKeys
+  let visiblePerformers =
+    new Set(
+      readStorageArray(
+        VISIBLE_KEY
       )
+    );
+
+  let currentMonth =
+    new Date(
+      new Date().getFullYear(),
+      new Date().getMonth(),
+      1
+    );
+
+  let selectedDate =
+    formatDateKey(
+      new Date()
+    );
+
+  let currentPage =
+    "calendar";
+
+  let dayExpanded =
+    false;
+
+
+  /* =========================================
+     DOM
+  ========================================= */
+
+  const legend =
+    document.getElementById(
+      "legend"
+    );
+
+  const monthTitle =
+    document.getElementById(
+      "monthTitle"
+    );
+
+  const calendarGrid =
+    document.getElementById(
+      "calendarGrid"
+    );
+
+  const daySection =
+    document.getElementById(
+      "daySection"
+    );
+
+  const calendarView =
+    document.getElementById(
+      "calendarView"
+    );
+
+  const pageSection =
+    document.getElementById(
+      "pageSection"
+    );
+
+  const drawerOverlay =
+    document.getElementById(
+      "drawerOverlay"
+    );
+
+  const sheetOverlay =
+    document.getElementById(
+      "sheetOverlay"
+    );
+
+  const sheet =
+    document.getElementById(
+      "sheet"
+    );
+
+
+  /* =========================================
+     UTIL
+  ========================================= */
+
+  function escapeHtml(value) {
+    return String(
+      value ?? ""
     )
-  );
-
-
-  updateFavoriteBadge();
-
-}
-
-
-function makeEventKey(event) {
-
-  return [
-
-    event.date || "",
-
-    event.startTime || "",
-
-    normalizeText(
-      event.title || ""
-    ),
-
-    normalizeText(
-      event.venue || ""
-    )
-
-  ].join("|");
-
-}
-
-
-
-/* =========================================
-   サイドメニュー
-========================================= */
-
-const menuButton =
-  document.getElementById(
-    "menu-button"
-  );
-
-const sideMenu =
-  document.getElementById(
-    "side-menu"
-  );
-
-const menuOverlay =
-  document.getElementById(
-    "menu-overlay"
-  );
-
-const sideMenuClose =
-  document.getElementById(
-    "side-menu-close"
-  );
-
-
-function openSideMenu() {
-
-  sideMenu.classList.add(
-    "open"
-  );
-
-  menuOverlay.classList.add(
-    "open"
-  );
-
-  document.body.classList.add(
-    "menu-open"
-  );
-
-}
-
-
-function closeSideMenu() {
-
-  sideMenu.classList.remove(
-    "open"
-  );
-
-  menuOverlay.classList.remove(
-    "open"
-  );
-
-  document.body.classList.remove(
-    "menu-open"
-  );
-
-}
-
-
-menuButton.addEventListener(
-  "click",
-  openSideMenu
-);
-
-
-sideMenuClose.addEventListener(
-  "click",
-  closeSideMenu
-);
-
-
-menuOverlay.addEventListener(
-  "click",
-  closeSideMenu
-);
-
-
-document.addEventListener(
-  "keydown",
-  event => {
-
-    if (
-      event.key ===
-      "Escape"
-    ) {
-
-      closeSideMenu();
-
-    }
-
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
   }
-);
 
 
-function setActiveMenu(
-  menuName
-) {
-
-  currentView =
-    menuName;
-
-
-  document
-    .querySelectorAll(
-      ".side-menu-item"
+  function clean(value) {
+    return String(
+      value ?? ""
     )
-    .forEach(
-      button => {
+      .replace(/\s+/g, " ")
+      .trim();
+  }
 
-        button.classList.toggle(
-          "active",
-          button.dataset.menu ===
-          menuName
+
+  function normalizeTitle(value) {
+    return clean(value)
+      .toLowerCase()
+      .replace(
+        /[ 　「」『』【】・！!？?：:〜～]/g,
+        ""
+      );
+  }
+
+
+  function normalizeVenue(value) {
+    return clean(value)
+      .toLowerCase()
+      .replace(/[ 　]/g, "");
+  }
+
+
+  function readStorageArray(key) {
+    try {
+      const value =
+        JSON.parse(
+          localStorage.getItem(
+            key
+          ) || "[]"
         );
 
+      return Array.isArray(value)
+        ? value
+        : [];
+
+    } catch {
+      return [];
+    }
+  }
+
+
+  function saveFavorites() {
+    localStorage.setItem(
+      FAVORITES_KEY,
+      JSON.stringify(
+        [...favorites]
+      )
+    );
+  }
+
+
+  function saveVisible() {
+    localStorage.setItem(
+      VISIBLE_KEY,
+      JSON.stringify(
+        [...visiblePerformers]
+      )
+    );
+  }
+
+
+  function formatDateKey(date) {
+    const y =
+      date.getFullYear();
+
+    const m =
+      String(
+        date.getMonth() + 1
+      ).padStart(2, "0");
+
+    const d =
+      String(
+        date.getDate()
+      ).padStart(2, "0");
+
+    return `${y}-${m}-${d}`;
+  }
+
+
+  function parseDateKey(value) {
+    const match =
+      /^(\d{4})-(\d{2})-(\d{2})$/
+        .exec(value);
+
+    if (!match) {
+      return null;
+    }
+
+    return new Date(
+      Number(match[1]),
+      Number(match[2]) - 1,
+      Number(match[3])
+    );
+  }
+
+
+  function getPerformer(id) {
+    return performerMap[id] || {
+      id,
+      name: id,
+      color: "#8993a3",
+      short: String(id)
+        .slice(0, 1),
+    };
+  }
+
+
+  function sourceLabel(source) {
+    const map = {
+      fany: "FANY",
+      tiget: "TIGET",
+      eplus: "イープラス",
+      livepocket: "LivePocket",
+      theater: "劇場公式",
+    };
+
+    return map[source]
+      || String(source || "").toUpperCase();
+  }
+
+
+  function unique(values) {
+    return [
+      ...new Set(
+        values.filter(Boolean)
+      )
+    ];
+  }
+
+
+  /* =========================================
+     データ読み込み
+  ========================================= */
+
+  async function loadData() {
+
+    try {
+      const response =
+        await fetch(
+          `events.json?t=${Date.now()}`,
+          {
+            cache: "no-store",
+          }
+        );
+
+      if (!response.ok) {
+        throw new Error(
+          `events.json ${response.status}`
+        );
+      }
+
+      const data =
+        await response.json();
+
+      rawEvents =
+        Array.isArray(data)
+          ? data
+          : (
+              Array.isArray(data.events)
+                ? data.events
+                : []
+            );
+
+      const configPerformers =
+        Array.isArray(data.performers)
+          ? data.performers
+          : [];
+
+      performers =
+        DEFAULT_PERFORMERS.map(
+          fallback => {
+
+            const found =
+              configPerformers.find(
+                item =>
+                  item.id ===
+                  fallback.id
+              );
+
+            return {
+              ...fallback,
+              ...(found || {}),
+              short:
+                fallback.short,
+            };
+          }
+        );
+
+      performerMap =
+        Object.fromEntries(
+          performers.map(
+            performer => [
+              performer.id,
+              performer,
+            ]
+          )
+        );
+
+      if (
+        visiblePerformers.size === 0
+      ) {
+        visiblePerformers =
+          new Set(
+            performers.map(
+              performer =>
+                performer.id
+            )
+          );
+
+        saveVisible();
+      }
+
+      groups =
+        buildGroups(
+          rawEvents
+        );
+
+      renderAll();
+
+    } catch (error) {
+
+      console.error(error);
+
+      daySection.innerHTML = `
+        <div class="empty-message">
+          events.json の読み込みに失敗しました。
+        </div>
+      `;
+    }
+  }
+
+
+  /* =========================================
+     公演をまとめる
+  ========================================= */
+
+  function calendarKey(event) {
+    return [
+      event.date || "",
+      event.startTime || "",
+      normalizeTitle(
+        event.title
+      ),
+      normalizeVenue(
+        event.venue
+      ),
+    ].join("|");
+  }
+
+
+  function buildGroups(events) {
+
+    const map =
+      new Map();
+
+    events.forEach(
+      event => {
+
+        const key =
+          calendarKey(event);
+
+        if (!map.has(key)) {
+
+          map.set(
+            key,
+            {
+              key,
+              date:
+                event.date || "",
+              openTime:
+                event.openTime || "",
+              startTime:
+                event.startTime || "",
+              title:
+                event.title ||
+                "公演名不明",
+              venue:
+                event.venue || "",
+              trackedPerformers:
+                [],
+              performersText:
+                [],
+              records:
+                [],
+              newUntil:
+                "",
+            }
+          );
+        }
+
+        const group =
+          map.get(key);
+
+        group.records.push(
+          event
+        );
+
+        const tracked =
+          [
+            event.performerId,
+            ...(
+              Array.isArray(
+                event.trackedPerformers
+              )
+                ? event.trackedPerformers
+                : []
+            ),
+          ];
+
+        group.trackedPerformers =
+          unique([
+            ...group.trackedPerformers,
+            ...tracked,
+          ]);
+
+        const performerText =
+          Array.isArray(
+            event.performersText
+          )
+            ? event.performersText
+            : (
+                clean(
+                  event.performersText
+                )
+                  ? [
+                      clean(
+                        event.performersText
+                      )
+                    ]
+                  : []
+              );
+
+        group.performersText =
+          unique([
+            ...group.performersText,
+            ...performerText,
+          ]);
+
+        if (
+          event.newUntil &&
+          (
+            !group.newUntil ||
+            event.newUntil >
+            group.newUntil
+          )
+        ) {
+          group.newUntil =
+            event.newUntil;
+        }
+
+        if (
+          !group.openTime &&
+          event.openTime
+        ) {
+          group.openTime =
+            event.openTime;
+        }
+
+        if (
+          !group.venue &&
+          event.venue
+        ) {
+          group.venue =
+            event.venue;
+        }
       }
     );
 
-}
+    return [
+      ...map.values()
+    ].sort(
+      (a, b) =>
+        (
+          a.date +
+          a.startTime
+        ).localeCompare(
+          b.date +
+          b.startTime
+        )
+    );
+  }
 
 
+  function visibleGroups() {
+    return groups.filter(
+      group =>
+        group.trackedPerformers
+          .some(
+            id =>
+              visiblePerformers.has(
+                id
+              )
+          )
+    );
+  }
 
-/* =========================================
-   events.json
-========================================= */
 
-async function loadEvents() {
+  /* =========================================
+     HEADER / LEGEND
+  ========================================= */
 
-  try {
+  function renderLegend() {
 
-    const response =
-      await fetch(
-        "events.json?t=" +
-        Date.now()
+    legend.innerHTML =
+      performers
+        .filter(
+          performer =>
+            visiblePerformers.has(
+              performer.id
+            )
+        )
+        .map(
+          performer => `
+            <div class="legend-item">
+              <span
+                class="legend-dot"
+                style="
+                  background:
+                  ${escapeHtml(
+                    performer.color
+                  )}
+                "
+              ></span>
+
+              ${escapeHtml(
+                performer.name
+              )}
+            </div>
+          `
+        )
+        .join("")
+      +
+      `
+        <div class="legend-help">
+          色で出演者がわかります
+        </div>
+      `;
+  }
+
+
+  /* =========================================
+     CALENDAR
+  ========================================= */
+
+  function renderCalendar() {
+
+    monthTitle.textContent =
+      `${currentMonth.getFullYear()}年`
+      +
+      `${currentMonth.getMonth() + 1}月`;
+
+    const year =
+      currentMonth.getFullYear();
+
+    const month =
+      currentMonth.getMonth();
+
+    const firstDay =
+      new Date(
+        year,
+        month,
+        1
       );
 
-
-    if (!response.ok) {
-
-      throw new Error(
-        "events.jsonを取得できません"
+    const lastDay =
+      new Date(
+        year,
+        month + 1,
+        0
       );
 
-    }
-
-
-    const data =
-      await response.json();
-
-
-    allEvents =
-      Array.isArray(data)
-      ?
-      data
-      :
+    /*
+      JS:
+      日=0 月=1...
+      カレンダー:
+      月始まり
+    */
+    const mondayOffset =
       (
-        data.events ||
-        []
+        firstDay.getDay() + 6
+      ) % 7;
+
+    const totalCells =
+      Math.ceil(
+        (
+          mondayOffset
+          +
+          lastDay.getDate()
+        )
+        / 7
+      ) * 7;
+
+    const startDate =
+      new Date(
+        year,
+        month,
+        1 - mondayOffset
       );
 
+    const dayMap =
+      buildDayMap();
 
-    if (
-      !Array.isArray(data)
-      &&
-      data.syncedAt
+    let html = "";
+
+    for (
+      let i = 0;
+      i < totalCells;
+      i++
     ) {
 
       const date =
         new Date(
-          data.syncedAt
+          startDate
         );
 
-
-      document.getElementById(
-        "synced"
-      ).textContent =
-        "最終更新：" +
-        date.toLocaleString(
-          "ja-JP"
-        );
-
-    }
-
-
-    renderCalendar();
-
-    updateAllBadges();
-
-  }
-
-  catch(error) {
-
-    console.error(
-      error
-    );
-
-
-    document.getElementById(
-      "detail-list"
-    ).innerHTML = `
-
-      <div class="empty">
-        events.jsonを読み込めませんでした。
-      </div>
-
-    `;
-
-  }
-
-}
-
-
-
-/* =========================================
-   NEW判定
-========================================= */
-
-function isNewEvent(
-  event
-) {
-
-  if (
-    !event.newUntil
-  ) {
-
-    return false;
-
-  }
-
-
-  const until =
-    new Date(
-      event.newUntil
-    );
-
-
-  if (
-    Number.isNaN(
-      until.getTime()
-    )
-  ) {
-
-    return false;
-
-  }
-
-
-  return (
-    until.getTime()
-    >
-    Date.now()
-  );
-
-}
-
-
-
-/* =========================================
-   日時
-========================================= */
-
-function parseDateValue(
-  value
-) {
-
-  if (
-    !value
-  ) {
-
-    return null;
-
-  }
-
-
-  const date =
-    new Date(
-      value
-    );
-
-
-  if (
-    Number.isNaN(
-      date.getTime()
-    )
-  ) {
-
-    return null;
-
-  }
-
-
-  return date;
-
-}
-
-
-
-/* =========================================
-   バッジ
-========================================= */
-
-function setBadge(
-  id,
-  count
-) {
-
-  const badge =
-    document.getElementById(
-      id
-    );
-
-
-  badge.textContent =
-    count;
-
-
-  badge.classList.toggle(
-    "show",
-    count > 0
-  );
-
-}
-
-
-function updateAllBadges() {
-
-  updateNewEventBadge();
-
-  updateFavoriteBadge();
-
-  updateSaleBadge();
-
-}
-
-
-function updateNewEventBadge() {
-
-  const grouped =
-    groupEvents(
-      allEvents.filter(
-        isNewEvent
-      )
-    );
-
-
-  setBadge(
-    "new-live-badge",
-    grouped.length
-  );
-
-}
-
-
-function updateFavoriteBadge() {
-
-  const grouped =
-    groupEvents(
-      allEvents
-    );
-
-
-  const count =
-    grouped.filter(
-      event =>
-        favoriteKeys.has(
-          makeEventKey(
-            event
-          )
-        )
-    ).length;
-
-
-  setBadge(
-    "favorite-badge",
-    count
-  );
-
-}
-
-
-function updateSaleBadge() {
-
-  const saleData =
-    getTicketSaleGroups();
-
-
-  const count =
-    saleData.advance.length
-    +
-    saleData.firstCome.length
-    +
-    saleData.started.length;
-
-
-  setBadge(
-    "sale-badge",
-    count
-  );
-
-}
-
-
-
-/* =========================================
-   カレンダー
-========================================= */
-
-function filteredEvents() {
-
-  return allEvents.filter(
-    event =>
-      enabledPerformers.has(
-        event.performerId
-      )
-      &&
-      performerMap[
-        event.performerId
-      ]
-  );
-
-}
-
-
-function makeCalendarEvents() {
-
-  return filteredEvents().map(
-    event => {
-
-      const performer =
-        performerMap[
-          event.performerId
-        ];
-
-
-      let start =
-        event.date;
-
-
-      if (
-        event.startTime
-      ) {
-
-        start +=
-          "T" +
-          event.startTime;
-
-      }
-
-
-      return {
-
-        title:
-          (
-            isNewEvent(event)
-            ?
-            "NEW "
-            :
-            ""
-          )
-          +
-          performer.name
-          +
-          "｜"
-          +
-          (
-            event.title ||
-            "公演"
-          ),
-
-        start:
-          start,
-
-        allDay:
-          !event.startTime,
-
-        backgroundColor:
-          performer.color,
-
-        borderColor:
-          performer.color,
-
-        textColor:
-          performer.textColor,
-
-        extendedProps: {
-          originalEvent:
-            event
-        }
-
-      };
-
-    }
-  );
-
-}
-
-
-function renderCalendar() {
-
-  const element =
-    document.getElementById(
-      "calendar"
-    );
-
-
-  if (
-    calendar
-  ) {
-
-    calendar.destroy();
-
-  }
-
-
-  calendar =
-    new FullCalendar.Calendar(
-      element,
-      {
-
-        locale:
-          "ja",
-
-        initialView:
-          "dayGridMonth",
-
-        height:
-          "auto",
-
-        firstDay:
-          1,
-
-        headerToolbar: {
-
-          left:
-            "prev",
-
-          center:
-            "title",
-
-          right:
-            "next"
-
-        },
-
-        dayMaxEvents:
-          4,
-
-        events:
-          makeCalendarEvents(),
-
-        eventClick(info) {
-
-          showCalendar();
-
-          const event =
-            info.event
-              .extendedProps
-              .originalEvent;
-
-
-          showDateEvents(
-            event.date
-          );
-
-        },
-
-        dateClick(info) {
-
-          showCalendar();
-
-          showDateEvents(
-            info.dateStr
-          );
-
-        }
-
-      }
-    );
-
-
-  calendar.render();
-
-}
-
-
-
-/* =========================================
-   イベント統合
-========================================= */
-
-function groupEvents(
-  events
-) {
-
-  const groups = {};
-
-
-  events.forEach(
-    event => {
+      date.setDate(
+        startDate.getDate() + i
+      );
 
       const key =
-        makeEventKey(
-          event
-        );
+        formatDateKey(date);
 
+      const isOther =
+        date.getMonth() !== month;
 
-      if (
-        !groups[key]
-      ) {
+      const isSelected =
+        key === selectedDate;
 
-        groups[key] = {
-
-          date:
-            event.date || "",
-
-          openTime:
-            event.openTime || "",
-
-          startTime:
-            event.startTime || "",
-
-          title:
-            event.title || "",
-
-          venue:
-            event.venue || "",
-
-          performers:
-            [],
-
-          trackedPerformers:
-            [],
-
-          performerDetails:
-            [],
-
-          sources:
-            [],
-
-          urls:
-            [],
-
-          ticketStatus:
-            event.ticketStatus || "",
-
-          ticketOptions:
-            [],
-
-          saleStartAt:
-            event.saleStartAt || "",
-
-          saleEndAt:
-            event.saleEndAt || "",
-
-          saleCategory:
-            event.saleCategory || "",
-
-          salePeriods:
-            [],
-
-          firstSeenAt:
-            event.firstSeenAt || "",
-
-          newUntil:
-            event.newUntil || ""
-
+      const dayData =
+        dayMap.get(key)
+        || {
+          groups: [],
+          performerCounts: {},
         };
 
-      }
-
-
-      if (
-        event.performerId
-        &&
-        !groups[key]
-          .performers
-          .includes(
-            event.performerId
+      const countsHtml =
+        performers
+          .filter(
+            performer =>
+              visiblePerformers.has(
+                performer.id
+              )
           )
-      ) {
+          .map(
+            performer => {
 
-        groups[key]
-          .performers
-          .push(
-            event.performerId
-          );
+              const count =
+                dayData
+                  .performerCounts[
+                    performer.id
+                  ] || 0;
 
-      }
-
-
-      if (
-        Array.isArray(
-          event.trackedPerformers
-        )
-      ) {
-
-        event.trackedPerformers
-          .forEach(
-            id => {
-
-              if (
-                id
-                &&
-                !groups[key]
-                  .trackedPerformers
-                  .includes(
-                    id
-                  )
-              ) {
-
-                groups[key]
-                  .trackedPerformers
-                  .push(
-                    id
-                  );
-
+              if (!count) {
+                return "";
               }
 
+              return `
+                <div class="performer-count">
+
+                  <span
+                    class="mini-badge"
+                    style="
+                      background:
+                      ${escapeHtml(
+                        performer.color
+                      )}
+                    "
+                  >
+                    ${escapeHtml(
+                      performer.short
+                    )}
+                  </span>
+
+                  <span>
+                    ${count}
+                  </span>
+
+                </div>
+              `;
             }
-          );
-
-      }
-
-
-      if (
-        Array.isArray(
-          event.performersText
-        )
-      ) {
-
-        event.performersText
-          .forEach(
-            name => {
-
-              name =
-                String(
-                  name || ""
-                ).trim();
-
-
-              if (
-                name
-                &&
-                !groups[key]
-                  .performerDetails
-                  .includes(
-                    name
-                  )
-              ) {
-
-                groups[key]
-                  .performerDetails
-                  .push(
-                    name
-                  );
-
-              }
-
-            }
-          );
-
-      }
-
-
-      if (
-        Array.isArray(
-          event.ticketOptions
-        )
-      ) {
-
-        event.ticketOptions
-          .forEach(
-            option => {
-
-              const normalized = {
-
-                name:
-                  String(
-                    option?.name || ""
-                  ).trim(),
-
-                type:
-                  String(
-                    option?.type || ""
-                  ).trim(),
-
-                status:
-                  String(
-                    option?.status || ""
-                  ).trim(),
-
-                price:
-                  String(
-                    option?.price || ""
-                  ).trim(),
-
-                saleStartAt:
-                  String(
-                    option?.saleStartAt || ""
-                  ).trim(),
-
-                saleEndAt:
-                  String(
-                    option?.saleEndAt || ""
-                  ).trim(),
-
-                saleCategory:
-                  String(
-                    option?.saleCategory || ""
-                  ).trim(),
-
-                saleLabel:
-                  String(
-                    option?.saleLabel || ""
-                  ).trim(),
-
-                salePeriods:
-                  Array.isArray(
-                    option?.salePeriods
-                  )
-                  ?
-                  option.salePeriods.map(
-                    period => ({
-                      category:
-                        String(
-                          period?.category || ""
-                        ).trim(),
-
-                      label:
-                        String(
-                          period?.label || ""
-                        ).trim(),
-
-                      startAt:
-                        String(
-                          period?.startAt || ""
-                        ).trim(),
-
-                      endAt:
-                        String(
-                          period?.endAt || ""
-                        ).trim(),
-
-                      saleKey:
-                        String(
-                          period?.saleKey || ""
-                        ).trim()
-                    })
-                  )
-                  :
-                  []
-
-              };
-
-
-              const optionKey = [
-                normalized.name,
-                normalized.type,
-                normalized.status,
-                normalized.price
-              ].join("|");
-
-
-              const existing =
-                groups[key]
-                  .ticketOptions
-                  .find(
-                    item => {
-
-                      const existingKey = [
-                        item.name || "",
-                        item.type || "",
-                        item.status || "",
-                        item.price || ""
-                      ].join("|");
-
-
-                      return (
-                        existingKey ===
-                        optionKey
-                      );
-
-                    }
-                  );
-
-
-              if (
-                !existing
-              ) {
-
-                groups[key]
-                  .ticketOptions
-                  .push(
-                    normalized
-                  );
-
-              }
-
-              else {
-
-                normalized.salePeriods
-                  .forEach(
-                    period => {
-
-                      const periodKey = [
-                        period.category,
-                        period.label,
-                        period.startAt,
-                        period.endAt
-                      ].join("|");
-
-
-                      const exists =
-                        existing.salePeriods
-                          .some(
-                            saved => [
-                              saved.category,
-                              saved.label,
-                              saved.startAt,
-                              saved.endAt
-                            ].join("|")
-                            ===
-                            periodKey
-                          );
-
-
-                      if (
-                        !exists
-                      ) {
-
-                        existing.salePeriods.push(
-                          period
-                        );
-
-                      }
-
-                    }
-                  );
-
-
-                if (
-                  !existing.saleStartAt
-                  &&
-                  normalized.saleStartAt
-                ) {
-
-                  existing.saleStartAt =
-                    normalized.saleStartAt;
-
-                }
-
-
-                if (
-                  !existing.saleEndAt
-                  &&
-                  normalized.saleEndAt
-                ) {
-
-                  existing.saleEndAt =
-                    normalized.saleEndAt;
-
-                }
-
-
-                if (
-                  !existing.saleCategory
-                  &&
-                  normalized.saleCategory
-                ) {
-
-                  existing.saleCategory =
-                    normalized.saleCategory;
-
-                }
-
-
-                if (
-                  !existing.saleLabel
-                  &&
-                  normalized.saleLabel
-                ) {
-
-                  existing.saleLabel =
-                    normalized.saleLabel;
-
-                }
-
-              }
-
-            }
-          );
-
-      }
-
-
-      if (
-        Array.isArray(
-          event.salePeriods
-        )
-      ) {
-
-        event.salePeriods
-          .forEach(
-            period => {
-
-              const normalized = {
-
-                category:
-                  String(
-                    period?.category || ""
-                  ).trim(),
-
-                label:
-                  String(
-                    period?.label || ""
-                  ).trim(),
-
-                startAt:
-                  String(
-                    period?.startAt || ""
-                  ).trim(),
-
-                endAt:
-                  String(
-                    period?.endAt || ""
-                  ).trim(),
-
-                saleKey:
-                  String(
-                    period?.saleKey || ""
-                  ).trim()
-
-              };
-
-
-              const periodKey = [
-                normalized.category,
-                normalized.label,
-                normalized.startAt,
-                normalized.endAt
-              ].join("|");
-
-
-              const exists =
-                groups[key]
-                  .salePeriods
-                  .some(
-                    saved => [
-                      saved.category,
-                      saved.label,
-                      saved.startAt,
-                      saved.endAt
-                    ].join("|")
-                    ===
-                    periodKey
-                  );
-
-
-              if (
-                !exists
-              ) {
-
-                groups[key]
-                  .salePeriods
-                  .push(
-                    normalized
-                  );
-
-              }
-
-            }
-          );
-
-      }
-
-
-      if (
-        event.source
-        &&
-        !groups[key]
-          .sources
-          .includes(
-            event.source
           )
-      ) {
+          .join("");
 
-        groups[key]
-          .sources
-          .push(
-            event.source
-          );
+      html += `
+        <div
+          class="
+            day-cell
+            ${isOther
+              ? "other-month"
+              : ""}
+            ${isSelected
+              ? "selected"
+              : ""}
+          "
+          data-date="${key}"
+        >
 
-      }
+          <div class="day-number">
+            ${date.getDate()}
+          </div>
 
+          <div class="performer-counts">
+            ${countsHtml}
+          </div>
 
-      const url =
-        event.sourceUrl
-        ||
-        event.url
-        ||
-        "";
+          ${
+            dayData.groups.length
+              ? `
+                <div class="day-total">
+                  ${dayData.groups.length}件
+                </div>
+              `
+              : ""
+          }
 
-
-      if (
-        url
-        &&
-        !groups[key]
-          .urls
-          .some(
-            item =>
-              item.url ===
-              url
-          )
-      ) {
-
-        groups[key]
-          .urls
-          .push({
-            url:
-              url,
-
-            source:
-              event.source || ""
-          });
-
-      }
-
-
-      if (
-        !groups[key].ticketStatus
-        &&
-        event.ticketStatus
-      ) {
-
-        groups[key].ticketStatus =
-          event.ticketStatus;
-
-      }
-
-
-      if (
-        !groups[key].saleStartAt
-        &&
-        event.saleStartAt
-      ) {
-
-        groups[key].saleStartAt =
-          event.saleStartAt;
-
-      }
-
-
-      if (
-        !groups[key].saleEndAt
-        &&
-        event.saleEndAt
-      ) {
-
-        groups[key].saleEndAt =
-          event.saleEndAt;
-
-      }
-
-
-      if (
-        !groups[key].saleCategory
-        &&
-        event.saleCategory
-      ) {
-
-        groups[key].saleCategory =
-          event.saleCategory;
-
-      }
-
-
-      if (
-        !groups[key].openTime
-        &&
-        event.openTime
-      ) {
-
-        groups[key].openTime =
-          event.openTime;
-
-      }
-
-
-      if (
-        event.newUntil
-      ) {
-
-        const current =
-          parseDateValue(
-            groups[key].newUntil
-          );
-
-
-        const candidate =
-          parseDateValue(
-            event.newUntil
-          );
-
-
-        if (
-          candidate
-          &&
-          (
-            !current
-            ||
-            candidate > current
-          )
-        ) {
-
-          groups[key].newUntil =
-            event.newUntil;
-
-        }
-
-      }
-
+        </div>
+      `;
     }
-  );
+
+    calendarGrid.innerHTML =
+      html;
+
+    calendarGrid
+      .querySelectorAll(
+        ".day-cell"
+      )
+      .forEach(
+        cell => {
+
+          cell.addEventListener(
+            "click",
+            () => {
+
+              const key =
+                cell.dataset.date;
+
+              const date =
+                parseDateKey(key);
+
+              if (!date) {
+                return;
+              }
+
+              if (
+                date.getMonth()
+                !==
+                currentMonth.getMonth()
+                ||
+                date.getFullYear()
+                !==
+                currentMonth.getFullYear()
+              ) {
+                currentMonth =
+                  new Date(
+                    date.getFullYear(),
+                    date.getMonth(),
+                    1
+                  );
+              }
+
+              selectedDate =
+                key;
+
+              dayExpanded =
+                false;
+
+              renderCalendar();
+              renderSelectedDay();
+
+              window.scrollTo({
+                top:
+                  document
+                    .getElementById(
+                      "daySection"
+                    )
+                    .offsetTop
+                  - 15,
+                behavior:
+                  "smooth",
+              });
+            }
+          );
+        }
+      );
+  }
 
 
-  return Object.values(
-    groups
-  );
+  function buildDayMap() {
 
-}
+    const map =
+      new Map();
 
+    visibleGroups()
+      .forEach(
+        group => {
 
-
-/* =========================================
-   メニュー
-========================================= */
-
-document
-  .querySelectorAll(
-    ".side-menu-item"
-  )
-  .forEach(
-    item => {
-
-      item.addEventListener(
-        "click",
-        () => {
-
-          const menu =
-            item.dataset.menu;
-
-
-          closeSideMenu();
-
-
-          if (
-            menu ===
-            "calendar"
-          ) {
-            showCalendar();
+          if (!map.has(group.date)) {
+            map.set(
+              group.date,
+              {
+                groups: [],
+                performerCounts: {},
+              }
+            );
           }
 
-          if (
-            menu ===
-            "new"
-          ) {
-            showNewEvents();
-          }
+          const item =
+            map.get(group.date);
 
-          if (
-            menu ===
-            "favorite"
-          ) {
-            showFavorites();
-          }
+          item.groups.push(
+            group
+          );
 
-          if (
-            menu ===
-            "sale"
-          ) {
-            showSaleNear();
-          }
+          group.trackedPerformers
+            .forEach(
+              id => {
 
-          if (
-            menu ===
-            "search"
-          ) {
-            showSearch();
-          }
+                if (
+                  !visiblePerformers.has(id)
+                ) {
+                  return;
+                }
 
-          if (
-            menu ===
-            "performers"
-          ) {
-            showPerformers();
-          }
-
-          if (
-            menu ===
-            "coappearance"
-          ) {
-            showCoappearance();
-          }
-
-          if (
-            menu ===
-            "settings"
-          ) {
-            showSettings();
-          }
-
-          if (
-            menu ===
-            "help"
-          ) {
-            showHelp();
-          }
-
+                item
+                  .performerCounts[id] =
+                  (
+                    item
+                      .performerCounts[id]
+                    || 0
+                  ) + 1;
+              }
+            );
         }
       );
 
-    }
-  );
-
-
-
-/* =========================================
-   カレンダー表示
-========================================= */
-
-function showCalendar() {
-
-  setActiveMenu(
-    "calendar"
-  );
-
-
-  document.getElementById(
-    "calendar"
-  ).classList.remove(
-    "calendar-hidden"
-  );
-
-
-  document.getElementById(
-    "detail-title"
-  ).textContent =
-    "公演情報";
-
-
-  document.getElementById(
-    "detail-list"
-  ).innerHTML = `
-
-    <div class="empty">
-      日付またはライブをタップすると詳細が表示されます。
-    </div>
-
-  `;
-
-
-  setTimeout(
-    () => {
-
-      if (
-        calendar
-      ) {
-
-        calendar.updateSize();
-
-      }
-
-    },
-    50
-  );
-
-
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-
-}
-
-
-
-/* =========================================
-   NEW
-========================================= */
-
-function showNewEvents() {
-
-  setActiveMenu(
-    "new"
-  );
-
-
-  const events =
-    allEvents.filter(
-      isNewEvent
-    );
-
-
-  showEventList(
-    "✨ 新着ライブ",
-    events,
-    {
-      showNewBadge:
-        true,
-
-      emptyText:
-        "現在、新着ライブはありません。"
-    }
-  );
-
-}
-
-
-
-/* =========================================
-   行きたい
-========================================= */
-
-function showFavorites() {
-
-  setActiveMenu(
-    "favorite"
-  );
-
-
-  const grouped =
-    groupEvents(
-      allEvents
-    );
-
-
-  const favorites =
-    grouped.filter(
-      event =>
-        favoriteKeys.has(
-          makeEventKey(
-            event
-          )
-        )
-    );
-
-
-  showGroupedEventList(
-    "⭐ 行きたいライブ",
-    favorites,
-    "星を付けたライブはまだありません。"
-  );
-
-}
-
-
-
-/* =========================================
-   販売開始
-========================================= */
-
-function getOptionSalePeriods(
-  option
-) {
-
-  if (
-    Array.isArray(
-      option.salePeriods
-    )
-    &&
-    option.salePeriods.length > 0
-  ) {
-
-    return option.salePeriods;
-
+    return map;
   }
 
 
-  if (
-    option.saleStartAt
-  ) {
+  /* =========================================
+     SELECTED DAY
+  ========================================= */
 
-    return [{
-      category:
-        option.saleCategory || "",
+  function renderSelectedDay() {
 
-      label:
-        option.saleLabel || "",
+    const date =
+      parseDateKey(
+        selectedDate
+      );
 
-      startAt:
-        option.saleStartAt || "",
+    if (!date) {
+      return;
+    }
 
-      endAt:
-        option.saleEndAt || "",
-
-      saleKey:
-        ""
-    }];
-
-  }
-
-
-  return [];
-
-}
-
-
-function getTicketSaleItems() {
-
-  const grouped =
-    groupEvents(
-      allEvents
-    );
-
-
-  const items = [];
-
-
-  grouped.forEach(
-    event => {
-
-      if (
-        !Array.isArray(
-          event.ticketOptions
-        )
-      ) {
-
-        return;
-
-      }
-
-
-      event.ticketOptions
-        .forEach(
-          (
-            option,
-            optionIndex
-          ) => {
-
-            const periods =
-              getOptionSalePeriods(
-                option
-              );
-
-
-            periods.forEach(
-              (
-                period,
-                periodIndex
-              ) => {
-
-                const startDate =
-                  parseDateValue(
-                    period.startAt
-                  );
-
-
-                if (
-                  !startDate
-                ) {
-
-                  return;
-
-                }
-
-
-                const endDate =
-                  parseDateValue(
-                    period.endAt
-                  );
-
-
-                const category =
-                  period.category
-                  ||
-                  option.saleCategory
-                  ||
-                  "";
-
-
-                items.push({
-
-                  event:
-                    event,
-
-                  option:
-                    option,
-
-                  period:
-                    period,
-
-                  category:
-                    category,
-
-                  startDate:
-                    startDate,
-
-                  endDate:
-                    endDate,
-
-                  key:
-                    period.saleKey
-                    ||
-                    [
-                      makeEventKey(
-                        event
-                      ),
-                      optionIndex,
-                      periodIndex,
-                      category,
-                      period.startAt || "",
-                      period.endAt || ""
-                    ].join("|")
-
-                });
-
-              }
-            );
-
-          }
+    const dayGroups =
+      visibleGroups()
+        .filter(
+          group =>
+            group.date ===
+            selectedDate
         );
 
-    }
-  );
-
-
-  return items;
-
-}
-
-
-function getTicketSaleGroups() {
-
-  const now =
-    new Date();
-
-
-  const nearLimit =
-    new Date(
-      now.getTime()
+    const title =
+      `${date.getMonth() + 1}月`
       +
-      SALE_NEAR_DAYS
-      *
-      24
-      *
-      60
-      *
-      60
-      *
-      1000
-    );
+      `${date.getDate()}日`
+      +
+      `（${WEEKDAYS[
+        date.getDay()
+      ]}）`;
 
+    if (
+      dayGroups.length === 0
+    ) {
 
-  const startedLimit =
-    new Date(
-      now.getTime()
-      -
-      SALE_STARTED_DAYS
-      *
-      24
-      *
-      60
-      *
-      60
-      *
-      1000
-    );
+      daySection.innerHTML = `
+        <div class="day-section-head">
 
+          <h2 class="day-section-title">
+            ${title}
+          </h2>
 
-  const advance = [];
+          <div class="day-section-count">
+            0件のライブ
+          </div>
 
-  const firstCome = [];
+        </div>
 
-  const started = [];
+        <div class="empty-message">
+          この日のライブはありません。
+        </div>
+      `;
 
+      return;
+    }
 
-  getTicketSaleItems()
-    .forEach(
-      item => {
+    const shown =
+      dayExpanded
+        ? dayGroups
+        : dayGroups.slice(0, 4);
 
-        const {
-          category,
-          startDate,
-          endDate
-        } = item;
+    daySection.innerHTML = `
+      <div class="day-section-head">
 
+        <h2 class="day-section-title">
+          ${title}
+        </h2>
 
-        if (
-          category ===
-          "advance"
-        ) {
+        <div class="day-section-count">
+          ${dayGroups.length}件のライブ
+        </div>
 
-          const startedAlready =
-            startDate <= now;
+        <div class="selected-label">
+          この日を選択中
+        </div>
 
+      </div>
 
-          const notEnded =
-            !endDate
-            ||
-            endDate >= now;
+      <div class="event-list">
 
-
-          if (
-            startedAlready
-            &&
-            notEnded
-          ) {
-
-            advance.push(
-              item
-            );
-
-          }
-
-
-          return;
-
-        }
-
-
-        if (
-          category !==
-          "first_come"
-        ) {
-
-          return;
-
-        }
-
-
-        if (
-          startDate > now
-          &&
-          startDate <= nearLimit
-        ) {
-
-          firstCome.push(
-            item
-          );
-
-
-          return;
-
-        }
-
-
-        if (
-          startDate <= now
-          &&
-          startDate >= startedLimit
-        ) {
-
-          started.push(
-            item
-          );
-
-        }
-
-      }
-    );
-
-
-  advance.sort(
-    (
-      a,
-      b
-    ) =>
-      a.startDate -
-      b.startDate
-  );
-
-
-  firstCome.sort(
-    (
-      a,
-      b
-    ) =>
-      a.startDate -
-      b.startDate
-  );
-
-
-  started.sort(
-    (
-      a,
-      b
-    ) =>
-      b.startDate -
-      a.startDate
-  );
-
-
-  return {
-    advance,
-    firstCome,
-    started
-  };
-
-}
-
-
-function showSaleNear() {
-
-  setActiveMenu(
-    "sale"
-  );
-
-  hideCalendar();
-
-
-  document.getElementById(
-    "detail-title"
-  ).textContent =
-    "🎫 販売開始が近いもの";
-
-
-  const {
-    advance,
-    firstCome,
-    started
-  } =
-    getTicketSaleGroups();
-
-
-  const html = `
-
-    ${createSaleSectionHtml(
-      "先行販売",
-      advance,
-      "advance",
-      "現在、先行期間中の販売はありません。"
-    )}
-
-    ${createSaleSectionHtml(
-      "先着販売",
-      firstCome,
-      "first-come",
-      "今後7日以内に販売開始する先着販売はありません。"
-    )}
-
-    ${createSaleSectionHtml(
-      "販売開始済み",
-      started,
-      "started",
-      "直近5日以内に販売開始した先着販売はありません。"
-    )}
-
-  `;
-
-
-  document.getElementById(
-    "detail-list"
-  ).innerHTML =
-    html;
-
-
-  scrollToDetail();
-
-}
-
-
-function createSaleSectionHtml(
-  title,
-  items,
-  type,
-  emptyText
-) {
-
-  const icon =
-    type === "advance"
-    ?
-    "🎟"
-    :
-    (
-      type === "started"
-      ?
-      "✅"
-      :
-      "⏰"
-    );
-
-
-  return `
-
-    <section class="sale-section">
-
-      <div class="sale-section-title">
-
-        <span>
-          ${icon}
-          ${escapeHtml(
-            title
-          )}
-        </span>
-
-        <span class="sale-section-count">
-          ${items.length}
-        </span>
+        ${shown
+          .map(
+            renderEventRow
+          )
+          .join("")}
 
       </div>
 
       ${
-        items.length > 0
-        ?
-        items
-          .map(
-            item =>
-              createSaleTicketCard(
-                item,
-                type
+        dayGroups.length > 4
+          ? `
+            <button
+              id="viewAllDay"
+              class="view-all-button"
+            >
+              ${
+                dayExpanded
+                  ? "表示を戻す"
+                  :
+                  `${date.getMonth() + 1}月`
+                  +
+                  `${date.getDate()}日の`
+                  +
+                  `すべてのライブを見る`
+                  +
+                  `（${dayGroups.length}件） ›`
+              }
+            </button>
+          `
+          : `
+            <button
+              class="view-all-button"
+              disabled
+            >
+              ${date.getMonth() + 1}月
+              ${date.getDate()}日の
+              すべてのライブ
+              （${dayGroups.length}件）
+            </button>
+          `
+      }
+    `;
+
+    bindEventRows(
+      daySection
+    );
+
+    const viewAllButton =
+      document.getElementById(
+        "viewAllDay"
+      );
+
+    if (viewAllButton) {
+
+      viewAllButton.addEventListener(
+        "click",
+        () => {
+          dayExpanded =
+            !dayExpanded;
+
+          renderSelectedDay();
+        }
+      );
+    }
+  }
+
+
+  function renderEventRow(group) {
+
+    const performerBadges =
+      performers
+        .filter(
+          performer =>
+            group
+              .trackedPerformers
+              .includes(
+                performer.id
               )
-          )
-          .join("")
-        :
-        `
-          <div class="empty">
+            &&
+            visiblePerformers.has(
+              performer.id
+            )
+        )
+        .map(
+          performer => `
+            <span
+              class="mini-badge"
+              style="
+                background:
+                ${escapeHtml(
+                  performer.color
+                )}
+              "
+            >
+              ${escapeHtml(
+                performer.short
+              )}
+            </span>
+          `
+        )
+        .join("");
+
+    return `
+      <button
+        class="event-row"
+        data-event-key="${escapeHtml(
+          group.key
+        )}"
+      >
+
+        <div class="event-time">
+          ${escapeHtml(
+            group.startTime || "--:--"
+          )}
+        </div>
+
+        <div class="event-badges">
+          ${performerBadges}
+        </div>
+
+        <div class="event-main">
+
+          <div class="event-title">
             ${escapeHtml(
-              emptyText
+              group.title
             )}
           </div>
-        `
-      }
 
-    </section>
+          <div class="event-venue">
+            📍
+            ${escapeHtml(
+              group.venue ||
+              "会場情報なし"
+            )}
+          </div>
 
-  `;
+        </div>
 
-}
+        <div class="event-arrow">
+          ›
+        </div>
 
-
-function createSaleTicketCard(
-  item,
-  type
-) {
-
-  const event =
-    item.event;
-
-
-  const option =
-    item.option;
+      </button>
+    `;
+  }
 
 
-  const period =
-    item.period;
+  function bindEventRows(container) {
 
-
-  const categoryClass =
-    type === "advance"
-    ?
-    "advance"
-    :
-    (
-      type === "started"
-      ?
-      "started"
-      :
-      "first-come"
-    );
-
-
-  const categoryLabel =
-    type === "advance"
-    ?
-    (
-      period.label
-      ||
-      "先行販売"
-    )
-    :
-    (
-      type === "started"
-      ?
-      "販売開始済み"
-      :
-      (
-        period.label
-        ||
-        "先着販売"
+    container
+      .querySelectorAll(
+        "[data-event-key]"
       )
-    );
+      .forEach(
+        element => {
+
+          element.addEventListener(
+            "click",
+            () => {
+
+              const group =
+                groups.find(
+                  item =>
+                    item.key ===
+                    element.dataset
+                      .eventKey
+                );
+
+              if (group) {
+                openEventSheet(
+                  group
+                );
+              }
+            }
+          );
+        }
+      );
+  }
 
 
-  const ticketName = [
-    option.name || "チケット",
-    option.type || ""
-  ]
-    .filter(Boolean)
-    .join(" / ");
+  /* =========================================
+     EVENT DETAIL
+  ========================================= */
 
+  function openEventSheet(group) {
 
-  const performerLabels =
-    Array.from(
-      new Set([
-        ...event.performers,
-        ...event.trackedPerformers
-      ])
-    )
-      .map(
-        id => {
+    const sourceRecords =
+      uniqueRecordsBySource(
+        group.records
+      );
 
-          const performer =
-            performerMap[id];
+    const ticketOptions =
+      getGroupTicketOptions(
+        group
+      );
 
-
-          if (
-            !performer
-          ) {
-
-            return "";
-
-          }
-
-
-          return `
-
+    const trackedHtml =
+      performers
+        .filter(
+          performer =>
+            group
+              .trackedPerformers
+              .includes(
+                performer.id
+              )
+        )
+        .map(
+          performer => `
             <span
-              class="
-                performer-label
-                ${performer.className}
+              class="performer-pill"
+              style="
+                background:
+                ${escapeHtml(
+                  performer.color
+                )}
               "
             >
               ${escapeHtml(
                 performer.name
               )}
             </span>
+          `
+        )
+        .join(" ");
 
+    const performerDetails =
+      group.performersText
+        .length
+        ? group.performersText
+            .map(
+              text =>
+                `<div>${escapeHtml(
+                  text
+                )}</div>`
+            )
+            .join("")
+        : "出演者詳細なし";
+
+    const ticketHtml =
+      ticketOptions.length
+        ? ticketOptions
+            .map(
+              option => `
+                <div class="ticket-option">
+
+                  <strong>
+                    ${escapeHtml(
+                      option.name ||
+                      option.type ||
+                      "チケット"
+                    )}
+                  </strong>
+
+                  ${
+                    option.type
+                      ? `
+                        <div>
+                          ${escapeHtml(
+                            option.type
+                          )}
+                        </div>
+                      `
+                      : ""
+                  }
+
+                  ${
+                    option.price
+                      ? `
+                        <div>
+                          ${escapeHtml(
+                            option.price
+                          )}
+                        </div>
+                      `
+                      : ""
+                  }
+
+                  ${
+                    option.status
+                      ? `
+                        <div style="
+                          margin-top:5px
+                        ">
+                          <span
+                            class="status-pill"
+                          >
+                            ${escapeHtml(
+                              option.status
+                            )}
+                          </span>
+                        </div>
+                      `
+                      : ""
+                  }
+
+                </div>
+              `
+            )
+            .join("")
+        : `
+            <div class="content-card-sub">
+              チケット詳細情報はありません。
+            </div>
           `;
 
-        }
-      )
-      .join("");
-
-
-  const sourceUrl =
-    event.urls.length > 0
-    ?
-    event.urls[0].url
-    :
-    "";
-
-
-  let saleTimeText = "";
-
-
-  if (
-    type ===
-    "advance"
-  ) {
-
-    saleTimeText =
-      "先行開始："
-      +
-      formatFullDateTime(
-        item.startDate
-      );
-
-
-    if (
-      item.endDate
-    ) {
-
-      saleTimeText +=
-        "<br>先行終了："
-        +
-        formatFullDateTime(
-          item.endDate
-        );
-
-    }
-
-  }
-
-  else if (
-    type ===
-    "started"
-  ) {
-
-    saleTimeText =
-      "販売開始："
-      +
-      formatFullDateTime(
-        item.startDate
-      );
-
-  }
-
-  else {
-
-    saleTimeText =
-      "販売開始："
-      +
-      formatFullDateTime(
-        item.startDate
-      );
-
-  }
-
-
-  return `
-
-    <div class="sale-ticket-card">
-
-      <div
-        class="
-          sale-ticket-category
-          ${categoryClass}
-        "
-      >
-        ${escapeHtml(
-          categoryLabel
-        )}
-      </div>
-
-
-      <div class="performer-row">
-        ${performerLabels}
-      </div>
-
-
-      <div class="sale-ticket-title">
-        ${escapeHtml(
-          event.title ||
-          "公演名不明"
-        )}
-      </div>
-
-
-      <div class="sale-ticket-name">
-        🎫
-        ${escapeHtml(
-          ticketName
-        )}
-      </div>
-
-
-      <div class="sale-ticket-meta">
-
-        ${
-          event.date
-          ?
-          `
-            📅
-            ${escapeHtml(
-              formatDateWithWeekday(
-                event.date
-              )
-            )}
-            <br>
-          `
-          :
-          ""
-        }
-
-        ${
-          event.venue
-          ?
-          `
-            📍
-            ${escapeHtml(
-              event.venue
-            )}
-            <br>
-          `
-          :
-          ""
-        }
-
-        ${
-          option.status
-          ?
-          `
-            状況：
-            ${escapeHtml(
-              option.status
-            )}
-            <br>
-          `
-          :
-          ""
-        }
-
-        ${
-          option.price
-          ?
-          `
-            料金：
-            ${escapeHtml(
-              option.price
-            )}
-          `
-          :
-          ""
-        }
-
-      </div>
-
-
-      <div class="sale-ticket-time">
-        ${saleTimeText}
-      </div>
-
-
-      ${
-        sourceUrl
-        ?
-        `
-          <a
-            class="sale-ticket-link"
-            href="${escapeHtml(
-              sourceUrl
-            )}"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            チケット・詳細を見る ↗
-          </a>
-        `
-        :
-        ""
-      }
-
-    </div>
-
-  `;
-
-}
-
-
-
-/* =========================================
-   検索
-========================================= */
-
-function showSearch() {
-
-  setActiveMenu(
-    "search"
-  );
-
-  hideCalendar();
-
-
-  document.getElementById(
-    "detail-title"
-  ).textContent =
-    "🔍 ライブを検索";
-
-
-  document.getElementById(
-    "detail-list"
-  ).innerHTML = `
-
-    <div class="tool-card">
-
-      <label class="tool-label">
-        ライブ名・会場・出演者
-      </label>
-
-      <input
-        id="live-search-input"
-        class="text-input"
-        type="search"
-        placeholder="例：新宿、ピュート、漫才"
-      >
-
-      <button
-        id="live-search-button"
-        class="primary-button"
-      >
-        検索
-      </button>
-
-    </div>
-
-    <div id="search-results"></div>
-
-  `;
-
-
-  const input =
-    document.getElementById(
-      "live-search-input"
-    );
-
-
-  function executeSearch() {
-
-    const query =
-      normalizeText(
-        input.value
-      );
-
-
-    const resultArea =
-      document.getElementById(
-        "search-results"
-      );
-
-
-    if (
-      !query
-    ) {
-
-      resultArea.innerHTML = `
-
-        <div class="empty">
-          検索する言葉を入力してください。
-        </div>
-
-      `;
-
-      return;
-
-    }
-
-
-    const grouped =
-      groupEvents(
-        allEvents
-      );
-
-
-    const results =
-      grouped.filter(
-        event => {
-
-          const trackedNames =
-            event.performers
-              .map(
-                id =>
-                  performerMap[id]
-                  ?
-                  performerMap[id].name
-                  :
-                  ""
-              )
-              .join(" ");
-
-
-          const ticketText =
-            event.ticketOptions
-              .map(
-                option =>
-                  [
-                    option.name,
-                    option.type,
-                    option.status,
-                    option.price,
-                    option.saleLabel
-                  ].join(" ")
-              )
-              .join(" ");
-
-
-          const target =
-            normalizeText(
-              [
-                event.title,
-                event.venue,
-                trackedNames,
-                event.performerDetails.join(" "),
-                ticketText
-              ].join(" ")
-            );
-
-
-          return target.includes(
-            query
-          );
-
-        }
-      );
-
-
-    results.sort(
-      sortEvents
-    );
-
-
-    if (
-      results.length === 0
-    ) {
-
-      resultArea.innerHTML = `
-
-        <div class="empty">
-          該当するライブはありません。
-        </div>
-
-      `;
-
-      return;
-
-    }
-
-
-    resultArea.innerHTML =
-      results
+    const sourceLinks =
+      sourceRecords
+        .filter(
+          record =>
+            record.sourceUrl
+        )
         .map(
-          event =>
-            createEventCard(
-              event,
-              {
-                showDate:
-                  true
-              }
-            )
+          record => `
+            <a
+              class="source-link"
+              href="${escapeHtml(
+                record.sourceUrl
+              )}"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ${escapeHtml(
+                sourceLabel(
+                  record.source
+                )
+              )}で見る ↗
+            </a>
+          `
         )
         .join("");
 
+    const isFavorite =
+      favorites.has(
+        group.key
+      );
+
+    sheet.innerHTML = `
+      <div class="sheet-handle"></div>
+
+      <button
+        id="sheetClose"
+        class="sheet-close"
+      >
+        ×
+      </button>
+
+      <div class="sheet-title">
+        ${escapeHtml(
+          group.title
+        )}
+      </div>
+
+      <div class="sheet-meta">
+
+        📅 ${escapeHtml(
+          group.date
+        )}
+
+        <br>
+
+        ⏰
+        ${
+          group.openTime
+            ? `開場 ${escapeHtml(
+                group.openTime
+              )}　`
+            : ""
+        }
+
+        ${
+          group.startTime
+            ? `開演 ${escapeHtml(
+                group.startTime
+              )}`
+            : ""
+        }
+
+        ${
+          group.venue
+            ? `
+              <br>
+              📍 ${escapeHtml(
+                group.venue
+              )}
+            `
+            : ""
+        }
+
+      </div>
+
+      <div
+        style="
+          margin-top:13px;
+          display:flex;
+          gap:6px;
+          flex-wrap:wrap;
+        "
+      >
+        ${trackedHtml}
+      </div>
+
+      <div class="sheet-block">
+
+        <div class="sheet-block-title">
+          出演者
+        </div>
+
+        <div class="sheet-meta">
+          ${performerDetails}
+        </div>
+
+      </div>
+
+      <div class="sheet-block">
+
+        <div class="sheet-block-title">
+          チケット情報
+        </div>
+
+        ${ticketHtml}
+
+      </div>
+
+      <div class="sheet-block">
+
+        <div class="sheet-block-title">
+          掲載元
+        </div>
+
+        ${sourceLinks ||
+          `
+            <div class="content-card-sub">
+              リンク情報なし
+            </div>
+          `
+        }
+
+      </div>
+
+      <button
+        id="favoriteButton"
+        class="
+          favorite-button
+          ${isFavorite
+            ? "active"
+            : ""}
+        "
+      >
+        ${
+          isFavorite
+            ? "★ 行きたいライブに登録済み"
+            : "☆ 行きたいライブに追加"
+        }
+      </button>
+    `;
+
+    sheetOverlay.classList.add(
+      "open"
+    );
+
+    document
+      .getElementById(
+        "sheetClose"
+      )
+      .addEventListener(
+        "click",
+        closeSheet
+      );
+
+    document
+      .getElementById(
+        "favoriteButton"
+      )
+      .addEventListener(
+        "click",
+        () => {
+
+          if (
+            favorites.has(
+              group.key
+            )
+          ) {
+            favorites.delete(
+              group.key
+            );
+          } else {
+            favorites.add(
+              group.key
+            );
+          }
+
+          saveFavorites();
+
+          updateDrawerBadges();
+
+          openEventSheet(
+            group
+          );
+        }
+      );
   }
 
 
-  document.getElementById(
-    "live-search-button"
-  ).addEventListener(
+  function closeSheet() {
+    sheetOverlay.classList.remove(
+      "open"
+    );
+  }
+
+
+  function uniqueRecordsBySource(
+    records
+  ) {
+
+    const seen =
+      new Set();
+
+    return records.filter(
+      record => {
+
+        const key =
+          [
+            record.source,
+            record.sourceUrl,
+          ].join("|");
+
+        if (seen.has(key)) {
+          return false;
+        }
+
+        seen.add(key);
+        return true;
+      }
+    );
+  }
+
+
+  function getGroupTicketOptions(
+    group
+  ) {
+
+    const result = [];
+    const seen = new Set();
+
+    group.records.forEach(
+      record => {
+
+        const options =
+          Array.isArray(
+            record.ticketOptions
+          )
+            ? record.ticketOptions
+            : [];
+
+        options.forEach(
+          option => {
+
+            const key = [
+              record.source,
+              option.name,
+              option.type,
+              option.price,
+              option.status,
+            ].join("|");
+
+            if (seen.has(key)) {
+              return;
+            }
+
+            seen.add(key);
+
+            result.push({
+              ...option,
+              source:
+                record.source,
+            });
+          }
+        );
+      }
+    );
+
+    return result;
+  }
+
+
+  /* =========================================
+     MENU / PAGES
+  ========================================= */
+
+  function openDrawer() {
+    drawerOverlay.classList.add(
+      "open"
+    );
+  }
+
+
+  function closeDrawer() {
+    drawerOverlay.classList.remove(
+      "open"
+    );
+  }
+
+
+  function showPage(page) {
+
+    currentPage =
+      page;
+
+    document
+      .querySelectorAll(
+        ".drawer-item"
+      )
+      .forEach(
+        item => {
+
+          item.classList.toggle(
+            "active",
+            item.dataset.page === page
+          );
+        }
+      );
+
+    if (page === "calendar") {
+
+      calendarView.style.display =
+        "";
+
+      pageSection.classList.remove(
+        "show"
+      );
+
+      closeDrawer();
+      return;
+    }
+
+    calendarView.style.display =
+      "none";
+
+    pageSection.classList.add(
+      "show"
+    );
+
+    if (page === "new") {
+      renderListPage(
+        "新着ライブ",
+        "48時間以内に新しく見つかったライブ",
+        getNewGroups()
+      );
+    }
+
+    if (page === "favorites") {
+      renderListPage(
+        "行きたいライブ",
+        "⭐を付けたライブ",
+        groups.filter(
+          group =>
+            favorites.has(
+              group.key
+            )
+        )
+      );
+    }
+
+    if (page === "sales") {
+      renderSalesPage();
+    }
+
+    if (page === "search") {
+      renderSearchPage();
+    }
+
+    if (page === "performers") {
+      renderPerformersPage();
+    }
+
+    if (page === "coappearance") {
+      renderCoappearancePage();
+    }
+
+    if (page === "settings") {
+      renderSettingsPage();
+    }
+
+    if (page === "help") {
+      renderHelpPage();
+    }
+
+    closeDrawer();
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+
+
+  function renderListPage(
+    title,
+    subtitle,
+    items
+  ) {
+
+    pageSection.innerHTML = `
+      <h2 class="page-title">
+        ${escapeHtml(title)}
+      </h2>
+
+      <div class="page-subtitle">
+        ${escapeHtml(subtitle)}
+      </div>
+
+      ${
+        items.length
+          ? items
+              .map(
+                group => `
+                  <button
+                    class="result-row"
+                    data-event-key="${escapeHtml(
+                      group.key
+                    )}"
+                  >
+
+                    <div class="result-date">
+                      ${escapeHtml(
+                        group.date
+                      )}
+                      ${escapeHtml(
+                        group.startTime
+                      )}
+                    </div>
+
+                    <div class="result-title">
+                      ${escapeHtml(
+                        group.title
+                      )}
+                    </div>
+
+                    <div class="result-sub">
+                      ${escapeHtml(
+                        group.venue
+                      )}
+                    </div>
+
+                  </button>
+                `
+              )
+              .join("")
+          : `
+              <div class="empty-message">
+                該当するライブはありません。
+              </div>
+            `
+      }
+    `;
+
+    bindEventRows(
+      pageSection
+    );
+  }
+
+
+  /* =========================================
+     NEW
+  ========================================= */
+
+  function getNewGroups() {
+
+    const now =
+      Date.now();
+
+    return visibleGroups()
+      .filter(
+        group => {
+
+          if (!group.newUntil) {
+            return false;
+          }
+
+          const time =
+            Date.parse(
+              group.newUntil
+            );
+
+          return (
+            Number.isFinite(time)
+            &&
+            time > now
+          );
+        }
+      );
+  }
+
+
+  /* =========================================
+     SALES
+  ========================================= */
+
+  function getSaleItems() {
+
+    const result = [];
+    const seen = new Set();
+
+    groups.forEach(
+      group => {
+
+        group.records.forEach(
+          record => {
+
+            let options =
+              Array.isArray(
+                record.ticketOptions
+              )
+                ? record.ticketOptions
+                : [];
+
+            /*
+              TIGET等で券種がなく
+              公演レベルsalePeriodsだけある場合
+            */
+            if (
+              options.length === 0
+              &&
+              Array.isArray(
+                record.salePeriods
+              )
+              &&
+              record.salePeriods.length
+            ) {
+
+              options = [
+                {
+                  name: "チケット",
+                  type: "",
+                  status:
+                    record.ticketStatus
+                    || "",
+                  price: "",
+                  salePeriods:
+                    record.salePeriods,
+                }
+              ];
+            }
+
+            options.forEach(
+              option => {
+
+                const periods =
+                  Array.isArray(
+                    option.salePeriods
+                  )
+                    &&
+                    option.salePeriods
+                      .length
+                    ? option.salePeriods
+                    : (
+                        option.saleStartAt
+                          ? [
+                              {
+                                category:
+                                  option.saleCategory
+                                  || "",
+                                label:
+                                  option.saleLabel
+                                  || "",
+                                startAt:
+                                  option.saleStartAt
+                                  || "",
+                                endAt:
+                                  option.saleEndAt
+                                  || "",
+                              }
+                            ]
+                          : []
+                      );
+
+                periods.forEach(
+                  period => {
+
+                    if (
+                      !period.startAt
+                    ) {
+                      return;
+                    }
+
+                    const key = [
+                      group.key,
+                      record.source,
+                      option.name,
+                      option.type,
+                      period.category,
+                      period.startAt,
+                    ].join("|");
+
+                    if (seen.has(key)) {
+                      return;
+                    }
+
+                    seen.add(key);
+
+                    result.push({
+                      group,
+                      record,
+                      option,
+                      period,
+                    });
+                  }
+                );
+              }
+            );
+          }
+        );
+      }
+    );
+
+    return result;
+  }
+
+
+  function getSaleGroups() {
+
+    const now =
+      new Date();
+
+    const nearEnd =
+      new Date(
+        now.getTime()
+        +
+        SALE_NEAR_DAYS
+        * 24 * 60 * 60 * 1000
+      );
+
+    const startedCutoff =
+      new Date(
+        now.getTime()
+        -
+        SALE_STARTED_DAYS
+        * 24 * 60 * 60 * 1000
+      );
+
+    const advance = [];
+    const firstCome = [];
+    const started = [];
+
+    getSaleItems()
+      .forEach(
+        item => {
+
+          const category =
+            item.period.category;
+
+          const start =
+            new Date(
+              item.period.startAt
+            );
+
+          const end =
+            item.period.endAt
+              ? new Date(
+                  item.period.endAt
+                )
+              : null;
+
+          if (
+            Number.isNaN(
+              start.getTime()
+            )
+          ) {
+            return;
+          }
+
+          /*
+            先行販売は、
+            終了日時が分かるものだけ
+            受付期間中に表示。
+          */
+          if (
+            category === "advance"
+            &&
+            end
+            &&
+            start <= now
+            &&
+            now <= end
+          ) {
+            advance.push(
+              item
+            );
+
+            return;
+          }
+
+          /*
+            先着販売
+            開始前7日以内
+          */
+          if (
+            category === "first_come"
+            &&
+            start > now
+            &&
+            start <= nearEnd
+          ) {
+            firstCome.push(
+              item
+            );
+
+            return;
+          }
+
+          /*
+            先着販売開始後5日
+          */
+          if (
+            category === "first_come"
+            &&
+            start <= now
+            &&
+            start >= startedCutoff
+          ) {
+            started.push(
+              item
+            );
+          }
+        }
+      );
+
+    advance.sort(
+      (a, b) =>
+        Date.parse(
+          a.period.endAt
+        )
+        -
+        Date.parse(
+          b.period.endAt
+        )
+    );
+
+    firstCome.sort(
+      (a, b) =>
+        Date.parse(
+          a.period.startAt
+        )
+        -
+        Date.parse(
+          b.period.startAt
+        )
+    );
+
+    started.sort(
+      (a, b) =>
+        Date.parse(
+          b.period.startAt
+        )
+        -
+        Date.parse(
+          a.period.startAt
+        )
+    );
+
+    return {
+      advance,
+      firstCome,
+      started,
+    };
+  }
+
+
+  function renderSalesPage() {
+
+    const saleGroups =
+      getSaleGroups();
+
+    pageSection.innerHTML = `
+      <h2 class="page-title">
+        チケット販売
+      </h2>
+
+      <div class="page-subtitle">
+        券種ごとの販売期間から表示しています。
+      </div>
+
+      ${renderSaleSection(
+        "先行販売",
+        saleGroups.advance
+      )}
+
+      ${renderSaleSection(
+        "先着販売",
+        saleGroups.firstCome
+      )}
+
+      ${renderSaleSection(
+        "販売開始済み",
+        saleGroups.started
+      )}
+    `;
+
+    bindEventRows(
+      pageSection
+    );
+  }
+
+
+  function renderSaleSection(
+    title,
+    items
+  ) {
+
+    return `
+      <div class="section-label">
+        ${title}
+      </div>
+
+      ${
+        items.length
+          ? items.map(
+              item => {
+
+                const date =
+                  new Date(
+                    item.period.startAt
+                  );
+
+                return `
+                  <button
+                    class="result-row"
+                    data-event-key="${escapeHtml(
+                      item.group.key
+                    )}"
+                  >
+
+                    <div class="result-date">
+                      ${escapeHtml(
+                        item.group.date
+                      )}
+                    </div>
+
+                    <div class="result-title">
+                      ${escapeHtml(
+                        item.group.title
+                      )}
+                    </div>
+
+                    <div class="result-sub">
+
+                      ${escapeHtml(
+                        item.option.name
+                        ||
+                        "チケット"
+                      )}
+
+                      ・
+
+                      ${escapeHtml(
+                        sourceLabel(
+                          item.record.source
+                        )
+                      )}
+
+                      <br>
+
+                      販売開始：
+                      ${escapeHtml(
+                        date.toLocaleString(
+                          "ja-JP"
+                        )
+                      )}
+
+                    </div>
+
+                  </button>
+                `;
+              }
+            ).join("")
+          : `
+              <div class="content-card-sub">
+                現在ありません。
+              </div>
+            `
+      }
+    `;
+  }
+
+
+  /* =========================================
+     SEARCH
+  ========================================= */
+
+  function renderSearchPage() {
+
+    pageSection.innerHTML = `
+      <h2 class="page-title">
+        ライブを検索
+      </h2>
+
+      <input
+        id="searchInput"
+        class="search-input"
+        type="search"
+        placeholder="公演名・会場・出演者を検索"
+        autocomplete="off"
+      >
+
+      <div id="searchResults"></div>
+    `;
+
+    const input =
+      document.getElementById(
+        "searchInput"
+      );
+
+    const results =
+      document.getElementById(
+        "searchResults"
+      );
+
+    function runSearch() {
+
+      const q =
+        clean(
+          input.value
+        ).toLowerCase();
+
+      if (!q) {
+
+        results.innerHTML = `
+          <div class="empty-message">
+            検索ワードを入力してください。
+          </div>
+        `;
+
+        return;
+      }
+
+      const found =
+        visibleGroups()
+          .filter(
+            group => {
+
+              const trackedNames =
+                group
+                  .trackedPerformers
+                  .map(
+                    id =>
+                      getPerformer(id)
+                        .name
+                  )
+                  .join(" ");
+
+              const haystack = [
+                group.title,
+                group.venue,
+                trackedNames,
+                ...group.performersText,
+              ]
+                .join(" ")
+                .toLowerCase();
+
+              return haystack.includes(
+                q
+              );
+            }
+          );
+
+      results.innerHTML =
+        found.length
+          ? found.map(
+              group => `
+                <button
+                  class="result-row"
+                  data-event-key="${escapeHtml(
+                    group.key
+                  )}"
+                >
+                  <div class="result-date">
+                    ${escapeHtml(
+                      group.date
+                    )}
+                    ${escapeHtml(
+                      group.startTime
+                    )}
+                  </div>
+
+                  <div class="result-title">
+                    ${escapeHtml(
+                      group.title
+                    )}
+                  </div>
+
+                  <div class="result-sub">
+                    ${escapeHtml(
+                      group.venue
+                    )}
+                  </div>
+                </button>
+              `
+            ).join("")
+          : `
+              <div class="empty-message">
+                見つかりませんでした。
+              </div>
+            `;
+
+      bindEventRows(
+        results
+      );
+    }
+
+    input.addEventListener(
+      "input",
+      runSearch
+    );
+
+    runSearch();
+  }
+
+
+  /* =========================================
+     PERFORMERS
+  ========================================= */
+
+  function renderPerformersPage() {
+
+    pageSection.innerHTML = `
+      <h2 class="page-title">
+        出演者一覧
+      </h2>
+
+      ${performers
+        .map(
+          performer => {
+
+            const count =
+              groups.filter(
+                group =>
+                  group
+                    .trackedPerformers
+                    .includes(
+                      performer.id
+                    )
+              ).length;
+
+            return `
+              <div class="content-card">
+
+                <div
+                  style="
+                    display:flex;
+                    align-items:center;
+                    gap:11px;
+                  "
+                >
+
+                  <span
+                    class="legend-dot"
+                    style="
+                      background:
+                      ${escapeHtml(
+                        performer.color
+                      )}
+                    "
+                  ></span>
+
+                  <div>
+
+                    <div class="content-card-title">
+                      ${escapeHtml(
+                        performer.name
+                      )}
+                    </div>
+
+                    <div class="content-card-sub">
+                      今後の掲載公演
+                      ${count}件
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            `;
+          }
+        )
+        .join("")}
+    `;
+  }
+
+
+  /* =========================================
+     COAPPEARANCE
+  ========================================= */
+
+  function renderCoappearancePage() {
+
+    const pairs = [];
+
+    for (
+      let i = 0;
+      i < performers.length;
+      i++
+    ) {
+
+      for (
+        let j = i + 1;
+        j < performers.length;
+        j++
+      ) {
+
+        const a =
+          performers[i];
+
+        const b =
+          performers[j];
+
+        const count =
+          groups.filter(
+            group =>
+              group
+                .trackedPerformers
+                .includes(a.id)
+              &&
+              group
+                .trackedPerformers
+                .includes(b.id)
+          ).length;
+
+        pairs.push({
+          a,
+          b,
+          count,
+        });
+      }
+    }
+
+    pageSection.innerHTML = `
+      <h2 class="page-title">
+        共演検索
+      </h2>
+
+      <div class="page-subtitle">
+        追跡中の3組が同じ公演に出演する回数です。
+      </div>
+
+      ${pairs
+        .map(
+          pair => `
+            <div class="content-card">
+
+              <div class="content-card-title">
+                ${escapeHtml(
+                  pair.a.name
+                )}
+                ×
+                ${escapeHtml(
+                  pair.b.name
+                )}
+              </div>
+
+              <div class="content-card-sub">
+                ${pair.count}公演
+              </div>
+
+            </div>
+          `
+        )
+        .join("")}
+    `;
+  }
+
+
+  /* =========================================
+     SETTINGS
+  ========================================= */
+
+  function renderSettingsPage() {
+
+    pageSection.innerHTML = `
+      <h2 class="page-title">
+        設定
+      </h2>
+
+      <div class="content-card">
+
+        <div class="content-card-title">
+          カレンダーに表示する芸人
+        </div>
+
+        ${performers
+          .map(
+            performer => `
+              <div class="settings-row">
+
+                <div
+                  style="
+                    display:flex;
+                    align-items:center;
+                    gap:10px;
+                  "
+                >
+
+                  <span
+                    class="legend-dot"
+                    style="
+                      width:22px;
+                      height:22px;
+                      flex-basis:22px;
+                      background:
+                      ${escapeHtml(
+                        performer.color
+                      )}
+                    "
+                  ></span>
+
+                  <strong>
+                    ${escapeHtml(
+                      performer.name
+                    )}
+                  </strong>
+
+                </div>
+
+                <button
+                  class="
+                    toggle
+                    ${
+                      visiblePerformers
+                        .has(
+                          performer.id
+                        )
+                        ? "on"
+                        : ""
+                    }
+                  "
+                  data-toggle-performer="${escapeHtml(
+                    performer.id
+                  )}"
+                ></button>
+
+              </div>
+            `
+          )
+          .join("")}
+
+      </div>
+
+      <button
+        id="clearFavorites"
+        class="favorite-button"
+      >
+        ⭐ 行きたいライブをすべて解除
+      </button>
+    `;
+
+    pageSection
+      .querySelectorAll(
+        "[data-toggle-performer]"
+      )
+      .forEach(
+        button => {
+
+          button.addEventListener(
+            "click",
+            () => {
+
+              const id =
+                button.dataset
+                  .togglePerformer;
+
+              if (
+                visiblePerformers.has(id)
+              ) {
+
+                if (
+                  visiblePerformers.size
+                  === 1
+                ) {
+                  return;
+                }
+
+                visiblePerformers.delete(
+                  id
+                );
+
+              } else {
+
+                visiblePerformers.add(
+                  id
+                );
+              }
+
+              saveVisible();
+
+              renderLegend();
+              renderCalendar();
+              renderSelectedDay();
+              renderSettingsPage();
+              updateDrawerBadges();
+            }
+          );
+        }
+      );
+
+    document
+      .getElementById(
+        "clearFavorites"
+      )
+      .addEventListener(
+        "click",
+        () => {
+
+          favorites.clear();
+
+          saveFavorites();
+
+          updateDrawerBadges();
+
+          alert(
+            "行きたいライブを解除しました。"
+          );
+        }
+      );
+  }
+
+
+  /* =========================================
+     HELP
+  ========================================= */
+
+  function renderHelpPage() {
+
+    pageSection.innerHTML = `
+      <h2 class="page-title">
+        ヘルプ・使い方
+      </h2>
+
+      <div class="content-card">
+        <div class="content-card-title">
+          カレンダー
+        </div>
+
+        <div class="content-card-sub">
+          赤＝めぞん、黄＝ピュート、青＝軟水。
+          丸の右に表示される数字は、その日にその芸人が出演するライブ数です。
+          日付右下の「○件」は、その日のライブ総数です。
+        </div>
+      </div>
+
+      <div class="content-card">
+        <div class="content-card-title">
+          日付をタップ
+        </div>
+
+        <div class="content-card-sub">
+          カレンダーの日付を押すと、下にその日のライブ一覧が表示されます。
+        </div>
+      </div>
+
+      <div class="content-card">
+        <div class="content-card-title">
+          チケット販売
+        </div>
+
+        <div class="content-card-sub">
+          「先行販売」「先着販売」「販売開始済み」を券種単位で表示します。
+          先行販売は終了日時が確認できるものだけ受付期間中に表示します。
+        </div>
+      </div>
+
+      <div class="content-card">
+        <div class="content-card-title">
+          行きたいライブ
+        </div>
+
+        <div class="content-card-sub">
+          公演を開いて「行きたいライブに追加」を押すと、この端末に保存されます。
+        </div>
+      </div>
+    `;
+  }
+
+
+  /* =========================================
+     BADGES
+  ========================================= */
+
+  function updateDrawerBadges() {
+
+    const newCount =
+      getNewGroups().length;
+
+    const favoriteCount =
+      groups.filter(
+        group =>
+          favorites.has(
+            group.key
+          )
+      ).length;
+
+    const sales =
+      getSaleGroups();
+
+    const saleCount =
+      sales.advance.length
+      +
+      sales.firstCome.length
+      +
+      sales.started.length;
+
+    setBadge(
+      "newBadge",
+      newCount
+    );
+
+    setBadge(
+      "favoriteBadge",
+      favoriteCount
+    );
+
+    setBadge(
+      "saleBadge",
+      saleCount
+    );
+  }
+
+
+  function setBadge(
+    id,
+    count
+  ) {
+
+    const element =
+      document.getElementById(id);
+
+    if (!element) {
+      return;
+    }
+
+    element.textContent =
+      String(count);
+
+    element.style.display =
+      count > 0
+        ? ""
+        : "none";
+  }
+
+
+  /* =========================================
+     ALL
+  ========================================= */
+
+  function renderAll() {
+
+    renderLegend();
+    renderCalendar();
+    renderSelectedDay();
+    updateDrawerBadges();
+
+    if (
+      currentPage !==
+      "calendar"
+    ) {
+      showPage(
+        currentPage
+      );
+    }
+  }
+
+
+  /* =========================================
+     EVENTS
+  ========================================= */
+
+  document
+    .getElementById(
+      "menuButton"
+    )
+    .addEventListener(
+      "click",
+      openDrawer
+    );
+
+  document
+    .getElementById(
+      "drawerClose"
+    )
+    .addEventListener(
+      "click",
+      closeDrawer
+    );
+
+  drawerOverlay.addEventListener(
     "click",
-    executeSearch
-  );
-
-
-  input.addEventListener(
-    "keydown",
     event => {
 
       if (
-        event.key ===
-        "Enter"
+        event.target ===
+        drawerOverlay
       ) {
-
-        executeSearch();
-
+        closeDrawer();
       }
-
     }
   );
 
-
-  scrollToDetail();
-
-}
-
-
-
-/* =========================================
-   出演者一覧
-========================================= */
-
-function showPerformers() {
-
-  setActiveMenu(
-    "performers"
-  );
-
-  hideCalendar();
-
-
-  document.getElementById(
-    "detail-title"
-  ).textContent =
-    "👥 出演者一覧";
-
-
-  const grouped =
-    groupEvents(
-      allEvents
-    );
-
-
-  const html =
-    Object.entries(
-      performerMap
-    )
-      .map(
-        ([id, performer]) => {
-
-          const count =
-            grouped.filter(
-              event =>
-                event.performers.includes(
-                  id
-                )
-            ).length;
-
-
-          return `
-
-            <div
-              class="performer-list-item"
-              data-performer-list="${escapeHtml(id)}"
-            >
-
-              <span
-                class="
-                  performer-label
-                  ${performer.className}
-                "
-              >
-                ${escapeHtml(
-                  performer.name
-                )}
-              </span>
-
-              <span class="performer-list-name">
-                ${escapeHtml(
-                  performer.name
-                )}
-              </span>
-
-              <span class="performer-count">
-                ${count}公演
-              </span>
-
-            </div>
-
-          `;
-
-        }
-      )
-      .join("");
-
-
-  document.getElementById(
-    "detail-list"
-  ).innerHTML = `
-
-    <div class="tool-card">
-      ${html}
-    </div>
-
-  `;
-
-
   document
     .querySelectorAll(
-      "[data-performer-list]"
+      ".drawer-item"
     )
     .forEach(
       item => {
@@ -4130,2151 +4017,112 @@ function showPerformers() {
           "click",
           () => {
 
-            const id =
-              item.dataset
-                .performerList;
-
-
-            const performer =
-              performerMap[id];
-
-
-            const events =
-              allEvents.filter(
-                event =>
-                  event.performerId ===
-                  id
-              );
-
-
-            showEventList(
-              performer.name +
-              " のライブ",
-              events
+            showPage(
+              item.dataset.page
             );
-
           }
         );
-
       }
     );
 
+  document
+    .getElementById(
+      "prevMonth"
+    )
+    .addEventListener(
+      "click",
+      () => {
 
-  scrollToDetail();
+        currentMonth =
+          new Date(
+            currentMonth
+              .getFullYear(),
+            currentMonth
+              .getMonth() - 1,
+            1
+          );
 
-}
+        selectedDate =
+          formatDateKey(
+            currentMonth
+          );
 
+        dayExpanded =
+          false;
 
-
-/* =========================================
-   共演検索
-========================================= */
-
-function showCoappearance() {
-
-  setActiveMenu(
-    "coappearance"
-  );
-
-  hideCalendar();
-
-
-  document.getElementById(
-    "detail-title"
-  ).textContent =
-    "🎭 共演検索";
-
-
-  document.getElementById(
-    "detail-list"
-  ).innerHTML = `
-
-    <div class="tool-card">
-
-      <div class="tool-label">
-        2組以上選んでください
-      </div>
-
-      <label class="checkbox-row">
-        <input
-          type="checkbox"
-          value="maison"
-          class="coappearance-check"
-        >
-        めぞん
-      </label>
-
-      <label class="checkbox-row">
-        <input
-          type="checkbox"
-          value="pyuto"
-          class="coappearance-check"
-        >
-        ピュート
-      </label>
-
-      <label class="checkbox-row">
-        <input
-          type="checkbox"
-          value="nansui"
-          class="coappearance-check"
-        >
-        軟水
-      </label>
-
-      <button
-        id="coappearance-search-button"
-        class="primary-button"
-      >
-        この組み合わせで検索
-      </button>
-
-    </div>
-
-    <div id="coappearance-results"></div>
-
-  `;
-
-
-  document.getElementById(
-    "coappearance-search-button"
-  ).addEventListener(
-    "click",
-    () => {
-
-      const selected =
-        Array.from(
-          document.querySelectorAll(
-            ".coappearance-check:checked"
-          )
-        )
-        .map(
-          checkbox =>
-            checkbox.value
-        );
-
-
-      const resultArea =
-        document.getElementById(
-          "coappearance-results"
-        );
-
-
-      if (
-        selected.length < 2
-      ) {
-
-        resultArea.innerHTML = `
-
-          <div class="empty">
-            2組以上選んでください。
-          </div>
-
-        `;
-
-        return;
-
+        renderCalendar();
+        renderSelectedDay();
       }
+    );
 
+  document
+    .getElementById(
+      "nextMonth"
+    )
+    .addEventListener(
+      "click",
+      () => {
 
-      const grouped =
-        groupEvents(
-          allEvents
-        );
+        currentMonth =
+          new Date(
+            currentMonth
+              .getFullYear(),
+            currentMonth
+              .getMonth() + 1,
+            1
+          );
 
+        selectedDate =
+          formatDateKey(
+            currentMonth
+          );
 
-      const results =
-        grouped.filter(
-          event => {
+        dayExpanded =
+          false;
 
-            const ids =
-              new Set([
-                ...event.performers,
-                ...event.trackedPerformers
-              ]);
-
-
-            return selected.every(
-              id =>
-                ids.has(id)
-            );
-
-          }
-        );
-
-
-      results.sort(
-        sortEvents
-      );
-
-
-      const title =
-        selected
-          .map(
-            id =>
-              performerMap[id].name
-          )
-          .join(" × ");
-
-
-      if (
-        results.length === 0
-      ) {
-
-        resultArea.innerHTML = `
-
-          <div class="empty">
-            ${escapeHtml(title)}
-            の共演ライブはありません。
-          </div>
-
-        `;
-
-        return;
-
+        renderCalendar();
+        renderSelectedDay();
       }
-
-
-      resultArea.innerHTML = `
-
-        <div
-          style="
-            margin:0 4px 10px;
-            font-size:15px;
-            font-weight:800;
-          "
-        >
-          ${escapeHtml(title)}
-          ・${results.length}公演
-        </div>
-
-        ${
-          results
-            .map(
-              event =>
-                createEventCard(
-                  event,
-                  {
-                    showDate:
-                      true
-                  }
-                )
-            )
-            .join("")
-        }
-
-      `;
-
-    }
-  );
-
-
-  scrollToDetail();
-
-}
-
-
-
-/* =========================================
-   設定
-========================================= */
-
-function showSettings() {
-
-  setActiveMenu(
-    "settings"
-  );
-
-  hideCalendar();
-
-
-  document.getElementById(
-    "detail-title"
-  ).textContent =
-    "⚙️ 設定";
-
-
-  document.getElementById(
-    "detail-list"
-  ).innerHTML = `
-
-    <div class="tool-card">
-
-      <div class="tool-label">
-        カレンダーに表示する芸人
-      </div>
-
-      ${
-        Object.entries(
-          performerMap
-        )
-          .map(
-            ([id, performer]) => `
-
-              <label class="checkbox-row">
-
-                <input
-                  type="checkbox"
-                  class="settings-performer"
-                  value="${escapeHtml(id)}"
-                  ${
-                    enabledPerformers.has(id)
-                    ?
-                    "checked"
-                    :
-                    ""
-                  }
-                >
-
-                ${escapeHtml(
-                  performer.name
-                )}
-
-              </label>
-
-            `
-          )
-          .join("")
-      }
-
-      <button
-        id="settings-save-button"
-        class="primary-button"
-      >
-        表示設定を保存
-      </button>
-
-    </div>
-
-
-    <div class="tool-card">
-
-      <div class="tool-label">
-        行きたいライブ
-      </div>
-
-      <div
-        style="
-          font-size:14px;
-          line-height:1.7;
-          color:#555;
-        "
-      >
-        星を付けたライブは、このiPhoneのブラウザ内に保存されます。
-      </div>
-
-      <button
-        id="favorites-clear-button"
-        class="danger-button"
-      >
-        行きたいライブをすべて解除
-      </button>
-
-    </div>
-
-  `;
-
-
-  document.getElementById(
-    "settings-save-button"
-  ).addEventListener(
-    "click",
-    () => {
-
-      const checked =
-        Array.from(
-          document.querySelectorAll(
-            ".settings-performer:checked"
-          )
-        )
-        .map(
-          input =>
-            input.value
-        );
-
-
-      enabledPerformers.clear();
-
-
-      checked.forEach(
-        id =>
-          enabledPerformers.add(
-            id
-          )
-      );
-
-
-      syncFilterButtons();
-
-      renderCalendar();
-
-
-      alert(
-        "表示設定を保存しました。"
-      );
-
-    }
-  );
-
-
-  document.getElementById(
-    "favorites-clear-button"
-  ).addEventListener(
-    "click",
-    () => {
-
-      const result =
-        confirm(
-          "行きたいライブをすべて解除しますか？"
-        );
-
-
-      if (
-        !result
-      ) {
-
-        return;
-
-      }
-
-
-      favoriteKeys.clear();
-
-      saveFavorites();
-
-      showSettings();
-
-    }
-  );
-
-
-  scrollToDetail();
-
-}
-
-
-
-/* =========================================
-   ヘルプ
-========================================= */
-
-function showHelp() {
-
-  setActiveMenu(
-    "help"
-  );
-
-  hideCalendar();
-
-
-  document.getElementById(
-    "detail-title"
-  ).textContent =
-    "❔ ヘルプ・使い方";
-
-
-  document.getElementById(
-    "detail-list"
-  ).innerHTML = `
-
-    <div class="tool-card">
-
-      <div class="help-title">
-        ✨ 新着ライブ
-      </div>
-
-      <p class="help-text">
-        本当に新しく見つかったライブだけを48時間NEWとして表示します。
-      </p>
-
-
-      <div class="help-title">
-        ⭐ 行きたいライブ
-      </div>
-
-      <p class="help-text">
-        公演カード右上の星を押すと保存できます。
-      </p>
-
-
-      <div class="help-title">
-        🎫 販売開始が近いもの
-      </div>
-
-      <p class="help-text">
-        券種ごとに、先行販売・先着販売・販売開始済みに分けて表示します。
-      </p>
-
-
-      <div class="help-title">
-        先行販売
-      </div>
-
-      <p class="help-text">
-        先行販売は先行期間中だけ表示します。終了後に販売開始済みへ移動することはありません。
-      </p>
-
-
-      <div class="help-title">
-        先着販売
-      </div>
-
-      <p class="help-text">
-        今後7日以内に販売開始する先着販売を、券種ごとに表示します。
-      </p>
-
-
-      <div class="help-title">
-        販売開始済み
-      </div>
-
-      <p class="help-text">
-        先着販売が開始したあと5日間だけ表示します。販売開始日時が新しいものから並びます。
-      </p>
-
-
-      <div class="help-title">
-        🎟 販売状況
-      </div>
-
-      <p class="help-text">
-        FANYで複数の券種がある場合、それぞれの販売状況・券種・価格・販売期間を分けて表示します。
-      </p>
-
-
-      <div class="help-title">
-        👥 出演者
-      </div>
-
-      <p class="help-text">
-        FANY・TIGETから取得できた出演者情報を表示します。
-      </p>
-
-    </div>
-
-  `;
-
-
-  scrollToDetail();
-
-}
-
-
-
-/* =========================================
-   日付詳細
-========================================= */
-
-function showDateEvents(
-  date
-) {
-
-  const events =
-    filteredEvents()
-      .filter(
-        event =>
-          event.date ===
-          date
-      );
-
-
-  const grouped =
-    groupEvents(
-      events
     );
 
-
-  grouped.sort(
-    sortEvents
-  );
-
-
-  document.getElementById(
-    "detail-title"
-  ).textContent =
-    formatDateWithWeekday(
-      date
-    )
-    +
-    " の公演"
-    +
-    "（"
-    +
-    grouped.length
-    +
-    "件）";
-
-
-  if (
-    grouped.length === 0
-  ) {
-
-    document.getElementById(
-      "detail-list"
-    ).innerHTML = `
-
-      <div class="empty">
-        この日の公演はありません。
-      </div>
-
-    `;
-
-    return;
-
-  }
-
-
-  document.getElementById(
-    "detail-list"
-  ).innerHTML =
-    grouped
-      .map(
-        event =>
-          createEventCard(
-            event
-          )
-      )
-      .join("");
-
-}
-
-
-
-/* =========================================
-   共通一覧
-========================================= */
-
-function showEventList(
-  title,
-  events,
-  options = {}
-) {
-
-  hideCalendar();
-
-
-  document.getElementById(
-    "detail-title"
-  ).textContent =
-    title;
-
-
-  const grouped =
-    groupEvents(
-      events
-    );
-
-
-  grouped.sort(
-    sortEvents
-  );
-
-
-  if (
-    grouped.length === 0
-  ) {
-
-    document.getElementById(
-      "detail-list"
-    ).innerHTML = `
-
-      <div class="empty">
-        ${escapeHtml(
-          options.emptyText ||
-          "該当するライブはありません。"
-        )}
-      </div>
-
-    `;
-
-
-    scrollToDetail();
-
-    return;
-
-  }
-
-
-  document.getElementById(
-    "detail-list"
-  ).innerHTML =
-    grouped
-      .map(
-        event =>
-          createEventCard(
-            event,
-            {
-              showDate:
-                true,
-
-              showNewBadge:
-                options.showNewBadge
-                === true
-            }
-          )
-      )
-      .join("");
-
-
-  scrollToDetail();
-
-}
-
-
-function showGroupedEventList(
-  title,
-  grouped,
-  emptyText
-) {
-
-  hideCalendar();
-
-
-  document.getElementById(
-    "detail-title"
-  ).textContent =
-    title;
-
-
-  grouped.sort(
-    sortEvents
-  );
-
-
-  if (
-    grouped.length === 0
-  ) {
-
-    document.getElementById(
-      "detail-list"
-    ).innerHTML = `
-
-      <div class="empty">
-        ${escapeHtml(
-          emptyText
-        )}
-      </div>
-
-    `;
-
-
-    scrollToDetail();
-
-    return;
-
-  }
-
-
-  document.getElementById(
-    "detail-list"
-  ).innerHTML =
-    grouped
-      .map(
-        event =>
-          createEventCard(
-            event,
-            {
-              showDate:
-                true
-            }
-          )
-      )
-      .join("");
-
-
-  scrollToDetail();
-
-}
-
-
-
-/* =========================================
-   販売状況表示
-========================================= */
-
-function ticketStatusClass(
-  status
-) {
-
-  const value =
-    String(
-      status || ""
-    );
-
-
-  if (
-    value.includes(
-      "残りわずか"
-    )
-  ) {
-
-    return "few";
-
-  }
-
-
-  if (
-    value.includes(
-      "予定数終了"
-    )
-    ||
-    value.includes(
-      "販売終了"
-    )
-    ||
-    value.includes(
-      "受付終了"
-    )
-    ||
-    value.includes(
-      "完売"
-    )
-  ) {
-
-    return "ended";
-
-  }
-
-
-  if (
-    value.includes(
-      "販売中"
-    )
-    ||
-    value.includes(
-      "受付中"
-    )
-  ) {
-
-    return "active";
-
-  }
-
-
-  return "other";
-
-}
-
-
-function createSalePeriodsHtml(
-  option
-) {
-
-  const periods =
-    getOptionSalePeriods(
-      option
-    );
-
-
-  if (
-    periods.length === 0
-  ) {
-
-    return "";
-
-  }
-
-
-  return `
-
-    <div class="ticket-sale-periods">
-
-      ${
-        periods
-          .map(
-            period => {
-
-              const start =
-                parseDateValue(
-                  period.startAt
-                );
-
-
-              const end =
-                parseDateValue(
-                  period.endAt
-                );
-
-
-              const label =
-                period.label
-                ||
-                (
-                  period.category ===
-                  "advance"
-                  ?
-                  "先行販売"
-                  :
-                  "先着販売"
-                );
-
-
-              return `
-
-                <div class="ticket-sale-period">
-
-                  <strong>
-                    ${escapeHtml(
-                      label
-                    )}
-                  </strong>
-
-                  ${
-                    start
-                    ?
-                    `
-                      <br>
-                      ${
-                        period.category ===
-                        "advance"
-                        ?
-                        "開始"
-                        :
-                        "販売開始"
-                      }：
-                      ${escapeHtml(
-                        formatFullDateTime(
-                          start
-                        )
-                      )}
-                    `
-                    :
-                    ""
-                  }
-
-                  ${
-                    end
-                    ?
-                    `
-                      <br>
-                      終了：
-                      ${escapeHtml(
-                        formatFullDateTime(
-                          end
-                        )
-                      )}
-                    `
-                    :
-                    ""
-                  }
-
-                </div>
-
-              `;
-
-            }
-          )
-          .join("")
-      }
-
-    </div>
-
-  `;
-
-}
-
-
-function createTicketOptionsHtml(
-  event
-) {
-
-  if (
-    !Array.isArray(
-      event.ticketOptions
-    )
-    ||
-    event.ticketOptions.length === 0
-  ) {
-
-    return "";
-
-  }
-
-
-  const rows =
-    event.ticketOptions
-      .map(
-        option => {
-
-          const name =
-            option.name ||
-            "チケット";
-
-
-          const type =
-            option.type || "";
-
-
-          const status =
-            option.status || "";
-
-
-          const price =
-            option.price || "";
-
-
-          return `
-
-            <div class="ticket-option">
-
-              <div class="ticket-option-name">
-                ${escapeHtml(
-                  name
-                )}
-              </div>
-
-              <div class="ticket-option-detail">
-
-                ${
-                  type
-                  ?
-                  `
-                    <span class="ticket-type">
-                      ${escapeHtml(
-                        type
-                      )}
-                    </span>
-                  `
-                  :
-                  ""
-                }
-
-                ${
-                  status
-                  ?
-                  `
-                    <span
-                      class="
-                        ticket-status-pill
-                        ${ticketStatusClass(
-                          status
-                        )}
-                      "
-                    >
-                      ${escapeHtml(
-                        status
-                      )}
-                    </span>
-                  `
-                  :
-                  ""
-                }
-
-                ${
-                  price
-                  ?
-                  `
-                    <span class="ticket-price">
-                      ${escapeHtml(
-                        price
-                      )}
-                    </span>
-                  `
-                  :
-                  ""
-                }
-
-              </div>
-
-
-              ${createSalePeriodsHtml(
-                option
-              )}
-
-            </div>
-
-          `;
-
-        }
-      )
-      .join("");
-
-
-  return `
-
-    <div class="ticket-status-box">
-
-      <div class="ticket-status-header">
-        🎫 販売状況
-      </div>
-
-      ${rows}
-
-    </div>
-
-  `;
-
-}
-
-
-
-/* =========================================
-   販売状況集約
-========================================= */
-
-function getTicketSummaryStatus(
-  ticketOptions
-) {
-
-  if (
-    !Array.isArray(
-      ticketOptions
-    )
-    ||
-    ticketOptions.length === 0
-  ) {
-
-    return "";
-
-  }
-
-
-  const statuses =
-    ticketOptions
-      .map(
-        option =>
-          String(
-            option.status || ""
-          )
-      )
-      .filter(Boolean);
-
-
-  if (
-    statuses.length === 0
-  ) {
-
-    return "";
-
-  }
-
-
-  const endedWords = [
-    "予定数終了",
-    "販売終了",
-    "受付終了",
-    "完売"
-  ];
-
-
-  const activeWords = [
-    "販売中",
-    "受付中",
-    "残りわずか"
-  ];
-
-
-  const hasFew =
-    statuses.some(
-      status =>
-        status.includes(
-          "残りわずか"
-        )
-    );
-
-
-  const hasEnded =
-    statuses.some(
-      status =>
-        endedWords.some(
-          word =>
-            status.includes(
-              word
-            )
-        )
-    );
-
-
-  const hasActive =
-    statuses.some(
-      status =>
-        activeWords.some(
-          word =>
-            status.includes(
-              word
-            )
-        )
-    );
-
-
-  const allEnded =
-    statuses.every(
-      status =>
-        endedWords.some(
-          word =>
-            status.includes(
-              word
-            )
-        )
-    );
-
-
-  if (
-    hasEnded
-    &&
-    hasActive
-  ) {
-
-    return "一部予定数終了";
-
-  }
-
-
-  if (
-    allEnded
-  ) {
-
-    return "予定数終了";
-
-  }
-
-
-  if (
-    hasFew
-  ) {
-
-    return "残りわずか";
-
-  }
-
-
-  if (
-    hasActive
-  ) {
-
-    return "販売中";
-
-  }
-
-
-  return "";
-
-}
-
-
-
-/* =========================================
-   公演カード
-========================================= */
-
-function createEventCard(
-  event,
-  options = {}
-) {
-
-  const key =
-    makeEventKey(
-      event
-    );
-
-
-  const favorite =
-    favoriteKeys.has(
-      key
-    );
-
-
-  const newEvent =
-    isNewEvent(
-      event
-    );
-
-
-  const performerIds =
-    Array.from(
-      new Set([
-        ...event.performers,
-        ...event.trackedPerformers
-      ])
-    );
-
-
-  const performerLabels =
-    performerIds
-      .map(
-        id => {
-
-          const performer =
-            performerMap[id];
-
-
-          if (
-            !performer
-          ) {
-
-            return "";
-
-          }
-
-
-          return `
-
-            <span
-              class="
-                performer-label
-                ${performer.className}
-              "
-            >
-              ${escapeHtml(
-                performer.name
-              )}
-            </span>
-
-          `;
-
-        }
-      )
-      .join("");
-
-
-  const sourceBadges =
-    event.sources
-      .map(
-        source => {
-
-          const lower =
-            String(
-              source || ""
-            ).toLowerCase();
-
-
-          let className =
-            "source-other";
-
-
-          if (
-            lower ===
-            "fany"
-          ) {
-
-            className =
-              "source-fany";
-
-          }
-
-
-          if (
-            lower ===
-            "tiget"
-          ) {
-
-            className =
-              "source-tiget";
-
-          }
-
-
-          return `
-
-            <span
-              class="
-                small-badge
-                ${className}
-              "
-            >
-              ${escapeHtml(
-                lower.toUpperCase()
-              )}
-            </span>
-
-          `;
-
-        }
-      )
-      .join("");
-
-
-  const calculatedStatus =
-    getTicketSummaryStatus(
-      event.ticketOptions
-    )
-    ||
-    event.ticketStatus
-    ||
-    "";
-
-
-  let summaryStatusBadge = "";
-
-
-  if (
-    calculatedStatus ===
-    "残りわずか"
-  ) {
-
-    summaryStatusBadge = `
-
-      <span
-        class="
-          small-badge
-          status-few
-        "
-      >
-        残りわずか
-      </span>
-
-    `;
-
-  }
-
-
-  else if (
-    calculatedStatus ===
-    "予定数終了"
-  ) {
-
-    summaryStatusBadge = `
-
-      <span
-        class="
-          small-badge
-          status-ended
-        "
-      >
-        予定数終了
-      </span>
-
-    `;
-
-  }
-
-
-  else if (
-    calculatedStatus ===
-    "一部予定数終了"
-  ) {
-
-    summaryStatusBadge = `
-
-      <span
-        class="
-          small-badge
-          status-partial
-        "
-      >
-        一部予定数終了
-      </span>
-
-    `;
-
-  }
-
-
-  else if (
-    calculatedStatus ===
-    "販売中"
-  ) {
-
-    summaryStatusBadge = `
-
-      <span
-        class="
-          small-badge
-          status-active
-        "
-      >
-        販売中
-      </span>
-
-    `;
-
-  }
-
-
-  const saleDate =
-    parseDateValue(
-      event.saleStartAt
-    );
-
-
-  const performerDetailText =
-    event.performerDetails.length > 0
-    ?
-    event.performerDetails.join(
-      " / "
-    )
-    :
-    "";
-
-
-  const links =
-    event.urls
-      .map(
-        item => {
-
-          const source =
-            String(
-              item.source || ""
-            ).toLowerCase();
-
-
-          const className =
-            source === "fany"
-            ?
-            "event-link fany-link"
-            :
-            "event-link";
-
-
-          const label =
-            source === "fany"
-            ?
-            "FANYでチケット・詳細を見る ↗"
-            :
-            (
-              source === "tiget"
-              ?
-              "TIGETでチケット・詳細を見る ↗"
-              :
-              "チケット・詳細を見る ↗"
-            );
-
-
-          return `
-
-            <a
-              class="${className}"
-              href="${escapeHtml(
-                item.url
-              )}"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              ${escapeHtml(
-                label
-              )}
-            </a>
-
-          `;
-
-        }
-      )
-      .join("");
-
-
-  return `
-
-    <div class="event-card">
-
-
-      <button
-        class="
-          favorite-button
-          ${
-            favorite
-            ?
-            "active"
-            :
-            ""
-          }
-        "
-        data-favorite-key="${escapeHtml(
-          encodeURIComponent(
-            key
-          )
-        )}"
-        type="button"
-      >
-        ${
-          favorite
-          ?
-          "★"
-          :
-          "☆"
-        }
-      </button>
-
-
-      <div class="badge-row">
-
-        ${
-          (
-            options.showNewBadge
-            ||
-            newEvent
-          )
-          ?
-          `
-            <span
-              class="
-                small-badge
-                new-badge
-              "
-            >
-              NEW
-            </span>
-          `
-          :
-          ""
-        }
-
-        ${sourceBadges}
-
-        ${summaryStatusBadge}
-
-      </div>
-
-
-      ${
-        options.showDate
-        &&
-        event.date
-        ?
-        `
-          <div class="event-date">
-            ${escapeHtml(
-              formatDateWithWeekday(
-                event.date
-              )
-            )}
-          </div>
-        `
-        :
-        ""
-      }
-
-
-      <div class="performer-row">
-        ${performerLabels}
-      </div>
-
-
-      <div class="event-title">
-        ${escapeHtml(
-          event.title ||
-          "公演名不明"
-        )}
-      </div>
-
-
-      <div class="event-info">
-
-
-        ${
-          event.startTime
-          ?
-          `
-            <div class="event-info-row">
-
-              <span class="info-icon">
-                🕒
-              </span>
-
-              <span>
-                ${
-                  event.openTime
-                  ?
-                  "開場 "
-                  +
-                  escapeHtml(
-                    event.openTime
-                  )
-                  +
-                  "　"
-                  :
-                  ""
-                }
-
-                開演
-                ${escapeHtml(
-                  event.startTime
-                )}
-              </span>
-
-            </div>
-          `
-          :
-          ""
-        }
-
-
-        ${
-          event.venue
-          ?
-          `
-            <div class="event-info-row">
-
-              <span class="info-icon">
-                📍
-              </span>
-
-              <span>
-                ${escapeHtml(
-                  event.venue
-                )}
-              </span>
-
-            </div>
-          `
-          :
-          ""
-        }
-
-      </div>
-
-
-      ${
-        saleDate
-        ?
-        `
-          <div class="sale-info-box">
-
-            🎫 販売開始：
-            <strong>
-              ${escapeHtml(
-                formatDateTime(
-                  saleDate
-                )
-              )}
-            </strong>
-
-          </div>
-        `
-        :
-        ""
-      }
-
-
-      ${createTicketOptionsHtml(
-        event
-      )}
-
-
-      ${
-        performerDetailText
-        ?
-        `
-          <div class="performer-detail-box">
-
-            <div class="performer-detail-title">
-              👥 出演者
-            </div>
-
-            <div class="performer-detail-text">
-              ${escapeHtml(
-                performerDetailText
-              )}
-            </div>
-
-          </div>
-        `
-        :
-        ""
-      }
-
-
-      ${links}
-
-
-    </div>
-
-  `;
-
-}
-
-
-
-/* =========================================
-   お気に入り
-========================================= */
-
-document
-  .getElementById(
-    "detail-list"
-  )
-  .addEventListener(
+  sheetOverlay.addEventListener(
     "click",
     event => {
 
-      const button =
-        event.target.closest(
-          "[data-favorite-key]"
-        );
+      if (
+        event.target ===
+        sheetOverlay
+      ) {
+        closeSheet();
+      }
+    }
+  );
 
+  /*
+    Escキー
+  */
+  document.addEventListener(
+    "keydown",
+    event => {
 
       if (
-        !button
+        event.key === "Escape"
       ) {
-
-        return;
-
+        closeDrawer();
+        closeSheet();
       }
-
-
-      const key =
-        decodeURIComponent(
-          button.dataset
-            .favoriteKey
-        );
-
-
-      if (
-        favoriteKeys.has(
-          key
-        )
-      ) {
-
-        favoriteKeys.delete(
-          key
-        );
-
-        button.classList.remove(
-          "active"
-        );
-
-        button.textContent =
-          "☆";
-
-      }
-
-      else {
-
-        favoriteKeys.add(
-          key
-        );
-
-        button.classList.add(
-          "active"
-        );
-
-        button.textContent =
-          "★";
-
-      }
-
-
-      saveFavorites();
-
-
-      if (
-        currentView ===
-        "favorite"
-      ) {
-
-        showFavorites();
-
-      }
-
     }
   );
 
 
+  /* =========================================
+     START
+  ========================================= */
 
-/* =========================================
-   芸人フィルター
-========================================= */
+  loadData();
 
-document
-  .querySelectorAll(
-    ".filter-button"
-  )
-  .forEach(
-    button => {
-
-      button.addEventListener(
-        "click",
-        () => {
-
-          const id =
-            button.dataset
-              .performer;
-
-
-          if (
-            enabledPerformers.has(
-              id
-            )
-          ) {
-
-            enabledPerformers.delete(
-              id
-            );
-
-          }
-
-          else {
-
-            enabledPerformers.add(
-              id
-            );
-
-          }
-
-
-          syncFilterButtons();
-
-          renderCalendar();
-
-        }
-      );
-
-    }
-  );
-
-
-function syncFilterButtons() {
-
-  document
-    .querySelectorAll(
-      ".filter-button"
-    )
-    .forEach(
-      button => {
-
-        button.classList.toggle(
-          "off",
-          !enabledPerformers.has(
-            button.dataset
-              .performer
-          )
-        );
-
-      }
-    );
-
-}
-
-
-
-/* =========================================
-   補助
-========================================= */
-
-function hideCalendar() {
-
-  document.getElementById(
-    "calendar"
-  ).classList.add(
-    "calendar-hidden"
-  );
-
-}
-
-
-function sortEvents(
-  a,
-  b
-) {
-
-  const dateCompare =
-    (
-      a.date || ""
-    ).localeCompare(
-      b.date || ""
-    );
-
-
-  if (
-    dateCompare !== 0
-  ) {
-
-    return dateCompare;
-
-  }
-
-
-  return (
-    a.startTime || ""
-  ).localeCompare(
-    b.startTime || ""
-  );
-
-}
-
-
-function normalizeText(
-  value
-) {
-
-  return String(
-    value || ""
-  )
-    .toLowerCase()
-    .replace(/\s+/g, "")
-    .normalize("NFKC");
-
-}
-
-
-function formatDateWithWeekday(
-  dateString
-) {
-
-  const date =
-    new Date(
-      dateString +
-      "T00:00:00"
-    );
-
-
-  const weekdays = [
-    "日",
-    "月",
-    "火",
-    "水",
-    "木",
-    "金",
-    "土"
-  ];
-
-
-  return (
-    date.getFullYear()
-    +
-    "年"
-    +
-    (
-      date.getMonth()
-      +
-      1
-    )
-    +
-    "月"
-    +
-    date.getDate()
-    +
-    "日（"
-    +
-    weekdays[
-      date.getDay()
-    ]
-    +
-    "）"
-  );
-
-}
-
-
-function formatDateTime(
-  date
-) {
-
-  return date.toLocaleString(
-    "ja-JP",
-    {
-      month:
-        "numeric",
-
-      day:
-        "numeric",
-
-      hour:
-        "2-digit",
-
-      minute:
-        "2-digit",
-
-      hour12:
-        false
-    }
-  );
-
-}
-
-
-function formatFullDateTime(
-  date
-) {
-
-  return date.toLocaleString(
-    "ja-JP",
-    {
-      year:
-        "numeric",
-
-      month:
-        "numeric",
-
-      day:
-        "numeric",
-
-      hour:
-        "2-digit",
-
-      minute:
-        "2-digit",
-
-      hour12:
-        false
-    }
-  );
-
-}
-
-
-function scrollToDetail() {
-
-  const area =
-    document.querySelector(
-      ".detail-area"
-    );
-
-
-  setTimeout(
-    () => {
-
-      area.scrollIntoView({
-        behavior:
-          "smooth",
-
-        block:
-          "start"
-      });
-
-    },
-    80
-  );
-
-}
-
-
-function escapeHtml(
-  value
-) {
-
-  return String(
-    value ?? ""
-  )
-
-    .replaceAll(
-      "&",
-      "&amp;"
-    )
-
-    .replaceAll(
-      "<",
-      "&lt;"
-    )
-
-    .replaceAll(
-      ">",
-      "&gt;"
-    )
-
-    .replaceAll(
-      '"',
-      "&quot;"
-    )
-
-    .replaceAll(
-      "'",
-      "&#039;"
-    );
-
-}
-
-
-
-/* =========================================
-   開始
-========================================= */
-
-loadEvents();
-
-
+})();
 </script>
 
-
 </body>
-
 </html>
