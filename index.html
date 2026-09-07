@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
 
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1, viewport-fit=cover"
-  />
+  >
 
   <meta
     name="theme-color"
     content="#f5f7fa"
-  />
+  >
 
   <title>ワラいどっとこむ</title>
 
@@ -159,7 +159,7 @@
     }
 
     /* ========================================
-       PERFORMER FILTER / LEGEND
+       PERFORMER FILTER
     ======================================== */
 
     .legend {
@@ -169,7 +169,10 @@
 
       overflow-x: auto;
 
-      padding: 11px 10px;
+      padding:
+        11px
+        10px;
+
       margin-bottom: 14px;
 
       border:
@@ -211,16 +214,14 @@
         10px;
 
       border:
-        1px solid
+        2px solid
         transparent;
 
       border-radius: 999px;
 
-      background:
-        transparent;
+      background: transparent;
 
-      color:
-        #111827;
+      color: #111827;
 
       font-size: 14px;
       font-weight: 900;
@@ -240,14 +241,18 @@
       transform: scale(0.96);
     }
 
+    /*
+      選択中
+    */
     .legend-item.filter-selected {
-      border-color:
-        #d8e6f8;
-
-      background:
-        #edf5ff;
+      border-color: #cddff5;
+      background: #edf5ff;
+      opacity: 1;
     }
 
+    /*
+      他の芸人が選択中
+    */
     .legend-item.filter-dimmed {
       opacity: 0.38;
     }
@@ -357,11 +362,9 @@
       border: 0;
       border-radius: 50%;
 
-      background:
-        #f3f5f8;
+      background: #f3f5f8;
 
-      color:
-        #132033;
+      color: #132033;
 
       font-size: 34px;
       line-height: 1;
@@ -381,9 +384,7 @@
     }
 
     .week-row {
-      padding:
-        0
-        1px;
+      padding: 0 1px;
     }
 
     .weekday {
@@ -394,8 +395,7 @@
 
       text-align: center;
 
-      color:
-        #526075;
+      color: #526075;
 
       font-size: 13px;
       font-weight: 800;
@@ -442,11 +442,8 @@
     }
 
     .day-cell.other-month {
-      background:
-        #fafbfc;
-
-      color:
-        #b9c0ca;
+      background: #fafbfc;
+      color: #b9c0ca;
     }
 
     .day-cell.selected {
@@ -483,7 +480,7 @@
     }
 
     /* ========================================
-       小型化した め / ピ / 軟
+       め / ピ / 軟
     ======================================== */
 
     .performer-counts {
@@ -537,8 +534,7 @@
       right: 5px;
       bottom: 5px;
 
-      color:
-        #68758a;
+      color: #68758a;
 
       font-size: 10px;
       font-weight: 800;
@@ -584,8 +580,7 @@
     }
 
     .day-section-count {
-      color:
-        #657286;
+      color: #657286;
 
       font-size: 13px;
       font-weight: 700;
@@ -600,11 +595,9 @@
 
       border-radius: 999px;
 
-      background:
-        #fff0ef;
+      background: #fff0ef;
 
-      color:
-        #ec4c43;
+      color: #ec4c43;
 
       font-size: 11px;
       font-weight: 900;
@@ -653,8 +646,7 @@
 
       background: #fff;
 
-      color:
-        var(--text);
+      color: var(--text);
 
       text-align: left;
 
@@ -677,6 +669,7 @@
     .event-badges {
       display: flex;
       align-items: center;
+
       gap: 3px;
 
       flex-wrap: wrap;
@@ -713,8 +706,7 @@
     .event-venue {
       overflow: hidden;
 
-      color:
-        #6f7b8e;
+      color: #6f7b8e;
 
       font-size: 11px;
       font-weight: 600;
@@ -724,8 +716,7 @@
     }
 
     .event-arrow {
-      color:
-        #758195;
+      color: #758195;
 
       font-size: 25px;
       font-weight: 300;
@@ -746,11 +737,9 @@
 
       border-radius: 999px;
 
-      background:
-        #f2f4f7;
+      background: #f2f4f7;
 
-      color:
-        #172033;
+      color: #172033;
 
       font-size: 14px;
       font-weight: 900;
@@ -765,8 +754,7 @@
 
       text-align: center;
 
-      color:
-        #7c8797;
+      color: #7c8797;
 
       font-weight: 700;
     }
@@ -877,8 +865,7 @@
       border: 0;
       border-radius: 50%;
 
-      background:
-        #f3f5f7;
+      background: #f3f5f7;
 
       font-size: 25px;
 
@@ -901,8 +888,7 @@
         6px
         18px;
 
-      color:
-        #6c788b;
+      color: #6c788b;
 
       font-size: 13px;
       font-weight: 700;
@@ -929,11 +915,9 @@
 
       border-radius: 12px;
 
-      background:
-        transparent;
+      background: transparent;
 
-      color:
-        #1b2535;
+      color: #1b2535;
 
       text-align: left;
 
@@ -943,11 +927,8 @@
     }
 
     .drawer-item.active {
-      background:
-        #edf5ff;
-
-      color:
-        #1669c9;
+      background: #edf5ff;
+      color: #1669c9;
     }
 
     .drawer-icon {
@@ -969,8 +950,7 @@
 
       border-radius: 999px;
 
-      background:
-        #f35467;
+      background: #f35467;
 
       color: #fff;
 
@@ -987,8 +967,7 @@
         8px
         3px;
 
-      background:
-        var(--border);
+      background: var(--border);
     }
 
     .drawer-version {
@@ -997,8 +976,7 @@
         8px
         0;
 
-      color:
-        #9aa3af;
+      color: #9aa3af;
 
       font-size: 11px;
     }
@@ -1032,8 +1010,7 @@
         0
         17px;
 
-      color:
-        #748094;
+      color: #748094;
 
       font-size: 13px;
       line-height: 1.6;
@@ -1061,8 +1038,7 @@
     }
 
     .content-card-sub {
-      color:
-        #6d798b;
+      color: #6d798b;
 
       font-size: 12px;
       line-height: 1.6;
@@ -1117,11 +1093,9 @@
     }
 
     .status-pill {
-      background:
-        #fff0ef;
+      background: #fff0ef;
 
-      color:
-        #d93f36;
+      color: #d93f36;
     }
 
     .performer-pill {
@@ -1151,8 +1125,7 @@
     .result-date {
       margin-bottom: 4px;
 
-      color:
-        #667286;
+      color: #667286;
 
       font-size: 12px;
       font-weight: 800;
@@ -1166,8 +1139,7 @@
     .result-sub {
       margin-top: 4px;
 
-      color:
-        #758094;
+      color: #758094;
 
       font-size: 12px;
     }
@@ -1201,8 +1173,7 @@
       border: 0;
       border-radius: 999px;
 
-      background:
-        #d7dce3;
+      background: #d7dce3;
 
       cursor: pointer;
     }
@@ -1237,8 +1208,7 @@
     }
 
     .toggle.on {
-      background:
-        #3183df;
+      background: #3183df;
     }
 
     .toggle.on::after {
@@ -1255,8 +1225,11 @@
       z-index: 150;
 
       display: none;
+
       align-items: flex-end;
       justify-content: center;
+
+      overflow: hidden;
 
       background:
         rgba(
@@ -1265,6 +1238,12 @@
           42,
           0.44
         );
+
+      /*
+        overlay自身ではスクロールさせない。
+        中のsheetだけ上下操作を許可。
+      */
+      touch-action: none;
     }
 
     .sheet-overlay.open {
@@ -1275,9 +1254,14 @@
       width: 100%;
       max-width: 760px;
 
-      max-height: 88vh;
+      /*
+        iPhoneでアドレスバーが動いても
+        詳細画面側でスクロールできるようにする
+      */
+      max-height: 88dvh;
 
       overflow-y: auto;
+      overflow-x: hidden;
 
       padding:
         22px
@@ -1308,6 +1292,13 @@
           42,
           0.14
         );
+
+      /*
+        iPhone Safari対策
+      */
+      -webkit-overflow-scrolling: touch;
+      overscroll-behavior: contain;
+      touch-action: pan-y;
     }
 
     .sheet-handle {
@@ -1321,8 +1312,7 @@
 
       border-radius: 999px;
 
-      background:
-        #cdd3db;
+      background: #cdd3db;
     }
 
     .sheet-close {
@@ -1334,8 +1324,7 @@
       border: 0;
       border-radius: 50%;
 
-      background:
-        #f1f3f6;
+      background: #f1f3f6;
 
       font-size: 23px;
 
@@ -1355,8 +1344,7 @@
     .sheet-meta {
       margin-top: 11px;
 
-      color:
-        #606d80;
+      color: #606d80;
 
       font-size: 14px;
       line-height: 1.8;
@@ -1379,11 +1367,8 @@
       font-weight: 900;
     }
 
-    /* 出演者を / 区切りで1行化 */
-
     .performer-text-compact {
-      color:
-        #596579;
+      color: #596579;
 
       font-size: 15px;
       line-height: 1.65;
@@ -1398,8 +1383,7 @@
 
       border-radius: 12px;
 
-      background:
-        #f7f8fa;
+      background: #f7f8fa;
     }
 
     .source-link {
@@ -1411,11 +1395,9 @@
 
       border-radius: 11px;
 
-      background:
-        #edf5ff;
+      background: #edf5ff;
 
-      color:
-        #176ac7;
+      color: #176ac7;
 
       text-decoration: none;
 
@@ -1437,8 +1419,7 @@
 
       background: #fff;
 
-      color:
-        #1b2535;
+      color: #1b2535;
 
       font-weight: 900;
 
@@ -1446,11 +1427,9 @@
     }
 
     .favorite-button.active {
-      border-color:
-        #ffd56a;
+      border-color: #ffd56a;
 
-      background:
-        #fff8dd;
+      background: #fff8dd;
     }
 
     /* ========================================
@@ -1623,10 +1602,6 @@
 
 <main class="app">
 
-  <!-- ======================================
-       HEADER
-  ======================================= -->
-
   <header class="app-header">
 
     <svg
@@ -1699,26 +1674,15 @@
 
   </header>
 
-  <!-- ======================================
-       PERFORMER FILTER
-  ======================================= -->
-
   <div
     id="legend"
     class="legend"
   ></div>
 
-  <!-- ======================================
-       CALENDAR VIEW
-  ======================================= -->
-
   <div id="calendarView">
 
     <section
-      class="
-        surface
-        calendar-card
-      "
+      class="surface calendar-card"
     >
 
       <div class="month-header">
@@ -1747,7 +1711,6 @@
       </div>
 
       <div class="week-row">
-
         <div class="weekday">月</div>
         <div class="weekday">火</div>
         <div class="weekday">水</div>
@@ -1755,7 +1718,6 @@
         <div class="weekday">金</div>
         <div class="weekday">土</div>
         <div class="weekday">日</div>
-
       </div>
 
       <div
@@ -1767,20 +1729,14 @@
 
     <section
       id="daySection"
-      class="
-        surface
-        day-section
-      "
+      class="surface day-section"
     ></section>
 
   </div>
 
   <section
     id="pageSection"
-    class="
-      surface
-      page-section
-    "
+    class="surface page-section"
   ></section>
 
 </main>
@@ -1820,10 +1776,7 @@
         class="drawer-item active"
         data-page="calendar"
       >
-        <span class="drawer-icon">
-          ▣
-        </span>
-
+        <span class="drawer-icon">▣</span>
         カレンダー
       </button>
 
@@ -1831,9 +1784,7 @@
         class="drawer-item"
         data-page="new"
       >
-        <span class="drawer-icon">
-          ✨
-        </span>
+        <span class="drawer-icon">✨</span>
 
         新着ライブ
 
@@ -1849,9 +1800,7 @@
         class="drawer-item"
         data-page="favorites"
       >
-        <span class="drawer-icon">
-          ⭐
-        </span>
+        <span class="drawer-icon">⭐</span>
 
         行きたいライブ
 
@@ -1867,9 +1816,7 @@
         class="drawer-item"
         data-page="sales"
       >
-        <span class="drawer-icon">
-          🎫
-        </span>
+        <span class="drawer-icon">🎫</span>
 
         販売開始が近いもの
 
@@ -1887,10 +1834,7 @@
         class="drawer-item"
         data-page="search"
       >
-        <span class="drawer-icon">
-          ⌕
-        </span>
-
+        <span class="drawer-icon">⌕</span>
         ライブを検索
       </button>
 
@@ -1898,10 +1842,7 @@
         class="drawer-item"
         data-page="performers"
       >
-        <span class="drawer-icon">
-          ♟
-        </span>
-
+        <span class="drawer-icon">♟</span>
         出演者一覧
       </button>
 
@@ -1909,10 +1850,7 @@
         class="drawer-item"
         data-page="coappearance"
       >
-        <span class="drawer-icon">
-          🎭
-        </span>
-
+        <span class="drawer-icon">🎭</span>
         共演検索
       </button>
 
@@ -1922,10 +1860,7 @@
         class="drawer-item"
         data-page="settings"
       >
-        <span class="drawer-icon">
-          ⚙
-        </span>
-
+        <span class="drawer-icon">⚙</span>
         設定
       </button>
 
@@ -1933,17 +1868,14 @@
         class="drawer-item"
         data-page="help"
       >
-        <span class="drawer-icon">
-          ?
-        </span>
-
+        <span class="drawer-icon">?</span>
         ヘルプ・使い方
       </button>
 
     </div>
 
     <div class="drawer-version">
-      v2.4.1
+      v2.4.2
     </div>
 
   </aside>
@@ -1981,14 +1913,12 @@
       color: "#E74C3C",
       short: "め",
     },
-
     {
       id: "pyuto",
       name: "ピュート",
       color: "#F4C430",
       short: "ピ",
     },
-
     {
       id: "nansui",
       name: "軟水",
@@ -2017,12 +1947,9 @@
     "warai-dot-com-visible-performers";
 
 
-  const SALE_NEAR_DAYS =
-    7;
+  const SALE_NEAR_DAYS = 7;
 
-
-  const SALE_STARTED_DAYS =
-    5;
+  const SALE_STARTED_DAYS = 5;
 
 
   let rawEvents = [];
@@ -2053,22 +1980,22 @@
 
 
   /*
-    上部ボタンによる一時絞り込み。
+    上部の出演者フィルター。
 
-    null
+    0組選択
     → 全員表示
 
-    "maison"
-    → めぞんのみ
+    1組選択
+    → その芸人の出演日
 
-    "pyuto"
-    → ピュートのみ
+    2組選択
+    → どちらかが出演する日
 
-    "nansui"
-    → 軟水のみ
+    3組選択
+    → 3組いずれかが出演する日
   */
-  let activePerformerFilter =
-    null;
+  let activePerformerFilters =
+    new Set();
 
 
   let currentMonth =
@@ -2091,6 +2018,15 @@
 
   let dayExpanded =
     false;
+
+
+  /*
+    公演詳細を開いたときの
+    元ページのスクロール位置
+  */
+  let sheetScrollY = 0;
+
+  let sheetBodyLocked = false;
 
 
   /* =========================================
@@ -2155,7 +2091,9 @@
      UTIL
   ========================================= */
 
-  function escapeHtml(value) {
+  function escapeHtml(
+    value
+  ) {
 
     return String(
       value ?? ""
@@ -2183,7 +2121,9 @@
   }
 
 
-  function clean(value) {
+  function clean(
+    value
+  ) {
 
     return String(
       value ?? ""
@@ -2240,6 +2180,7 @@
           ||
           "[]"
         );
+
 
       return Array.isArray(
         value
@@ -2362,11 +2303,12 @@
         name: id,
         color: "#8993a3",
         short:
-          String(id)
-            .slice(
-              0,
-              1
-            ),
+          String(
+            id
+          ).slice(
+            0,
+            1
+          ),
       }
     );
   }
@@ -2774,9 +2716,14 @@
 
 
   /*
-    設定でOFFにした芸人を除外しつつ、
-    上部フィルターがある場合は
-    その芸人の出演公演だけにする。
+    複数選択対応。
+
+    activePerformerFiltersが空
+    → 全公演
+
+    1人以上選択
+    → 選択された芸人のうち
+       1組でも出演していれば表示
   */
   function visibleGroups() {
 
@@ -2794,20 +2741,29 @@
             );
 
 
-        if (!isVisible) {
+        if (
+          !isVisible
+        ) {
+
           return false;
         }
 
 
         if (
-          activePerformerFilter
+          activePerformerFilters.size
+          >
+          0
         ) {
 
           return (
             group
               .trackedPerformers
-              .includes(
-                activePerformerFilter
+              .some(
+                id =>
+                  activePerformerFilters
+                    .has(
+                      id
+                    )
               )
           );
         }
@@ -2820,8 +2776,25 @@
 
 
   /* =========================================
-     TOP PERFORMER FILTER
+     TOP FILTER
   ========================================= */
+
+  function getActiveFilterNames() {
+
+    return performers
+      .filter(
+        performer =>
+          activePerformerFilters
+            .has(
+              performer.id
+            )
+      )
+      .map(
+        performer =>
+          performer.name
+      );
+  }
+
 
   function renderLegend() {
 
@@ -2835,18 +2808,25 @@
       );
 
 
+    const selectedNames =
+      getActiveFilterNames();
+
+
     legend.innerHTML =
       visible.map(
         performer => {
 
           const selected =
-            activePerformerFilter
-            ===
-            performer.id;
+            activePerformerFilters
+              .has(
+                performer.id
+              );
 
 
           const dimmed =
-            activePerformerFilter
+            activePerformerFilters.size
+            >
+            0
             &&
             !selected;
 
@@ -2899,7 +2879,7 @@
           class="
             legend-help
             ${
-              activePerformerFilter
+              selectedNames.length
                 ?
                 "filtering"
                 :
@@ -2908,12 +2888,12 @@
           "
         >
           ${
-            activePerformerFilter
+            selectedNames.length
               ?
               `${escapeHtml(
-                getPerformer(
-                  activePerformerFilter
-                ).name
+                selectedNames.join(
+                  "＋"
+                )
               )}で絞り込み中`
               :
               "名前を押して絞り込み"
@@ -2939,22 +2919,27 @@
 
 
               /*
-                同じ芸人をもう一度押したら
-                全員表示に戻す
+                選択済みなら解除。
+                未選択なら追加。
               */
               if (
-                activePerformerFilter
-                ===
-                id
+                activePerformerFilters
+                  .has(
+                    id
+                  )
               ) {
 
-                activePerformerFilter =
-                  null;
+                activePerformerFilters
+                  .delete(
+                    id
+                  );
 
               } else {
 
-                activePerformerFilter =
-                  id;
+                activePerformerFilters
+                  .add(
+                    id
+                  );
               }
 
 
@@ -2963,8 +2948,11 @@
 
 
               renderLegend();
+
               renderCalendar();
+
               renderSelectedDay();
+
               updateDrawerBadges();
             }
           );
@@ -3051,6 +3039,45 @@
       "";
 
 
+    /*
+      フィルター中は選択中の芸人だけ
+      カレンダー内の丸を表示する。
+    */
+    const calendarPerformers =
+      performers.filter(
+        performer => {
+
+          if (
+            !visiblePerformers
+              .has(
+                performer.id
+              )
+          ) {
+
+            return false;
+          }
+
+
+          if (
+            activePerformerFilters.size
+            >
+            0
+          ) {
+
+            return (
+              activePerformerFilters
+                .has(
+                  performer.id
+                )
+            );
+          }
+
+
+          return true;
+        }
+      );
+
+
     for (
       let i = 0;
       i < totalCells;
@@ -3099,42 +3126,6 @@
         };
 
 
-      /*
-        フィルター中は
-        その芸人のマークのみ表示。
-        通常時は3組全部。
-      */
-      const calendarPerformers =
-        performers.filter(
-          performer => {
-
-            if (
-              !visiblePerformers
-                .has(
-                  performer.id
-                )
-            ) {
-              return false;
-            }
-
-
-            if (
-              activePerformerFilter
-            ) {
-
-              return (
-                performer.id
-                ===
-                activePerformerFilter
-              );
-            }
-
-
-            return true;
-          }
-        );
-
-
       const countsHtml =
         calendarPerformers
           .map(
@@ -3149,7 +3140,10 @@
                 0;
 
 
-              if (!count) {
+              if (
+                !count
+              ) {
+
                 return "";
               }
 
@@ -3256,7 +3250,10 @@
                 );
 
 
-              if (!date) {
+              if (
+                !date
+              ) {
+
                 return;
               }
 
@@ -3289,6 +3286,7 @@
 
 
               renderCalendar();
+
               renderSelectedDay();
 
 
@@ -3349,7 +3347,8 @@
           );
 
 
-          group.trackedPerformers
+          group
+            .trackedPerformers
             .forEach(
               id => {
 
@@ -3359,13 +3358,15 @@
                       id
                     )
                 ) {
+
                   return;
                 }
 
 
-                item.performerCounts[
-                  id
-                ] =
+                item
+                  .performerCounts[
+                    id
+                  ] =
                   (
                     item
                       .performerCounts[
@@ -3398,7 +3399,10 @@
       );
 
 
-    if (!date) {
+    if (
+      !date
+    ) {
+
       return;
     }
 
@@ -3411,6 +3415,10 @@
             ===
             selectedDate
         );
+
+
+    const selectedNames =
+      getActiveFilterNames();
 
 
     const title =
@@ -3443,17 +3451,19 @@
         </div>
 
         <div class="empty-message">
+
           ${
-            activePerformerFilter
+            selectedNames.length
               ?
               `${escapeHtml(
-                getPerformer(
-                  activePerformerFilter
-                ).name
+                selectedNames.join(
+                  "＋"
+                )
               )}の出演ライブはありません。`
               :
               "この日のライブはありません。"
           }
+
         </div>
       `;
 
@@ -3485,17 +3495,19 @@
         </div>
 
         <div class="selected-label">
+
           ${
-            activePerformerFilter
+            selectedNames.length
               ?
               `${escapeHtml(
-                getPerformer(
-                  activePerformerFilter
-                ).name
-              )}で絞込中`
+                selectedNames.join(
+                  "＋"
+                )
+              )}`
               :
               "この日を選択中"
           }
+
         </div>
 
       </div>
@@ -3522,6 +3534,7 @@
               id="viewAllDay"
               class="view-all-button"
             >
+
               ${
                 dayExpanded
                   ?
@@ -3535,6 +3548,7 @@
                   +
                   `（${dayGroups.length}件） ›`
               }
+
             </button>
           `
           :
@@ -3543,10 +3557,12 @@
               class="view-all-button"
               disabled
             >
+
               ${date.getMonth() + 1}月
               ${date.getDate()}日の
               すべてのライブ
               （${dayGroups.length}件）
+
             </button>
           `
       }
@@ -3588,9 +3604,8 @@
   ) {
 
     /*
-      絞り込み中でも、
-      共演している3組は
-      公演一覧では残して表示する。
+      一覧では選択していない共演者も
+      分かるように残す。
     */
     const performerBadges =
       performers
@@ -3717,6 +3732,104 @@
 
 
   /* =========================================
+     BODY SCROLL LOCK
+  ========================================= */
+
+  function lockBodyForSheet() {
+
+    if (
+      sheetBodyLocked
+    ) {
+
+      return;
+    }
+
+
+    sheetScrollY =
+      window.scrollY
+      ||
+      document
+        .documentElement
+        .scrollTop
+      ||
+      0;
+
+
+    document.body.style.position =
+      "fixed";
+
+
+    document.body.style.top =
+      `-${sheetScrollY}px`;
+
+
+    document.body.style.left =
+      "0";
+
+
+    document.body.style.right =
+      "0";
+
+
+    document.body.style.width =
+      "100%";
+
+
+    document.body.style.overflow =
+      "hidden";
+
+
+    sheetBodyLocked =
+      true;
+  }
+
+
+  function unlockBodyForSheet() {
+
+    if (
+      !sheetBodyLocked
+    ) {
+
+      return;
+    }
+
+
+    document.body.style.position =
+      "";
+
+
+    document.body.style.top =
+      "";
+
+
+    document.body.style.left =
+      "";
+
+
+    document.body.style.right =
+      "";
+
+
+    document.body.style.width =
+      "";
+
+
+    document.body.style.overflow =
+      "";
+
+
+    window.scrollTo(
+      0,
+      sheetScrollY
+    );
+
+
+    sheetBodyLocked =
+      false;
+  }
+
+
+  /* =========================================
      DETAIL
   ========================================= */
 
@@ -3724,7 +3837,8 @@
     group
   ) {
 
-    const values = [];
+    const values =
+      [];
 
 
     group.performersText
@@ -3764,17 +3878,14 @@
       );
 
 
-    /*
-      performersTextが取れない時は
-      追跡3組だけでも表示
-    */
     if (
       values.length
       ===
       0
     ) {
 
-      group.trackedPerformers
+      group
+        .trackedPerformers
         .forEach(
           id => {
 
@@ -3810,6 +3921,14 @@
   function openEventSheet(
     group
   ) {
+
+    const wasOpen =
+      sheetOverlay
+        .classList
+        .contains(
+          "open"
+        );
+
 
     const sourceRecords =
       uniqueRecordsBySource(
@@ -4064,6 +4183,7 @@
         </div>
 
         <div class="performer-text-compact">
+
           ${
             performerDetails
               ?
@@ -4073,6 +4193,7 @@
               :
               "出演者詳細なし"
           }
+
         </div>
 
       </div>
@@ -4118,6 +4239,7 @@
           }
         "
       >
+
         ${
           isFavorite
             ?
@@ -4125,8 +4247,24 @@
             :
             "☆ 行きたいライブに追加"
         }
+
       </button>
     `;
+
+
+    /*
+      詳細を初めて開く瞬間だけ
+      後ろのページを固定する
+    */
+    if (
+      !wasOpen
+    ) {
+
+      lockBodyForSheet();
+
+      sheet.scrollTop =
+        0;
+    }
 
 
     sheetOverlay
@@ -4191,6 +4329,9 @@
       .remove(
         "open"
       );
+
+
+    unlockBodyForSheet();
   }
 
 
@@ -4238,7 +4379,9 @@
     group
   ) {
 
-    const result = [];
+    const result =
+      [];
+
 
     const seen =
       new Set();
@@ -4614,7 +4757,9 @@
 
   function getSaleItems() {
 
-    const result = [];
+    const result =
+      [];
+
 
     const seen =
       new Set();
@@ -4623,149 +4768,150 @@
     groups.forEach(
       group => {
 
-        group.records.forEach(
-          record => {
+        group.records
+          .forEach(
+            record => {
 
-            let options =
-              Array.isArray(
-                record.ticketOptions
-              )
-                ?
-                record.ticketOptions
-                :
-                [];
+              let options =
+                Array.isArray(
+                  record.ticketOptions
+                )
+                  ?
+                  record.ticketOptions
+                  :
+                  [];
 
 
-            if (
-              options.length
-              ===
-              0
-              &&
-              Array.isArray(
+              if (
+                options.length
+                ===
+                0
+                &&
+                Array.isArray(
+                  record.salePeriods
+                )
+                &&
                 record.salePeriods
-              )
-              &&
-              record.salePeriods
-                .length
-            ) {
+                  .length
+              ) {
 
-              options = [
-                {
-                  name:
-                    "チケット",
+                options = [
+                  {
+                    name:
+                      "チケット",
 
-                  type:
-                    "",
+                    type:
+                      "",
 
-                  status:
-                    record.ticketStatus
-                    ||
-                    "",
+                    status:
+                      record.ticketStatus
+                      ||
+                      "",
 
-                  price:
-                    "",
+                    price:
+                      "",
 
-                  salePeriods:
-                    record.salePeriods,
-                }
-              ];
-            }
-
-
-            options.forEach(
-              option => {
-
-                const periods =
-                  Array.isArray(
-                    option.salePeriods
-                  )
-                  &&
-                  option.salePeriods
-                    .length
-                    ?
-                    option.salePeriods
-                    :
-                    (
-                      option.saleStartAt
-                        ?
-                        [
-                          {
-                            category:
-                              option.saleCategory
-                              ||
-                              "",
-
-                            label:
-                              option.saleLabel
-                              ||
-                              "",
-
-                            startAt:
-                              option.saleStartAt
-                              ||
-                              "",
-
-                            endAt:
-                              option.saleEndAt
-                              ||
-                              "",
-                          }
-                        ]
-                        :
-                        []
-                    );
-
-
-                periods.forEach(
-                  period => {
-
-                    if (
-                      !period.startAt
-                    ) {
-
-                      return;
-                    }
-
-
-                    const key = [
-                      group.key,
-                      record.source,
-                      option.name,
-                      option.type,
-                      period.category,
-                      period.startAt,
-                    ].join(
-                      "|"
-                    );
-
-
-                    if (
-                      seen.has(
-                        key
-                      )
-                    ) {
-
-                      return;
-                    }
-
-
-                    seen.add(
-                      key
-                    );
-
-
-                    result.push({
-                      group,
-                      record,
-                      option,
-                      period,
-                    });
+                    salePeriods:
+                      record.salePeriods,
                   }
-                );
+                ];
               }
-            );
-          }
-        );
+
+
+              options.forEach(
+                option => {
+
+                  const periods =
+                    Array.isArray(
+                      option.salePeriods
+                    )
+                    &&
+                    option.salePeriods
+                      .length
+                      ?
+                      option.salePeriods
+                      :
+                      (
+                        option.saleStartAt
+                          ?
+                          [
+                            {
+                              category:
+                                option.saleCategory
+                                ||
+                                "",
+
+                              label:
+                                option.saleLabel
+                                ||
+                                "",
+
+                              startAt:
+                                option.saleStartAt
+                                ||
+                                "",
+
+                              endAt:
+                                option.saleEndAt
+                                ||
+                                "",
+                            }
+                          ]
+                          :
+                          []
+                      );
+
+
+                  periods.forEach(
+                    period => {
+
+                      if (
+                        !period.startAt
+                      ) {
+
+                        return;
+                      }
+
+
+                      const key = [
+                        group.key,
+                        record.source,
+                        option.name,
+                        option.type,
+                        period.category,
+                        period.startAt,
+                      ].join(
+                        "|"
+                      );
+
+
+                      if (
+                        seen.has(
+                          key
+                        )
+                      ) {
+
+                        return;
+                      }
+
+
+                      seen.add(
+                        key
+                      );
+
+
+                      result.push({
+                        group,
+                        record,
+                        option,
+                        period,
+                      });
+                    }
+                  );
+                }
+              );
+            }
+          );
       }
     );
 
@@ -4812,11 +4958,16 @@
       );
 
 
-    const advance = [];
+    const advance =
+      [];
 
-    const firstCome = [];
 
-    const started = [];
+    const firstCome =
+      [];
+
+
+    const started =
+      [];
 
 
     getSaleItems()
@@ -4853,11 +5004,6 @@
           }
 
 
-          /*
-            先行販売は
-            終了日時が取得できる場合のみ
-            期間中表示
-          */
           if (
             category
             ===
@@ -5292,14 +5438,9 @@
 
                   <div
                     style="
-                      display:
-                      flex;
-
-                      align-items:
-                      center;
-
-                      gap:
-                      11px;
+                      display:flex;
+                      align-items:center;
+                      gap:11px;
                     "
                   >
 
@@ -5538,9 +5679,10 @@
 
 
               if (
-                visiblePerformers.has(
-                  id
-                )
+                visiblePerformers
+                  .has(
+                    id
+                  )
               ) {
 
                 if (
@@ -5553,35 +5695,41 @@
                 }
 
 
-                visiblePerformers.delete(
-                  id
-                );
+                visiblePerformers
+                  .delete(
+                    id
+                  );
 
 
-                if (
-                  activePerformerFilter
-                  ===
-                  id
-                ) {
-
-                  activePerformerFilter =
-                    null;
-                }
+                /*
+                  設定で非表示にした芸人は
+                  上部選択からも外す
+                */
+                activePerformerFilters
+                  .delete(
+                    id
+                  );
 
               } else {
 
-                visiblePerformers.add(
-                  id
-                );
+                visiblePerformers
+                  .add(
+                    id
+                  );
               }
 
 
               saveVisible();
 
+
               renderLegend();
+
               renderCalendar();
+
               renderSelectedDay();
+
               renderSettingsPage();
+
               updateDrawerBadges();
             }
           );
@@ -5630,9 +5778,29 @@
         </div>
 
         <div class="content-card-sub">
-          画面上部の「めぞん」「ピュート」「軟水」を押すと、
-          その芸人が出演するライブだけに絞り込めます。
-          同じ名前をもう一度押すと全員表示に戻ります。
+
+          画面上部の
+          「めぞん」
+          「ピュート」
+          「軟水」
+          を押すと出演ライブを絞り込めます。
+
+          <br><br>
+
+          複数選択にも対応しています。
+
+          <br>
+
+          例：
+          ピュート＋軟水を選択すると、
+          ピュートまたは軟水が出演するライブを表示します。
+
+          <br><br>
+
+          選択中の名前をもう一度押すと解除されます。
+
+          全部解除すると通常表示に戻ります。
+
         </div>
 
       </div>
@@ -5644,9 +5812,14 @@
         </div>
 
         <div class="content-card-sub">
-          赤＝めぞん、黄＝ピュート、青＝軟水。
-          丸の横の数字は、その日にその芸人が出演するライブ数です。
-          「○件」はその日のライブ総数です。
+
+          赤＝めぞん、
+          黄＝ピュート、
+          青＝軟水。
+
+          丸の横の数字は、
+          その日にその芸人が出演するライブ数です。
+
         </div>
 
       </div>
@@ -5654,42 +5827,21 @@
       <div class="content-card">
 
         <div class="content-card-title">
-          日付をタップ
+          公演詳細
         </div>
 
         <div class="content-card-sub">
-          カレンダーの日付を押すと、
-          その日のライブ一覧が下に表示されます。
+
+          公演を押すと詳細画面が開きます。
+
+          詳細画面を開いている間は
+          後ろのカレンダーは固定され、
+          詳細画面だけスクロールします。
+
         </div>
 
       </div>
 
-      <div class="content-card">
-
-        <div class="content-card-title">
-          出演者
-        </div>
-
-        <div class="content-card-sub">
-          公演詳細では出演者を
-          「軟水 / めぞん / イチゴ」のように
-          コンパクトに表示します。
-        </div>
-
-      </div>
-
-      <div class="content-card">
-
-        <div class="content-card-title">
-          チケット販売
-        </div>
-
-        <div class="content-card-sub">
-          「先行販売」「先着販売」「販売開始済み」を
-          券種単位で表示します。
-        </div>
-
-      </div>
     `;
   }
 
@@ -5756,7 +5908,10 @@
       );
 
 
-    if (!element) {
+    if (
+      !element
+    ) {
+
       return;
     }
 
@@ -5807,7 +5962,7 @@
 
 
   /* =========================================
-     UI EVENTS
+     EVENTS
   ========================================= */
 
   document
@@ -5830,20 +5985,21 @@
     );
 
 
-  drawerOverlay.addEventListener(
-    "click",
-    event => {
+  drawerOverlay
+    .addEventListener(
+      "click",
+      event => {
 
-      if (
-        event.target
-        ===
-        drawerOverlay
-      ) {
+        if (
+          event.target
+          ===
+          drawerOverlay
+        ) {
 
-        closeDrawer();
+          closeDrawer();
+        }
       }
-    }
-  );
+    );
 
 
   document
@@ -5944,20 +6100,21 @@
     );
 
 
-  sheetOverlay.addEventListener(
-    "click",
-    event => {
+  sheetOverlay
+    .addEventListener(
+      "click",
+      event => {
 
-      if (
-        event.target
-        ===
-        sheetOverlay
-      ) {
+        if (
+          event.target
+          ===
+          sheetOverlay
+        ) {
 
-        closeSheet();
+          closeSheet();
+        }
       }
-    }
-  );
+    );
 
 
   document.addEventListener(
