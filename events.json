@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-07T00:17:24.396033+00:00",
+  "syncedAt": "2026-09-07T00:41:37.618261+00:00",
   "performers": [
     {
       "id": "maison",
@@ -3640,7 +3640,7 @@
               "label": "先着",
               "startAt": "2026-08-30T10:00:00+09:00",
               "endAt": "2026-09-18T23:59:00+09:00",
-              "saleKey": "fany|pyuto|63814|51190|SS席|前売|first_come|2026-08-30T10:00:00+09:00"
+              "saleKey": "fany|nansui|63814|51190|SS席|前売|first_come|2026-08-30T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-30T10:00:00+09:00",
@@ -3659,7 +3659,7 @@
               "label": "先着",
               "startAt": "2026-08-30T10:00:00+09:00",
               "endAt": "2026-09-18T23:59:00+09:00",
-              "saleKey": "fany|pyuto|63814|51190|S席|前売|first_come|2026-08-30T10:00:00+09:00"
+              "saleKey": "fany|nansui|63814|51190|S席|前売|first_come|2026-08-30T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-30T10:00:00+09:00",
@@ -3678,7 +3678,7 @@
               "label": "先着",
               "startAt": "2026-08-30T10:00:00+09:00",
               "endAt": "2026-09-18T23:59:00+09:00",
-              "saleKey": "fany|pyuto|63814|51190|A席|前売|first_come|2026-08-30T10:00:00+09:00"
+              "saleKey": "fany|nansui|63814|51190|A席|前売|first_come|2026-08-30T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-30T10:00:00+09:00",
@@ -3697,7 +3697,7 @@
               "label": "先着",
               "startAt": "2026-08-30T10:00:00+09:00",
               "endAt": "2026-09-18T23:59:00+09:00",
-              "saleKey": "fany|pyuto|63814|51190|B席|前売|first_come|2026-08-30T10:00:00+09:00"
+              "saleKey": "fany|nansui|63814|51190|B席|前売|first_come|2026-08-30T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-30T10:00:00+09:00",
@@ -3732,7 +3732,126 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison",
-        "pyuto"
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-09-19",
+      "openTime": "14:30",
+      "startTime": "15:30",
+      "title": "トーキョーマンゲキフェス2026ー渋神三世代決戦ー",
+      "venue": "LINE CUBE SHIBUYA（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/63814/51190",
+      "ticketStatus": "残りわずか",
+      "ticketOptions": [
+        {
+          "name": "SS席",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥12,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-30T10:00:00+09:00",
+              "endAt": "2026-09-18T23:59:00+09:00",
+              "saleKey": "fany|nansui|63814|51190|SS席|前売|first_come|2026-08-30T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-30T10:00:00+09:00",
+          "saleEndAt": "2026-09-18T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "S席",
+          "type": "前売",
+          "status": "残りわずか",
+          "price": "￥10,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-30T10:00:00+09:00",
+              "endAt": "2026-09-18T23:59:00+09:00",
+              "saleKey": "fany|nansui|63814|51190|S席|前売|first_come|2026-08-30T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-30T10:00:00+09:00",
+          "saleEndAt": "2026-09-18T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "A席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥8,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-30T10:00:00+09:00",
+              "endAt": "2026-09-18T23:59:00+09:00",
+              "saleKey": "fany|nansui|63814|51190|A席|前売|first_come|2026-08-30T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-30T10:00:00+09:00",
+          "saleEndAt": "2026-09-18T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "B席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥7,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-30T10:00:00+09:00",
+              "endAt": "2026-09-18T23:59:00+09:00",
+              "saleKey": "fany|nansui|63814|51190|B席|前売|first_come|2026-08-30T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-30T10:00:00+09:00",
+          "saleEndAt": "2026-09-18T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-08-30T10:00:00+09:00",
+      "saleEndAt": "2026-09-18T23:59:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-08-30T10:00:00+09:00",
+          "endAt": "2026-09-18T23:59:00+09:00"
+        }
+      ],
+      "performersText": [
+        "東京15期－18期チーム",
+        "チームリーダー： ダンビラムーチョ",
+        "滝音",
+        "東京19期－23期チーム",
+        "チームリーダー：エバース",
+        "9番街レトロ",
+        "東京24期－31期チーム",
+        "チームリーダー：金魚番長",
+        "ゼロカラン"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison",
+        "pyuto",
+        "nansui"
       ]
     },
     {
@@ -3757,7 +3876,7 @@
               "label": "先着",
               "startAt": "2026-08-30T10:00:00+09:00",
               "endAt": "2026-09-18T23:59:00+09:00",
-              "saleKey": "fany|pyuto|63814|51190|SS席|前売|first_come|2026-08-30T10:00:00+09:00"
+              "saleKey": "fany|nansui|63814|51190|SS席|前売|first_come|2026-08-30T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-30T10:00:00+09:00",
@@ -3776,7 +3895,7 @@
               "label": "先着",
               "startAt": "2026-08-30T10:00:00+09:00",
               "endAt": "2026-09-18T23:59:00+09:00",
-              "saleKey": "fany|pyuto|63814|51190|S席|前売|first_come|2026-08-30T10:00:00+09:00"
+              "saleKey": "fany|nansui|63814|51190|S席|前売|first_come|2026-08-30T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-30T10:00:00+09:00",
@@ -3795,7 +3914,7 @@
               "label": "先着",
               "startAt": "2026-08-30T10:00:00+09:00",
               "endAt": "2026-09-18T23:59:00+09:00",
-              "saleKey": "fany|pyuto|63814|51190|A席|前売|first_come|2026-08-30T10:00:00+09:00"
+              "saleKey": "fany|nansui|63814|51190|A席|前売|first_come|2026-08-30T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-30T10:00:00+09:00",
@@ -3814,7 +3933,7 @@
               "label": "先着",
               "startAt": "2026-08-30T10:00:00+09:00",
               "endAt": "2026-09-18T23:59:00+09:00",
-              "saleKey": "fany|pyuto|63814|51190|B席|前売|first_come|2026-08-30T10:00:00+09:00"
+              "saleKey": "fany|nansui|63814|51190|B席|前売|first_come|2026-08-30T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-30T10:00:00+09:00",
@@ -3849,7 +3968,8 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison",
-        "pyuto"
+        "pyuto",
+        "nansui"
       ]
     },
     {
@@ -4672,7 +4792,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -4691,7 +4811,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -4710,7 +4830,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -4729,7 +4849,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売 大人||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -4748,7 +4868,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -4767,7 +4887,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売 こども||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -4786,7 +4906,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -4805,7 +4925,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -4824,7 +4944,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -4843,7 +4963,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売 大人||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -4862,7 +4982,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -4881,7 +5001,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売 こども||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -4900,7 +5020,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -4919,7 +5039,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -4938,7 +5058,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -4957,7 +5077,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売 大人||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -4976,7 +5096,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -4995,7 +5115,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売 こども||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -5084,7 +5204,8 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison",
-        "pyuto"
+        "pyuto",
+        "nansui"
       ]
     },
     {
@@ -5185,6 +5306,444 @@
       ],
       "firstSeenAt": "2026-09-06T16:21:32.006591+00:00",
       "newUntil": "2026-09-08T16:21:32.006596+00:00",
+      "trackedPerformers": [
+        "maison",
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-09-21",
+      "openTime": "09:30",
+      "startTime": "10:30",
+      "title": "【3日通し券・前半2日通し券・9/21(月)1日券】KOYABU SONIC 2026",
+      "venue": "インテックス大阪 4号館、5号館（大阪府）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/54840/45208",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "前売フォートナイト大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥35,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-21T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45208|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売フォートナイト中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥12,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-21T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45208|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売フォートナイトこども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-21T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45208|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥35,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-21T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45208|前売 大人||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥12,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-21T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45208|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売 こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-21T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45208|前売 こども||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売フォートナイト大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥26,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-21T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45208|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売フォートナイト中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥9,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-21T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45208|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売フォートナイトこども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥4,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-21T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45208|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥26,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-21T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45208|前売 大人||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥9,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-21T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45208|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売 こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥4,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-21T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45208|前売 こども||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売フォートナイト大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥15,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-21T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45208|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売フォートナイト中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-21T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45208|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売フォートナイトこども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-21T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45208|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥15,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-21T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45208|前売 大人||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-21T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45208|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売 こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-21T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45208|前売 こども||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-07-29T11:00:00+09:00",
+      "saleEndAt": "2026-09-21T15:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-07-29T11:00:00+09:00",
+          "endAt": "2026-09-21T15:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "≪9",
+        "21 出演アーティスト≫",
+        "新しい学校のリーダーズ",
+        "カジヒデキ",
+        "くまま",
+        "サニーデイ・サービス",
+        "サバシスター",
+        "竹下☆ぱらだいす×MADAMADA",
+        "ニガミ17才",
+        "ブランデー戦記",
+        "Red Eye",
+        "21 出演芸人≫",
+        "21 フォートナイトエリア≫",
+        "Unger",
+        "今別府直之",
+        "宇都宮まき",
+        "かめてぃん",
+        "川畑泰史",
+        "キャプテンしょーた",
+        "しゅんてゃん",
+        "土屋翼(ミカボ)",
+        "寺本航(テンプルカントリー)",
+        "吉田裕",
+        "らいと",
+        "らいふがーど",
+        "LiaqN",
+        "--------------------",
+        "22 出演アーティスト≫",
+        "22 出演芸人≫",
+        "22 フォートナイトエリア≫",
+        "酒井藍",
+        "すっちー",
+        "諸見里大介",
+        "23 出演アーティスト≫",
+        "EGO-WRAPPIN'",
+        "コレサワ",
+        "サンボマスター",
+        "ジェニーハイ",
+        "水曜日のカンパネラ",
+        "スチャダラパー",
+        "モナキ",
+        "yama",
+        "and more...",
+        "23 出演芸人≫",
+        "今井らいぱち",
+        "エルフ",
+        "蛙亭",
+        "金属バット",
+        "コットン",
+        "ジャルジャル",
+        "滝音",
+        "ニッポンの社長",
+        "バッテリィズ",
+        "ぱーてぃーちゃん",
+        "藤崎マーケット",
+        "紅しょうが",
+        "マユリカ",
+        "ミルクボーイ",
+        "矢野・兵動",
+        "ロングコートダディ",
+        "23 フォートナイトエリア≫",
+        "bykn",
+        "Minipiyo"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto",
@@ -5317,7 +5876,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -5336,7 +5895,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -5355,7 +5914,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -5374,7 +5933,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売 大人||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -5393,7 +5952,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -5412,7 +5971,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売 こども||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -5431,7 +5990,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -5450,7 +6009,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -5469,7 +6028,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -5488,7 +6047,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売 大人||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -5507,7 +6066,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -5526,7 +6085,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売 こども||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -5545,7 +6104,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -5564,7 +6123,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -5583,7 +6142,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -5602,7 +6161,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売 大人||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -5621,7 +6180,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -5640,7 +6199,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45208|前売 こども||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|前売 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -5729,7 +6288,8 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison",
-        "pyuto"
+        "pyuto",
+        "nansui"
       ]
     },
     {
@@ -6536,7 +7096,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45209|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45209|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -6555,7 +7115,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45209|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45209|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -6574,7 +7134,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45209|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45209|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -6593,7 +7153,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45209|前売 大人||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45209|前売 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -6612,7 +7172,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45209|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45209|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -6631,7 +7191,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45209|前売 こども||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45209|前売 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -6650,7 +7210,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45209|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45209|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -6669,7 +7229,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45209|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45209|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -6688,7 +7248,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45209|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45209|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -6707,7 +7267,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45209|前売 大人||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45209|前売 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -6726,7 +7286,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45209|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45209|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -6745,7 +7305,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45209|前売 こども||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45209|前売 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -6834,7 +7394,8 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison",
-        "pyuto"
+        "pyuto",
+        "nansui"
       ]
     },
     {
@@ -6935,6 +7496,330 @@
       ],
       "firstSeenAt": "2026-09-06T16:21:32.006591+00:00",
       "newUntil": "2026-09-08T16:21:32.006596+00:00",
+      "trackedPerformers": [
+        "maison",
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-09-22",
+      "openTime": "09:30",
+      "startTime": "10:30",
+      "title": "【後半2日通し券・9/22(火)1日券】KOYABU SONIC 2026",
+      "venue": "インテックス大阪 4号館、5号館（大阪府）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/54840/45209",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "前売フォートナイト大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥26,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-22T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45209|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売フォートナイト中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥9,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-22T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45209|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売フォートナイトこども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥4,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-22T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45209|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥26,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-22T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45209|前売 大人||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥9,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-22T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45209|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売 こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥4,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-22T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45209|前売 こども||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売フォートナイト大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥15,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-22T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45209|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売フォートナイト中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-22T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45209|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売フォートナイトこども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-22T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45209|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥15,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-22T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45209|前売 大人||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-22T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45209|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売 こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-22T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45209|前売 こども||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-07-29T11:00:00+09:00",
+      "saleEndAt": "2026-09-22T15:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-07-29T11:00:00+09:00",
+          "endAt": "2026-09-22T15:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "≪9",
+        "21 出演アーティスト≫",
+        "新しい学校のリーダーズ",
+        "カジヒデキ",
+        "くまま",
+        "サニーデイ・サービス",
+        "サバシスター",
+        "竹下☆ぱらだいす×MADAMADA",
+        "ニガミ17才",
+        "ブランデー戦記",
+        "Red Eye",
+        "21 出演芸人≫",
+        "21 フォートナイトエリア≫",
+        "Unger",
+        "今別府直之",
+        "宇都宮まき",
+        "かめてぃん",
+        "川畑泰史",
+        "キャプテンしょーた",
+        "しゅんてゃん",
+        "土屋翼(ミカボ)",
+        "寺本航(テンプルカントリー)",
+        "吉田裕",
+        "らいと",
+        "らいふがーど",
+        "LiaqN",
+        "--------------------",
+        "22 出演アーティスト≫",
+        "22 出演芸人≫",
+        "22 フォートナイトエリア≫",
+        "酒井藍",
+        "すっちー",
+        "諸見里大介",
+        "23 出演アーティスト≫",
+        "EGO-WRAPPIN'",
+        "コレサワ",
+        "サンボマスター",
+        "ジェニーハイ",
+        "水曜日のカンパネラ",
+        "スチャダラパー",
+        "モナキ",
+        "yama",
+        "and more...",
+        "23 出演芸人≫",
+        "今井らいぱち",
+        "エルフ",
+        "蛙亭",
+        "金属バット",
+        "コットン",
+        "ジャルジャル",
+        "滝音",
+        "ニッポンの社長",
+        "バッテリィズ",
+        "ぱーてぃーちゃん",
+        "藤崎マーケット",
+        "紅しょうが",
+        "マユリカ",
+        "ミルクボーイ",
+        "矢野・兵動",
+        "ロングコートダディ",
+        "23 フォートナイトエリア≫",
+        "bykn",
+        "Minipiyo"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
       "trackedPerformers": [
         "maison",
         "pyuto",
@@ -7067,7 +7952,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45209|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45209|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -7086,7 +7971,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45209|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45209|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -7105,7 +7990,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45209|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45209|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -7124,7 +8009,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45209|前売 大人||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45209|前売 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -7143,7 +8028,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45209|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45209|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -7162,7 +8047,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45209|前売 こども||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45209|前売 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -7181,7 +8066,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45209|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45209|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -7200,7 +8085,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45209|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45209|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -7219,7 +8104,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45209|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45209|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -7238,7 +8123,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45209|前売 大人||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45209|前売 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -7257,7 +8142,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45209|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45209|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -7276,7 +8161,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45209|前売 こども||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45209|前売 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -7365,7 +8250,8 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison",
-        "pyuto"
+        "pyuto",
+        "nansui"
       ]
     },
     {
@@ -7553,6 +8439,60 @@
       ]
     },
     {
+      "performerId": "nansui",
+      "date": "2026-09-22",
+      "openTime": "12:15",
+      "startTime": "12:30",
+      "title": "大宮コント交流センター",
+      "venue": "大宮ラクーンよしもと劇場（埼玉県）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/63051/50654",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-06T10:00:00+09:00",
+              "endAt": "2026-09-22T10:30:00+09:00",
+              "saleKey": "fany|nansui|63051|50654|全席指定|前売|first_come|2026-08-06T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-06T10:00:00+09:00",
+          "saleEndAt": "2026-09-22T10:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-08-06T10:00:00+09:00",
+      "saleEndAt": "2026-09-22T10:30:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-08-06T10:00:00+09:00",
+          "endAt": "2026-09-22T10:30:00+09:00"
+        }
+      ],
+      "performersText": [
+        "GAG",
+        "ジェラードン",
+        "ビスケットブラザーズ",
+        "軟水"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "nansui"
+      ]
+    },
+    {
       "performerId": "maison",
       "date": "2026-09-22",
       "openTime": "12:30",
@@ -7713,6 +8653,113 @@
       ]
     },
     {
+      "performerId": "nansui",
+      "date": "2026-09-22",
+      "openTime": "14:15",
+      "startTime": "14:30",
+      "title": "音響さん不在のコント寄席～コント中の音は本人の声！？～",
+      "venue": "大宮ラクーンよしもと劇場（埼玉県）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/63115/50669",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-06T10:00:00+09:00",
+              "endAt": "2026-09-22T12:30:00+09:00",
+              "saleKey": "fany|nansui|63115|50669|全席指定|前売|first_come|2026-08-06T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-06T10:00:00+09:00",
+          "saleEndAt": "2026-09-22T12:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-08-06T10:00:00+09:00",
+      "saleEndAt": "2026-09-22T12:30:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-08-06T10:00:00+09:00",
+          "endAt": "2026-09-22T12:30:00+09:00"
+        }
+      ],
+      "performersText": [
+        "GAG",
+        "ジェラードン",
+        "ビスケットブラザーズ",
+        "軟水"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-09-22",
+      "openTime": "16:15",
+      "startTime": "16:30",
+      "title": "おおみやコントさん～ジェラードン×ビスケットブラザーズ・・・",
+      "venue": "大宮ラクーンよしもと劇場（埼玉県）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/63123/50671",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-06T10:00:00+09:00",
+              "endAt": "2026-09-22T14:30:00+09:00",
+              "saleKey": "fany|nansui|63123|50671|全席指定|前売|first_come|2026-08-06T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-06T10:00:00+09:00",
+          "saleEndAt": "2026-09-22T14:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-08-06T10:00:00+09:00",
+      "saleEndAt": "2026-09-22T14:30:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-08-06T10:00:00+09:00",
+          "endAt": "2026-09-22T14:30:00+09:00"
+        }
+      ],
+      "performersText": [
+        "ジェラードン",
+        "ビスケットブラザーズ",
+        "軟水"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "nansui"
+      ]
+    },
+    {
       "performerId": "maison",
       "date": "2026-09-22",
       "openTime": "18:45",
@@ -7845,7 +8892,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-23T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45210|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45210|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -7864,7 +8911,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-23T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45210|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45210|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -7883,7 +8930,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-23T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45210|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45210|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -7902,7 +8949,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-23T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45210|前売 大人||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45210|前売 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -7921,7 +8968,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-23T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45210|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45210|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -7940,7 +8987,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-23T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45210|前売 こども||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45210|前売 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -8029,7 +9076,218 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison",
-        "pyuto"
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-09-23",
+      "openTime": "09:30",
+      "startTime": "10:30",
+      "title": "【9/23(水)1日券】KOYABU SONIC 2026",
+      "venue": "インテックス大阪 4号館、5号館（大阪府）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/54840/45210",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "前売フォートナイト大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥15,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-23T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45210|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売フォートナイト中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-23T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45210|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売フォートナイトこども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-23T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45210|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売 大人",
+          "type": "",
+          "status": "販売中",
+          "price": "￥15,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-23T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45210|前売 大人||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売 中学生",
+          "type": "",
+          "status": "販売中",
+          "price": "￥5,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-23T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45210|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売 こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥3,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-23T15:00:00+09:00",
+              "saleKey": "fany|nansui|54840|45210|前売 こども||first_come|2026-07-29T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-07-29T11:00:00+09:00",
+      "saleEndAt": "2026-09-23T15:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-07-29T11:00:00+09:00",
+          "endAt": "2026-09-23T15:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "≪9",
+        "21 出演アーティスト≫",
+        "新しい学校のリーダーズ",
+        "カジヒデキ",
+        "くまま",
+        "サニーデイ・サービス",
+        "サバシスター",
+        "竹下☆ぱらだいす×MADAMADA",
+        "ニガミ17才",
+        "ブランデー戦記",
+        "Red Eye",
+        "21 出演芸人≫",
+        "21 フォートナイトエリア≫",
+        "Unger",
+        "今別府直之",
+        "宇都宮まき",
+        "かめてぃん",
+        "川畑泰史",
+        "キャプテンしょーた",
+        "しゅんてゃん",
+        "土屋翼(ミカボ)",
+        "寺本航(テンプルカントリー)",
+        "吉田裕",
+        "らいと",
+        "らいふがーど",
+        "LiaqN",
+        "--------------------",
+        "22 出演アーティスト≫",
+        "22 出演芸人≫",
+        "22 フォートナイトエリア≫",
+        "酒井藍",
+        "すっちー",
+        "諸見里大介",
+        "23 出演アーティスト≫",
+        "EGO-WRAPPIN'",
+        "コレサワ",
+        "サンボマスター",
+        "ジェニーハイ",
+        "水曜日のカンパネラ",
+        "スチャダラパー",
+        "モナキ",
+        "yama",
+        "and more...",
+        "23 出演芸人≫",
+        "今井らいぱち",
+        "エルフ",
+        "蛙亭",
+        "金属バット",
+        "コットン",
+        "ジャルジャル",
+        "滝音",
+        "ニッポンの社長",
+        "バッテリィズ",
+        "ぱーてぃーちゃん",
+        "藤崎マーケット",
+        "紅しょうが",
+        "マユリカ",
+        "ミルクボーイ",
+        "矢野・兵動",
+        "ロングコートダディ",
+        "23 フォートナイトエリア≫",
+        "bykn",
+        "Minipiyo"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison",
+        "pyuto",
+        "nansui"
       ]
     },
     {
@@ -8054,7 +9312,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-23T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45210|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45210|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -8073,7 +9331,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-23T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45210|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45210|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -8092,7 +9350,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-23T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45210|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45210|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -8111,7 +9369,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-23T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45210|前売 大人||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45210|前売 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -8130,7 +9388,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-23T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45210|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45210|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -8149,7 +9407,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-23T15:00:00+09:00",
-              "saleKey": "fany|pyuto|54840|45210|前売 こども||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45210|前売 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -8238,7 +9496,106 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison",
-        "pyuto"
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-09-23",
+      "openTime": "11:45",
+      "startTime": "12:00",
+      "title": "六本木お笑いコントライブ！",
+      "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/60605/49468",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥3,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-23T10:00:00+09:00",
+              "saleKey": "fany|nansui|60605|49468|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-23T10:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,300",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-23T10:00:00+09:00",
+              "saleKey": "fany|nansui|60605|49468|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-23T10:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "★★★★★【子ども割】",
+          "type": "",
+          "status": "販売中",
+          "price": "￥1,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-23T10:00:00+09:00",
+              "saleKey": "fany|nansui|60605|49468|★★★★★【子ども割】||first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-23T10:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-08-05T10:00:00+09:00",
+      "saleEndAt": "2026-09-23T10:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-08-05T10:00:00+09:00",
+          "endAt": "2026-09-23T10:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "佐久間一行",
+        "インポッシブル",
+        "ジェラードン",
+        "バンビーノ",
+        "ビスケットブラザーズ",
+        "コロコロチキチキペッパーズ",
+        "おかずクラブ",
+        "オフローズ",
+        "軟水",
+        "他"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "nansui"
       ]
     },
     {
@@ -8338,6 +9695,105 @@
       ]
     },
     {
+      "performerId": "nansui",
+      "date": "2026-09-23",
+      "openTime": "13:45",
+      "startTime": "14:00",
+      "title": "六本木お笑いコントライブ！",
+      "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/60605/49481",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥3,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-23T12:00:00+09:00",
+              "saleKey": "fany|nansui|60605|49481|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-23T12:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,300",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-23T12:00:00+09:00",
+              "saleKey": "fany|nansui|60605|49481|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-23T12:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "★★★★★【子ども割】",
+          "type": "",
+          "status": "販売中",
+          "price": "￥1,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-23T12:00:00+09:00",
+              "saleKey": "fany|nansui|60605|49481|★★★★★【子ども割】||first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-23T12:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-08-05T10:00:00+09:00",
+      "saleEndAt": "2026-09-23T12:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-08-05T10:00:00+09:00",
+          "endAt": "2026-09-23T12:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "佐久間一行",
+        "チョコレートプラネット",
+        "ジェラードン",
+        "インポッシブル",
+        "バンビーノ",
+        "ビスケットブラザーズ",
+        "コロコロチキチキペッパーズ",
+        "おかずクラブ",
+        "オフローズ",
+        "軟水",
+        "他"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "nansui"
+      ]
+    },
+    {
       "performerId": "maison",
       "date": "2026-09-23",
       "openTime": "14:15",
@@ -8431,6 +9887,105 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-09-23",
+      "openTime": "15:45",
+      "startTime": "16:00",
+      "title": "六本木お笑いコントライブ！",
+      "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/60605/49482",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥3,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-23T14:00:00+09:00",
+              "saleKey": "fany|nansui|60605|49482|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-23T14:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,300",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-23T14:00:00+09:00",
+              "saleKey": "fany|nansui|60605|49482|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-23T14:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "★★★★★【子ども割】",
+          "type": "",
+          "status": "販売中",
+          "price": "￥1,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-23T14:00:00+09:00",
+              "saleKey": "fany|nansui|60605|49482|★★★★★【子ども割】||first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-23T14:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-08-05T10:00:00+09:00",
+      "saleEndAt": "2026-09-23T14:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-08-05T10:00:00+09:00",
+          "endAt": "2026-09-23T14:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "佐久間一行",
+        "チョコレートプラネット",
+        "ジェラードン",
+        "インポッシブル",
+        "バンビーノ",
+        "ビスケットブラザーズ",
+        "コロコロチキチキペッパーズ",
+        "おかずクラブ",
+        "オフローズ",
+        "軟水",
+        "他"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "nansui"
       ]
     },
     {
@@ -8539,6 +10094,121 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-09-23",
+      "openTime": "18:15",
+      "startTime": "18:30",
+      "title": "東京コントセッション",
+      "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/62728/50502",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-23T16:30:00+09:00",
+              "saleKey": "fany|nansui|62728|50502|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-23T16:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-08-05T10:00:00+09:00",
+      "saleEndAt": "2026-09-23T16:30:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-08-05T10:00:00+09:00",
+          "endAt": "2026-09-23T16:30:00+09:00"
+        }
+      ],
+      "performersText": [
+        "チョコレートプラネット",
+        "そいつどいつ",
+        "軟水",
+        "オフローズ",
+        "DOG FOOD PARTY"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-09-24",
+      "openTime": "16:15",
+      "startTime": "16:30",
+      "title": "六本木コントライブNEXT！",
+      "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/61292/49801",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "整理番号付き自由席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-24T14:30:00+09:00",
+              "saleKey": "fany|nansui|61292|49801|整理番号付き自由席|前売|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-24T14:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-08-05T10:00:00+09:00",
+      "saleEndAt": "2026-09-24T14:30:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-08-05T10:00:00+09:00",
+          "endAt": "2026-09-24T14:30:00+09:00"
+        }
+      ],
+      "performersText": [
+        "サルゴリラ",
+        "しずる",
+        "ななまがり",
+        "ヘンダーソン",
+        "ビスケットブラザーズ",
+        "スパイク",
+        "今井らいぱち",
+        "ミカボ",
+        "軟水",
+        "喫茶ムーン"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "nansui"
       ]
     },
     {
@@ -14253,6 +15923,243 @@
       ]
     },
     {
+      "performerId": "maison",
+      "date": "2026-10-17",
+      "openTime": "10:45",
+      "startTime": "11:00",
+      "title": "神保町マンゲキお笑いライブ",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64655/52242",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-17T09:00:00+09:00",
+              "saleKey": "fany|maison|64655|52242|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-17T09:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-17T09:00:00+09:00",
+              "saleKey": "fany|maison|64655|52242|立見（整理番号付）|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-17T09:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-17T09:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-17T09:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ出演者]滝音",
+        "エルフ",
+        "めぞん",
+        "シカゴ実業",
+        "ミカボ",
+        "アズーロ24",
+        "マリーマリー",
+        "インテイク",
+        "ゼロカラン",
+        "他"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-10-17",
+      "openTime": "12:45",
+      "startTime": "13:00",
+      "title": "神保町マンゲキお笑いライブ",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64655/52243",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-17T11:00:00+09:00",
+              "saleKey": "fany|maison|64655|52243|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-17T11:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-17T11:00:00+09:00",
+              "saleKey": "fany|maison|64655|52243|立見（整理番号付）|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-17T11:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-17T11:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-17T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ出演者]滝音",
+        "エルフ",
+        "めぞん",
+        "シカゴ実業",
+        "ミカボ",
+        "アズーロ24",
+        "マリーマリー",
+        "インテイク",
+        "ゼロカラン",
+        "他"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-10-17",
+      "openTime": "14:45",
+      "startTime": "15:00",
+      "title": "神保町マンゲキお笑いライブ",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64655/52244",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-17T13:00:00+09:00",
+              "saleKey": "fany|maison|64655|52244|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-17T13:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-17T13:00:00+09:00",
+              "saleKey": "fany|maison|64655|52244|立見（整理番号付）|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-17T13:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-17T13:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-17T13:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ出演者]滝音",
+        "エルフ",
+        "めぞん",
+        "シカゴ実業",
+        "ミカボ",
+        "アズーロ24",
+        "マリーマリー",
+        "インテイク",
+        "ゼロカラン",
+        "他"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
       "performerId": "pyuto",
       "date": "2026-10-17",
       "openTime": "20:00",
@@ -14341,6 +16248,75 @@
       ]
     },
     {
+      "performerId": "maison",
+      "date": "2026-10-18",
+      "openTime": "16:45",
+      "startTime": "17:00",
+      "title": "グランドバトルEAST 第三部",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64355/51912",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,300",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-18T15:00:00+09:00",
+              "saleKey": "fany|nansui|64355|51912|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-18T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,300",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-18T15:00:00+09:00",
+              "saleKey": "fany|nansui|64355|51912|立見（整理番号付）|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-18T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-18T15:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-18T15:00:00+09:00"
+        }
+      ],
+      "performersText": [],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison",
+        "nansui"
+      ]
+    },
+    {
       "performerId": "nansui",
       "date": "2026-10-18",
       "openTime": "16:45",
@@ -14405,7 +16381,127 @@
       "firstSeenAt": "2026-09-06T19:57:15.328617+00:00",
       "newUntil": "",
       "trackedPerformers": [
+        "maison",
         "nansui"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-10-18",
+      "openTime": "18:30",
+      "startTime": "19:00",
+      "title": "漫１０（まんてん）",
+      "venue": "ルミネtheよしもと（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/66751/52989",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-05T11:00:00+09:00",
+      "saleEndAt": "2026-09-07T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-05T11:00:00+09:00",
+          "endAt": "2026-09-07T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "ギャロップ",
+        "タモンズ",
+        "ちょんまげラーメン",
+        "ダンビラムーチョ",
+        "ダブルヒガシ",
+        "カベポスター",
+        "たくろう",
+        "天才ピアニスト",
+        "めぞん",
+        "金魚番長"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-10-19",
+      "openTime": "17:00",
+      "startTime": "17:15",
+      "title": "渋谷Kiwami極LIVE",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64323/51815",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-19T15:15:00+09:00",
+              "saleKey": "fany|maison|64323|51815|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-19T15:15:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-19T15:15:00+09:00",
+              "saleKey": "fany|maison|64323|51815|立見（整理番号付）|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-19T15:15:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-19T15:15:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-19T15:15:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]めぞん",
+        "くらげ",
+        "からし蓮根",
+        "ドッチモドッチ",
+        "赤嶺総理",
+        "ド桜",
+        "シンクロニシティ",
+        "cacao",
+        "シスター",
+        "他"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
       ]
     },
     {
@@ -14482,6 +16578,61 @@
       "newUntil": "",
       "trackedPerformers": [
         "nansui"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-10-21",
+      "openTime": "19:15",
+      "startTime": "19:30",
+      "title": "VSバラエティ",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64847/52188",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-21T17:30:00+09:00",
+              "saleKey": "fany|maison|64847|52188|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-21T17:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-21T17:30:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-21T17:30:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[企画ライブ]ドンココ",
+        "生ファラオ",
+        "めぞん",
+        "しんや",
+        "ナユタ"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
       ]
     },
     {
@@ -14660,6 +16811,60 @@
       ]
     },
     {
+      "performerId": "maison",
+      "date": "2026-10-22",
+      "openTime": "20:20",
+      "startTime": "20:30",
+      "title": "シシガシラpresents おじさんと遊んでくれませんか？",
+      "venue": "大宮ラクーンよしもと劇場（埼玉県）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64979/52394",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,800",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-22T18:30:00+09:00",
+              "saleKey": "fany|maison|64979|52394|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-22T18:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-22T18:30:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-22T18:30:00+09:00"
+        }
+      ],
+      "performersText": [
+        "シシガシラ",
+        "うるとらブギーズ",
+        "たくろう",
+        "めぞん"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
       "performerId": "nansui",
       "date": "2026-10-23",
       "openTime": "17:00",
@@ -14738,6 +16943,136 @@
       ]
     },
     {
+      "performerId": "maison",
+      "date": "2026-10-23",
+      "openTime": "19:00",
+      "startTime": "19:15",
+      "title": "とりせん新ネタライブ「コンセントレーション」",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64848/52202",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-23T17:15:00+09:00",
+              "saleKey": "fany|maison|64848|52202|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-23T17:15:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-23T17:15:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-23T17:15:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[企画ライブ]とりせん",
+        "めぞん",
+        "世界クジラ",
+        "兄弟"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-10-23",
+      "openTime": "20:45",
+      "startTime": "21:00",
+      "title": "risa and...？",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64602/52162",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-23T19:00:00+09:00",
+              "saleKey": "fany|pyuto|64602|52162|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-23T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-23T19:00:00+09:00",
+              "saleKey": "fany|pyuto|64602|52162|立見（整理番号付）|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-23T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-23T19:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-23T19:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[企画ライブ]11月のリサ",
+        "ケビンス 山口",
+        "素敵じゃないか 吉野晋右",
+        "世間知らズ さおり",
+        "ピュート",
+        "めぞん 吉野"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison",
+        "pyuto"
+      ]
+    },
+    {
       "performerId": "pyuto",
       "date": "2026-10-23",
       "openTime": "20:45",
@@ -14809,7 +17144,80 @@
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
       "newUntil": "",
       "trackedPerformers": [
+        "maison",
         "pyuto"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-10-24",
+      "openTime": "14:30",
+      "startTime": "15:00",
+      "title": "幕張土日祝ネタＳＰ１５時",
+      "venue": "よしもと幕張イオンモール劇場（千葉県）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/66334/52774",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-07T10:00:00+09:00",
+      "saleEndAt": "2026-10-24T13:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-07T10:00:00+09:00",
+          "endAt": "2026-10-24T13:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ]ザ・パンチ",
+        "イチキップリン",
+        "ビスケットブラザーズ",
+        "マユリカ",
+        "めぞん",
+        "他"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-10-24",
+      "openTime": "16:30",
+      "startTime": "17:00",
+      "title": "幕張土日祝ネタＳＰ１７時",
+      "venue": "よしもと幕張イオンモール劇場（千葉県）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/66334/52775",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-07T10:00:00+09:00",
+      "saleEndAt": "2026-10-24T15:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-07T10:00:00+09:00",
+          "endAt": "2026-10-24T15:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ]ザ・パンチ",
+        "イチキップリン",
+        "ビスケットブラザーズ",
+        "マユリカ",
+        "めぞん",
+        "他"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
       ]
     },
     {
@@ -14939,6 +17347,85 @@
       ]
     },
     {
+      "performerId": "maison",
+      "date": "2026-10-25",
+      "openTime": "10:45",
+      "startTime": "11:00",
+      "title": "渋谷マンゲキお笑いライブ",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64937/52379",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-25T09:00:00+09:00",
+              "saleKey": "fany|nansui|64937|52379|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-25T09:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-25T09:00:00+09:00",
+              "saleKey": "fany|nansui|64937|52379|立見（整理番号付）|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-25T09:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-25T09:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-25T09:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]しずる",
+        "ジェラードン",
+        "めぞん",
+        "マルセイユ",
+        "シモリュウ",
+        "太鵬",
+        "軟水",
+        "インテイク",
+        "他"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison",
+        "nansui"
+      ]
+    },
+    {
       "performerId": "nansui",
       "date": "2026-10-25",
       "openTime": "10:45",
@@ -15013,6 +17500,86 @@
       "firstSeenAt": "2026-09-06T19:57:15.328617+00:00",
       "newUntil": "",
       "trackedPerformers": [
+        "maison",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-10-25",
+      "openTime": "12:30",
+      "startTime": "12:45",
+      "title": "渋谷マンゲキお笑いライブ",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64937/52380",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-25T10:45:00+09:00",
+              "saleKey": "fany|nansui|64937|52380|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-25T10:45:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-25T10:45:00+09:00",
+              "saleKey": "fany|nansui|64937|52380|立見（整理番号付）|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-25T10:45:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-25T10:45:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-25T10:45:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]しずる",
+        "ジェラードン",
+        "めぞん",
+        "マルセイユ",
+        "シモリュウ",
+        "太鵬",
+        "軟水",
+        "インテイク",
+        "他"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison",
         "nansui"
       ]
     },
@@ -15091,6 +17658,87 @@
       "firstSeenAt": "2026-09-06T19:57:15.328617+00:00",
       "newUntil": "",
       "trackedPerformers": [
+        "maison",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-10-25",
+      "openTime": "14:15",
+      "startTime": "14:30",
+      "title": "渋谷マンゲキお笑いライブ",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64937/52381",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-25T12:30:00+09:00",
+              "saleKey": "fany|nansui|64937|52381|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-25T12:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-25T12:30:00+09:00",
+              "saleKey": "fany|nansui|64937|52381|立見（整理番号付）|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-25T12:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-25T12:30:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-25T12:30:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]しずる",
+        "ジェラードン",
+        "めぞん",
+        "マルセイユ",
+        "シモリュウ",
+        "太鵬",
+        "シンクロニシティ",
+        "軟水",
+        "インテイク",
+        "他"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison",
         "nansui"
       ]
     },
@@ -15170,7 +17818,82 @@
       "firstSeenAt": "2026-09-06T19:57:15.328617+00:00",
       "newUntil": "",
       "trackedPerformers": [
+        "maison",
         "nansui"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-10-26",
+      "openTime": "17:15",
+      "startTime": "17:30",
+      "title": "神保町Kakeru翔SP",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64319/51766",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-26T15:30:00+09:00",
+              "saleKey": "fany|maison|64319|51766|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-26T15:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥1,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-26T15:30:00+09:00",
+              "saleKey": "fany|maison|64319|51766|立見（整理番号付）|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-26T15:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-26T15:30:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-26T15:30:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ出演者]ケビンス",
+        "オダウエダ",
+        "めぞん",
+        "大王",
+        "他"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
       ]
     },
     {
@@ -15333,6 +18056,65 @@
       ]
     },
     {
+      "performerId": "maison",
+      "date": "2026-10-27",
+      "openTime": "20:45",
+      "startTime": "21:00",
+      "title": "よしもと漫才リーグ チームライブ～大王チーム編～",
+      "venue": "よしもと幕張イオンモール劇場（千葉県）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/66273/52747",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-02T10:00:00+09:00",
+              "endAt": "2026-10-27T19:00:00+09:00",
+              "saleKey": "fany|maison|66273|52747|全席指定|前売|first_come|2026-09-02T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-02T10:00:00+09:00",
+          "saleEndAt": "2026-10-27T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-02T10:00:00+09:00",
+      "saleEndAt": "2026-10-27T19:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-02T10:00:00+09:00",
+          "endAt": "2026-10-27T19:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "大王",
+        "めぞん",
+        "9番街レトロ",
+        "ミカボ",
+        "インテイク",
+        "兄弟",
+        "ツーナッカン",
+        "LLR",
+        "マリーマリー"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
       "performerId": "pyuto",
       "date": "2026-10-28",
       "openTime": "20:30",
@@ -15483,6 +18265,159 @@
       ]
     },
     {
+      "performerId": "maison",
+      "date": "2026-10-29",
+      "openTime": "17:00",
+      "startTime": "17:15",
+      "title": "渋谷Kiwami極LIVE",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64323/51818",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-29T15:15:00+09:00",
+              "saleKey": "fany|maison|64323|51818|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-29T15:15:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-29T15:15:00+09:00",
+              "saleKey": "fany|maison|64323|51818|立見（整理番号付）|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-29T15:15:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-29T15:15:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-29T15:15:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]めぞん",
+        "いぬ",
+        "CITY",
+        "マルセイユ",
+        "官兵衛",
+        "キンボシ",
+        "まちるだ",
+        "シンクロニシティ",
+        "他"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-10-29",
+      "openTime": "19:00",
+      "startTime": "19:15",
+      "title": "ポイントキングダム",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64609/52148",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-29T17:15:00+09:00",
+              "saleKey": "fany|pyuto|64609|52148|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-29T17:15:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-29T17:15:00+09:00",
+              "saleKey": "fany|pyuto|64609|52148|立見（整理番号付）|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-29T17:15:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-29T17:15:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-29T17:15:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[企画ライブ]ピュート",
+        "オフローズ",
+        "バリカタ友情飯",
+        "めぞん",
+        "喫茶ムーン"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison",
+        "pyuto"
+      ]
+    },
+    {
       "performerId": "pyuto",
       "date": "2026-10-29",
       "openTime": "19:00",
@@ -15553,7 +18488,110 @@
       "firstSeenAt": "2026-09-06T19:32:07.029343+00:00",
       "newUntil": "",
       "trackedPerformers": [
+        "maison",
         "pyuto"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-10-30",
+      "openTime": "13:45",
+      "startTime": "14:30",
+      "title": "福岡爆音漫才選集",
+      "venue": "Zepp Fukuoka（福岡県）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/62826/50569",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "1Fスタンディング（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥5,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-08T10:00:00+09:00",
+              "endAt": "2026-10-29T23:59:00+09:00",
+              "saleKey": "fany|maison|62826|50569|1Fスタンディング（整理番号付）|前売|first_come|2026-08-08T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-08T10:00:00+09:00",
+          "saleEndAt": "2026-10-29T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "2Fスタンディング（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥5,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-08T10:00:00+09:00",
+              "endAt": "2026-10-29T23:59:00+09:00",
+              "saleKey": "fany|maison|62826|50569|2Fスタンディング（整理番号付）|前売|first_come|2026-08-08T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-08T10:00:00+09:00",
+          "saleEndAt": "2026-10-29T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "2F指定席",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥5,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-08T10:00:00+09:00",
+              "endAt": "2026-10-29T23:59:00+09:00",
+              "saleKey": "fany|maison|62826|50569|2F指定席|前売|first_come|2026-08-08T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-08T10:00:00+09:00",
+          "saleEndAt": "2026-10-29T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-08-08T10:00:00+09:00",
+      "saleEndAt": "2026-10-29T23:59:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-08-08T10:00:00+09:00",
+          "endAt": "2026-10-29T23:59:00+09:00"
+        }
+      ],
+      "performersText": [
+        "囲碁将棋",
+        "エバース",
+        "カナメストーン",
+        "金魚番長",
+        "銀シャリ",
+        "金属バット",
+        "三四郎",
+        "ジョックロック",
+        "たくろう",
+        "ツートライブ",
+        "ニッポンの社長",
+        "バッテリィズ",
+        "めぞん",
+        "ヨネダ2000"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
       ]
     },
     {
@@ -15612,6 +18650,108 @@
       "newUntil": "",
       "trackedPerformers": [
         "pyuto"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-10-30",
+      "openTime": "18:15",
+      "startTime": "19:00",
+      "title": "福岡爆音漫才選集",
+      "venue": "Zepp Fukuoka（福岡県）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/62826/50570",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "1Fスタンディング（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥5,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-08T10:00:00+09:00",
+              "endAt": "2026-10-29T23:59:00+09:00",
+              "saleKey": "fany|maison|62826|50570|1Fスタンディング（整理番号付）|前売|first_come|2026-08-08T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-08T10:00:00+09:00",
+          "saleEndAt": "2026-10-29T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "2Fスタンディング（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥5,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-08T10:00:00+09:00",
+              "endAt": "2026-10-29T23:59:00+09:00",
+              "saleKey": "fany|maison|62826|50570|2Fスタンディング（整理番号付）|前売|first_come|2026-08-08T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-08T10:00:00+09:00",
+          "saleEndAt": "2026-10-29T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "2F指定席",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥5,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-08T10:00:00+09:00",
+              "endAt": "2026-10-29T23:59:00+09:00",
+              "saleKey": "fany|maison|62826|50570|2F指定席|前売|first_come|2026-08-08T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-08T10:00:00+09:00",
+          "saleEndAt": "2026-10-29T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-08-08T10:00:00+09:00",
+      "saleEndAt": "2026-10-29T23:59:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-08-08T10:00:00+09:00",
+          "endAt": "2026-10-29T23:59:00+09:00"
+        }
+      ],
+      "performersText": [
+        "囲碁将棋",
+        "エバース",
+        "カナメストーン",
+        "金魚番長",
+        "銀シャリ",
+        "金属バット",
+        "三四郎",
+        "ジョックロック",
+        "たくろう",
+        "ツートライブ",
+        "ニッポンの社長",
+        "バッテリィズ",
+        "めぞん",
+        "ヨネダ2000"
+      ],
+      "firstSeenAt": "2026-09-07T00:41:37.612976+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
       ]
     },
     {
