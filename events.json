@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-07T03:27:14.343367+00:00",
+  "syncedAt": "2026-09-07T03:43:13.148015+00:00",
   "performers": [
     {
       "id": "maison",
@@ -10246,84 +10246,6 @@
       ]
     },
     {
-      "performerId": "nansui",
-      "date": "2026-09-25",
-      "openTime": "17:00",
-      "startTime": "17:15",
-      "title": "渋谷Kiwami極LIVE",
-      "venue": "渋谷よしもと漫才劇場（東京都）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/60594/49454",
-      "ticketStatus": "販売中",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "前売",
-          "status": "販売中",
-          "price": "￥1,500",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-25T15:15:00+09:00",
-              "saleKey": "fany|nansui|60594|49454|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-25T15:15:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        },
-        {
-          "name": "立見（整理番号付）",
-          "type": "前売",
-          "status": "販売中",
-          "price": "￥1,500",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-25T15:15:00+09:00",
-              "saleKey": "fany|nansui|60594|49454|立見（整理番号付）|前売|first_come|2026-08-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-25T15:15:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-08-05T10:00:00+09:00",
-      "saleEndAt": "2026-09-25T15:15:00+09:00",
-      "saleCategory": "first_come",
-      "salePeriods": [
-        {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-08-05T10:00:00+09:00",
-          "endAt": "2026-09-25T15:15:00+09:00"
-        }
-      ],
-      "performersText": [
-        "[ネタ＆コーナーライブ]CITY",
-        "スロッピ",
-        "セッツァー",
-        "入間国際宣言",
-        "まんじろう",
-        "世間知らズ",
-        "ブラゴーリ",
-        "太鵬",
-        "軟水"
-      ],
-      "firstSeenAt": "2026-09-06T23:32:48.320499+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ]
-    },
-    {
       "performerId": "pyuto",
       "date": "2026-09-25",
       "openTime": "17:15",
@@ -10437,78 +10359,6 @@
       ]
     },
     {
-      "performerId": "nansui",
-      "date": "2026-09-25",
-      "openTime": "21:00",
-      "startTime": "21:15",
-      "title": "ファティゲなおばあちゃん",
-      "venue": "神保町よしもと漫才劇場（東京都）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/61209/49773",
-      "ticketStatus": "残りわずか",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "前売",
-          "status": "残りわずか",
-          "price": "￥1,500",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-25T19:15:00+09:00",
-              "saleKey": "fany|nansui|61209|49773|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-25T19:15:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        },
-        {
-          "name": "立見（整理番号付）",
-          "type": "前売",
-          "status": "予定数終了",
-          "price": "￥1,500",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-25T19:15:00+09:00",
-              "saleKey": "fany|nansui|61209|49773|立見（整理番号付）|前売|first_come|2026-08-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-25T19:15:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-08-05T10:00:00+09:00",
-      "saleEndAt": "2026-09-25T19:15:00+09:00",
-      "saleCategory": "first_come",
-      "salePeriods": [
-        {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-08-05T10:00:00+09:00",
-          "endAt": "2026-09-25T19:15:00+09:00"
-        }
-      ],
-      "performersText": [
-        "[企画ライブ]軟水",
-        "ぺ",
-        "伝書鳩"
-      ],
-      "firstSeenAt": "2026-09-06T23:32:48.320499+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ]
-    },
-    {
       "performerId": "maison",
       "date": "2026-09-26",
       "openTime": "10:45",
@@ -10530,7 +10380,7 @@
               "label": "先着",
               "startAt": "2026-08-05T10:00:00+09:00",
               "endAt": "2026-09-26T09:00:00+09:00",
-              "saleKey": "fany|nansui|61274|49839|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
+              "saleKey": "fany|maison|61274|49839|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -10549,7 +10399,7 @@
               "label": "先着",
               "startAt": "2026-08-05T10:00:00+09:00",
               "endAt": "2026-09-26T09:00:00+09:00",
-              "saleKey": "fany|nansui|61274|49839|立見（整理番号付）|前売|first_come|2026-08-05T10:00:00+09:00"
+              "saleKey": "fany|maison|61274|49839|立見（整理番号付）|前売|first_come|2026-08-05T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -10582,86 +10432,7 @@
       "firstSeenAt": "2026-09-07T01:05:49.949099+00:00",
       "newUntil": "",
       "trackedPerformers": [
-        "maison",
-        "nansui"
-      ]
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-09-26",
-      "openTime": "10:45",
-      "startTime": "11:00",
-      "title": "神保町マンゲキお笑いライブ",
-      "venue": "神保町よしもと漫才劇場（東京都）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/61274/49839",
-      "ticketStatus": "一部予定数終了",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "前売",
-          "status": "販売中",
-          "price": "￥2,500",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-26T09:00:00+09:00",
-              "saleKey": "fany|nansui|61274|49839|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-26T09:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        },
-        {
-          "name": "立見（整理番号付）",
-          "type": "前売",
-          "status": "予定数終了",
-          "price": "￥2,500",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-26T09:00:00+09:00",
-              "saleKey": "fany|nansui|61274|49839|立見（整理番号付）|前売|first_come|2026-08-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-26T09:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-08-05T10:00:00+09:00",
-      "saleEndAt": "2026-09-26T09:00:00+09:00",
-      "saleCategory": "first_come",
-      "salePeriods": [
-        {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-08-05T10:00:00+09:00",
-          "endAt": "2026-09-26T09:00:00+09:00"
-        }
-      ],
-      "performersText": [
-        "[ネタ出演者]滝音",
-        "めぞん",
-        "まちるだ",
-        "スーパーサイズ・ミー",
-        "ぶったま",
-        "スパジーニ",
-        "軟水",
-        "他"
-      ],
-      "firstSeenAt": "2026-09-06T23:32:48.320499+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison",
-        "nansui"
+        "maison"
       ]
     },
     {
@@ -10816,110 +10587,6 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison"
-      ]
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-09-26",
-      "openTime": "17:00",
-      "startTime": "17:15",
-      "title": "三遊間×軟水",
-      "venue": "神保町よしもと漫才劇場（東京都）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/60792/49571",
-      "ticketStatus": "予定数終了",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "前売",
-          "status": "予定数終了",
-          "price": "￥2,000",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-26T15:15:00+09:00",
-              "saleKey": "fany|nansui|60792|49571|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-26T15:15:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-08-05T10:00:00+09:00",
-      "saleEndAt": "2026-09-26T15:15:00+09:00",
-      "saleCategory": "first_come",
-      "salePeriods": [
-        {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-08-05T10:00:00+09:00",
-          "endAt": "2026-09-26T15:15:00+09:00"
-        }
-      ],
-      "performersText": [
-        "[企画ライブ]軟水",
-        "三遊間"
-      ],
-      "firstSeenAt": "2026-09-06T23:32:48.320499+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ]
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-09-26",
-      "openTime": "18:45",
-      "startTime": "19:00",
-      "title": "マリーマリー×軟水の火曜がっちゃんこ ロイヤルマリッジロード",
-      "venue": "神保町よしもと漫才劇場（東京都）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/63107/50683",
-      "ticketStatus": "予定数終了",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "前売",
-          "status": "予定数終了",
-          "price": "￥3,000",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-23T10:00:00+09:00",
-              "endAt": "2026-09-26T17:00:00+09:00",
-              "saleKey": "fany|nansui|63107|50683|全席指定|前売|first_come|2026-08-23T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-23T10:00:00+09:00",
-          "saleEndAt": "2026-09-26T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-08-23T10:00:00+09:00",
-      "saleEndAt": "2026-09-26T17:00:00+09:00",
-      "saleCategory": "first_come",
-      "salePeriods": [
-        {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-08-23T10:00:00+09:00",
-          "endAt": "2026-09-26T17:00:00+09:00"
-        }
-      ],
-      "performersText": [
-        "[企画ライブ]マリーマリー",
-        "軟水"
-      ],
-      "firstSeenAt": "2026-09-06T23:32:48.320499+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
       ]
     },
     {
@@ -11265,79 +10932,6 @@
       ]
     },
     {
-      "performerId": "nansui",
-      "date": "2026-09-27",
-      "openTime": "17:45",
-      "startTime": "18:00",
-      "title": "ごきげん会？ポポポポーン？",
-      "venue": "よしもと漫才劇場（大阪府）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/62331/50083",
-      "ticketStatus": "一部予定数終了",
-      "ticketOptions": [
-        {
-          "name": "指定席",
-          "type": "前売",
-          "status": "販売中",
-          "price": "￥2,000",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-27T16:00:00+09:00",
-              "saleKey": "fany|nansui|62331|50083|指定席|前売|first_come|2026-08-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-27T16:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        },
-        {
-          "name": "立見（整理番号）",
-          "type": "前売",
-          "status": "予定数終了",
-          "price": "￥2,000",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-27T16:00:00+09:00",
-              "saleKey": "fany|nansui|62331|50083|立見（整理番号）|前売|first_come|2026-08-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-27T16:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-08-05T10:00:00+09:00",
-      "saleEndAt": "2026-09-27T16:00:00+09:00",
-      "saleCategory": "first_come",
-      "salePeriods": [
-        {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-08-05T10:00:00+09:00",
-          "endAt": "2026-09-27T16:00:00+09:00"
-        }
-      ],
-      "performersText": [
-        "うただ",
-        "ぎょうぶ",
-        "軟水",
-        "シンクロニシティ"
-      ],
-      "firstSeenAt": "2026-09-06T23:32:48.320499+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ]
-    },
-    {
       "performerId": "maison",
       "date": "2026-09-28",
       "openTime": "17:00",
@@ -11556,85 +11150,6 @@
       ]
     },
     {
-      "performerId": "nansui",
-      "date": "2026-09-29",
-      "openTime": "17:00",
-      "startTime": "17:15",
-      "title": "渋谷Kiwami極LIVE",
-      "venue": "渋谷よしもと漫才劇場（東京都）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/60594/49491",
-      "ticketStatus": "販売中",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "前売",
-          "status": "販売中",
-          "price": "￥1,500",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-29T15:15:00+09:00",
-              "saleKey": "fany|nansui|60594|49491|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-29T15:15:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        },
-        {
-          "name": "立見（整理番号付）",
-          "type": "前売",
-          "status": "販売中",
-          "price": "￥1,500",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-29T15:15:00+09:00",
-              "saleKey": "fany|nansui|60594|49491|立見（整理番号付）|前売|first_come|2026-08-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-29T15:15:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-08-05T10:00:00+09:00",
-      "saleEndAt": "2026-09-29T15:15:00+09:00",
-      "saleCategory": "first_come",
-      "salePeriods": [
-        {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-08-05T10:00:00+09:00",
-          "endAt": "2026-09-29T15:15:00+09:00"
-        }
-      ],
-      "performersText": [
-        "[ネタ＆コーナーライブ]さや香",
-        "ダブルヒガシ",
-        "エルフ",
-        "ヨネダ2000",
-        "ワラバランス",
-        "からし蓮根",
-        "ぱろぱろ",
-        "太鵬",
-        "軟水",
-        "インテイク"
-      ],
-      "firstSeenAt": "2026-09-06T23:32:48.320499+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ]
-    },
-    {
       "performerId": "pyuto",
       "date": "2026-09-29",
       "openTime": "17:45",
@@ -11742,81 +11257,6 @@
       ]
     },
     {
-      "performerId": "nansui",
-      "date": "2026-09-30",
-      "openTime": "17:15",
-      "startTime": "17:30",
-      "title": "神保町Kakeru翔SP",
-      "venue": "神保町よしもと漫才劇場（東京都）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/60497/49418",
-      "ticketStatus": "一部予定数終了",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "前売",
-          "status": "販売中",
-          "price": "￥1,500",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-30T15:30:00+09:00",
-              "saleKey": "fany|nansui|60497|49418|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-30T15:30:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        },
-        {
-          "name": "立見（整理番号付）",
-          "type": "前売",
-          "status": "予定数終了",
-          "price": "￥1,500",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-30T15:30:00+09:00",
-              "saleKey": "fany|nansui|60497|49418|立見（整理番号付）|前売|first_come|2026-08-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-30T15:30:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-08-05T10:00:00+09:00",
-      "saleEndAt": "2026-09-30T15:30:00+09:00",
-      "saleCategory": "first_come",
-      "salePeriods": [
-        {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-08-05T10:00:00+09:00",
-          "endAt": "2026-09-30T15:30:00+09:00"
-        }
-      ],
-      "performersText": [
-        "[ネタ出演者]からし蓮根",
-        "ダブルヒガシ",
-        "軟水",
-        "イチゴ",
-        "セカンドロット",
-        "他"
-      ],
-      "firstSeenAt": "2026-09-06T23:32:48.320499+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ]
-    },
-    {
       "performerId": "maison",
       "date": "2026-09-30",
       "openTime": "18:30",
@@ -11838,7 +11278,7 @@
               "label": "先着",
               "startAt": "2026-08-23T10:00:00+09:00",
               "endAt": "2026-09-29T23:59:00+09:00",
-              "saleKey": "fany|nansui|63335|50900|整理番号付入場券|前売|first_come|2026-08-23T10:00:00+09:00"
+              "saleKey": "fany|pyuto|63335|50900|整理番号付入場券|前売|first_come|2026-08-23T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-23T10:00:00+09:00",
@@ -11870,66 +11310,7 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison",
-        "pyuto",
-        "nansui"
-      ]
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-09-30",
-      "openTime": "18:30",
-      "startTime": "19:00",
-      "title": "若手芸人HIPHOP同好会 2026年9月号",
-      "venue": "下北沢ろくでもない夜（東京都）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/63335/50900",
-      "ticketStatus": "予定数終了",
-      "ticketOptions": [
-        {
-          "name": "整理番号付入場券",
-          "type": "前売",
-          "status": "予定数終了",
-          "price": "￥2,500",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-23T10:00:00+09:00",
-              "endAt": "2026-09-29T23:59:00+09:00",
-              "saleKey": "fany|nansui|63335|50900|整理番号付入場券|前売|first_come|2026-08-23T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-23T10:00:00+09:00",
-          "saleEndAt": "2026-09-29T23:59:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-08-23T10:00:00+09:00",
-      "saleEndAt": "2026-09-29T23:59:00+09:00",
-      "saleCategory": "first_come",
-      "salePeriods": [
-        {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-08-23T10:00:00+09:00",
-          "endAt": "2026-09-29T23:59:00+09:00"
-        }
-      ],
-      "performersText": [
-        "つるまる（軟水）",
-        "吉野おいなり君（めぞん）",
-        "ポイント（ピュート）",
-        "King Boy（アケガラス）",
-        "八木崇（うるとらブギーズ）",
-        "なんぶ"
-      ],
-      "firstSeenAt": "2026-09-06T23:32:48.320499+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison",
-        "pyuto",
-        "nansui"
+        "pyuto"
       ]
     },
     {
@@ -11954,7 +11335,7 @@
               "label": "先着",
               "startAt": "2026-08-23T10:00:00+09:00",
               "endAt": "2026-09-29T23:59:00+09:00",
-              "saleKey": "fany|nansui|63335|50900|整理番号付入場券|前売|first_come|2026-08-23T10:00:00+09:00"
+              "saleKey": "fany|pyuto|63335|50900|整理番号付入場券|前売|first_come|2026-08-23T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-23T10:00:00+09:00",
@@ -11986,8 +11367,7 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison",
-        "pyuto",
-        "nansui"
+        "pyuto"
       ]
     },
     {
