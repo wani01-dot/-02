@@ -1,10 +1,10 @@
-name: Theater schedule test
+name: Theater notification test
 
 on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   test:
@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -22,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install playwright
+          pip install playwright requests
 
       - name: Install Chromium
         run: |
@@ -32,13 +34,40 @@ jobs:
         run: |
           python theater_scraper.py
 
-      - name: Show theater events
+      - name: Ensure new_events.json exists
         run: |
-          echo "=== theater_events.json ==="
-          cat theater_events.json
+          if [ ! -f new_events.json ]; then
+            echo "[]" > new_events.json
+          fi
 
-      - name: Upload theater events
-        uses: actions/upload-artifact@v4
-        with:
-          name: theater-events
-          path: theater_events.json
+      - name: Initialize theater notification history
+        env:
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          LINE_TO: ${{ secrets.LINE_TO }}
+        run: |
+          python notify_line.py
+
+      - name: Show theater history
+        run: |
+          echo "=== theater_notified_events.json ==="
+
+          if [ -f theater_notified_events.json ]; then
+            cat theater_notified_events.json
+          else
+            echo "theater_notified_events.json was not created."
+            exit 1
+          fi
+
+      - name: Save theater notification history
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add theater_notified_events.json
+
+          if git diff --cached --quiet; then
+            echo "No changes to save."
+          else
+            git commit -m "Initialize theater notification history"
+            git push origin HEAD:main
+          fi
