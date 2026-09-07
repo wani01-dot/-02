@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-07T15:02:22.694982+00:00",
+  "syncedAt": "2026-09-07T15:08:49.931039+00:00",
   "performers": [
     {
       "id": "maison",
@@ -57,7 +57,7 @@
       "venue": "座・高円寺2",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/510457",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "予定数終了",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -141,16 +141,16 @@
       "ticketOptions": [
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥2,000",
+          "price": "￥2,500",
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-08-05T10:00:00+09:00",
               "endAt": "2026-09-08T19:00:00+09:00",
-              "saleKey": "fany|maison|60962|49579|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
+              "saleKey": "fany|maison|60962|49579|全席指定|当日|first_come|2026-08-05T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -160,16 +160,16 @@
         },
         {
           "name": "立見（整理番号付）",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥2,000",
+          "price": "￥2,500",
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-08-05T10:00:00+09:00",
               "endAt": "2026-09-08T19:00:00+09:00",
-              "saleKey": "fany|maison|60962|49579|立見（整理番号付）|前売|first_come|2026-08-05T10:00:00+09:00"
+              "saleKey": "fany|maison|60962|49579|立見（整理番号付）|当日|first_come|2026-08-05T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-05T10:00:00+09:00",
