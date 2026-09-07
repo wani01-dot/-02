@@ -12,7 +12,7 @@ permissions:
   id-token: write
 
 # ==========================================
-# 同時に複数の同期処理を走らせない
+# 同じ同期処理を同時に複数走らせない
 # ==========================================
 concurrency:
   group: sync-events-and-pages
@@ -24,7 +24,7 @@ jobs:
 
     steps:
       # ==========================================
-      # GitHubのファイルを取得
+      # GitHubの最新ファイルを取得
       # ==========================================
       - name: Checkout
         uses: actions/checkout@v4
@@ -48,29 +48,152 @@ jobs:
           python-version: "3.12"
 
       # ==========================================
-      # 必要なライブラリ
+      # 通常スクレイパー + 劇場スクレイパー用
       # ==========================================
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests beautifulsoup4
+          pip install requests beautifulsoup4 playwright
 
       # ==========================================
-      # FANY + TIGET + イープラス等を取得
+      # 劇場ページ表示用 Chromium
       # ==========================================
-      - name: Scrape events
+      - name: Install Chromium
         run: |
-          python scraper.py
+          python -m playwright install chromium
+
+      # ==========================================
+      # 通常チケットサイト
+      # +
+      # 10劇場公式スケジュール
+      #
+      # 時間短縮のため同時実行
+      # ==========================================
+      - name: Scrape ticket sites and theaters
+        run: |
+          echo "================================"
+          echo "通常サイト + 劇場公式 同時取得開始"
+          echo "================================"
+
+          python scraper.py > /tmp/ticket_scraper.log 2>&1 &
+          TICKET_PID=$!
+
+          python theater_scraper.py > /tmp/theater_scraper.log 2>&1 &
+          THEATER_PID=$!
+
+          set +e
+
+          wait $TICKET_PID
+          TICKET_STATUS=$?
+
+          wait $THEATER_PID
+          THEATER_STATUS=$?
+
+          set -e
+
+          echo ""
+          echo "================================"
+          echo "通常サイト取得ログ"
+          echo "================================"
+          cat /tmp/ticket_scraper.log
+
+          echo ""
+          echo "================================"
+          echo "劇場公式取得ログ"
+          echo "================================"
+          cat /tmp/theater_scraper.log
+
+          echo ""
+          echo "================================"
+          echo "取得結果"
+          echo "================================"
+
+          echo "通常サイト status: $TICKET_STATUS"
+          echo "劇場公式 status: $THEATER_STATUS"
+
+          # 通常サイト側が失敗した場合は
+          # 既存システム保護のためWorkflowを停止
+          if [ "$TICKET_STATUS" -ne 0 ]; then
+            echo "通常サイトの取得に失敗しました。"
+            exit 1
+          fi
+
+          # 劇場側だけ失敗した場合は
+          # FANY等の通常処理は継続させる
+          if [ "$THEATER_STATUS" -ne 0 ]; then
+            echo "劇場取得に失敗しました。今回は劇場通知をスキップします。"
+
+            cat > theater_events.json <<'EOF'
+          {
+            "syncedAt": null,
+            "events": []
+          }
+          EOF
+          fi
 
           if [ ! -f new_events.json ]; then
             echo "[]" > new_events.json
           fi
 
+          if [ ! -f theater_events.json ]; then
+            cat > theater_events.json <<'EOF'
+          {
+            "syncedAt": null,
+            "events": []
+          }
+          EOF
+          fi
+
+      # ==========================================
+      # 確認用
+      # ==========================================
+      - name: Show scrape summary
+        run: |
           echo "=== new_events.json ==="
           cat new_events.json
 
+          echo ""
+          echo "=== theater event count ==="
+
+          python - <<'PY'
+          import json
+
+          try:
+              with open(
+                  "theater_events.json",
+                  "r",
+                  encoding="utf-8",
+              ) as f:
+                  data = json.load(f)
+
+              if isinstance(data, list):
+                  events = data
+              else:
+                  events = data.get(
+                      "events",
+                      [],
+                  )
+
+              print(
+                  "劇場公式取得:",
+                  len(events),
+                  "件",
+              )
+
+          except Exception as error:
+              print(
+                  "theater_events.json確認失敗:",
+                  error,
+              )
+          PY
+
       # ==========================================
-      # 本当に新しい公演だけLINE通知
+      # LINE通知
+      #
+      # ・FANY等の新規公開
+      # ・劇場公式の新規公開
+      #
+      # を公開元別に判定
       # ==========================================
       - name: Notify LINE
         env:
@@ -80,26 +203,45 @@ jobs:
           python notify_line.py
 
       # ==========================================
+      # GitHubへ保存
+      #
       # events.json
       # notified_events.json
-      # をGitHubに保存
+      # theater_notified_events.json
       #
-      # rebaseは使わず、
-      # 最新mainを土台に生成済みJSONを載せ直す
+      # を保存
+      #
+      # theater_events.json は毎回生成されるが
+      # 確認用として一緒に保存する
       # ==========================================
-      - name: Save updated events
+      - name: Save updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+          # ========================================
           # 今回生成したファイルを一時退避
+          # ========================================
+
           cp events.json /tmp/events.json
 
           if [ -f notified_events.json ]; then
             cp notified_events.json /tmp/notified_events.json
           fi
 
+          if [ -f theater_notified_events.json ]; then
+            cp theater_notified_events.json /tmp/theater_notified_events.json
+          fi
+
+          if [ -f theater_events.json ]; then
+            cp theater_events.json /tmp/theater_events.json
+          fi
+
           SAVE_SUCCESS=false
+
+          # ========================================
+          # main更新との競合時は最大3回再試行
+          # ========================================
 
           for ATTEMPT in 1 2 3
           do
@@ -107,16 +249,30 @@ jobs:
             echo "Save attempt: ${ATTEMPT}/3"
             echo "================================"
 
-            # 保存直前の最新mainを取得
             git fetch origin main
             git reset --hard origin/main
 
+            # ======================================
             # 今回生成したデータを戻す
+            # ======================================
+
             cp /tmp/events.json events.json
 
             if [ -f /tmp/notified_events.json ]; then
               cp /tmp/notified_events.json notified_events.json
             fi
+
+            if [ -f /tmp/theater_notified_events.json ]; then
+              cp /tmp/theater_notified_events.json theater_notified_events.json
+            fi
+
+            if [ -f /tmp/theater_events.json ]; then
+              cp /tmp/theater_events.json theater_events.json
+            fi
+
+            # ======================================
+            # 保存対象
+            # ======================================
 
             git add events.json
 
@@ -124,16 +280,34 @@ jobs:
               git add notified_events.json
             fi
 
-            # 変更がなければ保存不要
+            if [ -f theater_notified_events.json ]; then
+              git add theater_notified_events.json
+            fi
+
+            if [ -f theater_events.json ]; then
+              git add theater_events.json
+            fi
+
+            # ======================================
+            # 変更なし
+            # ======================================
+
             if git diff --cached --quiet; then
               echo "No changes to save."
               SAVE_SUCCESS=true
               break
             fi
 
+            # ======================================
+            # commit
+            # ======================================
+
             git commit -m "Update events and notification history"
 
-            # push成功なら終了
+            # ======================================
+            # push
+            # ======================================
+
             if git push origin HEAD:main; then
               echo "Push succeeded."
               SAVE_SUCCESS=true
@@ -141,7 +315,7 @@ jobs:
             fi
 
             echo "Push failed because main changed."
-            echo "Retrying with the latest main..."
+            echo "最新mainを取得して再試行します。"
 
             sleep 2
           done
@@ -152,7 +326,7 @@ jobs:
           fi
 
       # ==========================================
-      # GitHub Pages用設定
+      # GitHub Pages
       # ==========================================
       - name: Setup Pages
         uses: actions/configure-pages@v5
