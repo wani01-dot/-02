@@ -46,11 +46,7 @@ HEADERS = {
 
 def load_json(path, default):
     try:
-        with open(
-            path,
-            "r",
-            encoding="utf-8",
-        ) as f:
+        with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
 
     except (
@@ -61,11 +57,7 @@ def load_json(path, default):
 
 
 def save_json(path, data):
-    with open(
-        path,
-        "w",
-        encoding="utf-8",
-    ) as f:
+    with open(path, "w", encoding="utf-8") as f:
         json.dump(
             data,
             f,
@@ -216,6 +208,7 @@ PERFORMER_SECTION_STOP_WORDS = [
     "会場",
     "開場",
     "開演",
+    "終演",
     "料金",
     "チケット",
     "チケット情報",
@@ -359,7 +352,7 @@ def is_performer_section_stop(text):
     if text in PERFORMER_SECTION_STOP_WORDS:
         return True
 
-    heading_patterns = [
+    patterns = [
         r"^イベント詳細",
         r"^イベント概要",
         r"^公演概要",
@@ -383,19 +376,141 @@ def is_performer_section_stop(text):
         r"^主催者$",
         r"^主催または登録者",
         r"^もっと見る$",
+        r"^[【\[]\s*"
+        r"(?:"
+        r"日時|"
+        r"会場|"
+        r"料金|"
+        r"チケット|"
+        r"詳細|"
+        r"注意事項|"
+        r"お問い合わせ"
+        r")"
+        r"\s*[】\]]",
     ]
 
-    for pattern in heading_patterns:
-        if re.search(
+    return any(
+        re.search(
             pattern,
             text,
-        ):
-            return True
+        )
+        for pattern in patterns
+    )
+
+
+def is_title_repeat(
+    text,
+    event_title,
+):
+    if not event_title:
+        return False
+
+    normalized_text = normalize_title(
+        text
+    )
+
+    normalized_title = normalize_title(
+        event_title
+    )
+
+    return bool(
+        normalized_text
+        and
+        normalized_title
+        and
+        normalized_text
+        ==
+        normalized_title
+    )
+
+
+def is_detail_boundary(
+    text,
+    event_title="",
+):
+    text = clean(
+        text
+    )
+
+    if not text:
+        return False
+
+    if is_performer_section_stop(
+        text
+    ):
+        return True
+
+    # 公演タイトルがもう一度出たら、
+    # そこから先は詳細説明と判断
+    if is_title_repeat(
+        text,
+        event_title,
+    ):
+        return True
+
+    # URL
+    if re.search(
+        r"https?\s*:\s*//",
+        text,
+        re.IGNORECASE,
+    ):
+        return True
+
+    # "/" 分割後に https: だけになる場合
+    if re.fullmatch(
+        r"https?\s*:",
+        text,
+        re.IGNORECASE,
+    ):
+        return True
+
+    if re.search(
+        r"\btiget\.net\b",
+        text,
+        re.IGNORECASE,
+    ):
+        return True
+
+    # 開場・開演・終演
+    if re.search(
+        r"(?:^|\s)"
+        r"(?:開場|開演|終演)"
+        r"\s*[:：]?\s*"
+        r"\d{1,2}:\d{2}",
+        text,
+    ):
+        return True
+
+    # 前売 / 当日
+    if re.search(
+        r"^(?:前売|当日)(?:券)?"
+        r"(?:\s|[:：]|$)",
+        text,
+    ):
+        return True
+
+    # 金額
+    if re.search(
+        r"(?:￥|¥)\s*[\d,]+",
+        text,
+    ):
+        return True
+
+    # 9/15(火) など
+    if re.search(
+        r"\d{1,2}\s*/\s*"
+        r"\d{1,2}\s*"
+        r"[（(][月火水木金土日]",
+        text,
+    ):
+        return True
 
     return False
 
 
-def is_performer_noise_fragment(text):
+def is_performer_noise_fragment(
+    text,
+):
     text = clean(
         text
     )
@@ -439,7 +554,9 @@ def is_performer_noise_fragment(text):
     return False
 
 
-def is_probable_performer_name(text):
+def is_probable_performer_name(
+    text,
+):
     text = strip_performer_label(
         text
     )
@@ -462,17 +579,17 @@ def is_probable_performer_name(text):
     if text in PERFORMER_CATEGORY_LABELS:
         return False
 
-    if is_performer_section_stop(
-        text
+    if (
+        is_performer_section_stop(
+            text
+        )
+        or
+        is_performer_noise_fragment(
+            text
+        )
     ):
         return False
 
-    if is_performer_noise_fragment(
-        text
-    ):
-        return False
-
-    # URL
     if re.search(
         r"https?://",
         text,
@@ -480,39 +597,39 @@ def is_probable_performer_name(text):
     ):
         return False
 
-    # メール
     if re.search(
         r"\S+@\S+\.\S+",
         text,
     ):
         return False
 
-    # 日付
     if re.search(
         r"^20\d{2}[年/-]\d",
         text,
     ):
         return False
 
-    # 時刻
     if re.fullmatch(
         r"\d{1,2}:\d{2}",
         text,
     ):
         return False
 
-    # 金額
     if re.search(
         r"(?:￥|¥)\s*[\d,]+",
         text,
     ):
         return False
 
-    # 長すぎるものは説明文扱い
+    if re.search(
+        r"^[【\[].+[】\]]$",
+        text,
+    ):
+        return False
+
     if len(text) > 55:
         return False
 
-    # 句点を含む普通の文章
     if "。" in text:
         return False
 
@@ -548,20 +665,15 @@ def is_probable_performer_name(text):
 
 
 def split_performer_line(text):
-    text = clean(
-        text
-    )
-
-    if not text:
-        return []
-
     return [
         clean(
             part
         )
         for part in re.split(
             r"[／/、,，\n]+",
-            text,
+            clean(
+                text
+            ),
         )
         if clean(
             part
@@ -569,7 +681,10 @@ def split_performer_line(text):
     ]
 
 
-def sanitize_performer_values(value):
+def sanitize_performer_values(
+    value,
+    event_title="",
+):
     if isinstance(
         value,
         list,
@@ -587,12 +702,8 @@ def sanitize_performer_values(value):
         source_values = []
 
     result = []
-    stop_all = False
 
     for source_value in source_values:
-        if stop_all:
-            break
-
         source_text = clean(
             source_value
         )
@@ -600,8 +711,9 @@ def sanitize_performer_values(value):
         if not source_text:
             continue
 
-        if is_performer_section_stop(
-            source_text
+        if is_detail_boundary(
+            source_text,
+            event_title,
         ):
             break
 
@@ -617,22 +729,27 @@ def sanitize_performer_values(value):
             if not part:
                 continue
 
-            # 説明・注意事項に入ったら
-            # それより後ろは出演者として扱わない
+            if is_detail_boundary(
+                part,
+                event_title,
+            ):
+                return unique_strings(
+                    result
+                )
+
             if is_performer_noise_fragment(
                 part
             ):
-                stop_all = True
-                break
+                return unique_strings(
+                    result
+                )
 
-            if not is_probable_performer_name(
+            if is_probable_performer_name(
                 part
             ):
-                continue
-
-            result.append(
-                part
-            )
+                result.append(
+                    part
+                )
 
     return unique_strings(
         result
@@ -643,7 +760,6 @@ def sanitize_event_performers(
     events,
 ):
     changed_count = 0
-
     before_total = 0
     after_total = 0
 
@@ -674,7 +790,11 @@ def sanitize_event_performers(
         )
 
         after = sanitize_performer_values(
-            before
+            before,
+            event.get(
+                "title",
+                "",
+            ),
         )
 
         after_total += len(
@@ -691,11 +811,7 @@ def sanitize_event_performers(
             )
         ]
 
-        if (
-            after
-            !=
-            normalized_before
-        ):
+        if after != normalized_before:
             changed_count += 1
 
         event[
@@ -1007,6 +1123,7 @@ def html_to_lines(html):
     for raw in soup.get_text(
         "\n"
     ).splitlines():
+
         line = clean(
             raw
         )
@@ -1208,11 +1325,13 @@ def extract_japanese_datetimes(text):
             )
 
             try:
-                candidate = first_value.replace(
-                    hour=int(hour),
-                    minute=int(minute),
-                    second=0,
-                    microsecond=0,
+                candidate = (
+                    first_value.replace(
+                        hour=int(hour),
+                        minute=int(minute),
+                        second=0,
+                        microsecond=0,
+                    )
                 )
 
                 if candidate < first_value:
@@ -1879,7 +1998,8 @@ def sale_period_matches_option(
         not name
         and
         ticket_type
-        and ticket_type in context
+        and
+        ticket_type in context
     ):
         return True
 
@@ -2114,10 +2234,7 @@ def summarize_ticket_status(
     ]
 
     if statuses:
-        if (
-            "残りわずか"
-            in statuses
-        ):
+        if "残りわずか" in statuses:
             return "残りわずか"
 
         ended_statuses = {
@@ -2144,21 +2261,20 @@ def summarize_ticket_status(
 
         if (
             has_ended
-            and has_active
+            and
+            has_active
         ):
             return "一部予定数終了"
 
         if (
             statuses
-            and all(
+            and
+            all(
                 status in ended_statuses
                 for status in statuses
             )
         ):
-            if (
-                "予定数終了"
-                in statuses
-            ):
+            if "予定数終了" in statuses:
                 return "予定数終了"
 
             return "販売終了"
@@ -2206,17 +2322,15 @@ def parse_fany_text_events(
         "name"
     ]
 
-    event_indexes = []
-
-    for index, line in enumerate(
-        lines
-    ):
+    event_indexes = [
+        index
+        for index, line in enumerate(
+            lines
+        )
         if FANY_DATE_RE.match(
             line
-        ):
-            event_indexes.append(
-                index
-            )
+        )
+    ]
 
     events = []
 
@@ -2231,7 +2345,6 @@ def parse_fany_text_events(
             end_index = event_indexes[
                 number + 1
             ]
-
         else:
             end_index = len(
                 lines
@@ -2348,7 +2461,8 @@ def parse_fany_text_events(
 
         if (
             venue_index is not None
-            and venue_index > 0
+            and
+            venue_index > 0
         ):
             candidate = clean(
                 block[
@@ -2358,10 +2472,14 @@ def parse_fany_text_events(
 
             if (
                 candidate
-                and candidate != ")"
-                and "開場" not in candidate
-                and "開演" not in candidate
-                and candidate != "出演"
+                and
+                candidate != ")"
+                and
+                "開場" not in candidate
+                and
+                "開演" not in candidate
+                and
+                candidate != "出演"
             ):
                 title = candidate
 
@@ -2374,21 +2492,11 @@ def parse_fany_text_events(
 
         ticket_status = ""
 
-        if (
-            "残りわずか"
-            in block_text
-        ):
-            ticket_status = (
-                "残りわずか"
-            )
+        if "残りわずか" in block_text:
+            ticket_status = "残りわずか"
 
-        elif (
-            "予定数終了"
-            in block_text
-        ):
-            ticket_status = (
-                "予定数終了"
-            )
+        elif "予定数終了" in block_text:
+            ticket_status = "予定数終了"
 
         events.append({
             "performerId":
@@ -2489,23 +2597,24 @@ def find_reception_candidates(html):
             if not container:
                 break
 
-            lines = []
+            candidate_lines = []
 
             for raw in container.get_text(
                 "\n"
             ).splitlines():
+
                 text = clean(
                     raw
                 )
 
                 if text:
-                    lines.append(
+                    candidate_lines.append(
                         text
                     )
 
             date_count = sum(
                 1
-                for line in lines
+                for line in candidate_lines
                 if FANY_DATE_RE.match(
                     line
                 )
@@ -2513,9 +2622,11 @@ def find_reception_candidates(html):
 
             if (
                 date_count == 1
-                and "出演" in lines
+                and
+                "出演"
+                in candidate_lines
             ):
-                selected_lines = lines
+                selected_lines = candidate_lines
                 break
 
         if selected_lines:
@@ -2545,18 +2656,9 @@ def candidate_info(candidate):
         )
 
         if match:
-            (
-                year,
-                month,
-                day,
-            ) = match.groups()
-
             event_date = make_date(
-                year,
-                month,
-                day,
+                *match.groups()
             )
-
             break
 
     for line in lines:
@@ -2665,7 +2767,8 @@ def attach_fany_urls(
 
         if (
             best
-            and best_score >= 9
+            and
+            best_score >= 9
         ):
             event[
                 "sourceUrl"
@@ -2692,7 +2795,10 @@ def get_fany_open_time(lines):
     return ""
 
 
-def get_fany_performers(lines):
+def get_fany_performers(
+    lines,
+    event_title="",
+):
     performers = []
     start_index = None
 
@@ -2723,7 +2829,13 @@ def get_fany_performers(lines):
         if not text:
             continue
 
-        if is_performer_section_stop(
+        if is_detail_boundary(
+            text,
+            event_title,
+        ):
+            break
+
+        if is_performer_noise_fragment(
             text
         ):
             break
@@ -2734,32 +2846,36 @@ def get_fany_performers(lines):
         ):
             break
 
-        if is_performer_noise_fragment(
-            text
-        ):
-            break
-
         parts = split_performer_line(
             text
         )
-
-        valid_parts = []
 
         for part in parts:
             part = strip_performer_label(
                 part
             )
 
+            if is_detail_boundary(
+                part,
+                event_title,
+            ):
+                return unique_strings(
+                    performers
+                )
+
+            if is_performer_noise_fragment(
+                part
+            ):
+                return unique_strings(
+                    performers
+                )
+
             if is_probable_performer_name(
                 part
             ):
-                valid_parts.append(
+                performers.append(
                     part
                 )
-
-        performers.extend(
-            valid_parts
-        )
 
     return unique_strings(
         performers
@@ -2869,7 +2985,11 @@ def enrich_fany_event(
 
                 "performersText":
                     get_fany_performers(
-                        lines
+                        lines,
+                        event.get(
+                            "title",
+                            "",
+                        ),
                     ),
             }
 
@@ -2896,10 +3016,7 @@ def enrich_fany_event(
         ),
     )
 
-    if (
-        "ticketStatus"
-        in detail
-    ):
+    if "ticketStatus" in detail:
         event[
             "ticketStatus"
         ] = detail.get(
@@ -3134,6 +3251,7 @@ def scrape_fany(
         start_date,
         end_date,
     ) in build_month_ranges():
+
         events.extend(
             scrape_fany_range(
                 session,
@@ -3263,7 +3381,8 @@ def get_tiget_title(
 
     if (
         search_title
-        and not is_bad_tiget_title(
+        and
+        not is_bad_tiget_title(
             search_title
         )
     ):
@@ -3279,7 +3398,8 @@ def get_tiget_title(
 
     if (
         og
-        and og.get(
+        and
+        og.get(
             "content"
         )
     ):
@@ -3304,7 +3424,8 @@ def get_tiget_title(
 
     if (
         twitter
-        and twitter.get(
+        and
+        twitter.get(
             "content"
         )
     ):
@@ -3336,11 +3457,14 @@ def get_tiget_title(
 
             if (
                 candidate
-                and len(candidate) >= 3
-                and not is_bad_tiget_title(
+                and
+                len(candidate) >= 3
+                and
+                not is_bad_tiget_title(
                     candidate
                 )
-                and candidate not in [
+                and
+                candidate not in [
                     "出演者",
                     "開催日",
                     "会場",
@@ -3352,7 +3476,10 @@ def get_tiget_title(
     return "公演名不明"
 
 
-def get_tiget_performers(lines):
+def get_tiget_performers(
+    lines,
+    event_title="",
+):
     performers = []
     start_index = None
 
@@ -3383,13 +3510,15 @@ def get_tiget_performers(lines):
         if not text:
             continue
 
-        # 次のセクションに入ったら終了
-        if is_performer_section_stop(
-            text
+        # 公演タイトル再登場、
+        # URL、日時、会場、料金に入ったら終了
+        if is_detail_boundary(
+            text,
+            event_title,
         ):
             break
 
-        # 説明文や注意事項が始まったら終了
+        # 注意文や説明文に入ったら終了
         if is_performer_noise_fragment(
             text
         ):
@@ -3406,6 +3535,21 @@ def get_tiget_performers(lines):
                 part
             )
 
+            if is_detail_boundary(
+                part,
+                event_title,
+            ):
+                return unique_strings(
+                    performers
+                )
+
+            if is_performer_noise_fragment(
+                part
+            ):
+                return unique_strings(
+                    performers
+                )
+
             if is_probable_performer_name(
                 part
             ):
@@ -3413,8 +3557,6 @@ def get_tiget_performers(lines):
                     part
                 )
 
-        # 長い説明文に入ったら
-        # 以降は出演者ではないと判断
         if (
             not valid_parts
             and
@@ -3437,30 +3579,38 @@ def get_tiget_ticket_status(lines):
     )
 
     if (
-        "残りわずか" in text
+        "残りわずか"
+        in text
         or
-        "残席わずか" in text
+        "残席わずか"
+        in text
     ):
         return "残りわずか"
 
     if (
-        "予定数終了" in text
+        "予定数終了"
+        in text
         or
-        "完売" in text
+        "完売"
+        in text
     ):
         return "予定数終了"
 
     if (
-        "販売中" in text
+        "販売中"
+        in text
         or
-        "受付中" in text
+        "受付中"
+        in text
     ):
         return "販売中"
 
     if (
-        "販売終了" in text
+        "販売終了"
+        in text
         or
-        "受付終了" in text
+        "受付終了"
+        in text
     ):
         return "販売終了"
 
@@ -3548,6 +3698,7 @@ def scrape_tiget(
         event_url,
         search_title,
     ) in event_map.items():
+
         try:
             response = session.get(
                 event_url,
@@ -3575,6 +3726,7 @@ def scrape_tiget(
         for raw in detail_soup.get_text(
             "\n"
         ).splitlines():
+
             line = clean(
                 raw
             )
@@ -3657,16 +3809,23 @@ def scrape_tiget(
             search_title,
         )
 
-        performers_text = get_tiget_performers(
-            lines
+        performers_text = (
+            get_tiget_performers(
+                lines,
+                title,
+            )
         )
 
-        sale_periods_raw = extract_sale_periods(
-            lines
+        sale_periods_raw = (
+            extract_sale_periods(
+                lines
+            )
         )
 
-        primary_sale = choose_primary_sale_period(
-            sale_periods_raw
+        primary_sale = (
+            choose_primary_sale_period(
+                sale_periods_raw
+            )
         )
 
         events.append({
@@ -3803,8 +3962,10 @@ def build_old_event_maps(
     }
 
     for event in old_events:
-        source_key = source_notification_key(
-            event
+        source_key = (
+            source_notification_key(
+                event
+            )
         )
 
         if source_key:
@@ -3837,13 +3998,16 @@ def find_old_event(
     event,
     old_maps,
 ):
-    source_key = source_notification_key(
-        event
+    source_key = (
+        source_notification_key(
+            event
+        )
     )
 
     if (
         source_key
-        and source_key
+        and
+        source_key
         in old_maps[
             "source"
         ]
@@ -3854,8 +4018,10 @@ def find_old_event(
             source_key
         ]
 
-    stable_key = stable_notification_key(
-        event
+    stable_key = (
+        stable_notification_key(
+            event
+        )
     )
 
     if (
@@ -3870,8 +4036,10 @@ def find_old_event(
             stable_key
         ]
 
-    loose_key = loose_notification_key(
-        event
+    loose_key = (
+        loose_notification_key(
+            event
+        )
     )
 
     if (
@@ -3987,7 +4155,8 @@ def attach_tracked_performers(
 
         if (
             performer_id
-            and performer_id
+            and
+            performer_id
             not in groups[key]
         ):
             groups[
@@ -4149,7 +4318,7 @@ def main():
     )
 
     print(
-        "出演者クリーニング強化版"
+        "出演者クリーニング強化版 v2"
     )
 
     print(
@@ -4236,8 +4405,10 @@ def main():
             )
         )
 
-        source_key = source_notification_key(
-            event
+        source_key = (
+            source_notification_key(
+                event
+            )
         )
 
         if source_key:
@@ -4308,10 +4479,6 @@ def main():
             ],
         )
 
-        # =================================================
-        # FANY
-        # =================================================
-
         if "fany" in sources:
             try:
                 all_events.extend(
@@ -4328,10 +4495,6 @@ def main():
                     error,
                 )
 
-        # =================================================
-        # TIGET
-        # =================================================
-
         if "tiget" in sources:
             try:
                 all_events.extend(
@@ -4347,10 +4510,6 @@ def main():
                     error,
                 )
 
-        # =================================================
-        # イープラス
-        # =================================================
-
         if "eplus" in sources:
             try:
                 all_events.extend(
@@ -4365,10 +4524,6 @@ def main():
                     "イープラスエラー:",
                     error,
                 )
-
-        # =================================================
-        # LivePocket
-        # =================================================
 
         if "livepocket" in sources:
             try:
@@ -4387,9 +4542,6 @@ def main():
 
     # =====================================================
     # 全サイト共通 出演者クリーニング
-    #
-    # eplus_scraper.py / livepocket_scraper.py から
-    # 説明文が混ざった場合もここで落とす
     # =====================================================
 
     all_events = sanitize_event_performers(
@@ -4422,21 +4574,28 @@ def main():
     new_events = []
 
     for event in all_events:
-        source_key = source_notification_key(
-            event
+        source_key = (
+            source_notification_key(
+                event
+            )
         )
 
-        stable_key = stable_notification_key(
-            event
+        stable_key = (
+            stable_notification_key(
+                event
+            )
         )
 
-        loose_key = loose_notification_key(
-            event
+        loose_key = (
+            loose_notification_key(
+                event
+            )
         )
 
         if (
             source_key
-            and source_key
+            and
+            source_key
             in source_keys
         ):
             continue
@@ -4487,12 +4646,10 @@ def main():
                 "date",
                 "",
             ),
-
             event.get(
                 "startTime",
                 "",
             ),
-
             event.get(
                 "performerId",
                 "",
@@ -4569,14 +4726,18 @@ def main():
         )
     )
 
-    advance_period_count = count_sale_periods(
-        all_events,
-        "advance",
+    advance_period_count = (
+        count_sale_periods(
+            all_events,
+            "advance",
+        )
     )
 
-    first_come_period_count = count_sale_periods(
-        all_events,
-        "first_come",
+    first_come_period_count = (
+        count_sale_periods(
+            all_events,
+            "first_come",
+        )
     )
 
     performer_detail_count = sum(
@@ -4608,9 +4769,7 @@ def main():
         for event in all_events
         if event.get(
             "source"
-        )
-        ==
-        "fany"
+        ) == "fany"
     )
 
     tiget_count = sum(
@@ -4618,9 +4777,7 @@ def main():
         for event in all_events
         if event.get(
             "source"
-        )
-        ==
-        "tiget"
+        ) == "tiget"
     )
 
     eplus_count = sum(
@@ -4628,9 +4785,7 @@ def main():
         for event in all_events
         if event.get(
             "source"
-        )
-        ==
-        "eplus"
+        ) == "eplus"
     )
 
     livepocket_count = sum(
@@ -4638,9 +4793,7 @@ def main():
         for event in all_events
         if event.get(
             "source"
-        )
-        ==
-        "livepocket"
+        ) == "livepocket"
     )
 
     print("")
