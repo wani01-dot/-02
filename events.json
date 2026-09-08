@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-08T01:01:23.199290+00:00",
+  "syncedAt": "2026-09-08T01:08:25.830785+00:00",
   "performers": [
     {
       "id": "maison",
@@ -13922,8 +13922,28 @@
       "venue": "大宮ラクーンよしもと劇場（埼玉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/66667/52965",
-      "ticketStatus": "",
-      "ticketOptions": [],
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,800",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-08T10:00:00+09:00",
+              "endAt": "2026-10-03T16:30:00+09:00",
+              "saleKey": "fany|maison|66667|52965|全席指定|前売|first_come|2026-09-08T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-08T10:00:00+09:00",
+          "saleEndAt": "2026-10-03T16:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
       "saleStartAt": "2026-09-08T10:00:00+09:00",
       "saleEndAt": "2026-10-03T16:30:00+09:00",
       "saleCategory": "first_come",
