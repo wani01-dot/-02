@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-09T19:57:07.912164+00:00",
+  "syncedAt": "2026-09-09T20:03:24.775533+00:00",
   "performers": [
     {
       "id": "maison",
@@ -16603,6 +16603,70 @@
       ]
     },
     {
+      "performerId": "maison",
+      "date": "2026-10-13",
+      "openTime": "18:30",
+      "startTime": "19:00",
+      "title": "We will 6期（rock）you！ ～ネタとコーナーで大暴れ～",
+      "venue": "あうるすぽっと（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/63824/51202",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥3,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-15T10:00:00+09:00",
+              "endAt": "2026-10-12T23:59:00+09:00",
+              "saleKey": "fany|nansui|63824|51202|全席指定|前売|first_come|2026-08-15T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-15T10:00:00+09:00",
+          "saleEndAt": "2026-10-12T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-08-15T10:00:00+09:00",
+      "saleEndAt": "2026-10-12T23:59:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-08-15T10:00:00+09:00",
+          "endAt": "2026-10-12T23:59:00+09:00"
+        }
+      ],
+      "performersText": [
+        "GAG",
+        "ヘンダーソン",
+        "アイロンヘッド",
+        "ななまがり",
+        "ダブルヒガシ",
+        "めぞん",
+        "軟水",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-09T20:03:24.770114+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison",
+        "nansui"
+      ]
+    },
+    {
       "performerId": "nansui",
       "date": "2026-10-13",
       "openTime": "18:30",
@@ -16662,6 +16726,7 @@
       "firstSeenAt": "2026-09-06T21:01:38.295934+00:00",
       "newUntil": "",
       "trackedPerformers": [
+        "maison",
         "nansui"
       ]
     },
@@ -16848,6 +16913,176 @@
       "trackedPerformers": [
         "pyuto",
         "nansui"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-10-15",
+      "openTime": "17:00",
+      "startTime": "17:15",
+      "title": "渋谷Kiwami極LIVEプラス＋",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64333/51827",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-15T15:15:00+09:00",
+              "saleKey": "fany|maison|64333|51827|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-15T15:15:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-15T15:15:00+09:00",
+              "saleKey": "fany|maison|64333|51827|立見（整理番号付）|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-15T15:15:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-15T15:15:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-15T15:15:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]滝音",
+        "めぞん",
+        "ヨネダ2000",
+        "セッツァー",
+        "入間国際宣言",
+        "ラニーノーズ",
+        "アメリカンBBチキン",
+        "アズーロ24",
+        "鉄人小町",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-09T20:03:24.770114+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-10-15",
+      "openTime": "20:45",
+      "startTime": "21:00",
+      "title": "超時空笑塞メゾロス",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64596/52157",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-15T19:00:00+09:00",
+              "saleKey": "fany|maison|64596|52157|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-15T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-15T19:00:00+09:00",
+              "saleKey": "fany|maison|64596|52157|立見（整理番号付）|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-15T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-15T19:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-15T19:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "めぞん",
+        "ヨネダ2000",
+        "金魚番長",
+        "兄弟",
+        "江頭一馬",
+        "ゾンビのアトリエ",
+        "タケゾウ",
+        "ネネネ",
+        "美バンブー",
+        "スピード",
+        "MC：ビューティフルトーキョーマンズ 鈴木バイダン",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-09T20:03:24.770114+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
       ]
     },
     {
@@ -17619,6 +17854,67 @@
       ]
     },
     {
+      "performerId": "maison",
+      "date": "2026-10-21",
+      "openTime": "19:15",
+      "startTime": "19:30",
+      "title": "VSバラエティ",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64847/52188",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-21T17:30:00+09:00",
+              "saleKey": "fany|maison|64847|52188|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-21T17:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-21T17:30:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-21T17:30:00+09:00"
+        }
+      ],
+      "performersText": [
+        "ドンココ",
+        "生ファラオ",
+        "めぞん",
+        "しんや",
+        "ナユタ",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-09T20:03:24.770114+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
       "performerId": "nansui",
       "date": "2026-10-21",
       "openTime": "20:45",
@@ -17812,6 +18108,100 @@
       ]
     },
     {
+      "performerId": "maison",
+      "date": "2026-10-22",
+      "openTime": "18:50",
+      "startTime": "19:00",
+      "title": "負けたら吉野HIITをしないと出れない劇場",
+      "venue": "大宮ラクーンよしもと劇場（埼玉県）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/66803/53117",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-08T11:00:00+09:00",
+      "saleEndAt": "2026-09-10T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-08T11:00:00+09:00",
+          "endAt": "2026-09-10T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "めぞん",
+        "たくろう",
+        "うるとらブギーズ",
+        "シシガシラ"
+      ],
+      "firstSeenAt": "2026-09-09T20:03:24.770114+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-10-22",
+      "openTime": "20:20",
+      "startTime": "20:30",
+      "title": "シシガシラpresents おじさんと遊んでくれませんか？",
+      "venue": "大宮ラクーンよしもと劇場（埼玉県）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64979/52394",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,800",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-22T18:30:00+09:00",
+              "saleKey": "fany|maison|64979|52394|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-22T18:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-22T18:30:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-22T18:30:00+09:00"
+        }
+      ],
+      "performersText": [
+        "シシガシラ",
+        "うるとらブギーズ",
+        "たくろう",
+        "めぞん",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "4枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-09T20:03:24.770114+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
       "performerId": "nansui",
       "date": "2026-10-23",
       "openTime": "17:00",
@@ -17895,6 +18285,148 @@
       ]
     },
     {
+      "performerId": "maison",
+      "date": "2026-10-23",
+      "openTime": "19:00",
+      "startTime": "19:15",
+      "title": "とりせん新ネタライブ「コンセントレーション」",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64848/52202",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-23T17:15:00+09:00",
+              "saleKey": "fany|maison|64848|52202|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-23T17:15:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-23T17:15:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-23T17:15:00+09:00"
+        }
+      ],
+      "performersText": [
+        "とりせん",
+        "めぞん",
+        "世界クジラ",
+        "兄弟",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-09T20:03:24.770114+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-10-23",
+      "openTime": "20:45",
+      "startTime": "21:00",
+      "title": "risa and...？",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64602/52162",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-23T19:00:00+09:00",
+              "saleKey": "fany|pyuto|64602|52162|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-23T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-23T19:00:00+09:00",
+              "saleKey": "fany|pyuto|64602|52162|立見（整理番号付）|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-23T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-23T19:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-23T19:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "11月のリサ",
+        "ケビンス 山口",
+        "素敵じゃないか 吉野晋右",
+        "世間知らズ さおり",
+        "ピュート",
+        "めぞん 吉野",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-09T20:03:24.770114+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison",
+        "pyuto"
+      ]
+    },
+    {
       "performerId": "pyuto",
       "date": "2026-10-23",
       "openTime": "20:45",
@@ -17972,7 +18504,170 @@
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
       "newUntil": "",
       "trackedPerformers": [
+        "maison",
         "pyuto"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-10-24",
+      "openTime": "14:30",
+      "startTime": "15:00",
+      "title": "幕張土日祝ネタＳＰ１５時",
+      "venue": "よしもと幕張イオンモール劇場（千葉県）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/66334/52774",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥3,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-07T10:00:00+09:00",
+              "endAt": "2026-10-24T13:00:00+09:00",
+              "saleKey": "fany|maison|66334|52774|全席指定|前売|first_come|2026-09-07T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-07T10:00:00+09:00",
+          "saleEndAt": "2026-10-24T13:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,800",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-07T10:00:00+09:00",
+              "endAt": "2026-10-24T13:00:00+09:00",
+              "saleKey": "fany|maison|66334|52774|全席指定|前売|first_come|2026-09-07T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-07T10:00:00+09:00",
+          "saleEndAt": "2026-10-24T13:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-07T10:00:00+09:00",
+      "saleEndAt": "2026-10-24T13:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-07T10:00:00+09:00",
+          "endAt": "2026-10-24T13:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ]ザ・パンチ",
+        "イチキップリン",
+        "スパイク",
+        "ビスケットブラザーズ",
+        "マユリカ",
+        "めぞん",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-09T20:03:24.770114+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-10-24",
+      "openTime": "16:30",
+      "startTime": "17:00",
+      "title": "幕張土日祝ネタＳＰ１７時",
+      "venue": "よしもと幕張イオンモール劇場（千葉県）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/66334/52775",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥3,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-07T10:00:00+09:00",
+              "endAt": "2026-10-24T15:00:00+09:00",
+              "saleKey": "fany|maison|66334|52775|全席指定|前売|first_come|2026-09-07T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-07T10:00:00+09:00",
+          "saleEndAt": "2026-10-24T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,800",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-07T10:00:00+09:00",
+              "endAt": "2026-10-24T15:00:00+09:00",
+              "saleKey": "fany|maison|66334|52775|全席指定|前売|first_come|2026-09-07T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-07T10:00:00+09:00",
+          "saleEndAt": "2026-10-24T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-07T10:00:00+09:00",
+      "saleEndAt": "2026-10-24T15:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-07T10:00:00+09:00",
+          "endAt": "2026-10-24T15:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ]ザ・パンチ",
+        "イチキップリン",
+        "スパイク",
+        "ビスケットブラザーズ",
+        "マユリカ",
+        "めぞん",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-09T20:03:24.770114+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
       ]
     },
     {
