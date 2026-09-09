@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-09T14:59:38.935645+00:00",
+  "syncedAt": "2026-09-09T15:06:02.841618+00:00",
   "performers": [
     {
       "id": "maison",
@@ -50,132 +50,6 @@
   "events": [
     {
       "performerId": "nansui",
-      "date": "2026-09-09",
-      "openTime": "18:50",
-      "startTime": "19:00",
-      "title": "コン獣",
-      "venue": "ハイジアV-1(東京都)",
-      "source": "tiget",
-      "sourceUrl": "https://tiget.net/events/512235",
-      "ticketStatus": "残りわずか",
-      "ticketOptions": [],
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "salePeriods": [],
-      "performersText": [
-        "おミュータンツ",
-        "ピュート",
-        "軟水",
-        "牛女",
-        "サルベース",
-        "スタミナパン",
-        "花ブービー"
-      ],
-      "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto",
-        "nansui"
-      ]
-    },
-    {
-      "performerId": "pyuto",
-      "date": "2026-09-09",
-      "openTime": "18:50",
-      "startTime": "19:00",
-      "title": "コン獣",
-      "venue": "ハイジアV-1(東京都)",
-      "source": "tiget",
-      "sourceUrl": "https://tiget.net/events/512235",
-      "ticketStatus": "残りわずか",
-      "ticketOptions": [],
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "salePeriods": [],
-      "performersText": [
-        "おミュータンツ",
-        "ピュート",
-        "軟水",
-        "牛女",
-        "サルベース",
-        "スタミナパン",
-        "花ブービー"
-      ],
-      "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto",
-        "nansui"
-      ]
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-09-09",
-      "openTime": "20:50",
-      "startTime": "21:00",
-      "title": "沼る寄席 #5",
-      "venue": "ハイジアV-1(東京都)",
-      "source": "tiget",
-      "sourceUrl": "https://tiget.net/events/512237",
-      "ticketStatus": "残りわずか",
-      "ticketOptions": [],
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "salePeriods": [],
-      "performersText": [
-        "おミュータンツ",
-        "軟水",
-        "ピュート",
-        "花ブービー",
-        "スタミナパン",
-        "牛女",
-        "サルベース",
-        "沼る芸人たちをゲストにお送りするネタとトークの60分！"
-      ],
-      "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto",
-        "nansui"
-      ]
-    },
-    {
-      "performerId": "pyuto",
-      "date": "2026-09-09",
-      "openTime": "20:50",
-      "startTime": "21:00",
-      "title": "沼る寄席 #5",
-      "venue": "ハイジアV-1(東京都)",
-      "source": "tiget",
-      "sourceUrl": "https://tiget.net/events/512237",
-      "ticketStatus": "残りわずか",
-      "ticketOptions": [],
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "salePeriods": [],
-      "performersText": [
-        "おミュータンツ",
-        "軟水",
-        "ピュート",
-        "花ブービー",
-        "スタミナパン",
-        "牛女",
-        "サルベース",
-        "沼る芸人たちをゲストにお送りするネタとトークの60分！"
-      ],
-      "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto",
-        "nansui"
-      ]
-    },
-    {
-      "performerId": "nansui",
       "date": "2026-09-10",
       "openTime": "17:15",
       "startTime": "17:30",
@@ -187,16 +61,16 @@
       "ticketOptions": [
         {
           "name": "整理番号付き自由席",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥2,000",
+          "price": "￥2,300",
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-08-05T10:00:00+09:00",
               "endAt": "2026-09-10T15:30:00+09:00",
-              "saleKey": "fany|nansui|61292|49796|整理番号付き自由席|前売|first_come|2026-08-05T10:00:00+09:00"
+              "saleKey": "fany|nansui|61292|49796|整理番号付き自由席|当日|first_come|2026-08-05T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -21335,6 +21209,126 @@
       "performersText": [],
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
       "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-29",
+      "openTime": "11:15",
+      "startTime": "11:30",
+      "title": "福岡よしもとお笑いライブ",
+      "venue": "よしもと福岡 大和証券劇場（福岡県）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/66957/53442",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-10T11:00:00+09:00",
+      "saleEndAt": "2026-09-13T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-10T11:00:00+09:00",
+          "endAt": "2026-09-13T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "ギャロップ",
+        "スーパーマラドーナ",
+        "ジャルジャル",
+        "Dr.ハインリッヒ",
+        "めぞん",
+        "大王",
+        "メリコンドル",
+        "太宰",
+        "喜喜かいばしら",
+        "＜ゲームコーナー＞"
+      ],
+      "firstSeenAt": "2026-09-09T15:06:02.836478+00:00",
+      "newUntil": "2026-09-11T15:06:02.836490+00:00",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-29",
+      "openTime": "13:25",
+      "startTime": "13:40",
+      "title": "福岡よしもとお笑いライブ",
+      "venue": "よしもと福岡 大和証券劇場（福岡県）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/66957/53443",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-10T11:00:00+09:00",
+      "saleEndAt": "2026-09-13T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-10T11:00:00+09:00",
+          "endAt": "2026-09-13T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "ギャロップ",
+        "スーパーマラドーナ",
+        "ジャルジャル",
+        "Dr.ハインリッヒ",
+        "めぞん",
+        "大王",
+        "メリコンドル",
+        "太宰",
+        "喜喜かいばしら",
+        "＜ゲームコーナー＞"
+      ],
+      "firstSeenAt": "2026-09-09T15:06:02.836478+00:00",
+      "newUntil": "2026-09-11T15:06:02.836490+00:00",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-29",
+      "openTime": "15:35",
+      "startTime": "15:50",
+      "title": "福岡よしもとお笑いライブ",
+      "venue": "よしもと福岡 大和証券劇場（福岡県）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/66957/53444",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-10T11:00:00+09:00",
+      "saleEndAt": "2026-09-13T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-10T11:00:00+09:00",
+          "endAt": "2026-09-13T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "ギャロップ",
+        "スーパーマラドーナ",
+        "ジャルジャル",
+        "Dr.ハインリッヒ",
+        "めぞん",
+        "大王",
+        "太宰",
+        "喜喜かいばしら",
+        "パゴス",
+        "＜ゲームコーナー＞"
+      ],
+      "firstSeenAt": "2026-09-09T15:06:02.836478+00:00",
+      "newUntil": "2026-09-11T15:06:02.836490+00:00",
       "trackedPerformers": [
         "maison"
       ]
