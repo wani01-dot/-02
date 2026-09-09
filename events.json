@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-09T01:02:49.190677+00:00",
+  "syncedAt": "2026-09-09T01:10:12.813545+00:00",
   "performers": [
     {
       "id": "maison",
@@ -17731,8 +17731,28 @@
       "venue": "ルミネtheよしもと（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/66753/52989",
-      "ticketStatus": "",
-      "ticketOptions": [],
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥3,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-09T10:00:00+09:00",
+              "endAt": "2026-10-18T17:00:00+09:00",
+              "saleKey": "fany|maison|66753|52989|全席指定|前売|first_come|2026-09-09T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-09T10:00:00+09:00",
+          "saleEndAt": "2026-10-18T17:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
       "saleStartAt": "2026-09-09T10:00:00+09:00",
       "saleEndAt": "2026-10-18T17:00:00+09:00",
       "saleCategory": "first_come",
