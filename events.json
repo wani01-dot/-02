@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-10T00:58:46.141560+00:00",
+  "syncedAt": "2026-09-10T01:06:28.543669+00:00",
   "performers": [
     {
       "id": "maison",
@@ -9238,12 +9238,12 @@
       "venue": "高円寺ジュンジョー（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/65568/52584",
-      "ticketStatus": "販売中",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [
         {
           "name": "整理番号付自由席",
           "type": "前売",
-          "status": "販売中",
+          "status": "残りわずか",
           "price": "￥2,000",
           "salePeriods": [
             {
@@ -19525,8 +19525,28 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/66671/52967",
-      "ticketStatus": "",
-      "ticketOptions": [],
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-10T10:00:00+09:00",
+              "endAt": "2026-10-27T17:30:00+09:00",
+              "saleKey": "fany|nansui|66671|52967|全席指定|前売|first_come|2026-09-10T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-10T10:00:00+09:00",
+          "saleEndAt": "2026-10-27T17:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
       "saleStartAt": "2026-09-10T10:00:00+09:00",
       "saleEndAt": "2026-10-27T17:30:00+09:00",
       "saleCategory": "first_come",
