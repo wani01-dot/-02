@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-10T15:03:07.266525+00:00",
+  "syncedAt": "2026-09-10T15:11:44.042353+00:00",
   "performers": [
     {
       "id": "maison",
@@ -148,16 +148,16 @@
       "ticketOptions": [
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
-          "price": "￥1,800",
+          "price": "￥2,100",
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-08-06T10:00:00+09:00",
               "endAt": "2026-09-11T17:00:00+09:00",
-              "saleKey": "fany|maison|63019|50651|全席指定|前売|first_come|2026-08-06T10:00:00+09:00"
+              "saleKey": "fany|maison|63019|50651|全席指定|当日|first_come|2026-08-06T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-06T10:00:00+09:00",
@@ -210,16 +210,16 @@
       "ticketOptions": [
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥2,000",
+          "price": "￥2,500",
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-08-01T10:00:00+09:00",
               "endAt": "2026-09-11T18:30:00+09:00",
-              "saleKey": "fany|maison|61945|50333|全席指定|前売|first_come|2026-08-01T10:00:00+09:00"
+              "saleKey": "fany|maison|61945|50333|全席指定|当日|first_come|2026-08-01T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-01T10:00:00+09:00",
@@ -1552,12 +1552,12 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61296/49889",
-      "ticketStatus": "一部予定数終了",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [
         {
           "name": "全席指定",
           "type": "前売",
-          "status": "予定数終了",
+          "status": "残りわずか",
           "price": "￥2,800",
           "salePeriods": [
             {
