@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-10T14:53:55.586872+00:00",
+  "syncedAt": "2026-09-10T15:03:07.266525+00:00",
   "performers": [
     {
       "id": "maison",
@@ -50,47 +50,6 @@
   "events": [
     {
       "performerId": "nansui",
-      "date": "2026-09-10",
-      "openTime": "17:15",
-      "startTime": "17:30",
-      "title": "六本木コントライブNEXT！",
-      "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/61290/49796",
-      "ticketStatus": "",
-      "ticketOptions": [],
-      "saleStartAt": "2026-07-25T11:00:00+09:00",
-      "saleEndAt": "2026-07-28T11:00:00+09:00",
-      "saleCategory": "advance",
-      "salePeriods": [
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-07-25T11:00:00+09:00",
-          "endAt": "2026-07-28T11:00:00+09:00"
-        }
-      ],
-      "performersText": [
-        "サルゴリラ",
-        "ななまがり",
-        "うるとらブギーズ",
-        "バンビーノ",
-        "ダイタク",
-        "スクールゾーン",
-        "軟水",
-        "ヨネダ2000",
-        "おミュータンツ",
-        "アリハガ",
-        "MC：軟水"
-      ],
-      "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ]
-    },
-    {
-      "performerId": "nansui",
       "date": "2026-09-11",
       "openTime": "17:00",
       "startTime": "17:15",
@@ -102,16 +61,16 @@
       "ticketOptions": [
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥1,500",
+          "price": "￥1,800",
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-08-05T10:00:00+09:00",
               "endAt": "2026-09-11T15:15:00+09:00",
-              "saleKey": "fany|nansui|60602|49458|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
+              "saleKey": "fany|nansui|60602|49458|全席指定|当日|first_come|2026-08-05T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -121,16 +80,16 @@
         },
         {
           "name": "立見（整理番号付）",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥1,500",
+          "price": "￥1,800",
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-08-05T10:00:00+09:00",
               "endAt": "2026-09-11T15:15:00+09:00",
-              "saleKey": "fany|nansui|60602|49458|立見（整理番号付）|前売|first_come|2026-08-05T10:00:00+09:00"
+              "saleKey": "fany|nansui|60602|49458|立見（整理番号付）|当日|first_come|2026-08-05T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-05T10:00:00+09:00",
