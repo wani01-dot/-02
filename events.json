@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-10T02:05:35.140882+00:00",
+  "syncedAt": "2026-09-10T02:15:42.973565+00:00",
   "performers": [
     {
       "id": "maison",
@@ -18115,25 +18115,31 @@
       "title": "負けたら吉野HIITをしないと出れない劇場",
       "venue": "大宮ラクーンよしもと劇場（埼玉県）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/66803/53117",
+      "sourceUrl": "https://ticket.fany.lol/reception/66807/53117",
       "ticketStatus": "",
       "ticketOptions": [],
-      "saleStartAt": "2026-09-08T11:00:00+09:00",
-      "saleEndAt": "2026-09-10T11:00:00+09:00",
-      "saleCategory": "advance",
+      "saleStartAt": "2026-09-12T10:00:00+09:00",
+      "saleEndAt": "2026-10-22T17:00:00+09:00",
+      "saleCategory": "first_come",
       "salePeriods": [
         {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-09-08T11:00:00+09:00",
-          "endAt": "2026-09-10T11:00:00+09:00"
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-12T10:00:00+09:00",
+          "endAt": "2026-10-22T17:00:00+09:00"
         }
       ],
       "performersText": [
         "めぞん",
         "たくろう",
         "うるとらブギーズ",
-        "シシガシラ"
+        "シシガシラ",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "4枚まで",
+        "・座席番号や整理番号は"
       ],
       "firstSeenAt": "2026-09-09T20:03:24.770114+00:00",
       "newUntil": "",
