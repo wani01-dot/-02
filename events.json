@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-10T10:39:07.358046+00:00",
+  "syncedAt": "2026-09-10T10:50:02.984920+00:00",
   "performers": [
     {
       "id": "maison",
@@ -300,6 +300,95 @@
       ]
     },
     {
+      "performerId": "maison",
+      "date": "2026-09-12",
+      "openTime": "10:45",
+      "startTime": "11:00",
+      "title": "渋谷マンゲキお笑いライブ",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/61296/49868",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-12T09:00:00+09:00",
+              "saleKey": "fany|nansui|61296|49868|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-12T09:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-12T09:00:00+09:00",
+              "saleKey": "fany|nansui|61296|49868|立見（整理番号付）|前売|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-12T09:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-08-05T10:00:00+09:00",
+      "saleEndAt": "2026-09-12T09:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-08-05T10:00:00+09:00",
+          "endAt": "2026-09-12T09:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]相席スタート",
+        "ニッポンの社長",
+        "カベポスター",
+        "ケビンス",
+        "ミカボ",
+        "めぞん",
+        "軟水",
+        "ピュート",
+        "田津原理音",
+        "オフローズ",
+        "ド桜",
+        "ゼロカラン",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-10T10:50:02.981417+00:00",
+      "newUntil": "2026-09-12T10:50:02.981426+00:00",
+      "trackedPerformers": [
+        "maison",
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
       "performerId": "nansui",
       "date": "2026-09-12",
       "openTime": "10:45",
@@ -366,6 +455,7 @@
         "カベポスター",
         "ケビンス",
         "ミカボ",
+        "めぞん",
         "軟水",
         "ピュート",
         "田津原理音",
@@ -382,6 +472,7 @@
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
       "newUntil": "",
       "trackedPerformers": [
+        "maison",
         "pyuto",
         "nansui"
       ]
@@ -453,6 +544,7 @@
         "カベポスター",
         "ケビンス",
         "ミカボ",
+        "めぞん",
         "軟水",
         "ピュート",
         "田津原理音",
@@ -469,6 +561,96 @@
       "firstSeenAt": "2026-09-08T20:58:16.707960+00:00",
       "newUntil": "",
       "trackedPerformers": [
+        "maison",
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-09-12",
+      "openTime": "12:30",
+      "startTime": "12:45",
+      "title": "渋谷マンゲキお笑いライブ",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/61296/49878",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-12T10:45:00+09:00",
+              "saleKey": "fany|nansui|61296|49878|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-12T10:45:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-12T10:45:00+09:00",
+              "saleKey": "fany|nansui|61296|49878|立見（整理番号付）|前売|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-12T10:45:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-08-05T10:00:00+09:00",
+      "saleEndAt": "2026-09-12T10:45:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-08-05T10:00:00+09:00",
+          "endAt": "2026-09-12T10:45:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]相席スタート",
+        "ニッポンの社長",
+        "カベポスター",
+        "ケビンス",
+        "ミカボ",
+        "めぞん",
+        "軟水",
+        "ピュート",
+        "くらげ",
+        "田津原理音",
+        "オフローズ",
+        "ゼロカラン",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-10T10:50:02.981417+00:00",
+      "newUntil": "2026-09-12T10:50:02.981426+00:00",
+      "trackedPerformers": [
+        "maison",
         "pyuto",
         "nansui"
       ]
@@ -540,6 +722,7 @@
         "カベポスター",
         "ケビンス",
         "ミカボ",
+        "めぞん",
         "軟水",
         "ピュート",
         "くらげ",
@@ -556,6 +739,7 @@
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
       "newUntil": "",
       "trackedPerformers": [
+        "maison",
         "pyuto",
         "nansui"
       ]
@@ -627,6 +811,7 @@
         "カベポスター",
         "ケビンス",
         "ミカボ",
+        "めぞん",
         "軟水",
         "ピュート",
         "くらげ",
@@ -643,6 +828,96 @@
       "firstSeenAt": "2026-09-08T20:58:16.707960+00:00",
       "newUntil": "",
       "trackedPerformers": [
+        "maison",
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-09-12",
+      "openTime": "14:15",
+      "startTime": "14:30",
+      "title": "渋谷マンゲキお笑いライブ",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/61296/49888",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-12T12:30:00+09:00",
+              "saleKey": "fany|nansui|61296|49888|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-12T12:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-12T12:30:00+09:00",
+              "saleKey": "fany|nansui|61296|49888|立見（整理番号付）|前売|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-12T12:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-08-05T10:00:00+09:00",
+      "saleEndAt": "2026-09-12T12:30:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-08-05T10:00:00+09:00",
+          "endAt": "2026-09-12T12:30:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]相席スタート",
+        "ニッポンの社長",
+        "カベポスター",
+        "ケビンス",
+        "ミカボ",
+        "めぞん",
+        "軟水",
+        "ピュート",
+        "くらげ",
+        "田津原理音",
+        "オフローズ",
+        "ゼロカラン",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-10T10:50:02.981417+00:00",
+      "newUntil": "2026-09-12T10:50:02.981426+00:00",
+      "trackedPerformers": [
+        "maison",
         "pyuto",
         "nansui"
       ]
@@ -714,6 +989,7 @@
         "カベポスター",
         "ケビンス",
         "ミカボ",
+        "めぞん",
         "軟水",
         "ピュート",
         "くらげ",
@@ -730,6 +1006,7 @@
       "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
       "newUntil": "",
       "trackedPerformers": [
+        "maison",
         "pyuto",
         "nansui"
       ]
@@ -801,6 +1078,7 @@
         "カベポスター",
         "ケビンス",
         "ミカボ",
+        "めぞん",
         "軟水",
         "ピュート",
         "くらげ",
@@ -817,6 +1095,7 @@
       "firstSeenAt": "2026-09-08T20:58:16.707960+00:00",
       "newUntil": "",
       "trackedPerformers": [
+        "maison",
         "pyuto",
         "nansui"
       ]
