@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-11T07:59:13.297565+00:00",
+  "syncedAt": "2026-09-11T08:05:31.040099+00:00",
   "performers": [
     {
       "id": "maison",
@@ -98,38 +98,18 @@
       "title": "大宮ネタとトーク「俺は全然いいんですけど・・・。ね？な噺」",
       "venue": "大宮ラクーンよしもと劇場（埼玉県）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/63019/50651",
-      "ticketStatus": "予定数終了",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "予定数終了",
-          "price": "￥2,100",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-06T10:00:00+09:00",
-              "endAt": "2026-09-11T17:00:00+09:00",
-              "saleKey": "fany|maison|63019|50651|全席指定|当日|first_come|2026-08-06T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-06T10:00:00+09:00",
-          "saleEndAt": "2026-09-11T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-08-06T10:00:00+09:00",
-      "saleEndAt": "2026-09-11T17:00:00+09:00",
-      "saleCategory": "first_come",
+      "sourceUrl": "https://ticket.fany.lol/reception/63017/50651",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-08-02T11:00:00+09:00",
+      "saleEndAt": "2026-08-04T11:00:00+09:00",
+      "saleCategory": "advance",
       "salePeriods": [
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-08-06T10:00:00+09:00",
-          "endAt": "2026-09-11T17:00:00+09:00"
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-08-02T11:00:00+09:00",
+          "endAt": "2026-08-04T11:00:00+09:00"
         }
       ],
       "performersText": [
@@ -138,13 +118,7 @@
         "オズワルド",
         "きっと君はくるさ",
         "トット",
-        "めぞん",
-        "・1回の先着申込で申込可能な公演数は『",
-        "1公演",
-        "』",
-        "枚数は『",
-        "4枚まで",
-        "・座席番号や整理番号は"
+        "めぞん"
       ],
       "firstSeenAt": "2026-09-09T16:37:23.861379+00:00",
       "newUntil": "",
