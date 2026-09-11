@@ -82,7 +82,9 @@ PRODUCT_DELAY = 0.35
 # 対象外だった商品は
 # 7日後にもう一度確認
 NON_MATCH_CACHE_DAYS = 7
-
+# 期限切れになった対象外商品を
+# 1回の実行で再確認する最大件数
+MAX_STALE_NON_MATCH_RECHECKS = 20
 
 # 対象ライブは
 # 12時間ごとに再確認
