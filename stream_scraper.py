@@ -1751,7 +1751,33 @@ def main():
 
 
             continue
+        # 対象外商品の期限切れ再確認は
+        # 1回につき最大件数までに制限する
+        if (
+            cached
+            and
+            not cached.get(
+                "matched",
+                False
+            )
+            and
+            not cache_is_fresh(
+                cached
+            )
+        ):
 
+            if (
+                stale_non_match_recheck_count
+                >=
+                MAX_STALE_NON_MATCH_RECHECKS
+            ):
+
+                cache_skip_count += 1
+
+                continue
+
+
+            stale_non_match_recheck_count += 1
 
         checked_count += 1
 
