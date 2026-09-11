@@ -981,4 +981,1011 @@ def extract_performer_section(
             )
             or
             line.startswith(
-                "
+                "【"
+            )
+            or
+            line.startswith(
+                "＜"
+            )
+            or
+            line.startswith(
+                "注意事項"
+            )
+        ):
+
+            break
+
+
+        collected.append(
+            line
+        )
+
+
+    return clean_text(
+        " ".join(
+            collected
+        )
+    )
+
+
+# =========================================================
+# 価格
+# =========================================================
+
+def extract_price(
+    text
+):
+
+    patterns = [
+        r"¥\s*[\d,]+\s*[（(]?税込[）)]?",
+        r"￥\s*[\d,]+\s*[（(]?税込[）)]?",
+        r"¥\s*[\d,]+",
+        r"￥\s*[\d,]+",
+        r"[\d,]+\s*円\s*[（(]?税込[）)]?",
+    ]
+
+
+    for pattern in patterns:
+
+        match = re.search(
+            pattern,
+            text
+        )
+
+
+        if match:
+
+            return clean_text(
+                match.group(0)
+            )
+
+
+    return ""
+
+
+# =========================================================
+# 販売状態
+# =========================================================
+
+def extract_status(
+    soup
+):
+
+    sold_words = {
+        "販売終了",
+        "販売終了しました",
+        "受付終了",
+        "受付終了しました",
+    }
+
+
+    sale_words = {
+        "販売中",
+        "購入する",
+        "チケットを購入",
+        "購入はこちら",
+    }
+
+
+    visible_texts = []
+
+
+    for tag in soup.find_all(
+        [
+            "button",
+            "a",
+            "span",
+            "div",
+        ]
+    ):
+
+        text = clean_text(
+            tag.get_text(
+                " ",
+                strip=True
+            )
+        )
+
+
+        if not text:
+
+            continue
+
+
+        if len(
+            text
+        ) > 50:
+
+            continue
+
+
+        visible_texts.append(
+            text
+        )
+
+
+    for text in visible_texts:
+
+        if text in sold_words:
+
+            return "販売終了"
+
+
+    for text in visible_texts:
+
+        if text in sale_words:
+
+            return "販売中"
+
+
+    return ""
+
+
+# =========================================================
+# アーカイブ
+# =========================================================
+
+def extract_archive_lines(
+    raw_text
+):
+
+    useful_keywords = [
+        "見逃し配信",
+        "見逃し視聴",
+        "アーカイブ配信",
+        "アーカイブ視聴",
+        "視聴期限",
+        "視聴期間",
+        "見逃し期間",
+    ]
+
+
+    bad_keywords = [
+        "商品が販売終了",
+        "販売終了になった場合",
+        "予告なく",
+        "変更となる場合",
+        "視聴できない場合",
+        "注意事項",
+    ]
+
+
+    result = []
+
+
+    for line in raw_text.splitlines():
+
+        line = clean_text(
+            line
+        )
+
+
+        if not line:
+
+            continue
+
+
+        if not any(
+            keyword in line
+            for keyword
+            in useful_keywords
+        ):
+
+            continue
+
+
+        if any(
+            keyword in line
+            for keyword
+            in bad_keywords
+        ):
+
+            continue
+
+
+        if line not in result:
+
+            result.append(
+                line
+            )
+
+
+    return result[:4]
+
+
+def extract_archive_text(
+    raw_text
+):
+
+    lines = extract_archive_lines(
+        raw_text
+    )
+
+
+    if not lines:
+
+        return ""
+
+
+    return " / ".join(
+        lines
+    )
+
+
+def extract_archive_end(
+    raw_text
+):
+
+    lines = extract_archive_lines(
+        raw_text
+    )
+
+
+    archive_text = " ".join(
+        lines
+    )
+
+
+    if not archive_text:
+
+        return ""
+
+
+    patterns = [
+        (
+            r"(\d{1,2})"
+            r"\s*/\s*"
+            r"(\d{1,2})"
+            r"\s*"
+            r"(\d{1,2}:\d{2})"
+        ),
+
+        (
+            r"(\d{1,2})"
+            r"月"
+            r"(\d{1,2})"
+            r"日"
+            r".{0,15}?"
+            r"(\d{1,2}:\d{2})"
+        ),
+    ]
+
+
+    matches = []
+
+
+    for pattern in patterns:
+
+        for match in re.finditer(
+            pattern,
+            archive_text,
+            re.S
+        ):
+
+            month = int(
+                match.group(1)
+            )
+
+            day = int(
+                match.group(2)
+            )
+
+            time_text = (
+                match.group(3)
+            )
+
+
+            year = resolve_year(
+                month,
+                day
+            )
+
+
+            try:
+
+                dt = datetime.strptime(
+                    (
+                        f"{year:04d}-"
+                        f"{month:02d}-"
+                        f"{day:02d} "
+                        f"{time_text}"
+                    ),
+                    "%Y-%m-%d %H:%M"
+                )
+
+
+                matches.append(
+                    dt
+                )
+
+            except ValueError:
+
+                continue
+
+
+    if not matches:
+
+        return ""
+
+
+    latest = max(
+        matches
+    )
+
+
+    return latest.strftime(
+        "%Y-%m-%d %H:%M"
+    )
+
+
+# =========================================================
+# ID
+# =========================================================
+
+def make_event_id(
+    url
+):
+
+    digest = hashlib.sha1(
+        url.encode(
+            "utf-8"
+        )
+    ).hexdigest()[:14]
+
+
+    return (
+        "fany-stream-"
+        +
+        digest
+    )
+
+
+# =========================================================
+# 商品1件
+# =========================================================
+
+def scrape_product(
+    url
+):
+
+    response = get_with_retry(
+        url
+    )
+
+
+    soup = BeautifulSoup(
+        response.text,
+        "html.parser"
+    )
+
+
+    title = extract_heading(
+        soup
+    )
+
+
+    if not title:
+
+        return None
+
+
+    raw_text = soup.get_text(
+        "\n",
+        strip=True
+    )
+
+
+    full_text = clean_text(
+        raw_text
+    )
+
+
+    performer_text = (
+        extract_performer_section(
+            raw_text
+        )
+    )
+
+
+    performer_ids = (
+        performer_ids_from_text(
+            performer_text
+        )
+    )
+
+
+    if not performer_ids:
+
+        return None
+
+
+    datetime_info = (
+        parse_title_datetime(
+            title
+        )
+    )
+
+
+    if not datetime_info:
+
+        print(
+            "  日時取得失敗:",
+            title
+        )
+
+        return None
+
+
+    month = datetime_info[
+        "month"
+    ]
+
+    day = datetime_info[
+        "day"
+    ]
+
+    start_time = datetime_info[
+        "time"
+    ]
+
+
+    year = resolve_year(
+        month,
+        day
+    )
+
+
+    try:
+
+        event_date = date(
+            year,
+            month,
+            day
+        )
+
+    except ValueError:
+
+        return None
+
+
+    if event_date < today_jst():
+
+        return None
+
+
+    status = extract_status(
+        soup
+    )
+
+
+    if status == "販売終了":
+
+        return None
+
+
+    price = extract_price(
+        full_text
+    )
+
+
+    archive = extract_archive_text(
+        raw_text
+    )
+
+
+    archive_end = extract_archive_end(
+        raw_text
+    )
+
+
+    return {
+        "id": make_event_id(
+            url
+        ),
+
+        "date": (
+            event_date.isoformat()
+        ),
+
+        "startTime": (
+            start_time
+        ),
+
+        "title": (
+            strip_title_datetime(
+                title
+            )
+        ),
+
+        "performerIds": (
+            performer_ids
+        ),
+
+        "performersText": (
+            performer_text
+        ),
+
+        "price": (
+            price
+        ),
+
+        "archive": (
+            archive
+        ),
+
+        "archiveEnd": (
+            archive_end
+        ),
+
+        "status": (
+            status
+            or
+            "販売状況不明"
+        ),
+
+        "source": (
+            "FANYオンラインチケット"
+        ),
+
+        "sourceUrl": (
+            url
+        ),
+    }
+
+
+# =========================================================
+# 保存
+# =========================================================
+
+def sort_events(
+    events
+):
+
+    return sorted(
+        events,
+        key=lambda event: (
+            event.get(
+                "date",
+                ""
+            ),
+
+            event.get(
+                "startTime",
+                ""
+            ),
+
+            event.get(
+                "title",
+                ""
+            ),
+        )
+    )
+
+
+def deduplicate_events(
+    events
+):
+
+    result = {}
+
+
+    for event in events:
+
+        source_url = event.get(
+            "sourceUrl",
+            ""
+        )
+
+
+        if not source_url:
+
+            continue
+
+
+        result[
+            source_url
+        ] = event
+
+
+    return sort_events(
+        list(
+            result.values()
+        )
+    )
+
+
+# =========================================================
+# メイン
+# =========================================================
+
+def main():
+
+    print(
+        "====================================="
+    )
+
+    print(
+        "FANY配信取得開始"
+    )
+
+    print(
+        "今日:",
+        today_jst()
+    )
+
+    print(
+        "====================================="
+    )
+
+
+    cache = load_cache()
+
+    cache_items = cache[
+        "items"
+    ]
+
+
+    product_links = (
+        crawl_all_product_links()
+    )
+
+
+    print(
+        "キャッシュ登録数:",
+        len(
+            cache_items
+        )
+    )
+
+
+    previous_events = {}
+
+
+    if OUTPUT_FILE.exists():
+
+        try:
+
+            old_data = json.loads(
+                OUTPUT_FILE.read_text(
+                    encoding="utf-8"
+                )
+            )
+
+
+            for event in old_data.get(
+                "events",
+                []
+            ):
+
+                url = event.get(
+                    "sourceUrl"
+                )
+
+
+                if url:
+
+                    previous_events[
+                        url
+                    ] = event
+
+
+        except Exception as exc:
+
+            print(
+                "旧イベント読込失敗:",
+                exc
+            )
+
+
+    events_by_url = dict(
+        previous_events
+    )
+
+
+    checked_count = 0
+
+    cache_skip_count = 0
+
+    hit_count = 0
+
+
+    current_url_set = set(
+        product_links
+    )
+
+
+    for index, url in enumerate(
+        product_links,
+        start=1
+    ):
+
+        cached = cache_items.get(
+            url
+        )
+
+
+        if (
+            cached
+            and
+            cache_is_fresh(
+                cached
+            )
+        ):
+
+            cache_skip_count += 1
+
+
+            if cached.get(
+                "matched"
+            ):
+
+                cached_event = cached.get(
+                    "event"
+                )
+
+
+                if isinstance(
+                    cached_event,
+                    dict
+                ):
+
+                    event_date = cached_event.get(
+                        "date",
+                        ""
+                    )
+
+
+                    if (
+                        event_date
+                        >=
+                        today_jst().isoformat()
+                    ):
+
+                        events_by_url[
+                            url
+                        ] = cached_event
+
+
+            continue
+
+
+        checked_count += 1
+
+
+        print(
+            f"詳細確認 "
+            f"{index}/"
+            f"{len(product_links)}"
+        )
+
+
+        try:
+
+            event = scrape_product(
+                url
+            )
+
+
+            cache_items[
+                url
+            ] = {
+                "checkedAt": (
+                    now_jst()
+                    .isoformat()
+                ),
+
+                "matched": bool(
+                    event
+                ),
+
+                "event": event,
+            }
+
+
+            if event:
+
+                events_by_url[
+                    url
+                ] = event
+
+                hit_count += 1
+
+
+                print(
+                    "  HIT:",
+                    event[
+                        "date"
+                    ],
+                    event[
+                        "startTime"
+                    ],
+                    event[
+                        "title"
+                    ]
+                )
+
+
+            else:
+
+                events_by_url.pop(
+                    url,
+                    None
+                )
+
+
+        except Exception as exc:
+
+            print(
+                "  詳細取得失敗:",
+                url,
+                exc
+            )
+
+
+        # 途中で止まっても
+        # キャッシュが残るように一定間隔で保存
+        if (
+            checked_count
+            %
+            50
+            ==
+            0
+        ):
+
+            save_cache(
+                cache
+            )
+
+
+        time.sleep(
+            PRODUCT_DELAY
+        )
+
+
+    # FANY一覧から消えたURLを
+    # 表示対象から外す
+    for url in list(
+        events_by_url.keys()
+    ):
+
+        if url not in current_url_set:
+
+            events_by_url.pop(
+                url,
+                None
+            )
+
+
+    # 過去イベントも削除
+    today_text = (
+        today_jst()
+        .isoformat()
+    )
+
+
+    events = []
+
+
+    for event in events_by_url.values():
+
+        if (
+            event.get(
+                "date",
+                ""
+            )
+            <
+            today_text
+        ):
+
+            continue
+
+
+        events.append(
+            event
+        )
+
+
+    events = deduplicate_events(
+        events
+    )
+
+
+    output = {
+        "updatedAt": (
+            now_jst()
+            .isoformat()
+        ),
+
+        "source": (
+            "FANY Online Ticket"
+        ),
+
+        "events": events,
+    }
+
+
+    OUTPUT_FILE.write_text(
+        json.dumps(
+            output,
+            ensure_ascii=False,
+            indent=2
+        ),
+        encoding="utf-8"
+    )
+
+
+    save_cache(
+        cache
+    )
+
+
+    print(
+        "====================================="
+    )
+
+    print(
+        "商品URL数:",
+        len(
+            product_links
+        )
+    )
+
+    print(
+        "今回詳細確認:",
+        checked_count,
+        "件"
+    )
+
+    print(
+        "キャッシュ省略:",
+        cache_skip_count,
+        "件"
+    )
+
+    print(
+        "今回HIT:",
+        hit_count,
+        "件"
+    )
+
+    print(
+        "保存件数:",
+        len(
+            events
+        )
+    )
+
+
+    for performer_id in [
+        "maison",
+        "pyuto",
+        "nansui",
+    ]:
+
+        count = sum(
+            1
+            for event in events
+            if performer_id
+            in event.get(
+                "performerIds",
+                []
+            )
+        )
+
+
+        print(
+            performer_id,
+            ":",
+            count,
+            "件"
+        )
+
+
+    print(
+        "====================================="
+    )
+
+
+if __name__ == "__main__":
+
+    main()
