@@ -2637,8 +2637,315 @@
   ====================================================== */
 
   function openStreamSheet(
-    event
+  event
+) {
+
+  const overlay =
+    document.getElementById(
+      "streamSheetOverlay"
+    );
+
+
+  const sheet =
+    document.getElementById(
+      "streamSheet"
+    );
+
+
+  if (
+    !overlay
+    ||
+    !sheet
   ) {
+
+    return;
+  }
+
+
+  const performersHtml =
+    event.performerIds
+      .map(
+        id => {
+
+          const performer =
+            streamGetPerformer(
+              id
+            );
+
+
+          return `
+            <span
+              class="stream-detail-performer"
+              style="
+                background:
+                ${streamEscapeHtml(
+                  performer.soft
+                )};
+
+                color:
+                ${streamEscapeHtml(
+                  performer.color
+                )};
+              "
+            >
+              ${streamEscapeHtml(
+                performer.name
+              )}
+            </span>
+          `;
+        }
+      )
+      .join("");
+
+
+  const hasRealUrl =
+    event.sourceUrl
+    &&
+    event.sourceUrl
+    !==
+    "#";
+
+
+  const statusText =
+    event.status
+    &&
+    event.status !== "販売状況不明"
+      ?
+      event.status
+      :
+      "FANYで確認";
+
+
+  const archiveBlock =
+    event.archiveEnd
+      ?
+      `
+        <div class="stream-detail-info-row">
+
+          <div class="stream-detail-info-label">
+            アーカイブ
+          </div>
+
+          <div class="stream-detail-info-value">
+            ${streamEscapeHtml(
+              event.archiveEnd
+            )}まで
+          </div>
+
+        </div>
+      `
+      :
+      event.archive
+        ?
+        `
+          <div class="stream-detail-info-row">
+
+            <div class="stream-detail-info-label">
+              アーカイブ
+            </div>
+
+            <div class="stream-detail-info-value">
+              ${streamEscapeHtml(
+                event.archive
+              )}
+            </div>
+
+          </div>
+        `
+        :
+        "";
+
+
+  sheet.innerHTML = `
+    <div class="stream-sheet-handle"></div>
+
+    <button
+      id="streamSheetClose"
+      class="stream-sheet-close"
+      aria-label="閉じる"
+    >
+      ×
+    </button>
+
+    <div class="stream-detail-badge">
+      ▶ FANY配信
+    </div>
+
+    <div class="stream-sheet-title">
+      ${streamEscapeHtml(
+        event.title
+      )}
+    </div>
+
+    <div class="stream-detail-performers">
+      ${performersHtml}
+    </div>
+
+
+    <div class="stream-sheet-block">
+
+      <div class="stream-sheet-block-title">
+        配信情報
+      </div>
+
+      <div class="stream-detail-info-list">
+
+        <div class="stream-detail-info-row">
+
+          <div class="stream-detail-info-label">
+            配信日
+          </div>
+
+          <div class="stream-detail-info-value">
+            ${streamEscapeHtml(
+              event.date
+            )}
+          </div>
+
+        </div>
+
+        <div class="stream-detail-info-row">
+
+          <div class="stream-detail-info-label">
+            配信開始
+          </div>
+
+          <div class="stream-detail-info-value">
+            ${streamEscapeHtml(
+              event.startTime
+            )}
+          </div>
+
+        </div>
+
+        <div class="stream-detail-info-row">
+
+          <div class="stream-detail-info-label">
+            料金
+          </div>
+
+          <div class="stream-detail-info-value">
+            ${
+              event.price
+                ?
+                streamEscapeHtml(
+                  event.price
+                )
+                :
+                "FANYで確認"
+            }
+          </div>
+
+        </div>
+
+        <div class="stream-detail-info-row">
+
+          <div class="stream-detail-info-label">
+            販売状況
+          </div>
+
+          <div class="stream-detail-info-value">
+            ${streamEscapeHtml(
+              statusText
+            )}
+          </div>
+
+        </div>
+
+        ${archiveBlock}
+
+      </div>
+
+    </div>
+
+
+    ${
+      event.performersText
+        ?
+        `
+          <div class="stream-sheet-block">
+
+            <div class="stream-sheet-block-title">
+              出演者
+            </div>
+
+            <div class="stream-performers-text">
+              ${streamEscapeHtml(
+                event.performersText
+              )}
+            </div>
+
+          </div>
+        `
+        :
+        ""
+    }
+
+
+    <div class="stream-sheet-block">
+
+      <div class="stream-source-note">
+        掲載元：
+        ${streamEscapeHtml(
+          event.source
+          ||
+          "FANYオンラインチケット"
+        )}
+      </div>
+
+    </div>
+
+
+    ${
+      hasRealUrl
+        ?
+        `
+          <a
+            class="stream-fany-button"
+            href="${streamEscapeHtml(
+              event.sourceUrl
+            )}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            FANYオンラインチケットで見る ↗
+          </a>
+        `
+        :
+        `
+          <button
+            class="
+              stream-fany-button
+              mock
+            "
+            type="button"
+            disabled
+          >
+            FANYリンクなし
+          </button>
+        `
+    }
+  `;
+
+
+  overlay.classList.add(
+    "open"
+  );
+
+
+  document.body.style.overflow =
+    "hidden";
+
+
+  document
+    .getElementById(
+      "streamSheetClose"
+    )
+    .addEventListener(
+      "click",
+      closeStreamSheet
+    );
+} {
 
     const overlay =
       document.getElementById(
