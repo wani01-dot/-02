@@ -1,0 +1,48 @@
+name: FANY配信テスト
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape-streams:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: リポジトリを取得
+        uses: actions/checkout@v4
+
+      - name: Pythonを準備
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 必要なライブラリをインストール
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4
+
+      - name: FANY配信情報を取得
+        run: |
+          python stream_scraper.py
+
+      - name: 取得結果を確認
+        run: |
+          echo "===== stream_events.json ====="
+          cat stream_events.json
+
+      - name: stream_events.jsonを保存
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add stream_events.json
+
+          if git diff --cached --quiet; then
+            echo "変更なし"
+          else
+            git commit -m "Update FANY stream events"
+            git push
+          fi
