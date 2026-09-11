@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-11T13:25:15.739480+00:00",
+  "syncedAt": "2026-09-11T13:37:38.244114+00:00",
   "events": [
     {
       "performerId": "nansui",
@@ -1333,7 +1333,7 @@
       "saleCategory": "",
       "salePeriods": [],
       "performersText": [
-        "あべこうじ／ハイキングウォーキング／フルーツポンチ／ライス／スリムクラブ／ヘンダーソン／めぞん／他"
+        "あべこうじ／ハイキングウォーキング／フルーツポンチ／ライス／スリムクラブ／ヘンダーソン／めぞん／ヨネダ2000"
       ],
       "publishedVia": "theater",
       "theaterSourceKey": "theater|omiya|maison|2026-09-23|14:30|大宮ラクーンよしもと寄席その弐"
@@ -2106,6 +2106,30 @@
       "date": "2026-10-03",
       "openTime": "14:15",
       "startTime": "14:30",
+      "title": "大宮占いの館～ケビンスの2027年を占おう～",
+      "venue": "大宮ラクーンよしもと劇場",
+      "source": "theater",
+      "sourceUrl": "https://omiya.yoshimoto.co.jp/schedule/",
+      "theaterId": "omiya",
+      "theaterName": "大宮",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "ケビンス／ますかた一真／MC：GAG",
+        "おおみや差しライブ～ケビンス×めぞん～"
+      ],
+      "publishedVia": "theater",
+      "theaterSourceKey": "theater|omiya|maison|2026-10-03|14:30|大宮占いの館ケビンスの2027年を占おう"
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-10-03",
+      "openTime": "14:15",
+      "startTime": "14:30",
       "title": "渋谷マンゲキお笑いライブ",
       "venue": "渋谷よしもと漫才劇場",
       "source": "theater",
@@ -2123,6 +2147,29 @@
       ],
       "publishedVia": "theater",
       "theaterSourceKey": "theater|shibuya|maison|2026-10-03|14:30|渋谷マンゲキお笑いライブ"
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-10-03",
+      "openTime": "16:15",
+      "startTime": "16:30",
+      "title": "おおみや差しライブ～ケビンス×めぞん～",
+      "venue": "大宮ラクーンよしもと劇場",
+      "source": "theater",
+      "sourceUrl": "https://omiya.yoshimoto.co.jp/schedule/",
+      "theaterId": "omiya",
+      "theaterName": "大宮",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "ケビンス／めぞん"
+      ],
+      "publishedVia": "theater",
+      "theaterSourceKey": "theater|omiya|maison|2026-10-03|16:30|おおみや差しライブケビンス×めぞん"
     },
     {
       "performerId": "nansui",
