@@ -3,6 +3,9 @@ name: FANY配信更新
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: "17 * * * *"
+
 permissions:
   contents: write
 
