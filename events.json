@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-11T09:09:51.803135+00:00",
+  "syncedAt": "2026-09-11T09:24:28.360787+00:00",
   "performers": [
     {
       "id": "maison",
@@ -3121,12 +3121,15 @@
         }
       ],
       "performersText": [
-        "レインボー",
+        "歩子",
         "うるとらブギーズ",
+        "レインボー",
         "エレガント人生",
-        "オフローズ",
         "ブラゴーリ",
+        "オフローズ",
         "軟水",
+        "定点計画",
+        "き展",
         "・1回の先着申込で申込可能な公演数は『",
         "1公演",
         "』",
@@ -10345,9 +10348,10 @@
         "インポッシブル",
         "ジェラードン",
         "バンビーノ",
-        "ビスケットブラザーズ",
-        "コロコロチキチキペッパーズ",
         "おかずクラブ",
+        "ZAZY",
+        "コロコロチキチキペッパーズ",
+        "ビスケットブラザーズ",
         "オフローズ",
         "軟水",
         "・1回の先着申込で申込可能な公演数は『",
@@ -10546,13 +10550,14 @@
       ],
       "performersText": [
         "佐久間一行",
+        "インポッシブル",
         "チョコレートプラネット",
         "ジェラードン",
-        "インポッシブル",
         "バンビーノ",
-        "ビスケットブラザーズ",
-        "コロコロチキチキペッパーズ",
         "おかずクラブ",
+        "ZAZY",
+        "コロコロチキチキペッパーズ",
+        "ビスケットブラザーズ",
         "オフローズ",
         "軟水",
         "・1回の先着申込で申込可能な公演数は『",
@@ -10751,13 +10756,14 @@
       ],
       "performersText": [
         "佐久間一行",
+        "インポッシブル",
         "チョコレートプラネット",
         "ジェラードン",
-        "インポッシブル",
         "バンビーノ",
-        "ビスケットブラザーズ",
-        "コロコロチキチキペッパーズ",
         "おかずクラブ",
+        "ZAZY",
+        "コロコロチキチキペッパーズ",
+        "ビスケットブラザーズ",
         "オフローズ",
         "軟水",
         "・1回の先着申込で申込可能な公演数は『",
@@ -14946,6 +14952,136 @@
       ]
     },
     {
+      "performerId": "nansui",
+      "date": "2026-10-07",
+      "openTime": "17:15",
+      "startTime": "17:30",
+      "title": "六本木コントライブNEXT！",
+      "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64359/51899",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "整理番号付き自由席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-07T15:30:00+09:00",
+              "saleKey": "fany|nansui|64359|51899|整理番号付き自由席|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-07T15:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-07T15:30:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-07T15:30:00+09:00"
+        }
+      ],
+      "performersText": [
+        "セルライトスパ",
+        "いぬ",
+        "ビスケットブラザーズ",
+        "蛙亭",
+        "オフローズ",
+        "軟水",
+        "ピュート",
+        "伝書鳩",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-11T09:24:28.357429+00:00",
+      "newUntil": "2026-09-13T09:24:28.357441+00:00",
+      "trackedPerformers": [
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-10-07",
+      "openTime": "17:15",
+      "startTime": "17:30",
+      "title": "六本木コントライブNEXT！",
+      "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64359/51899",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "整理番号付き自由席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-07T15:30:00+09:00",
+              "saleKey": "fany|nansui|64359|51899|整理番号付き自由席|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-07T15:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-07T15:30:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-07T15:30:00+09:00"
+        }
+      ],
+      "performersText": [
+        "セルライトスパ",
+        "いぬ",
+        "ビスケットブラザーズ",
+        "蛙亭",
+        "オフローズ",
+        "軟水",
+        "ピュート",
+        "伝書鳩",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-11T09:24:28.357429+00:00",
+      "newUntil": "2026-09-13T09:24:28.357441+00:00",
+      "trackedPerformers": [
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
       "performerId": "maison",
       "date": "2026-10-07",
       "openTime": "19:00",
@@ -17044,6 +17180,138 @@
     {
       "performerId": "nansui",
       "date": "2026-10-14",
+      "openTime": "16:45",
+      "startTime": "17:00",
+      "title": "六本木コントライブNEXT！",
+      "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64359/51901",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "整理番号付き自由席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-14T15:00:00+09:00",
+              "saleKey": "fany|nansui|64359|51901|整理番号付き自由席|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-14T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-14T15:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-14T15:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "ヘンダーソン",
+        "ダイタク",
+        "男性ブランコ",
+        "軟水",
+        "ピュート",
+        "オダウエダ",
+        "アイロンヘッド",
+        "ななまがり",
+        "エレガント人生",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-11T09:24:28.357429+00:00",
+      "newUntil": "2026-09-13T09:24:28.357441+00:00",
+      "trackedPerformers": [
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-10-14",
+      "openTime": "16:45",
+      "startTime": "17:00",
+      "title": "六本木コントライブNEXT！",
+      "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64359/51901",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "整理番号付き自由席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-14T15:00:00+09:00",
+              "saleKey": "fany|nansui|64359|51901|整理番号付き自由席|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-14T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-14T15:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-14T15:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "ヘンダーソン",
+        "ダイタク",
+        "男性ブランコ",
+        "軟水",
+        "ピュート",
+        "オダウエダ",
+        "アイロンヘッド",
+        "ななまがり",
+        "エレガント人生",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-11T09:24:28.357429+00:00",
+      "newUntil": "2026-09-13T09:24:28.357441+00:00",
+      "trackedPerformers": [
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-10-14",
       "openTime": "18:30",
       "startTime": "18:45",
       "title": "ミラクルコントパフォーマーズ",
@@ -17308,6 +17576,70 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-10-15",
+      "openTime": "17:15",
+      "startTime": "17:30",
+      "title": "六本木コントライブNEXT！",
+      "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64359/51902",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "整理番号付き自由席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-15T15:30:00+09:00",
+              "saleKey": "fany|nansui|64359|51902|整理番号付き自由席|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-15T15:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-15T15:30:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-15T15:30:00+09:00"
+        }
+      ],
+      "performersText": [
+        "佐久間一行",
+        "５ＧＡＰ",
+        "大谷健太",
+        "しずる",
+        "kento fukaya",
+        "やさしいズ",
+        "軟水",
+        "ナユタ",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-11T09:24:28.357429+00:00",
+      "newUntil": "2026-09-13T09:24:28.357441+00:00",
+      "trackedPerformers": [
+        "nansui"
       ]
     },
     {
@@ -18166,6 +18498,71 @@
       ],
       "firstSeenAt": "2026-09-08T22:03:20.574039+00:00",
       "newUntil": "",
+      "trackedPerformers": [
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-10-21",
+      "openTime": "17:15",
+      "startTime": "17:30",
+      "title": "六本木コントライブNEXT！",
+      "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/64359/51905",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "整理番号付き自由席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-21T15:30:00+09:00",
+              "saleKey": "fany|nansui|64359|51905|整理番号付き自由席|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-21T15:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-21T15:30:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-21T15:30:00+09:00"
+        }
+      ],
+      "performersText": [
+        "守谷日和",
+        "インポッシブル",
+        "うるとらブギーズ",
+        "ネルソンズ",
+        "ななまがり",
+        "カゲヤマ",
+        "スクールゾーン",
+        "軟水",
+        "伝書鳩",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-11T09:24:28.357429+00:00",
+      "newUntil": "2026-09-13T09:24:28.357441+00:00",
       "trackedPerformers": [
         "nansui"
       ]
