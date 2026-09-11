@@ -2896,6 +2896,78 @@
 
   async function loadStreamEvents() {
 
+  const status =
+    document.getElementById(
+      "streamDataStatus"
+    );
+
+  try {
+
+    const response =
+      await fetch(
+        `stream_events.json?t=${Date.now()}`,
+        {
+          cache: "no-store",
+        }
+      );
+
+    if (!response.ok) {
+      throw new Error(
+        `HTTP ${response.status}`
+      );
+    }
+
+    const data =
+      await response.json();
+
+    const events =
+      Array.isArray(data)
+        ? data
+        : (
+            Array.isArray(data.events)
+              ? data.events
+              : []
+          );
+
+    streamEvents =
+      events;
+
+    if (status) {
+
+      status.textContent =
+        `▶ FANY配信 ${events.length}件`;
+
+      status.style.background =
+        "#e8f5ec";
+
+      status.style.color =
+        "#237a3b";
+    }
+
+  } catch (error) {
+
+    console.error(
+      "配信データ取得失敗:",
+      error
+    );
+
+    streamEvents =
+      [];
+
+    if (status) {
+
+      status.textContent =
+        "⚠ 配信情報を取得できませんでした";
+
+      status.style.background =
+        "#fdecec";
+
+      status.style.color =
+        "#b63b3b";
+    }
+  }
+} {
+
     try {
 
       const response =
