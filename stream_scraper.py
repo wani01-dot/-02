@@ -1690,6 +1690,8 @@ def main():
 
     hit_count = 0
 
+    stale_non_match_recheck_count = 0
+
 
     current_url_set = set(
         product_links
