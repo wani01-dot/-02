@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: リポジトリを取得
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Pythonを準備
         uses: actions/setup-python@v5
@@ -38,11 +40,36 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+          cp stream_events.json /tmp/stream_events.json
+
+          git fetch origin main
+          git reset --hard origin/main
+
+          cp /tmp/stream_events.json stream_events.json
+
           git add stream_events.json
 
           if git diff --cached --quiet; then
             echo "変更なし"
           else
             git commit -m "Update FANY stream events"
-            git push
+
+            for i in 1 2 3; do
+              if git push origin HEAD:main; then
+                echo "保存成功"
+                exit 0
+              fi
+
+              echo "他の自動更新と競合しました。最新mainを取得して再試行します..."
+
+              cp stream_events.json /tmp/stream_events.json
+              git fetch origin main
+              git reset --hard origin/main
+              cp /tmp/stream_events.json stream_events.json
+              git add stream_events.json
+              git commit -m "Update FANY stream events" || true
+            done
+
+            echo "3回試しましたが保存できませんでした"
+            exit 1
           fi
