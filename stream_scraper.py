@@ -22,18 +22,24 @@ LIVE_COLLECTION_URL = (
     "https://online-ticket.yoshimoto.co.jp/collections/live"
 )
 
-OUTPUT_FILE = Path("stream_events.json")
+OUTPUT_FILE = Path(
+    "stream_events.json"
+)
 
-JST = ZoneInfo("Asia/Tokyo")
+JST = ZoneInfo(
+    "Asia/Tokyo"
+)
 
 
 TRACKED_PERFORMERS = {
     "maison": [
         "めぞん",
     ],
+
     "pyuto": [
         "ピュート",
     ],
+
     "nansui": [
         "軟水",
     ],
@@ -48,8 +54,24 @@ HEADERS = {
         "(KHTML, like Gecko) "
         "Version/18.0 Mobile/15E148 Safari/604.1"
     ),
-    "Accept-Language": "ja-JP,ja;q=0.9",
+
+    "Accept-Language": (
+        "ja-JP,ja;q=0.9"
+    ),
 }
+
+
+# 万一FANY側のページがおかしくなっても
+# 無限ループしないための安全装置
+MAX_COLLECTION_PAGES = 80
+
+
+# 一覧ページ間の待機
+COLLECTION_DELAY = 0.20
+
+
+# 商品詳細ページ間の待機
+PRODUCT_DELAY = 0.20
 
 
 session = requests.Session()
@@ -64,14 +86,18 @@ session.headers.update(
 # =========================================================
 
 def clean_text(value):
+
     return re.sub(
         r"\s+",
         " ",
-        str(value or "")
+        str(
+            value or ""
+        )
     ).strip()
 
 
 def absolute_url(url):
+
     return urljoin(
         BASE_URL,
         url
@@ -79,12 +105,14 @@ def absolute_url(url):
 
 
 def today_jst():
+
     return datetime.now(
         JST
     ).date()
 
 
 def performer_ids_from_text(text):
+
     found = []
 
     normalized = clean_text(
@@ -110,10 +138,13 @@ def performer_ids_from_text(text):
 # 年の補完
 # =========================================================
 
-def resolve_year(month, day=None):
+def resolve_year(
+    month,
+    day=None
+):
     """
-    FANY上で年表記がない場合に、
-    現在日を基準として自然な年を補う。
+    FANY上で年表記がない場合、
+    現在日を基準に自然な年を補完する。
     """
 
     now = datetime.now(
@@ -127,6 +158,7 @@ def resolve_year(month, day=None):
         and
         month <= 3
     ):
+
         year += 1
 
     elif (
@@ -134,6 +166,7 @@ def resolve_year(month, day=None):
         and
         month >= 10
     ):
+
         year -= 1
 
     return year
@@ -145,11 +178,12 @@ def resolve_year(month, day=None):
 
 def parse_title_datetime(title):
     """
-    以下のようなパターンを対象にする。
+    例:
 
     タイトル（9/18 19:00）
     タイトル (9/18 19:00)
     タイトル（9/18　19:00）
+    タイトル（9月18日 19:00）
     """
 
     patterns = [
@@ -162,6 +196,7 @@ def parse_title_datetime(title):
             r"(\d{1,2}:\d{2})"
             r"\s*[）)]"
         ),
+
         (
             r"[（(]"
             r"\s*(\d{1,2})"
@@ -188,16 +223,21 @@ def parse_title_datetime(title):
             "month": int(
                 match.group(1)
             ),
+
             "day": int(
                 match.group(2)
             ),
-            "time": match.group(3),
+
+            "time": (
+                match.group(3)
+            ),
         }
 
     return None
 
 
 def strip_title_datetime(title):
+
     patterns = [
         (
             r"\s*[（(]"
@@ -209,6 +249,7 @@ def strip_title_datetime(title):
             r"\s*[）)]"
             r"\s*$"
         ),
+
         (
             r"\s*[（(]"
             r"\s*\d{1,2}"
@@ -238,10 +279,11 @@ def strip_title_datetime(title):
 
 
 # =========================================================
-# 一覧
+# FANY一覧
 # =========================================================
 
 def fetch_collection_page(page):
+
     url = (
         f"{LIVE_COLLECTION_URL}"
         f"?page={page}"
@@ -258,6 +300,7 @@ def fetch_collection_page(page):
 
 
 def extract_product_links(html):
+
     soup = BeautifulSoup(
         html,
         "html.parser"
@@ -286,12 +329,14 @@ def extract_product_links(html):
         ):
             continue
 
+        url = absolute_url(
+            href.split(
+                "?"
+            )[0]
+        )
+
         links.add(
-            absolute_url(
-                href.split(
-                    "?"
-                )[0]
-            )
+            url
         )
 
     return sorted(
@@ -299,60 +344,163 @@ def extract_product_links(html):
     )
 
 
-def extract_total_pages(html):
-    soup = BeautifulSoup(
-        html,
-        "html.parser"
+def crawl_all_product_links():
+    """
+    FANY一覧を1ページずつ進む。
+
+    ページ数表示には依存しない。
+
+    新しい商品URLが
+    1件も出なくなった時点で終了する。
+    """
+
+    all_links = set()
+
+    previous_page_links = None
+
+    print(
+        "一覧ページ巡回開始"
     )
 
-    page_numbers = []
-
-    for a in soup.find_all(
-        "a",
-        href=True
+    for page in range(
+        1,
+        MAX_COLLECTION_PAGES + 1
     ):
 
-        href = a.get(
-            "href",
-            ""
+        print(
+            f"一覧 {page}ページ目"
         )
 
-        match = re.search(
-            r"[?&]page=(\d+)",
-            href
-        )
+        try:
 
-        if match:
-
-            page_numbers.append(
-                int(
-                    match.group(1)
-                )
+            html = fetch_collection_page(
+                page
             )
 
-    if page_numbers:
-        return max(
-            page_numbers
+        except Exception as exc:
+
+            print(
+                "  一覧取得失敗:",
+                exc
+            )
+
+            print(
+                "  一覧巡回終了"
+            )
+
+            break
+
+
+        page_links = set(
+            extract_product_links(
+                html
+            )
         )
 
-    text = clean_text(
-        soup.get_text(
-            " ",
-            strip=True
+
+        print(
+            "  このページ:",
+            len(
+                page_links
+            ),
+            "件"
+        )
+
+
+        # 商品が完全にゼロなら終了
+        if not page_links:
+
+            print(
+                "  商品がないため終了"
+            )
+
+            break
+
+
+        # FANYが存在しないページを
+        # 最終ページへリダイレクトする場合への対策
+        if (
+            previous_page_links
+            is not None
+            and
+            page_links
+            ==
+            previous_page_links
+        ):
+
+            print(
+                "  前ページと同じ内容のため終了"
+            )
+
+            break
+
+
+        new_links = (
+            page_links
+            -
+            all_links
+        )
+
+
+        print(
+            "  新規:",
+            len(
+                new_links
+            ),
+            "件"
+        )
+
+
+        # URL自体はあるが
+        # 全部すでに取得済みなら終了
+        if not new_links:
+
+            print(
+                "  新しい商品がないため終了"
+            )
+
+            break
+
+
+        all_links.update(
+            new_links
+        )
+
+
+        print(
+            "  累計:",
+            len(
+                all_links
+            ),
+            "件"
+        )
+
+
+        previous_page_links = (
+            page_links
+        )
+
+
+        time.sleep(
+            COLLECTION_DELAY
+        )
+
+
+    print(
+        "一覧巡回完了"
+    )
+
+    print(
+        "商品URL総数:",
+        len(
+            all_links
         )
     )
 
-    match = re.search(
-        r"(\d+)\s*/\s*(\d+)\s*ページ",
-        text
+
+    return sorted(
+        all_links
     )
-
-    if match:
-        return int(
-            match.group(2)
-        )
-
-    return 1
 
 
 # =========================================================
@@ -360,6 +508,7 @@ def extract_total_pages(html):
 # =========================================================
 
 def extract_heading(soup):
+
     h1 = soup.find(
         "h1"
     )
@@ -375,6 +524,7 @@ def extract_heading(soup):
 
         if value:
             return value
+
 
     title_tag = soup.find(
         "title"
@@ -402,43 +552,96 @@ def extract_heading(soup):
     return ""
 
 
-def extract_performer_section(raw_text):
+def extract_performer_section(
+    raw_text
+):
     """
-    ◆出演者 から次の見出しまでを取得する。
+    ◆出演者 の次から、
+    次の見出しまでを取得する。
+
+    長い正規表現を使わず、
+    1行ずつ確認する方式。
     """
 
-    patterns = [
-        (
-            r"◆\s*出演者"
-            r"\s*(.+?)"
-            r"(?=\n\s*◆|\n\s*【|\n\s*＜|\n\s*注意事項|\Z)"
-        ),
-        (
-            r"出演者"
-            r"\s*(.+?)"
-            r"(?=\n\s*◆|\n\s*【|\n\s*＜|\n\s*注意事項|\Z)"
-        ),
-    ]
+    lines = raw_text.splitlines()
 
-    for pattern in patterns:
+    collecting = False
 
-        match = re.search(
-            pattern,
-            raw_text,
-            re.S
+    collected = []
+
+    for raw_line in lines:
+
+        line = clean_text(
+            raw_line
         )
 
-        if not match:
+        if not line:
             continue
 
-        value = clean_text(
-            match.group(1)
+
+        if not collecting:
+
+            if (
+                line == "◆出演者"
+                or
+                line == "出演者"
+                or
+                line.startswith(
+                    "◆出演者"
+                )
+            ):
+
+                collecting = True
+
+
+                remainder = re.sub(
+                    r"^◆?\s*出演者\s*",
+                    "",
+                    line
+                )
+
+
+                if remainder:
+
+                    collected.append(
+                        remainder
+                    )
+
+            continue
+
+
+        # 次の項目・見出しに来たら終了
+        if (
+            line.startswith(
+                "◆"
+            )
+            or
+            line.startswith(
+                "【"
+            )
+            or
+            line.startswith(
+                "＜"
+            )
+            or
+            line.startswith(
+                "注意事項"
+            )
+        ):
+
+            break
+
+
+        collected.append(
+            line
         )
 
-        if value:
-            return value
 
-    return ""
+    return clean_text(
+        " ".join(
+            collected
+        )
+    )
 
 
 # =========================================================
@@ -446,6 +649,7 @@ def extract_performer_section(raw_text):
 # =========================================================
 
 def extract_price(text):
+
     patterns = [
         r"¥\s*[\d,]+\s*[（(]?税込[）)]?",
         r"￥\s*[\d,]+\s*[（(]?税込[）)]?",
@@ -476,10 +680,8 @@ def extract_price(text):
 
 def extract_status(soup):
     """
-    ページ全体にある注意文の「販売終了」を
-    誤判定しないようにする。
-
-    完全一致に近い表示だけを見る。
+    注意書きに含まれる
+    「販売終了」を拾わないようにする。
     """
 
     sold_words = {
@@ -489,6 +691,7 @@ def extract_status(soup):
         "受付終了しました",
     }
 
+
     sale_words = {
         "販売中",
         "購入する",
@@ -496,7 +699,9 @@ def extract_status(soup):
         "購入はこちら",
     }
 
+
     visible_texts = []
+
 
     for tag in soup.find_all(
         [
@@ -517,22 +722,31 @@ def extract_status(soup):
         if not text:
             continue
 
-        if len(text) > 50:
+        if len(
+            text
+        ) > 50:
+
             continue
+
 
         visible_texts.append(
             text
         )
 
+
     for text in visible_texts:
 
         if text in sold_words:
+
             return "販売終了"
+
 
     for text in visible_texts:
 
         if text in sale_words:
+
             return "販売中"
+
 
     return ""
 
@@ -541,12 +755,11 @@ def extract_status(soup):
 # アーカイブ
 # =========================================================
 
-def extract_archive_lines(raw_text):
+def extract_archive_lines(
+    raw_text
+):
     """
-    アーカイブに本当に関係する文だけを取得。
-
-    「商品が販売終了になった場合」など、
-    注意事項は除外する。
+    本当にアーカイブに関係する行だけ取得する。
     """
 
     useful_keywords = [
@@ -559,6 +772,7 @@ def extract_archive_lines(raw_text):
         "見逃し期間",
     ]
 
+
     bad_keywords = [
         "商品が販売終了",
         "販売終了になった場合",
@@ -568,7 +782,9 @@ def extract_archive_lines(raw_text):
         "注意事項",
     ]
 
+
     result = []
+
 
     for line in raw_text.splitlines():
 
@@ -579,19 +795,24 @@ def extract_archive_lines(raw_text):
         if not line:
             continue
 
+
         if not any(
             keyword in line
             for keyword
             in useful_keywords
         ):
+
             continue
+
 
         if any(
             keyword in line
             for keyword
             in bad_keywords
         ):
+
             continue
+
 
         if line not in result:
 
@@ -599,15 +820,20 @@ def extract_archive_lines(raw_text):
                 line
             )
 
+
     return result[:4]
 
 
-def extract_archive_text(raw_text):
+def extract_archive_text(
+    raw_text
+):
+
     lines = extract_archive_lines(
         raw_text
     )
 
     if not lines:
+
         return ""
 
     return " / ".join(
@@ -615,9 +841,12 @@ def extract_archive_text(raw_text):
     )
 
 
-def extract_archive_end(raw_text):
+def extract_archive_end(
+    raw_text
+):
     """
-    アーカイブ関連行の中だけから期限を探す。
+    アーカイブ関連文の中だけから
+    日時を取得する。
     """
 
     lines = extract_archive_lines(
@@ -629,7 +858,9 @@ def extract_archive_end(raw_text):
     )
 
     if not archive_text:
+
         return ""
+
 
     patterns = [
         (
@@ -639,6 +870,7 @@ def extract_archive_end(raw_text):
             r"\s*"
             r"(\d{1,2}:\d{2})"
         ),
+
         (
             r"(\d{1,2})"
             r"月"
@@ -649,7 +881,9 @@ def extract_archive_end(raw_text):
         ),
     ]
 
+
     matches = []
+
 
     for pattern in patterns:
 
@@ -671,10 +905,12 @@ def extract_archive_end(raw_text):
                 match.group(3)
             )
 
+
             year = resolve_year(
                 month,
                 day
             )
+
 
             try:
 
@@ -688,19 +924,25 @@ def extract_archive_end(raw_text):
                     "%Y-%m-%d %H:%M"
                 )
 
+
                 matches.append(
                     dt
                 )
 
             except ValueError:
+
                 continue
 
+
     if not matches:
+
         return ""
+
 
     latest = max(
         matches
     )
+
 
     return latest.strftime(
         "%Y-%m-%d %H:%M"
@@ -712,11 +954,13 @@ def extract_archive_end(raw_text):
 # =========================================================
 
 def make_event_id(url):
+
     digest = hashlib.sha1(
         url.encode(
             "utf-8"
         )
     ).hexdigest()[:14]
+
 
     return (
         "fany-stream-"
@@ -730,6 +974,7 @@ def make_event_id(url):
 # =========================================================
 
 def scrape_product(url):
+
     response = session.get(
         url,
         timeout=30
@@ -737,51 +982,71 @@ def scrape_product(url):
 
     response.raise_for_status()
 
+
     soup = BeautifulSoup(
         response.text,
         "html.parser"
     )
 
+
     title = extract_heading(
         soup
     )
 
+
     if not title:
+
         return None
+
 
     raw_text = soup.get_text(
         "\n",
         strip=True
     )
 
+
     full_text = clean_text(
         raw_text
     )
 
-    performer_text = extract_performer_section(
-        raw_text
+
+    performer_text = (
+        extract_performer_section(
+            raw_text
+        )
     )
 
-    performer_ids = performer_ids_from_text(
-        performer_text
+
+    performer_ids = (
+        performer_ids_from_text(
+            performer_text
+        )
     )
 
-    # 出演者欄から3組のどれも見つからなければ除外
+
+    # めぞん・ピュート・軟水の
+    # どれも出演していない場合は除外
     if not performer_ids:
+
         return None
 
-    datetime_info = parse_title_datetime(
-        title
+
+    datetime_info = (
+        parse_title_datetime(
+            title
+        )
     )
+
 
     if not datetime_info:
 
         print(
-            "日時取得失敗:",
+            "  日時取得失敗:",
             title
         )
 
         return None
+
 
     month = datetime_info[
         "month"
@@ -795,10 +1060,12 @@ def scrape_product(url):
         "time"
     ]
 
+
     year = resolve_year(
         month,
         day
     )
+
 
     try:
 
@@ -811,13 +1078,14 @@ def scrape_product(url):
     except ValueError:
 
         print(
-            "日付不正:",
+            "  日付不正:",
             title
         )
 
         return None
 
-    # 過去公演は保存しない
+
+    # 過去公演は除外
     if event_date < today_jst():
 
         print(
@@ -828,9 +1096,11 @@ def scrape_product(url):
 
         return None
 
+
     status = extract_status(
         soup
     )
+
 
     # 明確に販売終了なら除外
     if status == "販売終了":
@@ -842,40 +1112,60 @@ def scrape_product(url):
 
         return None
 
+
     price = extract_price(
         full_text
     )
+
 
     archive = extract_archive_text(
         raw_text
     )
 
+
     archive_end = extract_archive_end(
         raw_text
     )
+
 
     return {
         "id": make_event_id(
             url
         ),
 
-        "date": event_date.isoformat(),
-
-        "startTime": start_time,
-
-        "title": strip_title_datetime(
-            title
+        "date": (
+            event_date.isoformat()
         ),
 
-        "performerIds": performer_ids,
+        "startTime": (
+            start_time
+        ),
 
-        "performersText": performer_text,
+        "title": (
+            strip_title_datetime(
+                title
+            )
+        ),
 
-        "price": price,
+        "performerIds": (
+            performer_ids
+        ),
 
-        "archive": archive,
+        "performersText": (
+            performer_text
+        ),
 
-        "archiveEnd": archive_end,
+        "price": (
+            price
+        ),
+
+        "archive": (
+            archive
+        ),
+
+        "archiveEnd": (
+            archive_end
+        ),
 
         "status": (
             status
@@ -887,7 +1177,9 @@ def scrape_product(url):
             "FANYオンラインチケット"
         ),
 
-        "sourceUrl": url,
+        "sourceUrl": (
+            url
+        ),
     }
 
 
@@ -896,6 +1188,7 @@ def scrape_product(url):
 # =========================================================
 
 def sort_events(events):
+
     return sorted(
         events,
         key=lambda event: (
@@ -903,10 +1196,12 @@ def sort_events(events):
                 "date",
                 ""
             ),
+
             event.get(
                 "startTime",
                 ""
             ),
+
             event.get(
                 "title",
                 ""
@@ -915,8 +1210,12 @@ def sort_events(events):
     )
 
 
-def deduplicate_events(events):
+def deduplicate_events(
+    events
+):
+
     result = {}
+
 
     for event in events:
 
@@ -925,12 +1224,16 @@ def deduplicate_events(events):
             ""
         )
 
+
         if not source_url:
+
             continue
+
 
         result[
             source_url
         ] = event
+
 
     return sort_events(
         list(
@@ -944,6 +1247,7 @@ def deduplicate_events(events):
 # =========================================================
 
 def main():
+
     print(
         "====================================="
     )
@@ -972,64 +1276,22 @@ def main():
         "====================================="
     )
 
-    first_html = fetch_collection_page(
-        1
+
+    # ---------------------------------
+    # FANY一覧を最後まで巡回
+    # ---------------------------------
+
+    product_links = (
+        crawl_all_product_links()
     )
 
-    total_pages = extract_total_pages(
-        first_html
+
+    print(
+        "====================================="
     )
 
     print(
-        "一覧ページ数:",
-        total_pages
-    )
-
-    product_links = set(
-        extract_product_links(
-            first_html
-        )
-    )
-
-    for page in range(
-        2,
-        total_pages + 1
-    ):
-
-        print(
-            f"一覧 "
-            f"{page}/"
-            f"{total_pages}"
-        )
-
-        try:
-
-            html = fetch_collection_page(
-                page
-            )
-
-            links = extract_product_links(
-                html
-            )
-
-            product_links.update(
-                links
-            )
-
-        except Exception as exc:
-
-            print(
-                "一覧取得失敗:",
-                page,
-                exc
-            )
-
-        time.sleep(
-            0.2
-        )
-
-    product_links = sorted(
-        product_links
+        "詳細ページ確認開始"
     )
 
     print(
@@ -1039,7 +1301,13 @@ def main():
         )
     )
 
+    print(
+        "====================================="
+    )
+
+
     matched = []
+
 
     for index, url in enumerate(
         product_links,
@@ -1052,17 +1320,20 @@ def main():
             f"{len(product_links)}"
         )
 
+
         try:
 
             event = scrape_product(
                 url
             )
 
+
             if event:
 
                 matched.append(
                     event
                 )
+
 
                 print(
                     "  HIT:",
@@ -1080,21 +1351,25 @@ def main():
                     ]
                 )
 
+
         except Exception as exc:
 
             print(
-                "詳細取得失敗:",
+                "  詳細取得失敗:",
                 url,
                 exc
             )
 
+
         time.sleep(
-            0.2
+            PRODUCT_DELAY
         )
+
 
     events = deduplicate_events(
         matched
     )
+
 
     output = {
         "updatedAt": (
@@ -1108,8 +1383,11 @@ def main():
             "FANY Online Ticket"
         ),
 
-        "events": events,
+        "events": (
+            events
+        ),
     }
+
 
     OUTPUT_FILE.write_text(
         json.dumps(
@@ -1119,6 +1397,7 @@ def main():
         ),
         encoding="utf-8"
     )
+
 
     print(
         "====================================="
@@ -1136,6 +1415,7 @@ def main():
         )
     )
 
+
     for performer_id in [
         "maison",
         "pyuto",
@@ -1152,6 +1432,7 @@ def main():
             )
         )
 
+
         print(
             performer_id,
             ":",
@@ -1159,10 +1440,12 @@ def main():
             "件"
         )
 
+
     print(
         "====================================="
     )
 
 
 if __name__ == "__main__":
+
     main()
