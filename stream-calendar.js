@@ -1542,7 +1542,7 @@
           id="streamDataStatus"
           class="stream-mock-label"
         >
-          🧪 現在はモックデータです
+          ▶ FANY配信情報を読み込み中
         </div>
 
       </section>
@@ -1648,12 +1648,8 @@
 
         <div class="stream-info-text">
 
-          今は表示・操作を確認するためのモックです。
-
-          <br>
-
-          次の段階でFANYオンラインチケットから
-          実際の配信公演を自動取得する仕組みにつなぎます。
+          FANYオンラインチケットから取得した
+          配信公演を自動で表示しています。
 
         </div>
 
