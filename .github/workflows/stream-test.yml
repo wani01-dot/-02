@@ -3,9 +3,6 @@ name: FANY配信更新
 on:
   workflow_dispatch:
 
-  schedule:
-    - cron: "*/15 * * * *"
-
 permissions:
   contents: write
 
@@ -42,35 +39,51 @@ jobs:
           echo "===== stream_events.json ====="
           cat stream_events.json
 
-      - name: stream_events.jsonを保存
+          echo ""
+          echo "===== cache ====="
+
+          if [ -f stream_cache.json ]; then
+            echo "stream_cache.json あり"
+            ls -lh stream_cache.json
+          else
+            echo "stream_cache.json がありません"
+            exit 1
+          fi
+
+      - name: 配信データとキャッシュを保存
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           cp stream_events.json /tmp/stream_events.json
+          cp stream_cache.json /tmp/stream_cache.json
 
           for i in 1 2 3; do
+
+            echo "保存試行: $i"
 
             git fetch origin main
             git reset --hard origin/main
 
             cp /tmp/stream_events.json stream_events.json
+            cp /tmp/stream_cache.json stream_cache.json
 
             git add stream_events.json
+            git add stream_cache.json
 
             if git diff --cached --quiet; then
               echo "変更なし"
               exit 0
             fi
 
-            git commit -m "Update FANY stream events"
+            git commit -m "Update FANY stream data"
 
             if git push origin HEAD:main; then
               echo "保存成功"
               exit 0
             fi
 
-            echo "他の自動更新と競合したため再試行します"
+            echo "push競合。5秒待って再試行します"
 
             sleep 5
           done
