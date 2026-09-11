@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-11T14:51:00.573127+00:00",
+  "syncedAt": "2026-09-11T15:01:10.127499+00:00",
   "performers": [
     {
       "id": "maison",
@@ -48,119 +48,6 @@
     }
   ],
   "events": [
-    {
-      "performerId": "nansui",
-      "date": "2026-09-11",
-      "openTime": "17:00",
-      "startTime": "17:15",
-      "title": "渋谷Kiwami極LIVEプラス＋",
-      "venue": "渋谷よしもと漫才劇場（東京都）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/60600/49458",
-      "ticketStatus": "",
-      "ticketOptions": [],
-      "saleStartAt": "2026-07-25T11:00:00+09:00",
-      "saleEndAt": "2026-07-28T11:00:00+09:00",
-      "saleCategory": "advance",
-      "salePeriods": [
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-07-25T11:00:00+09:00",
-          "endAt": "2026-07-28T11:00:00+09:00"
-        }
-      ],
-      "performersText": [
-        "[ネタ＆コーナーライブ]さや香",
-        "西村ヒロチョ",
-        "そいつどいつ",
-        "ぱろぱろ",
-        "スーパーサイズ・ミー",
-        "素敵じゃないか",
-        "スパジーニ",
-        "軟水",
-        "マリーマリー",
-        "鉄人小町",
-        "[ コーナー出演者]コーナーMC:素敵じゃないか",
-        "さや香"
-      ],
-      "firstSeenAt": "2026-09-10T21:43:21.252354+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ]
-    },
-    {
-      "performerId": "maison",
-      "date": "2026-09-11",
-      "openTime": "18:50",
-      "startTime": "19:00",
-      "title": "大宮ネタとトーク「俺は全然いいんですけど・・・。ね？な噺」",
-      "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/63017/50651",
-      "ticketStatus": "",
-      "ticketOptions": [],
-      "saleStartAt": "2026-08-02T11:00:00+09:00",
-      "saleEndAt": "2026-08-04T11:00:00+09:00",
-      "saleCategory": "advance",
-      "salePeriods": [
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-08-02T11:00:00+09:00",
-          "endAt": "2026-08-04T11:00:00+09:00"
-        }
-      ],
-      "performersText": [
-        "タモンズ",
-        "カゲヤマ",
-        "オズワルド",
-        "きっと君はくるさ",
-        "トット",
-        "めぞん"
-      ],
-      "firstSeenAt": "2026-09-09T16:37:23.861379+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison"
-      ]
-    },
-    {
-      "performerId": "maison",
-      "date": "2026-09-11",
-      "openTime": "20:20",
-      "startTime": "20:30",
-      "title": "大喜利ぞうさん",
-      "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/61937/50333",
-      "ticketStatus": "",
-      "ticketOptions": [],
-      "saleStartAt": "2026-07-28T11:00:00+09:00",
-      "saleEndAt": "2026-07-30T11:00:00+09:00",
-      "saleCategory": "advance",
-      "salePeriods": [
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-07-28T11:00:00+09:00",
-          "endAt": "2026-07-30T11:00:00+09:00"
-        }
-      ],
-      "performersText": [
-        "カゲヤマ",
-        "オズワルド",
-        "めぞん",
-        "タモンズ",
-        "きっと君はくるさ"
-      ],
-      "firstSeenAt": "2026-09-09T16:37:23.861379+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison"
-      ]
-    },
     {
       "performerId": "maison",
       "date": "2026-09-12",
@@ -984,16 +871,16 @@
       "ticketOptions": [
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥2,000",
+          "price": "￥2,500",
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-08-05T10:00:00+09:00",
               "endAt": "2026-09-12T17:00:00+09:00",
-              "saleKey": "fany|nansui|60967|49605|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
+              "saleKey": "fany|nansui|60967|49605|全席指定|当日|first_come|2026-08-05T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -1003,16 +890,16 @@
         },
         {
           "name": "立見（整理番号付）",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥2,000",
+          "price": "￥2,500",
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-08-05T10:00:00+09:00",
               "endAt": "2026-09-12T17:00:00+09:00",
-              "saleKey": "fany|nansui|60967|49605|立見（整理番号付）|前売|first_come|2026-08-05T10:00:00+09:00"
+              "saleKey": "fany|nansui|60967|49605|立見（整理番号付）|当日|first_come|2026-08-05T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-05T10:00:00+09:00",
