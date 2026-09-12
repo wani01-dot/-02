@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-12T09:59:20.841828+00:00",
+  "syncedAt": "2026-09-12T10:05:57.876679+00:00",
   "performers": [
     {
       "id": "maison",
@@ -495,50 +495,24 @@
       "title": "ぺ新ネタライブ「シンペタ」",
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/60776/49552",
-      "ticketStatus": "販売中",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "販売中",
-          "price": "￥2,000",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-12T19:00:00+09:00",
-              "saleKey": "fany|pyuto|60776|49552|全席指定|当日|first_come|2026-08-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-12T19:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-08-05T10:00:00+09:00",
-      "saleEndAt": "2026-09-12T19:00:00+09:00",
-      "saleCategory": "first_come",
+      "sourceUrl": "https://ticket.fany.lol/reception/60678/49552",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-07-25T11:00:00+09:00",
+      "saleEndAt": "2026-07-28T11:00:00+09:00",
+      "saleCategory": "advance",
       "salePeriods": [
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-08-05T10:00:00+09:00",
-          "endAt": "2026-09-12T19:00:00+09:00"
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-07-25T11:00:00+09:00",
+          "endAt": "2026-07-28T11:00:00+09:00"
         }
       ],
       "performersText": [
         "ぺ",
         "カベポスター",
-        "ピュート",
-        "・1回の先着申込で申込可能な公演数は『",
-        "1公演",
-        "』",
-        "枚数は『",
-        "10枚まで",
-        "・座席番号や整理番号は"
+        "ピュート"
       ],
       "firstSeenAt": "2026-09-12T02:00:50.946674+00:00",
       "newUntil": "",
