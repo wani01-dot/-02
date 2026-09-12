@@ -22,31 +22,16 @@ LIVE_COLLECTION_URL = (
     "https://online-ticket.yoshimoto.co.jp/collections/live"
 )
 
-OUTPUT_FILE = Path(
-    "stream_events.json"
-)
+OUTPUT_FILE = Path("stream_events.json")
+CACHE_FILE = Path("stream_cache.json")
 
-CACHE_FILE = Path(
-    "stream_cache.json"
-)
-
-JST = ZoneInfo(
-    "Asia/Tokyo"
-)
+JST = ZoneInfo("Asia/Tokyo")
 
 
 TRACKED_PERFORMERS = {
-    "maison": [
-        "めぞん",
-    ],
-
-    "pyuto": [
-        "ピュート",
-    ],
-
-    "nansui": [
-        "軟水",
-    ],
+    "maison": ["めぞん"],
+    "pyuto": ["ピュート"],
+    "nansui": ["軟水"],
 }
 
 
@@ -58,46 +43,30 @@ HEADERS = {
         "(KHTML, like Gecko) "
         "Version/18.0 Mobile/15E148 Safari/604.1"
     ),
-
-    "Accept-Language": (
-        "ja-JP,ja;q=0.9"
-    ),
+    "Accept-Language": "ja-JP,ja;q=0.9",
 }
 
 
 session = requests.Session()
-
-session.headers.update(
-    HEADERS
-)
+session.headers.update(HEADERS)
 
 
-# 一覧巡回の安全上限
 MAX_COLLECTION_PAGES = 80
 
-
-# 一覧ページ間の待機
 COLLECTION_DELAY = 0.25
-
-
-# 詳細ページ間の待機
 PRODUCT_DELAY = 0.35
 
-
-# 対象外商品は7日後に再確認
 NON_MATCH_CACHE_DAYS = 7
 
+# 対象ライブは6時間ごとに再確認
+# 配信期間・販売状態変更を比較的早く反映する
+MATCH_CACHE_HOURS = 6
 
-# 対象商品は12時間ごとに再確認
-MATCH_CACHE_HOURS = 12
-
-
-# 期限切れになった対象外商品を
-# 1回の実行で再確認する最大件数
+# 対象外商品の期限切れ再確認は
+# 1回最大20商品
 MAX_STALE_NON_MATCH_RECHECKS = 20
 
 
-# 429などの再試行待機
 RETRY_WAIT_SECONDS = [
     5,
     15,
@@ -111,18 +80,14 @@ RETRY_WAIT_SECONDS = [
 # =========================================================
 
 def clean_text(value):
-
     return re.sub(
         r"\s+",
         " ",
-        str(
-            value or ""
-        )
+        str(value or "")
     ).strip()
 
 
 def absolute_url(url):
-
     return urljoin(
         BASE_URL,
         url
@@ -130,14 +95,10 @@ def absolute_url(url):
 
 
 def now_jst():
-
-    return datetime.now(
-        JST
-    )
+    return datetime.now(JST)
 
 
 def today_jst():
-
     return now_jst().date()
 
 
@@ -145,9 +106,7 @@ def performer_ids_from_text(text):
 
     found = []
 
-    normalized = clean_text(
-        text
-    )
+    normalized = clean_text(text)
 
     for performer_id, aliases in TRACKED_PERFORMERS.items():
 
@@ -174,17 +133,12 @@ def get_with_retry(
 ):
 
     attempts = (
-        len(
-            RETRY_WAIT_SECONDS
-        )
+        len(RETRY_WAIT_SECONDS)
         +
         1
     )
 
-
-    for attempt in range(
-        attempts
-    ):
+    for attempt in range(attempts):
 
         try:
 
@@ -195,24 +149,15 @@ def get_with_retry(
 
         except requests.RequestException as exc:
 
-            if (
-                attempt
-                >=
-                attempts - 1
-            ):
-
+            if attempt >= attempts - 1:
                 raise
-
 
             wait = RETRY_WAIT_SECONDS[
                 min(
                     attempt,
-                    len(
-                        RETRY_WAIT_SECONDS
-                    ) - 1
+                    len(RETRY_WAIT_SECONDS) - 1
                 )
             ]
-
 
             print(
                 "  通信エラー:",
@@ -223,45 +168,26 @@ def get_with_retry(
                 f"  {wait}秒待って再試行"
             )
 
-
-            time.sleep(
-                wait
-            )
+            time.sleep(wait)
 
             continue
 
 
-        if (
-            response.status_code
-            ==
-            429
-        ):
+        if response.status_code == 429:
 
-            if (
-                attempt
-                >=
-                attempts - 1
-            ):
-
+            if attempt >= attempts - 1:
                 response.raise_for_status()
-
 
             wait = RETRY_WAIT_SECONDS[
                 min(
                     attempt,
-                    len(
-                        RETRY_WAIT_SECONDS
-                    ) - 1
+                    len(RETRY_WAIT_SECONDS) - 1
                 )
             ]
 
-
-            retry_after = (
-                response.headers.get(
-                    "Retry-After"
-                )
+            retry_after = response.headers.get(
+                "Retry-After"
             )
-
 
             if retry_after:
 
@@ -269,13 +195,10 @@ def get_with_retry(
 
                     wait = max(
                         wait,
-                        int(
-                            retry_after
-                        )
+                        int(retry_after)
                     )
 
                 except ValueError:
-
                     pass
 
 
@@ -287,38 +210,22 @@ def get_with_retry(
                 f"  {wait}秒待って再試行"
             )
 
-
-            time.sleep(
-                wait
-            )
+            time.sleep(wait)
 
             continue
 
 
-        if (
-            response.status_code
-            >=
-            500
-        ):
+        if response.status_code >= 500:
 
-            if (
-                attempt
-                >=
-                attempts - 1
-            ):
-
+            if attempt >= attempts - 1:
                 response.raise_for_status()
-
 
             wait = RETRY_WAIT_SECONDS[
                 min(
                     attempt,
-                    len(
-                        RETRY_WAIT_SECONDS
-                    ) - 1
+                    len(RETRY_WAIT_SECONDS) - 1
                 )
             ]
-
 
             print(
                 "  サーバーエラー:",
@@ -329,10 +236,7 @@ def get_with_retry(
                 f"  {wait}秒待って再試行"
             )
 
-
-            time.sleep(
-                wait
-            )
+            time.sleep(wait)
 
             continue
 
@@ -356,7 +260,7 @@ def load_cache():
     if not CACHE_FILE.exists():
 
         return {
-            "version": 1,
+            "version": 2,
             "items": {},
         }
 
@@ -377,45 +281,34 @@ def load_cache():
         )
 
         return {
-            "version": 1,
+            "version": 2,
             "items": {},
         }
 
 
-    if not isinstance(
-        data,
-        dict
-    ):
+    if not isinstance(data, dict):
 
         return {
-            "version": 1,
+            "version": 2,
             "items": {},
         }
 
 
     if not isinstance(
-        data.get(
-            "items"
-        ),
+        data.get("items"),
         dict
     ):
 
-        data[
-            "items"
-        ] = {}
+        data["items"] = {}
 
 
     return data
 
 
-def parse_iso_datetime(
-    value
-):
+def parse_iso_datetime(value):
 
     if not value:
-
         return None
-
 
     try:
 
@@ -424,7 +317,6 @@ def parse_iso_datetime(
         )
 
     except Exception:
-
         return None
 
 
@@ -435,14 +327,10 @@ def parse_iso_datetime(
         )
 
 
-    return dt.astimezone(
-        JST
-    )
+    return dt.astimezone(JST)
 
 
-def cache_is_fresh(
-    item
-):
+def cache_is_fresh(item):
 
     checked_at = parse_iso_datetime(
         item.get(
@@ -451,9 +339,7 @@ def cache_is_fresh(
         )
     )
 
-
     if not checked_at:
-
         return False
 
 
@@ -493,22 +379,13 @@ def cache_is_fresh(
     )
 
 
-def save_cache(
-    cache
-):
+def save_cache(cache):
 
-    cache[
-        "version"
-    ] = 1
+    cache["version"] = 2
 
-
-    cache[
-        "updatedAt"
-    ] = (
-        now_jst()
-        .isoformat()
+    cache["updatedAt"] = (
+        now_jst().isoformat()
     )
-
 
     CACHE_FILE.write_text(
         json.dumps(
@@ -521,7 +398,7 @@ def save_cache(
 
 
 # =========================================================
-# 年
+# 年補完
 # =========================================================
 
 def resolve_year(
@@ -556,12 +433,10 @@ def resolve_year(
 
 
 # =========================================================
-# 日時
+# 公演日時
 # =========================================================
 
-def parse_title_datetime(
-    title
-):
+def parse_title_datetime(title):
 
     patterns = [
         (
@@ -580,7 +455,7 @@ def parse_title_datetime(
             r"月"
             r"(\d{1,2})"
             r"日"
-            r".{0,12}?"
+            r".{0,15}?"
             r"(\d{1,2}:\d{2})"
             r"\s*[）)]"
         ),
@@ -594,9 +469,7 @@ def parse_title_datetime(
             title
         )
 
-
         if not match:
-
             continue
 
 
@@ -609,18 +482,14 @@ def parse_title_datetime(
                 match.group(2)
             ),
 
-            "time": (
-                match.group(3)
-            ),
+            "time": match.group(3),
         }
 
 
     return None
 
 
-def strip_title_datetime(
-    title
-):
+def strip_title_datetime(title):
 
     patterns = [
         (
@@ -640,7 +509,7 @@ def strip_title_datetime(
             r"月"
             r"\d{1,2}"
             r"日"
-            r".{0,12}?"
+            r".{0,15}?"
             r"\d{1,2}:\d{2}"
             r"\s*[）)]"
             r"\s*$"
@@ -660,42 +529,264 @@ def strip_title_datetime(
         )
 
 
-    return clean_text(
-        value
+    return clean_text(value)
+
+
+# =========================================================
+# 配信期間
+# =========================================================
+
+def extract_stream_period_lines(
+    raw_text
+):
+    """
+    配信・見逃し・アーカイブ期間に
+    関係する行だけを抽出する。
+    """
+
+    useful_keywords = [
+        "配信期間",
+        "視聴期間",
+        "視聴期限",
+        "配信期限",
+        "配信終了",
+        "見逃し配信",
+        "見逃し視聴",
+        "見逃し期間",
+        "アーカイブ配信",
+        "アーカイブ視聴",
+        "アーカイブ期間",
+    ]
+
+
+    bad_keywords = [
+        "商品が販売終了",
+        "販売終了になった場合",
+        "予告なく",
+        "変更となる場合",
+        "視聴できない場合",
+    ]
+
+
+    result = []
+
+
+    for line in raw_text.splitlines():
+
+        line = clean_text(line)
+
+        if not line:
+            continue
+
+
+        if not any(
+            keyword in line
+            for keyword in useful_keywords
+        ):
+
+            continue
+
+
+        if any(
+            keyword in line
+            for keyword in bad_keywords
+        ):
+
+            continue
+
+
+        if line not in result:
+
+            result.append(line)
+
+
+    return result[:8]
+
+
+def parse_datetime_candidates(
+    text
+):
+    """
+    文章内に含まれる
+    月日 + 時刻をすべて取得する。
+    """
+
+    results = []
+
+
+    patterns = [
+        (
+            r"(\d{1,2})"
+            r"\s*/\s*"
+            r"(\d{1,2})"
+            r"(?:\s*[（(][^）)]*[）)])?"
+            r"\s*"
+            r"(\d{1,2}:\d{2})"
+        ),
+
+        (
+            r"(\d{1,2})"
+            r"月"
+            r"(\d{1,2})"
+            r"日"
+            r"(?:\s*[（(][^）)]*[）)])?"
+            r".{0,10}?"
+            r"(\d{1,2}:\d{2})"
+        ),
+    ]
+
+
+    for pattern in patterns:
+
+        for match in re.finditer(
+            pattern,
+            text,
+            re.S
+        ):
+
+            month = int(
+                match.group(1)
+            )
+
+            day = int(
+                match.group(2)
+            )
+
+            time_text = match.group(3)
+
+
+            year = resolve_year(
+                month,
+                day
+            )
+
+
+            try:
+
+                naive = datetime.strptime(
+                    (
+                        f"{year:04d}-"
+                        f"{month:02d}-"
+                        f"{day:02d} "
+                        f"{time_text}"
+                    ),
+                    "%Y-%m-%d %H:%M"
+                )
+
+
+                dt = naive.replace(
+                    tzinfo=JST
+                )
+
+
+                if dt not in results:
+
+                    results.append(dt)
+
+
+            except ValueError:
+                continue
+
+
+    return sorted(results)
+
+
+def extract_stream_period(
+    raw_text,
+    event_date,
+    start_time
+):
+    """
+    streamStart:
+      公演開始日時
+
+    streamEnd:
+      FANY本文から取得できた
+      視聴・見逃し・アーカイブ終了日時
+
+    終了日時が書かれていなければ
+    空欄のままにする。
+    """
+
+    start_dt = datetime.strptime(
+        (
+            f"{event_date.isoformat()} "
+            f"{start_time}"
+        ),
+        "%Y-%m-%d %H:%M"
+    ).replace(
+        tzinfo=JST
     )
 
 
+    lines = extract_stream_period_lines(
+        raw_text
+    )
+
+
+    period_text = " / ".join(
+        lines
+    )
+
+
+    candidates = parse_datetime_candidates(
+        period_text
+    )
+
+
+    end_candidates = [
+        dt
+        for dt in candidates
+        if dt > start_dt
+    ]
+
+
+    end_dt = (
+        max(end_candidates)
+        if end_candidates
+        else None
+    )
+
+
+    return {
+        "start": start_dt.strftime(
+            "%Y-%m-%d %H:%M"
+        ),
+
+        "end": (
+            end_dt.strftime(
+                "%Y-%m-%d %H:%M"
+            )
+            if end_dt
+            else ""
+        ),
+
+        "text": period_text,
+    }
+
+
 # =========================================================
-# FANY一覧
+# 一覧
 # =========================================================
 
-def fetch_collection_page(
-    page
-):
+def fetch_collection_page(page):
 
     url = (
         f"{LIVE_COLLECTION_URL}"
         f"?page={page}"
     )
 
-
-    response = get_with_retry(
-        url
-    )
-
+    response = get_with_retry(url)
 
     return response.text
 
 
-def extract_product_links(
-    html
-):
+def extract_product_links(html):
 
     soup = BeautifulSoup(
         html,
         "html.parser"
     )
-
 
     links = set()
 
@@ -712,9 +803,7 @@ def extract_product_links(
             )
         )
 
-
         if not href:
-
             continue
 
 
@@ -728,16 +817,12 @@ def extract_product_links(
 
         links.add(
             absolute_url(
-                href.split(
-                    "?"
-                )[0]
+                href.split("?")[0]
             )
         )
 
 
-    return sorted(
-        links
-    )
+    return sorted(links)
 
 
 def crawl_all_product_links():
@@ -787,9 +872,7 @@ def crawl_all_product_links():
 
         print(
             "  このページ:",
-            len(
-                page_links
-            ),
+            len(page_links),
             "件"
         )
 
@@ -804,12 +887,9 @@ def crawl_all_product_links():
 
 
         if (
-            previous_page_links
-            is not None
+            previous_page_links is not None
             and
-            page_links
-            ==
-            previous_page_links
+            page_links == previous_page_links
         ):
 
             print(
@@ -828,9 +908,7 @@ def crawl_all_product_links():
 
         print(
             "  新規:",
-            len(
-                new_links
-            ),
+            len(new_links),
             "件"
         )
 
@@ -851,9 +929,7 @@ def crawl_all_product_links():
 
         print(
             "  累計:",
-            len(
-                all_links
-            ),
+            len(all_links),
             "件"
         )
 
@@ -872,32 +948,22 @@ def crawl_all_product_links():
         "一覧巡回完了"
     )
 
-
     print(
         "商品URL総数:",
-        len(
-            all_links
-        )
+        len(all_links)
     )
 
 
-    return sorted(
-        all_links
-    )
+    return sorted(all_links)
 
 
 # =========================================================
-# 詳細
+# 詳細抽出
 # =========================================================
 
-def extract_heading(
-    soup
-):
+def extract_heading(soup):
 
-    h1 = soup.find(
-        "h1"
-    )
-
+    h1 = soup.find("h1")
 
     if h1:
 
@@ -908,16 +974,11 @@ def extract_heading(
             )
         )
 
-
         if value:
-
             return value
 
 
-    title_tag = soup.find(
-        "title"
-    )
-
+    title_tag = soup.find("title")
 
     if title_tag:
 
@@ -928,17 +989,13 @@ def extract_heading(
             )
         )
 
-
         value = re.sub(
             r"\s*[|｜].*$",
             "",
             value
         )
 
-
-        return clean_text(
-            value
-        )
+        return clean_text(value)
 
 
     return ""
@@ -961,9 +1018,7 @@ def extract_performer_section(
             raw_line
         )
 
-
         if not line:
-
             continue
 
 
@@ -990,7 +1045,6 @@ def extract_performer_section(
 
 
                 if remainder:
-
                     collected.append(
                         remainder
                     )
@@ -1000,35 +1054,23 @@ def extract_performer_section(
 
 
         if (
-            line.startswith(
-                "◆"
-            )
+            line.startswith("◆")
             or
-            line.startswith(
-                "【"
-            )
+            line.startswith("【")
             or
-            line.startswith(
-                "＜"
-            )
+            line.startswith("＜")
             or
-            line.startswith(
-                "注意事項"
-            )
+            line.startswith("注意事項")
         ):
 
             break
 
 
-        collected.append(
-            line
-        )
+        collected.append(line)
 
 
     return clean_text(
-        " ".join(
-            collected
-        )
+        " ".join(collected)
     )
 
 
@@ -1036,9 +1078,7 @@ def extract_performer_section(
 # 価格
 # =========================================================
 
-def extract_price(
-    text
-):
+def extract_price(text):
 
     patterns = [
         r"¥\s*[\d,]+\s*[（(]?税込[）)]?",
@@ -1056,7 +1096,6 @@ def extract_price(
             text
         )
 
-
         if match:
 
             return clean_text(
@@ -1071,9 +1110,7 @@ def extract_price(
 # 販売状態
 # =========================================================
 
-def extract_status(
-    soup
-):
+def extract_status(soup):
 
     sold_words = {
         "販売終了",
@@ -1112,20 +1149,14 @@ def extract_status(
 
 
         if not text:
-
             continue
 
 
-        if len(
-            text
-        ) > 50:
-
+        if len(text) > 50:
             continue
 
 
-        visible_texts.append(
-            text
-        )
+        visible_texts.append(text)
 
 
     for text in visible_texts:
@@ -1146,214 +1177,13 @@ def extract_status(
 
 
 # =========================================================
-# アーカイブ
-# =========================================================
-
-def extract_archive_lines(
-    raw_text
-):
-
-    useful_keywords = [
-        "見逃し配信",
-        "見逃し視聴",
-        "アーカイブ配信",
-        "アーカイブ視聴",
-        "視聴期限",
-        "視聴期間",
-        "見逃し期間",
-    ]
-
-
-    bad_keywords = [
-        "商品が販売終了",
-        "販売終了になった場合",
-        "予告なく",
-        "変更となる場合",
-        "視聴できない場合",
-        "注意事項",
-    ]
-
-
-    result = []
-
-
-    for line in raw_text.splitlines():
-
-        line = clean_text(
-            line
-        )
-
-
-        if not line:
-
-            continue
-
-
-        if not any(
-            keyword in line
-            for keyword
-            in useful_keywords
-        ):
-
-            continue
-
-
-        if any(
-            keyword in line
-            for keyword
-            in bad_keywords
-        ):
-
-            continue
-
-
-        if line not in result:
-
-            result.append(
-                line
-            )
-
-
-    return result[:4]
-
-
-def extract_archive_text(
-    raw_text
-):
-
-    lines = extract_archive_lines(
-        raw_text
-    )
-
-
-    if not lines:
-
-        return ""
-
-
-    return " / ".join(
-        lines
-    )
-
-
-def extract_archive_end(
-    raw_text
-):
-
-    lines = extract_archive_lines(
-        raw_text
-    )
-
-
-    archive_text = " ".join(
-        lines
-    )
-
-
-    if not archive_text:
-
-        return ""
-
-
-    patterns = [
-        (
-            r"(\d{1,2})"
-            r"\s*/\s*"
-            r"(\d{1,2})"
-            r"\s*"
-            r"(\d{1,2}:\d{2})"
-        ),
-
-        (
-            r"(\d{1,2})"
-            r"月"
-            r"(\d{1,2})"
-            r"日"
-            r".{0,15}?"
-            r"(\d{1,2}:\d{2})"
-        ),
-    ]
-
-
-    matches = []
-
-
-    for pattern in patterns:
-
-        for match in re.finditer(
-            pattern,
-            archive_text,
-            re.S
-        ):
-
-            month = int(
-                match.group(1)
-            )
-
-            day = int(
-                match.group(2)
-            )
-
-            time_text = (
-                match.group(3)
-            )
-
-
-            year = resolve_year(
-                month,
-                day
-            )
-
-
-            try:
-
-                dt = datetime.strptime(
-                    (
-                        f"{year:04d}-"
-                        f"{month:02d}-"
-                        f"{day:02d} "
-                        f"{time_text}"
-                    ),
-                    "%Y-%m-%d %H:%M"
-                )
-
-
-                matches.append(
-                    dt
-                )
-
-            except ValueError:
-
-                continue
-
-
-    if not matches:
-
-        return ""
-
-
-    latest = max(
-        matches
-    )
-
-
-    return latest.strftime(
-        "%Y-%m-%d %H:%M"
-    )
-
-
-# =========================================================
 # ID
 # =========================================================
 
-def make_event_id(
-    url
-):
+def make_event_id(url):
 
     digest = hashlib.sha1(
-        url.encode(
-            "utf-8"
-        )
+        url.encode("utf-8")
     ).hexdigest()[:14]
 
 
@@ -1368,9 +1198,7 @@ def make_event_id(
 # 商品1件
 # =========================================================
 
-def scrape_product(
-    url
-):
+def scrape_product(url):
 
     response = get_with_retry(
         url
@@ -1389,7 +1217,6 @@ def scrape_product(
 
 
     if not title:
-
         return None
 
 
@@ -1419,7 +1246,6 @@ def scrape_product(
 
 
     if not performer_ids:
-
         return None
 
 
@@ -1440,18 +1266,9 @@ def scrape_product(
         return None
 
 
-    month = datetime_info[
-        "month"
-    ]
-
-    day = datetime_info[
-        "day"
-    ]
-
-    start_time = datetime_info[
-        "time"
-    ]
-
+    month = datetime_info["month"]
+    day = datetime_info["day"]
+    start_time = datetime_info["time"]
 
     year = resolve_year(
         month,
@@ -1468,12 +1285,10 @@ def scrape_product(
         )
 
     except ValueError:
-
         return None
 
 
     if event_date < today_jst():
-
         return None
 
 
@@ -1483,7 +1298,6 @@ def scrape_product(
 
 
     if status == "販売終了":
-
         return None
 
 
@@ -1492,13 +1306,10 @@ def scrape_product(
     )
 
 
-    archive = extract_archive_text(
-        raw_text
-    )
-
-
-    archive_end = extract_archive_end(
-        raw_text
+    period = extract_stream_period(
+        raw_text,
+        event_date,
+        start_time
     )
 
 
@@ -1511,9 +1322,19 @@ def scrape_product(
             event_date.isoformat()
         ),
 
-        "startTime": (
-            start_time
-        ),
+        "startTime": start_time,
+
+        "streamStart": period[
+            "start"
+        ],
+
+        "streamEnd": period[
+            "end"
+        ],
+
+        "streamPeriodText": period[
+            "text"
+        ],
 
         "title": (
             strip_title_datetime(
@@ -1529,17 +1350,16 @@ def scrape_product(
             performer_text
         ),
 
-        "price": (
-            price
-        ),
+        "price": price,
 
-        "archive": (
-            archive
-        ),
+        # 古いJSとの互換用
+        "archive": period[
+            "text"
+        ],
 
-        "archiveEnd": (
-            archive_end
-        ),
+        "archiveEnd": period[
+            "end"
+        ],
 
         "status": (
             status
@@ -1551,9 +1371,7 @@ def scrape_product(
             "FANYオンラインチケット"
         ),
 
-        "sourceUrl": (
-            url
-        ),
+        "sourceUrl": url,
     }
 
 
@@ -1561,9 +1379,7 @@ def scrape_product(
 # 保存
 # =========================================================
 
-def sort_events(
-    events
-):
+def sort_events(events):
 
     return sorted(
         events,
@@ -1572,12 +1388,10 @@ def sort_events(
                 "date",
                 ""
             ),
-
             event.get(
                 "startTime",
                 ""
             ),
-
             event.get(
                 "title",
                 ""
@@ -1586,9 +1400,7 @@ def sort_events(
     )
 
 
-def deduplicate_events(
-    events
-):
+def deduplicate_events(events):
 
     result = {}
 
@@ -1602,7 +1414,6 @@ def deduplicate_events(
 
 
         if not source_url:
-
             continue
 
 
@@ -1612,9 +1423,7 @@ def deduplicate_events(
 
 
     return sort_events(
-        list(
-            result.values()
-        )
+        list(result.values())
     )
 
 
@@ -1656,9 +1465,7 @@ def main():
 
     print(
         "キャッシュ登録数:",
-        len(
-            cache_items
-        )
+        len(cache_items)
     )
 
 
@@ -1730,10 +1537,7 @@ def main():
         )
 
 
-        # -------------------------------
-        # キャッシュがまだ有効なら省略
-        # -------------------------------
-
+        # キャッシュ有効
         if (
             cached
             and
@@ -1759,9 +1563,11 @@ def main():
                     dict
                 ):
 
-                    event_date = cached_event.get(
-                        "date",
-                        ""
+                    event_date = (
+                        cached_event.get(
+                            "date",
+                            ""
+                        )
                     )
 
 
@@ -1779,10 +1585,7 @@ def main():
             continue
 
 
-        # -------------------------------
-        # 対象外商品の期限切れ再確認を制限
-        # -------------------------------
-
+        # 対象外商品の期限切れ
         if (
             cached
             and
@@ -1810,10 +1613,6 @@ def main():
             stale_non_match_recheck_count += 1
 
 
-        # -------------------------------
-        # 詳細ページ確認
-        # -------------------------------
-
         checked_count += 1
 
 
@@ -1835,8 +1634,7 @@ def main():
                 url
             ] = {
                 "checkedAt": (
-                    now_jst()
-                    .isoformat()
+                    now_jst().isoformat()
                 ),
 
                 "matched": bool(
@@ -1859,16 +1657,26 @@ def main():
 
                 print(
                     "  HIT:",
-                    event[
-                        "date"
-                    ],
-                    event[
-                        "startTime"
-                    ],
-                    event[
-                        "title"
-                    ]
+                    event["date"],
+                    event["startTime"],
+                    event["title"]
                 )
+
+
+                if event.get(
+                    "streamEnd"
+                ):
+
+                    print(
+                        "  配信期間:",
+                        event.get(
+                            "streamStart"
+                        ),
+                        "～",
+                        event.get(
+                            "streamEnd"
+                        )
+                    )
 
 
             else:
@@ -1888,7 +1696,6 @@ def main():
             )
 
 
-        # 50件ごとに途中保存
         if (
             checked_count
             %
@@ -1907,10 +1714,7 @@ def main():
         )
 
 
-    # =====================================================
-    # FANY一覧から消えたURLは表示から削除
-    # =====================================================
-
+    # FANY一覧から消えた商品を削除
     for url in list(
         events_by_url.keys()
     ):
@@ -1923,13 +1727,9 @@ def main():
             )
 
 
-    # =====================================================
-    # 過去イベント除外
-    # =====================================================
-
+    # 過去公演を削除
     today_text = (
-        today_jst()
-        .isoformat()
+        today_jst().isoformat()
     )
 
 
@@ -1950,9 +1750,7 @@ def main():
             continue
 
 
-        events.append(
-            event
-        )
+        events.append(event)
 
 
     events = deduplicate_events(
@@ -1960,14 +1758,9 @@ def main():
     )
 
 
-    # =====================================================
-    # stream_events.json
-    # =====================================================
-
     output = {
         "updatedAt": (
-            now_jst()
-            .isoformat()
+            now_jst().isoformat()
         ),
 
         "source": (
@@ -1988,31 +1781,19 @@ def main():
     )
 
 
-    # =====================================================
-    # stream_cache.json
-    # =====================================================
-
     save_cache(
         cache
     )
 
 
-    # =====================================================
-    # ログ
-    # =====================================================
-
     print(
         "====================================="
     )
 
-
     print(
         "商品URL数:",
-        len(
-            product_links
-        )
+        len(product_links)
     )
-
 
     print(
         "今回詳細確認:",
@@ -2020,13 +1801,11 @@ def main():
         "件"
     )
 
-
     print(
         "キャッシュ省略:",
         cache_skip_count,
         "件"
     )
-
 
     print(
         "期限切れ対象外の再確認:",
@@ -2034,19 +1813,15 @@ def main():
         "件"
     )
 
-
     print(
         "今回HIT:",
         hit_count,
         "件"
     )
 
-
     print(
         "保存件数:",
-        len(
-            events
-        )
+        len(events)
     )
 
 
@@ -2081,5 +1856,4 @@ def main():
 
 
 if __name__ == "__main__":
-
     main()
