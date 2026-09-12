@@ -43,6 +43,7 @@
 
   let streamEvents = [];
 
+
   let streamMonth =
     new Date();
 
@@ -187,8 +188,7 @@
       .stream-intro {
         margin-bottom: 12px;
 
-        padding:
-          14px;
+        padding: 14px;
 
         border:
           1px solid
@@ -424,6 +424,7 @@
         cursor: pointer;
       }
 
+
       .stream-week-row,
       .stream-calendar-grid {
         display: grid;
@@ -459,6 +460,7 @@
       .stream-weekday.sunday {
         color: #df4d51;
       }
+
 
       .stream-calendar-grid {
         overflow: hidden;
@@ -534,6 +536,7 @@
         color: #126bc5;
       }
 
+
       .stream-day-event {
         display: block;
 
@@ -553,6 +556,7 @@
 
         font-size: 8px;
         line-height: 1.25;
+
         font-weight: 900;
 
         white-space: nowrap;
@@ -634,6 +638,7 @@
         font-size: 11px;
         font-weight: 800;
       }
+
 
       .stream-event-list {
         overflow: hidden;
@@ -745,6 +750,7 @@
         font-size: 22px;
       }
 
+
       .stream-empty {
         padding:
           28px
@@ -762,8 +768,7 @@
       .stream-info-card {
         margin-top: 12px;
 
-        padding:
-          14px;
+        padding: 14px;
 
         border:
           1px solid
@@ -921,6 +926,7 @@
 
         font-size: 24px;
         line-height: 1.35;
+
         font-weight: 900;
       }
 
@@ -945,6 +951,7 @@
         font-weight: 900;
       }
 
+
       .stream-sheet-block {
         margin-top: 20px;
 
@@ -961,6 +968,7 @@
         font-size: 16px;
         font-weight: 900;
       }
+
 
       .stream-detail-info-list {
         overflow: hidden;
@@ -1016,6 +1024,26 @@
         word-break: break-word;
       }
 
+      .stream-period-arrow {
+        margin:
+          4px
+          0;
+
+        color: #738096;
+
+        font-size: 11px;
+      }
+
+      .stream-period-note {
+        margin-top: 5px;
+
+        color: #7a8596;
+
+        font-size: 11px;
+        font-weight: 700;
+      }
+
+
       .stream-performers-text {
         padding:
           12px
@@ -1040,6 +1068,7 @@
         line-height: 1.6;
       }
 
+
       .stream-fany-button {
         display: block;
 
@@ -1062,7 +1091,6 @@
         color: #fff;
 
         text-align: center;
-
         text-decoration: none;
 
         font-size: 14px;
@@ -1118,6 +1146,7 @@
         }
 
       }
+
 
       @media (max-width: 370px) {
 
@@ -2601,44 +2630,74 @@
         "FANYで確認";
 
 
-    const archiveBlock =
+    const streamStart =
+      event.streamStart
+      ||
+      (
+        event.date
+        &&
+        event.startTime
+          ?
+          `${event.date} ${event.startTime}`
+          :
+          ""
+      );
+
+
+    const streamEnd =
+      event.streamEnd
+      ||
       event.archiveEnd
+      ||
+      "";
+
+
+    const streamPeriodBlock =
+      streamStart
         ?
         `
           <div class="stream-detail-info-row">
 
             <div class="stream-detail-info-label">
-              アーカイブ
+              配信期間
             </div>
 
             <div class="stream-detail-info-value">
-              ${streamEscapeHtml(
-                event.archiveEnd
-              )}まで
+
+              <div>
+                ${streamEscapeHtml(
+                  streamStart
+                )}
+              </div>
+
+              ${
+                streamEnd
+                  ?
+                  `
+                    <div class="stream-period-arrow">
+                      ↓
+                    </div>
+
+                    <div>
+                      ${streamEscapeHtml(
+                        streamEnd
+                      )}
+                    </div>
+                  `
+                  :
+                  `
+                    <div class="stream-period-note">
+                      終了日時はFANYで確認
+                    </div>
+                  `
+              }
+
             </div>
 
           </div>
         `
         :
-        event.archive
-          ?
-          `
-            <div class="stream-detail-info-row">
-
-              <div class="stream-detail-info-label">
-                アーカイブ
-              </div>
-
-              <div class="stream-detail-info-value">
-                ${streamEscapeHtml(
-                  event.archive
-                )}
-              </div>
-
-            </div>
-          `
-          :
-          "";
+        "";
 
 
     sheet.innerHTML = `
@@ -2705,6 +2764,9 @@
           </div>
 
 
+          ${streamPeriodBlock}
+
+
           <div class="stream-detail-info-row">
 
             <div class="stream-detail-info-label">
@@ -2741,9 +2803,6 @@
             </div>
 
           </div>
-
-
-          ${archiveBlock}
 
         </div>
 
