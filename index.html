@@ -241,18 +241,12 @@
       transform: scale(0.96);
     }
 
-    /*
-      選択中
-    */
     .legend-item.filter-selected {
       border-color: #cddff5;
       background: #edf5ff;
       opacity: 1;
     }
 
-    /*
-      他の芸人が選択中
-    */
     .legend-item.filter-dimmed {
       opacity: 0.38;
     }
@@ -1144,6 +1138,103 @@
       font-size: 12px;
     }
 
+    /* ========================================
+       NEW LIVE PERFORMER LABELS
+    ======================================== */
+
+    .new-live-label-title {
+      margin-top: 9px;
+
+      color: #8a94a3;
+
+      font-size: 9px;
+      font-weight: 800;
+    }
+
+    .new-live-performer-area {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      gap: 5px;
+
+      margin-top: 5px;
+    }
+
+    .new-live-performer-label {
+      display: inline-flex;
+      align-items: center;
+
+      gap: 5px;
+
+      min-height: 25px;
+
+      padding:
+        4px
+        8px
+        4px
+        5px;
+
+      border-radius: 999px;
+
+      font-size: 10px;
+      font-weight: 900;
+
+      line-height: 1;
+    }
+
+    .new-live-performer-dot {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 19px;
+      height: 19px;
+
+      flex:
+        0
+        0
+        19px;
+
+      border-radius: 50%;
+
+      color: #fff;
+
+      font-size: 8px;
+      font-weight: 900;
+    }
+
+    .new-live-performer-label.maison {
+      background: #fdecea;
+      color: #ba332b;
+    }
+
+    .new-live-performer-label.pyuto {
+      background: #fff7d6;
+      color: #715e00;
+    }
+
+    .new-live-performer-label.nansui {
+      background: #eaf4fd;
+      color: #1767a8;
+    }
+
+    .new-live-performer-label.maison
+    .new-live-performer-dot {
+      background: #e74c3c;
+    }
+
+    .new-live-performer-label.pyuto
+    .new-live-performer-dot {
+      background: #f4c430;
+      color: #594900;
+    }
+
+    .new-live-performer-label.nansui
+    .new-live-performer-dot {
+      background: #3498db;
+    }
+
     .settings-row {
       display: flex;
       align-items: center;
@@ -1239,10 +1330,6 @@
           0.44
         );
 
-      /*
-        overlay自身ではスクロールさせない。
-        中のsheetだけ上下操作を許可。
-      */
       touch-action: none;
     }
 
@@ -1254,10 +1341,6 @@
       width: 100%;
       max-width: 760px;
 
-      /*
-        iPhoneでアドレスバーが動いても
-        詳細画面側でスクロールできるようにする
-      */
       max-height: 88dvh;
 
       overflow-y: auto;
@@ -1293,9 +1376,6 @@
           0.14
         );
 
-      /*
-        iPhone Safari対策
-      */
       -webkit-overflow-scrolling: touch;
       overscroll-behavior: contain;
       touch-action: pan-y;
@@ -1741,10 +1821,6 @@
 
 </main>
 
-<!-- ========================================
-     DRAWER
-========================================= -->
-
 <div
   id="drawerOverlay"
   class="drawer-overlay"
@@ -1875,16 +1951,12 @@
     </div>
 
     <div class="drawer-version">
-      v2.4.2
+      v2.5.0
     </div>
 
   </aside>
 
 </div>
-
-<!-- ========================================
-     DETAIL
-========================================= -->
 
 <div
   id="sheetOverlay"
@@ -1901,10 +1973,6 @@
 <script>
 
 (() => {
-
-  /* =========================================
-     CONFIG
-  ========================================= */
 
   const DEFAULT_PERFORMERS = [
     {
@@ -1979,21 +2047,6 @@
     );
 
 
-  /*
-    上部の出演者フィルター。
-
-    0組選択
-    → 全員表示
-
-    1組選択
-    → その芸人の出演日
-
-    2組選択
-    → どちらかが出演する日
-
-    3組選択
-    → 3組いずれかが出演する日
-  */
   let activePerformerFilters =
     new Set();
 
@@ -2020,18 +2073,10 @@
     false;
 
 
-  /*
-    公演詳細を開いたときの
-    元ページのスクロール位置
-  */
   let sheetScrollY = 0;
 
   let sheetBodyLocked = false;
 
-
-  /* =========================================
-     DOM
-  ========================================= */
 
   const legend =
     document.getElementById(
@@ -2086,10 +2131,6 @@
       "sheet"
     );
 
-
-  /* =========================================
-     UTIL
-  ========================================= */
 
   function escapeHtml(
     value
@@ -2362,10 +2403,6 @@
   }
 
 
-  /* =========================================
-     DATA
-  ========================================= */
-
   async function loadData() {
 
     try {
@@ -2498,10 +2535,6 @@
     }
   }
 
-
-  /* =========================================
-     GROUP EVENTS
-  ========================================= */
 
   function calendarKey(
     event
@@ -2715,16 +2748,6 @@
   }
 
 
-  /*
-    複数選択対応。
-
-    activePerformerFiltersが空
-    → 全公演
-
-    1人以上選択
-    → 選択された芸人のうち
-       1組でも出演していれば表示
-  */
   function visibleGroups() {
 
     return groups.filter(
@@ -2774,10 +2797,6 @@
     );
   }
 
-
-  /* =========================================
-     TOP FILTER
-  ========================================= */
 
   function getActiveFilterNames() {
 
@@ -2918,10 +2937,6 @@
                   .performerFilter;
 
 
-              /*
-                選択済みなら解除。
-                未選択なら追加。
-              */
               if (
                 activePerformerFilters
                   .has(
@@ -2960,10 +2975,6 @@
       );
   }
 
-
-  /* =========================================
-     CALENDAR
-  ========================================= */
 
   function renderCalendar() {
 
@@ -3039,10 +3050,6 @@
       "";
 
 
-    /*
-      フィルター中は選択中の芸人だけ
-      カレンダー内の丸を表示する。
-    */
     const calendarPerformers =
       performers.filter(
         performer => {
@@ -3387,10 +3394,6 @@
   }
 
 
-  /* =========================================
-     SELECTED DAY
-  ========================================= */
-
   function renderSelectedDay() {
 
     const date =
@@ -3603,10 +3606,6 @@
     group
   ) {
 
-    /*
-      一覧では選択していない共演者も
-      分かるように残す。
-    */
     const performerBadges =
       performers
         .filter(
@@ -3731,10 +3730,6 @@
   }
 
 
-  /* =========================================
-     BODY SCROLL LOCK
-  ========================================= */
-
   function lockBodyForSheet() {
 
     if (
@@ -3828,10 +3823,6 @@
       false;
   }
 
-
-  /* =========================================
-     DETAIL
-  ========================================= */
 
   function getCompactPerformerText(
     group
@@ -4252,10 +4243,6 @@
     `;
 
 
-    /*
-      詳細を初めて開く瞬間だけ
-      後ろのページを固定する
-    */
     if (
       !wasOpen
     ) {
@@ -4446,10 +4433,6 @@
   }
 
 
-  /* =========================================
-     DRAWER
-  ========================================= */
-
   function openDrawer() {
 
     drawerOverlay
@@ -4542,7 +4525,8 @@
       renderListPage(
         "新着ライブ",
         "48時間以内に新しく見つかったライブ",
-        getNewGroups()
+        getNewGroups(),
+        true
       );
     }
 
@@ -4562,7 +4546,8 @@
             favorites.has(
               group.key
             )
-        )
+        ),
+        false
       );
     }
 
@@ -4637,10 +4622,94 @@
   }
 
 
+  function renderNewLivePerformerLabels(
+    group
+  ) {
+
+    const performerOrder = [
+      "maison",
+      "pyuto",
+      "nansui",
+    ];
+
+
+    const ids =
+      performerOrder.filter(
+        id =>
+          group
+            .trackedPerformers
+            .includes(
+              id
+            )
+      );
+
+
+    if (
+      ids.length
+      ===
+      0
+    ) {
+
+      return "";
+    }
+
+
+    const labels =
+      ids.map(
+        id => {
+
+          const performer =
+            getPerformer(
+              id
+            );
+
+
+          return `
+            <span
+              class="
+                new-live-performer-label
+                ${escapeHtml(
+                  id
+                )}
+              "
+            >
+
+              <span
+                class="new-live-performer-dot"
+              >
+                ${escapeHtml(
+                  performer.short
+                )}
+              </span>
+
+              ${escapeHtml(
+                performer.name
+              )}
+
+            </span>
+          `;
+        }
+      )
+      .join("");
+
+
+    return `
+      <div class="new-live-label-title">
+        この芸人の新着
+      </div>
+
+      <div class="new-live-performer-area">
+        ${labels}
+      </div>
+    `;
+  }
+
+
   function renderListPage(
     title,
     subtitle,
-    items
+    items,
+    showNewPerformerLabels = false
   ) {
 
     pageSection.innerHTML = `
@@ -4690,6 +4759,16 @@
                   )}
                 </div>
 
+                ${
+                  showNewPerformerLabels
+                    ?
+                    renderNewLivePerformerLabels(
+                      group
+                    )
+                    :
+                    ""
+                }
+
               </button>
             `
           ).join("")
@@ -4708,10 +4787,6 @@
     );
   }
 
-
-  /* =========================================
-     NEW
-  ========================================= */
 
   function getNewGroups() {
 
@@ -4750,10 +4825,6 @@
       );
   }
 
-
-  /* =========================================
-     SALES
-  ========================================= */
 
   function getSaleItems() {
 
@@ -5248,10 +5319,6 @@
   }
 
 
-  /* =========================================
-     SEARCH
-  ========================================= */
-
   function renderSearchPage() {
 
     pageSection.innerHTML = `
@@ -5406,10 +5473,6 @@
   }
 
 
-  /* =========================================
-     PERFORMERS
-  ========================================= */
-
   function renderPerformersPage() {
 
     pageSection.innerHTML = `
@@ -5480,10 +5543,6 @@
     `;
   }
 
-
-  /* =========================================
-     COAPPEARANCE
-  ========================================= */
 
   function renderCoappearancePage() {
 
@@ -5576,10 +5635,6 @@
     `;
   }
 
-
-  /* =========================================
-     SETTINGS
-  ========================================= */
 
   function renderSettingsPage() {
 
@@ -5701,10 +5756,6 @@
                   );
 
 
-                /*
-                  設定で非表示にした芸人は
-                  上部選択からも外す
-                */
                 activePerformerFilters
                   .delete(
                     id
@@ -5759,10 +5810,6 @@
       );
   }
 
-
-  /* =========================================
-     HELP
-  ========================================= */
 
   function renderHelpPage() {
 
@@ -5827,6 +5874,29 @@
       <div class="content-card">
 
         <div class="content-card-title">
+          新着ライブ
+        </div>
+
+        <div class="content-card-sub">
+
+          48時間以内に新しく見つかったライブを表示します。
+
+          <br><br>
+
+          各ライブには
+          「めぞん」
+          「ピュート」
+          「軟水」
+          のうち、
+          誰の新着ライブなのかを色付きで表示します。
+
+        </div>
+
+      </div>
+
+      <div class="content-card">
+
+        <div class="content-card-title">
           公演詳細
         </div>
 
@@ -5845,10 +5915,6 @@
     `;
   }
 
-
-  /* =========================================
-     BADGES
-  ========================================= */
 
   function updateDrawerBadges() {
 
@@ -5933,10 +5999,6 @@
   }
 
 
-  /* =========================================
-     ALL
-  ========================================= */
-
   function renderAll() {
 
     renderLegend();
@@ -5960,10 +6022,6 @@
     }
   }
 
-
-  /* =========================================
-     EVENTS
-  ========================================= */
 
   document
     .getElementById(
@@ -6134,10 +6192,6 @@
     }
   );
 
-
-  /* =========================================
-     START
-  ========================================= */
 
   loadData();
 
