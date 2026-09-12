@@ -185,79 +185,29 @@
       }
 
 
-      .stream-intro {
-        margin-bottom: 12px;
+      /* ========================================
+         COMPACT STATUS
+      ======================================== */
 
-        padding: 14px;
-
-        border:
-          1px solid
-          #deebfa;
-
-        border-radius: 17px;
-
-        background:
-          linear-gradient(
-            135deg,
-            #eef7ff,
-            #fbfdff
-          );
-      }
-
-      .stream-intro-top {
+      .stream-status-wrap {
         display: flex;
-        align-items: center;
+        justify-content: flex-start;
 
-        gap: 10px;
-      }
-
-      .stream-play-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        width: 39px;
-        height: 39px;
-
-        flex:
+        margin:
           0
-          0
-          39px;
-
-        border-radius: 12px;
-
-        background: #1f76d5;
-
-        color: #fff;
-
-        font-size: 17px;
-      }
-
-      .stream-intro-title {
-        font-size: 18px;
-        font-weight: 900;
-      }
-
-      .stream-intro-text {
-        margin-top: 8px;
-
-        color: #667387;
-
-        font-size: 12px;
-        line-height: 1.65;
-
-        font-weight: 650;
+          4px
+          10px;
       }
 
       .stream-data-status {
         display: inline-flex;
         align-items: center;
 
-        margin-top: 9px;
+        min-height: 28px;
 
         padding:
-          5px
-          8px;
+          6px
+          10px;
 
         border-radius: 999px;
 
@@ -265,7 +215,7 @@
 
         color: #286eb8;
 
-        font-size: 10px;
+        font-size: 11px;
         font-weight: 900;
       }
 
@@ -803,6 +753,10 @@
       }
 
 
+      /* ========================================
+         DETAIL SHEET
+      ======================================== */
+
       .stream-sheet-overlay {
         position: fixed;
         inset: 0;
@@ -813,6 +767,8 @@
         align-items: flex-end;
         justify-content: center;
 
+        overflow: hidden;
+
         background:
           rgba(
             15,
@@ -820,6 +776,8 @@
             42,
             0.45
           );
+
+        touch-action: none;
       }
 
       .stream-sheet-overlay.open {
@@ -830,15 +788,17 @@
         width: 100%;
         max-width: 760px;
 
+        height: auto;
         max-height: 88dvh;
 
         overflow-y: auto;
+        overflow-x: hidden;
 
         padding:
           17px
           18px
           calc(
-            28px
+            110px
             +
             env(
               safe-area-inset-bottom
@@ -866,6 +826,12 @@
 
         -webkit-overflow-scrolling:
           touch;
+
+        overscroll-behavior:
+          contain;
+
+        touch-action:
+          pan-y;
       }
 
       .stream-sheet-handle {
@@ -1070,13 +1036,21 @@
 
 
       .stream-fany-button {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         width: 100%;
+        min-height: 52px;
 
-        margin-top: 17px;
+        margin:
+          20px
+          0
+          0;
 
-        padding: 15px;
+        padding:
+          15px
+          18px;
 
         border: 0;
         border-radius: 999px;
@@ -1099,6 +1073,9 @@
         cursor: pointer;
 
         box-sizing: border-box;
+
+        position: relative;
+        z-index: 2;
       }
 
       .stream-fany-button.mock {
@@ -1111,6 +1088,11 @@
         .calendar-mode-switch {
           margin-left: 4px;
           margin-right: 4px;
+        }
+
+        .stream-status-wrap {
+          margin-left: 2px;
+          margin-right: 2px;
         }
 
         .stream-month-header {
@@ -1143,6 +1125,19 @@
             2px;
 
           font-size: 7px;
+        }
+
+        .stream-sheet {
+          max-height: 86dvh;
+
+          padding-bottom:
+            calc(
+              120px
+              +
+              env(
+                safe-area-inset-bottom
+              )
+            );
         }
 
       }
@@ -1445,33 +1440,16 @@
 
 
     view.innerHTML = `
-      <section class="stream-intro">
-
-        <div class="stream-intro-top">
-
-          <div class="stream-play-icon">
-            ▶
-          </div>
-
-          <div class="stream-intro-title">
-            配信カレンダー
-          </div>
-
-        </div>
-
-        <div class="stream-intro-text">
-          FANYオンラインチケットから取得した
-          めぞん・ピュート・軟水の配信公演を表示しています。
-        </div>
+      <div class="stream-status-wrap">
 
         <div
           id="streamDataStatus"
           class="stream-data-status"
         >
-          ▶ FANY配信情報を読み込み中
+          ▶ FANY配信 読み込み中
         </div>
 
-      </section>
+      </div>
 
 
       <div
@@ -2885,6 +2863,10 @@
 
     document.body.style.overflow =
       "hidden";
+
+
+    sheet.scrollTop =
+      0;
 
 
     document
