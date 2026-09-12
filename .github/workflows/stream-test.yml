@@ -43,7 +43,7 @@ jobs:
           cat stream_events.json
 
           echo ""
-          echo "===== cache ====="
+          echo "===== stream_cache.json ====="
 
           if [ -f stream_cache.json ]; then
             echo "stream_cache.json あり"
@@ -86,7 +86,8 @@ jobs:
               exit 0
             fi
 
-            echo "push競合。5秒待って再試行します"
+            echo "他の自動更新と競合しました"
+            echo "5秒待って再試行します"
 
             sleep 5
           done
