@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-13T17:53:32.954414+00:00",
+  "syncedAt": "2026-09-13T17:59:50.310128+00:00",
   "performers": [
     {
       "id": "maison",
@@ -391,6 +391,73 @@
       "firstSeenAt": "2026-09-13T17:47:43.393124+00:00",
       "newUntil": "",
       "trackedPerformers": [
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-09-15",
+      "openTime": "20:45",
+      "startTime": "21:00",
+      "title": "シチュエーションコントライブ",
+      "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/62120/50359",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "整理番号付き自由席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-15T19:00:00+09:00",
+              "saleKey": "fany|nansui|62120|50359|整理番号付き自由席|前売|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-15T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-08-05T10:00:00+09:00",
+      "saleEndAt": "2026-09-15T19:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-08-05T10:00:00+09:00",
+          "endAt": "2026-09-15T19:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "軟水",
+        "ピュート",
+        "喫茶ムーン",
+        "ぺ",
+        "青いデルタ",
+        "伝書鳩",
+        "エグい速さ",
+        "セカンドロット",
+        "MC：コウミ",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-13T17:59:50.305201+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "pyuto",
         "nansui"
       ]
     },
@@ -457,6 +524,74 @@
       "firstSeenAt": "2026-09-13T17:47:43.393124+00:00",
       "newUntil": "",
       "trackedPerformers": [
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-09-16",
+      "openTime": "17:15",
+      "startTime": "17:30",
+      "title": "六本木コントライブNEXT！",
+      "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/61292/49798",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "整理番号付き自由席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-16T15:30:00+09:00",
+              "saleKey": "fany|nansui|61292|49798|整理番号付き自由席|前売|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-16T15:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-08-05T10:00:00+09:00",
+      "saleEndAt": "2026-09-16T15:30:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-08-05T10:00:00+09:00",
+          "endAt": "2026-09-16T15:30:00+09:00"
+        }
+      ],
+      "performersText": [
+        "ななまがり",
+        "ビスケットブラザーズ",
+        "５ＧＡＰ",
+        "ジャングルポケット",
+        "ヘンダーソン",
+        "コロコロチキチキペッパーズ",
+        "九条ジョー",
+        "ピュート",
+        "軟水",
+        "ぺ",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-13T17:59:50.305201+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "pyuto",
         "nansui"
       ]
     },
@@ -707,7 +842,172 @@
       "firstSeenAt": "2026-09-13T17:47:43.393124+00:00",
       "newUntil": "",
       "trackedPerformers": [
+        "pyuto",
         "nansui"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-09-17",
+      "openTime": "16:45",
+      "startTime": "17:00",
+      "title": "神保町Kakeru翔SP",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/60497/49415",
+      "ticketStatus": "予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥1,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-17T15:00:00+09:00",
+              "saleKey": "fany|nansui|60497|49415|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-17T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥1,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-17T15:00:00+09:00",
+              "saleKey": "fany|nansui|60497|49415|立見（整理番号付）|前売|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-17T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-08-05T10:00:00+09:00",
+      "saleEndAt": "2026-09-17T15:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-08-05T10:00:00+09:00",
+          "endAt": "2026-09-17T15:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "9番街レトロ",
+        "軟水",
+        "ピュート",
+        "イチゴ",
+        "テキセツの街",
+        "ザンゾウ",
+        "ただならぬ刀",
+        "あなたとネ",
+        "MC：イチゴ",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-13T17:59:50.305201+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-09-17",
+      "openTime": "18:45",
+      "startTime": "19:00",
+      "title": "ウォシュレッツvol．31",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/61203/49769",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-17T17:00:00+09:00",
+              "saleKey": "fany|pyuto|61203|49769|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-17T17:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥1,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-17T17:00:00+09:00",
+              "saleKey": "fany|pyuto|61203|49769|立見（整理番号付）|前売|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-17T17:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-08-05T10:00:00+09:00",
+      "saleEndAt": "2026-09-17T17:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-08-05T10:00:00+09:00",
+          "endAt": "2026-09-17T17:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "スーパーサイズ・ミー",
+        "おミュータンツ",
+        "ピュート",
+        "定点計画",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-13T17:59:50.305201+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "pyuto"
       ]
     },
     {
@@ -859,6 +1159,92 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-09-18",
+      "openTime": "17:00",
+      "startTime": "17:15",
+      "title": "渋谷Kiwami極LIVE",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/60594/49453",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-18T15:15:00+09:00",
+              "saleKey": "fany|pyuto|60594|49453|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-18T15:15:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-18T15:15:00+09:00",
+              "saleKey": "fany|pyuto|60594|49453|立見（整理番号付）|前売|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-18T15:15:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-08-05T10:00:00+09:00",
+      "saleEndAt": "2026-09-18T15:15:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-08-05T10:00:00+09:00",
+          "endAt": "2026-09-18T15:15:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]ヨネダ2000",
+        "9番街レトロ",
+        "kento fukaya",
+        "くらげ",
+        "ワラバランス",
+        "そいつどいつ",
+        "スーパーサイズ・ミー",
+        "生ファラオ",
+        "バリカタ友情飯",
+        "ピュート",
+        "[ コーナー出演者]MC：kento fukaya",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-13T17:59:50.305201+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "pyuto"
       ]
     },
     {
@@ -1073,6 +1459,91 @@
       "newUntil": "",
       "trackedPerformers": [
         "nansui"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-09-18",
+      "openTime": "20:45",
+      "startTime": "21:00",
+      "title": "謎解きライブ 芸人XからのSOS",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/60978/49595",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-16T10:00:00+09:00",
+              "endAt": "2026-09-18T19:00:00+09:00",
+              "saleKey": "fany|pyuto|60978|49595|全席指定|前売|first_come|2026-08-16T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-16T10:00:00+09:00",
+          "saleEndAt": "2026-09-18T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-16T10:00:00+09:00",
+              "endAt": "2026-09-18T19:00:00+09:00",
+              "saleKey": "fany|pyuto|60978|49595|立見（整理番号付）|前売|first_come|2026-08-16T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-16T10:00:00+09:00",
+          "saleEndAt": "2026-09-18T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-08-16T10:00:00+09:00",
+      "saleEndAt": "2026-09-18T19:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-08-16T10:00:00+09:00",
+          "endAt": "2026-09-18T19:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "ビューティフルトーキョーマンズ 鈴木バイダン",
+        "ランパンプス 寺内",
+        "ワラバランス 盛田",
+        "ミカボ 土屋",
+        "9番街レトロ なかむら",
+        "シンクロニシティ 西野",
+        "ピュート 竹内",
+        "世界クジラ 和泉",
+        "ボダリキボバイ 鈴木",
+        "ナユタ おのはら",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-13T17:59:50.305201+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "pyuto"
       ]
     },
     {
