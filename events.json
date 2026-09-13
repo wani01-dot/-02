@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-13T00:03:12.769575+00:00",
+  "syncedAt": "2026-09-13T00:09:45.166538+00:00",
   "performers": [
     {
       "id": "maison",
@@ -56,57 +56,18 @@
       "title": "渋谷マンゲキお笑いライブ",
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/61296/49869",
-      "ticketStatus": "一部予定数終了",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "予定数終了",
-          "price": "￥3,100",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-13T09:00:00+09:00",
-              "saleKey": "fany|maison|61296|49869|全席指定|当日|first_come|2026-08-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-13T09:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        },
-        {
-          "name": "立見（整理番号付）",
-          "type": "当日",
-          "status": "販売中",
-          "price": "￥3,100",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-13T09:00:00+09:00",
-              "saleKey": "fany|maison|61296|49869|立見（整理番号付）|当日|first_come|2026-08-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-13T09:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-08-05T10:00:00+09:00",
-      "saleEndAt": "2026-09-13T09:00:00+09:00",
-      "saleCategory": "first_come",
+      "sourceUrl": "https://ticket.fany.lol/reception/61294/49869",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-07-25T11:00:00+09:00",
+      "saleEndAt": "2026-07-28T11:00:00+09:00",
+      "saleCategory": "advance",
       "salePeriods": [
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-08-05T10:00:00+09:00",
-          "endAt": "2026-09-13T09:00:00+09:00"
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-07-25T11:00:00+09:00",
+          "endAt": "2026-07-28T11:00:00+09:00"
         }
       ],
       "performersText": [
@@ -121,13 +82,7 @@
         "素敵じゃないか",
         "世間知らズ",
         "ザンゾウ",
-        "[ コーナー出演者]MC：滝音",
-        "・1回の先着申込で申込可能な公演数は『",
-        "1公演",
-        "』",
-        "枚数は『",
-        "10枚まで",
-        "・座席番号や整理番号は"
+        "[ コーナー出演者]MC：滝音"
       ],
       "firstSeenAt": "2026-09-12T02:09:22.090076+00:00",
       "newUntil": "",
