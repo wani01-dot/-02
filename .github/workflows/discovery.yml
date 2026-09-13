@@ -1,0 +1,58 @@
+name: ライブ発見レーダー
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "32 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  discovery:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python setup
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: 発見データ作成
+        run: |
+          python discovery_build.py
+
+      - name: 変更確認
+        run: |
+          git status
+
+      - name: 保存
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add discovered_events.json
+
+          if git diff --cached --quiet; then
+            echo "変更なし"
+            exit 0
+          fi
+
+          git commit -m "Update discovered live events"
+
+          for i in 1 2 3
+          do
+            git pull --rebase origin main || true
+
+            if git push; then
+              exit 0
+            fi
+
+            sleep 5
+          done
+
+          exit 1
