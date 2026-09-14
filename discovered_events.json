@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-09-14T16:45:19.455512+00:00",
+  "syncedAt": "2026-09-14T17:43:13.316061+00:00",
   "total": 139,
-  "ticketListedCount": 139,
-  "ticketUnlistedCount": 0,
+  "ticketListedCount": 137,
+  "ticketUnlistedCount": 2,
   "events": [
     {
       "performerId": "nansui",
@@ -163,30 +163,9 @@
       "discoveryUrls": [
         "https://makuhari.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61093/49713",
-          "title": "幕張平日ネタＳＰ１４時",
-          "venue": "よしもと幕張イオンモール劇場（千葉県）",
-          "openTime": "13:30",
-          "startTime": "14:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 16,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61093/49714",
-          "title": "幕張平日ネタＳＰ１６時",
-          "venue": "よしもと幕張イオンモール劇場（千葉県）",
-          "openTime": "15:30",
-          "startTime": "16:00",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -211,30 +190,9 @@
       "discoveryUrls": [
         "https://makuhari.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61093/49714",
-          "title": "幕張平日ネタＳＰ１６時",
-          "venue": "よしもと幕張イオンモール劇場（千葉県）",
-          "openTime": "15:30",
-          "startTime": "16:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 16,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61093/49713",
-          "title": "幕張平日ネタＳＰ１４時",
-          "venue": "よしもと幕張イオンモール劇場（千葉県）",
-          "openTime": "13:30",
-          "startTime": "14:00",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
