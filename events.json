@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-14T20:56:43.561550+00:00",
+  "syncedAt": "2026-09-14T21:03:53.409056+00:00",
   "performers": [
     {
       "id": "maison",
@@ -1342,7 +1342,7 @@
       "venue": "LINE CUBE SHIBUYA（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/63814/51190",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "一部予定数終了",
       "ticketOptions": [
         {
           "name": "SS席",
@@ -1385,7 +1385,7 @@
         {
           "name": "A席",
           "type": "前売",
-          "status": "残りわずか",
+          "status": "予定数終了",
           "price": "￥8,000",
           "salePeriods": [
             {
@@ -1578,7 +1578,7 @@
       "venue": "LINE CUBE SHIBUYA（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/63814/51190",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "一部予定数終了",
       "ticketOptions": [
         {
           "name": "SS席",
@@ -1621,7 +1621,7 @@
         {
           "name": "A席",
           "type": "前売",
-          "status": "残りわずか",
+          "status": "予定数終了",
           "price": "￥8,000",
           "salePeriods": [
             {
@@ -1814,7 +1814,7 @@
       "venue": "LINE CUBE SHIBUYA（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/63814/51190",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "一部予定数終了",
       "ticketOptions": [
         {
           "name": "SS席",
@@ -1857,7 +1857,7 @@
         {
           "name": "A席",
           "type": "前売",
-          "status": "残りわずか",
+          "status": "予定数終了",
           "price": "￥8,000",
           "salePeriods": [
             {
@@ -10028,75 +10028,13 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61274/49840",
-      "ticketStatus": "一部予定数終了",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "前売",
-          "status": "販売中",
-          "price": "￥2,500",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-27T11:00:00+09:00",
-              "saleKey": "fany|pyuto|61274|49840|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-27T11:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        },
-        {
-          "name": "立見（整理番号付）",
-          "type": "前売",
-          "status": "予定数終了",
-          "price": "￥2,500",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-27T11:00:00+09:00",
-              "saleKey": "fany|pyuto|61274|49840|立見（整理番号付）|前売|first_come|2026-08-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-27T11:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-08-05T10:00:00+09:00",
-      "saleEndAt": "2026-09-27T11:00:00+09:00",
-      "saleCategory": "first_come",
-      "salePeriods": [
-        {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-08-05T10:00:00+09:00",
-          "endAt": "2026-09-27T11:00:00+09:00"
-        }
-      ],
-      "performersText": [
-        "ゆにばーす",
-        "CITY",
-        "マルセイユ",
-        "今井らいぱち",
-        "そいつどいつ",
-        "アメリカンBBチキン",
-        "ミカボ",
-        "ピュート",
-        "ボブのコーラ",
-        "・1回の先着申込で申込可能な公演数は『",
-        "1公演",
-        "』",
-        "枚数は『",
-        "10枚まで",
-        "・座席番号や整理番号は"
-      ],
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [],
       "firstSeenAt": "2026-09-14T11:00:18.398686+00:00",
       "newUntil": "",
       "trackedPerformers": [
