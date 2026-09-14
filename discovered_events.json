@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-09-14T08:44:51.998575+00:00",
-  "total": 140,
+  "syncedAt": "2026-09-14T09:44:53.540268+00:00",
+  "total": 141,
   "ticketListedCount": 140,
-  "ticketUnlistedCount": 0,
+  "ticketUnlistedCount": 1,
   "events": [
     {
       "performerId": "nansui",
@@ -7853,6 +7853,33 @@
       ],
       "ticketListed": true,
       "status": "ticket_listed"
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-11-06",
+      "openTime": "18:45",
+      "startTime": "19:00",
+      "title": "19：00開演/「ごきげん会？ポポポポーン？」",
+      "venue": "よしもと漫才劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "manzaigekijyo",
+      "theaterName": "よしもと漫才劇場",
+      "performersText": [
+        "ぎょうぶ／うただ／軟水／シンクロニシティ"
+      ],
+      "trackedPerformers": [
+        "nansui"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
