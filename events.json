@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-14T00:02:46.665627+00:00",
+  "syncedAt": "2026-09-14T00:09:26.496631+00:00",
   "performers": [
     {
       "id": "maison",
@@ -11430,57 +11430,13 @@
       "venue": "八千代市市民会館 大ホール（千葉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/63313/50890",
-      "ticketStatus": "販売中",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "前売",
-          "status": "販売中",
-          "price": "￥4,500",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-15T10:00:00+09:00",
-              "endAt": "2026-10-01T23:59:00+09:00",
-              "saleKey": "fany|maison|63313|50890|全席指定|前売|first_come|2026-08-15T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-15T10:00:00+09:00",
-          "saleEndAt": "2026-10-01T23:59:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-08-15T10:00:00+09:00",
-      "saleEndAt": "2026-10-01T23:59:00+09:00",
-      "saleCategory": "first_come",
-      "salePeriods": [
-        {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-08-15T10:00:00+09:00",
-          "endAt": "2026-10-01T23:59:00+09:00"
-        }
-      ],
-      "performersText": [
-        "レイザーラモン",
-        "とろサーモン",
-        "銀シャリ",
-        "もりやすバンバンビガロ",
-        "しずる",
-        "バンビーノ",
-        "ネルソンズ",
-        "セルライトスパ",
-        "ゆにばーす",
-        "めぞん",
-        "・1回の先着申込で申込可能な公演数は『",
-        "1公演",
-        "』",
-        "枚数は『",
-        "10枚まで",
-        "・座席番号や整理番号は"
-      ],
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [],
       "firstSeenAt": "2026-09-13T21:47:57.909499+00:00",
       "newUntil": "",
       "trackedPerformers": [
