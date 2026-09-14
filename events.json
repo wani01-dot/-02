@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-14T14:55:45.555306+00:00",
+  "syncedAt": "2026-09-14T15:04:54.648925+00:00",
   "performers": [
     {
       "id": "maison",
@@ -50,149 +50,6 @@
   "events": [
     {
       "performerId": "nansui",
-      "date": "2026-09-14",
-      "openTime": "17:00",
-      "startTime": "17:15",
-      "title": "渋谷Kiwami極LIVE",
-      "venue": "渋谷よしもと漫才劇場（東京都）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/60592/49451",
-      "ticketStatus": "",
-      "ticketOptions": [],
-      "saleStartAt": "2026-07-25T11:00:00+09:00",
-      "saleEndAt": "2026-07-28T11:00:00+09:00",
-      "saleCategory": "advance",
-      "salePeriods": [
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-07-25T11:00:00+09:00",
-          "endAt": "2026-07-28T11:00:00+09:00"
-        }
-      ],
-      "performersText": [
-        "[ネタ＆コーナーライブ]9番街レトロ",
-        "いぬ",
-        "スロッピ",
-        "セッツァー",
-        "鶴亀",
-        "スーパーサイズ・ミー",
-        "ブラゴーリ",
-        "ペッパーGuys",
-        "ミカボ",
-        "シンクロニシティ",
-        "軟水",
-        "[ コーナー出演者]MC：ミカボ",
-        "9番街レトロ"
-      ],
-      "firstSeenAt": "2026-09-13T19:32:00.003091+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ]
-    },
-    {
-      "performerId": "pyuto",
-      "date": "2026-09-14",
-      "openTime": "18:50",
-      "startTime": "19:00",
-      "title": "ネタタタタン vol.108",
-      "venue": "GINZA ART BOX 7(キャビネットビル 7階)",
-      "source": "tiget",
-      "sourceUrl": "https://tiget.net/events/518742",
-      "ticketStatus": "予定数終了",
-      "ticketOptions": [],
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "salePeriods": [],
-      "performersText": [
-        "オッパショ石",
-        "鬼塚ムソウ",
-        "カガリ",
-        "Sticky²",
-        "テツロー",
-        "ピュート",
-        "百恵",
-        "ナターリア",
-        "ネタと長めのトークをゆったりとお楽しみいただける70分のライブです🎪"
-      ],
-      "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto"
-      ]
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-09-14",
-      "openTime": "20:45",
-      "startTime": "21:00",
-      "title": "お～い、ふるいち～！コントやろうぜ～！みのわも見に・・・",
-      "venue": "神保町よしもと漫才劇場（東京都）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/60681/49558",
-      "ticketStatus": "",
-      "ticketOptions": [],
-      "saleStartAt": "2026-07-25T11:00:00+09:00",
-      "saleEndAt": "2026-07-28T11:00:00+09:00",
-      "saleCategory": "advance",
-      "salePeriods": [
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-07-25T11:00:00+09:00",
-          "endAt": "2026-07-28T11:00:00+09:00"
-        }
-      ],
-      "performersText": [
-        "金魚番長",
-        "オダウエダ",
-        "軟水",
-        "定点計画",
-        "イチキップリン"
-      ],
-      "firstSeenAt": "2026-09-13T19:32:00.003091+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ]
-    },
-    {
-      "performerId": "pyuto",
-      "date": "2026-09-14",
-      "openTime": "20:45",
-      "startTime": "21:00",
-      "title": "やりたい放題デラックス",
-      "venue": "銀座お笑いPLACE",
-      "source": "tiget",
-      "sourceUrl": "https://tiget.net/events/517547",
-      "ticketStatus": "予定数終了",
-      "ticketOptions": [],
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "salePeriods": [],
-      "performersText": [
-        "ドンココ",
-        "ピュート",
-        "ラパルフェ",
-        "百恵",
-        "キャディーのこいちゃん",
-        "桑原秀和",
-        "「やりたい放題」やる",
-        "やりたい放題デラックスが",
-        "9月にもやってきた！",
-        "ネタとコーナーの90分！"
-      ],
-      "firstSeenAt": "2026-09-06T12:22:32.592682+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto"
-      ]
-    },
-    {
-      "performerId": "nansui",
       "date": "2026-09-15",
       "openTime": "17:15",
       "startTime": "17:30",
@@ -204,16 +61,16 @@
       "ticketOptions": [
         {
           "name": "整理番号付き自由席",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥2,000",
+          "price": "￥2,300",
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-08-05T10:00:00+09:00",
               "endAt": "2026-09-15T15:30:00+09:00",
-              "saleKey": "fany|nansui|61292|49797|整理番号付き自由席|前売|first_come|2026-08-05T10:00:00+09:00"
+              "saleKey": "fany|nansui|61292|49797|整理番号付き自由席|当日|first_come|2026-08-05T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -270,16 +127,16 @@
       "ticketOptions": [
         {
           "name": "整理番号付き自由席",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥2,000",
+          "price": "￥2,500",
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-08-05T10:00:00+09:00",
               "endAt": "2026-09-15T19:00:00+09:00",
-              "saleKey": "fany|nansui|62120|50359|整理番号付き自由席|前売|first_come|2026-08-05T10:00:00+09:00"
+              "saleKey": "fany|nansui|62120|50359|整理番号付き自由席|当日|first_come|2026-08-05T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -336,16 +193,16 @@
       "ticketOptions": [
         {
           "name": "整理番号付き自由席",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥2,000",
+          "price": "￥2,500",
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-08-05T10:00:00+09:00",
               "endAt": "2026-09-15T19:00:00+09:00",
-              "saleKey": "fany|nansui|62120|50359|整理番号付き自由席|前売|first_come|2026-08-05T10:00:00+09:00"
+              "saleKey": "fany|nansui|62120|50359|整理番号付き自由席|当日|first_come|2026-08-05T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -20001,12 +19858,12 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64863/52190",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "予定数終了",
       "ticketOptions": [
         {
           "name": "全席指定",
           "type": "前売",
-          "status": "残りわずか",
+          "status": "予定数終了",
           "price": "￥1,500",
           "salePeriods": [
             {
@@ -20068,12 +19925,12 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64863/52190",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "予定数終了",
       "ticketOptions": [
         {
           "name": "全席指定",
           "type": "前売",
-          "status": "残りわずか",
+          "status": "予定数終了",
           "price": "￥1,500",
           "salePeriods": [
             {
