@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-14T19:27:24.844324+00:00",
+  "syncedAt": "2026-09-14T19:39:02.419928+00:00",
   "performers": [
     {
       "id": "maison",
@@ -5011,51 +5011,13 @@
       "venue": "よしもと道頓堀シアター（大阪府）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/65690/52648",
-      "ticketStatus": "販売中",
-      "ticketOptions": [
-        {
-          "name": "整理番号付自由席",
-          "type": "前売",
-          "status": "販売中",
-          "price": "￥1,800",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-03T10:00:00+09:00",
-              "endAt": "2026-09-21T14:30:00+09:00",
-              "saleKey": "fany|pyuto|65690|52648|整理番号付自由席|前売|first_come|2026-09-03T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-09-03T10:00:00+09:00",
-          "saleEndAt": "2026-09-21T14:30:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-09-03T10:00:00+09:00",
-      "saleEndAt": "2026-09-21T14:30:00+09:00",
-      "saleCategory": "first_come",
-      "salePeriods": [
-        {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-09-03T10:00:00+09:00",
-          "endAt": "2026-09-21T14:30:00+09:00"
-        }
-      ],
-      "performersText": [
-        "11月のリサ",
-        "ピュート",
-        "うただ",
-        "シカノシンプ",
-        "・1回の先着申込で申込可能な公演数は『",
-        "1公演",
-        "』",
-        "枚数は『",
-        "10枚まで",
-        "・座席番号や整理番号は"
-      ],
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [],
       "firstSeenAt": "2026-09-14T11:00:18.398686+00:00",
       "newUntil": "",
       "trackedPerformers": [
