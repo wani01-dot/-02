@@ -1,7 +1,7 @@
 {
-  "syncedAt": "2026-09-14T10:44:10.683467+00:00",
-  "total": 140,
-  "ticketListedCount": 140,
+  "syncedAt": "2026-09-14T11:43:47.282865+00:00",
+  "total": 141,
+  "ticketListedCount": 141,
   "ticketUnlistedCount": 0,
   "events": [
     {
@@ -209,7 +209,7 @@
       "theaterId": "roppongi",
       "theaterName": "六本木",
       "performersText": [
-        "ななまがり／ビスケットブラザーズ／５ＧＡＰ／ジャングルポケット／ヘンダーソン／コロコロチキチキペッパーズ／九条ジョー／ピュート／軟水／ぺ"
+        "ななまがり／ビスケットブラザーズ／５ＧＡＰ／ジャングルポケット／ヘンダーソン／コロコロチキチキペッパーズ／九条ジョー／ピュート／軟水／ぺ 【コーナー出演者】 MC：守谷日和／ヘンダーソン／ビスケットブラザーズ／ぺ"
       ],
       "trackedPerformers": [
         "nansui",
@@ -733,7 +733,7 @@
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "14:45",
           "startTime": "15:00",
-          "ticketStatus": "一部予定数終了"
+          "ticketStatus": "残りわずか"
         }
       ],
       "ticketListed": true,
@@ -792,7 +792,7 @@
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "14:45",
           "startTime": "15:00",
-          "ticketStatus": "一部予定数終了"
+          "ticketStatus": "残りわずか"
         }
       ],
       "ticketListed": true,
@@ -831,7 +831,7 @@
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "14:45",
           "startTime": "15:00",
-          "ticketStatus": "一部予定数終了"
+          "ticketStatus": "残りわずか"
         },
         {
           "score": 20,
@@ -1683,7 +1683,7 @@
       "theaterId": "roppongi",
       "theaterName": "六本木",
       "performersText": [
-        "佐久間一行／インポッシブル／ジェラードン／バンビーノ／おかずクラブ／ZAZY／コロコロチキチキペッパーズ／ビスケットブラザーズ／オフローズ／軟水／他"
+        "佐久間一行／５ＧＡＰ／インポッシブル／ジェラードン／バンビーノ／おかずクラブ／ビスケットブラザーズ／コロコロチキチキペッパーズ／ZAZY／オフローズ／軟水"
       ],
       "trackedPerformers": [
         "nansui"
@@ -2712,6 +2712,54 @@
       "status": "ticket_listed"
     },
     {
+      "performerId": "pyuto",
+      "date": "2026-09-26",
+      "openTime": "14:15",
+      "startTime": "14:30",
+      "title": "六本木お笑いコントライブ！ ※子ども料金、高校生料金あり",
+      "venue": "よしもと六本木シアター",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "performersText": [
+        "ハイキングウォーキング／守谷日和／サルゴリラ／セルライトスパ／コロコロチキチキペッパーズ／滝音／コットン／蛙亭／オフローズ／ピュート／あんよの日／伝書鳩"
+      ],
+      "trackedPerformers": [
+        "pyuto"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://roppongi.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [
+        {
+          "score": 20,
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/60605/49483",
+          "title": "六本木お笑いコントライブ！",
+          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
+          "openTime": "14:15",
+          "startTime": "14:30",
+          "ticketStatus": "販売中"
+        },
+        {
+          "score": 10,
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/62697/50491",
+          "title": "わすれもの！～残された小道具を使い続けるライブ～",
+          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
+          "openTime": "19:15",
+          "startTime": "19:30",
+          "ticketStatus": "販売中"
+        }
+      ],
+      "ticketListed": true,
+      "status": "ticket_listed"
+    },
+    {
       "performerId": "maison",
       "date": "2026-09-26",
       "openTime": "14:45",
@@ -2940,6 +2988,16 @@
           "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
           "openTime": "19:15",
           "startTime": "19:30",
+          "ticketStatus": "販売中"
+        },
+        {
+          "score": 10,
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/60605/49483",
+          "title": "六本木お笑いコントライブ！",
+          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
+          "openTime": "14:15",
+          "startTime": "14:30",
           "ticketStatus": "販売中"
         }
       ],
