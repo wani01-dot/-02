@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-09-14T09:44:53.540268+00:00",
-  "total": 141,
+  "syncedAt": "2026-09-14T10:44:10.683467+00:00",
+  "total": 140,
   "ticketListedCount": 140,
-  "ticketUnlistedCount": 1,
+  "ticketUnlistedCount": 0,
   "events": [
     {
       "performerId": "nansui",
@@ -41,12 +41,12 @@
         {
           "score": 10,
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60779/49558",
+          "sourceUrl": "https://ticket.fany.lol/reception/60681/49558",
           "title": "お～い、ふるいち～！コントやろうぜ～！みのわも見に・・・",
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "20:45",
           "startTime": "21:00",
-          "ticketStatus": "予定数終了"
+          "ticketStatus": ""
         }
       ],
       "ticketListed": true,
@@ -79,12 +79,12 @@
         {
           "score": 24,
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60779/49558",
+          "sourceUrl": "https://ticket.fany.lol/reception/60681/49558",
           "title": "お～い、ふるいち～！コントやろうぜ～！みのわも見に・・・",
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "20:45",
           "startTime": "21:00",
-          "ticketStatus": "予定数終了"
+          "ticketStatus": ""
         },
         {
           "score": 10,
@@ -7853,33 +7853,6 @@
       ],
       "ticketListed": true,
       "status": "ticket_listed"
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-11-06",
-      "openTime": "18:45",
-      "startTime": "19:00",
-      "title": "19：00開演/「ごきげん会？ポポポポーン？」",
-      "venue": "よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "manzaigekijyo",
-      "theaterName": "よしもと漫才劇場",
-      "performersText": [
-        "ぎょうぶ／うただ／軟水／シンクロニシティ"
-      ],
-      "trackedPerformers": [
-        "nansui"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
