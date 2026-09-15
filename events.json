@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-15T05:24:07.402199+00:00",
+  "syncedAt": "2026-09-15T05:36:33.967237+00:00",
   "performers": [
     {
       "id": "maison",
@@ -12497,6 +12497,68 @@
       "newUntil": "",
       "trackedPerformers": [
         "nansui"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-10-04",
+      "openTime": "13:15",
+      "startTime": "13:30",
+      "title": "偏狭者会議～狭く偏った芸人たちが、どうしても許せない怒・・・",
+      "venue": "新宿シアターモリエール（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/66551/52905",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-03T23:59:00+09:00",
+              "saleKey": "fany|maison|66551|52905|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-03T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-03T23:59:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-03T23:59:00+09:00"
+        }
+      ],
+      "performersText": [
+        "おミュータンツ 川嶋おもち",
+        "大王",
+        "ド桜 村田大樹",
+        "めぞん 吉野おいなり君",
+        "小松海佑",
+        "センチネル トミサット",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-15T05:36:33.963480+00:00",
+      "newUntil": "2026-09-17T05:36:33.963493+00:00",
+      "trackedPerformers": [
+        "maison"
       ]
     },
     {
