@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-09-15T21:40:27.154579+00:00",
+  "syncedAt": "2026-09-15T22:40:34.918091+00:00",
   "total": 138,
-  "ticketListedCount": 138,
-  "ticketUnlistedCount": 0,
+  "ticketListedCount": 135,
+  "ticketUnlistedCount": 3,
   "events": [
     {
       "performerId": "nansui",
@@ -4551,16 +4551,6 @@
           "openTime": "19:00",
           "startTime": "19:15",
           "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "tiget",
-          "sourceUrl": "https://tiget.net/events/522095",
-          "title": "YOIYOSE 174 @中野の劇場サッチー",
-          "venue": "中野の劇場サッチー(東京都)",
-          "openTime": "21:15",
-          "startTime": "21:30",
-          "ticketStatus": "予定数終了"
         }
       ],
       "ticketListed": true,
@@ -4609,16 +4599,6 @@
           "openTime": "17:00",
           "startTime": "17:15",
           "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "tiget",
-          "sourceUrl": "https://tiget.net/events/522095",
-          "title": "YOIYOSE 174 @中野の劇場サッチー",
-          "venue": "中野の劇場サッチー(東京都)",
-          "openTime": "21:15",
-          "startTime": "21:30",
-          "ticketStatus": "予定数終了"
         }
       ],
       "ticketListed": true,
@@ -7811,40 +7791,9 @@
       "discoveryUrls": [
         "https://fukuokagekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66959/53442",
-          "title": "福岡よしもとお笑いライブ",
-          "venue": "よしもと福岡 大和証券劇場（福岡県）",
-          "openTime": "11:15",
-          "startTime": "11:30",
-          "ticketStatus": ""
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66959/53443",
-          "title": "福岡よしもとお笑いライブ",
-          "venue": "よしもと福岡 大和証券劇場（福岡県）",
-          "openTime": "13:25",
-          "startTime": "13:40",
-          "ticketStatus": ""
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66959/53444",
-          "title": "福岡よしもとお笑いライブ",
-          "venue": "よしもと福岡 大和証券劇場（福岡県）",
-          "openTime": "15:35",
-          "startTime": "15:50",
-          "ticketStatus": ""
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -7869,40 +7818,9 @@
       "discoveryUrls": [
         "https://fukuokagekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66959/53443",
-          "title": "福岡よしもとお笑いライブ",
-          "venue": "よしもと福岡 大和証券劇場（福岡県）",
-          "openTime": "13:25",
-          "startTime": "13:40",
-          "ticketStatus": ""
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66959/53442",
-          "title": "福岡よしもとお笑いライブ",
-          "venue": "よしもと福岡 大和証券劇場（福岡県）",
-          "openTime": "11:15",
-          "startTime": "11:30",
-          "ticketStatus": ""
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66959/53444",
-          "title": "福岡よしもとお笑いライブ",
-          "venue": "よしもと福岡 大和証券劇場（福岡県）",
-          "openTime": "15:35",
-          "startTime": "15:50",
-          "ticketStatus": ""
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -7942,40 +7860,9 @@
       "discoveryUrls": [
         "https://fukuokagekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66959/53444",
-          "title": "福岡よしもとお笑いライブ",
-          "venue": "よしもと福岡 大和証券劇場（福岡県）",
-          "openTime": "15:35",
-          "startTime": "15:50",
-          "ticketStatus": ""
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66959/53442",
-          "title": "福岡よしもとお笑いライブ",
-          "venue": "よしもと福岡 大和証券劇場（福岡県）",
-          "openTime": "11:15",
-          "startTime": "11:30",
-          "ticketStatus": ""
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66959/53443",
-          "title": "福岡よしもとお笑いライブ",
-          "venue": "よしもと福岡 大和証券劇場（福岡県）",
-          "openTime": "13:25",
-          "startTime": "13:40",
-          "ticketStatus": ""
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     }
   ]
 }
