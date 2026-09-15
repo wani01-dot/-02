@@ -1,7 +1,7 @@
 {
-  "syncedAt": "2026-09-15T06:48:15.003089+00:00",
-  "total": 139,
-  "ticketListedCount": 139,
+  "syncedAt": "2026-09-15T07:45:27.751225+00:00",
+  "total": 140,
+  "ticketListedCount": 140,
   "ticketUnlistedCount": 0,
   "events": [
     {
@@ -579,6 +579,54 @@
           "openTime": "17:00",
           "startTime": "17:15",
           "ticketStatus": "販売中"
+        }
+      ],
+      "ticketListed": true,
+      "status": "ticket_listed"
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-09-19",
+      "openTime": "11:15",
+      "startTime": "11:30",
+      "title": "渋谷マンゲキネタSP",
+      "venue": "渋谷よしもと漫才劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "shibuya",
+      "theaterName": "渋谷",
+      "performersText": [
+        "[ネタライブ]エバース／蛙亭／カベポスター／めぞん／ケビンス／ゼロカラン／他"
+      ],
+      "trackedPerformers": [
+        "maison"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [
+        {
+          "score": 24,
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/67229/53615",
+          "title": "渋谷マンゲキネタSP",
+          "venue": "渋谷よしもと漫才劇場（東京都）",
+          "openTime": "11:15",
+          "startTime": "11:30",
+          "ticketStatus": "販売中"
+        },
+        {
+          "score": 10,
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/63814/51190",
+          "title": "トーキョーマンゲキフェス2026ー渋神三世代決戦ー",
+          "venue": "LINE CUBE SHIBUYA（東京都）",
+          "openTime": "14:30",
+          "startTime": "15:30",
+          "ticketStatus": "一部予定数終了"
         }
       ],
       "ticketListed": true,
