@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-15T08:39:37.398828+00:00",
+  "syncedAt": "2026-09-15T08:54:09.968218+00:00",
   "performers": [
     {
       "id": "maison",
@@ -8373,6 +8373,7 @@
         "ZAZY",
         "オフローズ",
         "軟水",
+        "ピュート",
         "・1回の先着申込で申込可能な公演数は『",
         "1公演",
         "』",
@@ -8383,6 +8384,114 @@
       "firstSeenAt": "2026-09-14T18:07:16.889661+00:00",
       "newUntil": "",
       "trackedPerformers": [
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-09-23",
+      "openTime": "11:45",
+      "startTime": "12:00",
+      "title": "六本木お笑いコントライブ！",
+      "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/60605/49468",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥3,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-23T10:00:00+09:00",
+              "saleKey": "fany|nansui|60605|49468|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-23T10:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,300",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-23T10:00:00+09:00",
+              "saleKey": "fany|nansui|60605|49468|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-23T10:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "★★★★★【子ども割】",
+          "type": "",
+          "status": "販売中",
+          "price": "￥1,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-23T10:00:00+09:00",
+              "saleKey": "fany|nansui|60605|49468|★★★★★【子ども割】||first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-23T10:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-08-05T10:00:00+09:00",
+      "saleEndAt": "2026-09-23T10:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-08-05T10:00:00+09:00",
+          "endAt": "2026-09-23T10:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "佐久間一行",
+        "５ＧＡＰ",
+        "インポッシブル",
+        "ジェラードン",
+        "バンビーノ",
+        "おかずクラブ",
+        "ビスケットブラザーズ",
+        "コロコロチキチキペッパーズ",
+        "ZAZY",
+        "オフローズ",
+        "軟水",
+        "ピュート",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-15T08:54:09.963199+00:00",
+      "newUntil": "2026-09-17T08:54:09.963211+00:00",
+      "trackedPerformers": [
+        "pyuto",
         "nansui"
       ]
     },
@@ -17754,12 +17863,12 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/65063/52414",
-      "ticketStatus": "一部予定数終了",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [
         {
           "name": "全席指定",
           "type": "前売",
-          "status": "販売中",
+          "status": "残りわずか",
           "price": "￥1,500",
           "salePeriods": [
             {
