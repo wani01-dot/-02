@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-15T20:03:48.356566+00:00",
+  "syncedAt": "2026-09-15T20:13:26.372795+00:00",
   "performers": [
     {
       "id": "maison",
@@ -13715,13 +13715,54 @@
       "venue": "よしもと幕張イオンモール劇場（千葉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/65353/52479",
-      "ticketStatus": "",
-      "ticketOptions": [],
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "salePeriods": [],
-      "performersText": [],
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,300",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-30T10:00:00+09:00",
+              "endAt": "2026-10-09T16:00:00+09:00",
+              "saleKey": "fany|maison|65353|52479|全席指定|前売|first_come|2026-08-30T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-30T10:00:00+09:00",
+          "saleEndAt": "2026-10-09T16:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-08-30T10:00:00+09:00",
+      "saleEndAt": "2026-10-09T16:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-08-30T10:00:00+09:00",
+          "endAt": "2026-10-09T16:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "めぞん",
+        "カゲヤマ",
+        "生ファラオ",
+        "ソマオ・ミートボール",
+        "プリズンクイズチャンネル",
+        "ボブのコーラ",
+        "【MC】ビューティフルトーキョーマンズ 鈴木バイダン",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
       "firstSeenAt": "2026-09-13T21:47:57.909499+00:00",
       "newUntil": "",
       "trackedPerformers": [
