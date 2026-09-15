@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-09-15T20:41:56.074457+00:00",
+  "syncedAt": "2026-09-15T21:40:27.154579+00:00",
   "total": 138,
-  "ticketListedCount": 132,
-  "ticketUnlistedCount": 6,
+  "ticketListedCount": 138,
+  "ticketUnlistedCount": 0,
   "events": [
     {
       "performerId": "nansui",
@@ -6394,9 +6394,20 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "status": "ticket_unlisted"
+      "ticketMatches": [
+        {
+          "score": 24,
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/64847/52188",
+          "title": "VSバラエティ",
+          "venue": "神保町よしもと漫才劇場（東京都）",
+          "openTime": "19:15",
+          "startTime": "19:30",
+          "ticketStatus": "販売中"
+        }
+      ],
+      "ticketListed": true,
+      "status": "ticket_listed"
     },
     {
       "performerId": "nansui",
@@ -6508,9 +6519,30 @@
       "discoveryUrls": [
         "https://omiya.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "status": "ticket_unlisted"
+      "ticketMatches": [
+        {
+          "score": 24,
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/66807/53117",
+          "title": "負けたら吉野HIITをしないと出れない劇場",
+          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
+          "openTime": "18:50",
+          "startTime": "19:00",
+          "ticketStatus": "販売中"
+        },
+        {
+          "score": 14,
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/64979/52394",
+          "title": "シシガシラpresents おじさんと遊んでくれませんか？",
+          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
+          "openTime": "20:20",
+          "startTime": "20:30",
+          "ticketStatus": "販売中"
+        }
+      ],
+      "ticketListed": true,
+      "status": "ticket_listed"
     },
     {
       "performerId": "maison",
@@ -6535,9 +6567,30 @@
       "discoveryUrls": [
         "https://omiya.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "status": "ticket_unlisted"
+      "ticketMatches": [
+        {
+          "score": 24,
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/64979/52394",
+          "title": "シシガシラpresents おじさんと遊んでくれませんか？",
+          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
+          "openTime": "20:20",
+          "startTime": "20:30",
+          "ticketStatus": "販売中"
+        },
+        {
+          "score": 14,
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/66807/53117",
+          "title": "負けたら吉野HIITをしないと出れない劇場",
+          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
+          "openTime": "18:50",
+          "startTime": "19:00",
+          "ticketStatus": "販売中"
+        }
+      ],
+      "ticketListed": true,
+      "status": "ticket_listed"
     },
     {
       "performerId": "nansui",
@@ -6600,9 +6653,30 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "status": "ticket_unlisted"
+      "ticketMatches": [
+        {
+          "score": 24,
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/64848/52202",
+          "title": "とりせん新ネタライブ「コンセントレーション」",
+          "venue": "神保町よしもと漫才劇場（東京都）",
+          "openTime": "19:00",
+          "startTime": "19:15",
+          "ticketStatus": "販売中"
+        },
+        {
+          "score": 10,
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/64602/52162",
+          "title": "risa and...？",
+          "venue": "渋谷よしもと漫才劇場（東京都）",
+          "openTime": "20:45",
+          "startTime": "21:00",
+          "ticketStatus": "販売中"
+        }
+      ],
+      "ticketListed": true,
+      "status": "ticket_listed"
     },
     {
       "performerId": "maison",
@@ -6630,13 +6704,23 @@
       ],
       "ticketMatches": [
         {
-          "score": 19,
+          "score": 24,
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/64602/52162",
           "title": "risa and...？",
           "venue": "渋谷よしもと漫才劇場（東京都）",
           "openTime": "20:45",
           "startTime": "21:00",
+          "ticketStatus": "販売中"
+        },
+        {
+          "score": 10,
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/64848/52202",
+          "title": "とりせん新ネタライブ「コンセントレーション」",
+          "venue": "神保町よしもと漫才劇場（東京都）",
+          "openTime": "19:00",
+          "startTime": "19:15",
           "ticketStatus": "販売中"
         }
       ],
@@ -6666,9 +6750,30 @@
       "discoveryUrls": [
         "https://makuhari.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "status": "ticket_unlisted"
+      "ticketMatches": [
+        {
+          "score": 20,
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/66334/52774",
+          "title": "幕張土日祝ネタＳＰ１５時",
+          "venue": "よしもと幕張イオンモール劇場（千葉県）",
+          "openTime": "14:30",
+          "startTime": "15:00",
+          "ticketStatus": "販売中"
+        },
+        {
+          "score": 16,
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/66334/52775",
+          "title": "幕張土日祝ネタＳＰ１７時",
+          "venue": "よしもと幕張イオンモール劇場（千葉県）",
+          "openTime": "16:30",
+          "startTime": "17:00",
+          "ticketStatus": "販売中"
+        }
+      ],
+      "ticketListed": true,
+      "status": "ticket_listed"
     },
     {
       "performerId": "maison",
@@ -6693,9 +6798,30 @@
       "discoveryUrls": [
         "https://makuhari.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "status": "ticket_unlisted"
+      "ticketMatches": [
+        {
+          "score": 20,
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/66334/52775",
+          "title": "幕張土日祝ネタＳＰ１７時",
+          "venue": "よしもと幕張イオンモール劇場（千葉県）",
+          "openTime": "16:30",
+          "startTime": "17:00",
+          "ticketStatus": "販売中"
+        },
+        {
+          "score": 16,
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/66334/52774",
+          "title": "幕張土日祝ネタＳＰ１５時",
+          "venue": "よしもと幕張イオンモール劇場（千葉県）",
+          "openTime": "14:30",
+          "startTime": "15:00",
+          "ticketStatus": "販売中"
+        }
+      ],
+      "ticketListed": true,
+      "status": "ticket_listed"
     },
     {
       "performerId": "nansui",
