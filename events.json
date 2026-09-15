@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-15T21:59:05.851412+00:00",
+  "syncedAt": "2026-09-15T22:05:25.273553+00:00",
   "performers": [
     {
       "id": "maison",
@@ -11946,11 +11946,27 @@
       "sourceUrl": "https://ticket.fany.lol/reception/67342/53666",
       "ticketStatus": "",
       "ticketOptions": [],
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "salePeriods": [],
-      "performersText": [],
+      "saleStartAt": "2026-09-16T10:00:00+09:00",
+      "saleEndAt": "2026-10-03T14:30:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-16T10:00:00+09:00",
+          "endAt": "2026-10-03T14:30:00+09:00"
+        }
+      ],
+      "performersText": [
+        "ケビンス",
+        "めぞん",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "4枚まで",
+        "・座席番号や整理番号は"
+      ],
       "firstSeenAt": "2026-09-15T21:01:03.020082+00:00",
       "newUntil": "",
       "trackedPerformers": [
@@ -13202,45 +13218,6 @@
       ],
       "firstSeenAt": "2026-09-15T16:39:37.286531+00:00",
       "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ]
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-10-06",
-      "openTime": "21:15",
-      "startTime": "21:30",
-      "title": "YOIYOSE 174 @中野の劇場サッチー",
-      "venue": "中野の劇場サッチー(東京都)",
-      "source": "tiget",
-      "sourceUrl": "https://tiget.net/events/522095",
-      "ticketStatus": "予定数終了",
-      "ticketOptions": [],
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "salePeriods": [],
-      "performersText": [
-        "ア・ロングアイランド",
-        "ウォーターズ",
-        "ぎょねこ",
-        "じゅんじゅんズ",
-        "sticky²",
-        "Sticky²",
-        "ソフト派",
-        "デンコーセッカ",
-        "トワイライト渚",
-        "軟水",
-        "パパパスタ!?",
-        "惹女香花",
-        "ヤッホイ 泉",
-        "めっちゃ最高ズ",
-        "仕事帰りにふらっと見に来れるお笑いライブ！",
-        "これからの若手芸人がたくさん見られます！"
-      ],
-      "firstSeenAt": "2026-09-15T11:52:47.223446+00:00",
-      "newUntil": "2026-09-17T11:52:47.223459+00:00",
       "trackedPerformers": [
         "nansui"
       ]
