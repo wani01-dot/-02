@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-09-16T03:43:25.192940+00:00",
+  "syncedAt": "2026-09-16T04:43:23.370834+00:00",
   "total": 138,
-  "ticketListedCount": 138,
-  "ticketUnlistedCount": 0,
+  "ticketListedCount": 135,
+  "ticketUnlistedCount": 3,
   "events": [
     {
       "performerId": "nansui",
@@ -30,7 +30,7 @@
       ],
       "ticketMatches": [
         {
-          "score": 20,
+          "score": 15,
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/61292/49798",
           "title": "六本木コントライブNEXT！",
@@ -165,7 +165,7 @@
       ],
       "ticketMatches": [
         {
-          "score": 24,
+          "score": 19,
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/60497/49415",
           "title": "神保町Kakeru翔SP",
@@ -183,16 +183,6 @@
           "openTime": "18:45",
           "startTime": "19:00",
           "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63895/51232",
-          "title": "お客様のお悩み解決！コント「お悩み相談室」",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "19:15",
-          "startTime": "19:30",
-          "ticketStatus": "販売中"
         }
       ],
       "ticketListed": true,
@@ -269,30 +259,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63895/51232",
-          "title": "お客様のお悩み解決！コント「お悩み相談室」",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "19:15",
-          "startTime": "19:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60497/49415",
-          "title": "神保町Kakeru翔SP",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "16:45",
-          "startTime": "17:00",
-          "ticketStatus": "予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "pyuto",
@@ -366,30 +335,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61292/49800",
-          "title": "六本木コントライブNEXT！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "17:15",
-          "startTime": "17:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/62136/50365",
-          "title": "軟水新ネタライブ「印鑑、印鑑ですか？！」",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "19:15",
-          "startTime": "19:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -414,30 +362,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/62136/50365",
-          "title": "軟水新ネタライブ「印鑑、印鑑ですか？！」",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "19:15",
-          "startTime": "19:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61292/49800",
-          "title": "六本木コントライブNEXT！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "17:15",
-          "startTime": "17:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "pyuto",
@@ -745,7 +672,7 @@
           "venue": "インテックス大阪4号館5号館（大阪府）",
           "openTime": "",
           "startTime": "09:00",
-          "ticketStatus": "一部予定数終了"
+          "ticketStatus": "予定数終了"
         },
         {
           "score": 10,
@@ -833,7 +760,7 @@
           "venue": "インテックス大阪4号館5号館（大阪府）",
           "openTime": "",
           "startTime": "09:00",
-          "ticketStatus": "一部予定数終了"
+          "ticketStatus": "予定数終了"
         },
         {
           "score": 10,
@@ -931,7 +858,7 @@
           "venue": "インテックス大阪4号館5号館（大阪府）",
           "openTime": "",
           "startTime": "10:00",
-          "ticketStatus": "一部予定数終了"
+          "ticketStatus": "予定数終了"
         },
         {
           "score": 10,
@@ -1029,7 +956,7 @@
           "venue": "インテックス大阪4号館5号館（大阪府）",
           "openTime": "",
           "startTime": "10:00",
-          "ticketStatus": "一部予定数終了"
+          "ticketStatus": "予定数終了"
         },
         {
           "score": 10,
@@ -1117,7 +1044,7 @@
           "venue": "インテックス大阪4号館5号館（大阪府）",
           "openTime": "",
           "startTime": "10:00",
-          "ticketStatus": "一部予定数終了"
+          "ticketStatus": "予定数終了"
         },
         {
           "score": 10,
@@ -1215,7 +1142,7 @@
           "venue": "インテックス大阪4号館5号館（大阪府）",
           "openTime": "",
           "startTime": "10:00",
-          "ticketStatus": "一部予定数終了"
+          "ticketStatus": "予定数終了"
         },
         {
           "score": 10,
@@ -1314,7 +1241,7 @@
           "venue": "インテックス大阪4号館5号館（大阪府）",
           "openTime": "",
           "startTime": "10:00",
-          "ticketStatus": "一部予定数終了"
+          "ticketStatus": "予定数終了"
         },
         {
           "score": 10,
@@ -1402,7 +1329,7 @@
           "venue": "インテックス大阪4号館5号館（大阪府）",
           "openTime": "",
           "startTime": "10:00",
-          "ticketStatus": "一部予定数終了"
+          "ticketStatus": "予定数終了"
         },
         {
           "score": 10,
@@ -1470,7 +1397,7 @@
           "venue": "インテックス大阪4号館5号館（大阪府）",
           "openTime": "",
           "startTime": "10:00",
-          "ticketStatus": "一部予定数終了"
+          "ticketStatus": "予定数終了"
         },
         {
           "score": 10,
@@ -5613,6 +5540,16 @@
           "openTime": "19:15",
           "startTime": "19:30",
           "ticketStatus": "販売中"
+        },
+        {
+          "score": 10,
+          "source": "tiget",
+          "sourceUrl": "https://tiget.net/events/523480",
+          "title": "10/12(月祝)バティオスで#ワイガヤ《1部》",
+          "venue": "新宿バティオス(東京都)",
+          "openTime": "12:40",
+          "startTime": "13:00",
+          "ticketStatus": "予定数終了"
         }
       ],
       "ticketListed": true,
