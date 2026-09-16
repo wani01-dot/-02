@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-16T20:44:57.997779+00:00",
+  "syncedAt": "2026-09-16T20:53:52.965299+00:00",
   "performers": [
     {
       "id": "maison",
@@ -14052,11 +14052,31 @@
       "sourceUrl": "https://ticket.fany.lol/reception/67423/53717",
       "ticketStatus": "",
       "ticketOptions": [],
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "salePeriods": [],
-      "performersText": [],
+      "saleStartAt": "2026-09-18T10:00:00+09:00",
+      "saleEndAt": "2026-10-18T17:30:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-18T10:00:00+09:00",
+          "endAt": "2026-10-18T17:30:00+09:00"
+        }
+      ],
+      "performersText": [
+        "守谷日和",
+        "パピヨン",
+        "ケビンス",
+        "ピュート",
+        "イチゴ",
+        "伝書鳩",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
       "firstSeenAt": "2026-09-16T20:44:57.991803+00:00",
       "newUntil": "",
       "trackedPerformers": [
