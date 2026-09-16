@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-16T04:39:45.552557+00:00",
+  "syncedAt": "2026-09-16T04:50:59.416722+00:00",
   "performers": [
     {
       "id": "maison",
@@ -49,6 +49,74 @@
   ],
   "events": [
     {
+      "performerId": "nansui",
+      "date": "2026-09-16",
+      "openTime": "17:15",
+      "startTime": "17:30",
+      "title": "六本木コントライブNEXT！",
+      "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/61292/49798",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "整理番号付き自由席",
+          "type": "当日",
+          "status": "販売中",
+          "price": "￥2,300",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-16T15:30:00+09:00",
+              "saleKey": "fany|nansui|61292|49798|整理番号付き自由席|当日|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-16T15:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-08-05T10:00:00+09:00",
+      "saleEndAt": "2026-09-16T15:30:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-08-05T10:00:00+09:00",
+          "endAt": "2026-09-16T15:30:00+09:00"
+        }
+      ],
+      "performersText": [
+        "ななまがり",
+        "ビスケットブラザーズ",
+        "５ＧＡＰ",
+        "ジャングルポケット",
+        "ヘンダーソン",
+        "コロコロチキチキペッパーズ",
+        "九条ジョー",
+        "ピュート",
+        "軟水",
+        "ぺ",
+        "MC：守谷日和",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-16T04:50:59.411789+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
       "performerId": "pyuto",
       "date": "2026-09-16",
       "openTime": "17:15",
@@ -70,7 +138,7 @@
               "label": "先着",
               "startAt": "2026-08-05T10:00:00+09:00",
               "endAt": "2026-09-16T15:30:00+09:00",
-              "saleKey": "fany|pyuto|61292|49798|整理番号付き自由席|当日|first_come|2026-08-05T10:00:00+09:00"
+              "saleKey": "fany|nansui|61292|49798|整理番号付き自由席|当日|first_come|2026-08-05T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -112,7 +180,8 @@
       "firstSeenAt": "2026-09-15T17:45:09.106097+00:00",
       "newUntil": "",
       "trackedPerformers": [
-        "pyuto"
+        "pyuto",
+        "nansui"
       ]
     },
     {
@@ -282,6 +351,91 @@
       ]
     },
     {
+      "performerId": "nansui",
+      "date": "2026-09-17",
+      "openTime": "16:45",
+      "startTime": "17:00",
+      "title": "神保町Kakeru翔SP",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/60497/49415",
+      "ticketStatus": "予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥1,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-17T15:00:00+09:00",
+              "saleKey": "fany|nansui|60497|49415|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-17T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥1,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-17T15:00:00+09:00",
+              "saleKey": "fany|nansui|60497|49415|立見（整理番号付）|前売|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-17T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-08-05T10:00:00+09:00",
+      "saleEndAt": "2026-09-17T15:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-08-05T10:00:00+09:00",
+          "endAt": "2026-09-17T15:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "9番街レトロ",
+        "軟水",
+        "ピュート",
+        "イチゴ",
+        "テキセツの街",
+        "ザンゾウ",
+        "ただならぬ刀",
+        "あなたとネ",
+        "MC：イチゴ",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-16T04:50:59.411789+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
       "performerId": "pyuto",
       "date": "2026-09-17",
       "openTime": "16:45",
@@ -303,7 +457,7 @@
               "label": "先着",
               "startAt": "2026-08-05T10:00:00+09:00",
               "endAt": "2026-09-17T15:00:00+09:00",
-              "saleKey": "fany|pyuto|60497|49415|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
+              "saleKey": "fany|nansui|60497|49415|全席指定|前売|first_come|2026-08-05T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -322,7 +476,7 @@
               "label": "先着",
               "startAt": "2026-08-05T10:00:00+09:00",
               "endAt": "2026-09-17T15:00:00+09:00",
-              "saleKey": "fany|pyuto|60497|49415|立見（整理番号付）|前売|first_come|2026-08-05T10:00:00+09:00"
+              "saleKey": "fany|nansui|60497|49415|立見（整理番号付）|前売|first_come|2026-08-05T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -362,7 +516,8 @@
       "firstSeenAt": "2026-09-15T17:45:09.106097+00:00",
       "newUntil": "",
       "trackedPerformers": [
-        "pyuto"
+        "pyuto",
+        "nansui"
       ]
     },
     {
@@ -442,6 +597,68 @@
       "newUntil": "",
       "trackedPerformers": [
         "pyuto"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-09-17",
+      "openTime": "19:15",
+      "startTime": "19:30",
+      "title": "お客様のお悩み解決！コント「お悩み相談室」",
+      "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/63895/51232",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "整理番号付き自由席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-19T10:00:00+09:00",
+              "endAt": "2026-09-17T17:30:00+09:00",
+              "saleKey": "fany|nansui|63895|51232|整理番号付き自由席|前売|first_come|2026-08-19T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-19T10:00:00+09:00",
+          "saleEndAt": "2026-09-17T17:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-08-19T10:00:00+09:00",
+      "saleEndAt": "2026-09-17T17:30:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-08-19T10:00:00+09:00",
+          "endAt": "2026-09-17T17:30:00+09:00"
+        }
+      ],
+      "performersText": [
+        "エレガント人生",
+        "世間知らズ",
+        "ブラゴーリ",
+        "軟水",
+        "鉄人小町",
+        "イワサキ",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-16T04:50:59.411789+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "nansui"
       ]
     },
     {
@@ -620,6 +837,72 @@
       ]
     },
     {
+      "performerId": "nansui",
+      "date": "2026-09-18",
+      "openTime": "17:15",
+      "startTime": "17:30",
+      "title": "六本木コントライブNEXT！",
+      "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/61292/49800",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "整理番号付き自由席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-18T15:30:00+09:00",
+              "saleKey": "fany|nansui|61292|49800|整理番号付き自由席|前売|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-18T15:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-08-05T10:00:00+09:00",
+      "saleEndAt": "2026-09-18T15:30:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-08-05T10:00:00+09:00",
+          "endAt": "2026-09-18T15:30:00+09:00"
+        }
+      ],
+      "performersText": [
+        "レインボー",
+        "歩子",
+        "うるとらブギーズ",
+        "エレガント人生",
+        "ブラゴーリ",
+        "オフローズ",
+        "軟水",
+        "定点計画",
+        "青いデルタ",
+        "き展",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-16T04:50:59.411789+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "nansui"
+      ]
+    },
+    {
       "performerId": "maison",
       "date": "2026-09-18",
       "openTime": "18:00",
@@ -706,6 +989,65 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-09-18",
+      "openTime": "19:15",
+      "startTime": "19:30",
+      "title": "軟水新ネタライブ「印鑑、印鑑ですか？！」",
+      "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/62136/50365",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "整理番号付き自由席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-18T17:30:00+09:00",
+              "saleKey": "fany|nansui|62136|50365|整理番号付き自由席|前売|first_come|2026-08-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-18T17:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-08-05T10:00:00+09:00",
+      "saleEndAt": "2026-09-18T17:30:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-08-05T10:00:00+09:00",
+          "endAt": "2026-09-18T17:30:00+09:00"
+        }
+      ],
+      "performersText": [
+        "軟水",
+        "ブラゴーリ",
+        "き展",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-16T04:50:59.411789+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "nansui"
       ]
     },
     {
@@ -896,7 +1238,7 @@
               "label": "先着",
               "startAt": "2026-08-30T10:00:00+09:00",
               "endAt": "2026-09-18T23:59:00+09:00",
-              "saleKey": "fany|pyuto|63814|51190|SS席|前売|first_come|2026-08-30T10:00:00+09:00"
+              "saleKey": "fany|nansui|63814|51190|SS席|前売|first_come|2026-08-30T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-30T10:00:00+09:00",
@@ -915,7 +1257,7 @@
               "label": "先着",
               "startAt": "2026-08-30T10:00:00+09:00",
               "endAt": "2026-09-18T23:59:00+09:00",
-              "saleKey": "fany|pyuto|63814|51190|S席|前売|first_come|2026-08-30T10:00:00+09:00"
+              "saleKey": "fany|nansui|63814|51190|S席|前売|first_come|2026-08-30T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-30T10:00:00+09:00",
@@ -934,7 +1276,7 @@
               "label": "先着",
               "startAt": "2026-08-30T10:00:00+09:00",
               "endAt": "2026-09-18T23:59:00+09:00",
-              "saleKey": "fany|pyuto|63814|51190|A席|前売|first_come|2026-08-30T10:00:00+09:00"
+              "saleKey": "fany|nansui|63814|51190|A席|前売|first_come|2026-08-30T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-30T10:00:00+09:00",
@@ -953,7 +1295,7 @@
               "label": "先着",
               "startAt": "2026-08-30T10:00:00+09:00",
               "endAt": "2026-09-18T23:59:00+09:00",
-              "saleKey": "fany|pyuto|63814|51190|B席|前売|first_come|2026-08-30T10:00:00+09:00"
+              "saleKey": "fany|nansui|63814|51190|B席|前売|first_come|2026-08-30T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-30T10:00:00+09:00",
@@ -1106,7 +1448,244 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison",
-        "pyuto"
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-09-19",
+      "openTime": "14:30",
+      "startTime": "15:30",
+      "title": "トーキョーマンゲキフェス2026ー渋神三世代決戦ー",
+      "venue": "LINE CUBE SHIBUYA（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/63814/51190",
+      "ticketStatus": "残りわずか",
+      "ticketOptions": [
+        {
+          "name": "SS席",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥12,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-30T10:00:00+09:00",
+              "endAt": "2026-09-18T23:59:00+09:00",
+              "saleKey": "fany|nansui|63814|51190|SS席|前売|first_come|2026-08-30T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-30T10:00:00+09:00",
+          "saleEndAt": "2026-09-18T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "S席",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥10,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-30T10:00:00+09:00",
+              "endAt": "2026-09-18T23:59:00+09:00",
+              "saleKey": "fany|nansui|63814|51190|S席|前売|first_come|2026-08-30T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-30T10:00:00+09:00",
+          "saleEndAt": "2026-09-18T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "A席",
+          "type": "前売",
+          "status": "残りわずか",
+          "price": "￥8,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-30T10:00:00+09:00",
+              "endAt": "2026-09-18T23:59:00+09:00",
+              "saleKey": "fany|nansui|63814|51190|A席|前売|first_come|2026-08-30T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-30T10:00:00+09:00",
+          "saleEndAt": "2026-09-18T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "B席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥7,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-30T10:00:00+09:00",
+              "endAt": "2026-09-18T23:59:00+09:00",
+              "saleKey": "fany|nansui|63814|51190|B席|前売|first_come|2026-08-30T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-08-30T10:00:00+09:00",
+          "saleEndAt": "2026-09-18T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-08-30T10:00:00+09:00",
+      "saleEndAt": "2026-09-18T23:59:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-08-30T10:00:00+09:00",
+          "endAt": "2026-09-18T23:59:00+09:00"
+        }
+      ],
+      "performersText": [
+        "東京15期－18期チーム",
+        "チームリーダー： ダンビラムーチョ",
+        "滝音",
+        "いぬ",
+        "シカゴ実業",
+        "CITY",
+        "スロッピ",
+        "セッツァー",
+        "TEAM近藤",
+        "デニス松下",
+        "西村ヒロチョ",
+        "マルセイユ",
+        "今井らいぱち",
+        "入間国際宣言",
+        "カラタチ",
+        "官兵衛",
+        "キンボシ",
+        "kento fukaya",
+        "鶴亀",
+        "やさしいズ",
+        "ゆにばーす",
+        "ランパンプス",
+        "蛙亭",
+        "くらげ",
+        "さや香",
+        "まちるだ",
+        "まんじろう",
+        "ワラバランス",
+        "ウォンバット",
+        "からし蓮根",
+        "九条ジョー",
+        "ケビンス",
+        "シモリュウ",
+        "スクラップス",
+        "そいつどいつ",
+        "黄昏の森",
+        "田津原理音",
+        "ドッチモドッチ",
+        "ぱろぱろ",
+        "ラニーノーズ",
+        "東京19期－23期チーム",
+        "チームリーダー：エバース",
+        "9番街レトロ",
+        "赤嶺総理",
+        "オダウエダ",
+        "カベポスター",
+        "11月のリサ",
+        "スーパーサイズ・ミー",
+        "素敵じゃないか",
+        "世間知らズ",
+        "ダブルヒガシ",
+        "ドンデコルテ",
+        "アメリカンBBチキン",
+        "おミュータンツ",
+        "生ファラオ",
+        "ぶったま",
+        "ブラゴーリ",
+        "ペッパーGuys",
+        "ミカボ",
+        "エルフ",
+        "オフローズ",
+        "スパジーニ",
+        "ド桜",
+        "ビューティフルトーキョーマンズ鈴木バイダン",
+        "アズーロ24",
+        "シンクロニシティ",
+        "ソマオ・ミートボール",
+        "太鵬",
+        "ナイチンゲールダンス中野なかるてぃん",
+        "軟水",
+        "バリカタ友情飯",
+        "ピュート",
+        "マリーマリー",
+        "めぞん",
+        "インテイク",
+        "サンタモニカ",
+        "世界クジラ",
+        "鉄人小町",
+        "ヨネダ2000",
+        "東京24期－31期チーム",
+        "チームリーダー：金魚番長",
+        "ゼロカラン",
+        "イチゴ",
+        "喫茶ムーン",
+        "小虎",
+        "狛犬櫛野",
+        "しんや",
+        "隠れドキュンヤッツ",
+        "大王",
+        "定点計画",
+        "イザナミン",
+        "兄弟",
+        "テキセツの街",
+        "青いデルタ",
+        "イワサキ",
+        "ザンゾウ",
+        "DOG FOOD PARTY",
+        "ぺ",
+        "ボダリキボバイ",
+        "私東京",
+        "アリハガ",
+        "エグい速さ",
+        "セカンドロット",
+        "ニコミハジメテ",
+        "フジーズ",
+        "ボブのコーラ",
+        "ウィークリー習慣",
+        "き展",
+        "伝書鳩",
+        "ド天国",
+        "とりせん",
+        "なでなでボーイ",
+        "ブリタニカ",
+        "球技大会",
+        "ただならぬ刀",
+        "照山おうちごはん",
+        "ドンココ",
+        "ナユタ",
+        "パパパジャマ",
+        "ミナミナミ",
+        "あなたとネ",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-16T04:50:59.411789+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison",
+        "pyuto",
+        "nansui"
       ]
     },
     {
@@ -1131,7 +1710,7 @@
               "label": "先着",
               "startAt": "2026-08-30T10:00:00+09:00",
               "endAt": "2026-09-18T23:59:00+09:00",
-              "saleKey": "fany|pyuto|63814|51190|SS席|前売|first_come|2026-08-30T10:00:00+09:00"
+              "saleKey": "fany|nansui|63814|51190|SS席|前売|first_come|2026-08-30T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-30T10:00:00+09:00",
@@ -1150,7 +1729,7 @@
               "label": "先着",
               "startAt": "2026-08-30T10:00:00+09:00",
               "endAt": "2026-09-18T23:59:00+09:00",
-              "saleKey": "fany|pyuto|63814|51190|S席|前売|first_come|2026-08-30T10:00:00+09:00"
+              "saleKey": "fany|nansui|63814|51190|S席|前売|first_come|2026-08-30T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-30T10:00:00+09:00",
@@ -1169,7 +1748,7 @@
               "label": "先着",
               "startAt": "2026-08-30T10:00:00+09:00",
               "endAt": "2026-09-18T23:59:00+09:00",
-              "saleKey": "fany|pyuto|63814|51190|A席|前売|first_come|2026-08-30T10:00:00+09:00"
+              "saleKey": "fany|nansui|63814|51190|A席|前売|first_come|2026-08-30T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-30T10:00:00+09:00",
@@ -1188,7 +1767,7 @@
               "label": "先着",
               "startAt": "2026-08-30T10:00:00+09:00",
               "endAt": "2026-09-18T23:59:00+09:00",
-              "saleKey": "fany|pyuto|63814|51190|B席|前売|first_come|2026-08-30T10:00:00+09:00"
+              "saleKey": "fany|nansui|63814|51190|B席|前売|first_come|2026-08-30T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-30T10:00:00+09:00",
@@ -1341,7 +1920,8 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison",
-        "pyuto"
+        "pyuto",
+        "nansui"
       ]
     },
     {
@@ -2199,12 +2779,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -2218,12 +2798,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -2237,12 +2817,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -2256,12 +2836,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -2275,12 +2855,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -2294,12 +2874,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -2313,12 +2893,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -2332,12 +2912,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -2351,12 +2931,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -2370,12 +2950,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -2389,12 +2969,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -2408,12 +2988,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -2427,12 +3007,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -2446,12 +3026,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -2465,12 +3045,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -2484,12 +3064,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -2503,12 +3083,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -2522,25 +3102,25 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         }
       ],
       "saleStartAt": "2026-07-29T11:00:00+09:00",
-      "saleEndAt": "2026-09-21T15:00:00+09:00",
+      "saleEndAt": "2026-09-21T17:00:00+09:00",
       "saleCategory": "first_come",
       "salePeriods": [
         {
           "category": "first_come",
           "label": "先着",
           "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-09-21T15:00:00+09:00"
+          "endAt": "2026-09-21T17:00:00+09:00"
         }
       ],
       "performersText": [
@@ -2804,12 +3384,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -2823,12 +3403,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -2842,12 +3422,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -2861,12 +3441,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -2880,12 +3460,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -2899,12 +3479,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -2918,12 +3498,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -2937,12 +3517,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -2956,12 +3536,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -2975,12 +3555,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -2994,12 +3574,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -3013,12 +3593,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -3032,12 +3612,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -3051,12 +3631,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -3070,12 +3650,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -3089,12 +3669,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -3108,12 +3688,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -3127,25 +3707,25 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         }
       ],
       "saleStartAt": "2026-07-29T11:00:00+09:00",
-      "saleEndAt": "2026-09-21T15:00:00+09:00",
+      "saleEndAt": "2026-09-21T17:00:00+09:00",
       "saleCategory": "first_come",
       "salePeriods": [
         {
           "category": "first_come",
           "label": "先着",
           "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-09-21T15:00:00+09:00"
+          "endAt": "2026-09-21T17:00:00+09:00"
         }
       ],
       "performersText": [
@@ -3409,12 +3989,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -3428,12 +4008,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -3447,12 +4027,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -3466,12 +4046,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -3485,12 +4065,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -3504,12 +4084,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -3523,12 +4103,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -3542,12 +4122,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -3561,12 +4141,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -3580,12 +4160,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -3599,12 +4179,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -3618,12 +4198,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -3637,12 +4217,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -3656,12 +4236,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -3675,12 +4255,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -3694,12 +4274,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -3713,12 +4293,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -3732,25 +4312,25 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-21T15:00:00+09:00",
+              "endAt": "2026-09-21T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45208|前売 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleEndAt": "2026-09-21T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         }
       ],
       "saleStartAt": "2026-07-29T11:00:00+09:00",
-      "saleEndAt": "2026-09-21T15:00:00+09:00",
+      "saleEndAt": "2026-09-21T17:00:00+09:00",
       "saleCategory": "first_come",
       "salePeriods": [
         {
           "category": "first_come",
           "label": "先着",
           "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-09-21T15:00:00+09:00"
+          "endAt": "2026-09-21T17:00:00+09:00"
         }
       ],
       "performersText": [
@@ -4698,12 +5278,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -4717,12 +5297,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -4736,12 +5316,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -4755,12 +5335,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -4774,12 +5354,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -4793,12 +5373,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -4812,12 +5392,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -4831,12 +5411,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -4850,12 +5430,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -4869,12 +5449,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -4888,12 +5468,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -4907,25 +5487,25 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         }
       ],
       "saleStartAt": "2026-07-29T11:00:00+09:00",
-      "saleEndAt": "2026-09-22T15:00:00+09:00",
+      "saleEndAt": "2026-09-22T17:00:00+09:00",
       "saleCategory": "first_come",
       "salePeriods": [
         {
           "category": "first_come",
           "label": "先着",
           "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-09-22T15:00:00+09:00"
+          "endAt": "2026-09-22T17:00:00+09:00"
         }
       ],
       "performersText": [
@@ -5189,12 +5769,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -5208,12 +5788,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -5227,12 +5807,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -5246,12 +5826,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -5265,12 +5845,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -5284,12 +5864,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -5303,12 +5883,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -5322,12 +5902,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -5341,12 +5921,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -5360,12 +5940,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -5379,12 +5959,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -5398,25 +5978,25 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         }
       ],
       "saleStartAt": "2026-07-29T11:00:00+09:00",
-      "saleEndAt": "2026-09-22T15:00:00+09:00",
+      "saleEndAt": "2026-09-22T17:00:00+09:00",
       "saleCategory": "first_come",
       "salePeriods": [
         {
           "category": "first_come",
           "label": "先着",
           "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-09-22T15:00:00+09:00"
+          "endAt": "2026-09-22T17:00:00+09:00"
         }
       ],
       "performersText": [
@@ -5680,12 +6260,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -5699,12 +6279,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -5718,12 +6298,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -5737,12 +6317,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -5756,12 +6336,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -5775,12 +6355,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -5794,12 +6374,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -5813,12 +6393,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -5832,12 +6412,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -5851,12 +6431,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -5870,12 +6450,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -5889,25 +6469,25 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-22T15:00:00+09:00",
+              "endAt": "2026-09-22T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45209|前売 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-22T15:00:00+09:00",
+          "saleEndAt": "2026-09-22T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         }
       ],
       "saleStartAt": "2026-07-29T11:00:00+09:00",
-      "saleEndAt": "2026-09-22T15:00:00+09:00",
+      "saleEndAt": "2026-09-22T17:00:00+09:00",
       "saleCategory": "first_come",
       "salePeriods": [
         {
           "category": "first_come",
           "label": "先着",
           "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-09-22T15:00:00+09:00"
+          "endAt": "2026-09-22T17:00:00+09:00"
         }
       ],
       "performersText": [
@@ -6731,12 +7311,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00",
+              "endAt": "2026-09-23T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45210|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleEndAt": "2026-09-23T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -6750,12 +7330,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00",
+              "endAt": "2026-09-23T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45210|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleEndAt": "2026-09-23T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -6769,12 +7349,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00",
+              "endAt": "2026-09-23T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45210|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleEndAt": "2026-09-23T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -6788,12 +7368,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00",
+              "endAt": "2026-09-23T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45210|前売 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleEndAt": "2026-09-23T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -6807,12 +7387,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00",
+              "endAt": "2026-09-23T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45210|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleEndAt": "2026-09-23T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -6826,25 +7406,25 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00",
+              "endAt": "2026-09-23T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45210|前売 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleEndAt": "2026-09-23T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         }
       ],
       "saleStartAt": "2026-07-29T11:00:00+09:00",
-      "saleEndAt": "2026-09-23T15:00:00+09:00",
+      "saleEndAt": "2026-09-23T17:00:00+09:00",
       "saleCategory": "first_come",
       "salePeriods": [
         {
           "category": "first_come",
           "label": "先着",
           "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-09-23T15:00:00+09:00"
+          "endAt": "2026-09-23T17:00:00+09:00"
         }
       ],
       "performersText": [
@@ -7004,12 +7584,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00",
+              "endAt": "2026-09-23T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45210|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleEndAt": "2026-09-23T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -7023,12 +7603,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00",
+              "endAt": "2026-09-23T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45210|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleEndAt": "2026-09-23T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -7042,12 +7622,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00",
+              "endAt": "2026-09-23T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45210|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleEndAt": "2026-09-23T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -7061,12 +7641,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00",
+              "endAt": "2026-09-23T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45210|前売 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleEndAt": "2026-09-23T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -7080,12 +7660,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00",
+              "endAt": "2026-09-23T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45210|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleEndAt": "2026-09-23T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -7099,25 +7679,25 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00",
+              "endAt": "2026-09-23T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45210|前売 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleEndAt": "2026-09-23T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         }
       ],
       "saleStartAt": "2026-07-29T11:00:00+09:00",
-      "saleEndAt": "2026-09-23T15:00:00+09:00",
+      "saleEndAt": "2026-09-23T17:00:00+09:00",
       "saleCategory": "first_come",
       "salePeriods": [
         {
           "category": "first_come",
           "label": "先着",
           "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-09-23T15:00:00+09:00"
+          "endAt": "2026-09-23T17:00:00+09:00"
         }
       ],
       "performersText": [
@@ -7277,12 +7857,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00",
+              "endAt": "2026-09-23T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45210|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleEndAt": "2026-09-23T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -7296,12 +7876,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00",
+              "endAt": "2026-09-23T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45210|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleEndAt": "2026-09-23T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -7315,12 +7895,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00",
+              "endAt": "2026-09-23T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45210|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleEndAt": "2026-09-23T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -7334,12 +7914,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00",
+              "endAt": "2026-09-23T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45210|前売 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleEndAt": "2026-09-23T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -7353,12 +7933,12 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00",
+              "endAt": "2026-09-23T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45210|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleEndAt": "2026-09-23T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         },
@@ -7372,25 +7952,25 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00",
+              "endAt": "2026-09-23T17:00:00+09:00",
               "saleKey": "fany|nansui|54840|45210|前売 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleEndAt": "2026-09-23T17:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着"
         }
       ],
       "saleStartAt": "2026-07-29T11:00:00+09:00",
-      "saleEndAt": "2026-09-23T15:00:00+09:00",
+      "saleEndAt": "2026-09-23T17:00:00+09:00",
       "saleCategory": "first_come",
       "salePeriods": [
         {
           "category": "first_come",
           "label": "先着",
           "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-09-23T15:00:00+09:00"
+          "endAt": "2026-09-23T17:00:00+09:00"
         }
       ],
       "performersText": [
