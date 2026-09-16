@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-16T14:51:52.213509+00:00",
+  "syncedAt": "2026-09-16T15:00:55.419221+00:00",
   "performers": [
     {
       "id": "maison",
@@ -48,90 +48,6 @@
     }
   ],
   "events": [
-    {
-      "performerId": "nansui",
-      "date": "2026-09-16",
-      "openTime": "17:15",
-      "startTime": "17:30",
-      "title": "六本木コントライブNEXT！",
-      "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/61290/49798",
-      "ticketStatus": "",
-      "ticketOptions": [],
-      "saleStartAt": "2026-07-25T11:00:00+09:00",
-      "saleEndAt": "2026-07-28T11:00:00+09:00",
-      "saleCategory": "advance",
-      "salePeriods": [
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-07-25T11:00:00+09:00",
-          "endAt": "2026-07-28T11:00:00+09:00"
-        }
-      ],
-      "performersText": [
-        "ななまがり",
-        "ビスケットブラザーズ",
-        "５ＧＡＰ",
-        "ジャングルポケット",
-        "ヘンダーソン",
-        "コロコロチキチキペッパーズ",
-        "九条ジョー",
-        "ピュート",
-        "軟水",
-        "ぺ",
-        "MC：守谷日和"
-      ],
-      "firstSeenAt": "2026-09-16T04:50:59.411789+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto",
-        "nansui"
-      ]
-    },
-    {
-      "performerId": "pyuto",
-      "date": "2026-09-16",
-      "openTime": "17:15",
-      "startTime": "17:30",
-      "title": "六本木コントライブNEXT！",
-      "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/61290/49798",
-      "ticketStatus": "",
-      "ticketOptions": [],
-      "saleStartAt": "2026-07-25T11:00:00+09:00",
-      "saleEndAt": "2026-07-28T11:00:00+09:00",
-      "saleCategory": "advance",
-      "salePeriods": [
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-07-25T11:00:00+09:00",
-          "endAt": "2026-07-28T11:00:00+09:00"
-        }
-      ],
-      "performersText": [
-        "ななまがり",
-        "ビスケットブラザーズ",
-        "５ＧＡＰ",
-        "ジャングルポケット",
-        "ヘンダーソン",
-        "コロコロチキチキペッパーズ",
-        "九条ジョー",
-        "ピュート",
-        "軟水",
-        "ぺ",
-        "MC：守谷日和"
-      ],
-      "firstSeenAt": "2026-09-15T17:45:09.106097+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto",
-        "nansui"
-      ]
-    },
     {
       "performerId": "maison",
       "date": "2026-09-17",
@@ -560,16 +476,16 @@
       "ticketOptions": [
         {
           "name": "整理番号付き自由席",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥2,500",
+          "price": "￥3,000",
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-08-19T10:00:00+09:00",
               "endAt": "2026-09-17T17:30:00+09:00",
-              "saleKey": "fany|nansui|63895|51232|整理番号付き自由席|前売|first_come|2026-08-19T10:00:00+09:00"
+              "saleKey": "fany|nansui|63895|51232|整理番号付き自由席|当日|first_come|2026-08-19T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-19T10:00:00+09:00",
