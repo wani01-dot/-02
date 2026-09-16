@@ -1,48 +1,9 @@
 {
-  "syncedAt": "2026-09-16T14:43:49.348257+00:00",
-  "total": 138,
-  "ticketListedCount": 138,
-  "ticketUnlistedCount": 0,
+  "syncedAt": "2026-09-16T15:42:56.097217+00:00",
+  "total": 137,
+  "ticketListedCount": 11,
+  "ticketUnlistedCount": 126,
   "events": [
-    {
-      "performerId": "nansui",
-      "date": "2026-09-16",
-      "openTime": "17:15",
-      "startTime": "17:30",
-      "title": "六本木コントライブNEXT！ ※コントパス対象※",
-      "venue": "よしもと六本木シアター",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
-      "theaterId": "roppongi",
-      "theaterName": "六本木",
-      "performersText": [
-        "ななまがり／ビスケットブラザーズ／５ＧＡＰ／ジャングルポケット／ヘンダーソン／コロコロチキチキペッパーズ／九条ジョー／ピュート／軟水／ぺ／MC：守谷日和 【コーナー出演者】 MC：守谷日和／ヘンダーソン／ビスケットブラザーズ／ぺ"
-      ],
-      "trackedPerformers": [
-        "nansui",
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://roppongi.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61290/49798",
-          "title": "六本木コントライブNEXT！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "17:15",
-          "startTime": "17:30",
-          "ticketStatus": ""
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
-    },
     {
       "performerId": "maison",
       "date": "2026-09-17",
@@ -66,30 +27,9 @@
       "discoveryUrls": [
         "https://makuhari.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61093/49713",
-          "title": "幕張平日ネタＳＰ１４時",
-          "venue": "よしもと幕張イオンモール劇場（千葉県）",
-          "openTime": "13:30",
-          "startTime": "14:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 16,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61093/49714",
-          "title": "幕張平日ネタＳＰ１６時",
-          "venue": "よしもと幕張イオンモール劇場（千葉県）",
-          "openTime": "15:30",
-          "startTime": "16:00",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -114,30 +54,9 @@
       "discoveryUrls": [
         "https://makuhari.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61093/49714",
-          "title": "幕張平日ネタＳＰ１６時",
-          "venue": "よしもと幕張イオンモール劇場（千葉県）",
-          "openTime": "15:30",
-          "startTime": "16:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 16,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61093/49713",
-          "title": "幕張平日ネタＳＰ１４時",
-          "venue": "よしもと幕張イオンモール劇場（千葉県）",
-          "openTime": "13:30",
-          "startTime": "14:00",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -163,40 +82,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60497/49415",
-          "title": "神保町Kakeru翔SP",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "16:45",
-          "startTime": "17:00",
-          "ticketStatus": "予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61203/49769",
-          "title": "ウォシュレッツvol．31",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "18:45",
-          "startTime": "19:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63895/51232",
-          "title": "お客様のお悩み解決！コント「お悩み相談室」",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "19:15",
-          "startTime": "19:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "pyuto",
@@ -221,30 +109,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61203/49769",
-          "title": "ウォシュレッツvol．31",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "18:45",
-          "startTime": "19:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60497/49415",
-          "title": "神保町Kakeru翔SP",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "16:45",
-          "startTime": "17:00",
-          "ticketStatus": "予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -269,30 +136,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63895/51232",
-          "title": "お客様のお悩み解決！コント「お悩み相談室」",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "19:15",
-          "startTime": "19:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60497/49415",
-          "title": "神保町Kakeru翔SP",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "16:45",
-          "startTime": "17:00",
-          "ticketStatus": "予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "pyuto",
@@ -317,30 +163,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60594/49453",
-          "title": "渋谷Kiwami極LIVE",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60978/49595",
-          "title": "謎解きライブ 芸人XからのSOS",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "20:45",
-          "startTime": "21:00",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -366,30 +191,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61292/49800",
-          "title": "六本木コントライブNEXT！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "17:15",
-          "startTime": "17:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/62136/50365",
-          "title": "軟水新ネタライブ「印鑑、印鑑ですか？！」",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "19:15",
-          "startTime": "19:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -414,30 +218,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/62136/50365",
-          "title": "軟水新ネタライブ「印鑑、印鑑ですか？！」",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "19:15",
-          "startTime": "19:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61292/49800",
-          "title": "六本木コントライブNEXT！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "17:15",
-          "startTime": "17:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "pyuto",
@@ -462,30 +245,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60978/49595",
-          "title": "謎解きライブ 芸人XからのSOS",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "20:45",
-          "startTime": "21:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60594/49453",
-          "title": "渋谷Kiwami極LIVE",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -510,30 +272,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/67229/53615",
-          "title": "渋谷マンゲキネタSP",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "11:15",
-          "startTime": "11:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63814/51190",
-          "title": "トーキョーマンゲキフェス2026ー渋神三世代決戦ー",
-          "venue": "LINE CUBE SHIBUYA（東京都）",
-          "openTime": "14:30",
-          "startTime": "15:30",
-          "ticketStatus": "一部予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -559,40 +300,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61274/49831",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61274/49830",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "12:45",
-          "startTime": "13:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61274/49846",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "14:45",
-          "startTime": "15:00",
-          "ticketStatus": "予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -618,40 +328,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61274/49830",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "12:45",
-          "startTime": "13:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61274/49831",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61274/49846",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "14:45",
-          "startTime": "15:00",
-          "ticketStatus": "予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -677,40 +356,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61274/49846",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "14:45",
-          "startTime": "15:00",
-          "ticketStatus": "予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61274/49831",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61274/49830",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "12:45",
-          "startTime": "13:00",
-          "ticketStatus": "一部予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "pyuto",
@@ -749,16 +397,6 @@
         },
         {
           "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45208",
-          "title": "【3日通し券・前半2日通し券・9/21(月)1日券】KOYABU SONIC 2026",
-          "venue": "インテックス大阪 4号館、5号館（大阪府）",
-          "openTime": "09:30",
-          "startTime": "10:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
           "source": "eplus",
           "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021001?P1=0175",
           "title": "KOYABU SONIC 2026",
@@ -776,16 +414,6 @@
           "openTime": "",
           "startTime": "11:00",
           "ticketStatus": "予定数終了"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65690/52648",
-          "title": "11月のリサ&ピュートと大阪交友",
-          "venue": "よしもと道頓堀シアター（大阪府）",
-          "openTime": "16:15",
-          "startTime": "16:30",
-          "ticketStatus": "販売中"
         }
       ],
       "ticketListed": true,
@@ -816,16 +444,6 @@
       ],
       "ticketMatches": [
         {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65690/52648",
-          "title": "11月のリサ&ピュートと大阪交友",
-          "venue": "よしもと道頓堀シアター（大阪府）",
-          "openTime": "16:15",
-          "startTime": "16:30",
-          "ticketStatus": "販売中"
-        },
-        {
           "score": 10,
           "source": "eplus",
           "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021004?P1=0175",
@@ -834,16 +452,6 @@
           "openTime": "",
           "startTime": "09:00",
           "ticketStatus": "予定数終了"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45208",
-          "title": "【3日通し券・前半2日通し券・9/21(月)1日券】KOYABU SONIC 2026",
-          "venue": "インテックス大阪 4号館、5号館（大阪府）",
-          "openTime": "09:30",
-          "startTime": "10:30",
-          "ticketStatus": "販売中"
         },
         {
           "score": 10,
@@ -894,36 +502,6 @@
       ],
       "ticketMatches": [
         {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61296/49872",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61296/49882",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "12:30",
-          "startTime": "12:45",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61296/49892",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "14:15",
-          "startTime": "14:30",
-          "ticketStatus": "販売中"
-        },
-        {
           "score": 10,
           "source": "eplus",
           "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021005?P1=0175",
@@ -935,16 +513,6 @@
         },
         {
           "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45209",
-          "title": "【後半2日通し券・9/22(火)1日券】KOYABU SONIC 2026",
-          "venue": "インテックス大阪 4号館、5号館（大阪府）",
-          "openTime": "09:30",
-          "startTime": "10:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
           "source": "eplus",
           "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021002?P1=0175",
           "title": "KOYABU SONIC 2026",
@@ -952,16 +520,6 @@
           "openTime": "09:30",
           "startTime": "10:30",
           "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60787/49555",
-          "title": "イッツアヲヲヲーワールド",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "18:45",
-          "startTime": "19:00",
-          "ticketStatus": "予定数終了"
         }
       ],
       "ticketListed": true,
@@ -992,36 +550,6 @@
       ],
       "ticketMatches": [
         {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63051/50654",
-          "title": "大宮コント交流センター",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "12:15",
-          "startTime": "12:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63115/50669",
-          "title": "音響さん不在のコント寄席～コント中の音は本人の声！？～",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "14:15",
-          "startTime": "14:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63123/50671",
-          "title": "おおみやコントさん～ジェラードン×ビスケットブラザーズ・・・",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "16:15",
-          "startTime": "16:30",
-          "ticketStatus": "販売中"
-        },
-        {
           "score": 10,
           "source": "eplus",
           "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021005?P1=0175",
@@ -1030,16 +558,6 @@
           "openTime": "",
           "startTime": "10:00",
           "ticketStatus": "予定数終了"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45209",
-          "title": "【後半2日通し券・9/22(火)1日券】KOYABU SONIC 2026",
-          "venue": "インテックス大阪 4号館、5号館（大阪府）",
-          "openTime": "09:30",
-          "startTime": "10:30",
-          "ticketStatus": "販売中"
         },
         {
           "score": 10,
@@ -1080,36 +598,6 @@
       ],
       "ticketMatches": [
         {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61296/49882",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "12:30",
-          "startTime": "12:45",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61296/49872",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61296/49892",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "14:15",
-          "startTime": "14:30",
-          "ticketStatus": "販売中"
-        },
-        {
           "score": 10,
           "source": "eplus",
           "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021005?P1=0175",
@@ -1121,16 +609,6 @@
         },
         {
           "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45209",
-          "title": "【後半2日通し券・9/22(火)1日券】KOYABU SONIC 2026",
-          "venue": "インテックス大阪 4号館、5号館（大阪府）",
-          "openTime": "09:30",
-          "startTime": "10:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
           "source": "eplus",
           "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021002?P1=0175",
           "title": "KOYABU SONIC 2026",
@@ -1138,16 +616,6 @@
           "openTime": "09:30",
           "startTime": "10:30",
           "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60787/49555",
-          "title": "イッツアヲヲヲーワールド",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "18:45",
-          "startTime": "19:00",
-          "ticketStatus": "予定数終了"
         }
       ],
       "ticketListed": true,
@@ -1178,36 +646,6 @@
       ],
       "ticketMatches": [
         {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61296/49892",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "14:15",
-          "startTime": "14:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61296/49872",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61296/49882",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "12:30",
-          "startTime": "12:45",
-          "ticketStatus": "販売中"
-        },
-        {
           "score": 10,
           "source": "eplus",
           "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021005?P1=0175",
@@ -1219,16 +657,6 @@
         },
         {
           "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45209",
-          "title": "【後半2日通し券・9/22(火)1日券】KOYABU SONIC 2026",
-          "venue": "インテックス大阪 4号館、5号館（大阪府）",
-          "openTime": "09:30",
-          "startTime": "10:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
           "source": "eplus",
           "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021002?P1=0175",
           "title": "KOYABU SONIC 2026",
@@ -1236,16 +664,6 @@
           "openTime": "09:30",
           "startTime": "10:30",
           "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60787/49555",
-          "title": "イッツアヲヲヲーワールド",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "18:45",
-          "startTime": "19:00",
-          "ticketStatus": "予定数終了"
         }
       ],
       "ticketListed": true,
@@ -1277,36 +695,6 @@
       ],
       "ticketMatches": [
         {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63115/50669",
-          "title": "音響さん不在のコント寄席～コント中の音は本人の声！？～",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "14:15",
-          "startTime": "14:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63051/50654",
-          "title": "大宮コント交流センター",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "12:15",
-          "startTime": "12:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63123/50671",
-          "title": "おおみやコントさん～ジェラードン×ビスケットブラザーズ・・・",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "16:15",
-          "startTime": "16:30",
-          "ticketStatus": "販売中"
-        },
-        {
           "score": 10,
           "source": "eplus",
           "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021005?P1=0175",
@@ -1315,16 +703,6 @@
           "openTime": "",
           "startTime": "10:00",
           "ticketStatus": "予定数終了"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45209",
-          "title": "【後半2日通し券・9/22(火)1日券】KOYABU SONIC 2026",
-          "venue": "インテックス大阪 4号館、5号館（大阪府）",
-          "openTime": "09:30",
-          "startTime": "10:30",
-          "ticketStatus": "販売中"
         },
         {
           "score": 10,
@@ -1365,36 +743,6 @@
       ],
       "ticketMatches": [
         {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63123/50671",
-          "title": "おおみやコントさん～ジェラードン×ビスケットブラザーズ・・・",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "16:15",
-          "startTime": "16:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63051/50654",
-          "title": "大宮コント交流センター",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "12:15",
-          "startTime": "12:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63115/50669",
-          "title": "音響さん不在のコント寄席～コント中の音は本人の声！？～",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "14:15",
-          "startTime": "14:30",
-          "ticketStatus": "販売中"
-        },
-        {
           "score": 10,
           "source": "eplus",
           "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021005?P1=0175",
@@ -1403,16 +751,6 @@
           "openTime": "",
           "startTime": "10:00",
           "ticketStatus": "予定数終了"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45209",
-          "title": "【後半2日通し券・9/22(火)1日券】KOYABU SONIC 2026",
-          "venue": "インテックス大阪 4号館、5号館（大阪府）",
-          "openTime": "09:30",
-          "startTime": "10:30",
-          "ticketStatus": "販売中"
         },
         {
           "score": 10,
@@ -1453,16 +791,6 @@
       ],
       "ticketMatches": [
         {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60787/49555",
-          "title": "イッツアヲヲヲーワールド",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "18:45",
-          "startTime": "19:00",
-          "ticketStatus": "予定数終了"
-        },
-        {
           "score": 10,
           "source": "eplus",
           "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021005?P1=0175",
@@ -1474,16 +802,6 @@
         },
         {
           "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45209",
-          "title": "【後半2日通し券・9/22(火)1日券】KOYABU SONIC 2026",
-          "venue": "インテックス大阪 4号館、5号館（大阪府）",
-          "openTime": "09:30",
-          "startTime": "10:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
           "source": "eplus",
           "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021002?P1=0175",
           "title": "KOYABU SONIC 2026",
@@ -1491,36 +809,6 @@
           "openTime": "09:30",
           "startTime": "10:30",
           "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61296/49872",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61296/49882",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "12:30",
-          "startTime": "12:45",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61296/49892",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "14:15",
-          "startTime": "14:30",
-          "ticketStatus": "販売中"
         }
       ],
       "ticketListed": true,
@@ -1550,60 +838,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60605/49468",
-          "title": "六本木お笑いコントライブ！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "11:45",
-          "startTime": "12:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 16,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60605/49481",
-          "title": "六本木お笑いコントライブ！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "13:45",
-          "startTime": "14:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 16,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60605/49482",
-          "title": "六本木お笑いコントライブ！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "15:45",
-          "startTime": "16:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210",
-          "title": "【9/23(水)1日券】KOYABU SONIC 2026",
-          "venue": "インテックス大阪 4号館、5号館（大阪府）",
-          "openTime": "09:30",
-          "startTime": "10:30",
-          "ticketStatus": "残りわずか"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/62728/50502",
-          "title": "東京コントセッション",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "18:15",
-          "startTime": "18:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -1628,60 +865,9 @@
       "discoveryUrls": [
         "https://omiya.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61301/49902",
-          "title": "大宮ラクーンよしもと寄席 その壱",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "12:15",
-          "startTime": "12:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61301/49903",
-          "title": "大宮ラクーンよしもと寄席 その弐",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "14:15",
-          "startTime": "14:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63124/50667",
-          "title": "Shhhh！！！～騒がしい芸人が今日は静かにゲームコーナー！～",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "16:15",
-          "startTime": "16:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63125/50666",
-          "title": "タコスのタコスパーティー！",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "18:15",
-          "startTime": "18:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210",
-          "title": "【9/23(水)1日券】KOYABU SONIC 2026",
-          "venue": "インテックス大阪 4号館、5号館（大阪府）",
-          "openTime": "09:30",
-          "startTime": "10:30",
-          "ticketStatus": "残りわずか"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -1706,60 +892,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60605/49481",
-          "title": "六本木お笑いコントライブ！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "13:45",
-          "startTime": "14:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 16,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60605/49468",
-          "title": "六本木お笑いコントライブ！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "11:45",
-          "startTime": "12:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 16,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60605/49482",
-          "title": "六本木お笑いコントライブ！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "15:45",
-          "startTime": "16:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210",
-          "title": "【9/23(水)1日券】KOYABU SONIC 2026",
-          "venue": "インテックス大阪 4号館、5号館（大阪府）",
-          "openTime": "09:30",
-          "startTime": "10:30",
-          "ticketStatus": "残りわずか"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/62728/50502",
-          "title": "東京コントセッション",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "18:15",
-          "startTime": "18:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -1784,60 +919,9 @@
       "discoveryUrls": [
         "https://omiya.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61301/49903",
-          "title": "大宮ラクーンよしもと寄席 その弐",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "14:15",
-          "startTime": "14:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61301/49902",
-          "title": "大宮ラクーンよしもと寄席 その壱",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "12:15",
-          "startTime": "12:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63124/50667",
-          "title": "Shhhh！！！～騒がしい芸人が今日は静かにゲームコーナー！～",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "16:15",
-          "startTime": "16:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63125/50666",
-          "title": "タコスのタコスパーティー！",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "18:15",
-          "startTime": "18:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210",
-          "title": "【9/23(水)1日券】KOYABU SONIC 2026",
-          "venue": "インテックス大阪 4号館、5号館（大阪府）",
-          "openTime": "09:30",
-          "startTime": "10:30",
-          "ticketStatus": "残りわずか"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -1862,60 +946,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60605/49482",
-          "title": "六本木お笑いコントライブ！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "15:45",
-          "startTime": "16:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 16,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60605/49468",
-          "title": "六本木お笑いコントライブ！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "11:45",
-          "startTime": "12:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 16,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60605/49481",
-          "title": "六本木お笑いコントライブ！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "13:45",
-          "startTime": "14:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210",
-          "title": "【9/23(水)1日券】KOYABU SONIC 2026",
-          "venue": "インテックス大阪 4号館、5号館（大阪府）",
-          "openTime": "09:30",
-          "startTime": "10:30",
-          "ticketStatus": "残りわずか"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/62728/50502",
-          "title": "東京コントセッション",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "18:15",
-          "startTime": "18:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -1940,60 +973,9 @@
       "discoveryUrls": [
         "https://omiya.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63124/50667",
-          "title": "Shhhh！！！～騒がしい芸人が今日は静かにゲームコーナー！～",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "16:15",
-          "startTime": "16:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61301/49902",
-          "title": "大宮ラクーンよしもと寄席 その壱",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "12:15",
-          "startTime": "12:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61301/49903",
-          "title": "大宮ラクーンよしもと寄席 その弐",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "14:15",
-          "startTime": "14:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63125/50666",
-          "title": "タコスのタコスパーティー！",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "18:15",
-          "startTime": "18:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210",
-          "title": "【9/23(水)1日券】KOYABU SONIC 2026",
-          "venue": "インテックス大阪 4号館、5号館（大阪府）",
-          "openTime": "09:30",
-          "startTime": "10:30",
-          "ticketStatus": "残りわずか"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -2018,60 +1000,9 @@
       "discoveryUrls": [
         "https://omiya.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63125/50666",
-          "title": "タコスのタコスパーティー！",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "18:15",
-          "startTime": "18:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61301/49902",
-          "title": "大宮ラクーンよしもと寄席 その壱",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "12:15",
-          "startTime": "12:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61301/49903",
-          "title": "大宮ラクーンよしもと寄席 その弐",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "14:15",
-          "startTime": "14:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63124/50667",
-          "title": "Shhhh！！！～騒がしい芸人が今日は静かにゲームコーナー！～",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "16:15",
-          "startTime": "16:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210",
-          "title": "【9/23(水)1日券】KOYABU SONIC 2026",
-          "venue": "インテックス大阪 4号館、5号館（大阪府）",
-          "openTime": "09:30",
-          "startTime": "10:30",
-          "ticketStatus": "残りわずか"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -2096,60 +1027,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/62728/50502",
-          "title": "東京コントセッション",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "18:15",
-          "startTime": "18:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210",
-          "title": "【9/23(水)1日券】KOYABU SONIC 2026",
-          "venue": "インテックス大阪 4号館、5号館（大阪府）",
-          "openTime": "09:30",
-          "startTime": "10:30",
-          "ticketStatus": "残りわずか"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60605/49468",
-          "title": "六本木お笑いコントライブ！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "11:45",
-          "startTime": "12:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60605/49481",
-          "title": "六本木お笑いコントライブ！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "13:45",
-          "startTime": "14:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60605/49482",
-          "title": "六本木お笑いコントライブ！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "15:45",
-          "startTime": "16:00",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -2174,20 +1054,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61292/49801",
-          "title": "六本木コントライブNEXT！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "16:15",
-          "startTime": "16:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -2212,30 +1081,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60594/49454",
-          "title": "渋谷Kiwami極LIVE",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61209/49773",
-          "title": "ファティゲなおばあちゃん",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "21:00",
-          "startTime": "21:15",
-          "ticketStatus": "残りわずか"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "pyuto",
@@ -2260,30 +1108,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61292/49802",
-          "title": "六本木コントライブNEXT！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "17:15",
-          "startTime": "17:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/62134/50364",
-          "title": "ピュートvs11月のリサ",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "20:45",
-          "startTime": "21:00",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "pyuto",
@@ -2309,30 +1136,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61292/49802",
-          "title": "六本木コントライブNEXT！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "17:15",
-          "startTime": "17:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/62134/50364",
-          "title": "ピュートvs11月のリサ",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "20:45",
-          "startTime": "21:00",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "pyuto",
@@ -2357,30 +1163,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/62134/50364",
-          "title": "ピュートvs11月のリサ",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "20:45",
-          "startTime": "21:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61292/49802",
-          "title": "六本木コントライブNEXT！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "17:15",
-          "startTime": "17:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -2405,30 +1190,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61209/49773",
-          "title": "ファティゲなおばあちゃん",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "21:00",
-          "startTime": "21:15",
-          "ticketStatus": "残りわずか"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60594/49454",
-          "title": "渋谷Kiwami極LIVE",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -2454,60 +1218,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61274/49839",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61274/49838",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "12:45",
-          "startTime": "13:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61274/49850",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "14:45",
-          "startTime": "15:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60792/49571",
-          "title": "三遊間×軟水",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63107/50683",
-          "title": "マリーマリー×軟水の火曜がっちゃんこ ロイヤルマリッジロード",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "18:45",
-          "startTime": "19:00",
-          "ticketStatus": "予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -2532,40 +1245,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61274/49838",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "12:45",
-          "startTime": "13:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61274/49839",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61274/49850",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "14:45",
-          "startTime": "15:00",
-          "ticketStatus": "一部予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "pyuto",
@@ -2590,30 +1272,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60605/49483",
-          "title": "六本木お笑いコントライブ！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "14:15",
-          "startTime": "14:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/62697/50491",
-          "title": "わすれもの！～残された小道具を使い続けるライブ～",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "19:15",
-          "startTime": "19:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -2640,60 +1301,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61274/49850",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "14:45",
-          "startTime": "15:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61274/49839",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61274/49838",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "12:45",
-          "startTime": "13:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60792/49571",
-          "title": "三遊間×軟水",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63107/50683",
-          "title": "マリーマリー×軟水の火曜がっちゃんこ ロイヤルマリッジロード",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "18:45",
-          "startTime": "19:00",
-          "ticketStatus": "予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -2719,40 +1329,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60792/49571",
-          "title": "三遊間×軟水",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61274/49839",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63107/50683",
-          "title": "マリーマリー×軟水の火曜がっちゃんこ ロイヤルマリッジロード",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "18:45",
-          "startTime": "19:00",
-          "ticketStatus": "予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -2777,40 +1356,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63107/50683",
-          "title": "マリーマリー×軟水の火曜がっちゃんこ ロイヤルマリッジロード",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "18:45",
-          "startTime": "19:00",
-          "ticketStatus": "予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61274/49839",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60792/49571",
-          "title": "三遊間×軟水",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "pyuto",
@@ -2835,30 +1383,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/62697/50491",
-          "title": "わすれもの！～残された小道具を使い続けるライブ～",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "19:15",
-          "startTime": "19:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60605/49483",
-          "title": "六本木お笑いコントライブ！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "14:15",
-          "startTime": "14:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "pyuto",
@@ -2883,40 +1410,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61274/49841",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61274/49840",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "12:45",
-          "startTime": "13:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61274/49851",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "14:45",
-          "startTime": "15:00",
-          "ticketStatus": "一部予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "pyuto",
@@ -2941,40 +1437,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61274/49840",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "12:45",
-          "startTime": "13:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61274/49841",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61274/49851",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "14:45",
-          "startTime": "15:00",
-          "ticketStatus": "一部予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "pyuto",
@@ -2999,40 +1464,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61274/49851",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "14:45",
-          "startTime": "15:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61274/49841",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61274/49840",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "12:45",
-          "startTime": "13:00",
-          "ticketStatus": "一部予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -3057,20 +1491,9 @@
       "discoveryUrls": [
         "https://manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/62331/50083",
-          "title": "ごきげん会？ポポポポーン？",
-          "venue": "よしもと漫才劇場（大阪府）",
-          "openTime": "17:45",
-          "startTime": "18:00",
-          "ticketStatus": "一部予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -3095,30 +1518,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60594/49490",
-          "title": "渋谷Kiwami極LIVE",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60996/49609",
-          "title": "超時空笑塞メゾロス",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "20:45",
-          "startTime": "21:00",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -3143,30 +1545,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60996/49609",
-          "title": "超時空笑塞メゾロス",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "20:45",
-          "startTime": "21:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60594/49490",
-          "title": "渋谷Kiwami極LIVE",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -3191,20 +1572,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60594/49491",
-          "title": "渋谷Kiwami極LIVE",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -3229,30 +1599,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60497/49418",
-          "title": "神保町Kakeru翔SP",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "17:15",
-          "startTime": "17:30",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63335/50900",
-          "title": "若手芸人HIPHOP同好会 2026年9月号",
-          "venue": "下北沢ろくでもない夜（東京都）",
-          "openTime": "18:30",
-          "startTime": "19:00",
-          "ticketStatus": "予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -3277,40 +1626,9 @@
       "discoveryUrls": [
         "https://omiya.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66201/52714",
-          "title": "めぞん×ヨネダ2000ツーマンライブ「よす～」",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "17:20",
-          "startTime": "17:30",
-          "ticketStatus": "予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66476/52833",
-          "title": "決勝進出者だらけの激アツ寄席",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "18:50",
-          "startTime": "19:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66484/52832",
-          "title": "おおみやなかよし診断～最強のなかよしコンビを決めよう！～",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "20:20",
-          "startTime": "20:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -3335,40 +1653,9 @@
       "discoveryUrls": [
         "https://omiya.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66476/52833",
-          "title": "決勝進出者だらけの激アツ寄席",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "18:50",
-          "startTime": "19:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66201/52714",
-          "title": "めぞん×ヨネダ2000ツーマンライブ「よす～」",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "17:20",
-          "startTime": "17:30",
-          "ticketStatus": "予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66484/52832",
-          "title": "おおみやなかよし診断～最強のなかよしコンビを決めよう！～",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "20:20",
-          "startTime": "20:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -3393,40 +1680,9 @@
       "discoveryUrls": [
         "https://omiya.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66484/52832",
-          "title": "おおみやなかよし診断～最強のなかよしコンビを決めよう！～",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "20:20",
-          "startTime": "20:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66201/52714",
-          "title": "めぞん×ヨネダ2000ツーマンライブ「よす～」",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "17:20",
-          "startTime": "17:30",
-          "ticketStatus": "予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66476/52833",
-          "title": "決勝進出者だらけの激アツ寄席",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "18:50",
-          "startTime": "19:00",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -3453,16 +1709,6 @@
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65052/52415",
-          "title": "エレクトリカルコーナーライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "21:00",
-          "startTime": "21:15",
-          "ticketStatus": "一部予定数終了"
-        },
         {
           "score": 10,
           "source": "tiget",
@@ -3500,60 +1746,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52355",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52356",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "12:30",
-          "startTime": "12:45",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52357",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "14:15",
-          "startTime": "14:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/67342/53666",
-          "title": "おおみや差しライブ～ケビンス×めぞん～",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "16:15",
-          "startTime": "16:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66667/52965",
-          "title": "NO＿MARK",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "18:15",
-          "startTime": "18:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -3578,60 +1773,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52356",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "12:30",
-          "startTime": "12:45",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52355",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52357",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "14:15",
-          "startTime": "14:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/67342/53666",
-          "title": "おおみや差しライブ～ケビンス×めぞん～",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "16:15",
-          "startTime": "16:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66667/52965",
-          "title": "NO＿MARK",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "18:15",
-          "startTime": "18:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -3657,60 +1801,9 @@
       "discoveryUrls": [
         "https://omiya.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52357",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "14:15",
-          "startTime": "14:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/67342/53666",
-          "title": "おおみや差しライブ～ケビンス×めぞん～",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "16:15",
-          "startTime": "16:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66667/52965",
-          "title": "NO＿MARK",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "18:15",
-          "startTime": "18:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52355",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52356",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "12:30",
-          "startTime": "12:45",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -3735,60 +1828,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52357",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "14:15",
-          "startTime": "14:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52355",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52356",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "12:30",
-          "startTime": "12:45",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/67342/53666",
-          "title": "おおみや差しライブ～ケビンス×めぞん～",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "16:15",
-          "startTime": "16:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66667/52965",
-          "title": "NO＿MARK",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "18:15",
-          "startTime": "18:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -3813,60 +1855,9 @@
       "discoveryUrls": [
         "https://omiya.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/67342/53666",
-          "title": "おおみや差しライブ～ケビンス×めぞん～",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "16:15",
-          "startTime": "16:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66667/52965",
-          "title": "NO＿MARK",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "18:15",
-          "startTime": "18:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52355",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52356",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "12:30",
-          "startTime": "12:45",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52357",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "14:15",
-          "startTime": "14:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -3891,40 +1882,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64819/52170",
-          "title": "ごきげん会？ポポポポーン？",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/67008/53521",
-          "title": "田津原理音 PHOTO COMEDY [closest] #4",
-          "venue": "新宿シアターモリエール（東京都）",
-          "openTime": "11:45",
-          "startTime": "12:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/67247/53623",
-          "title": "六本木ブラゴーリパーク",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "20:45",
-          "startTime": "21:00",
-          "ticketStatus": ""
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -3949,60 +1909,9 @@
       "discoveryUrls": [
         "https://omiya.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66667/52965",
-          "title": "NO＿MARK",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "18:15",
-          "startTime": "18:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/67342/53666",
-          "title": "おおみや差しライブ～ケビンス×めぞん～",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "16:15",
-          "startTime": "16:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52355",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52356",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "12:30",
-          "startTime": "12:45",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52357",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "14:15",
-          "startTime": "14:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "pyuto",
@@ -4027,20 +1936,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65054/52417",
-          "title": "新ネタ音曲漫才 ～ゲストを交えてネタ＆トーク～",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "20:30",
-          "startTime": "20:45",
-          "ticketStatus": "一部予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -4065,40 +1963,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/67247/53623",
-          "title": "六本木ブラゴーリパーク",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "20:45",
-          "startTime": "21:00",
-          "ticketStatus": ""
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/67008/53521",
-          "title": "田津原理音 PHOTO COMEDY [closest] #4",
-          "venue": "新宿シアターモリエール（東京都）",
-          "openTime": "11:45",
-          "startTime": "12:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64819/52170",
-          "title": "ごきげん会？ポポポポーン？",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -4123,50 +1990,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52230",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52231",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "12:45",
-          "startTime": "13:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52232",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "14:45",
-          "startTime": "15:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64820/52174",
-          "title": "セカンドロット新ネタライブ「全マシ」",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "pyuto",
@@ -4191,30 +2017,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64258/51726",
-          "title": "六本木お笑いコントライブ！週末SP",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "11:45",
-          "startTime": "12:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 16,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64258/51731",
-          "title": "六本木お笑いコントライブ！週末SP",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "13:45",
-          "startTime": "14:00",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -4239,50 +2044,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52231",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "12:45",
-          "startTime": "13:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52230",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52232",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "14:45",
-          "startTime": "15:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64820/52174",
-          "title": "セカンドロット新ネタライブ「全マシ」",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "pyuto",
@@ -4307,30 +2071,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64258/51731",
-          "title": "六本木お笑いコントライブ！週末SP",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "13:45",
-          "startTime": "14:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 16,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64258/51726",
-          "title": "六本木お笑いコントライブ！週末SP",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "11:45",
-          "startTime": "12:00",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -4355,50 +2098,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52232",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "14:45",
-          "startTime": "15:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52230",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52231",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "12:45",
-          "startTime": "13:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64820/52174",
-          "title": "セカンドロット新ネタライブ「全マシ」",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -4423,50 +2125,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64820/52174",
-          "title": "セカンドロット新ネタライブ「全マシ」",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52230",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52231",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "12:45",
-          "startTime": "13:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52232",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "14:45",
-          "startTime": "15:00",
-          "ticketStatus": "一部予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -4491,20 +2152,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64824/52171",
-          "title": "漫才小学校",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "20:45",
-          "startTime": "21:00",
-          "ticketStatus": "予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -4531,30 +2181,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64323/51811",
-          "title": "渋谷Kiwami極LIVE",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65389/52473",
-          "title": "ガチ飯コントライブ",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "19:00",
-          "startTime": "19:15",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -4579,30 +2208,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65389/52473",
-          "title": "ガチ飯コントライブ",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "19:00",
-          "startTime": "19:15",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64323/51811",
-          "title": "渋谷Kiwami極LIVE",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -4628,20 +2236,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64359/51899",
-          "title": "六本木コントライブNEXT！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "17:15",
-          "startTime": "17:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -4666,20 +2263,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64580/52131",
-          "title": "チームバイブスデカマグマ二次元ギャルズ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "19:00",
-          "startTime": "19:15",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -4704,40 +2290,9 @@
       "discoveryUrls": [
         "https://makuhari.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64915/52277",
-          "title": "幕張平日ネタＳＰ１４時",
-          "venue": "よしもと幕張イオンモール劇場（千葉県）",
-          "openTime": "13:30",
-          "startTime": "14:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 16,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64915/52278",
-          "title": "幕張平日ネタＳＰ１６時",
-          "venue": "よしもと幕張イオンモール劇場（千葉県）",
-          "openTime": "15:30",
-          "startTime": "16:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65353/52479",
-          "title": "原一刻が本当に歩いて帰る可能性がある幕張コーナーバトル",
-          "venue": "よしもと幕張イオンモール劇場（千葉県）",
-          "openTime": "17:30",
-          "startTime": "18:00",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -4762,40 +2317,9 @@
       "discoveryUrls": [
         "https://makuhari.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64915/52278",
-          "title": "幕張平日ネタＳＰ１６時",
-          "venue": "よしもと幕張イオンモール劇場（千葉県）",
-          "openTime": "15:30",
-          "startTime": "16:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 16,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64915/52277",
-          "title": "幕張平日ネタＳＰ１４時",
-          "venue": "よしもと幕張イオンモール劇場（千葉県）",
-          "openTime": "13:30",
-          "startTime": "14:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65353/52479",
-          "title": "原一刻が本当に歩いて帰る可能性がある幕張コーナーバトル",
-          "venue": "よしもと幕張イオンモール劇場（千葉県）",
-          "openTime": "17:30",
-          "startTime": "18:00",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -4820,40 +2344,9 @@
       "discoveryUrls": [
         "https://makuhari.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65353/52479",
-          "title": "原一刻が本当に歩いて帰る可能性がある幕張コーナーバトル",
-          "venue": "よしもと幕張イオンモール劇場（千葉県）",
-          "openTime": "17:30",
-          "startTime": "18:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64915/52277",
-          "title": "幕張平日ネタＳＰ１４時",
-          "venue": "よしもと幕張イオンモール劇場（千葉県）",
-          "openTime": "13:30",
-          "startTime": "14:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64915/52278",
-          "title": "幕張平日ネタＳＰ１６時",
-          "venue": "よしもと幕張イオンモール劇場（千葉県）",
-          "openTime": "15:30",
-          "startTime": "16:00",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -4878,20 +2371,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65392/52466",
-          "title": "軟水新ネタライブ「兄弟かと思いました！」",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "18:45",
-          "startTime": "19:00",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -4916,20 +2398,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65392/52466",
-          "title": "軟水新ネタライブ「兄弟かと思いました！」",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "18:45",
-          "startTime": "19:00",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -4956,60 +2427,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52236",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52237",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "12:45",
-          "startTime": "13:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52238",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "14:45",
-          "startTime": "15:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65058/52411",
-          "title": "伝書鳩が後世に残したいネタを残すためのライブ「伝承鳩」",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "19:30",
-          "startTime": "19:45",
-          "ticketStatus": "予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65057/52413",
-          "title": "ウォシュレッツvol．32",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "17:15",
-          "startTime": "17:30",
-          "ticketStatus": "一部予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -5036,60 +2456,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52237",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "12:45",
-          "startTime": "13:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52236",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52238",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "14:45",
-          "startTime": "15:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65058/52411",
-          "title": "伝書鳩が後世に残したいネタを残すためのライブ「伝承鳩」",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "19:30",
-          "startTime": "19:45",
-          "ticketStatus": "予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65057/52413",
-          "title": "ウォシュレッツvol．32",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "17:15",
-          "startTime": "17:30",
-          "ticketStatus": "一部予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -5116,60 +2485,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52238",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "14:45",
-          "startTime": "15:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52236",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52237",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "12:45",
-          "startTime": "13:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65058/52411",
-          "title": "伝書鳩が後世に残したいネタを残すためのライブ「伝承鳩」",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "19:30",
-          "startTime": "19:45",
-          "ticketStatus": "予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65057/52413",
-          "title": "ウォシュレッツvol．32",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "17:15",
-          "startTime": "17:30",
-          "ticketStatus": "一部予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "pyuto",
@@ -5194,50 +2512,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65057/52413",
-          "title": "ウォシュレッツvol．32",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "17:15",
-          "startTime": "17:30",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52236",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52237",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "12:45",
-          "startTime": "13:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52238",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "14:45",
-          "startTime": "15:00",
-          "ticketStatus": "一部予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -5262,50 +2539,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65058/52411",
-          "title": "伝書鳩が後世に残したいネタを残すためのライブ「伝承鳩」",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "19:30",
-          "startTime": "19:45",
-          "ticketStatus": "予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52236",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52237",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "12:45",
-          "startTime": "13:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52238",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "14:45",
-          "startTime": "15:00",
-          "ticketStatus": "一部予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -5330,50 +2566,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52367",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52368",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "12:30",
-          "startTime": "12:45",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52369",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "14:15",
-          "startTime": "14:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64589/52142",
-          "title": "激！エデン化計画",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "16:30",
-          "startTime": "16:45",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -5398,50 +2593,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52368",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "12:30",
-          "startTime": "12:45",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52367",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52369",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "14:15",
-          "startTime": "14:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64589/52142",
-          "title": "激！エデン化計画",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "16:30",
-          "startTime": "16:45",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -5466,50 +2620,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52369",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "14:15",
-          "startTime": "14:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52367",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52368",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "12:30",
-          "startTime": "12:45",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64589/52142",
-          "title": "激！エデン化計画",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "16:30",
-          "startTime": "16:45",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -5534,50 +2647,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64589/52142",
-          "title": "激！エデン化計画",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "16:30",
-          "startTime": "16:45",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52367",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52368",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "12:30",
-          "startTime": "12:45",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52369",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "14:15",
-          "startTime": "14:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -5604,16 +2676,6 @@
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64833/52189",
-          "title": "コマンドー",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "19:15",
-          "startTime": "19:30",
-          "ticketStatus": "販売中"
-        },
         {
           "score": 10,
           "source": "tiget",
@@ -5652,40 +2714,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64359/51901",
-          "title": "六本木コントライブNEXT！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "16:45",
-          "startTime": "17:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66152/52692",
-          "title": "ミラクルコントパフォーマーズ",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "18:30",
-          "startTime": "18:45",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66153/52701",
-          "title": "椎木vsタコス ～MCが上手いのは俺だ～",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "20:15",
-          "startTime": "20:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -5710,40 +2741,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66152/52692",
-          "title": "ミラクルコントパフォーマーズ",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "18:30",
-          "startTime": "18:45",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64359/51901",
-          "title": "六本木コントライブNEXT！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "16:45",
-          "startTime": "17:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66153/52701",
-          "title": "椎木vsタコス ～MCが上手いのは俺だ～",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "20:15",
-          "startTime": "20:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -5769,40 +2769,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66153/52701",
-          "title": "椎木vsタコス ～MCが上手いのは俺だ～",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "20:15",
-          "startTime": "20:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64359/51901",
-          "title": "六本木コントライブNEXT！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "16:45",
-          "startTime": "17:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66152/52692",
-          "title": "ミラクルコントパフォーマーズ",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "18:30",
-          "startTime": "18:45",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -5827,30 +2796,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64333/51827",
-          "title": "渋谷Kiwami極LIVEプラス＋",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64596/52157",
-          "title": "超時空笑塞メゾロス",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "20:45",
-          "startTime": "21:00",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -5875,20 +2823,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64359/51902",
-          "title": "六本木コントライブNEXT！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "17:15",
-          "startTime": "17:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -5913,30 +2850,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64596/52157",
-          "title": "超時空笑塞メゾロス",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "20:45",
-          "startTime": "21:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64333/51827",
-          "title": "渋谷Kiwami極LIVEプラス＋",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -5961,40 +2877,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52242",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52243",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "12:45",
-          "startTime": "13:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52244",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "14:45",
-          "startTime": "15:00",
-          "ticketStatus": "一部予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -6019,40 +2904,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52243",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "12:45",
-          "startTime": "13:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52242",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52244",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "14:45",
-          "startTime": "15:00",
-          "ticketStatus": "一部予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -6077,40 +2931,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52244",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "14:45",
-          "startTime": "15:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52242",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52243",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "12:45",
-          "startTime": "13:00",
-          "ticketStatus": "一部予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "pyuto",
@@ -6135,20 +2958,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64355/51911",
-          "title": "グランドバトルEAST 第二部",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "20:00",
-          "startTime": "20:15",
-          "ticketStatus": "残りわずか"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -6174,30 +2986,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64355/51912",
-          "title": "グランドバトルEAST 第三部",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "16:45",
-          "startTime": "17:00",
-          "ticketStatus": "残りわずか"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66753/52989",
-          "title": "漫１０（まんてん）",
-          "venue": "ルミネtheよしもと（東京都）",
-          "openTime": "18:30",
-          "startTime": "19:00",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "pyuto",
@@ -6222,20 +3013,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/67423/53717",
-          "title": "ドーパミン大放出コントライブ「ドパコン」",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "19:15",
-          "startTime": "19:30",
-          "ticketStatus": ""
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -6260,20 +3040,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64323/51815",
-          "title": "渋谷Kiwami極LIVE",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -6298,20 +3067,9 @@
       "discoveryUrls": [
         "https://manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65884/52102",
-          "title": "マンゲキメンバーでオーダー組んで寄席してみました",
-          "venue": "よしもと漫才劇場（大阪府）",
-          "openTime": "19:15",
-          "startTime": "19:30",
-          "ticketStatus": "一部予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -6336,30 +3094,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64359/51905",
-          "title": "六本木コントライブNEXT！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "17:15",
-          "startTime": "17:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66155/52699",
-          "title": "トイレッツ",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "20:45",
-          "startTime": "21:00",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -6384,20 +3121,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64847/52188",
-          "title": "VSバラエティ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "19:15",
-          "startTime": "19:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -6422,30 +3148,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66155/52699",
-          "title": "トイレッツ",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "20:45",
-          "startTime": "21:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64359/51905",
-          "title": "六本木コントライブNEXT！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "17:15",
-          "startTime": "17:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -6471,20 +3176,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65398/52477",
-          "title": "シチュエーションコントライブ",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "17:15",
-          "startTime": "17:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -6509,30 +3203,9 @@
       "discoveryUrls": [
         "https://omiya.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66807/53117",
-          "title": "負けたら吉野HIITをしないと出れない劇場",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "18:50",
-          "startTime": "19:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64979/52394",
-          "title": "シシガシラpresents おじさんと遊んでくれませんか？",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "20:20",
-          "startTime": "20:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -6557,30 +3230,9 @@
       "discoveryUrls": [
         "https://omiya.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64979/52394",
-          "title": "シシガシラpresents おじさんと遊んでくれませんか？",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "20:20",
-          "startTime": "20:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66807/53117",
-          "title": "負けたら吉野HIITをしないと出れない劇場",
-          "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-          "openTime": "18:50",
-          "startTime": "19:00",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -6605,20 +3257,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64323/51816",
-          "title": "渋谷Kiwami極LIVE",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -6643,30 +3284,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64848/52202",
-          "title": "とりせん新ネタライブ「コンセントレーション」",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "19:00",
-          "startTime": "19:15",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64602/52162",
-          "title": "risa and...？",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "20:45",
-          "startTime": "21:00",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -6692,30 +3312,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64602/52162",
-          "title": "risa and...？",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "20:45",
-          "startTime": "21:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64848/52202",
-          "title": "とりせん新ネタライブ「コンセントレーション」",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "19:00",
-          "startTime": "19:15",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -6740,30 +3339,9 @@
       "discoveryUrls": [
         "https://makuhari.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66334/52774",
-          "title": "幕張土日祝ネタＳＰ１５時",
-          "venue": "よしもと幕張イオンモール劇場（千葉県）",
-          "openTime": "14:30",
-          "startTime": "15:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 16,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66334/52775",
-          "title": "幕張土日祝ネタＳＰ１７時",
-          "venue": "よしもと幕張イオンモール劇場（千葉県）",
-          "openTime": "16:30",
-          "startTime": "17:00",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -6788,30 +3366,9 @@
       "discoveryUrls": [
         "https://makuhari.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66334/52775",
-          "title": "幕張土日祝ネタＳＰ１７時",
-          "venue": "よしもと幕張イオンモール劇場（千葉県）",
-          "openTime": "16:30",
-          "startTime": "17:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 16,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66334/52774",
-          "title": "幕張土日祝ネタＳＰ１５時",
-          "venue": "よしもと幕張イオンモール劇場（千葉県）",
-          "openTime": "14:30",
-          "startTime": "15:00",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -6836,20 +3393,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65063/52414",
-          "title": "ファティゲなおばあちゃん",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "19:00",
-          "startTime": "19:15",
-          "ticketStatus": "残りわずか"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "pyuto",
@@ -6874,20 +3420,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64850/52203",
-          "title": "私東京新ネタライブ「私腹」",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "20:45",
-          "startTime": "21:00",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -6913,40 +3448,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52379",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52380",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "12:30",
-          "startTime": "12:45",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52381",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "14:15",
-          "startTime": "14:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -6972,40 +3476,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52380",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "12:30",
-          "startTime": "12:45",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52379",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52381",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "14:15",
-          "startTime": "14:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -7031,40 +3504,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52381",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "14:15",
-          "startTime": "14:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52379",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52380",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "12:30",
-          "startTime": "12:45",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -7089,20 +3531,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64319/51766",
-          "title": "神保町Kakeru翔SP",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "17:15",
-          "startTime": "17:30",
-          "ticketStatus": "一部予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -7127,30 +3558,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64333/51831",
-          "title": "渋谷Kiwami極LIVEプラス＋",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66671/52967",
-          "title": "Trick or Conte～見に来てくれないとイタズラしちゃうぞ～",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "19:15",
-          "startTime": "19:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -7175,30 +3585,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66671/52967",
-          "title": "Trick or Conte～見に来てくれないとイタズラしちゃうぞ～",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "19:15",
-          "startTime": "19:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64333/51831",
-          "title": "渋谷Kiwami極LIVEプラス＋",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -7223,20 +3612,9 @@
       "discoveryUrls": [
         "https://makuhari.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66273/52747",
-          "title": "よしもと漫才リーグ チームライブ～大王チーム編～",
-          "venue": "よしもと幕張イオンモール劇場（千葉県）",
-          "openTime": "20:45",
-          "startTime": "21:00",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "pyuto",
@@ -7261,20 +3639,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65064/52416",
-          "title": "キングチャンピオン王",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "20:30",
-          "startTime": "20:45",
-          "ticketStatus": "一部予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -7299,20 +3666,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64608/52150",
-          "title": "スマイルキング",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "20:45",
-          "startTime": "21:00",
-          "ticketStatus": "一部予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -7337,30 +3693,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64323/51818",
-          "title": "渋谷Kiwami極LIVE",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64609/52148",
-          "title": "ポイントキングダム",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "19:00",
-          "startTime": "19:15",
-          "ticketStatus": "一部予定数終了"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -7386,30 +3721,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64609/52148",
-          "title": "ポイントキングダム",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "19:00",
-          "startTime": "19:15",
-          "ticketStatus": "一部予定数終了"
-        },
-        {
-          "score": 14,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64323/51818",
-          "title": "渋谷Kiwami極LIVE",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "pyuto",
@@ -7434,20 +3748,9 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65400/52471",
-          "title": "ピュっ本木コントライブNEXT！",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "18:00",
-          "startTime": "18:15",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -7472,20 +3775,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64860/52200",
-          "title": "世間知らズの新帝国",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "19:00",
-          "startTime": "19:15",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -7511,50 +3803,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52382",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52383",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "12:30",
-          "startTime": "12:45",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52384",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "14:15",
-          "startTime": "14:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64863/52190",
-          "title": "恐怖のコントレストラン",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "19:00",
-          "startTime": "19:15",
-          "ticketStatus": "残りわずか"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -7580,50 +3831,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52383",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "12:30",
-          "startTime": "12:45",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52382",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52384",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "14:15",
-          "startTime": "14:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64863/52190",
-          "title": "恐怖のコントレストラン",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "19:00",
-          "startTime": "19:15",
-          "ticketStatus": "残りわずか"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -7649,50 +3859,9 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52384",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "14:15",
-          "startTime": "14:30",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52382",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52383",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "12:30",
-          "startTime": "12:45",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64863/52190",
-          "title": "恐怖のコントレストラン",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "19:00",
-          "startTime": "19:15",
-          "ticketStatus": "残りわずか"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "nansui",
@@ -7733,50 +3902,9 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64863/52190",
-          "title": "恐怖のコントレストラン",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "19:00",
-          "startTime": "19:15",
-          "ticketStatus": "残りわずか"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52382",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52383",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "12:30",
-          "startTime": "12:45",
-          "ticketStatus": "販売中"
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64937/52384",
-          "title": "渋谷マンゲキお笑いライブ",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "14:15",
-          "startTime": "14:30",
-          "ticketStatus": "販売中"
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -7801,40 +3929,9 @@
       "discoveryUrls": [
         "https://fukuokagekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66959/53442",
-          "title": "福岡よしもとお笑いライブ",
-          "venue": "よしもと福岡 大和証券劇場（福岡県）",
-          "openTime": "11:15",
-          "startTime": "11:30",
-          "ticketStatus": ""
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66959/53443",
-          "title": "福岡よしもとお笑いライブ",
-          "venue": "よしもと福岡 大和証券劇場（福岡県）",
-          "openTime": "13:25",
-          "startTime": "13:40",
-          "ticketStatus": ""
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66959/53444",
-          "title": "福岡よしもとお笑いライブ",
-          "venue": "よしもと福岡 大和証券劇場（福岡県）",
-          "openTime": "15:35",
-          "startTime": "15:50",
-          "ticketStatus": ""
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -7859,40 +3956,9 @@
       "discoveryUrls": [
         "https://fukuokagekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66959/53443",
-          "title": "福岡よしもとお笑いライブ",
-          "venue": "よしもと福岡 大和証券劇場（福岡県）",
-          "openTime": "13:25",
-          "startTime": "13:40",
-          "ticketStatus": ""
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66959/53442",
-          "title": "福岡よしもとお笑いライブ",
-          "venue": "よしもと福岡 大和証券劇場（福岡県）",
-          "openTime": "11:15",
-          "startTime": "11:30",
-          "ticketStatus": ""
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66959/53444",
-          "title": "福岡よしもとお笑いライブ",
-          "venue": "よしもと福岡 大和証券劇場（福岡県）",
-          "openTime": "15:35",
-          "startTime": "15:50",
-          "ticketStatus": ""
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
@@ -7932,40 +3998,9 @@
       "discoveryUrls": [
         "https://fukuokagekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66959/53444",
-          "title": "福岡よしもとお笑いライブ",
-          "venue": "よしもと福岡 大和証券劇場（福岡県）",
-          "openTime": "15:35",
-          "startTime": "15:50",
-          "ticketStatus": ""
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66959/53442",
-          "title": "福岡よしもとお笑いライブ",
-          "venue": "よしもと福岡 大和証券劇場（福岡県）",
-          "openTime": "11:15",
-          "startTime": "11:30",
-          "ticketStatus": ""
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66959/53443",
-          "title": "福岡よしもとお笑いライブ",
-          "venue": "よしもと福岡 大和証券劇場（福岡県）",
-          "openTime": "13:25",
-          "startTime": "13:40",
-          "ticketStatus": ""
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     }
   ]
 }
