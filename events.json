@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-17T09:04:35.048469+00:00",
+  "syncedAt": "2026-09-17T09:15:36.209247+00:00",
   "performers": [
     {
       "id": "maison",
@@ -318,18 +318,18 @@
       "title": "ノザカラ",
       "venue": "よしもと幕張イオンモール劇場（千葉県）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/62939/50592",
+      "sourceUrl": "https://ticket.fany.lol/reception/62937/50592",
       "ticketStatus": "",
       "ticketOptions": [],
-      "saleStartAt": "2026-08-07T10:00:00+09:00",
-      "saleEndAt": "2026-09-17T18:00:00+09:00",
-      "saleCategory": "first_come",
+      "saleStartAt": "2026-08-03T11:00:00+09:00",
+      "saleEndAt": "2026-08-05T11:00:00+09:00",
+      "saleCategory": "advance",
       "salePeriods": [
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-08-07T10:00:00+09:00",
-          "endAt": "2026-09-17T18:00:00+09:00"
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-08-03T11:00:00+09:00",
+          "endAt": "2026-08-05T11:00:00+09:00"
         }
       ],
       "performersText": [
@@ -337,13 +337,7 @@
         "ダンビラムーチョ",
         "ミカボ",
         "マリーマリー タコス",
-        "めぞん 原",
-        "・1回の先着申込で申込可能な公演数は『",
-        "1公演",
-        "』",
-        "枚数は『",
-        "10枚まで",
-        "・座席番号や整理番号は"
+        "めぞん 原"
       ],
       "firstSeenAt": "2026-09-17T07:46:37.786048+00:00",
       "newUntil": "2026-09-19T07:46:37.786062+00:00",
@@ -15771,6 +15765,43 @@
       "newUntil": "",
       "trackedPerformers": [
         "nansui"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-10-19",
+      "openTime": "21:15",
+      "startTime": "21:30",
+      "title": "YOIYOSE 179 @中野の劇場サッチー",
+      "venue": "中野の劇場サッチー(東京都)",
+      "source": "tiget",
+      "sourceUrl": "https://tiget.net/events/522101",
+      "ticketStatus": "予定数終了",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "あくびぼうや",
+        "足腰げんき教室",
+        "アルバカーキ",
+        "現代仏具",
+        "コイオドリ",
+        "サノライブ",
+        "鉄筋くらぶ57",
+        "positive!",
+        "牛女 しらす",
+        "大久保八億",
+        "右手でグーパンチ",
+        "めぞん",
+        "仕事帰りにふらっと見に来れるお笑いライブ！",
+        "これからの若手芸人がたくさん見られます！"
+      ],
+      "firstSeenAt": "2026-09-17T09:15:36.202766+00:00",
+      "newUntil": "2026-09-19T09:15:36.202783+00:00",
+      "trackedPerformers": [
+        "maison"
       ]
     },
     {
