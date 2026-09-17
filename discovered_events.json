@@ -1,7 +1,7 @@
 {
-  "syncedAt": "2026-09-17T06:48:11.496249+00:00",
-  "total": 137,
-  "ticketListedCount": 137,
+  "syncedAt": "2026-09-17T07:43:43.543891+00:00",
+  "total": 139,
+  "ticketListedCount": 139,
   "ticketUnlistedCount": 0,
   "events": [
     {
@@ -46,6 +46,16 @@
           "venue": "よしもと幕張イオンモール劇場（千葉県）",
           "openTime": "15:30",
           "startTime": "16:00",
+          "ticketStatus": ""
+        },
+        {
+          "score": 14,
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/62929/50591",
+          "title": "野澤輸出の勝負大喜利",
+          "venue": "よしもと幕張イオンモール劇場（千葉県）",
+          "openTime": "17:45",
+          "startTime": "18:00",
           "ticketStatus": ""
         }
       ],
@@ -94,6 +104,16 @@
           "venue": "よしもと幕張イオンモール劇場（千葉県）",
           "openTime": "13:30",
           "startTime": "14:00",
+          "ticketStatus": ""
+        },
+        {
+          "score": 14,
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/62929/50591",
+          "title": "野澤輸出の勝負大喜利",
+          "venue": "よしもと幕張イオンモール劇場（千葉県）",
+          "openTime": "17:45",
+          "startTime": "18:00",
           "ticketStatus": ""
         }
       ],
@@ -154,6 +174,64 @@
           "openTime": "19:15",
           "startTime": "19:30",
           "ticketStatus": "販売中"
+        }
+      ],
+      "ticketListed": true,
+      "status": "ticket_listed"
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-09-17",
+      "openTime": "17:45",
+      "startTime": "18:00",
+      "title": "野澤輸出の勝負大喜利",
+      "venue": "よしもと幕張イオンモール劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://makuhari.yoshimoto.co.jp/schedule/",
+      "theaterId": "makuhari",
+      "theaterName": "幕張",
+      "performersText": [
+        "野澤輸出／ダンビラムーチョ大原／ミカボ／マリーマリー タコス／めぞん 吉野おいなり君／【MC】ダンビラムーチョ 原田"
+      ],
+      "trackedPerformers": [
+        "maison"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://makuhari.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [
+        {
+          "score": 24,
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/62929/50591",
+          "title": "野澤輸出の勝負大喜利",
+          "venue": "よしもと幕張イオンモール劇場（千葉県）",
+          "openTime": "17:45",
+          "startTime": "18:00",
+          "ticketStatus": ""
+        },
+        {
+          "score": 14,
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/61091/49713",
+          "title": "幕張平日ネタＳＰ１４時",
+          "venue": "よしもと幕張イオンモール劇場（千葉県）",
+          "openTime": "13:30",
+          "startTime": "14:00",
+          "ticketStatus": ""
+        },
+        {
+          "score": 14,
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/61091/49714",
+          "title": "幕張平日ネタＳＰ１６時",
+          "venue": "よしもと幕張イオンモール劇場（千葉県）",
+          "openTime": "15:30",
+          "startTime": "16:00",
+          "ticketStatus": ""
         }
       ],
       "ticketListed": true,
@@ -249,6 +327,64 @@
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "16:45",
           "startTime": "17:00",
+          "ticketStatus": ""
+        }
+      ],
+      "ticketListed": true,
+      "status": "ticket_listed"
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-09-17",
+      "openTime": "19:45",
+      "startTime": "20:00",
+      "title": "ノザカラ",
+      "venue": "よしもと幕張イオンモール劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://makuhari.yoshimoto.co.jp/schedule/",
+      "theaterId": "makuhari",
+      "theaterName": "幕張",
+      "performersText": [
+        "野澤輸出／ダンビラムーチョ／ミカボ／マリーマリー タコス／めぞん 原"
+      ],
+      "trackedPerformers": [
+        "maison"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://makuhari.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [
+        {
+          "score": 14,
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/61091/49713",
+          "title": "幕張平日ネタＳＰ１４時",
+          "venue": "よしもと幕張イオンモール劇場（千葉県）",
+          "openTime": "13:30",
+          "startTime": "14:00",
+          "ticketStatus": ""
+        },
+        {
+          "score": 14,
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/61091/49714",
+          "title": "幕張平日ネタＳＰ１６時",
+          "venue": "よしもと幕張イオンモール劇場（千葉県）",
+          "openTime": "15:30",
+          "startTime": "16:00",
+          "ticketStatus": ""
+        },
+        {
+          "score": 14,
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/62929/50591",
+          "title": "野澤輸出の勝負大喜利",
+          "venue": "よしもと幕張イオンモール劇場（千葉県）",
+          "openTime": "17:45",
+          "startTime": "18:00",
           "ticketStatus": ""
         }
       ],
