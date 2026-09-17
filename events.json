@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-17T10:58:57.117027+00:00",
+  "syncedAt": "2026-09-17T11:04:32.788494+00:00",
   "performers": [
     {
       "id": "maison",
@@ -16861,13 +16861,75 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64937/52379",
-      "ticketStatus": "",
-      "ticketOptions": [],
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "salePeriods": [],
-      "performersText": [],
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-25T09:00:00+09:00",
+              "saleKey": "fany|nansui|64937|52379|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-25T09:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-25T09:00:00+09:00",
+              "saleKey": "fany|nansui|64937|52379|立見（整理番号付）|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-25T09:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-25T09:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-25T09:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]しずる",
+        "ジェラードン",
+        "めぞん",
+        "マルセイユ",
+        "シモリュウ",
+        "太鵬",
+        "軟水",
+        "インテイク",
+        "イチゴ",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
       "firstSeenAt": "2026-09-16T20:44:57.991803+00:00",
       "newUntil": "",
       "trackedPerformers": [
@@ -16884,13 +16946,75 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64937/52379",
-      "ticketStatus": "",
-      "ticketOptions": [],
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "salePeriods": [],
-      "performersText": [],
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-25T09:00:00+09:00",
+              "saleKey": "fany|nansui|64937|52379|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-25T09:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-25T09:00:00+09:00",
+              "saleKey": "fany|nansui|64937|52379|立見（整理番号付）|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-25T09:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-25T09:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-25T09:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]しずる",
+        "ジェラードン",
+        "めぞん",
+        "マルセイユ",
+        "シモリュウ",
+        "太鵬",
+        "軟水",
+        "インテイク",
+        "イチゴ",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
       "firstSeenAt": "2026-09-16T20:44:57.991803+00:00",
       "newUntil": "",
       "trackedPerformers": [
