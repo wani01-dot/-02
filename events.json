@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-17T08:58:07.943604+00:00",
+  "syncedAt": "2026-09-17T09:04:35.048469+00:00",
   "performers": [
     {
       "id": "maison",
@@ -319,28 +319,8 @@
       "venue": "よしもと幕張イオンモール劇場（千葉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/62939/50592",
-      "ticketStatus": "販売中",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "販売中",
-          "price": "￥2,800",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-07T10:00:00+09:00",
-              "endAt": "2026-09-17T18:00:00+09:00",
-              "saleKey": "fany|maison|62939|50592|全席指定|当日|first_come|2026-08-07T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-07T10:00:00+09:00",
-          "saleEndAt": "2026-09-17T18:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
+      "ticketStatus": "",
+      "ticketOptions": [],
       "saleStartAt": "2026-08-07T10:00:00+09:00",
       "saleEndAt": "2026-09-17T18:00:00+09:00",
       "saleCategory": "first_come",
@@ -12025,6 +12005,45 @@
         "・座席番号や整理番号は"
       ],
       "firstSeenAt": "2026-09-16T20:44:57.991803+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-10-06",
+      "openTime": "21:15",
+      "startTime": "21:30",
+      "title": "YOIYOSE 174 @中野の劇場サッチー",
+      "venue": "中野の劇場サッチー(東京都)",
+      "source": "tiget",
+      "sourceUrl": "https://tiget.net/events/522095",
+      "ticketStatus": "予定数終了",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "ア・ロングアイランド",
+        "ウォーターズ",
+        "ぎょねこ",
+        "じゅんじゅんズ",
+        "sticky²",
+        "Sticky²",
+        "ソフト派",
+        "デンコーセッカ",
+        "トワイライト渚",
+        "軟水",
+        "パパパスタ!?",
+        "惹女香花",
+        "ヤッホイ 泉",
+        "めっちゃ最高ズ",
+        "仕事帰りにふらっと見に来れるお笑いライブ！",
+        "これからの若手芸人がたくさん見られます！"
+      ],
+      "firstSeenAt": "2026-09-17T09:04:35.042545+00:00",
       "newUntil": "",
       "trackedPerformers": [
         "nansui"
