@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-17T01:19:02.426959+00:00",
+  "syncedAt": "2026-09-17T01:30:59.541835+00:00",
   "performers": [
     {
       "id": "maison",
@@ -1089,7 +1089,7 @@
       "venue": "LINE CUBE SHIBUYA（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/63814/51190",
-      "ticketStatus": "一部予定数終了",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [
         {
           "name": "SS席",
@@ -1132,7 +1132,7 @@
         {
           "name": "A席",
           "type": "前売",
-          "status": "予定数終了",
+          "status": "残りわずか",
           "price": "￥8,000",
           "salePeriods": [
             {
@@ -1325,7 +1325,7 @@
       "venue": "LINE CUBE SHIBUYA（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/63814/51190",
-      "ticketStatus": "一部予定数終了",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [
         {
           "name": "SS席",
@@ -1368,7 +1368,7 @@
         {
           "name": "A席",
           "type": "前売",
-          "status": "予定数終了",
+          "status": "残りわずか",
           "price": "￥8,000",
           "salePeriods": [
             {
@@ -1561,7 +1561,7 @@
       "venue": "LINE CUBE SHIBUYA（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/63814/51190",
-      "ticketStatus": "一部予定数終了",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [
         {
           "name": "SS席",
@@ -1604,7 +1604,7 @@
         {
           "name": "A席",
           "type": "前売",
-          "status": "予定数終了",
+          "status": "残りわずか",
           "price": "￥8,000",
           "salePeriods": [
             {
@@ -11633,6 +11633,66 @@
       "newUntil": "",
       "trackedPerformers": [
         "nansui"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-10-04",
+      "openTime": "15:45",
+      "startTime": "16:00",
+      "title": "自叙伝書いてあげるよ",
+      "venue": "新宿シアターモリエール（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/66578/52921",
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,800",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-03T23:59:00+09:00",
+              "saleKey": "fany|maison|66578|52921|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-03T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-05T10:00:00+09:00",
+      "saleEndAt": "2026-10-03T23:59:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-05T10:00:00+09:00",
+          "endAt": "2026-10-03T23:59:00+09:00"
+        }
+      ],
+      "performersText": [
+        "めぞん",
+        "伝書鳩",
+        "ただならぬ刀",
+        "照山おうちごはん",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-09-17T01:30:59.537351+00:00",
+      "newUntil": "2026-09-19T01:30:59.537360+00:00",
+      "trackedPerformers": [
+        "maison"
       ]
     },
     {
