@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-09-17T11:42:17.102870+00:00",
-  "total": 141,
+  "syncedAt": "2026-09-17T12:46:59.041495+00:00",
+  "total": 143,
   "ticketListedCount": 139,
-  "ticketUnlistedCount": 2,
+  "ticketUnlistedCount": 4,
   "events": [
     {
       "performerId": "maison",
@@ -7998,6 +7998,61 @@
       ],
       "ticketListed": true,
       "status": "ticket_listed"
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-11-02",
+      "openTime": "16:45",
+      "startTime": "17:00",
+      "title": "神保町Kakeru翔LIVE",
+      "venue": "神保町よしもと漫才劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "jimbocho",
+      "theaterName": "神保町",
+      "performersText": [
+        "[ネタ出演者]",
+        "ピュート×セカンドロットツーマンライブ「オールグリーン」"
+      ],
+      "trackedPerformers": [
+        "pyuto"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-11-02",
+      "openTime": "18:45",
+      "startTime": "19:00",
+      "title": "ピュート×セカンドロットツーマンライブ「オールグリーン」",
+      "venue": "神保町よしもと漫才劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "jimbocho",
+      "theaterName": "神保町",
+      "performersText": [
+        "[企画ライブ]"
+      ],
+      "trackedPerformers": [
+        "pyuto"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
