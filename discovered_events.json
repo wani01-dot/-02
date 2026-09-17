@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-09-17T08:42:47.974161+00:00",
-  "total": 139,
+  "syncedAt": "2026-09-17T09:43:16.908583+00:00",
+  "total": 141,
   "ticketListedCount": 139,
-  "ticketUnlistedCount": 0,
+  "ticketUnlistedCount": 2,
   "events": [
     {
       "performerId": "maison",
@@ -61,12 +61,12 @@
         {
           "score": 14,
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/62939/50592",
+          "sourceUrl": "https://ticket.fany.lol/reception/62937/50592",
           "title": "ノザカラ",
           "venue": "よしもと幕張イオンモール劇場（千葉県）",
           "openTime": "19:45",
           "startTime": "20:00",
-          "ticketStatus": "販売中"
+          "ticketStatus": ""
         }
       ],
       "ticketListed": true,
@@ -129,12 +129,12 @@
         {
           "score": 14,
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/62939/50592",
+          "sourceUrl": "https://ticket.fany.lol/reception/62937/50592",
           "title": "ノザカラ",
           "venue": "よしもと幕張イオンモール劇場（千葉県）",
           "openTime": "19:45",
           "startTime": "20:00",
-          "ticketStatus": "販売中"
+          "ticketStatus": ""
         }
       ],
       "ticketListed": true,
@@ -256,12 +256,12 @@
         {
           "score": 14,
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/62939/50592",
+          "sourceUrl": "https://ticket.fany.lol/reception/62937/50592",
           "title": "ノザカラ",
           "venue": "よしもと幕張イオンモール劇場（千葉県）",
           "openTime": "19:45",
           "startTime": "20:00",
-          "ticketStatus": "販売中"
+          "ticketStatus": ""
         }
       ],
       "ticketListed": true,
@@ -390,12 +390,12 @@
         {
           "score": 24,
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/62939/50592",
+          "sourceUrl": "https://ticket.fany.lol/reception/62937/50592",
           "title": "ノザカラ",
           "venue": "よしもと幕張イオンモール劇場（千葉県）",
           "openTime": "19:45",
           "startTime": "20:00",
-          "ticketStatus": "販売中"
+          "ticketStatus": ""
         },
         {
           "score": 14,
@@ -4688,6 +4688,16 @@
           "openTime": "19:00",
           "startTime": "19:15",
           "ticketStatus": "販売中"
+        },
+        {
+          "score": 10,
+          "source": "tiget",
+          "sourceUrl": "https://tiget.net/events/522095",
+          "title": "YOIYOSE 174 @中野の劇場サッチー",
+          "venue": "中野の劇場サッチー(東京都)",
+          "openTime": "21:15",
+          "startTime": "21:30",
+          "ticketStatus": "予定数終了"
         }
       ],
       "ticketListed": true,
@@ -4736,6 +4746,16 @@
           "openTime": "17:00",
           "startTime": "17:15",
           "ticketStatus": "販売中"
+        },
+        {
+          "score": 10,
+          "source": "tiget",
+          "sourceUrl": "https://tiget.net/events/522095",
+          "title": "YOIYOSE 174 @中野の劇場サッチー",
+          "venue": "中野の劇場サッチー(東京都)",
+          "openTime": "21:15",
+          "startTime": "21:30",
+          "ticketStatus": "予定数終了"
         }
       ],
       "ticketListed": true,
@@ -6407,6 +6427,16 @@
           "openTime": "17:00",
           "startTime": "17:15",
           "ticketStatus": "販売中"
+        },
+        {
+          "score": 10,
+          "source": "tiget",
+          "sourceUrl": "https://tiget.net/events/522101",
+          "title": "YOIYOSE 179 @中野の劇場サッチー",
+          "venue": "中野の劇場サッチー(東京都)",
+          "openTime": "21:15",
+          "startTime": "21:30",
+          "ticketStatus": "予定数終了"
         }
       ],
       "ticketListed": true,
@@ -7086,6 +7116,33 @@
       "status": "ticket_listed"
     },
     {
+      "performerId": "pyuto",
+      "date": "2026-10-25",
+      "openTime": "11:45",
+      "startTime": "12:00",
+      "title": "野澤輸出の勝負大喜利",
+      "venue": "よしもと幕張イオンモール劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://makuhari.yoshimoto.co.jp/schedule/",
+      "theaterId": "makuhari",
+      "theaterName": "幕張",
+      "performersText": [
+        "野澤輸出／ド桜／ピュート／兄弟 紅葉／【MC】兄弟 体制"
+      ],
+      "trackedPerformers": [
+        "pyuto"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://makuhari.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
+    },
+    {
       "performerId": "maison",
       "date": "2026-10-25",
       "openTime": "12:30",
@@ -7143,6 +7200,33 @@
       ],
       "ticketListed": true,
       "status": "ticket_listed"
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-10-25",
+      "openTime": "13:45",
+      "startTime": "14:00",
+      "title": "ノザカラ",
+      "venue": "よしもと幕張イオンモール劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://makuhari.yoshimoto.co.jp/schedule/",
+      "theaterId": "makuhari",
+      "theaterName": "幕張",
+      "performersText": [
+        "野澤輸出／セルライトスパ ヒーゴー／ド桜／ピュート／島憂樹"
+      ],
+      "trackedPerformers": [
+        "pyuto"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://makuhari.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
