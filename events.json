@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-18T09:58:49.750251+00:00",
+  "syncedAt": "2026-09-18T10:04:12.506029+00:00",
   "performers": [
     {
       "id": "maison",
@@ -259,57 +259,18 @@
       "title": "謎解きライブ 芸人XからのSOS",
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/60978/49595",
-      "ticketStatus": "販売中",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "販売中",
-          "price": "￥2,500",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-16T10:00:00+09:00",
-              "endAt": "2026-09-18T19:00:00+09:00",
-              "saleKey": "fany|pyuto|60978|49595|全席指定|当日|first_come|2026-08-16T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-16T10:00:00+09:00",
-          "saleEndAt": "2026-09-18T19:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        },
-        {
-          "name": "立見（整理番号付）",
-          "type": "当日",
-          "status": "販売中",
-          "price": "￥2,500",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-16T10:00:00+09:00",
-              "endAt": "2026-09-18T19:00:00+09:00",
-              "saleKey": "fany|pyuto|60978|49595|立見（整理番号付）|当日|first_come|2026-08-16T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-16T10:00:00+09:00",
-          "saleEndAt": "2026-09-18T19:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-08-16T10:00:00+09:00",
-      "saleEndAt": "2026-09-18T19:00:00+09:00",
-      "saleCategory": "first_come",
+      "sourceUrl": "https://ticket.fany.lol/reception/60884/49595",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-08-12T11:00:00+09:00",
+      "saleEndAt": "2026-08-14T11:00:00+09:00",
+      "saleCategory": "advance",
       "salePeriods": [
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-08-16T10:00:00+09:00",
-          "endAt": "2026-09-18T19:00:00+09:00"
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-08-12T11:00:00+09:00",
+          "endAt": "2026-08-14T11:00:00+09:00"
         }
       ],
       "performersText": [
@@ -322,13 +283,7 @@
         "ピュート 竹内",
         "世界クジラ 和泉",
         "ボダリキボバイ 鈴木",
-        "ナユタ おのはら",
-        "・1回の先着申込で申込可能な公演数は『",
-        "1公演",
-        "』",
-        "枚数は『",
-        "10枚まで",
-        "・座席番号や整理番号は"
+        "ナユタ おのはら"
       ],
       "firstSeenAt": "2026-09-16T20:44:57.991803+00:00",
       "newUntil": "",
