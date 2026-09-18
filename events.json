@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-18T15:04:25.841446+00:00",
+  "syncedAt": "2026-09-18T15:14:56.567002+00:00",
   "performers": [
     {
       "id": "maison",
@@ -57,12 +57,12 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/67229/53615",
-      "ticketStatus": "一部予定数終了",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [
         {
           "name": "全席指定",
           "type": "当日",
-          "status": "予定数終了",
+          "status": "残りわずか",
           "price": "￥2,800",
           "salePeriods": [
             {
@@ -141,18 +141,18 @@
       "title": "トーキョーマンゲキフェス2026ー渋神三世代決戦ー",
       "venue": "LINE CUBE SHIBUYA（東京都）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/63814/51190",
+      "sourceUrl": "https://ticket.fany.lol/reception/63809/51190",
       "ticketStatus": "",
       "ticketOptions": [],
-      "saleStartAt": "2026-08-30T10:00:00+09:00",
-      "saleEndAt": "2026-09-18T23:59:00+09:00",
-      "saleCategory": "first_come",
+      "saleStartAt": "2026-08-21T11:00:00+09:00",
+      "saleEndAt": "2026-08-24T11:00:00+09:00",
+      "saleCategory": "advance",
       "salePeriods": [
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-08-30T10:00:00+09:00",
-          "endAt": "2026-09-18T23:59:00+09:00"
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-08-21T11:00:00+09:00",
+          "endAt": "2026-08-24T11:00:00+09:00"
         }
       ],
       "performersText": [
@@ -276,13 +276,7 @@
         "ナユタ",
         "パパパジャマ",
         "ミナミナミ",
-        "あなたとネ",
-        "・1回の先着申込で申込可能な公演数は『",
-        "1公演",
-        "』",
-        "枚数は『",
-        "10枚まで",
-        "・座席番号や整理番号は"
+        "あなたとネ"
       ],
       "firstSeenAt": "2026-09-18T10:49:00.905228+00:00",
       "newUntil": "",
