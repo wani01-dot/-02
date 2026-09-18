@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-09-18T00:46:21.487070+00:00",
-  "total": 136,
+  "syncedAt": "2026-09-18T01:41:03.871465+00:00",
+  "total": 134,
   "ticketListedCount": 132,
-  "ticketUnlistedCount": 4,
+  "ticketUnlistedCount": 2,
   "events": [
     {
       "performerId": "pyuto",
@@ -5961,7 +5961,7 @@
           "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
           "openTime": "19:15",
           "startTime": "19:30",
-          "ticketStatus": ""
+          "ticketStatus": "販売中"
         }
       ],
       "ticketListed": true,
@@ -7571,61 +7571,6 @@
       ],
       "ticketListed": true,
       "status": "ticket_listed"
-    },
-    {
-      "performerId": "pyuto",
-      "date": "2026-11-02",
-      "openTime": "16:45",
-      "startTime": "17:00",
-      "title": "神保町Kakeru翔LIVE",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[ネタ出演者]",
-        "ピュート×セカンドロットツーマンライブ「オールグリーン」"
-      ],
-      "trackedPerformers": [
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "status": "ticket_unlisted"
-    },
-    {
-      "performerId": "pyuto",
-      "date": "2026-11-02",
-      "openTime": "18:45",
-      "startTime": "19:00",
-      "title": "ピュート×セカンドロットツーマンライブ「オールグリーン」",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[企画ライブ]"
-      ],
-      "trackedPerformers": [
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "status": "ticket_unlisted"
     },
     {
       "performerId": "maison",
