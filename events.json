@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-19T00:18:34.284212+00:00",
+  "syncedAt": "2026-09-19T00:36:14.091718+00:00",
   "performers": [
     {
       "id": "maison",
@@ -57,47 +57,8 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/67229/53615",
-      "ticketStatus": "一部予定数終了",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "予定数終了",
-          "price": "￥2,800",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-13T10:00:00+09:00",
-              "endAt": "2026-09-19T09:30:00+09:00",
-              "saleKey": "fany|maison|67229|53615|全席指定|当日|first_come|2026-09-13T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-09-13T10:00:00+09:00",
-          "saleEndAt": "2026-09-19T09:30:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        },
-        {
-          "name": "立見（整理番号付）",
-          "type": "当日",
-          "status": "販売中",
-          "price": "￥2,800",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-13T10:00:00+09:00",
-              "endAt": "2026-09-19T09:30:00+09:00",
-              "saleKey": "fany|maison|67229|53615|立見（整理番号付）|当日|first_come|2026-09-13T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-09-13T10:00:00+09:00",
-          "saleEndAt": "2026-09-19T09:30:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
+      "ticketStatus": "",
+      "ticketOptions": [],
       "saleStartAt": "2026-09-13T10:00:00+09:00",
       "saleEndAt": "2026-09-19T09:30:00+09:00",
       "saleCategory": "first_come",
