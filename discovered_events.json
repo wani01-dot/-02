@@ -1,57 +1,9 @@
 {
-  "syncedAt": "2026-09-19T14:40:28.325386+00:00",
-  "total": 130,
-  "ticketListedCount": 128,
+  "syncedAt": "2026-09-19T15:40:11.727249+00:00",
+  "total": 129,
+  "ticketListedCount": 127,
   "ticketUnlistedCount": 2,
   "events": [
-    {
-      "performerId": "maison",
-      "date": "2026-09-19",
-      "openTime": "11:15",
-      "startTime": "11:30",
-      "title": "渋谷マンゲキネタSP",
-      "venue": "渋谷よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "shibuya",
-      "theaterName": "渋谷",
-      "performersText": [
-        "[ネタライブ]エバース／蛙亭／カベポスター／めぞん／今井らいぱち／kento fukaya／からし蓮根／ケビンス／シンクロニシティ／ゼロカラン"
-      ],
-      "trackedPerformers": [
-        "maison"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/67229/53615",
-          "title": "渋谷マンゲキネタSP",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "11:15",
-          "startTime": "11:30",
-          "ticketStatus": ""
-        },
-        {
-          "score": 10,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63809/51190",
-          "title": "トーキョーマンゲキフェス2026ー渋神三世代決戦ー",
-          "venue": "LINE CUBE SHIBUYA（東京都）",
-          "openTime": "14:30",
-          "startTime": "15:30",
-          "ticketStatus": ""
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
-    },
     {
       "performerId": "maison",
       "date": "2026-09-20",
@@ -262,7 +214,7 @@
           "venue": "インテックス大阪4号館5号館（大阪府）",
           "openTime": "",
           "startTime": "09:00",
-          "ticketStatus": "予定数終了"
+          "ticketStatus": "販売終了"
         },
         {
           "score": 10,
@@ -292,7 +244,7 @@
           "venue": "インテックス大阪4号館5号館（大阪府）",
           "openTime": "",
           "startTime": "11:00",
-          "ticketStatus": "予定数終了"
+          "ticketStatus": "販売終了"
         },
         {
           "score": 10,
@@ -350,7 +302,7 @@
           "venue": "インテックス大阪4号館5号館（大阪府）",
           "openTime": "",
           "startTime": "09:00",
-          "ticketStatus": "予定数終了"
+          "ticketStatus": "販売終了"
         },
         {
           "score": 10,
@@ -380,7 +332,7 @@
           "venue": "インテックス大阪4号館5号館（大阪府）",
           "openTime": "",
           "startTime": "11:00",
-          "ticketStatus": "予定数終了"
+          "ticketStatus": "販売終了"
         }
       ],
       "ticketListed": true,
