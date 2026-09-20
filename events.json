@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-20T15:00:31.282006+00:00",
+  "syncedAt": "2026-09-20T15:07:11.761995+00:00",
   "performers": [
     {
       "id": "maison",
@@ -372,17 +372,17 @@
       "ticketStatus": "販売中",
       "ticketOptions": [
         {
-          "name": "前売フォートナイト大人",
+          "name": "当日フォートナイト大人",
           "type": "",
           "status": "販売中",
-          "price": "￥15,500",
+          "price": "￥16,500",
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T17:00:00+09:00",
-              "saleKey": "fany|nansui|54840|45208|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|当日フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -391,7 +391,7 @@
           "saleLabel": "先着"
         },
         {
-          "name": "前売フォートナイト中学生",
+          "name": "当日フォートナイト中学生",
           "type": "",
           "status": "販売中",
           "price": "￥5,500",
@@ -401,7 +401,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T17:00:00+09:00",
-              "saleKey": "fany|nansui|54840|45208|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|当日フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -410,7 +410,7 @@
           "saleLabel": "先着"
         },
         {
-          "name": "前売フォートナイトこども",
+          "name": "当日フォートナイトこども",
           "type": "",
           "status": "販売中",
           "price": "￥3,500",
@@ -420,7 +420,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T17:00:00+09:00",
-              "saleKey": "fany|nansui|54840|45208|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|当日フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -429,17 +429,17 @@
           "saleLabel": "先着"
         },
         {
-          "name": "前売 大人",
+          "name": "当日 大人",
           "type": "",
           "status": "販売中",
-          "price": "￥15,500",
+          "price": "￥16,500",
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T17:00:00+09:00",
-              "saleKey": "fany|nansui|54840|45208|前売 大人||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|当日 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -448,7 +448,7 @@
           "saleLabel": "先着"
         },
         {
-          "name": "前売 中学生",
+          "name": "当日 中学生",
           "type": "",
           "status": "販売中",
           "price": "￥5,500",
@@ -458,7 +458,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T17:00:00+09:00",
-              "saleKey": "fany|nansui|54840|45208|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|当日 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -467,7 +467,7 @@
           "saleLabel": "先着"
         },
         {
-          "name": "前売 こども",
+          "name": "当日 こども",
           "type": "",
           "status": "販売中",
           "price": "￥3,500",
@@ -477,7 +477,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T17:00:00+09:00",
-              "saleKey": "fany|nansui|54840|45208|前売 こども||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|当日 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -649,17 +649,17 @@
           "type": "先着",
           "status": "販売中",
           "price": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-20T23:59:00+09:00",
+          "saleStartAt": "2026-09-21T00:00:00+09:00",
+          "saleEndAt": "2026-09-21T15:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "",
           "salePeriods": [
             {
               "category": "first_come",
               "label": "",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-20T23:59:00+09:00",
-              "saleKey": "eplus|maison|0232520001-P0030018P021001|先着|先着|first_come|2026-07-29T11:00:00+09:00"
+              "startAt": "2026-09-21T00:00:00+09:00",
+              "endAt": "2026-09-21T15:00:00+09:00",
+              "saleKey": "eplus|maison|0232520001-P0030018P021001|先着|先着|first_come|2026-09-21T00:00:00+09:00"
             }
           ]
         },
@@ -681,6 +681,25 @@
               "saleKey": "eplus|maison|0232520001-P0030018P021001|先着|先着|first_come|2026-07-01T11:00:00+09:00"
             }
           ]
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-20T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-20T23:59:00+09:00",
+              "saleKey": "eplus|maison|0232520001-P0030018P021001|先着|先着|first_come|2026-07-29T11:00:00+09:00"
+            }
+          ]
         }
       ],
       "saleStartAt": "2026-07-01T11:00:00+09:00",
@@ -690,14 +709,20 @@
         {
           "category": "first_come",
           "label": "",
-          "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-09-20T23:59:00+09:00"
+          "startAt": "2026-09-21T00:00:00+09:00",
+          "endAt": "2026-09-21T15:00:00+09:00"
         },
         {
           "category": "first_come",
           "label": "",
           "startAt": "2026-07-01T11:00:00+09:00",
           "endAt": "2026-07-28T23:59:00+09:00"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-29T11:00:00+09:00",
+          "endAt": "2026-09-20T23:59:00+09:00"
         }
       ],
       "performersText": [
@@ -749,17 +774,17 @@
       "ticketStatus": "販売中",
       "ticketOptions": [
         {
-          "name": "前売フォートナイト大人",
+          "name": "当日フォートナイト大人",
           "type": "",
           "status": "販売中",
-          "price": "￥15,500",
+          "price": "￥16,500",
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T17:00:00+09:00",
-              "saleKey": "fany|nansui|54840|45208|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|当日フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -768,7 +793,7 @@
           "saleLabel": "先着"
         },
         {
-          "name": "前売フォートナイト中学生",
+          "name": "当日フォートナイト中学生",
           "type": "",
           "status": "販売中",
           "price": "￥5,500",
@@ -778,7 +803,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T17:00:00+09:00",
-              "saleKey": "fany|nansui|54840|45208|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|当日フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -787,7 +812,7 @@
           "saleLabel": "先着"
         },
         {
-          "name": "前売フォートナイトこども",
+          "name": "当日フォートナイトこども",
           "type": "",
           "status": "販売中",
           "price": "￥3,500",
@@ -797,7 +822,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T17:00:00+09:00",
-              "saleKey": "fany|nansui|54840|45208|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|当日フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -806,17 +831,17 @@
           "saleLabel": "先着"
         },
         {
-          "name": "前売 大人",
+          "name": "当日 大人",
           "type": "",
           "status": "販売中",
-          "price": "￥15,500",
+          "price": "￥16,500",
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T17:00:00+09:00",
-              "saleKey": "fany|nansui|54840|45208|前売 大人||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|当日 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -825,7 +850,7 @@
           "saleLabel": "先着"
         },
         {
-          "name": "前売 中学生",
+          "name": "当日 中学生",
           "type": "",
           "status": "販売中",
           "price": "￥5,500",
@@ -835,7 +860,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T17:00:00+09:00",
-              "saleKey": "fany|nansui|54840|45208|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|当日 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -844,7 +869,7 @@
           "saleLabel": "先着"
         },
         {
-          "name": "前売 こども",
+          "name": "当日 こども",
           "type": "",
           "status": "販売中",
           "price": "￥3,500",
@@ -854,7 +879,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T17:00:00+09:00",
-              "saleKey": "fany|nansui|54840|45208|前売 こども||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|当日 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -1151,17 +1176,17 @@
       "ticketStatus": "販売中",
       "ticketOptions": [
         {
-          "name": "前売フォートナイト大人",
+          "name": "当日フォートナイト大人",
           "type": "",
           "status": "販売中",
-          "price": "￥15,500",
+          "price": "￥16,500",
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T17:00:00+09:00",
-              "saleKey": "fany|nansui|54840|45208|前売フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|当日フォートナイト大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -1170,7 +1195,7 @@
           "saleLabel": "先着"
         },
         {
-          "name": "前売フォートナイト中学生",
+          "name": "当日フォートナイト中学生",
           "type": "",
           "status": "販売中",
           "price": "￥5,500",
@@ -1180,7 +1205,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T17:00:00+09:00",
-              "saleKey": "fany|nansui|54840|45208|前売フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|当日フォートナイト中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -1189,7 +1214,7 @@
           "saleLabel": "先着"
         },
         {
-          "name": "前売フォートナイトこども",
+          "name": "当日フォートナイトこども",
           "type": "",
           "status": "販売中",
           "price": "￥3,500",
@@ -1199,7 +1224,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T17:00:00+09:00",
-              "saleKey": "fany|nansui|54840|45208|前売フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|当日フォートナイトこども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -1208,17 +1233,17 @@
           "saleLabel": "先着"
         },
         {
-          "name": "前売 大人",
+          "name": "当日 大人",
           "type": "",
           "status": "販売中",
-          "price": "￥15,500",
+          "price": "￥16,500",
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T17:00:00+09:00",
-              "saleKey": "fany|nansui|54840|45208|前売 大人||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|当日 大人||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -1227,7 +1252,7 @@
           "saleLabel": "先着"
         },
         {
-          "name": "前売 中学生",
+          "name": "当日 中学生",
           "type": "",
           "status": "販売中",
           "price": "￥5,500",
@@ -1237,7 +1262,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T17:00:00+09:00",
-              "saleKey": "fany|nansui|54840|45208|前売 中学生||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|当日 中学生||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -1246,7 +1271,7 @@
           "saleLabel": "先着"
         },
         {
-          "name": "前売 こども",
+          "name": "当日 こども",
           "type": "",
           "status": "販売中",
           "price": "￥3,500",
@@ -1256,7 +1281,7 @@
               "label": "先着",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-21T17:00:00+09:00",
-              "saleKey": "fany|nansui|54840|45208|前売 こども||first_come|2026-07-29T11:00:00+09:00"
+              "saleKey": "fany|nansui|54840|45208|当日 こども||first_come|2026-07-29T11:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-29T11:00:00+09:00",
@@ -1421,8 +1446,27 @@
       "venue": "インテックス大阪4号館5号館（大阪府）",
       "source": "eplus",
       "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021001?P1=0175",
-      "ticketStatus": "販売終了",
+      "ticketStatus": "一部予定数終了",
       "ticketOptions": [
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-09-21T00:00:00+09:00",
+          "saleEndAt": "2026-09-21T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-21T00:00:00+09:00",
+              "endAt": "2026-09-21T15:00:00+09:00",
+              "saleKey": "eplus|pyuto|0232520001-P0030018P021001|先着|先着|first_come|2026-09-21T00:00:00+09:00"
+            }
+          ]
+        },
         {
           "name": "先着",
           "type": "先着",
@@ -1466,6 +1510,12 @@
       "saleEndAt": "2026-07-28T23:59:00+09:00",
       "saleCategory": "first_come",
       "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-09-21T00:00:00+09:00",
+          "endAt": "2026-09-21T15:00:00+09:00"
+        },
         {
           "category": "first_come",
           "label": "",
@@ -1841,16 +1891,16 @@
       "ticketOptions": [
         {
           "name": "整理番号付自由席",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥1,800",
+          "price": "￥2,100",
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-09-03T10:00:00+09:00",
               "endAt": "2026-09-21T14:30:00+09:00",
-              "saleKey": "fany|pyuto|65690|52648|整理番号付自由席|前売|first_come|2026-09-03T10:00:00+09:00"
+              "saleKey": "fany|pyuto|65690|52648|整理番号付自由席|当日|first_come|2026-09-03T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-09-03T10:00:00+09:00",
@@ -1897,27 +1947,8 @@
       "venue": "インテックス大阪4号館5号館（大阪府）",
       "source": "eplus",
       "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021005?P1=0175",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "販売終了",
       "ticketOptions": [
-        {
-          "name": "先着",
-          "type": "先着",
-          "status": "予定数終了",
-          "price": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-20T23:59:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-20T23:59:00+09:00",
-              "saleKey": "eplus|maison|0232520001-P0030018P021005|先着|先着|first_come|2026-07-29T11:00:00+09:00"
-            }
-          ]
-        },
         {
           "name": "先着",
           "type": "先着",
@@ -1936,6 +1967,25 @@
               "saleKey": "eplus|maison|0232520001-P0030018P021005|先着|先着|first_come|2026-07-01T11:00:00+09:00"
             }
           ]
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-20T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-20T23:59:00+09:00",
+              "saleKey": "eplus|maison|0232520001-P0030018P021005|先着|先着|first_come|2026-07-29T11:00:00+09:00"
+            }
+          ]
         }
       ],
       "saleStartAt": "2026-07-01T11:00:00+09:00",
@@ -1945,14 +1995,14 @@
         {
           "category": "first_come",
           "label": "",
-          "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-09-20T23:59:00+09:00"
+          "startAt": "2026-07-01T11:00:00+09:00",
+          "endAt": "2026-07-28T23:59:00+09:00"
         },
         {
           "category": "first_come",
           "label": "",
-          "startAt": "2026-07-01T11:00:00+09:00",
-          "endAt": "2026-07-28T23:59:00+09:00"
+          "startAt": "2026-07-29T11:00:00+09:00",
+          "endAt": "2026-09-20T23:59:00+09:00"
         }
       ],
       "performersText": [
@@ -2105,27 +2155,8 @@
       "venue": "インテックス大阪4号館5号館（大阪府）",
       "source": "eplus",
       "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021005?P1=0175",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "販売終了",
       "ticketOptions": [
-        {
-          "name": "先着",
-          "type": "先着",
-          "status": "予定数終了",
-          "price": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-20T23:59:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-20T23:59:00+09:00",
-              "saleKey": "eplus|pyuto|0232520001-P0030018P021005|先着|先着|first_come|2026-07-29T11:00:00+09:00"
-            }
-          ]
-        },
         {
           "name": "先着",
           "type": "先着",
@@ -2144,6 +2175,25 @@
               "saleKey": "eplus|pyuto|0232520001-P0030018P021005|先着|先着|first_come|2026-07-01T11:00:00+09:00"
             }
           ]
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-07-29T11:00:00+09:00",
+          "saleEndAt": "2026-09-20T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-29T11:00:00+09:00",
+              "endAt": "2026-09-20T23:59:00+09:00",
+              "saleKey": "eplus|pyuto|0232520001-P0030018P021005|先着|先着|first_come|2026-07-29T11:00:00+09:00"
+            }
+          ]
         }
       ],
       "saleStartAt": "2026-07-01T11:00:00+09:00",
@@ -2153,14 +2203,14 @@
         {
           "category": "first_come",
           "label": "",
-          "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-09-20T23:59:00+09:00"
+          "startAt": "2026-07-01T11:00:00+09:00",
+          "endAt": "2026-07-28T23:59:00+09:00"
         },
         {
           "category": "first_come",
           "label": "",
-          "startAt": "2026-07-01T11:00:00+09:00",
-          "endAt": "2026-07-28T23:59:00+09:00"
+          "startAt": "2026-07-29T11:00:00+09:00",
+          "endAt": "2026-09-20T23:59:00+09:00"
         }
       ],
       "performersText": [
