@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-20T01:02:23.617223+00:00",
+  "syncedAt": "2026-09-20T01:09:35.326796+00:00",
   "performers": [
     {
       "id": "maison",
@@ -18011,8 +18011,66 @@
       "venue": "よしもと福岡 大和証券劇場（福岡県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/66959/53442",
-      "ticketStatus": "",
-      "ticketOptions": [],
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "指定席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,900",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-20T10:00:00+09:00",
+              "endAt": "2026-11-29T09:30:00+09:00",
+              "saleKey": "fany|maison|66959|53442|指定席|前売|first_come|2026-09-20T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-20T10:00:00+09:00",
+          "saleEndAt": "2026-11-29T09:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "指定席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-20T10:00:00+09:00",
+              "endAt": "2026-11-29T09:30:00+09:00",
+              "saleKey": "fany|maison|66959|53442|指定席|前売|first_come|2026-09-20T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-20T10:00:00+09:00",
+          "saleEndAt": "2026-11-29T09:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥1,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-20T10:00:00+09:00",
+              "endAt": "2026-11-29T09:30:00+09:00",
+              "saleKey": "fany|maison|66959|53442|前売こども||first_come|2026-09-20T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-20T10:00:00+09:00",
+          "saleEndAt": "2026-11-29T09:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
       "saleStartAt": "2026-09-20T10:00:00+09:00",
       "saleEndAt": "2026-11-29T09:30:00+09:00",
       "saleCategory": "first_come",
@@ -18057,8 +18115,66 @@
       "venue": "よしもと福岡 大和証券劇場（福岡県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/66959/53443",
-      "ticketStatus": "",
-      "ticketOptions": [],
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "指定席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,900",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-20T10:00:00+09:00",
+              "endAt": "2026-11-29T11:40:00+09:00",
+              "saleKey": "fany|maison|66959|53443|指定席|前売|first_come|2026-09-20T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-20T10:00:00+09:00",
+          "saleEndAt": "2026-11-29T11:40:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "指定席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-20T10:00:00+09:00",
+              "endAt": "2026-11-29T11:40:00+09:00",
+              "saleKey": "fany|maison|66959|53443|指定席|前売|first_come|2026-09-20T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-20T10:00:00+09:00",
+          "saleEndAt": "2026-11-29T11:40:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥1,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-20T10:00:00+09:00",
+              "endAt": "2026-11-29T11:40:00+09:00",
+              "saleKey": "fany|maison|66959|53443|前売こども||first_come|2026-09-20T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-20T10:00:00+09:00",
+          "saleEndAt": "2026-11-29T11:40:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
       "saleStartAt": "2026-09-20T10:00:00+09:00",
       "saleEndAt": "2026-11-29T11:40:00+09:00",
       "saleCategory": "first_come",
@@ -18103,8 +18219,66 @@
       "venue": "よしもと福岡 大和証券劇場（福岡県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/66959/53444",
-      "ticketStatus": "",
-      "ticketOptions": [],
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "指定席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,900",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-20T10:00:00+09:00",
+              "endAt": "2026-11-29T13:50:00+09:00",
+              "saleKey": "fany|maison|66959|53444|指定席|前売|first_come|2026-09-20T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-20T10:00:00+09:00",
+          "saleEndAt": "2026-11-29T13:50:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "指定席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-20T10:00:00+09:00",
+              "endAt": "2026-11-29T13:50:00+09:00",
+              "saleKey": "fany|maison|66959|53444|指定席|前売|first_come|2026-09-20T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-20T10:00:00+09:00",
+          "saleEndAt": "2026-11-29T13:50:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "前売こども",
+          "type": "",
+          "status": "販売中",
+          "price": "￥1,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-20T10:00:00+09:00",
+              "endAt": "2026-11-29T13:50:00+09:00",
+              "saleKey": "fany|maison|66959|53444|前売こども||first_come|2026-09-20T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-20T10:00:00+09:00",
+          "saleEndAt": "2026-11-29T13:50:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
       "saleStartAt": "2026-09-20T10:00:00+09:00",
       "saleEndAt": "2026-11-29T13:50:00+09:00",
       "saleCategory": "first_come",
