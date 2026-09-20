@@ -1,186 +1,9 @@
 {
-  "syncedAt": "2026-09-20T14:40:39.793707+00:00",
-  "total": 129,
-  "ticketListedCount": 127,
+  "syncedAt": "2026-09-20T15:40:33.390708+00:00",
+  "total": 126,
+  "ticketListedCount": 124,
   "ticketUnlistedCount": 2,
   "events": [
-    {
-      "performerId": "maison",
-      "date": "2026-09-20",
-      "openTime": "10:45",
-      "startTime": "11:00",
-      "title": "神保町マンゲキお笑いライブ",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[ネタ出演者]滝音／めぞん／kento fukaya／やさしいズ／田津原理音／おミュータンツ／太鵬／ピュート／金魚番長／なでなでボーイ／ドンココ [コーナー出演者]MC：金魚番長／おミュータンツ／太鵬／なでなでボーイ"
-      ],
-      "trackedPerformers": [
-        "maison",
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61272/49831",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": ""
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61272/49830",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "12:45",
-          "startTime": "13:00",
-          "ticketStatus": ""
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61272/49846",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "14:45",
-          "startTime": "15:00",
-          "ticketStatus": ""
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
-    },
-    {
-      "performerId": "maison",
-      "date": "2026-09-20",
-      "openTime": "12:45",
-      "startTime": "13:00",
-      "title": "神保町マンゲキお笑いライブ",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[ネタ出演者]滝音／めぞん／kento fukaya／やさしいズ／田津原理音／おミュータンツ／太鵬／ピュート／金魚番長／エグい速さ／ドンココ [コーナー出演者]MC：kento fukaya／ピュート／めぞん／ドンココ"
-      ],
-      "trackedPerformers": [
-        "maison",
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61272/49830",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "12:45",
-          "startTime": "13:00",
-          "ticketStatus": ""
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61272/49831",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": ""
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61272/49846",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "14:45",
-          "startTime": "15:00",
-          "ticketStatus": ""
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
-    },
-    {
-      "performerId": "maison",
-      "date": "2026-09-20",
-      "openTime": "14:45",
-      "startTime": "15:00",
-      "title": "神保町マンゲキお笑いライブ",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[ネタ出演者]滝音／めぞん／kento fukaya／やさしいズ／田津原理音／おミュータンツ／太鵬／ピュート／金魚番長／エグい速さ／ドンココ [コーナー出演者]MC：金魚番長／やさしいズ／滝音／エグい速さ"
-      ],
-      "trackedPerformers": [
-        "maison",
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61272/49846",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "14:45",
-          "startTime": "15:00",
-          "ticketStatus": ""
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61272/49831",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": ""
-        },
-        {
-          "score": 20,
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61272/49830",
-          "title": "神保町マンゲキお笑いライブ",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "12:45",
-          "startTime": "13:00",
-          "ticketStatus": ""
-        }
-      ],
-      "ticketListed": true,
-      "status": "ticket_listed"
-    },
     {
       "performerId": "pyuto",
       "date": "2026-09-21",
@@ -400,7 +223,7 @@
           "venue": "インテックス大阪4号館5号館（大阪府）",
           "openTime": "",
           "startTime": "10:00",
-          "ticketStatus": "予定数終了"
+          "ticketStatus": "販売終了"
         },
         {
           "score": 10,
@@ -498,7 +321,7 @@
           "venue": "インテックス大阪4号館5号館（大阪府）",
           "openTime": "",
           "startTime": "10:00",
-          "ticketStatus": "予定数終了"
+          "ticketStatus": "販売終了"
         },
         {
           "score": 10,
@@ -586,7 +409,7 @@
           "venue": "インテックス大阪4号館5号館（大阪府）",
           "openTime": "",
           "startTime": "10:00",
-          "ticketStatus": "予定数終了"
+          "ticketStatus": "販売終了"
         },
         {
           "score": 10,
@@ -684,7 +507,7 @@
           "venue": "インテックス大阪4号館5号館（大阪府）",
           "openTime": "",
           "startTime": "10:00",
-          "ticketStatus": "予定数終了"
+          "ticketStatus": "販売終了"
         },
         {
           "score": 10,
@@ -783,7 +606,7 @@
           "venue": "インテックス大阪4号館5号館（大阪府）",
           "openTime": "",
           "startTime": "10:00",
-          "ticketStatus": "予定数終了"
+          "ticketStatus": "販売終了"
         },
         {
           "score": 10,
@@ -871,7 +694,7 @@
           "venue": "インテックス大阪4号館5号館（大阪府）",
           "openTime": "",
           "startTime": "10:00",
-          "ticketStatus": "予定数終了"
+          "ticketStatus": "販売終了"
         },
         {
           "score": 10,
@@ -939,7 +762,7 @@
           "venue": "インテックス大阪4号館5号館（大阪府）",
           "openTime": "",
           "startTime": "10:00",
-          "ticketStatus": "予定数終了"
+          "ticketStatus": "販売終了"
         },
         {
           "score": 10,
