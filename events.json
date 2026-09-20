@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-20T16:53:52.219747+00:00",
+  "syncedAt": "2026-09-20T17:00:07.221262+00:00",
   "performers": [
     {
       "id": "maison",
@@ -7771,13 +7771,49 @@
       "venue": "大宮ラクーンよしもと劇場（埼玉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/66201/52714",
-      "ticketStatus": "",
-      "ticketOptions": [],
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "salePeriods": [],
-      "performersText": [],
+      "ticketStatus": "予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-02T10:00:00+09:00",
+              "endAt": "2026-10-01T15:30:00+09:00",
+              "saleKey": "fany|maison|66201|52714|全席指定|前売|first_come|2026-09-02T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-02T10:00:00+09:00",
+          "saleEndAt": "2026-10-01T15:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-09-02T10:00:00+09:00",
+      "saleEndAt": "2026-10-01T15:30:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-09-02T10:00:00+09:00",
+          "endAt": "2026-10-01T15:30:00+09:00"
+        }
+      ],
+      "performersText": [
+        "めぞん",
+        "ヨネダ2000",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "4枚まで",
+        "・座席番号や整理番号は"
+      ],
       "firstSeenAt": "2026-09-19T01:59:49.145065+00:00",
       "newUntil": "",
       "trackedPerformers": [
