@@ -1,9 +1,7 @@
-import json
 import re
 from datetime import datetime, timezone, timedelta
 from urllib.parse import urljoin
 
-import requests
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 
@@ -170,8 +168,7 @@ def extract_datetimes(text):
 
         if (
             value
-            and
-            value not in result
+            and value not in result
         ):
             result.append(
                 value
@@ -313,12 +310,9 @@ def summarize_ticket_status(
     ):
         return "一部予定数終了"
 
-    if (
-        statuses
-        and all(
-            status in ended
-            for status in statuses
-        )
+    if all(
+        status in ended
+        for status in statuses
     ):
         if "予定数終了" in statuses:
             return "予定数終了"
@@ -362,13 +356,8 @@ def extract_price(text):
 
 
 # =========================================================
-# 検索結果からイベントURL抽出
+# イベントURL
 # =========================================================
-
-LIVEPOCKET_EVENT_RE = re.compile(
-    r"^/e/[A-Za-z0-9_\-]+"
-)
-
 
 def normalize_livepocket_event_url(
     href,
@@ -420,15 +409,11 @@ def get_livepocket_event_urls(
         "a",
         href=True,
     ):
-        href = clean(
+        url = normalize_livepocket_event_url(
             link.get(
                 "href",
                 "",
             )
-        )
-
-        url = normalize_livepocket_event_url(
-            href
         )
 
         if not url:
@@ -449,10 +434,35 @@ def get_livepocket_event_urls(
 
 
 # =========================================================
-# Playwright検索
+# ブラウザ作成
 # =========================================================
 
-def get_livepocket_event_urls_with_browser(
+def create_browser_page(
+    browser,
+):
+    return browser.new_page(
+        viewport={
+            "width": 1280,
+            "height": 1000,
+        },
+        locale="ja-JP",
+        user_agent=(
+            "Mozilla/5.0 "
+            "(Windows NT 10.0; Win64; x64) "
+            "AppleWebKit/537.36 "
+            "(KHTML, like Gecko) "
+            "Chrome/140.0.0.0 "
+            "Safari/537.36"
+        ),
+    )
+
+
+# =========================================================
+# Playwrightで検索ページ取得
+# =========================================================
+
+def get_livepocket_event_urls_with_page(
+    page,
     search_url,
 ):
     result = []
@@ -464,125 +474,85 @@ def get_livepocket_event_urls_with_browser(
     )
 
     try:
-        with sync_playwright() as p:
-            browser = p.chromium.launch(
-                headless=True,
+        page.goto(
+            search_url,
+            wait_until="domcontentloaded",
+            timeout=60000,
+        )
+
+        try:
+            page.wait_for_load_state(
+                "networkidle",
+                timeout=15000,
+            )
+        except Exception:
+            pass
+
+        try:
+            page.wait_for_selector(
+                'a[href*="/e/"]',
+                timeout=15000,
+            )
+        except Exception:
+            print(
+                "LivePocketイベントリンク待機タイムアウト"
             )
 
-            page = browser.new_page(
-                viewport={
-                    "width": 1280,
-                    "height": 1000,
-                },
-                user_agent=(
-                    "Mozilla/5.0 "
-                    "(Windows NT 10.0; Win64; x64) "
-                    "AppleWebKit/537.36 "
-                    "(KHTML, like Gecko) "
-                    "Chrome/140.0.0.0 "
-                    "Safari/537.36"
-                ),
-                locale="ja-JP",
+        page.wait_for_timeout(
+            2000
+        )
+
+        hrefs = page.locator(
+            "a[href]"
+        ).evaluate_all(
+            """
+            elements => elements.map(
+                element => element.getAttribute("href")
+            )
+            """
+        )
+
+        print(
+            "LivePocketブラウザ内全リンク:",
+            len(hrefs),
+            "件",
+        )
+
+        for href in hrefs:
+            url = normalize_livepocket_event_url(
+                href
             )
 
-            try:
-                page.goto(
-                    search_url,
-                    wait_until="domcontentloaded",
-                    timeout=60000,
+            if not url:
+                continue
+
+            if url in seen:
+                continue
+
+            seen.add(
+                url
+            )
+
+            result.append(
+                url
+            )
+
+        if not result:
+            rendered_html = page.content()
+
+            for url in get_livepocket_event_urls(
+                rendered_html
+            ):
+                if url in seen:
+                    continue
+
+                seen.add(
+                    url
                 )
 
-                try:
-                    page.wait_for_load_state(
-                        "networkidle",
-                        timeout=15000,
-                    )
-                except Exception:
-                    pass
-
-                try:
-                    page.wait_for_selector(
-                        'a[href*="/e/"]',
-                        timeout=15000,
-                    )
-                except Exception:
-                    print(
-                        "LivePocketイベントリンク待機タイムアウト"
-                    )
-
-                page.wait_for_timeout(
-                    2000
+                result.append(
+                    url
                 )
-
-                # =============================================
-                # DOMからリンク取得
-                # =============================================
-
-                hrefs = page.locator(
-                    "a[href]"
-                ).evaluate_all(
-                    """
-                    elements => elements.map(
-                        element => element.getAttribute("href")
-                    )
-                    """
-                )
-
-                print(
-                    "LivePocketブラウザ内全リンク:",
-                    len(hrefs),
-                    "件",
-                )
-
-                for href in hrefs:
-                    url = normalize_livepocket_event_url(
-                        href
-                    )
-
-                    if not url:
-                        continue
-
-                    if url in seen:
-                        continue
-
-                    seen.add(
-                        url
-                    )
-
-                    result.append(
-                        url
-                    )
-
-                # =============================================
-                # DOMリンクで取れなかった場合
-                # 描画後HTMLからもう一度探す
-                # =============================================
-
-                if not result:
-                    rendered_html = (
-                        page.content()
-                    )
-
-                    html_urls = (
-                        get_livepocket_event_urls(
-                            rendered_html
-                        )
-                    )
-
-                    for url in html_urls:
-                        if url in seen:
-                            continue
-
-                        seen.add(
-                            url
-                        )
-
-                        result.append(
-                            url
-                        )
-
-            finally:
-                browser.close()
 
     except Exception as error:
         print(
@@ -771,8 +741,7 @@ def get_livepocket_title(
     og = soup.find(
         "meta",
         attrs={
-            "property":
-                "og:title"
+            "property": "og:title"
         },
     )
 
@@ -949,13 +918,11 @@ def find_sale_blocks(
     ):
         if (
             number + 1
-            <
-            len(indexes)
+            < len(indexes)
         ):
             end = indexes[
                 number + 1
             ]
-
         else:
             end = len(
                 lines
@@ -966,8 +933,7 @@ def find_sale_blocks(
         ]
 
         if not any(
-            "販売受付期間"
-            in line
+            "販売受付期間" in line
             for line in block
         ):
             continue
@@ -980,7 +946,7 @@ def find_sale_blocks(
 
 
 # =========================================================
-# 券種抽出
+# 券種
 # =========================================================
 
 def is_ticket_name_candidate(
@@ -1122,19 +1088,18 @@ def parse_ticket_options_from_block(
             "type":
                 (
                     "抽選"
-                    if period.get(
-                        "category"
+                    if (
+                        period.get(
+                            "category"
+                        )
+                        == "advance"
+                        and "抽選"
+                        in period.get(
+                            "label",
+                            ""
+                        )
                     )
-                    ==
-                    "advance"
-                    and
-                    "抽選"
-                    in period.get(
-                        "label",
-                        ""
-                    )
-                    else
-                    "先着"
+                    else "先着"
                 ),
 
             "status":
@@ -1179,7 +1144,7 @@ def parse_ticket_options_from_block(
 
 
 # =========================================================
-# 販売期間解析
+# 販売期間
 # =========================================================
 
 def parse_livepocket_sales(
@@ -1187,6 +1152,7 @@ def parse_livepocket_sales(
 ):
     all_options = []
     all_periods = []
+
     period_seen = set()
     option_seen = set()
 
@@ -1224,9 +1190,7 @@ def parse_livepocket_sales(
             datetimes[1]
             if len(
                 datetimes
-            )
-            >=
-            2
+            ) >= 2
             else ""
         )
 
@@ -1339,8 +1303,7 @@ def choose_primary_period(
         if period.get(
             "category"
         )
-        ==
-        "first_come"
+        == "first_come"
     ]
 
     candidates = (
@@ -1360,34 +1323,54 @@ def choose_primary_period(
 
 
 # =========================================================
-# 詳細ページ
+# 詳細HTMLをブラウザで取得
+# =========================================================
+
+def get_detail_html_with_page(
+    page,
+    event_url,
+):
+    try:
+        page.goto(
+            event_url,
+            wait_until="domcontentloaded",
+            timeout=60000,
+        )
+
+        try:
+            page.wait_for_load_state(
+                "networkidle",
+                timeout=10000,
+            )
+        except Exception:
+            pass
+
+        page.wait_for_timeout(
+            1000
+        )
+
+        return page.content()
+
+    except Exception as error:
+        print(
+            "  × 詳細ブラウザ取得失敗:",
+            event_url,
+            error,
+        )
+
+        return ""
+
+
+# =========================================================
+# 詳細ページ解析
 # =========================================================
 
 def scrape_livepocket_detail(
     session,
     performer,
     event_url,
+    browser_page=None,
 ):
-    response = session.get(
-        event_url,
-        timeout=25,
-    )
-
-    response.raise_for_status()
-
-    soup = BeautifulSoup(
-        response.text,
-        "html.parser",
-    )
-
-    lines = html_to_lines(
-        response.text
-    )
-
-    whole_text = " ".join(
-        lines
-    )
-
     performer_name = clean(
         performer.get(
             "name",
@@ -1395,12 +1378,122 @@ def scrape_livepocket_detail(
         )
     )
 
+    html = ""
+
+    # =====================================================
+    # まずrequests
+    # =====================================================
+
+    try:
+        response = session.get(
+            event_url,
+            timeout=25,
+        )
+
+        response.raise_for_status()
+
+        html = response.text
+
+    except Exception as error:
+        print(
+            "  requests詳細取得失敗:",
+            event_url,
+            error,
+        )
+
+    request_text = ""
+
+    if html:
+        request_text = " ".join(
+            html_to_lines(
+                html
+            )
+        )
+
+    # =====================================================
+    # requests版に出演者名がなければブラウザ版へ
+    # =====================================================
+
+    if (
+        not html
+        or (
+            performer_name
+            and performer_name
+            not in request_text
+        )
+    ):
+        print(
+            "  詳細ブラウザ取得:",
+            event_url,
+        )
+
+        if browser_page is None:
+            print(
+                "  × ブラウザページなし"
+            )
+
+            return None
+
+        browser_html = (
+            get_detail_html_with_page(
+                browser_page,
+                event_url,
+            )
+        )
+
+        if browser_html:
+            html = browser_html
+
+    if not html:
+        print(
+            "  × 除外:",
+            event_url,
+            "| 理由: HTML取得失敗",
+        )
+
+        return None
+
+    # =====================================================
+    # HTML解析
+    # =====================================================
+
+    soup = BeautifulSoup(
+        html,
+        "html.parser",
+    )
+
+    lines = html_to_lines(
+        html
+    )
+
+    whole_text = " ".join(
+        lines
+    )
+
+    title = get_livepocket_title(
+        soup
+    )
+
+    # =====================================================
+    # 出演者
+    # =====================================================
+
     if (
         performer_name
         and performer_name
         not in whole_text
     ):
+        print(
+            "  × 除外:",
+            title,
+            "| 理由: 出演者名なし",
+        )
+
         return None
+
+    # =====================================================
+    # 日付
+    # =====================================================
 
     event_date = get_event_date(
         lines,
@@ -1408,12 +1501,34 @@ def scrape_livepocket_detail(
     )
 
     if not event_date:
+        print(
+            "  × 除外:",
+            title,
+            "| 理由: 開催日取得失敗",
+        )
+
         return None
+
+    # =====================================================
+    # 過去イベント
+    # =====================================================
 
     if not is_today_or_future(
         event_date
     ):
+        print(
+            "  × 除外:",
+            title,
+            "|",
+            event_date,
+            "| 理由: 過去公演",
+        )
+
         return None
+
+    # =====================================================
+    # 時刻
+    # =====================================================
 
     start_time = get_event_time(
         lines,
@@ -1431,19 +1546,27 @@ def scrape_livepocket_detail(
         ],
     )
 
-    title = get_livepocket_title(
-        soup
-    )
+    # =====================================================
+    # 会場
+    # =====================================================
 
     venue = get_livepocket_venue(
         lines
     )
+
+    # =====================================================
+    # 出演者一覧
+    # =====================================================
 
     performers_text = (
         get_livepocket_performers(
             lines
         )
     )
+
+    # =====================================================
+    # 販売情報
+    # =====================================================
 
     (
         ticket_options,
@@ -1456,6 +1579,14 @@ def scrape_livepocket_detail(
         choose_primary_period(
             sale_periods
         )
+    )
+
+    print(
+        "  ✓ 採用:",
+        title,
+        "|",
+        event_date,
+        start_time,
     )
 
     return {
@@ -1571,7 +1702,7 @@ def scrape_livepocket(
         return []
 
     # =====================================================
-    # 1. まずrequestsで検索
+    # まず通常HTML
     # =====================================================
 
     event_urls = []
@@ -1604,98 +1735,147 @@ def scrape_livepocket(
             error,
         )
 
-    # =====================================================
-    # 2. 0件ならPlaywrightで実ブラウザ表示
-    # =====================================================
-
-    if not event_urls:
-        print(
-            "LivePocket通常HTMLでは0件"
-            " → ブラウザ取得へ切替:",
-            performer_name,
-        )
-
-        event_urls = (
-            get_livepocket_event_urls_with_browser(
-                search_url
-            )
-        )
-
-    print(
-        "LivePocket詳細候補:",
-        performer_name,
-        len(event_urls),
-        "件",
-    )
-
-    # =====================================================
-    # 3. 詳細ページを解析
-    # =====================================================
-
     events = []
     seen = set()
 
-    for event_url in event_urls:
-        try:
-            event = (
-                scrape_livepocket_detail(
-                    session,
-                    performer,
-                    event_url,
-                )
+    # =====================================================
+    # Chromiumは1回だけ起動
+    # =====================================================
+
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(
+                headless=True,
             )
 
-        except Exception as error:
-            print(
-                "LivePocket詳細取得失敗:",
-                event_url,
-                error,
+            search_page = create_browser_page(
+                browser
             )
 
-            continue
+            detail_page = create_browser_page(
+                browser
+            )
 
-        if not event:
-            continue
+            try:
+                # ==========================================
+                # 通常HTMLで0件ならブラウザ検索
+                # ==========================================
 
-        key = "|".join([
-            event.get(
-                "date",
-                ""
-            ),
-            event.get(
-                "startTime",
-                ""
-            ),
-            clean(
-                event.get(
-                    "title",
-                    ""
+                if not event_urls:
+                    print(
+                        "LivePocket通常HTMLでは0件"
+                        " → ブラウザ取得へ切替:",
+                        performer_name,
+                    )
+
+                    event_urls = (
+                        get_livepocket_event_urls_with_page(
+                            search_page,
+                            search_url,
+                        )
+                    )
+
+                print(
+                    "LivePocket詳細候補:",
+                    performer_name,
+                    len(event_urls),
+                    "件",
                 )
-            ),
-            clean(
-                event.get(
-                    "venue",
-                    ""
-                )
-            ),
-        ])
 
-        if key in seen:
-            continue
+                # ==========================================
+                # 詳細解析
+                # ==========================================
 
-        seen.add(
-            key
+                for event_url in event_urls:
+                    try:
+                        event = (
+                            scrape_livepocket_detail(
+                                session,
+                                performer,
+                                event_url,
+                                browser_page=detail_page,
+                            )
+                        )
+
+                    except Exception as error:
+                        print(
+                            "LivePocket詳細取得失敗:",
+                            event_url,
+                            error,
+                        )
+
+                        continue
+
+                    if not event:
+                        continue
+
+                    key = "|".join([
+                        event.get(
+                            "date",
+                            ""
+                        ),
+                        event.get(
+                            "startTime",
+                            ""
+                        ),
+                        clean(
+                            event.get(
+                                "title",
+                                ""
+                            )
+                        ),
+                        clean(
+                            event.get(
+                                "venue",
+                                ""
+                            )
+                        ),
+                    ])
+
+                    if key in seen:
+                        print(
+                            "  × 重複除外:",
+                            event.get(
+                                "title",
+                                ""
+                            ),
+                        )
+
+                        continue
+
+                    seen.add(
+                        key
+                    )
+
+                    events.append(
+                        event
+                    )
+
+            finally:
+                search_page.close()
+                detail_page.close()
+                browser.close()
+
+    except Exception as error:
+        print(
+            "LivePocket Playwright失敗:",
+            performer_name,
+            error,
         )
 
-        events.append(
-            event
-        )
+    print(
+        "================================"
+    )
 
     print(
         "LivePocket",
         performer_name,
         len(events),
         "件",
+    )
+
+    print(
+        "================================"
     )
 
     return events
