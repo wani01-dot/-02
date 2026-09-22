@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-22T00:56:54.361753+00:00",
+  "syncedAt": "2026-09-22T01:04:04.848534+00:00",
   "performers": [
     {
       "id": "maison",
@@ -13203,6 +13203,41 @@
       ]
     },
     {
+      "performerId": "pyuto",
+      "date": "2026-10-25",
+      "openTime": "11:45",
+      "startTime": "12:00",
+      "title": "野澤輸出の勝負大喜利",
+      "venue": "よしもと幕張イオンモール劇場（千葉県）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68563/54523",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-23T11:00:00+09:00",
+      "saleEndAt": "2026-09-25T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-23T11:00:00+09:00",
+          "endAt": "2026-09-25T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "野澤輸出",
+        "ド桜",
+        "ピュート",
+        "兄弟 紅葉",
+        "【MC】兄弟 体制"
+      ],
+      "firstSeenAt": "2026-09-22T01:04:04.844352+00:00",
+      "newUntil": "2026-09-24T01:04:04.844364+00:00",
+      "trackedPerformers": [
+        "pyuto"
+      ]
+    },
+    {
       "performerId": "maison",
       "date": "2026-10-25",
       "openTime": "12:30",
@@ -13370,6 +13405,41 @@
       "trackedPerformers": [
         "maison",
         "nansui"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-10-25",
+      "openTime": "13:45",
+      "startTime": "14:00",
+      "title": "ノザカラ",
+      "venue": "よしもと幕張イオンモール劇場（千葉県）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68564/54524",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-23T11:00:00+09:00",
+      "saleEndAt": "2026-09-25T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-23T11:00:00+09:00",
+          "endAt": "2026-09-25T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "野澤輸出",
+        "セルライトスパ ヒーゴー",
+        "ド桜",
+        "ピュート",
+        "島憂樹"
+      ],
+      "firstSeenAt": "2026-09-22T01:04:04.844352+00:00",
+      "newUntil": "2026-09-24T01:04:04.844364+00:00",
+      "trackedPerformers": [
+        "pyuto"
       ]
     },
     {
