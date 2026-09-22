@@ -57,8 +57,7 @@ def is_today_or_future(
 
         return (
             event_date
-            >=
-            today_jst()
+            >= today_jst()
         )
 
     except Exception:
@@ -434,7 +433,7 @@ def get_livepocket_event_urls(
 
 
 # =========================================================
-# ブラウザ作成
+# ブラウザページ作成
 # =========================================================
 
 def create_browser_page(
@@ -455,6 +454,53 @@ def create_browser_page(
             "Safari/537.36"
         ),
     )
+
+
+# =========================================================
+# 検索結果件数
+# =========================================================
+
+def get_search_result_count(
+    page,
+):
+    try:
+        page_text = clean(
+            page.locator(
+                "body"
+            ).inner_text()
+        )
+    except Exception:
+        return 0
+
+    # 例:
+    # 1～5件表示 / 5件中
+    # 1〜5件表示 / 5件中
+    # 1~5件表示 / 5件中
+
+    patterns = [
+        r"(?:/|／)\s*(\d+)\s*件中",
+        r"(\d+)\s*件中",
+    ]
+
+    for pattern in patterns:
+        match = re.search(
+            pattern,
+            page_text,
+        )
+
+        if not match:
+            continue
+
+        try:
+            return int(
+                match.group(
+                    1
+                )
+            )
+        except Exception:
+            pass
+
+    return 0
 
 
 # =========================================================
@@ -499,11 +545,31 @@ def get_livepocket_event_urls_with_page(
             )
 
         page.wait_for_timeout(
-            2000
+            1500
         )
 
+        # =================================================
+        # 検索結果の件数
+        # =================================================
+
+        result_count = (
+            get_search_result_count(
+                page
+            )
+        )
+
+        print(
+            "LivePocket検索結果表示件数:",
+            result_count,
+            "件",
+        )
+
+        # =================================================
+        # ページ内イベントリンク
+        # =================================================
+
         hrefs = page.locator(
-            "a[href]"
+            'a[href*="/e/"]'
         ).evaluate_all(
             """
             elements => elements.map(
@@ -513,7 +579,7 @@ def get_livepocket_event_urls_with_page(
         )
 
         print(
-            "LivePocketブラウザ内全リンク:",
+            "LivePocketページ内イベントリンク:",
             len(hrefs),
             "件",
         )
@@ -537,12 +603,60 @@ def get_livepocket_event_urls_with_page(
                 url
             )
 
-        if not result:
-            rendered_html = page.content()
+        print(
+            "LivePocket重複除外後イベントリンク:",
+            len(result),
+            "件",
+        )
 
-            for url in get_livepocket_event_urls(
-                rendered_html
-            ):
+        # =================================================
+        # 検索結果件数に制限
+        #
+        # 検索結果の後ろにある
+        # おすすめ・ピックアップ等を除外する
+        # =================================================
+
+        if (
+            result_count > 0
+            and len(result) > result_count
+        ):
+            before_count = len(
+                result
+            )
+
+            result = result[
+                :result_count
+            ]
+
+            print(
+                "LivePocket候補を検索結果件数に制限:",
+                before_count,
+                "件 →",
+                len(result),
+                "件",
+            )
+
+        # =================================================
+        # DOMから取れなかった場合
+        # =================================================
+
+        if not result:
+            print(
+                "LivePocket DOM取得0件"
+                " → 描画後HTMLから再取得"
+            )
+
+            rendered_html = (
+                page.content()
+            )
+
+            html_urls = (
+                get_livepocket_event_urls(
+                    rendered_html
+                )
+            )
+
+            for url in html_urls:
                 if url in seen:
                     continue
 
@@ -552,6 +666,27 @@ def get_livepocket_event_urls_with_page(
 
                 result.append(
                     url
+                )
+
+            if (
+                result_count > 0
+                and len(result) > result_count
+            ):
+                before_count = len(
+                    result
+                )
+
+                result = result[
+                    :result_count
+                ]
+
+                print(
+                    "LivePocket HTML候補を"
+                    "検索結果件数に制限:",
+                    before_count,
+                    "件 →",
+                    len(result),
+                    "件",
                 )
 
     except Exception as error:
@@ -1346,7 +1481,7 @@ def get_detail_html_with_page(
             pass
 
         page.wait_for_timeout(
-            1000
+            800
         )
 
         return page.content()
@@ -1381,7 +1516,7 @@ def scrape_livepocket_detail(
     html = ""
 
     # =====================================================
-    # まずrequests
+    # まずrequestsで取得
     # =====================================================
 
     try:
@@ -1411,7 +1546,8 @@ def scrape_livepocket_detail(
         )
 
     # =====================================================
-    # requests版に出演者名がなければブラウザ版へ
+    # requests版で出演者が見えなければ
+    # Playwrightで描画後HTMLを取得
     # =====================================================
 
     if (
@@ -1475,7 +1611,7 @@ def scrape_livepocket_detail(
     )
 
     # =====================================================
-    # 出演者
+    # 出演者判定
     # =====================================================
 
     if (
@@ -1492,7 +1628,7 @@ def scrape_livepocket_detail(
         return None
 
     # =====================================================
-    # 日付
+    # 開催日
     # =====================================================
 
     event_date = get_event_date(
@@ -1510,7 +1646,7 @@ def scrape_livepocket_detail(
         return None
 
     # =====================================================
-    # 過去イベント
+    # 過去公演
     # =====================================================
 
     if not is_today_or_future(
@@ -1702,7 +1838,7 @@ def scrape_livepocket(
         return []
 
     # =====================================================
-    # まず通常HTML
+    # 通常HTMLで検索
     # =====================================================
 
     event_urls = []
@@ -1739,7 +1875,7 @@ def scrape_livepocket(
     seen = set()
 
     # =====================================================
-    # Chromiumは1回だけ起動
+    # Chromiumを1回だけ起動
     # =====================================================
 
     try:
@@ -1748,12 +1884,16 @@ def scrape_livepocket(
                 headless=True,
             )
 
-            search_page = create_browser_page(
-                browser
+            search_page = (
+                create_browser_page(
+                    browser
+                )
             )
 
-            detail_page = create_browser_page(
-                browser
+            detail_page = (
+                create_browser_page(
+                    browser
+                )
             )
 
             try:
@@ -1809,6 +1949,10 @@ def scrape_livepocket(
                     if not event:
                         continue
 
+                    # ======================================
+                    # 重複判定
+                    # ======================================
+
                     key = "|".join([
                         event.get(
                             "date",
@@ -1862,6 +2006,10 @@ def scrape_livepocket(
             performer_name,
             error,
         )
+
+    # =====================================================
+    # 最終結果
+    # =====================================================
 
     print(
         "================================"
