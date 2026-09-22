@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-09-22T00:46:34.078809+00:00",
+  "syncedAt": "2026-09-22T01:41:20.150457+00:00",
   "total": 124,
-  "ticketListedCount": 122,
-  "ticketUnlistedCount": 2,
+  "ticketListedCount": 124,
+  "ticketUnlistedCount": 0,
   "events": [
     {
       "performerId": "maison",
@@ -129,12 +129,12 @@
         {
           "score": 24,
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63051/50654",
+          "sourceUrl": "https://ticket.fany.lol/reception/63045/50654",
           "title": "大宮コント交流センター",
           "venue": "大宮ラクーンよしもと劇場（埼玉県）",
           "openTime": "12:15",
           "startTime": "12:30",
-          "ticketStatus": "販売中"
+          "ticketStatus": ""
         },
         {
           "score": 14,
@@ -424,12 +424,12 @@
         {
           "score": 14,
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63051/50654",
+          "sourceUrl": "https://ticket.fany.lol/reception/63045/50654",
           "title": "大宮コント交流センター",
           "venue": "大宮ラクーンよしもと劇場（埼玉県）",
           "openTime": "12:15",
           "startTime": "12:30",
-          "ticketStatus": "販売中"
+          "ticketStatus": ""
         },
         {
           "score": 14,
@@ -512,12 +512,12 @@
         {
           "score": 14,
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63051/50654",
+          "sourceUrl": "https://ticket.fany.lol/reception/63045/50654",
           "title": "大宮コント交流センター",
           "venue": "大宮ラクーンよしもと劇場（埼玉県）",
           "openTime": "12:15",
           "startTime": "12:30",
-          "ticketStatus": "販売中"
+          "ticketStatus": ""
         },
         {
           "score": 14,
@@ -6136,9 +6136,30 @@
       "discoveryUrls": [
         "https://makuhari.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "status": "ticket_unlisted"
+      "ticketMatches": [
+        {
+          "score": 24,
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68563/54523",
+          "title": "野澤輸出の勝負大喜利",
+          "venue": "よしもと幕張イオンモール劇場（千葉県）",
+          "openTime": "11:45",
+          "startTime": "12:00",
+          "ticketStatus": ""
+        },
+        {
+          "score": 14,
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68564/54524",
+          "title": "ノザカラ",
+          "venue": "よしもと幕張イオンモール劇場（千葉県）",
+          "openTime": "13:45",
+          "startTime": "14:00",
+          "ticketStatus": ""
+        }
+      ],
+      "ticketListed": true,
+      "status": "ticket_listed"
     },
     {
       "performerId": "maison",
@@ -6222,9 +6243,30 @@
       "discoveryUrls": [
         "https://makuhari.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "status": "ticket_unlisted"
+      "ticketMatches": [
+        {
+          "score": 24,
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68564/54524",
+          "title": "ノザカラ",
+          "venue": "よしもと幕張イオンモール劇場（千葉県）",
+          "openTime": "13:45",
+          "startTime": "14:00",
+          "ticketStatus": ""
+        },
+        {
+          "score": 14,
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68563/54523",
+          "title": "野澤輸出の勝負大喜利",
+          "venue": "よしもと幕張イオンモール劇場（千葉県）",
+          "openTime": "11:45",
+          "startTime": "12:00",
+          "ticketStatus": ""
+        }
+      ],
+      "ticketListed": true,
+      "status": "ticket_listed"
     },
     {
       "performerId": "maison",
