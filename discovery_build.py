@@ -1,5 +1,6 @@
 import json
 import re
+from copy import deepcopy
 from datetime import datetime, timezone
 from difflib import SequenceMatcher
 
@@ -140,6 +141,42 @@ def unique_strings(values):
     return result
 
 
+def unique_dicts(
+    values,
+    key_fields,
+):
+    result = []
+    seen = set()
+
+    for value in values:
+        if not isinstance(
+            value,
+            dict,
+        ):
+            continue
+
+        key = tuple(
+            clean(
+                value.get(
+                    field,
+                    "",
+                )
+            )
+            for field in key_fields
+        )
+
+        if key in seen:
+            continue
+
+        seen.add(key)
+
+        result.append(
+            deepcopy(value)
+        )
+
+    return result
+
+
 # =========================================================
 # イベント配列取得
 # =========================================================
@@ -187,8 +224,7 @@ def title_similarity(
 
     if (
         not a
-        or
-        not b
+        or not b
     ):
         return 0.0
 
@@ -197,13 +233,10 @@ def title_similarity(
 
     if (
         len(a) >= 6
-        and
-        len(b) >= 6
-        and
-        (
+        and len(b) >= 6
+        and (
             a in b
-            or
-            b in a
+            or b in a
         )
     ):
         return 0.92
@@ -243,8 +276,10 @@ def match_score(
 
     score += 5
 
-
+    # =====================================================
     # 出演者
+    # =====================================================
+
     performer_id = clean(
         discovered.get(
             "performerId",
@@ -261,15 +296,15 @@ def match_score(
 
     if (
         performer_id
-        and
-        performer_id
-        ==
-        ticket_performer
+        and performer_id
+        == ticket_performer
     ):
         score += 5
 
-
+    # =====================================================
     # 開演時間
+    # =====================================================
+
     start_a = clean(
         discovered.get(
             "startTime",
@@ -286,15 +321,15 @@ def match_score(
 
     if (
         start_a
-        and
-        start_b
-        and
-        start_a == start_b
+        and start_b
+        and start_a == start_b
     ):
         score += 4
 
-
+    # =====================================================
     # 会場
+    # =====================================================
+
     venue_a = normalize_venue(
         discovered.get(
             "venue",
@@ -311,21 +346,21 @@ def match_score(
 
     if (
         venue_a
-        and
-        venue_b
+        and venue_b
     ):
         if venue_a == venue_b:
             score += 4
 
         elif (
             venue_a in venue_b
-            or
-            venue_b in venue_a
+            or venue_b in venue_a
         ):
             score += 3
 
-
+    # =====================================================
     # タイトル
+    # =====================================================
+
     similarity = title_similarity(
         discovered.get(
             "title",
@@ -346,8 +381,354 @@ def match_score(
     elif similarity >= 0.55:
         score += 2
 
-
     return score
+
+
+# =========================================================
+# チケット情報の共通化
+# =========================================================
+
+def normalize_sale_period(
+    period,
+):
+    if not isinstance(
+        period,
+        dict,
+    ):
+        return None
+
+    return {
+        "category":
+            clean(
+                period.get(
+                    "category",
+                    "",
+                )
+            ),
+
+        "label":
+            clean(
+                period.get(
+                    "label",
+                    "",
+                )
+            ),
+
+        "startAt":
+            clean(
+                period.get(
+                    "startAt",
+                    "",
+                )
+            ),
+
+        "endAt":
+            clean(
+                period.get(
+                    "endAt",
+                    "",
+                )
+            ),
+    }
+
+
+def normalize_ticket_option(
+    option,
+):
+    if not isinstance(
+        option,
+        dict,
+    ):
+        return None
+
+    sale_periods = []
+
+    raw_periods = option.get(
+        "salePeriods",
+        [],
+    )
+
+    if isinstance(
+        raw_periods,
+        list,
+    ):
+        for period in raw_periods:
+            normalized = (
+                normalize_sale_period(
+                    period
+                )
+            )
+
+            if normalized:
+                sale_periods.append(
+                    normalized
+                )
+
+    # 古い形式にも対応
+    if (
+        not sale_periods
+        and option.get(
+            "saleStartAt"
+        )
+    ):
+        sale_periods.append({
+            "category":
+                clean(
+                    option.get(
+                        "saleCategory",
+                        "",
+                    )
+                ),
+
+            "label":
+                clean(
+                    option.get(
+                        "saleLabel",
+                        "",
+                    )
+                ),
+
+            "startAt":
+                clean(
+                    option.get(
+                        "saleStartAt",
+                        "",
+                    )
+                ),
+
+            "endAt":
+                clean(
+                    option.get(
+                        "saleEndAt",
+                        "",
+                    )
+                ),
+        })
+
+    sale_periods = unique_dicts(
+        sale_periods,
+        [
+            "category",
+            "label",
+            "startAt",
+            "endAt",
+        ],
+    )
+
+    return {
+        "name":
+            clean(
+                option.get(
+                    "name",
+                    "",
+                )
+            ),
+
+        "type":
+            clean(
+                option.get(
+                    "type",
+                    "",
+                )
+            ),
+
+        "status":
+            clean(
+                option.get(
+                    "status",
+                    "",
+                )
+            ),
+
+        "price":
+            clean(
+                option.get(
+                    "price",
+                    "",
+                )
+            ),
+
+        "remaining":
+            option.get(
+                "remaining"
+            ),
+
+        "remainingText":
+            clean(
+                option.get(
+                    "remainingText",
+                    "",
+                )
+            ),
+
+        "saleStartAt":
+            clean(
+                option.get(
+                    "saleStartAt",
+                    "",
+                )
+            ),
+
+        "saleEndAt":
+            clean(
+                option.get(
+                    "saleEndAt",
+                    "",
+                )
+            ),
+
+        "saleCategory":
+            clean(
+                option.get(
+                    "saleCategory",
+                    "",
+                )
+            ),
+
+        "saleLabel":
+            clean(
+                option.get(
+                    "saleLabel",
+                    "",
+                )
+            ),
+
+        "salePeriods":
+            sale_periods,
+    }
+
+
+def get_ticket_sale_periods(
+    ticket,
+):
+    result = []
+
+    raw_periods = ticket.get(
+        "salePeriods",
+        [],
+    )
+
+    if isinstance(
+        raw_periods,
+        list,
+    ):
+        for period in raw_periods:
+            normalized = (
+                normalize_sale_period(
+                    period
+                )
+            )
+
+            if normalized:
+                result.append(
+                    normalized
+                )
+
+    # トップレベルの販売情報
+    if (
+        ticket.get(
+            "saleStartAt"
+        )
+    ):
+        result.append({
+            "category":
+                clean(
+                    ticket.get(
+                        "saleCategory",
+                        "",
+                    )
+                ),
+
+            "label":
+                clean(
+                    ticket.get(
+                        "saleLabel",
+                        "",
+                    )
+                ),
+
+            "startAt":
+                clean(
+                    ticket.get(
+                        "saleStartAt",
+                        "",
+                    )
+                ),
+
+            "endAt":
+                clean(
+                    ticket.get(
+                        "saleEndAt",
+                        "",
+                    )
+                ),
+        })
+
+    # ticketOptionsの中にも販売期間がある
+    options = ticket.get(
+        "ticketOptions",
+        [],
+    )
+
+    if isinstance(
+        options,
+        list,
+    ):
+        for option in options:
+            normalized_option = (
+                normalize_ticket_option(
+                    option
+                )
+            )
+
+            if not normalized_option:
+                continue
+
+            result.extend(
+                normalized_option.get(
+                    "salePeriods",
+                    [],
+                )
+            )
+
+    return unique_dicts(
+        result,
+        [
+            "category",
+            "label",
+            "startAt",
+            "endAt",
+        ],
+    )
+
+
+def get_ticket_options(
+    ticket,
+):
+    result = []
+
+    options = ticket.get(
+        "ticketOptions",
+        [],
+    )
+
+    if isinstance(
+        options,
+        list,
+    ):
+        for option in options:
+            normalized = (
+                normalize_ticket_option(
+                    option
+                )
+            )
+
+            if normalized:
+                result.append(
+                    normalized
+                )
+
+    return result
 
 
 # =========================================================
@@ -369,9 +750,29 @@ def find_ticket_matches(
         if score < 10:
             continue
 
+        ticket_options = (
+            get_ticket_options(
+                ticket
+            )
+        )
+
+        sale_periods = (
+            get_ticket_sale_periods(
+                ticket
+            )
+        )
+
         candidates.append({
             "score":
                 score,
+
+            "performerId":
+                clean(
+                    ticket.get(
+                        "performerId",
+                        "",
+                    )
+                ),
 
             "source":
                 clean(
@@ -393,6 +794,14 @@ def find_ticket_matches(
                 clean(
                     ticket.get(
                         "title",
+                        "",
+                    )
+                ),
+
+            "date":
+                clean(
+                    ticket.get(
+                        "date",
                         "",
                     )
                 ),
@@ -428,8 +837,45 @@ def find_ticket_matches(
                         "",
                     )
                 ),
-        })
 
+            "ticketOptions":
+                ticket_options,
+
+            "salePeriods":
+                sale_periods,
+
+            "saleStartAt":
+                clean(
+                    ticket.get(
+                        "saleStartAt",
+                        "",
+                    )
+                ),
+
+            "saleEndAt":
+                clean(
+                    ticket.get(
+                        "saleEndAt",
+                        "",
+                    )
+                ),
+
+            "saleCategory":
+                clean(
+                    ticket.get(
+                        "saleCategory",
+                        "",
+                    )
+                ),
+
+            "saleLabel":
+                clean(
+                    ticket.get(
+                        "saleLabel",
+                        "",
+                    )
+                ),
+        })
 
     candidates.sort(
         key=lambda item:
@@ -439,7 +885,6 @@ def find_ticket_matches(
             ),
         reverse=True,
     )
-
 
     unique = []
     seen = set()
@@ -463,7 +908,10 @@ def find_ticket_matches(
             continue
 
         seen.add(key)
-        unique.append(candidate)
+
+        unique.append(
+            candidate
+        )
 
     return unique
 
@@ -476,6 +924,27 @@ def convert_discovered_event(
     event,
     discovery_source,
 ):
+    performers_text = event.get(
+        "performersText",
+        [],
+    )
+
+    if not isinstance(
+        performers_text,
+        list,
+    ):
+        performers_text = (
+            [
+                clean(
+                    performers_text
+                )
+            ]
+            if clean(
+                performers_text
+            )
+            else []
+        )
+
     return {
         "performerId":
             clean(
@@ -534,6 +1003,11 @@ def convert_discovered_event(
                     "sourceUrl",
                     "",
                 )
+                or
+                event.get(
+                    "discoveryUrl",
+                    "",
+                )
             ),
 
         "theaterId":
@@ -553,9 +1027,14 @@ def convert_discovered_event(
             ),
 
         "performersText":
-            event.get(
-                "performersText",
-                [],
+            performers_text,
+
+        "newUntil":
+            clean(
+                event.get(
+                    "newUntil",
+                    "",
+                )
             ),
     }
 
@@ -620,6 +1099,17 @@ def group_discovered_events(
 
                 "discoveryUrls":
                     [],
+
+                "performersText":
+                    [],
+
+                "newUntil":
+                    clean(
+                        event.get(
+                            "newUntil",
+                            "",
+                        )
+                    ),
             }
 
         performer_id = clean(
@@ -631,8 +1121,7 @@ def group_discovered_events(
 
         if (
             performer_id
-            and
-            performer_id
+            and performer_id
             not in grouped[
                 key
             ][
@@ -656,8 +1145,7 @@ def group_discovered_events(
 
         if (
             source
-            and
-            source not in grouped[
+            and source not in grouped[
                 key
             ][
                 "discoverySources"
@@ -680,8 +1168,7 @@ def group_discovered_events(
 
         if (
             url
-            and
-            url not in grouped[
+            and url not in grouped[
                 key
             ][
                 "discoveryUrls"
@@ -693,6 +1180,104 @@ def group_discovered_events(
                 "discoveryUrls"
             ].append(
                 url
+            )
+
+        performers_text = (
+            event.get(
+                "performersText",
+                [],
+            )
+        )
+
+        if not isinstance(
+            performers_text,
+            list,
+        ):
+            performers_text = [
+                performers_text
+            ]
+
+        grouped[
+            key
+        ][
+            "performersText"
+        ] = unique_strings([
+            *grouped[
+                key
+            ][
+                "performersText"
+            ],
+            *performers_text,
+        ])
+
+        event_new_until = clean(
+            event.get(
+                "newUntil",
+                "",
+            )
+        )
+
+        if (
+            event_new_until
+            and (
+                not grouped[
+                    key
+                ][
+                    "newUntil"
+                ]
+                or event_new_until
+                >
+                grouped[
+                    key
+                ][
+                    "newUntil"
+                ]
+            )
+        ):
+            grouped[
+                key
+            ][
+                "newUntil"
+            ] = event_new_until
+
+        if (
+            not grouped[
+                key
+            ].get(
+                "openTime"
+            )
+            and event.get(
+                "openTime"
+            )
+        ):
+            grouped[
+                key
+            ][
+                "openTime"
+            ] = clean(
+                event.get(
+                    "openTime"
+                )
+            )
+
+        if (
+            not grouped[
+                key
+            ].get(
+                "venue"
+            )
+            and event.get(
+                "venue"
+            )
+        ):
+            grouped[
+                key
+            ][
+                "venue"
+            ] = clean(
+                event.get(
+                    "venue"
+                )
             )
 
     return list(
@@ -719,14 +1304,18 @@ def attach_ticket_status(
         )
 
         if not tracked:
-            tracked = [
-                clean(
-                    event.get(
-                        "performerId",
-                        "",
-                    )
+            performer_id = clean(
+                event.get(
+                    "performerId",
+                    "",
                 )
-            ]
+            )
+
+            tracked = (
+                [performer_id]
+                if performer_id
+                else []
+            )
 
         for performer_id in tracked:
             temp_event = dict(
@@ -745,6 +1334,10 @@ def attach_ticket_status(
             all_matches.extend(
                 matches
             )
+
+        # =================================================
+        # 同じ販売URLをまとめる
+        # =================================================
 
         unique_matches = []
         seen = set()
@@ -782,6 +1375,139 @@ def attach_ticket_status(
             reverse=True,
         )
 
+        # =================================================
+        # 公演側へチケット情報を統合
+        # =================================================
+
+        combined_options = []
+        combined_periods = []
+
+        option_seen = set()
+        period_seen = set()
+
+        for match in unique_matches:
+            for option in match.get(
+                "ticketOptions",
+                [],
+            ):
+                key = (
+                    match.get(
+                        "source",
+                        "",
+                    ),
+                    clean(
+                        option.get(
+                            "name",
+                            "",
+                        )
+                    ),
+                    clean(
+                        option.get(
+                            "type",
+                            "",
+                        )
+                    ),
+                    clean(
+                        option.get(
+                            "price",
+                            "",
+                        )
+                    ),
+                    clean(
+                        option.get(
+                            "status",
+                            "",
+                        )
+                    ),
+                    clean(
+                        option.get(
+                            "saleStartAt",
+                            "",
+                        )
+                    ),
+                )
+
+                if key in option_seen:
+                    continue
+
+                option_seen.add(key)
+
+                combined_options.append({
+                    **deepcopy(
+                        option
+                    ),
+
+                    "source":
+                        match.get(
+                            "source",
+                            "",
+                        ),
+
+                    "sourceUrl":
+                        match.get(
+                            "sourceUrl",
+                            "",
+                        ),
+                })
+
+            for period in match.get(
+                "salePeriods",
+                [],
+            ):
+                key = (
+                    match.get(
+                        "source",
+                        "",
+                    ),
+                    clean(
+                        period.get(
+                            "category",
+                            "",
+                        )
+                    ),
+                    clean(
+                        period.get(
+                            "label",
+                            "",
+                        )
+                    ),
+                    clean(
+                        period.get(
+                            "startAt",
+                            "",
+                        )
+                    ),
+                    clean(
+                        period.get(
+                            "endAt",
+                            "",
+                        )
+                    ),
+                )
+
+                if key in period_seen:
+                    continue
+
+                period_seen.add(key)
+
+                combined_periods.append({
+                    **deepcopy(
+                        period
+                    ),
+
+                    "source":
+                        match.get(
+                            "source",
+                            "",
+                        ),
+
+                    "sourceUrl":
+                        match.get(
+                            "sourceUrl",
+                            "",
+                        ),
+                })
+
         event[
             "ticketMatches"
         ] = unique_matches
@@ -792,15 +1518,141 @@ def attach_ticket_status(
             unique_matches
         )
 
+        event[
+            "ticketOptions"
+        ] = combined_options
+
+        event[
+            "salePeriods"
+        ] = combined_periods
+
+        # =================================================
+        # 代表チケット情報
+        # =================================================
+
         if unique_matches:
+            best = unique_matches[0]
+
             event[
                 "status"
             ] = "ticket_listed"
 
+            event[
+                "ticketStatus"
+            ] = clean(
+                best.get(
+                    "ticketStatus",
+                    "",
+                )
+            )
+
+            event[
+                "source"
+            ] = clean(
+                best.get(
+                    "source",
+                    "",
+                )
+            )
+
+            event[
+                "sourceUrl"
+            ] = clean(
+                best.get(
+                    "sourceUrl",
+                    "",
+                )
+            )
+
+            event[
+                "saleStartAt"
+            ] = clean(
+                best.get(
+                    "saleStartAt",
+                    "",
+                )
+            )
+
+            event[
+                "saleEndAt"
+            ] = clean(
+                best.get(
+                    "saleEndAt",
+                    "",
+                )
+            )
+
+            event[
+                "saleCategory"
+            ] = clean(
+                best.get(
+                    "saleCategory",
+                    "",
+                )
+            )
+
+            event[
+                "saleLabel"
+            ] = clean(
+                best.get(
+                    "saleLabel",
+                    "",
+                )
+            )
+
+            if (
+                not event.get(
+                    "openTime"
+                )
+                and best.get(
+                    "openTime"
+                )
+            ):
+                event[
+                    "openTime"
+                ] = clean(
+                    best.get(
+                        "openTime"
+                    )
+                )
+
         else:
+            # =============================================
+            # ライブ開催は確認済みだが
+            # チケットサイトは未発見
+            # =============================================
+
             event[
                 "status"
             ] = "ticket_unlisted"
+
+            event[
+                "ticketStatus"
+            ] = "チケットサイト公開待ち"
+
+            event[
+                "source"
+            ] = "discovery"
+
+            event[
+                "sourceUrl"
+            ] = ""
+
+            event[
+                "saleStartAt"
+            ] = ""
+
+            event[
+                "saleEndAt"
+            ] = ""
+
+            event[
+                "saleCategory"
+            ] = ""
+
+            event[
+                "saleLabel"
+            ] = ""
 
         result.append(
             event
@@ -811,9 +1663,6 @@ def attach_ticket_status(
 
 # =========================================================
 # EXTRA取得元
-#
-# 後から主催者公式・SNSスクレイパーが
-# ここへデータを流し込める
 # =========================================================
 
 def load_extra_discovery_events():
@@ -874,7 +1723,6 @@ def main():
         "================================"
     )
 
-
     # =====================================================
     # 劇場公式
     # =====================================================
@@ -899,7 +1747,6 @@ def main():
         "件",
     )
 
-
     # =====================================================
     # チケットサイト
     # =====================================================
@@ -921,9 +1768,8 @@ def main():
         "件",
     )
 
-
     # =====================================================
-    # 発見情報を共通形式に
+    # 発見情報を共通形式へ
     # =====================================================
 
     discovered = []
@@ -936,9 +1782,8 @@ def main():
             )
         )
 
-
     # =====================================================
-    # 将来の主催者/SNS取得分
+    # 主催者・SNS・その他発見ソース
     # =====================================================
 
     extra_events = (
@@ -957,7 +1802,6 @@ def main():
         "件",
     )
 
-
     # =====================================================
     # 同一公演をまとめる
     # =====================================================
@@ -968,6 +1812,13 @@ def main():
         )
     )
 
+    print(
+        "発見公演・重複整理後:",
+        len(
+            discovered
+        ),
+        "件",
+    )
 
     # =====================================================
     # チケットサイト照合
@@ -979,7 +1830,6 @@ def main():
             ticket_events,
         )
     )
-
 
     # =====================================================
     # 並び替え
@@ -1004,7 +1854,6 @@ def main():
         )
     )
 
-
     # =====================================================
     # 集計
     # =====================================================
@@ -1025,6 +1874,25 @@ def main():
         listed_count
     )
 
+    ticket_option_count = sum(
+        len(
+            event.get(
+                "ticketOptions",
+                [],
+            )
+        )
+        for event in discovered
+    )
+
+    sale_period_count = sum(
+        len(
+            event.get(
+                "salePeriods",
+                [],
+            )
+        )
+        for event in discovered
+    )
 
     output = {
         "syncedAt":
@@ -1041,16 +1909,24 @@ def main():
         "ticketUnlistedCount":
             unlisted_count,
 
+        "ticketOptionCount":
+            ticket_option_count,
+
+        "salePeriodCount":
+            sale_period_count,
+
         "events":
             discovered,
     }
-
 
     save_json(
         OUTPUT_FILE,
         output,
     )
 
+    # =====================================================
+    # ログ
+    # =====================================================
 
     print("")
     print(
@@ -1066,27 +1942,39 @@ def main():
     )
 
     print(
-        "チケット公開済み:",
+        "チケット情報あり:",
         listed_count,
         "件",
     )
 
     print(
-        "チケット未掲載:",
+        "チケット公開待ち:",
         unlisted_count,
         "件",
     )
 
+    print(
+        "取得券種:",
+        ticket_option_count,
+        "件",
+    )
+
+    print(
+        "取得販売期間:",
+        sale_period_count,
+        "件",
+    )
+
+    print("")
 
     for event in discovered:
-        status = (
-            "🟢"
-            if event.get(
-                "ticketListed"
-            )
-            else
-            "🟠"
-        )
+        if event.get(
+            "ticketListed"
+        ):
+            status = "🎫"
+
+        else:
+            status = "🕐"
 
         print(
             status,
@@ -1108,7 +1996,31 @@ def main():
             ),
         )
 
+        if event.get(
+            "ticketListed"
+        ):
+            for match in event.get(
+                "ticketMatches",
+                [],
+            ):
+                print(
+                    "   └",
+                    match.get(
+                        "source",
+                        ""
+                    ),
+                    match.get(
+                        "ticketStatus",
+                        ""
+                    ),
+                )
 
+        else:
+            print(
+                "   └ チケットサイト公開待ち"
+            )
+
+    print("")
     print(
         "保存:",
         OUTPUT_FILE,
