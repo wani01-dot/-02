@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-22T10:11:14.262814+00:00",
+  "syncedAt": "2026-09-22T10:30:02.101675+00:00",
   "performers": [
     {
       "id": "maison",
@@ -9763,6 +9763,139 @@
       ],
       "firstSeenAt": "2026-09-19T01:59:49.145065+00:00",
       "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-10-12",
+      "openTime": "18:40",
+      "startTime": "19:00",
+      "title": "東山漫才寄席SP",
+      "venue": "浅草 東洋館 (東京都)",
+      "source": "livepocket",
+      "sourceUrl": "https://livepocket.jp/e/dnqhf",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "整理番号券",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "¥3,500",
+          "saleStartAt": "2026-09-04T22:30:00+09:00",
+          "saleEndAt": "2026-09-14T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-09-04T22:30:00+09:00",
+              "endAt": "2026-09-14T23:59:00+09:00",
+              "saleKey": "livepocket|maison|dnqhf|整理番号券|先着|advance|2026-09-04T22:30:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "（税込）",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-09-04T22:30:00+09:00",
+          "saleEndAt": "2026-09-14T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-09-04T22:30:00+09:00",
+              "endAt": "2026-09-14T23:59:00+09:00",
+              "saleKey": "livepocket|maison|dnqhf|（税込）|先着|advance|2026-09-04T22:30:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "同じ販売元のイベント",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-09-04T22:30:00+09:00",
+          "saleEndAt": "2026-09-14T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-09-04T22:30:00+09:00",
+              "endAt": "2026-09-14T23:59:00+09:00",
+              "saleKey": "livepocket|maison|dnqhf|同じ販売元のイベント|先着|advance|2026-09-04T22:30:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-09-04T22:30:00+09:00",
+          "saleEndAt": "2026-09-14T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-09-04T22:30:00+09:00",
+              "endAt": "2026-09-14T23:59:00+09:00",
+              "saleKey": "livepocket|maison|dnqhf|東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵|先着|advance|2026-09-04T22:30:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "東山 / 無尽蔵",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-09-04T22:30:00+09:00",
+          "saleEndAt": "2026-09-14T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-09-04T22:30:00+09:00",
+              "endAt": "2026-09-14T23:59:00+09:00",
+              "saleKey": "livepocket|maison|dnqhf|東山 / 無尽蔵|先着|advance|2026-09-04T22:30:00+09:00"
+            }
+          ]
+        }
+      ],
+      "saleStartAt": "2026-09-04T22:30:00+09:00",
+      "saleEndAt": "2026-09-14T23:59:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "",
+          "startAt": "2026-09-04T22:30:00+09:00",
+          "endAt": "2026-09-14T23:59:00+09:00"
+        }
+      ],
+      "performersText": [
+        "東山",
+        "TCクラクション",
+        "ストレッチ―ズ",
+        "めぞん",
+        "まんじゅう大帝国",
+        "たまゆら学園",
+        "無尽蔵"
+      ],
+      "firstSeenAt": "2026-09-22T10:30:02.097730+00:00",
+      "newUntil": "2026-09-24T10:30:02.097742+00:00",
       "trackedPerformers": [
         "maison"
       ]
