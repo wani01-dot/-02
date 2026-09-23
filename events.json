@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-23T03:02:16.414784+00:00",
+  "syncedAt": "2026-09-23T03:09:07.058811+00:00",
   "performers": [
     {
       "id": "maison",
@@ -8539,25 +8539,6 @@
           ]
         },
         {
-          "name": "東山 / 無尽蔵",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-09-04T22:30:00+09:00",
-          "saleEndAt": "2026-09-14T23:59:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-09-04T22:30:00+09:00",
-              "endAt": "2026-09-14T23:59:00+09:00",
-              "saleKey": "livepocket|maison|dnqhf|東山 / 無尽蔵|先着|advance|2026-09-04T22:30:00+09:00"
-            }
-          ]
-        },
-        {
           "name": "東山 / らくちんペクチン / 江頭一馬",
           "type": "先着",
           "status": "販売中",
@@ -8573,6 +8554,25 @@
               "startAt": "2026-09-04T22:30:00+09:00",
               "endAt": "2026-09-14T23:59:00+09:00",
               "saleKey": "livepocket|maison|dnqhf|東山 / らくちんペクチン / 江頭一馬|先着|advance|2026-09-04T22:30:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "東山 / 無尽蔵",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-09-04T22:30:00+09:00",
+          "saleEndAt": "2026-09-14T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-09-04T22:30:00+09:00",
+              "endAt": "2026-09-14T23:59:00+09:00",
+              "saleKey": "livepocket|maison|dnqhf|東山 / 無尽蔵|先着|advance|2026-09-04T22:30:00+09:00"
             }
           ]
         }
@@ -14220,6 +14220,43 @@
       ],
       "firstSeenAt": "2026-09-19T01:59:49.145065+00:00",
       "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-27",
+      "openTime": "18:00",
+      "startTime": "18:15",
+      "title": "よしもと漫才リーグ～大王チームVSヨネダ2000チーム～",
+      "venue": "よしもと幕張イオンモール劇場（千葉県）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68584/54529",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-24T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-24T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "【キャプテン】大王",
+        "めぞん",
+        "ミカボ",
+        "LLR",
+        "【キャプテン】ヨネダ2000",
+        "ヘンダーソン",
+        "プリズンクイズチャンネル"
+      ],
+      "firstSeenAt": "2026-09-23T03:09:07.055112+00:00",
+      "newUntil": "2026-09-25T03:09:07.055124+00:00",
       "trackedPerformers": [
         "maison"
       ]
