@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-23T05:41:59.977463+00:00",
+  "syncedAt": "2026-09-23T06:47:13.503493+00:00",
   "total": 147,
   "ticketListedCount": 118,
   "ticketUnlistedCount": 29,
@@ -287,28 +287,8 @@
           "venue": "インテックス大阪4号館5号館（大阪府）",
           "openTime": "09:30",
           "startTime": "10:30",
-          "ticketStatus": "予定数終了",
+          "ticketStatus": "販売終了",
           "ticketOptions": [
-            {
-              "name": "先着",
-              "type": "先着",
-              "status": "予定数終了",
-              "price": "",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-23T00:00:00+09:00",
-              "saleEndAt": "2026-09-23T15:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "",
-                  "startAt": "2026-09-23T00:00:00+09:00",
-                  "endAt": "2026-09-23T15:00:00+09:00"
-                }
-              ]
-            },
             {
               "name": "先着",
               "type": "先着",
@@ -348,15 +328,29 @@
                   "endAt": "2026-09-22T23:59:00+09:00"
                 }
               ]
+            },
+            {
+              "name": "先着",
+              "type": "先着",
+              "status": "販売終了",
+              "price": "",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-09-23T00:00:00+09:00",
+              "saleEndAt": "2026-09-23T15:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "",
+                  "startAt": "2026-09-23T00:00:00+09:00",
+                  "endAt": "2026-09-23T15:00:00+09:00"
+                }
+              ]
             }
           ],
           "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-09-23T00:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00"
-            },
             {
               "category": "first_come",
               "label": "",
@@ -368,6 +362,12 @@
               "label": "",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T23:59:00+09:00"
+            },
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-23T00:00:00+09:00",
+              "endAt": "2026-09-23T15:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-01T11:00:00+09:00",
@@ -565,28 +565,6 @@
         {
           "name": "先着",
           "type": "先着",
-          "status": "予定数終了",
-          "price": "",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-23T00:00:00+09:00",
-          "saleEndAt": "2026-09-23T15:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-09-23T00:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00"
-            }
-          ],
-          "source": "eplus",
-          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
-        },
-        {
-          "name": "先着",
-          "type": "先着",
           "status": "販売終了",
           "price": "",
           "remaining": null,
@@ -623,6 +601,28 @@
               "label": "",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T23:59:00+09:00"
+            }
+          ],
+          "source": "eplus",
+          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-23T00:00:00+09:00",
+          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-23T00:00:00+09:00",
+              "endAt": "2026-09-23T15:00:00+09:00"
             }
           ],
           "source": "eplus",
@@ -687,14 +687,6 @@
         {
           "category": "first_come",
           "label": "",
-          "startAt": "2026-09-23T00:00:00+09:00",
-          "endAt": "2026-09-23T15:00:00+09:00",
-          "source": "eplus",
-          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
-        },
-        {
-          "category": "first_come",
-          "label": "",
           "startAt": "2026-07-01T11:00:00+09:00",
           "endAt": "2026-07-28T23:59:00+09:00",
           "source": "eplus",
@@ -705,6 +697,14 @@
           "label": "",
           "startAt": "2026-07-29T11:00:00+09:00",
           "endAt": "2026-09-22T23:59:00+09:00",
+          "source": "eplus",
+          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-09-23T00:00:00+09:00",
+          "endAt": "2026-09-23T15:00:00+09:00",
           "source": "eplus",
           "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
         },
@@ -825,52 +825,31 @@
           "score": 14,
           "performerId": "maison",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63124/50667",
+          "sourceUrl": "https://ticket.fany.lol/reception/63118/50667",
           "title": "Shhhh！！！～騒がしい芸人が今日は静かにゲームコーナー！～",
           "date": "2026-09-23",
           "venue": "大宮ラクーンよしもと劇場（埼玉県）",
           "openTime": "16:15",
           "startTime": "16:30",
-          "ticketStatus": "販売中",
-          "ticketOptions": [
-            {
-              "name": "全席指定",
-              "type": "当日",
-              "status": "販売中",
-              "price": "￥2,100",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-08-06T10:00:00+09:00",
-              "saleEndAt": "2026-09-23T14:30:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-08-06T10:00:00+09:00",
-                  "endAt": "2026-09-23T14:30:00+09:00"
-                }
-              ]
-            }
-          ],
+          "ticketStatus": "",
+          "ticketOptions": [],
           "salePeriods": [
             {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-06T10:00:00+09:00",
-              "endAt": "2026-09-23T14:30:00+09:00"
+              "category": "advance",
+              "label": "抽選",
+              "startAt": "2026-08-02T11:00:00+09:00",
+              "endAt": "2026-08-04T11:00:00+09:00"
             },
             {
-              "category": "first_come",
+              "category": "advance",
               "label": "",
-              "startAt": "2026-08-06T10:00:00+09:00",
-              "endAt": "2026-09-23T14:30:00+09:00"
+              "startAt": "2026-08-02T11:00:00+09:00",
+              "endAt": "2026-08-04T11:00:00+09:00"
             }
           ],
-          "saleStartAt": "2026-08-06T10:00:00+09:00",
-          "saleEndAt": "2026-09-23T14:30:00+09:00",
-          "saleCategory": "first_come",
+          "saleStartAt": "2026-08-02T11:00:00+09:00",
+          "saleEndAt": "2026-08-04T11:00:00+09:00",
+          "saleCategory": "advance",
           "saleLabel": ""
         },
         {
@@ -1087,28 +1066,8 @@
           "venue": "インテックス大阪4号館5号館（大阪府）",
           "openTime": "09:30",
           "startTime": "10:30",
-          "ticketStatus": "予定数終了",
+          "ticketStatus": "販売終了",
           "ticketOptions": [
-            {
-              "name": "先着",
-              "type": "先着",
-              "status": "予定数終了",
-              "price": "",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-23T00:00:00+09:00",
-              "saleEndAt": "2026-09-23T15:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "",
-                  "startAt": "2026-09-23T00:00:00+09:00",
-                  "endAt": "2026-09-23T15:00:00+09:00"
-                }
-              ]
-            },
             {
               "name": "先着",
               "type": "先着",
@@ -1148,15 +1107,29 @@
                   "endAt": "2026-09-22T23:59:00+09:00"
                 }
               ]
+            },
+            {
+              "name": "先着",
+              "type": "先着",
+              "status": "販売終了",
+              "price": "",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-09-23T00:00:00+09:00",
+              "saleEndAt": "2026-09-23T15:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "",
+                  "startAt": "2026-09-23T00:00:00+09:00",
+                  "endAt": "2026-09-23T15:00:00+09:00"
+                }
+              ]
             }
           ],
           "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-09-23T00:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00"
-            },
             {
               "category": "first_come",
               "label": "",
@@ -1168,6 +1141,12 @@
               "label": "",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T23:59:00+09:00"
+            },
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-23T00:00:00+09:00",
+              "endAt": "2026-09-23T15:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-01T11:00:00+09:00",
@@ -1186,7 +1165,7 @@
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-08-06T10:00:00+09:00",
-          "saleEndAt": "2026-09-23T14:30:00+09:00",
+          "saleEndAt": "2026-09-23T16:30:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着",
           "salePeriods": [
@@ -1194,11 +1173,11 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-08-06T10:00:00+09:00",
-              "endAt": "2026-09-23T14:30:00+09:00"
+              "endAt": "2026-09-23T16:30:00+09:00"
             }
           ],
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63124/50667"
+          "sourceUrl": "https://ticket.fany.lol/reception/63125/50666"
         },
         {
           "name": "当日フォートナイト大人",
@@ -1335,28 +1314,6 @@
         {
           "name": "先着",
           "type": "先着",
-          "status": "予定数終了",
-          "price": "",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-23T00:00:00+09:00",
-          "saleEndAt": "2026-09-23T15:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-09-23T00:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00"
-            }
-          ],
-          "source": "eplus",
-          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
-        },
-        {
-          "name": "先着",
-          "type": "先着",
           "status": "販売終了",
           "price": "",
           "remaining": null,
@@ -1397,6 +1354,28 @@
           ],
           "source": "eplus",
           "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-23T00:00:00+09:00",
+          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-23T00:00:00+09:00",
+              "endAt": "2026-09-23T15:00:00+09:00"
+            }
+          ],
+          "source": "eplus",
+          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
         }
       ],
       "salePeriods": [
@@ -1417,20 +1396,20 @@
           "sourceUrl": "https://ticket.fany.lol/reception/61299/49902"
         },
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-08-06T10:00:00+09:00",
-          "endAt": "2026-09-23T14:30:00+09:00",
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-08-02T11:00:00+09:00",
+          "endAt": "2026-08-04T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63124/50667"
+          "sourceUrl": "https://ticket.fany.lol/reception/63118/50667"
         },
         {
-          "category": "first_come",
+          "category": "advance",
           "label": "",
-          "startAt": "2026-08-06T10:00:00+09:00",
-          "endAt": "2026-09-23T14:30:00+09:00",
+          "startAt": "2026-08-02T11:00:00+09:00",
+          "endAt": "2026-08-04T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63124/50667"
+          "sourceUrl": "https://ticket.fany.lol/reception/63118/50667"
         },
         {
           "category": "first_come",
@@ -1463,14 +1442,6 @@
           "endAt": "2026-09-23T17:00:00+09:00",
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "category": "first_come",
-          "label": "",
-          "startAt": "2026-09-23T00:00:00+09:00",
-          "endAt": "2026-09-23T15:00:00+09:00",
-          "source": "eplus",
-          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
         },
         {
           "category": "first_come",
@@ -1485,6 +1456,14 @@
           "label": "",
           "startAt": "2026-07-29T11:00:00+09:00",
           "endAt": "2026-09-22T23:59:00+09:00",
+          "source": "eplus",
+          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-09-23T00:00:00+09:00",
+          "endAt": "2026-09-23T15:00:00+09:00",
           "source": "eplus",
           "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
         }
@@ -1778,28 +1757,8 @@
           "venue": "インテックス大阪4号館5号館（大阪府）",
           "openTime": "09:30",
           "startTime": "10:30",
-          "ticketStatus": "予定数終了",
+          "ticketStatus": "販売終了",
           "ticketOptions": [
-            {
-              "name": "先着",
-              "type": "先着",
-              "status": "予定数終了",
-              "price": "",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-23T00:00:00+09:00",
-              "saleEndAt": "2026-09-23T15:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "",
-                  "startAt": "2026-09-23T00:00:00+09:00",
-                  "endAt": "2026-09-23T15:00:00+09:00"
-                }
-              ]
-            },
             {
               "name": "先着",
               "type": "先着",
@@ -1839,15 +1798,29 @@
                   "endAt": "2026-09-22T23:59:00+09:00"
                 }
               ]
+            },
+            {
+              "name": "先着",
+              "type": "先着",
+              "status": "販売終了",
+              "price": "",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-09-23T00:00:00+09:00",
+              "saleEndAt": "2026-09-23T15:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "",
+                  "startAt": "2026-09-23T00:00:00+09:00",
+                  "endAt": "2026-09-23T15:00:00+09:00"
+                }
+              ]
             }
           ],
           "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-09-23T00:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00"
-            },
             {
               "category": "first_come",
               "label": "",
@@ -1859,6 +1832,12 @@
               "label": "",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T23:59:00+09:00"
+            },
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-23T00:00:00+09:00",
+              "endAt": "2026-09-23T15:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-01T11:00:00+09:00",
@@ -2056,28 +2035,6 @@
         {
           "name": "先着",
           "type": "先着",
-          "status": "予定数終了",
-          "price": "",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-23T00:00:00+09:00",
-          "saleEndAt": "2026-09-23T15:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-09-23T00:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00"
-            }
-          ],
-          "source": "eplus",
-          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
-        },
-        {
-          "name": "先着",
-          "type": "先着",
           "status": "販売終了",
           "price": "",
           "remaining": null,
@@ -2114,6 +2071,28 @@
               "label": "",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T23:59:00+09:00"
+            }
+          ],
+          "source": "eplus",
+          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-23T00:00:00+09:00",
+          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-23T00:00:00+09:00",
+              "endAt": "2026-09-23T15:00:00+09:00"
             }
           ],
           "source": "eplus",
@@ -2178,14 +2157,6 @@
         {
           "category": "first_come",
           "label": "",
-          "startAt": "2026-09-23T00:00:00+09:00",
-          "endAt": "2026-09-23T15:00:00+09:00",
-          "source": "eplus",
-          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
-        },
-        {
-          "category": "first_come",
-          "label": "",
           "startAt": "2026-07-01T11:00:00+09:00",
           "endAt": "2026-07-28T23:59:00+09:00",
           "source": "eplus",
@@ -2196,6 +2167,14 @@
           "label": "",
           "startAt": "2026-07-29T11:00:00+09:00",
           "endAt": "2026-09-22T23:59:00+09:00",
+          "source": "eplus",
+          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-09-23T00:00:00+09:00",
+          "endAt": "2026-09-23T15:00:00+09:00",
           "source": "eplus",
           "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
         },
@@ -2316,52 +2295,31 @@
           "score": 14,
           "performerId": "maison",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63124/50667",
+          "sourceUrl": "https://ticket.fany.lol/reception/63118/50667",
           "title": "Shhhh！！！～騒がしい芸人が今日は静かにゲームコーナー！～",
           "date": "2026-09-23",
           "venue": "大宮ラクーンよしもと劇場（埼玉県）",
           "openTime": "16:15",
           "startTime": "16:30",
-          "ticketStatus": "販売中",
-          "ticketOptions": [
-            {
-              "name": "全席指定",
-              "type": "当日",
-              "status": "販売中",
-              "price": "￥2,100",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-08-06T10:00:00+09:00",
-              "saleEndAt": "2026-09-23T14:30:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-08-06T10:00:00+09:00",
-                  "endAt": "2026-09-23T14:30:00+09:00"
-                }
-              ]
-            }
-          ],
+          "ticketStatus": "",
+          "ticketOptions": [],
           "salePeriods": [
             {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-06T10:00:00+09:00",
-              "endAt": "2026-09-23T14:30:00+09:00"
+              "category": "advance",
+              "label": "抽選",
+              "startAt": "2026-08-02T11:00:00+09:00",
+              "endAt": "2026-08-04T11:00:00+09:00"
             },
             {
-              "category": "first_come",
+              "category": "advance",
               "label": "",
-              "startAt": "2026-08-06T10:00:00+09:00",
-              "endAt": "2026-09-23T14:30:00+09:00"
+              "startAt": "2026-08-02T11:00:00+09:00",
+              "endAt": "2026-08-04T11:00:00+09:00"
             }
           ],
-          "saleStartAt": "2026-08-06T10:00:00+09:00",
-          "saleEndAt": "2026-09-23T14:30:00+09:00",
-          "saleCategory": "first_come",
+          "saleStartAt": "2026-08-02T11:00:00+09:00",
+          "saleEndAt": "2026-08-04T11:00:00+09:00",
+          "saleCategory": "advance",
           "saleLabel": ""
         },
         {
@@ -2578,28 +2536,8 @@
           "venue": "インテックス大阪4号館5号館（大阪府）",
           "openTime": "09:30",
           "startTime": "10:30",
-          "ticketStatus": "予定数終了",
+          "ticketStatus": "販売終了",
           "ticketOptions": [
-            {
-              "name": "先着",
-              "type": "先着",
-              "status": "予定数終了",
-              "price": "",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-23T00:00:00+09:00",
-              "saleEndAt": "2026-09-23T15:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "",
-                  "startAt": "2026-09-23T00:00:00+09:00",
-                  "endAt": "2026-09-23T15:00:00+09:00"
-                }
-              ]
-            },
             {
               "name": "先着",
               "type": "先着",
@@ -2639,15 +2577,29 @@
                   "endAt": "2026-09-22T23:59:00+09:00"
                 }
               ]
+            },
+            {
+              "name": "先着",
+              "type": "先着",
+              "status": "販売終了",
+              "price": "",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-09-23T00:00:00+09:00",
+              "saleEndAt": "2026-09-23T15:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "",
+                  "startAt": "2026-09-23T00:00:00+09:00",
+                  "endAt": "2026-09-23T15:00:00+09:00"
+                }
+              ]
             }
           ],
           "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-09-23T00:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00"
-            },
             {
               "category": "first_come",
               "label": "",
@@ -2659,6 +2611,12 @@
               "label": "",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T23:59:00+09:00"
+            },
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-23T00:00:00+09:00",
+              "endAt": "2026-09-23T15:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-01T11:00:00+09:00",
@@ -2677,7 +2635,7 @@
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-08-06T10:00:00+09:00",
-          "saleEndAt": "2026-09-23T14:30:00+09:00",
+          "saleEndAt": "2026-09-23T16:30:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着",
           "salePeriods": [
@@ -2685,11 +2643,11 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-08-06T10:00:00+09:00",
-              "endAt": "2026-09-23T14:30:00+09:00"
+              "endAt": "2026-09-23T16:30:00+09:00"
             }
           ],
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63124/50667"
+          "sourceUrl": "https://ticket.fany.lol/reception/63125/50666"
         },
         {
           "name": "当日フォートナイト大人",
@@ -2826,28 +2784,6 @@
         {
           "name": "先着",
           "type": "先着",
-          "status": "予定数終了",
-          "price": "",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-23T00:00:00+09:00",
-          "saleEndAt": "2026-09-23T15:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-09-23T00:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00"
-            }
-          ],
-          "source": "eplus",
-          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
-        },
-        {
-          "name": "先着",
-          "type": "先着",
           "status": "販売終了",
           "price": "",
           "remaining": null,
@@ -2888,6 +2824,28 @@
           ],
           "source": "eplus",
           "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-23T00:00:00+09:00",
+          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-23T00:00:00+09:00",
+              "endAt": "2026-09-23T15:00:00+09:00"
+            }
+          ],
+          "source": "eplus",
+          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
         }
       ],
       "salePeriods": [
@@ -2908,20 +2866,20 @@
           "sourceUrl": "https://ticket.fany.lol/reception/61299/49903"
         },
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-08-06T10:00:00+09:00",
-          "endAt": "2026-09-23T14:30:00+09:00",
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-08-02T11:00:00+09:00",
+          "endAt": "2026-08-04T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63124/50667"
+          "sourceUrl": "https://ticket.fany.lol/reception/63118/50667"
         },
         {
-          "category": "first_come",
+          "category": "advance",
           "label": "",
-          "startAt": "2026-08-06T10:00:00+09:00",
-          "endAt": "2026-09-23T14:30:00+09:00",
+          "startAt": "2026-08-02T11:00:00+09:00",
+          "endAt": "2026-08-04T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63124/50667"
+          "sourceUrl": "https://ticket.fany.lol/reception/63118/50667"
         },
         {
           "category": "first_come",
@@ -2954,14 +2912,6 @@
           "endAt": "2026-09-23T17:00:00+09:00",
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "category": "first_come",
-          "label": "",
-          "startAt": "2026-09-23T00:00:00+09:00",
-          "endAt": "2026-09-23T15:00:00+09:00",
-          "source": "eplus",
-          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
         },
         {
           "category": "first_come",
@@ -2976,6 +2926,14 @@
           "label": "",
           "startAt": "2026-07-29T11:00:00+09:00",
           "endAt": "2026-09-22T23:59:00+09:00",
+          "source": "eplus",
+          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-09-23T00:00:00+09:00",
+          "endAt": "2026-09-23T15:00:00+09:00",
           "source": "eplus",
           "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
         }
@@ -3269,28 +3227,8 @@
           "venue": "インテックス大阪4号館5号館（大阪府）",
           "openTime": "09:30",
           "startTime": "10:30",
-          "ticketStatus": "予定数終了",
+          "ticketStatus": "販売終了",
           "ticketOptions": [
-            {
-              "name": "先着",
-              "type": "先着",
-              "status": "予定数終了",
-              "price": "",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-23T00:00:00+09:00",
-              "saleEndAt": "2026-09-23T15:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "",
-                  "startAt": "2026-09-23T00:00:00+09:00",
-                  "endAt": "2026-09-23T15:00:00+09:00"
-                }
-              ]
-            },
             {
               "name": "先着",
               "type": "先着",
@@ -3330,15 +3268,29 @@
                   "endAt": "2026-09-22T23:59:00+09:00"
                 }
               ]
+            },
+            {
+              "name": "先着",
+              "type": "先着",
+              "status": "販売終了",
+              "price": "",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-09-23T00:00:00+09:00",
+              "saleEndAt": "2026-09-23T15:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "",
+                  "startAt": "2026-09-23T00:00:00+09:00",
+                  "endAt": "2026-09-23T15:00:00+09:00"
+                }
+              ]
             }
           ],
           "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-09-23T00:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00"
-            },
             {
               "category": "first_come",
               "label": "",
@@ -3350,6 +3302,12 @@
               "label": "",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T23:59:00+09:00"
+            },
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-23T00:00:00+09:00",
+              "endAt": "2026-09-23T15:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-01T11:00:00+09:00",
@@ -3547,28 +3505,6 @@
         {
           "name": "先着",
           "type": "先着",
-          "status": "予定数終了",
-          "price": "",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-23T00:00:00+09:00",
-          "saleEndAt": "2026-09-23T15:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-09-23T00:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00"
-            }
-          ],
-          "source": "eplus",
-          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
-        },
-        {
-          "name": "先着",
-          "type": "先着",
           "status": "販売終了",
           "price": "",
           "remaining": null,
@@ -3605,6 +3541,28 @@
               "label": "",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T23:59:00+09:00"
+            }
+          ],
+          "source": "eplus",
+          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-23T00:00:00+09:00",
+          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-23T00:00:00+09:00",
+              "endAt": "2026-09-23T15:00:00+09:00"
             }
           ],
           "source": "eplus",
@@ -3669,14 +3627,6 @@
         {
           "category": "first_come",
           "label": "",
-          "startAt": "2026-09-23T00:00:00+09:00",
-          "endAt": "2026-09-23T15:00:00+09:00",
-          "source": "eplus",
-          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
-        },
-        {
-          "category": "first_come",
-          "label": "",
           "startAt": "2026-07-01T11:00:00+09:00",
           "endAt": "2026-07-28T23:59:00+09:00",
           "source": "eplus",
@@ -3687,6 +3637,14 @@
           "label": "",
           "startAt": "2026-07-29T11:00:00+09:00",
           "endAt": "2026-09-22T23:59:00+09:00",
+          "source": "eplus",
+          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-09-23T00:00:00+09:00",
+          "endAt": "2026-09-23T15:00:00+09:00",
           "source": "eplus",
           "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
         },
@@ -3745,52 +3703,31 @@
           "score": 24,
           "performerId": "maison",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63124/50667",
+          "sourceUrl": "https://ticket.fany.lol/reception/63118/50667",
           "title": "Shhhh！！！～騒がしい芸人が今日は静かにゲームコーナー！～",
           "date": "2026-09-23",
           "venue": "大宮ラクーンよしもと劇場（埼玉県）",
           "openTime": "16:15",
           "startTime": "16:30",
-          "ticketStatus": "販売中",
-          "ticketOptions": [
-            {
-              "name": "全席指定",
-              "type": "当日",
-              "status": "販売中",
-              "price": "￥2,100",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-08-06T10:00:00+09:00",
-              "saleEndAt": "2026-09-23T14:30:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-08-06T10:00:00+09:00",
-                  "endAt": "2026-09-23T14:30:00+09:00"
-                }
-              ]
-            }
-          ],
+          "ticketStatus": "",
+          "ticketOptions": [],
           "salePeriods": [
             {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-06T10:00:00+09:00",
-              "endAt": "2026-09-23T14:30:00+09:00"
+              "category": "advance",
+              "label": "抽選",
+              "startAt": "2026-08-02T11:00:00+09:00",
+              "endAt": "2026-08-04T11:00:00+09:00"
             },
             {
-              "category": "first_come",
+              "category": "advance",
               "label": "",
-              "startAt": "2026-08-06T10:00:00+09:00",
-              "endAt": "2026-09-23T14:30:00+09:00"
+              "startAt": "2026-08-02T11:00:00+09:00",
+              "endAt": "2026-08-04T11:00:00+09:00"
             }
           ],
-          "saleStartAt": "2026-08-06T10:00:00+09:00",
-          "saleEndAt": "2026-09-23T14:30:00+09:00",
-          "saleCategory": "first_come",
+          "saleStartAt": "2026-08-02T11:00:00+09:00",
+          "saleEndAt": "2026-08-04T11:00:00+09:00",
+          "saleCategory": "advance",
           "saleLabel": ""
         },
         {
@@ -4069,28 +4006,8 @@
           "venue": "インテックス大阪4号館5号館（大阪府）",
           "openTime": "09:30",
           "startTime": "10:30",
-          "ticketStatus": "予定数終了",
+          "ticketStatus": "販売終了",
           "ticketOptions": [
-            {
-              "name": "先着",
-              "type": "先着",
-              "status": "予定数終了",
-              "price": "",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-23T00:00:00+09:00",
-              "saleEndAt": "2026-09-23T15:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "",
-                  "startAt": "2026-09-23T00:00:00+09:00",
-                  "endAt": "2026-09-23T15:00:00+09:00"
-                }
-              ]
-            },
             {
               "name": "先着",
               "type": "先着",
@@ -4130,15 +4047,29 @@
                   "endAt": "2026-09-22T23:59:00+09:00"
                 }
               ]
+            },
+            {
+              "name": "先着",
+              "type": "先着",
+              "status": "販売終了",
+              "price": "",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-09-23T00:00:00+09:00",
+              "saleEndAt": "2026-09-23T15:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "",
+                  "startAt": "2026-09-23T00:00:00+09:00",
+                  "endAt": "2026-09-23T15:00:00+09:00"
+                }
+              ]
             }
           ],
           "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-09-23T00:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00"
-            },
             {
               "category": "first_come",
               "label": "",
@@ -4150,6 +4081,12 @@
               "label": "",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T23:59:00+09:00"
+            },
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-23T00:00:00+09:00",
+              "endAt": "2026-09-23T15:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-01T11:00:00+09:00",
@@ -4168,7 +4105,7 @@
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-08-06T10:00:00+09:00",
-          "saleEndAt": "2026-09-23T14:30:00+09:00",
+          "saleEndAt": "2026-09-23T16:30:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着",
           "salePeriods": [
@@ -4176,11 +4113,11 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-08-06T10:00:00+09:00",
-              "endAt": "2026-09-23T14:30:00+09:00"
+              "endAt": "2026-09-23T16:30:00+09:00"
             }
           ],
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63124/50667"
+          "sourceUrl": "https://ticket.fany.lol/reception/63125/50666"
         },
         {
           "name": "当日フォートナイト大人",
@@ -4317,28 +4254,6 @@
         {
           "name": "先着",
           "type": "先着",
-          "status": "予定数終了",
-          "price": "",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-23T00:00:00+09:00",
-          "saleEndAt": "2026-09-23T15:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-09-23T00:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00"
-            }
-          ],
-          "source": "eplus",
-          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
-        },
-        {
-          "name": "先着",
-          "type": "先着",
           "status": "販売終了",
           "price": "",
           "remaining": null,
@@ -4379,24 +4294,46 @@
           ],
           "source": "eplus",
           "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-23T00:00:00+09:00",
+          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-23T00:00:00+09:00",
+              "endAt": "2026-09-23T15:00:00+09:00"
+            }
+          ],
+          "source": "eplus",
+          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
         }
       ],
       "salePeriods": [
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-08-06T10:00:00+09:00",
-          "endAt": "2026-09-23T14:30:00+09:00",
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-08-02T11:00:00+09:00",
+          "endAt": "2026-08-04T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63124/50667"
+          "sourceUrl": "https://ticket.fany.lol/reception/63118/50667"
         },
         {
-          "category": "first_come",
+          "category": "advance",
           "label": "",
-          "startAt": "2026-08-06T10:00:00+09:00",
-          "endAt": "2026-09-23T14:30:00+09:00",
+          "startAt": "2026-08-02T11:00:00+09:00",
+          "endAt": "2026-08-04T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63124/50667"
+          "sourceUrl": "https://ticket.fany.lol/reception/63118/50667"
         },
         {
           "category": "advance",
@@ -4449,14 +4386,6 @@
         {
           "category": "first_come",
           "label": "",
-          "startAt": "2026-09-23T00:00:00+09:00",
-          "endAt": "2026-09-23T15:00:00+09:00",
-          "source": "eplus",
-          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
-        },
-        {
-          "category": "first_come",
-          "label": "",
           "startAt": "2026-07-01T11:00:00+09:00",
           "endAt": "2026-07-28T23:59:00+09:00",
           "source": "eplus",
@@ -4469,15 +4398,23 @@
           "endAt": "2026-09-22T23:59:00+09:00",
           "source": "eplus",
           "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-09-23T00:00:00+09:00",
+          "endAt": "2026-09-23T15:00:00+09:00",
+          "source": "eplus",
+          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
         }
       ],
       "status": "ticket_listed",
-      "ticketStatus": "販売中",
+      "ticketStatus": "",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/63124/50667",
-      "saleStartAt": "2026-08-06T10:00:00+09:00",
-      "saleEndAt": "2026-09-23T14:30:00+09:00",
-      "saleCategory": "first_come",
+      "sourceUrl": "https://ticket.fany.lol/reception/63118/50667",
+      "saleStartAt": "2026-08-02T11:00:00+09:00",
+      "saleEndAt": "2026-08-04T11:00:00+09:00",
+      "saleCategory": "advance",
       "saleLabel": ""
     },
     {
@@ -4623,52 +4560,31 @@
           "score": 14,
           "performerId": "maison",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63124/50667",
+          "sourceUrl": "https://ticket.fany.lol/reception/63118/50667",
           "title": "Shhhh！！！～騒がしい芸人が今日は静かにゲームコーナー！～",
           "date": "2026-09-23",
           "venue": "大宮ラクーンよしもと劇場（埼玉県）",
           "openTime": "16:15",
           "startTime": "16:30",
-          "ticketStatus": "販売中",
-          "ticketOptions": [
-            {
-              "name": "全席指定",
-              "type": "当日",
-              "status": "販売中",
-              "price": "￥2,100",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-08-06T10:00:00+09:00",
-              "saleEndAt": "2026-09-23T14:30:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-08-06T10:00:00+09:00",
-                  "endAt": "2026-09-23T14:30:00+09:00"
-                }
-              ]
-            }
-          ],
+          "ticketStatus": "",
+          "ticketOptions": [],
           "salePeriods": [
             {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-06T10:00:00+09:00",
-              "endAt": "2026-09-23T14:30:00+09:00"
+              "category": "advance",
+              "label": "抽選",
+              "startAt": "2026-08-02T11:00:00+09:00",
+              "endAt": "2026-08-04T11:00:00+09:00"
             },
             {
-              "category": "first_come",
+              "category": "advance",
               "label": "",
-              "startAt": "2026-08-06T10:00:00+09:00",
-              "endAt": "2026-09-23T14:30:00+09:00"
+              "startAt": "2026-08-02T11:00:00+09:00",
+              "endAt": "2026-08-04T11:00:00+09:00"
             }
           ],
-          "saleStartAt": "2026-08-06T10:00:00+09:00",
-          "saleEndAt": "2026-09-23T14:30:00+09:00",
-          "saleCategory": "first_come",
+          "saleStartAt": "2026-08-02T11:00:00+09:00",
+          "saleEndAt": "2026-08-04T11:00:00+09:00",
+          "saleCategory": "advance",
           "saleLabel": ""
         },
         {
@@ -4833,28 +4749,8 @@
           "venue": "インテックス大阪4号館5号館（大阪府）",
           "openTime": "09:30",
           "startTime": "10:30",
-          "ticketStatus": "予定数終了",
+          "ticketStatus": "販売終了",
           "ticketOptions": [
-            {
-              "name": "先着",
-              "type": "先着",
-              "status": "予定数終了",
-              "price": "",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-23T00:00:00+09:00",
-              "saleEndAt": "2026-09-23T15:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "",
-                  "startAt": "2026-09-23T00:00:00+09:00",
-                  "endAt": "2026-09-23T15:00:00+09:00"
-                }
-              ]
-            },
             {
               "name": "先着",
               "type": "先着",
@@ -4894,15 +4790,29 @@
                   "endAt": "2026-09-22T23:59:00+09:00"
                 }
               ]
+            },
+            {
+              "name": "先着",
+              "type": "先着",
+              "status": "販売終了",
+              "price": "",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-09-23T00:00:00+09:00",
+              "saleEndAt": "2026-09-23T15:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "",
+                  "startAt": "2026-09-23T00:00:00+09:00",
+                  "endAt": "2026-09-23T15:00:00+09:00"
+                }
+              ]
             }
           ],
           "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-09-23T00:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00"
-            },
             {
               "category": "first_come",
               "label": "",
@@ -4914,6 +4824,12 @@
               "label": "",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T23:59:00+09:00"
+            },
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-23T00:00:00+09:00",
+              "endAt": "2026-09-23T15:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-01T11:00:00+09:00",
@@ -5081,28 +4997,6 @@
         {
           "name": "先着",
           "type": "先着",
-          "status": "予定数終了",
-          "price": "",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-23T00:00:00+09:00",
-          "saleEndAt": "2026-09-23T15:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-09-23T00:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00"
-            }
-          ],
-          "source": "eplus",
-          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
-        },
-        {
-          "name": "先着",
-          "type": "先着",
           "status": "販売終了",
           "price": "",
           "remaining": null,
@@ -5143,6 +5037,28 @@
           ],
           "source": "eplus",
           "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-23T00:00:00+09:00",
+          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-23T00:00:00+09:00",
+              "endAt": "2026-09-23T15:00:00+09:00"
+            }
+          ],
+          "source": "eplus",
+          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
         }
       ],
       "salePeriods": [
@@ -5179,20 +5095,20 @@
           "sourceUrl": "https://ticket.fany.lol/reception/61299/49902"
         },
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-08-06T10:00:00+09:00",
-          "endAt": "2026-09-23T14:30:00+09:00",
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-08-02T11:00:00+09:00",
+          "endAt": "2026-08-04T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63124/50667"
+          "sourceUrl": "https://ticket.fany.lol/reception/63118/50667"
         },
         {
-          "category": "first_come",
+          "category": "advance",
           "label": "",
-          "startAt": "2026-08-06T10:00:00+09:00",
-          "endAt": "2026-09-23T14:30:00+09:00",
+          "startAt": "2026-08-02T11:00:00+09:00",
+          "endAt": "2026-08-04T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/63124/50667"
+          "sourceUrl": "https://ticket.fany.lol/reception/63118/50667"
         },
         {
           "category": "first_come",
@@ -5209,14 +5125,6 @@
           "endAt": "2026-09-23T17:00:00+09:00",
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "category": "first_come",
-          "label": "",
-          "startAt": "2026-09-23T00:00:00+09:00",
-          "endAt": "2026-09-23T15:00:00+09:00",
-          "source": "eplus",
-          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
         },
         {
           "category": "first_come",
@@ -5231,6 +5139,14 @@
           "label": "",
           "startAt": "2026-07-29T11:00:00+09:00",
           "endAt": "2026-09-22T23:59:00+09:00",
+          "source": "eplus",
+          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-09-23T00:00:00+09:00",
+          "endAt": "2026-09-23T15:00:00+09:00",
           "source": "eplus",
           "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
         }
@@ -5483,28 +5399,8 @@
           "venue": "インテックス大阪4号館5号館（大阪府）",
           "openTime": "09:30",
           "startTime": "10:30",
-          "ticketStatus": "予定数終了",
+          "ticketStatus": "販売終了",
           "ticketOptions": [
-            {
-              "name": "先着",
-              "type": "先着",
-              "status": "予定数終了",
-              "price": "",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-23T00:00:00+09:00",
-              "saleEndAt": "2026-09-23T15:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "",
-                  "startAt": "2026-09-23T00:00:00+09:00",
-                  "endAt": "2026-09-23T15:00:00+09:00"
-                }
-              ]
-            },
             {
               "name": "先着",
               "type": "先着",
@@ -5544,15 +5440,29 @@
                   "endAt": "2026-09-22T23:59:00+09:00"
                 }
               ]
+            },
+            {
+              "name": "先着",
+              "type": "先着",
+              "status": "販売終了",
+              "price": "",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-09-23T00:00:00+09:00",
+              "saleEndAt": "2026-09-23T15:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "",
+                  "startAt": "2026-09-23T00:00:00+09:00",
+                  "endAt": "2026-09-23T15:00:00+09:00"
+                }
+              ]
             }
           ],
           "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-09-23T00:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00"
-            },
             {
               "category": "first_come",
               "label": "",
@@ -5564,6 +5474,12 @@
               "label": "",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T23:59:00+09:00"
+            },
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-23T00:00:00+09:00",
+              "endAt": "2026-09-23T15:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-07-01T11:00:00+09:00",
@@ -5824,28 +5740,6 @@
         {
           "name": "先着",
           "type": "先着",
-          "status": "予定数終了",
-          "price": "",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-23T00:00:00+09:00",
-          "saleEndAt": "2026-09-23T15:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-09-23T00:00:00+09:00",
-              "endAt": "2026-09-23T15:00:00+09:00"
-            }
-          ],
-          "source": "eplus",
-          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
-        },
-        {
-          "name": "先着",
-          "type": "先着",
           "status": "販売終了",
           "price": "",
           "remaining": null,
@@ -5882,6 +5776,28 @@
               "label": "",
               "startAt": "2026-07-29T11:00:00+09:00",
               "endAt": "2026-09-22T23:59:00+09:00"
+            }
+          ],
+          "source": "eplus",
+          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-23T00:00:00+09:00",
+          "saleEndAt": "2026-09-23T15:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-23T00:00:00+09:00",
+              "endAt": "2026-09-23T15:00:00+09:00"
             }
           ],
           "source": "eplus",
@@ -5924,14 +5840,6 @@
         {
           "category": "first_come",
           "label": "",
-          "startAt": "2026-09-23T00:00:00+09:00",
-          "endAt": "2026-09-23T15:00:00+09:00",
-          "source": "eplus",
-          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
-        },
-        {
-          "category": "first_come",
-          "label": "",
           "startAt": "2026-07-01T11:00:00+09:00",
           "endAt": "2026-07-28T23:59:00+09:00",
           "source": "eplus",
@@ -5942,6 +5850,14 @@
           "label": "",
           "startAt": "2026-07-29T11:00:00+09:00",
           "endAt": "2026-09-22T23:59:00+09:00",
+          "source": "eplus",
+          "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-09-23T00:00:00+09:00",
+          "endAt": "2026-09-23T15:00:00+09:00",
           "source": "eplus",
           "sourceUrl": "https://eplus.jp/sf/detail/0232520001-P0030018P021003?P1=0175"
         },
@@ -25231,7 +25147,7 @@
               ]
             },
             {
-              "name": "東山 / らくちんペクチン / 江頭一馬",
+              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -25251,7 +25167,7 @@
               ]
             },
             {
-              "name": "東山 / 無尽蔵",
+              "name": "東山 / らくちんペクチン / 江頭一馬",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -25442,7 +25358,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / らくちんペクチン / 江頭一馬",
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -25464,7 +25380,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / 無尽蔵",
+          "name": "東山 / らくちんペクチン / 江頭一馬",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -25955,7 +25871,7 @@
               ]
             },
             {
-              "name": "東山 / らくちんペクチン / 江頭一馬",
+              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -25975,7 +25891,7 @@
               ]
             },
             {
-              "name": "東山 / 無尽蔵",
+              "name": "東山 / らくちんペクチン / 江頭一馬",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -26166,7 +26082,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / らくちんペクチン / 江頭一馬",
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -26188,7 +26104,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / 無尽蔵",
+          "name": "東山 / らくちんペクチン / 江頭一馬",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -26679,7 +26595,7 @@
               ]
             },
             {
-              "name": "東山 / らくちんペクチン / 江頭一馬",
+              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -26699,7 +26615,7 @@
               ]
             },
             {
-              "name": "東山 / 無尽蔵",
+              "name": "東山 / らくちんペクチン / 江頭一馬",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -26890,7 +26806,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / らくちんペクチン / 江頭一馬",
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -26912,7 +26828,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / 無尽蔵",
+          "name": "東山 / らくちんペクチン / 江頭一馬",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -27403,7 +27319,7 @@
               ]
             },
             {
-              "name": "東山 / らくちんペクチン / 江頭一馬",
+              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -27423,7 +27339,7 @@
               ]
             },
             {
-              "name": "東山 / 無尽蔵",
+              "name": "東山 / らくちんペクチン / 江頭一馬",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -27614,7 +27530,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / らくちんペクチン / 江頭一馬",
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -27636,7 +27552,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / 無尽蔵",
+          "name": "東山 / らくちんペクチン / 江頭一馬",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -39294,7 +39210,7 @@
       "theaterId": "jimbocho",
       "theaterName": "神保町",
       "performersText": [
-        "[ネタ出演者]兄弟／イワサキ／あなたとネ／他",
+        "[ネタ出演者]兄弟／イワサキ／エグい速さ／ミナミナミ／あなたとネ／他",
         "ピュート×セカンドロットツーマンライブ「オールグリーン」"
       ],
       "newUntil": "",
@@ -39369,7 +39285,7 @@
       "theaterId": "jimbocho",
       "theaterName": "神保町",
       "performersText": [
-        "[ネタ出演者]めぞん／インテイク／大王／他"
+        "[ネタ出演者]めぞん／インテイク／大王／セカンドロット／他"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -39443,7 +39359,7 @@
       "theaterId": "jimbocho",
       "theaterName": "神保町",
       "performersText": [
-        "[ネタ出演者]ケビンス／軟水／インテイク／伝書鳩／他"
+        "[ネタ出演者]ケビンス／軟水／インテイク／伝書鳩／とりせん／球技大会／他"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -39517,7 +39433,7 @@
       "theaterId": "jimbocho",
       "theaterName": "神保町",
       "performersText": [
-        "[ネタ出演者]マルセイユ／kento fukaya／まんじろう／軟水／あなたとネ／他"
+        "[ネタ出演者]マルセイユ／kento fukaya／まんじろう／軟水／イチゴ／あなたとネ／他"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -39554,7 +39470,7 @@
       "theaterId": "jimbocho",
       "theaterName": "神保町",
       "performersText": [
-        "[ネタ出演者]マルセイユ／kento fukaya／まんじろう／アズーロ24／軟水／あなたとネ／他"
+        "[ネタ出演者]マルセイユ／kento fukaya／まんじろう／アズーロ24／軟水／イチゴ／あなたとネ／他"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -39591,7 +39507,7 @@
       "theaterId": "jimbocho",
       "theaterName": "神保町",
       "performersText": [
-        "[ネタ出演者]マルセイユ／kento fukaya／まんじろう／アズーロ24／軟水／あなたとネ／他"
+        "[ネタ出演者]マルセイユ／kento fukaya／まんじろう／アズーロ24／軟水／イチゴ／あなたとネ／他"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -39887,7 +39803,7 @@
       "theaterId": "jimbocho",
       "theaterName": "神保町",
       "performersText": [
-        "[ネタ出演者]世間知らズ／ピュート／ぺ／他"
+        "[ネタ出演者]世間知らズ／ピュート／小虎／ぺ／ニコミハジメテ／他"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -39998,7 +39914,7 @@
       "theaterId": "jimbocho",
       "theaterName": "神保町",
       "performersText": [
-        "[ネタ出演者]軟水／インテイク／大王／他"
+        "[ネタ出演者]そいつどいつ／オフローズ／軟水／インテイク／大王／他"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -40035,7 +39951,7 @@
       "theaterId": "jimbocho",
       "theaterName": "神保町",
       "performersText": [
-        "[ネタ出演者]軟水／インテイク／大王／他"
+        "[ネタ出演者]そいつどいつ／オフローズ／軟水／インテイク／大王／他"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -40072,7 +39988,7 @@
       "theaterId": "jimbocho",
       "theaterName": "神保町",
       "performersText": [
-        "[ネタ出演者]軟水／インテイク／大王／他"
+        "[ネタ出演者]そいつどいつ／オフローズ／軟水／インテイク／大王／他"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -40146,7 +40062,7 @@
       "theaterId": "jimbocho",
       "theaterName": "神保町",
       "performersText": [
-        "[ネタ出演者]ゆにばーす／九条ジョー／シモリュウ／ピュート／金魚番長／他"
+        "[ネタ出演者]ダンビラムーチョ／ゆにばーす／九条ジョー／シモリュウ／ピュート／金魚番長／照山おうちごはん／他"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -40306,7 +40222,7 @@
       "theaterId": "jimbocho",
       "theaterName": "神保町",
       "performersText": [
-        "[ネタ出演者]ダブルヒガシ／めぞん／やさしいズ／ぶったま／太鵬／イワサキ／ぐろう／他"
+        "[ネタ出演者]ダブルヒガシ／めぞん／やさしいズ／ぶったま／ド桜／太鵬／イワサキ／ボブのコーラ／ぐろう／他"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -40343,7 +40259,7 @@
       "theaterId": "jimbocho",
       "theaterName": "神保町",
       "performersText": [
-        "[ネタ出演者]ダブルヒガシ／めぞん／やさしいズ／ぶったま／太鵬／イワサキ／ぐろう／他"
+        "[ネタ出演者]ダブルヒガシ／めぞん／やさしいズ／ぶったま／ド桜／太鵬／イワサキ／ボブのコーラ／ぐろう／他"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -40380,7 +40296,7 @@
       "theaterId": "jimbocho",
       "theaterName": "神保町",
       "performersText": [
-        "[ネタ出演者]ダブルヒガシ／めぞん／セッツァー／やさしいズ／太鵬／イワサキ／ぐろう／他"
+        "[ネタ出演者]ダブルヒガシ／めぞん／セッツァー／やさしいズ／ド桜／太鵬／イワサキ／ボブのコーラ／ぐろう／他"
       ],
       "newUntil": "",
       "trackedPerformers": [
