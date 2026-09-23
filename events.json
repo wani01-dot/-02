@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-23T03:23:34.626343+00:00",
+  "syncedAt": "2026-09-23T03:35:22.879616+00:00",
   "performers": [
     {
       "id": "maison",
@@ -1528,66 +1528,8 @@
       "venue": "大宮ラクーンよしもと劇場（埼玉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61301/49903",
-      "ticketStatus": "販売中",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "販売中",
-          "price": "￥3,200",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-23T12:30:00+09:00",
-              "saleKey": "fany|maison|61301|49903|全席指定|当日|first_come|2026-08-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-23T12:30:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        },
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "販売中",
-          "price": "￥2,000",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-23T12:30:00+09:00",
-              "saleKey": "fany|maison|61301|49903|全席指定|当日|first_come|2026-08-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-23T12:30:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        },
-        {
-          "name": "中学生以下",
-          "type": "",
-          "status": "販売中",
-          "price": "￥1,800",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-23T12:30:00+09:00",
-              "saleKey": "fany|maison|61301|49903|中学生以下||first_come|2026-08-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-23T12:30:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
+      "ticketStatus": "",
+      "ticketOptions": [],
       "saleStartAt": "2026-08-05T10:00:00+09:00",
       "saleEndAt": "2026-09-23T12:30:00+09:00",
       "saleCategory": "first_come",
@@ -8540,7 +8482,7 @@
           ]
         },
         {
-          "name": "東山 / 無尽蔵",
+          "name": "東山 / らくちんペクチン / 江頭一馬",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -8554,7 +8496,7 @@
               "label": "",
               "startAt": "2026-09-04T22:30:00+09:00",
               "endAt": "2026-09-14T23:59:00+09:00",
-              "saleKey": "livepocket|maison|dnqhf|東山 / 無尽蔵|先着|advance|2026-09-04T22:30:00+09:00"
+              "saleKey": "livepocket|maison|dnqhf|東山 / らくちんペクチン / 江頭一馬|先着|advance|2026-09-04T22:30:00+09:00"
             }
           ]
         },
