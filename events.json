@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-23T01:02:56.023464+00:00",
+  "syncedAt": "2026-09-23T01:10:41.722857+00:00",
   "performers": [
     {
       "id": "maison",
@@ -1402,18 +1402,18 @@
       "title": "六本木お笑いコントライブ！",
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/60605/49468",
+      "sourceUrl": "https://ticket.fany.lol/reception/60606/49468",
       "ticketStatus": "",
       "ticketOptions": [],
-      "saleStartAt": "2026-08-05T10:00:00+09:00",
-      "saleEndAt": "2026-09-23T10:00:00+09:00",
-      "saleCategory": "first_come",
+      "saleStartAt": "2026-07-25T11:00:00+09:00",
+      "saleEndAt": "2026-07-28T11:00:00+09:00",
+      "saleCategory": "advance",
       "salePeriods": [
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-08-05T10:00:00+09:00",
-          "endAt": "2026-09-23T10:00:00+09:00"
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-07-25T11:00:00+09:00",
+          "endAt": "2026-07-28T11:00:00+09:00"
         }
       ],
       "performersText": [
@@ -1429,13 +1429,7 @@
         "オフローズ",
         "軟水",
         "ピュート",
-        "MC：コロコロチキチキペッパーズ",
-        "・1回の先着申込で申込可能な公演数は『",
-        "1公演",
-        "』",
-        "枚数は『",
-        "10枚まで",
-        "・座席番号や整理番号は"
+        "MC：コロコロチキチキペッパーズ"
       ],
       "firstSeenAt": "2026-09-19T01:52:13.188696+00:00",
       "newUntil": "",
@@ -1556,12 +1550,12 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/60605/49481",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "販売中",
       "ticketOptions": [
         {
           "name": "全席指定",
           "type": "当日",
-          "status": "残りわずか",
+          "status": "販売中",
           "price": "￥3,500",
           "salePeriods": [
             {
@@ -1580,7 +1574,7 @@
         {
           "name": "全席指定",
           "type": "当日",
-          "status": "残りわずか",
+          "status": "販売中",
           "price": "￥2,300",
           "salePeriods": [
             {
@@ -1599,7 +1593,7 @@
         {
           "name": "★★★★★【子ども割】",
           "type": "",
-          "status": "残りわずか",
+          "status": "販売中",
           "price": "￥1,500",
           "salePeriods": [
             {
@@ -8673,6 +8667,25 @@
           ]
         },
         {
+          "name": "東山 / らくちんペクチン / 江頭一馬",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-09-04T22:30:00+09:00",
+          "saleEndAt": "2026-09-14T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-09-04T22:30:00+09:00",
+              "endAt": "2026-09-14T23:59:00+09:00",
+              "saleKey": "livepocket|maison|dnqhf|東山 / らくちんペクチン / 江頭一馬|先着|advance|2026-09-04T22:30:00+09:00"
+            }
+          ]
+        },
+        {
           "name": "東山 / 無尽蔵",
           "type": "先着",
           "status": "販売中",
@@ -8688,25 +8701,6 @@
               "startAt": "2026-09-04T22:30:00+09:00",
               "endAt": "2026-09-14T23:59:00+09:00",
               "saleKey": "livepocket|maison|dnqhf|東山 / 無尽蔵|先着|advance|2026-09-04T22:30:00+09:00"
-            }
-          ]
-        },
-        {
-          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-09-04T22:30:00+09:00",
-          "saleEndAt": "2026-09-14T23:59:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-09-04T22:30:00+09:00",
-              "endAt": "2026-09-14T23:59:00+09:00",
-              "saleKey": "livepocket|maison|dnqhf|東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵|先着|advance|2026-09-04T22:30:00+09:00"
             }
           ]
         }
