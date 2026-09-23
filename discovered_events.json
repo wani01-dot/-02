@@ -1,9 +1,9 @@
 {
-  "syncedAt": "2026-09-23T07:43:17.357643+00:00",
+  "syncedAt": "2026-09-23T08:43:38.114740+00:00",
   "total": 147,
   "ticketListedCount": 118,
   "ticketUnlistedCount": 29,
-  "ticketOptionCount": 384,
+  "ticketOptionCount": 336,
   "salePeriodCount": 630,
   "events": [
     {
@@ -129,151 +129,30 @@
           "score": 10,
           "performerId": "nansui",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210",
+          "sourceUrl": "https://ticket.fany.lol/reception/54837/45210",
           "title": "【9/23(水)1日券】KOYABU SONIC 2026",
           "date": "2026-09-23",
           "venue": "インテックス大阪 4号館、5号館（大阪府）",
           "openTime": "09:30",
           "startTime": "10:30",
-          "ticketStatus": "販売中",
-          "ticketOptions": [
-            {
-              "name": "当日フォートナイト大人",
-              "type": "",
-              "status": "販売中",
-              "price": "￥16,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日フォートナイト中学生",
-              "type": "",
-              "status": "販売中",
-              "price": "￥5,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日フォートナイトこども",
-              "type": "",
-              "status": "販売中",
-              "price": "￥3,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日 大人",
-              "type": "",
-              "status": "販売中",
-              "price": "￥16,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日 中学生",
-              "type": "",
-              "status": "販売中",
-              "price": "￥5,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日 こども",
-              "type": "",
-              "status": "販売中",
-              "price": "￥3,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            }
-          ],
+          "ticketStatus": "",
+          "ticketOptions": [],
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
+              "startAt": "2026-05-29T13:00:00+09:00",
+              "endAt": "2026-06-23T23:59:00+09:00"
             },
             {
               "category": "first_come",
               "label": "",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
+              "startAt": "2026-05-29T13:00:00+09:00",
+              "endAt": "2026-06-23T23:59:00+09:00"
             }
           ],
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
+          "saleStartAt": "2026-05-29T13:00:00+09:00",
+          "saleEndAt": "2026-06-23T23:59:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": ""
         },
@@ -410,138 +289,6 @@
       "ticketListed": true,
       "ticketOptions": [
         {
-          "name": "当日フォートナイト大人",
-          "type": "",
-          "status": "販売中",
-          "price": "￥16,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日フォートナイト中学生",
-          "type": "",
-          "status": "販売中",
-          "price": "￥5,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日フォートナイトこども",
-          "type": "",
-          "status": "販売中",
-          "price": "￥3,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日 大人",
-          "type": "",
-          "status": "販売中",
-          "price": "￥16,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日 中学生",
-          "type": "",
-          "status": "販売中",
-          "price": "￥5,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日 こども",
-          "type": "",
-          "status": "販売中",
-          "price": "￥3,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
           "name": "先着",
           "type": "先着",
           "status": "販売終了",
@@ -628,18 +375,18 @@
         {
           "category": "first_come",
           "label": "先着",
-          "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-09-23T17:00:00+09:00",
+          "startAt": "2026-05-29T13:00:00+09:00",
+          "endAt": "2026-06-23T23:59:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
+          "sourceUrl": "https://ticket.fany.lol/reception/54837/45210"
         },
         {
           "category": "first_come",
           "label": "",
-          "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-09-23T17:00:00+09:00",
+          "startAt": "2026-05-29T13:00:00+09:00",
+          "endAt": "2026-06-23T23:59:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
+          "sourceUrl": "https://ticket.fany.lol/reception/54837/45210"
         },
         {
           "category": "first_come",
@@ -844,151 +591,30 @@
           "score": 10,
           "performerId": "maison",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210",
+          "sourceUrl": "https://ticket.fany.lol/reception/54837/45210",
           "title": "【9/23(水)1日券】KOYABU SONIC 2026",
           "date": "2026-09-23",
           "venue": "インテックス大阪 4号館、5号館（大阪府）",
           "openTime": "09:30",
           "startTime": "10:30",
-          "ticketStatus": "販売中",
-          "ticketOptions": [
-            {
-              "name": "当日フォートナイト大人",
-              "type": "",
-              "status": "販売中",
-              "price": "￥16,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日フォートナイト中学生",
-              "type": "",
-              "status": "販売中",
-              "price": "￥5,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日フォートナイトこども",
-              "type": "",
-              "status": "販売中",
-              "price": "￥3,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日 大人",
-              "type": "",
-              "status": "販売中",
-              "price": "￥16,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日 中学生",
-              "type": "",
-              "status": "販売中",
-              "price": "￥5,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日 こども",
-              "type": "",
-              "status": "販売中",
-              "price": "￥3,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            }
-          ],
+          "ticketStatus": "",
+          "ticketOptions": [],
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
+              "startAt": "2026-05-29T13:00:00+09:00",
+              "endAt": "2026-06-23T23:59:00+09:00"
             },
             {
               "category": "first_come",
               "label": "",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
+              "startAt": "2026-05-29T13:00:00+09:00",
+              "endAt": "2026-06-23T23:59:00+09:00"
             }
           ],
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
+          "saleStartAt": "2026-05-29T13:00:00+09:00",
+          "saleEndAt": "2026-06-23T23:59:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": ""
         },
@@ -1094,138 +720,6 @@
       "ticketListed": true,
       "ticketOptions": [
         {
-          "name": "当日フォートナイト大人",
-          "type": "",
-          "status": "販売中",
-          "price": "￥16,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日フォートナイト中学生",
-          "type": "",
-          "status": "販売中",
-          "price": "￥5,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日フォートナイトこども",
-          "type": "",
-          "status": "販売中",
-          "price": "￥3,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日 大人",
-          "type": "",
-          "status": "販売中",
-          "price": "￥16,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日 中学生",
-          "type": "",
-          "status": "販売中",
-          "price": "￥5,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日 こども",
-          "type": "",
-          "status": "販売中",
-          "price": "￥3,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
           "name": "先着",
           "type": "先着",
           "status": "販売終了",
@@ -1328,18 +822,18 @@
         {
           "category": "first_come",
           "label": "先着",
-          "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-09-23T17:00:00+09:00",
+          "startAt": "2026-05-29T13:00:00+09:00",
+          "endAt": "2026-06-23T23:59:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
+          "sourceUrl": "https://ticket.fany.lol/reception/54837/45210"
         },
         {
           "category": "first_come",
           "label": "",
-          "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-09-23T17:00:00+09:00",
+          "startAt": "2026-05-29T13:00:00+09:00",
+          "endAt": "2026-06-23T23:59:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
+          "sourceUrl": "https://ticket.fany.lol/reception/54837/45210"
         },
         {
           "category": "first_come",
@@ -1497,151 +991,30 @@
           "score": 10,
           "performerId": "nansui",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210",
+          "sourceUrl": "https://ticket.fany.lol/reception/54837/45210",
           "title": "【9/23(水)1日券】KOYABU SONIC 2026",
           "date": "2026-09-23",
           "venue": "インテックス大阪 4号館、5号館（大阪府）",
           "openTime": "09:30",
           "startTime": "10:30",
-          "ticketStatus": "販売中",
-          "ticketOptions": [
-            {
-              "name": "当日フォートナイト大人",
-              "type": "",
-              "status": "販売中",
-              "price": "￥16,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日フォートナイト中学生",
-              "type": "",
-              "status": "販売中",
-              "price": "￥5,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日フォートナイトこども",
-              "type": "",
-              "status": "販売中",
-              "price": "￥3,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日 大人",
-              "type": "",
-              "status": "販売中",
-              "price": "￥16,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日 中学生",
-              "type": "",
-              "status": "販売中",
-              "price": "￥5,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日 こども",
-              "type": "",
-              "status": "販売中",
-              "price": "￥3,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            }
-          ],
+          "ticketStatus": "",
+          "ticketOptions": [],
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
+              "startAt": "2026-05-29T13:00:00+09:00",
+              "endAt": "2026-06-23T23:59:00+09:00"
             },
             {
               "category": "first_come",
               "label": "",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
+              "startAt": "2026-05-29T13:00:00+09:00",
+              "endAt": "2026-06-23T23:59:00+09:00"
             }
           ],
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
+          "saleStartAt": "2026-05-29T13:00:00+09:00",
+          "saleEndAt": "2026-06-23T23:59:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": ""
         },
@@ -1778,138 +1151,6 @@
       "ticketListed": true,
       "ticketOptions": [
         {
-          "name": "当日フォートナイト大人",
-          "type": "",
-          "status": "販売中",
-          "price": "￥16,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日フォートナイト中学生",
-          "type": "",
-          "status": "販売中",
-          "price": "￥5,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日フォートナイトこども",
-          "type": "",
-          "status": "販売中",
-          "price": "￥3,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日 大人",
-          "type": "",
-          "status": "販売中",
-          "price": "￥16,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日 中学生",
-          "type": "",
-          "status": "販売中",
-          "price": "￥5,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日 こども",
-          "type": "",
-          "status": "販売中",
-          "price": "￥3,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
           "name": "先着",
           "type": "先着",
           "status": "販売終了",
@@ -1996,18 +1237,18 @@
         {
           "category": "first_come",
           "label": "先着",
-          "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-09-23T17:00:00+09:00",
+          "startAt": "2026-05-29T13:00:00+09:00",
+          "endAt": "2026-06-23T23:59:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
+          "sourceUrl": "https://ticket.fany.lol/reception/54837/45210"
         },
         {
           "category": "first_come",
           "label": "",
-          "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-09-23T17:00:00+09:00",
+          "startAt": "2026-05-29T13:00:00+09:00",
+          "endAt": "2026-06-23T23:59:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
+          "sourceUrl": "https://ticket.fany.lol/reception/54837/45210"
         },
         {
           "category": "first_come",
@@ -2212,151 +1453,30 @@
           "score": 10,
           "performerId": "maison",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210",
+          "sourceUrl": "https://ticket.fany.lol/reception/54837/45210",
           "title": "【9/23(水)1日券】KOYABU SONIC 2026",
           "date": "2026-09-23",
           "venue": "インテックス大阪 4号館、5号館（大阪府）",
           "openTime": "09:30",
           "startTime": "10:30",
-          "ticketStatus": "販売中",
-          "ticketOptions": [
-            {
-              "name": "当日フォートナイト大人",
-              "type": "",
-              "status": "販売中",
-              "price": "￥16,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日フォートナイト中学生",
-              "type": "",
-              "status": "販売中",
-              "price": "￥5,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日フォートナイトこども",
-              "type": "",
-              "status": "販売中",
-              "price": "￥3,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日 大人",
-              "type": "",
-              "status": "販売中",
-              "price": "￥16,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日 中学生",
-              "type": "",
-              "status": "販売中",
-              "price": "￥5,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日 こども",
-              "type": "",
-              "status": "販売中",
-              "price": "￥3,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            }
-          ],
+          "ticketStatus": "",
+          "ticketOptions": [],
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
+              "startAt": "2026-05-29T13:00:00+09:00",
+              "endAt": "2026-06-23T23:59:00+09:00"
             },
             {
               "category": "first_come",
               "label": "",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
+              "startAt": "2026-05-29T13:00:00+09:00",
+              "endAt": "2026-06-23T23:59:00+09:00"
             }
           ],
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
+          "saleStartAt": "2026-05-29T13:00:00+09:00",
+          "saleEndAt": "2026-06-23T23:59:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": ""
         },
@@ -2462,138 +1582,6 @@
       "ticketListed": true,
       "ticketOptions": [
         {
-          "name": "当日フォートナイト大人",
-          "type": "",
-          "status": "販売中",
-          "price": "￥16,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日フォートナイト中学生",
-          "type": "",
-          "status": "販売中",
-          "price": "￥5,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日フォートナイトこども",
-          "type": "",
-          "status": "販売中",
-          "price": "￥3,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日 大人",
-          "type": "",
-          "status": "販売中",
-          "price": "￥16,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日 中学生",
-          "type": "",
-          "status": "販売中",
-          "price": "￥5,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日 こども",
-          "type": "",
-          "status": "販売中",
-          "price": "￥3,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
           "name": "先着",
           "type": "先着",
           "status": "販売終了",
@@ -2696,18 +1684,18 @@
         {
           "category": "first_come",
           "label": "先着",
-          "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-09-23T17:00:00+09:00",
+          "startAt": "2026-05-29T13:00:00+09:00",
+          "endAt": "2026-06-23T23:59:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
+          "sourceUrl": "https://ticket.fany.lol/reception/54837/45210"
         },
         {
           "category": "first_come",
           "label": "",
-          "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-09-23T17:00:00+09:00",
+          "startAt": "2026-05-29T13:00:00+09:00",
+          "endAt": "2026-06-23T23:59:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
+          "sourceUrl": "https://ticket.fany.lol/reception/54837/45210"
         },
         {
           "category": "first_come",
@@ -2865,151 +1853,30 @@
           "score": 10,
           "performerId": "nansui",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210",
+          "sourceUrl": "https://ticket.fany.lol/reception/54837/45210",
           "title": "【9/23(水)1日券】KOYABU SONIC 2026",
           "date": "2026-09-23",
           "venue": "インテックス大阪 4号館、5号館（大阪府）",
           "openTime": "09:30",
           "startTime": "10:30",
-          "ticketStatus": "販売中",
-          "ticketOptions": [
-            {
-              "name": "当日フォートナイト大人",
-              "type": "",
-              "status": "販売中",
-              "price": "￥16,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日フォートナイト中学生",
-              "type": "",
-              "status": "販売中",
-              "price": "￥5,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日フォートナイトこども",
-              "type": "",
-              "status": "販売中",
-              "price": "￥3,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日 大人",
-              "type": "",
-              "status": "販売中",
-              "price": "￥16,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日 中学生",
-              "type": "",
-              "status": "販売中",
-              "price": "￥5,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日 こども",
-              "type": "",
-              "status": "販売中",
-              "price": "￥3,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            }
-          ],
+          "ticketStatus": "",
+          "ticketOptions": [],
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
+              "startAt": "2026-05-29T13:00:00+09:00",
+              "endAt": "2026-06-23T23:59:00+09:00"
             },
             {
               "category": "first_come",
               "label": "",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
+              "startAt": "2026-05-29T13:00:00+09:00",
+              "endAt": "2026-06-23T23:59:00+09:00"
             }
           ],
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
+          "saleStartAt": "2026-05-29T13:00:00+09:00",
+          "saleEndAt": "2026-06-23T23:59:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": ""
         },
@@ -3146,138 +2013,6 @@
       "ticketListed": true,
       "ticketOptions": [
         {
-          "name": "当日フォートナイト大人",
-          "type": "",
-          "status": "販売中",
-          "price": "￥16,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日フォートナイト中学生",
-          "type": "",
-          "status": "販売中",
-          "price": "￥5,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日フォートナイトこども",
-          "type": "",
-          "status": "販売中",
-          "price": "￥3,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日 大人",
-          "type": "",
-          "status": "販売中",
-          "price": "￥16,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日 中学生",
-          "type": "",
-          "status": "販売中",
-          "price": "￥5,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日 こども",
-          "type": "",
-          "status": "販売中",
-          "price": "￥3,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
           "name": "先着",
           "type": "先着",
           "status": "販売終了",
@@ -3364,18 +2099,18 @@
         {
           "category": "first_come",
           "label": "先着",
-          "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-09-23T17:00:00+09:00",
+          "startAt": "2026-05-29T13:00:00+09:00",
+          "endAt": "2026-06-23T23:59:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
+          "sourceUrl": "https://ticket.fany.lol/reception/54837/45210"
         },
         {
           "category": "first_come",
           "label": "",
-          "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-09-23T17:00:00+09:00",
+          "startAt": "2026-05-29T13:00:00+09:00",
+          "endAt": "2026-06-23T23:59:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
+          "sourceUrl": "https://ticket.fany.lol/reception/54837/45210"
         },
         {
           "category": "first_come",
@@ -3580,151 +2315,30 @@
           "score": 10,
           "performerId": "maison",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210",
+          "sourceUrl": "https://ticket.fany.lol/reception/54837/45210",
           "title": "【9/23(水)1日券】KOYABU SONIC 2026",
           "date": "2026-09-23",
           "venue": "インテックス大阪 4号館、5号館（大阪府）",
           "openTime": "09:30",
           "startTime": "10:30",
-          "ticketStatus": "販売中",
-          "ticketOptions": [
-            {
-              "name": "当日フォートナイト大人",
-              "type": "",
-              "status": "販売中",
-              "price": "￥16,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日フォートナイト中学生",
-              "type": "",
-              "status": "販売中",
-              "price": "￥5,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日フォートナイトこども",
-              "type": "",
-              "status": "販売中",
-              "price": "￥3,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日 大人",
-              "type": "",
-              "status": "販売中",
-              "price": "￥16,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日 中学生",
-              "type": "",
-              "status": "販売中",
-              "price": "￥5,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日 こども",
-              "type": "",
-              "status": "販売中",
-              "price": "￥3,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            }
-          ],
+          "ticketStatus": "",
+          "ticketOptions": [],
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
+              "startAt": "2026-05-29T13:00:00+09:00",
+              "endAt": "2026-06-23T23:59:00+09:00"
             },
             {
               "category": "first_come",
               "label": "",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
+              "startAt": "2026-05-29T13:00:00+09:00",
+              "endAt": "2026-06-23T23:59:00+09:00"
             }
           ],
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
+          "saleStartAt": "2026-05-29T13:00:00+09:00",
+          "saleEndAt": "2026-06-23T23:59:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": ""
         },
@@ -3830,138 +2444,6 @@
       "ticketListed": true,
       "ticketOptions": [
         {
-          "name": "当日フォートナイト大人",
-          "type": "",
-          "status": "販売中",
-          "price": "￥16,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日フォートナイト中学生",
-          "type": "",
-          "status": "販売中",
-          "price": "￥5,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日フォートナイトこども",
-          "type": "",
-          "status": "販売中",
-          "price": "￥3,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日 大人",
-          "type": "",
-          "status": "販売中",
-          "price": "￥16,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日 中学生",
-          "type": "",
-          "status": "販売中",
-          "price": "￥5,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日 こども",
-          "type": "",
-          "status": "販売中",
-          "price": "￥3,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
           "name": "先着",
           "type": "先着",
           "status": "販売終了",
@@ -4064,18 +2546,18 @@
         {
           "category": "first_come",
           "label": "先着",
-          "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-09-23T17:00:00+09:00",
+          "startAt": "2026-05-29T13:00:00+09:00",
+          "endAt": "2026-06-23T23:59:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
+          "sourceUrl": "https://ticket.fany.lol/reception/54837/45210"
         },
         {
           "category": "first_come",
           "label": "",
-          "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-09-23T17:00:00+09:00",
+          "startAt": "2026-05-29T13:00:00+09:00",
+          "endAt": "2026-06-23T23:59:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
+          "sourceUrl": "https://ticket.fany.lol/reception/54837/45210"
         },
         {
           "category": "first_come",
@@ -4264,151 +2746,30 @@
           "score": 10,
           "performerId": "maison",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210",
+          "sourceUrl": "https://ticket.fany.lol/reception/54837/45210",
           "title": "【9/23(水)1日券】KOYABU SONIC 2026",
           "date": "2026-09-23",
           "venue": "インテックス大阪 4号館、5号館（大阪府）",
           "openTime": "09:30",
           "startTime": "10:30",
-          "ticketStatus": "販売中",
-          "ticketOptions": [
-            {
-              "name": "当日フォートナイト大人",
-              "type": "",
-              "status": "販売中",
-              "price": "￥16,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日フォートナイト中学生",
-              "type": "",
-              "status": "販売中",
-              "price": "￥5,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日フォートナイトこども",
-              "type": "",
-              "status": "販売中",
-              "price": "￥3,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日 大人",
-              "type": "",
-              "status": "販売中",
-              "price": "￥16,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日 中学生",
-              "type": "",
-              "status": "販売中",
-              "price": "￥5,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日 こども",
-              "type": "",
-              "status": "販売中",
-              "price": "￥3,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            }
-          ],
+          "ticketStatus": "",
+          "ticketOptions": [],
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
+              "startAt": "2026-05-29T13:00:00+09:00",
+              "endAt": "2026-06-23T23:59:00+09:00"
             },
             {
               "category": "first_come",
               "label": "",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
+              "startAt": "2026-05-29T13:00:00+09:00",
+              "endAt": "2026-06-23T23:59:00+09:00"
             }
           ],
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
+          "saleStartAt": "2026-05-29T13:00:00+09:00",
+          "saleEndAt": "2026-06-23T23:59:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": ""
         },
@@ -4514,138 +2875,6 @@
       "ticketListed": true,
       "ticketOptions": [
         {
-          "name": "当日フォートナイト大人",
-          "type": "",
-          "status": "販売中",
-          "price": "￥16,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日フォートナイト中学生",
-          "type": "",
-          "status": "販売中",
-          "price": "￥5,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日フォートナイトこども",
-          "type": "",
-          "status": "販売中",
-          "price": "￥3,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日 大人",
-          "type": "",
-          "status": "販売中",
-          "price": "￥16,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日 中学生",
-          "type": "",
-          "status": "販売中",
-          "price": "￥5,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日 こども",
-          "type": "",
-          "status": "販売中",
-          "price": "￥3,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
           "name": "先着",
           "type": "先着",
           "status": "販売終了",
@@ -4748,18 +2977,18 @@
         {
           "category": "first_come",
           "label": "先着",
-          "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-09-23T17:00:00+09:00",
+          "startAt": "2026-05-29T13:00:00+09:00",
+          "endAt": "2026-06-23T23:59:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
+          "sourceUrl": "https://ticket.fany.lol/reception/54837/45210"
         },
         {
           "category": "first_come",
           "label": "",
-          "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-09-23T17:00:00+09:00",
+          "startAt": "2026-05-29T13:00:00+09:00",
+          "endAt": "2026-06-23T23:59:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
+          "sourceUrl": "https://ticket.fany.lol/reception/54837/45210"
         },
         {
           "category": "first_come",
@@ -4855,151 +3084,30 @@
           "score": 10,
           "performerId": "nansui",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210",
+          "sourceUrl": "https://ticket.fany.lol/reception/54837/45210",
           "title": "【9/23(水)1日券】KOYABU SONIC 2026",
           "date": "2026-09-23",
           "venue": "インテックス大阪 4号館、5号館（大阪府）",
           "openTime": "09:30",
           "startTime": "10:30",
-          "ticketStatus": "販売中",
-          "ticketOptions": [
-            {
-              "name": "当日フォートナイト大人",
-              "type": "",
-              "status": "販売中",
-              "price": "￥16,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日フォートナイト中学生",
-              "type": "",
-              "status": "販売中",
-              "price": "￥5,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日フォートナイトこども",
-              "type": "",
-              "status": "販売中",
-              "price": "￥3,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日 大人",
-              "type": "",
-              "status": "販売中",
-              "price": "￥16,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日 中学生",
-              "type": "",
-              "status": "販売中",
-              "price": "￥5,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "当日 こども",
-              "type": "",
-              "status": "販売中",
-              "price": "￥3,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-29T11:00:00+09:00",
-              "saleEndAt": "2026-09-23T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-07-29T11:00:00+09:00",
-                  "endAt": "2026-09-23T17:00:00+09:00"
-                }
-              ]
-            }
-          ],
+          "ticketStatus": "",
+          "ticketOptions": [],
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
+              "startAt": "2026-05-29T13:00:00+09:00",
+              "endAt": "2026-06-23T23:59:00+09:00"
             },
             {
               "category": "first_come",
               "label": "",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
+              "startAt": "2026-05-29T13:00:00+09:00",
+              "endAt": "2026-06-23T23:59:00+09:00"
             }
           ],
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
+          "saleStartAt": "2026-05-29T13:00:00+09:00",
+          "saleEndAt": "2026-06-23T23:59:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": ""
         },
@@ -5198,138 +3306,6 @@
       "ticketListed": true,
       "ticketOptions": [
         {
-          "name": "当日フォートナイト大人",
-          "type": "",
-          "status": "販売中",
-          "price": "￥16,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日フォートナイト中学生",
-          "type": "",
-          "status": "販売中",
-          "price": "￥5,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日フォートナイトこども",
-          "type": "",
-          "status": "販売中",
-          "price": "￥3,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日 大人",
-          "type": "",
-          "status": "販売中",
-          "price": "￥16,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日 中学生",
-          "type": "",
-          "status": "販売中",
-          "price": "￥5,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
-          "name": "当日 こども",
-          "type": "",
-          "status": "販売中",
-          "price": "￥3,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-09-23T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-09-23T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
-        },
-        {
           "name": "先着",
           "type": "先着",
           "status": "販売終了",
@@ -5416,18 +3392,18 @@
         {
           "category": "first_come",
           "label": "先着",
-          "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-09-23T17:00:00+09:00",
+          "startAt": "2026-05-29T13:00:00+09:00",
+          "endAt": "2026-06-23T23:59:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
+          "sourceUrl": "https://ticket.fany.lol/reception/54837/45210"
         },
         {
           "category": "first_come",
           "label": "",
-          "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-09-23T17:00:00+09:00",
+          "startAt": "2026-05-29T13:00:00+09:00",
+          "endAt": "2026-06-23T23:59:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/54840/45210"
+          "sourceUrl": "https://ticket.fany.lol/reception/54837/45210"
         },
         {
           "category": "first_come",
@@ -24759,7 +22735,7 @@
               ]
             },
             {
-              "name": "東山 / 無尽蔵",
+              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -24972,7 +22948,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / 無尽蔵",
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -25483,7 +23459,7 @@
               ]
             },
             {
-              "name": "東山 / 無尽蔵",
+              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -25696,7 +23672,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / 無尽蔵",
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -26207,7 +24183,7 @@
               ]
             },
             {
-              "name": "東山 / 無尽蔵",
+              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -26420,7 +24396,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / 無尽蔵",
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -26931,7 +24907,7 @@
               ]
             },
             {
-              "name": "東山 / 無尽蔵",
+              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -27144,7 +25120,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / 無尽蔵",
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
           "price": "",
