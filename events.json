@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-23T01:34:34.134818+00:00",
+  "syncedAt": "2026-09-23T01:43:09.992349+00:00",
   "performers": [
     {
       "id": "maison",
@@ -1446,76 +1446,18 @@
       "title": "大宮ラクーンよしもと寄席 その壱",
       "venue": "大宮ラクーンよしもと劇場（埼玉県）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/61301/49902",
-      "ticketStatus": "販売中",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "販売中",
-          "price": "￥3,200",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-23T10:30:00+09:00",
-              "saleKey": "fany|maison|61301|49902|全席指定|当日|first_come|2026-08-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-23T10:30:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        },
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "販売中",
-          "price": "￥2,000",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-23T10:30:00+09:00",
-              "saleKey": "fany|maison|61301|49902|全席指定|当日|first_come|2026-08-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-23T10:30:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        },
-        {
-          "name": "中学生以下",
-          "type": "",
-          "status": "販売中",
-          "price": "￥1,800",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-23T10:30:00+09:00",
-              "saleKey": "fany|maison|61301|49902|中学生以下||first_come|2026-08-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-23T10:30:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-08-05T10:00:00+09:00",
-      "saleEndAt": "2026-09-23T10:30:00+09:00",
-      "saleCategory": "first_come",
+      "sourceUrl": "https://ticket.fany.lol/reception/61299/49902",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-07-25T11:00:00+09:00",
+      "saleEndAt": "2026-07-28T11:00:00+09:00",
+      "saleCategory": "advance",
       "salePeriods": [
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-08-05T10:00:00+09:00",
-          "endAt": "2026-09-23T10:30:00+09:00"
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-07-25T11:00:00+09:00",
+          "endAt": "2026-07-28T11:00:00+09:00"
         }
       ],
       "performersText": [
@@ -1527,13 +1469,7 @@
         "ヘンダーソン",
         "ラニーノーズ",
         "素敵じゃないか",
-        "めぞん",
-        "・1回の先着申込で申込可能な公演数は『",
-        "1公演",
-        "』",
-        "枚数は『",
-        "10枚まで",
-        "・座席番号や整理番号は"
+        "めぞん"
       ],
       "firstSeenAt": "2026-09-20T01:47:41.350752+00:00",
       "newUntil": "",
@@ -8667,6 +8603,25 @@
           ]
         },
         {
+          "name": "東山 / らくちんペクチン / 江頭一馬",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-09-04T22:30:00+09:00",
+          "saleEndAt": "2026-09-14T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-09-04T22:30:00+09:00",
+              "endAt": "2026-09-14T23:59:00+09:00",
+              "saleKey": "livepocket|maison|dnqhf|東山 / らくちんペクチン / 江頭一馬|先着|advance|2026-09-04T22:30:00+09:00"
+            }
+          ]
+        },
+        {
           "name": "東山 / 無尽蔵",
           "type": "先着",
           "status": "販売中",
@@ -8682,25 +8637,6 @@
               "startAt": "2026-09-04T22:30:00+09:00",
               "endAt": "2026-09-14T23:59:00+09:00",
               "saleKey": "livepocket|maison|dnqhf|東山 / 無尽蔵|先着|advance|2026-09-04T22:30:00+09:00"
-            }
-          ]
-        },
-        {
-          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-09-04T22:30:00+09:00",
-          "saleEndAt": "2026-09-14T23:59:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-09-04T22:30:00+09:00",
-              "endAt": "2026-09-14T23:59:00+09:00",
-              "saleKey": "livepocket|maison|dnqhf|東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵|先着|advance|2026-09-04T22:30:00+09:00"
             }
           ]
         }
