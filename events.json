@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-24T14:18:51.902185+00:00",
+  "syncedAt": "2026-09-24T14:32:34.644711+00:00",
   "performers": [
     {
       "id": "maison",
@@ -5087,7 +5087,7 @@
       "venue": "ハイジアV-1(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/523374",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -6707,25 +6707,6 @@
         {
           "name": "同じ販売元のイベント",
           "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-09-25T23:05:00+09:00",
-          "saleEndAt": "2026-10-12T19:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-09-25T23:05:00+09:00",
-              "endAt": "2026-10-12T19:00:00+09:00",
-              "saleKey": "livepocket|maison|dnqhf|同じ販売元のイベント|先着|first_come|2026-09-25T23:05:00+09:00"
-            }
-          ]
-        },
-        {
-          "name": "東山 / らくちんペクチン / 江頭一馬",
-          "type": "先着",
           "status": "販売前",
           "price": "",
           "saleStartAt": "2026-09-25T23:05:00+09:00",
@@ -6738,7 +6719,7 @@
               "label": "",
               "startAt": "2026-09-25T23:05:00+09:00",
               "endAt": "2026-10-12T19:00:00+09:00",
-              "saleKey": "livepocket|maison|dnqhf|東山 / らくちんペクチン / 江頭一馬|先着|first_come|2026-09-25T23:05:00+09:00"
+              "saleKey": "livepocket|maison|dnqhf|同じ販売元のイベント|先着|first_come|2026-09-25T23:05:00+09:00"
             }
           ]
         },
@@ -6758,6 +6739,25 @@
               "startAt": "2026-09-25T23:05:00+09:00",
               "endAt": "2026-10-12T19:00:00+09:00",
               "saleKey": "livepocket|maison|dnqhf|東山 / ねじれネジ|先着|first_come|2026-09-25T23:05:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "東山 / 無尽蔵",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00",
+              "saleKey": "livepocket|maison|dnqhf|東山 / 無尽蔵|先着|first_come|2026-09-25T23:05:00+09:00"
             }
           ]
         }
