@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-24T10:26:29.724411+00:00",
+  "syncedAt": "2026-09-24T10:36:45.853103+00:00",
   "events": [
     {
       "performerId": "nansui",
@@ -5282,7 +5282,7 @@
       "saleCategory": "",
       "salePeriods": [],
       "performersText": [
-        "ギャロップ／スーパーマラドーナ／ジャルジャル／Dr.ハインリッヒ／めぞん／大王／メリコンドル／太宰／喜喜かいばしら／＜ゲームコーナー＞／他"
+        "ギャロップ／スーパーマラドーナ／ジャルジャル／Dr.ハインリッヒ／相席スタート／オーサカクレオパトラ／めぞん／大王／メリコンドル／太宰／喜喜かいばしら／＜ゲームコーナー＞"
       ],
       "publishedVia": "theater",
       "hasStreaming": false,
@@ -5307,7 +5307,7 @@
       "saleCategory": "",
       "salePeriods": [],
       "performersText": [
-        "ギャロップ／スーパーマラドーナ／ジャルジャル／Dr.ハインリッヒ／めぞん／大王／メリコンドル／太宰／喜喜かいばしら／＜ゲームコーナー＞／他"
+        "ギャロップ／スーパーマラドーナ／ジャルジャル／Dr.ハインリッヒ／相席スタート／オーサカクレオパトラ／めぞん／大王／メリコンドル／太宰／喜喜かいばしら／＜ゲームコーナー＞"
       ],
       "publishedVia": "theater",
       "hasStreaming": false,
@@ -5332,22 +5332,8 @@
       "saleCategory": "",
       "salePeriods": [],
       "performersText": [
-        "ギャロップ／スーパーマラドーナ／ジャルジャル／Dr.ハインリッヒ／めぞん／大王／太宰／喜喜かいばしら／パゴス／＜ゲームコーナー＞／他",
-        "トップ",
-        "お知らせ",
-        "スケジュール",
-        "チケット",
-        "劇場案内",
-        "当サイトでは、サービスの品質向上・利便性向上を目的としてお客様のクッキーを取得しています。また、取得したクッキーをお客様の個人情報と紐付けて管理・利用する場合がございます。以上の事項について同意の上、当サイトをご利用ください。詳しくは当社グループのプライバシーポリシーをご確認ください。",
-        "閉じる 同意の上、閉じる",
-        "劇場一覧",
-        "よくある質問",
-        "チケットに関するお問い合わせ",
-        "プライバシーポリシー",
-        "反社会的勢力排除宣言",
-        "チケット販売および観劇約款",
-        "採用情報",
-        "©YOSHIMOTO KOGYO, All Rights Reserved"
+        "ギャロップ／スーパーマラドーナ／ジャルジャル／Dr.ハインリッヒ／相席スタート／オーサカクレオパトラ／めぞん／大王／太宰／喜喜かいばしら／パゴス／＜ゲームコーナー＞",
+        "18:15開演『めぞん×大王ツーマンライブ「オタキング」』"
       ],
       "publishedVia": "theater",
       "hasStreaming": false,
@@ -5403,6 +5389,71 @@
       "hasStreaming": false,
       "streamingPrice": "",
       "theaterSourceKey": "theater|jimbocho|pyuto|2026-11-29|17:45|神保町お題コントバトル"
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-29",
+      "openTime": "18:00",
+      "startTime": "18:15",
+      "title": "18:15開演『めぞん×大王ツーマンライブ「オタキング」』",
+      "venue": "よしもと福岡 大和証券劇場",
+      "source": "theater",
+      "sourceUrl": "https://fukuokagekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "fukuoka",
+      "theaterName": "福岡",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "めぞん／大王"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|fukuoka|maison|2026-11-29|18:15|1815開演めぞん×大王ツーマンライブオタキング"
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-29",
+      "openTime": "19:30",
+      "startTime": "19:45",
+      "title": "19:45開演『太宰寄席』",
+      "venue": "よしもと福岡 大和証券劇場",
+      "source": "theater",
+      "sourceUrl": "https://fukuokagekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "fukuoka",
+      "theaterName": "福岡",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "太宰／めぞん／大王／喜喜かいばしら／パスタとパスタ",
+        "トップ",
+        "お知らせ",
+        "スケジュール",
+        "チケット",
+        "劇場案内",
+        "当サイトでは、サービスの品質向上・利便性向上を目的としてお客様のクッキーを取得しています。また、取得したクッキーをお客様の個人情報と紐付けて管理・利用する場合がございます。以上の事項について同意の上、当サイトをご利用ください。詳しくは当社グループのプライバシーポリシーをご確認ください。",
+        "閉じる 同意の上、閉じる",
+        "劇場一覧",
+        "よくある質問",
+        "チケットに関するお問い合わせ",
+        "プライバシーポリシー",
+        "反社会的勢力排除宣言",
+        "チケット販売および観劇約款",
+        "採用情報",
+        "©YOSHIMOTO KOGYO, All Rights Reserved"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|fukuoka|maison|2026-11-29|19:45|1945開演太宰寄席"
     },
     {
       "performerId": "maison",
