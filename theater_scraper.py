@@ -218,6 +218,114 @@ def unique_strings(values):
 
 
 # =========================================================
+# 劇場公式のオンライン配信情報
+# =========================================================
+
+STREAMING_WORDS = [
+    "オンライン",
+    "オンライン配信",
+]
+
+
+PRICE_RE = re.compile(
+    r"[¥￥]\s*[\d,]+"
+)
+
+
+def detect_streaming_info(
+    detail_lines,
+):
+    """
+    公演詳細の中から
+    オンライン配信の有無と料金を取得する。
+
+    例:
+    オンライン
+    ¥1,300
+
+    または
+
+    オンライン ¥1,300
+    """
+
+    lines = [
+        clean(line)
+        for line in detail_lines
+        if clean(line)
+    ]
+
+    has_streaming = False
+    streaming_price = ""
+
+    for index, line in enumerate(
+        lines
+    ):
+        is_stream_line = any(
+            word in line
+            for word in STREAMING_WORDS
+        )
+
+        if not is_stream_line:
+            continue
+
+        has_streaming = True
+
+        # 同じ行に料金がある
+        price_match = PRICE_RE.search(
+            line
+        )
+
+        if price_match:
+            streaming_price = clean(
+                price_match.group(0)
+            )
+
+            break
+
+        # 次の1〜2行に料金がある
+        for offset in [
+            1,
+            2,
+        ]:
+            next_index = (
+                index
+                +
+                offset
+            )
+
+            if next_index >= len(
+                lines
+            ):
+                break
+
+            next_line = lines[
+                next_index
+            ]
+
+            price_match = PRICE_RE.search(
+                next_line
+            )
+
+            if price_match:
+                streaming_price = clean(
+                    price_match.group(0)
+                )
+
+                break
+
+        if streaming_price:
+            break
+
+    return {
+        "hasStreaming":
+            has_streaming,
+
+        "streamingPrice":
+            streaming_price,
+    }
+
+
+# =========================================================
 # 月
 # =========================================================
 
@@ -250,9 +358,6 @@ def infer_year(month):
 
     year = today.year
 
-    # 例:
-    # 2026年12月に
-    # 1月・2月が表示された場合は2027年
     if (
         month < current_month
         and
@@ -609,8 +714,10 @@ def parse_events_from_day_block(
         if not time_info:
             continue
 
-        # タイトルは基本的に
-        # 開場・開演行の直前
+        # =================================================
+        # タイトル取得
+        # =================================================
+
         title = ""
 
         for back in range(
@@ -646,6 +753,10 @@ def parse_events_from_day_block(
         if not title:
             continue
 
+        # =================================================
+        # この公演の詳細範囲
+        # =================================================
+
         if (
             number + 1
             <
@@ -667,9 +778,7 @@ def parse_events_from_day_block(
             next_time_index
         ]
 
-        # 次公演タイトルが
-        # detail_lines末尾に混ざることがあるので
-        # 次の開演行直前の1行は除外
+        # 次公演タイトルが末尾に混ざる場合の除外
         if (
             number + 1
             <
@@ -697,8 +806,22 @@ def parse_events_from_day_block(
                     detail_lines[:-1]
                 )
 
+        # =================================================
+        # 出演者情報
+        # =================================================
+
         performers_text = unique_strings(
             detail_lines
+        )
+
+        # =================================================
+        # オンライン配信情報
+        # =================================================
+
+        streaming_info = (
+            detect_streaming_info(
+                detail_lines
+            )
         )
 
         whole_detail = " ".join(
@@ -758,6 +881,10 @@ def parse_events_from_day_block(
 
         except Exception:
             continue
+
+        # =================================================
+        # イベント生成
+        # =================================================
 
         for performer in matched_performers:
             event = {
@@ -838,6 +965,22 @@ def parse_events_from_day_block(
 
                 "publishedVia":
                     "theater",
+
+                # =========================================
+                # 劇場公式オンライン情報
+                # =========================================
+
+                "hasStreaming":
+                    streaming_info.get(
+                        "hasStreaming",
+                        False,
+                    ),
+
+                "streamingPrice":
+                    streaming_info.get(
+                        "streamingPrice",
+                        "",
+                    ),
             }
 
             event[
@@ -849,6 +992,22 @@ def parse_events_from_day_block(
             events.append(
                 event
             )
+
+            if event[
+                "hasStreaming"
+            ]:
+                print(
+                    "配信あり:",
+                    event_date,
+                    time_info.get(
+                        "startTime",
+                        "",
+                    ),
+                    title,
+                    event[
+                        "streamingPrice"
+                    ],
+                )
 
     return events
 
@@ -960,8 +1119,7 @@ def scrape_theater(
             month_labels,
         )
 
-        # 月タブが見つからない場合でも
-        # 現在表示分だけ確認
+        # 月タブが見つからない場合
         if not month_labels:
             body_text = page.locator(
                 "body"
@@ -1000,6 +1158,10 @@ def scrape_theater(
                 )
 
             return events
+
+        # =================================================
+        # 選択可能な月を順番に取得
+        # =================================================
 
         for month_label in month_labels:
             month = get_month_number(
@@ -1295,6 +1457,8 @@ def main():
         "件",
     )
 
+    streaming_count = 0
+
     for event in all_events:
         print(
             "THEATER:",
@@ -1313,7 +1477,31 @@ def main():
             event.get(
                 "title"
             ),
+            "配信:"
+            +
+            (
+                "あり"
+                if event.get(
+                    "hasStreaming",
+                    False,
+                )
+                else
+                "なし"
+            ),
         )
+
+        if event.get(
+            "hasStreaming",
+            False,
+        ):
+            streaming_count += 1
+
+    print("")
+    print(
+        "劇場公式で配信あり:",
+        streaming_count,
+        "件",
+    )
 
     print(
         "保存:",
