@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-24T13:23:02.163022+00:00",
+  "syncedAt": "2026-09-24T13:36:43.291518+00:00",
   "performers": [
     {
       "id": "maison",
@@ -6723,6 +6723,25 @@
           ]
         },
         {
+          "name": "東山 / 無尽蔵",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00",
+              "saleKey": "livepocket|maison|dnqhf|東山 / 無尽蔵|先着|first_come|2026-09-25T23:05:00+09:00"
+            }
+          ]
+        },
+        {
           "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
@@ -6738,25 +6757,6 @@
               "startAt": "2026-09-25T23:05:00+09:00",
               "endAt": "2026-10-12T19:00:00+09:00",
               "saleKey": "livepocket|maison|dnqhf|東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵|先着|first_come|2026-09-25T23:05:00+09:00"
-            }
-          ]
-        },
-        {
-          "name": "東山 / 無尽蔵",
-          "type": "先着",
-          "status": "販売前",
-          "price": "",
-          "saleStartAt": "2026-09-25T23:05:00+09:00",
-          "saleEndAt": "2026-10-12T19:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-09-25T23:05:00+09:00",
-              "endAt": "2026-10-12T19:00:00+09:00",
-              "saleKey": "livepocket|maison|dnqhf|東山 / 無尽蔵|先着|first_come|2026-09-25T23:05:00+09:00"
             }
           ]
         }
@@ -13372,12 +13372,12 @@
       "venue": "有楽町朝日ホール（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/67259/53651",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [
         {
           "name": "全席指定",
           "type": "前売",
-          "status": "予定数終了",
+          "status": "残りわずか",
           "price": "￥4,000",
           "salePeriods": [
             {
