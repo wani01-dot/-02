@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-24T00:57:16.152005+00:00",
+  "syncedAt": "2026-09-24T01:05:23.733969+00:00",
   "performers": [
     {
       "id": "maison",
@@ -6683,25 +6683,6 @@
           ]
         },
         {
-          "name": "東山 / 無尽蔵",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-09-04T22:30:00+09:00",
-          "saleEndAt": "2026-09-14T23:59:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-09-04T22:30:00+09:00",
-              "endAt": "2026-09-14T23:59:00+09:00",
-              "saleKey": "livepocket|maison|dnqhf|東山 / 無尽蔵|先着|advance|2026-09-04T22:30:00+09:00"
-            }
-          ]
-        },
-        {
           "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
@@ -6717,6 +6698,25 @@
               "startAt": "2026-09-04T22:30:00+09:00",
               "endAt": "2026-09-14T23:59:00+09:00",
               "saleKey": "livepocket|maison|dnqhf|東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵|先着|advance|2026-09-04T22:30:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "東山 / 無尽蔵",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-09-04T22:30:00+09:00",
+          "saleEndAt": "2026-09-14T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-09-04T22:30:00+09:00",
+              "endAt": "2026-09-14T23:59:00+09:00",
+              "saleKey": "livepocket|maison|dnqhf|東山 / 無尽蔵|先着|advance|2026-09-04T22:30:00+09:00"
             }
           ]
         }
@@ -11854,6 +11854,346 @@
       ]
     },
     {
+      "performerId": "nansui",
+      "date": "2026-11-01",
+      "openTime": "10:45",
+      "startTime": "11:00",
+      "title": "渋谷マンゲキお笑いライブ",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68410/54287",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]ダブルヒガシ",
+        "めぞん",
+        "ミカボ",
+        "軟水",
+        "ピュート",
+        "ボブのコーラ",
+        "ガクテンソク",
+        "サルゴリラ"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-11-01",
+      "openTime": "10:45",
+      "startTime": "11:00",
+      "title": "渋谷マンゲキお笑いライブ",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68410/54287",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]ダブルヒガシ",
+        "めぞん",
+        "ミカボ",
+        "軟水",
+        "ピュート",
+        "ボブのコーラ",
+        "ガクテンソク",
+        "サルゴリラ"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-11-01",
+      "openTime": "12:30",
+      "startTime": "12:45",
+      "title": "渋谷マンゲキお笑いライブ",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68410/54288",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]ダブルヒガシ",
+        "めぞん",
+        "ミカボ",
+        "軟水",
+        "ピュート",
+        "ボブのコーラ",
+        "ガクテンソク",
+        "サルゴリラ"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-11-01",
+      "openTime": "12:30",
+      "startTime": "12:45",
+      "title": "渋谷マンゲキお笑いライブ",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68410/54288",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]ダブルヒガシ",
+        "めぞん",
+        "ミカボ",
+        "軟水",
+        "ピュート",
+        "ボブのコーラ",
+        "ガクテンソク",
+        "サルゴリラ"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-11-01",
+      "openTime": "14:15",
+      "startTime": "14:30",
+      "title": "渋谷マンゲキお笑いライブ",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68410/54289",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]ダブルヒガシ",
+        "めぞん",
+        "ミカボ",
+        "軟水",
+        "ピュート",
+        "ボブのコーラ",
+        "ガクテンソク",
+        "サルゴリラ"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-11-01",
+      "openTime": "14:15",
+      "startTime": "14:30",
+      "title": "渋谷マンゲキお笑いライブ",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68410/54289",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]ダブルヒガシ",
+        "めぞん",
+        "ミカボ",
+        "軟水",
+        "ピュート",
+        "ボブのコーラ",
+        "ガクテンソク",
+        "サルゴリラ"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-11-02",
+      "openTime": "18:45",
+      "startTime": "19:00",
+      "title": "ピュート×セカンドロットツーマンライブ「オールグリーン」",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/67786/53901",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "ピュート",
+        "セカンドロット"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "pyuto"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-11-04",
+      "openTime": "17:00",
+      "startTime": "17:15",
+      "title": "渋谷Kiwami極LIVE",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68014/54007",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]ゆにばーす",
+        "シカゴ実業",
+        "CITY",
+        "いぬ",
+        "ケビンス",
+        "そいつどいつ",
+        "軟水",
+        "ブラゴーリ"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-11-05",
+      "openTime": "16:45",
+      "startTime": "17:00",
+      "title": "神保町Kakeru翔SP",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/67757/53877",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "ケビンス",
+        "軟水",
+        "インテイク",
+        "伝書鳩",
+        "とりせん",
+        "球技大会"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "nansui"
+      ]
+    },
+    {
       "performerId": "maison",
       "date": "2026-11-06",
       "openTime": "17:30",
@@ -12334,6 +12674,148 @@
       ]
     },
     {
+      "performerId": "nansui",
+      "date": "2026-11-07",
+      "openTime": "20:45",
+      "startTime": "21:00",
+      "title": "ブラゴーリ統括ライブ「本気」",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68247/54199",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "ブラゴーリ",
+        "軟水"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-11-08",
+      "openTime": "10:45",
+      "startTime": "11:00",
+      "title": "神保町マンゲキお笑いライブ",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68027/54022",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "マルセイユ",
+        "kento fukaya",
+        "まんじろう",
+        "軟水",
+        "イチゴ",
+        "あなたとネ"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-11-08",
+      "openTime": "12:45",
+      "startTime": "13:00",
+      "title": "神保町マンゲキお笑いライブ",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68027/54021",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "マルセイユ",
+        "kento fukaya",
+        "まんじろう",
+        "アズーロ24",
+        "軟水",
+        "イチゴ",
+        "あなたとネ"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-11-08",
+      "openTime": "14:45",
+      "startTime": "15:00",
+      "title": "神保町マンゲキお笑いライブ",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68027/54052",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "マルセイユ",
+        "kento fukaya",
+        "まんじろう",
+        "アズーロ24",
+        "軟水",
+        "イチゴ",
+        "あなたとネ"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "nansui"
+      ]
+    },
+    {
       "performerId": "maison",
       "date": "2026-11-08",
       "openTime": "15:15",
@@ -12395,6 +12877,182 @@
       ]
     },
     {
+      "performerId": "nansui",
+      "date": "2026-11-08",
+      "openTime": "17:00",
+      "startTime": "17:15",
+      "title": "テクノ",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/67799/53914",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "エグい速さ",
+        "軟水",
+        "ザンゾウ",
+        "あなたとネ"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-11-08",
+      "openTime": "18:45",
+      "startTime": "19:00",
+      "title": "絶賛工事中",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/67800/53904",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "アズーロ24",
+        "ミカボ",
+        "ピュート",
+        "サンタモニカ"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "pyuto"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-11-09",
+      "openTime": "20:45",
+      "startTime": "21:00",
+      "title": "やさしいズタイpresents 「パドック大喜利 ～目指せ・・・",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68252/54205",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "やさしいズ",
+        "マルセイユ",
+        "今井らいぱち",
+        "キンボシ",
+        "kento fukaya",
+        "ダンビラムーチョ",
+        "滝音",
+        "ケビンス",
+        "ミカボ",
+        "9番街レトロ",
+        "ピュート"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "pyuto"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-11-10",
+      "openTime": "18:45",
+      "startTime": "19:00",
+      "title": "ウォシュレッツvol．33",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68078/54102",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "スーパーサイズ・ミー",
+        "おミュータンツ",
+        "ピュート",
+        "定点計画"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "pyuto"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-11-13",
+      "openTime": "20:45",
+      "startTime": "21:00",
+      "title": "ただならぬ刀肝入り『漫谷コン平』",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/67807/53919",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "ただならぬ刀",
+        "ピュート",
+        "エグい速さ"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "pyuto"
+      ]
+    },
+    {
       "performerId": "maison",
       "date": "2026-11-14",
       "openTime": "13:15",
@@ -12403,12 +13061,12 @@
       "venue": "Zepp Nagoya（愛知県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/67206/53598",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "一部予定数終了",
       "ticketOptions": [
         {
           "name": "1Fスタンディング（整理番号付）",
           "type": "前売",
-          "status": "残りわずか",
+          "status": "販売中",
           "price": "￥5,000",
           "salePeriods": [
             {
@@ -12568,6 +13226,531 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-11-14",
+      "openTime": "19:00",
+      "startTime": "19:15",
+      "title": "高杉箱は回したい",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/67809/53923",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "定点計画",
+        "太鵬",
+        "ピュート",
+        "ゼロカラン",
+        "フジーズ"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "pyuto"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-11-15",
+      "openTime": "20:45",
+      "startTime": "21:00",
+      "title": "スマイルキング",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68261/54211",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "エバース",
+        "シンクロニシティ",
+        "軟水",
+        "インテイク",
+        "イチゴ",
+        "ゼロカラン"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-11-16",
+      "openTime": "18:45",
+      "startTime": "19:00",
+      "title": "キングチャンピオン王",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68080/54100",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "ピュート",
+        "バリカタ友情飯",
+        "兄弟",
+        "アリハガ",
+        "おとうふ",
+        "今井らいぱち"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "pyuto"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-11-18",
+      "openTime": "17:15",
+      "startTime": "17:30",
+      "title": "神保町Kakeru翔SP",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/67757/53879",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "世間知らズ",
+        "ピュート",
+        "小虎",
+        "ぺ",
+        "ニコミハジメテ"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "pyuto"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-11-18",
+      "openTime": "19:00",
+      "startTime": "19:15",
+      "title": "世間知らズの新帝国",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/67813/53928",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "世間知らズ",
+        "いぬ",
+        "エバース",
+        "ピュート"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "pyuto"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-11-20",
+      "openTime": "17:00",
+      "startTime": "17:15",
+      "title": "渋谷Kiwami極LIVEプラス＋",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68414/54327",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]スロッピ",
+        "カラタチ",
+        "くらげ",
+        "九条ジョー",
+        "ケビンス",
+        "太鵬",
+        "軟水"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-11-20",
+      "openTime": "20:45",
+      "startTime": "21:00",
+      "title": "ファティゲなおばあちゃん",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68084/54106",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "軟水",
+        "ぺ",
+        "伝書鳩"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-11-21",
+      "openTime": "10:45",
+      "startTime": "11:00",
+      "title": "神保町マンゲキお笑いライブ",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68027/54028",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "そいつどいつ",
+        "オフローズ",
+        "軟水",
+        "インテイク",
+        "大王"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-11-21",
+      "openTime": "12:45",
+      "startTime": "13:00",
+      "title": "神保町マンゲキお笑いライブ",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68027/54027",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "そいつどいつ",
+        "オフローズ",
+        "軟水",
+        "インテイク",
+        "大王"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-11-21",
+      "openTime": "14:45",
+      "startTime": "15:00",
+      "title": "神保町マンゲキお笑いライブ",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68027/54055",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "そいつどいつ",
+        "オフローズ",
+        "軟水",
+        "インテイク",
+        "大王"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-11-21",
+      "openTime": "19:00",
+      "startTime": "19:15",
+      "title": "コントウォーズ EP．1～アリハガとエグい速さがゲストを・・・",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/67817/53921",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "アリハガ",
+        "エグい速さ",
+        "軟水",
+        "オフローズ"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-11-22",
+      "openTime": "10:45",
+      "startTime": "11:00",
+      "title": "神保町マンゲキお笑いライブ",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68027/54030",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "ダンビラムーチョ",
+        "ゆにばーす",
+        "九条ジョー",
+        "シモリュウ",
+        "ピュート",
+        "金魚番長",
+        "照山おうちごはん"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "pyuto"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-11-22",
+      "openTime": "17:00",
+      "startTime": "17:15",
+      "title": "サンタモニカ新ネタライブ「シャングリラ」",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/67819/53936",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "サンタモニカ",
+        "九条ジョー",
+        "ピュート",
+        "セカンドロット"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "pyuto"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-11-23",
+      "openTime": "18:45",
+      "startTime": "19:00",
+      "title": "からし蓮根×軟水ツーマンライブ「前後」",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68272/54223",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "からし蓮根",
+        "軟水"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-11-27",
+      "openTime": "17:00",
+      "startTime": "17:15",
+      "title": "渋谷Kiwami極LIVE",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68014/54013",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]さや香",
+        "マルセイユ",
+        "九条ジョー",
+        "ケビンス",
+        "オダウエダ",
+        "軟水",
+        "マリーマリー"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "nansui"
       ]
     },
     {
@@ -12920,6 +14103,88 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-11-29",
+      "openTime": "17:30",
+      "startTime": "17:45",
+      "title": "神保町お題コントバトル",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/67833/53949",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "スーパーサイズ・ミー",
+        "オフローズ",
+        "軟水",
+        "ピュート",
+        "喫茶ムーン",
+        "定点計画",
+        "ザンゾウ",
+        "セカンドロット",
+        "伝書鳩",
+        "あなたとネ"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-11-29",
+      "openTime": "17:30",
+      "startTime": "17:45",
+      "title": "神保町お題コントバトル",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/67833/53949",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "スーパーサイズ・ミー",
+        "オフローズ",
+        "軟水",
+        "ピュート",
+        "喫茶ムーン",
+        "定点計画",
+        "ザンゾウ",
+        "セカンドロット",
+        "伝書鳩",
+        "あなたとネ"
+      ],
+      "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
+      "newUntil": "2026-09-26T01:05:23.730497+00:00",
+      "trackedPerformers": [
+        "pyuto",
+        "nansui"
       ]
     }
   ]
