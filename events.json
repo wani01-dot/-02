@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-24T16:32:00.903764+00:00",
+  "syncedAt": "2026-09-24T16:42:41.922757+00:00",
   "performers": [
     {
       "id": "maison",
@@ -2522,12 +2522,12 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/65052/52415",
-      "ticketStatus": "一部予定数終了",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [
         {
           "name": "全席指定",
           "type": "前売",
-          "status": "販売中",
+          "status": "残りわずか",
           "price": "￥1,500",
           "salePeriods": [
             {
@@ -2608,12 +2608,12 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/65052/52415",
-      "ticketStatus": "一部予定数終了",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [
         {
           "name": "全席指定",
           "type": "前売",
-          "status": "販売中",
+          "status": "残りわずか",
           "price": "￥1,500",
           "salePeriods": [
             {
@@ -6672,9 +6672,9 @@
           ]
         },
         {
-          "name": "東山 / 無尽蔵",
+          "name": "東山 / らくちんペクチン / 江頭一馬",
           "type": "先着",
-          "status": "販売前",
+          "status": "販売中",
           "price": "",
           "saleStartAt": "2026-09-25T23:05:00+09:00",
           "saleEndAt": "2026-10-12T19:00:00+09:00",
@@ -6686,7 +6686,7 @@
               "label": "",
               "startAt": "2026-09-25T23:05:00+09:00",
               "endAt": "2026-10-12T19:00:00+09:00",
-              "saleKey": "livepocket|maison|dnqhf|東山 / 無尽蔵|先着|first_come|2026-09-25T23:05:00+09:00"
+              "saleKey": "livepocket|maison|dnqhf|東山 / らくちんペクチン / 江頭一馬|先着|first_come|2026-09-25T23:05:00+09:00"
             }
           ]
         }
@@ -12439,6 +12439,48 @@
       ]
     },
     {
+      "performerId": "nansui",
+      "date": "2026-11-06",
+      "openTime": "16:45",
+      "startTime": "17:00",
+      "title": "Kiwami極LIVEプラス",
+      "venue": "よしもと漫才劇場（大阪府）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/69532/54378",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "EXIT",
+        "軟水",
+        "シンクロニシティ",
+        "牛ぺぺ",
+        "超速バギー",
+        "華山",
+        "もも",
+        "イチオク",
+        "いつもたいしゃ",
+        "国道アリス",
+        "バリアシオン",
+        "濱田祐太郎"
+      ],
+      "firstSeenAt": "2026-09-24T16:42:41.919466+00:00",
+      "newUntil": "2026-09-26T16:42:41.919479+00:00",
+      "trackedPerformers": [
+        "nansui"
+      ]
+    },
+    {
       "performerId": "pyuto",
       "date": "2026-11-06",
       "openTime": "17:15",
@@ -12549,6 +12591,40 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-11-06",
+      "openTime": "18:45",
+      "startTime": "19:00",
+      "title": "ごきげん会？ポポポポーン？",
+      "venue": "よしもと漫才劇場（大阪府）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/69319/54472",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "ぎょうぶ",
+        "うただ",
+        "軟水",
+        "シンクロニシティ"
+      ],
+      "firstSeenAt": "2026-09-24T16:42:41.919466+00:00",
+      "newUntil": "2026-09-26T16:42:41.919479+00:00",
+      "trackedPerformers": [
+        "nansui"
       ]
     },
     {
