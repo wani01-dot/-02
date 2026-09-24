@@ -1,97 +1,11 @@
 {
-  "syncedAt": "2026-09-24T14:45:08.460815+00:00",
-  "total": 180,
-  "ticketListedCount": 178,
+  "syncedAt": "2026-09-24T15:43:46.090835+00:00",
+  "total": 179,
+  "ticketListedCount": 177,
   "ticketUnlistedCount": 2,
-  "ticketOptionCount": 329,
-  "salePeriodCount": 706,
+  "ticketOptionCount": 332,
+  "salePeriodCount": 714,
   "events": [
-    {
-      "performerId": "nansui",
-      "date": "2026-09-24",
-      "openTime": "16:15",
-      "startTime": "16:30",
-      "title": "六本木コントライブNEXT！ ※コントパス対象※",
-      "venue": "よしもと六本木シアター",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
-      "theaterId": "roppongi",
-      "theaterName": "六本木",
-      "performersText": [
-        "サルゴリラ／しずる／ななまがり／ヘンダーソン／ビスケットブラザーズ／スパイク／今井らいぱち／ミカボ／軟水／喫茶ムーン 【コーナー出演者】 MC：今井らいぱち／ミカボ／軟水"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://roppongi.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "performerId": "nansui",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61290/49801",
-          "title": "六本木コントライブNEXT！",
-          "date": "2026-09-24",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "16:15",
-          "startTime": "16:30",
-          "ticketStatus": "",
-          "ticketOptions": [],
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "抽選",
-              "startAt": "2026-07-25T11:00:00+09:00",
-              "endAt": "2026-07-28T11:00:00+09:00"
-            },
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-07-25T11:00:00+09:00",
-              "endAt": "2026-07-28T11:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-07-25T11:00:00+09:00",
-          "saleEndAt": "2026-07-28T11:00:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": ""
-        }
-      ],
-      "ticketListed": true,
-      "ticketOptions": [],
-      "salePeriods": [
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-07-25T11:00:00+09:00",
-          "endAt": "2026-07-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61290/49801"
-        },
-        {
-          "category": "advance",
-          "label": "",
-          "startAt": "2026-07-25T11:00:00+09:00",
-          "endAt": "2026-07-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61290/49801"
-        }
-      ],
-      "status": "ticket_listed",
-      "ticketStatus": "",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/61290/49801",
-      "saleStartAt": "2026-07-25T11:00:00+09:00",
-      "saleEndAt": "2026-07-28T11:00:00+09:00",
-      "saleCategory": "advance",
-      "saleLabel": ""
-    },
     {
       "performerId": "nansui",
       "date": "2026-09-25",
@@ -131,9 +45,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥1,500",
+              "price": "￥1,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -151,9 +65,9 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥1,500",
+              "price": "￥1,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -203,9 +117,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥1,500",
+              "price": "￥2,000",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -223,7 +137,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥1,500",
               "remaining": null,
@@ -266,9 +180,9 @@
       "ticketOptions": [
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥1,500",
+          "price": "￥1,800",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -288,9 +202,9 @@
         },
         {
           "name": "立見（整理番号付）",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥1,500",
+          "price": "￥1,800",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -310,9 +224,9 @@
         },
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
-          "price": "￥1,500",
+          "price": "￥2,000",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -332,7 +246,7 @@
         },
         {
           "name": "立見（整理番号付）",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
           "price": "￥1,500",
           "remaining": null,
@@ -435,9 +349,9 @@
           "ticketOptions": [
             {
               "name": "整理番号付き自由席",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥2,000",
+              "price": "￥2,300",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -487,9 +401,9 @@
           "ticketOptions": [
             {
               "name": "整理番号付き自由席",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥2,000",
+              "price": "￥2,500",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -530,9 +444,9 @@
       "ticketOptions": [
         {
           "name": "整理番号付き自由席",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥2,000",
+          "price": "￥2,300",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -549,6 +463,28 @@
           ],
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/61292/49802"
+        },
+        {
+          "name": "整理番号付き自由席",
+          "type": "当日",
+          "status": "販売中",
+          "price": "￥2,500",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-25T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-25T19:00:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/62134/50364"
         }
       ],
       "salePeriods": [
@@ -634,9 +570,9 @@
           "ticketOptions": [
             {
               "name": "整理番号付き自由席",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥2,000",
+              "price": "￥2,300",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -686,9 +622,9 @@
           "ticketOptions": [
             {
               "name": "整理番号付き自由席",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥2,000",
+              "price": "￥2,500",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -729,9 +665,9 @@
       "ticketOptions": [
         {
           "name": "整理番号付き自由席",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥2,000",
+          "price": "￥2,300",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -748,6 +684,28 @@
           ],
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/61292/49802"
+        },
+        {
+          "name": "整理番号付き自由席",
+          "type": "当日",
+          "status": "販売中",
+          "price": "￥2,500",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-25T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-25T19:00:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/62134/50364"
         }
       ],
       "salePeriods": [
@@ -832,9 +790,9 @@
           "ticketOptions": [
             {
               "name": "整理番号付き自由席",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥2,000",
+              "price": "￥2,500",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -884,9 +842,9 @@
           "ticketOptions": [
             {
               "name": "整理番号付き自由席",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥2,000",
+              "price": "￥2,300",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -927,9 +885,9 @@
       "ticketOptions": [
         {
           "name": "整理番号付き自由席",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥2,000",
+          "price": "￥2,500",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -946,6 +904,28 @@
           ],
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/62134/50364"
+        },
+        {
+          "name": "整理番号付き自由席",
+          "type": "当日",
+          "status": "販売中",
+          "price": "￥2,300",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-25T15:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-25T15:30:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/61292/49802"
         }
       ],
       "salePeriods": [
@@ -1030,9 +1010,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥1,500",
+              "price": "￥2,000",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -1050,7 +1030,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥1,500",
               "remaining": null,
@@ -1102,9 +1082,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥1,500",
+              "price": "￥1,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -1122,9 +1102,9 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥1,500",
+              "price": "￥1,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -1165,9 +1145,9 @@
       "ticketOptions": [
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
-          "price": "￥1,500",
+          "price": "￥2,000",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -1187,7 +1167,7 @@
         },
         {
           "name": "立見（整理番号付）",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
           "price": "￥1,500",
           "remaining": null,
@@ -1209,9 +1189,9 @@
         },
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥1,500",
+          "price": "￥1,800",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -1231,9 +1211,9 @@
         },
         {
           "name": "立見（整理番号付）",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥1,500",
+          "price": "￥1,800",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -19302,7 +19282,7 @@
               ]
             },
             {
-              "name": "東山 / 無尽蔵",
+              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -19587,7 +19567,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / 無尽蔵",
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -20166,7 +20146,7 @@
               ]
             },
             {
-              "name": "東山 / 無尽蔵",
+              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -20451,7 +20431,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / 無尽蔵",
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -21030,7 +21010,7 @@
               ]
             },
             {
-              "name": "東山 / 無尽蔵",
+              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -21315,7 +21295,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / 無尽蔵",
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -21894,7 +21874,7 @@
               ]
             },
             {
-              "name": "東山 / 無尽蔵",
+              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -22179,7 +22159,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / 無尽蔵",
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -42197,6 +42177,68 @@
           "saleEndAt": "2026-11-29T13:50:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": ""
+        },
+        {
+          "score": 14,
+          "performerId": "maison",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68776/54436",
+          "title": "めぞん×大王ツーマンライブ「オタキング」",
+          "date": "2026-11-29",
+          "venue": "よしもと福岡 大和証券劇場（福岡県）",
+          "openTime": "18:00",
+          "startTime": "18:15",
+          "ticketStatus": "",
+          "ticketOptions": [],
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "抽選",
+              "startAt": "2026-09-25T11:00:00+09:00",
+              "endAt": "2026-09-28T11:00:00+09:00"
+            },
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-09-25T11:00:00+09:00",
+              "endAt": "2026-09-28T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-25T11:00:00+09:00",
+          "saleEndAt": "2026-09-28T11:00:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": ""
+        },
+        {
+          "score": 14,
+          "performerId": "maison",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68797/54454",
+          "title": "太宰寄席",
+          "date": "2026-11-29",
+          "venue": "よしもと福岡 大和証券劇場（福岡県）",
+          "openTime": "19:30",
+          "startTime": "19:45",
+          "ticketStatus": "",
+          "ticketOptions": [],
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "抽選",
+              "startAt": "2026-09-25T11:00:00+09:00",
+              "endAt": "2026-09-28T11:00:00+09:00"
+            },
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-09-25T11:00:00+09:00",
+              "endAt": "2026-09-28T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-25T11:00:00+09:00",
+          "saleEndAt": "2026-09-28T11:00:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": ""
         }
       ],
       "ticketListed": true,
@@ -42316,6 +42358,22 @@
           "endAt": "2026-11-29T13:50:00+09:00",
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/66959/53444"
+        },
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68776/54436"
+        },
+        {
+          "category": "advance",
+          "label": "",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68776/54436"
         }
       ],
       "status": "ticket_listed",
@@ -42627,6 +42685,68 @@
           "saleEndAt": "2026-11-29T13:50:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": ""
+        },
+        {
+          "score": 14,
+          "performerId": "maison",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68776/54436",
+          "title": "めぞん×大王ツーマンライブ「オタキング」",
+          "date": "2026-11-29",
+          "venue": "よしもと福岡 大和証券劇場（福岡県）",
+          "openTime": "18:00",
+          "startTime": "18:15",
+          "ticketStatus": "",
+          "ticketOptions": [],
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "抽選",
+              "startAt": "2026-09-25T11:00:00+09:00",
+              "endAt": "2026-09-28T11:00:00+09:00"
+            },
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-09-25T11:00:00+09:00",
+              "endAt": "2026-09-28T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-25T11:00:00+09:00",
+          "saleEndAt": "2026-09-28T11:00:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": ""
+        },
+        {
+          "score": 14,
+          "performerId": "maison",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68797/54454",
+          "title": "太宰寄席",
+          "date": "2026-11-29",
+          "venue": "よしもと福岡 大和証券劇場（福岡県）",
+          "openTime": "19:30",
+          "startTime": "19:45",
+          "ticketStatus": "",
+          "ticketOptions": [],
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "抽選",
+              "startAt": "2026-09-25T11:00:00+09:00",
+              "endAt": "2026-09-28T11:00:00+09:00"
+            },
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-09-25T11:00:00+09:00",
+              "endAt": "2026-09-28T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-25T11:00:00+09:00",
+          "saleEndAt": "2026-09-28T11:00:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": ""
         }
       ],
       "ticketListed": true,
@@ -42746,6 +42866,22 @@
           "endAt": "2026-11-29T13:50:00+09:00",
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/66959/53444"
+        },
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68776/54436"
+        },
+        {
+          "category": "advance",
+          "label": "",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68776/54436"
         }
       ],
       "status": "ticket_listed",
@@ -43058,6 +43194,68 @@
           "saleEndAt": "2026-11-29T11:40:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": ""
+        },
+        {
+          "score": 14,
+          "performerId": "maison",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68776/54436",
+          "title": "めぞん×大王ツーマンライブ「オタキング」",
+          "date": "2026-11-29",
+          "venue": "よしもと福岡 大和証券劇場（福岡県）",
+          "openTime": "18:00",
+          "startTime": "18:15",
+          "ticketStatus": "",
+          "ticketOptions": [],
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "抽選",
+              "startAt": "2026-09-25T11:00:00+09:00",
+              "endAt": "2026-09-28T11:00:00+09:00"
+            },
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-09-25T11:00:00+09:00",
+              "endAt": "2026-09-28T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-25T11:00:00+09:00",
+          "saleEndAt": "2026-09-28T11:00:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": ""
+        },
+        {
+          "score": 14,
+          "performerId": "maison",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68797/54454",
+          "title": "太宰寄席",
+          "date": "2026-11-29",
+          "venue": "よしもと福岡 大和証券劇場（福岡県）",
+          "openTime": "19:30",
+          "startTime": "19:45",
+          "ticketStatus": "",
+          "ticketOptions": [],
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "抽選",
+              "startAt": "2026-09-25T11:00:00+09:00",
+              "endAt": "2026-09-28T11:00:00+09:00"
+            },
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-09-25T11:00:00+09:00",
+              "endAt": "2026-09-28T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-25T11:00:00+09:00",
+          "saleEndAt": "2026-09-28T11:00:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": ""
         }
       ],
       "ticketListed": true,
@@ -43177,6 +43375,22 @@
           "endAt": "2026-11-29T11:40:00+09:00",
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/66959/53443"
+        },
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68776/54436"
+        },
+        {
+          "category": "advance",
+          "label": "",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68776/54436"
         }
       ],
       "status": "ticket_listed",
@@ -43301,6 +43515,37 @@
       ],
       "ticketMatches": [
         {
+          "score": 24,
+          "performerId": "maison",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68776/54436",
+          "title": "めぞん×大王ツーマンライブ「オタキング」",
+          "date": "2026-11-29",
+          "venue": "よしもと福岡 大和証券劇場（福岡県）",
+          "openTime": "18:00",
+          "startTime": "18:15",
+          "ticketStatus": "",
+          "ticketOptions": [],
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "抽選",
+              "startAt": "2026-09-25T11:00:00+09:00",
+              "endAt": "2026-09-28T11:00:00+09:00"
+            },
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-09-25T11:00:00+09:00",
+              "endAt": "2026-09-28T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-25T11:00:00+09:00",
+          "saleEndAt": "2026-09-28T11:00:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": ""
+        },
+        {
           "score": 14,
           "performerId": "maison",
           "source": "fany",
@@ -43575,6 +43820,37 @@
           "saleEndAt": "2026-11-29T13:50:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": ""
+        },
+        {
+          "score": 14,
+          "performerId": "maison",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68797/54454",
+          "title": "太宰寄席",
+          "date": "2026-11-29",
+          "venue": "よしもと福岡 大和証券劇場（福岡県）",
+          "openTime": "19:30",
+          "startTime": "19:45",
+          "ticketStatus": "",
+          "ticketOptions": [],
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "抽選",
+              "startAt": "2026-09-25T11:00:00+09:00",
+              "endAt": "2026-09-28T11:00:00+09:00"
+            },
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-09-25T11:00:00+09:00",
+              "endAt": "2026-09-28T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-25T11:00:00+09:00",
+          "saleEndAt": "2026-09-28T11:00:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": ""
         }
       ],
       "ticketListed": true,
@@ -43648,6 +43924,22 @@
       ],
       "salePeriods": [
         {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68776/54436"
+        },
+        {
+          "category": "advance",
+          "label": "",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68776/54436"
+        },
+        {
           "category": "first_come",
           "label": "先着",
           "startAt": "2026-09-20T10:00:00+09:00",
@@ -43697,12 +43989,12 @@
         }
       ],
       "status": "ticket_listed",
-      "ticketStatus": "販売中",
+      "ticketStatus": "",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/66959/53442",
-      "saleStartAt": "2026-09-20T10:00:00+09:00",
-      "saleEndAt": "2026-11-29T09:30:00+09:00",
-      "saleCategory": "first_come",
+      "sourceUrl": "https://ticket.fany.lol/reception/68776/54436",
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
       "saleLabel": ""
     },
     {
@@ -43746,6 +44038,37 @@
       ],
       "ticketMatches": [
         {
+          "score": 20,
+          "performerId": "maison",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68797/54454",
+          "title": "太宰寄席",
+          "date": "2026-11-29",
+          "venue": "よしもと福岡 大和証券劇場（福岡県）",
+          "openTime": "19:30",
+          "startTime": "19:45",
+          "ticketStatus": "",
+          "ticketOptions": [],
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "抽選",
+              "startAt": "2026-09-25T11:00:00+09:00",
+              "endAt": "2026-09-28T11:00:00+09:00"
+            },
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-09-25T11:00:00+09:00",
+              "endAt": "2026-09-28T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-25T11:00:00+09:00",
+          "saleEndAt": "2026-09-28T11:00:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": ""
+        },
+        {
           "score": 14,
           "performerId": "maison",
           "source": "fany",
@@ -44020,6 +44343,37 @@
           "saleEndAt": "2026-11-29T13:50:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": ""
+        },
+        {
+          "score": 14,
+          "performerId": "maison",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68776/54436",
+          "title": "めぞん×大王ツーマンライブ「オタキング」",
+          "date": "2026-11-29",
+          "venue": "よしもと福岡 大和証券劇場（福岡県）",
+          "openTime": "18:00",
+          "startTime": "18:15",
+          "ticketStatus": "",
+          "ticketOptions": [],
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "抽選",
+              "startAt": "2026-09-25T11:00:00+09:00",
+              "endAt": "2026-09-28T11:00:00+09:00"
+            },
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-09-25T11:00:00+09:00",
+              "endAt": "2026-09-28T11:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-09-25T11:00:00+09:00",
+          "saleEndAt": "2026-09-28T11:00:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": ""
         }
       ],
       "ticketListed": true,
@@ -44093,6 +44447,22 @@
       ],
       "salePeriods": [
         {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68797/54454"
+        },
+        {
+          "category": "advance",
+          "label": "",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68797/54454"
+        },
+        {
           "category": "first_come",
           "label": "先着",
           "startAt": "2026-09-20T10:00:00+09:00",
@@ -44142,12 +44512,12 @@
         }
       ],
       "status": "ticket_listed",
-      "ticketStatus": "販売中",
+      "ticketStatus": "",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/66959/53442",
-      "saleStartAt": "2026-09-20T10:00:00+09:00",
-      "saleEndAt": "2026-11-29T09:30:00+09:00",
-      "saleCategory": "first_come",
+      "sourceUrl": "https://ticket.fany.lol/reception/68797/54454",
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
       "saleLabel": ""
     },
     {
