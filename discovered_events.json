@@ -1,10 +1,10 @@
 {
-  "syncedAt": "2026-09-24T07:43:10.031912+00:00",
+  "syncedAt": "2026-09-24T08:44:29.514592+00:00",
   "total": 160,
   "ticketListedCount": 159,
   "ticketUnlistedCount": 1,
-  "ticketOptionCount": 311,
-  "salePeriodCount": 656,
+  "ticketOptionCount": 323,
+  "salePeriodCount": 660,
   "events": [
     {
       "performerId": "nansui",
@@ -19202,9 +19202,9 @@
               ]
             },
             {
-              "name": "同じ販売元のイベント",
+              "name": "（税込）",
               "type": "先着",
-              "status": "販売中",
+              "status": "販売前",
               "price": "",
               "remaining": null,
               "remainingText": "",
@@ -19218,6 +19218,66 @@
                   "label": "",
                   "startAt": "2026-09-04T22:30:00+09:00",
                   "endAt": "2026-09-14T23:59:00+09:00"
+                }
+              ]
+            },
+            {
+              "name": "整理番号券",
+              "type": "先着",
+              "status": "販売前",
+              "price": "¥3,500",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-09-25T23:05:00+09:00",
+              "saleEndAt": "2026-10-12T19:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "",
+                  "startAt": "2026-09-25T23:05:00+09:00",
+                  "endAt": "2026-10-12T19:00:00+09:00"
+                }
+              ]
+            },
+            {
+              "name": "（税込）",
+              "type": "先着",
+              "status": "販売前",
+              "price": "",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-09-25T23:05:00+09:00",
+              "saleEndAt": "2026-10-12T19:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "",
+                  "startAt": "2026-09-25T23:05:00+09:00",
+                  "endAt": "2026-10-12T19:00:00+09:00"
+                }
+              ]
+            },
+            {
+              "name": "同じ販売元のイベント",
+              "type": "先着",
+              "status": "販売中",
+              "price": "",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-09-25T23:05:00+09:00",
+              "saleEndAt": "2026-10-12T19:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "",
+                  "startAt": "2026-09-25T23:05:00+09:00",
+                  "endAt": "2026-10-12T19:00:00+09:00"
                 }
               ]
             },
@@ -19228,16 +19288,16 @@
               "price": "",
               "remaining": null,
               "remainingText": "",
-              "saleStartAt": "2026-09-04T22:30:00+09:00",
-              "saleEndAt": "2026-09-14T23:59:00+09:00",
-              "saleCategory": "advance",
+              "saleStartAt": "2026-09-25T23:05:00+09:00",
+              "saleEndAt": "2026-10-12T19:00:00+09:00",
+              "saleCategory": "first_come",
               "saleLabel": "",
               "salePeriods": [
                 {
-                  "category": "advance",
+                  "category": "first_come",
                   "label": "",
-                  "startAt": "2026-09-04T22:30:00+09:00",
-                  "endAt": "2026-09-14T23:59:00+09:00"
+                  "startAt": "2026-09-25T23:05:00+09:00",
+                  "endAt": "2026-10-12T19:00:00+09:00"
                 }
               ]
             },
@@ -19248,16 +19308,16 @@
               "price": "",
               "remaining": null,
               "remainingText": "",
-              "saleStartAt": "2026-09-04T22:30:00+09:00",
-              "saleEndAt": "2026-09-14T23:59:00+09:00",
-              "saleCategory": "advance",
+              "saleStartAt": "2026-09-25T23:05:00+09:00",
+              "saleEndAt": "2026-10-12T19:00:00+09:00",
+              "saleCategory": "first_come",
               "saleLabel": "",
               "salePeriods": [
                 {
-                  "category": "advance",
+                  "category": "first_come",
                   "label": "",
-                  "startAt": "2026-09-04T22:30:00+09:00",
-                  "endAt": "2026-09-14T23:59:00+09:00"
+                  "startAt": "2026-09-25T23:05:00+09:00",
+                  "endAt": "2026-10-12T19:00:00+09:00"
                 }
               ]
             }
@@ -19268,11 +19328,17 @@
               "label": "",
               "startAt": "2026-09-04T22:30:00+09:00",
               "endAt": "2026-09-14T23:59:00+09:00"
+            },
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
             }
           ],
-          "saleStartAt": "2026-09-04T22:30:00+09:00",
-          "saleEndAt": "2026-09-14T23:59:00+09:00",
-          "saleCategory": "advance",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
           "saleLabel": ""
         }
       ],
@@ -19411,9 +19477,9 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "同じ販売元のイベント",
+          "name": "（税込）",
           "type": "先着",
-          "status": "販売中",
+          "status": "販売前",
           "price": "",
           "remaining": null,
           "remainingText": "",
@@ -19427,6 +19493,72 @@
               "label": "",
               "startAt": "2026-09-04T22:30:00+09:00",
               "endAt": "2026-09-14T23:59:00+09:00"
+            }
+          ],
+          "source": "livepocket",
+          "sourceUrl": "https://livepocket.jp/e/dnqhf"
+        },
+        {
+          "name": "整理番号券",
+          "type": "先着",
+          "status": "販売前",
+          "price": "¥3,500",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
+            }
+          ],
+          "source": "livepocket",
+          "sourceUrl": "https://livepocket.jp/e/dnqhf"
+        },
+        {
+          "name": "（税込）",
+          "type": "先着",
+          "status": "販売前",
+          "price": "",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
+            }
+          ],
+          "source": "livepocket",
+          "sourceUrl": "https://livepocket.jp/e/dnqhf"
+        },
+        {
+          "name": "同じ販売元のイベント",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
             }
           ],
           "source": "livepocket",
@@ -19439,16 +19571,16 @@
           "price": "",
           "remaining": null,
           "remainingText": "",
-          "saleStartAt": "2026-09-04T22:30:00+09:00",
-          "saleEndAt": "2026-09-14T23:59:00+09:00",
-          "saleCategory": "advance",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
           "saleLabel": "",
           "salePeriods": [
             {
-              "category": "advance",
+              "category": "first_come",
               "label": "",
-              "startAt": "2026-09-04T22:30:00+09:00",
-              "endAt": "2026-09-14T23:59:00+09:00"
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
             }
           ],
           "source": "livepocket",
@@ -19461,16 +19593,16 @@
           "price": "",
           "remaining": null,
           "remainingText": "",
-          "saleStartAt": "2026-09-04T22:30:00+09:00",
-          "saleEndAt": "2026-09-14T23:59:00+09:00",
-          "saleCategory": "advance",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
           "saleLabel": "",
           "salePeriods": [
             {
-              "category": "advance",
+              "category": "first_come",
               "label": "",
-              "startAt": "2026-09-04T22:30:00+09:00",
-              "endAt": "2026-09-14T23:59:00+09:00"
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
             }
           ],
           "source": "livepocket",
@@ -19547,6 +19679,14 @@
           "label": "",
           "startAt": "2026-09-04T22:30:00+09:00",
           "endAt": "2026-09-14T23:59:00+09:00",
+          "source": "livepocket",
+          "sourceUrl": "https://livepocket.jp/e/dnqhf"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-09-25T23:05:00+09:00",
+          "endAt": "2026-10-12T19:00:00+09:00",
           "source": "livepocket",
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         }
@@ -19926,9 +20066,9 @@
               ]
             },
             {
-              "name": "同じ販売元のイベント",
+              "name": "（税込）",
               "type": "先着",
-              "status": "販売中",
+              "status": "販売前",
               "price": "",
               "remaining": null,
               "remainingText": "",
@@ -19942,6 +20082,66 @@
                   "label": "",
                   "startAt": "2026-09-04T22:30:00+09:00",
                   "endAt": "2026-09-14T23:59:00+09:00"
+                }
+              ]
+            },
+            {
+              "name": "整理番号券",
+              "type": "先着",
+              "status": "販売前",
+              "price": "¥3,500",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-09-25T23:05:00+09:00",
+              "saleEndAt": "2026-10-12T19:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "",
+                  "startAt": "2026-09-25T23:05:00+09:00",
+                  "endAt": "2026-10-12T19:00:00+09:00"
+                }
+              ]
+            },
+            {
+              "name": "（税込）",
+              "type": "先着",
+              "status": "販売前",
+              "price": "",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-09-25T23:05:00+09:00",
+              "saleEndAt": "2026-10-12T19:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "",
+                  "startAt": "2026-09-25T23:05:00+09:00",
+                  "endAt": "2026-10-12T19:00:00+09:00"
+                }
+              ]
+            },
+            {
+              "name": "同じ販売元のイベント",
+              "type": "先着",
+              "status": "販売中",
+              "price": "",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-09-25T23:05:00+09:00",
+              "saleEndAt": "2026-10-12T19:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "",
+                  "startAt": "2026-09-25T23:05:00+09:00",
+                  "endAt": "2026-10-12T19:00:00+09:00"
                 }
               ]
             },
@@ -19952,16 +20152,16 @@
               "price": "",
               "remaining": null,
               "remainingText": "",
-              "saleStartAt": "2026-09-04T22:30:00+09:00",
-              "saleEndAt": "2026-09-14T23:59:00+09:00",
-              "saleCategory": "advance",
+              "saleStartAt": "2026-09-25T23:05:00+09:00",
+              "saleEndAt": "2026-10-12T19:00:00+09:00",
+              "saleCategory": "first_come",
               "saleLabel": "",
               "salePeriods": [
                 {
-                  "category": "advance",
+                  "category": "first_come",
                   "label": "",
-                  "startAt": "2026-09-04T22:30:00+09:00",
-                  "endAt": "2026-09-14T23:59:00+09:00"
+                  "startAt": "2026-09-25T23:05:00+09:00",
+                  "endAt": "2026-10-12T19:00:00+09:00"
                 }
               ]
             },
@@ -19972,16 +20172,16 @@
               "price": "",
               "remaining": null,
               "remainingText": "",
-              "saleStartAt": "2026-09-04T22:30:00+09:00",
-              "saleEndAt": "2026-09-14T23:59:00+09:00",
-              "saleCategory": "advance",
+              "saleStartAt": "2026-09-25T23:05:00+09:00",
+              "saleEndAt": "2026-10-12T19:00:00+09:00",
+              "saleCategory": "first_come",
               "saleLabel": "",
               "salePeriods": [
                 {
-                  "category": "advance",
+                  "category": "first_come",
                   "label": "",
-                  "startAt": "2026-09-04T22:30:00+09:00",
-                  "endAt": "2026-09-14T23:59:00+09:00"
+                  "startAt": "2026-09-25T23:05:00+09:00",
+                  "endAt": "2026-10-12T19:00:00+09:00"
                 }
               ]
             }
@@ -19992,11 +20192,17 @@
               "label": "",
               "startAt": "2026-09-04T22:30:00+09:00",
               "endAt": "2026-09-14T23:59:00+09:00"
+            },
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
             }
           ],
-          "saleStartAt": "2026-09-04T22:30:00+09:00",
-          "saleEndAt": "2026-09-14T23:59:00+09:00",
-          "saleCategory": "advance",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
           "saleLabel": ""
         }
       ],
@@ -20135,9 +20341,9 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "同じ販売元のイベント",
+          "name": "（税込）",
           "type": "先着",
-          "status": "販売中",
+          "status": "販売前",
           "price": "",
           "remaining": null,
           "remainingText": "",
@@ -20151,6 +20357,72 @@
               "label": "",
               "startAt": "2026-09-04T22:30:00+09:00",
               "endAt": "2026-09-14T23:59:00+09:00"
+            }
+          ],
+          "source": "livepocket",
+          "sourceUrl": "https://livepocket.jp/e/dnqhf"
+        },
+        {
+          "name": "整理番号券",
+          "type": "先着",
+          "status": "販売前",
+          "price": "¥3,500",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
+            }
+          ],
+          "source": "livepocket",
+          "sourceUrl": "https://livepocket.jp/e/dnqhf"
+        },
+        {
+          "name": "（税込）",
+          "type": "先着",
+          "status": "販売前",
+          "price": "",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
+            }
+          ],
+          "source": "livepocket",
+          "sourceUrl": "https://livepocket.jp/e/dnqhf"
+        },
+        {
+          "name": "同じ販売元のイベント",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
             }
           ],
           "source": "livepocket",
@@ -20163,16 +20435,16 @@
           "price": "",
           "remaining": null,
           "remainingText": "",
-          "saleStartAt": "2026-09-04T22:30:00+09:00",
-          "saleEndAt": "2026-09-14T23:59:00+09:00",
-          "saleCategory": "advance",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
           "saleLabel": "",
           "salePeriods": [
             {
-              "category": "advance",
+              "category": "first_come",
               "label": "",
-              "startAt": "2026-09-04T22:30:00+09:00",
-              "endAt": "2026-09-14T23:59:00+09:00"
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
             }
           ],
           "source": "livepocket",
@@ -20185,16 +20457,16 @@
           "price": "",
           "remaining": null,
           "remainingText": "",
-          "saleStartAt": "2026-09-04T22:30:00+09:00",
-          "saleEndAt": "2026-09-14T23:59:00+09:00",
-          "saleCategory": "advance",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
           "saleLabel": "",
           "salePeriods": [
             {
-              "category": "advance",
+              "category": "first_come",
               "label": "",
-              "startAt": "2026-09-04T22:30:00+09:00",
-              "endAt": "2026-09-14T23:59:00+09:00"
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
             }
           ],
           "source": "livepocket",
@@ -20271,6 +20543,14 @@
           "label": "",
           "startAt": "2026-09-04T22:30:00+09:00",
           "endAt": "2026-09-14T23:59:00+09:00",
+          "source": "livepocket",
+          "sourceUrl": "https://livepocket.jp/e/dnqhf"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-09-25T23:05:00+09:00",
+          "endAt": "2026-10-12T19:00:00+09:00",
           "source": "livepocket",
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         }
@@ -20650,9 +20930,9 @@
               ]
             },
             {
-              "name": "同じ販売元のイベント",
+              "name": "（税込）",
               "type": "先着",
-              "status": "販売中",
+              "status": "販売前",
               "price": "",
               "remaining": null,
               "remainingText": "",
@@ -20666,6 +20946,66 @@
                   "label": "",
                   "startAt": "2026-09-04T22:30:00+09:00",
                   "endAt": "2026-09-14T23:59:00+09:00"
+                }
+              ]
+            },
+            {
+              "name": "整理番号券",
+              "type": "先着",
+              "status": "販売前",
+              "price": "¥3,500",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-09-25T23:05:00+09:00",
+              "saleEndAt": "2026-10-12T19:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "",
+                  "startAt": "2026-09-25T23:05:00+09:00",
+                  "endAt": "2026-10-12T19:00:00+09:00"
+                }
+              ]
+            },
+            {
+              "name": "（税込）",
+              "type": "先着",
+              "status": "販売前",
+              "price": "",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-09-25T23:05:00+09:00",
+              "saleEndAt": "2026-10-12T19:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "",
+                  "startAt": "2026-09-25T23:05:00+09:00",
+                  "endAt": "2026-10-12T19:00:00+09:00"
+                }
+              ]
+            },
+            {
+              "name": "同じ販売元のイベント",
+              "type": "先着",
+              "status": "販売中",
+              "price": "",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-09-25T23:05:00+09:00",
+              "saleEndAt": "2026-10-12T19:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "",
+                  "startAt": "2026-09-25T23:05:00+09:00",
+                  "endAt": "2026-10-12T19:00:00+09:00"
                 }
               ]
             },
@@ -20676,16 +21016,16 @@
               "price": "",
               "remaining": null,
               "remainingText": "",
-              "saleStartAt": "2026-09-04T22:30:00+09:00",
-              "saleEndAt": "2026-09-14T23:59:00+09:00",
-              "saleCategory": "advance",
+              "saleStartAt": "2026-09-25T23:05:00+09:00",
+              "saleEndAt": "2026-10-12T19:00:00+09:00",
+              "saleCategory": "first_come",
               "saleLabel": "",
               "salePeriods": [
                 {
-                  "category": "advance",
+                  "category": "first_come",
                   "label": "",
-                  "startAt": "2026-09-04T22:30:00+09:00",
-                  "endAt": "2026-09-14T23:59:00+09:00"
+                  "startAt": "2026-09-25T23:05:00+09:00",
+                  "endAt": "2026-10-12T19:00:00+09:00"
                 }
               ]
             },
@@ -20696,16 +21036,16 @@
               "price": "",
               "remaining": null,
               "remainingText": "",
-              "saleStartAt": "2026-09-04T22:30:00+09:00",
-              "saleEndAt": "2026-09-14T23:59:00+09:00",
-              "saleCategory": "advance",
+              "saleStartAt": "2026-09-25T23:05:00+09:00",
+              "saleEndAt": "2026-10-12T19:00:00+09:00",
+              "saleCategory": "first_come",
               "saleLabel": "",
               "salePeriods": [
                 {
-                  "category": "advance",
+                  "category": "first_come",
                   "label": "",
-                  "startAt": "2026-09-04T22:30:00+09:00",
-                  "endAt": "2026-09-14T23:59:00+09:00"
+                  "startAt": "2026-09-25T23:05:00+09:00",
+                  "endAt": "2026-10-12T19:00:00+09:00"
                 }
               ]
             }
@@ -20716,11 +21056,17 @@
               "label": "",
               "startAt": "2026-09-04T22:30:00+09:00",
               "endAt": "2026-09-14T23:59:00+09:00"
+            },
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
             }
           ],
-          "saleStartAt": "2026-09-04T22:30:00+09:00",
-          "saleEndAt": "2026-09-14T23:59:00+09:00",
-          "saleCategory": "advance",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
           "saleLabel": ""
         }
       ],
@@ -20859,9 +21205,9 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "同じ販売元のイベント",
+          "name": "（税込）",
           "type": "先着",
-          "status": "販売中",
+          "status": "販売前",
           "price": "",
           "remaining": null,
           "remainingText": "",
@@ -20875,6 +21221,72 @@
               "label": "",
               "startAt": "2026-09-04T22:30:00+09:00",
               "endAt": "2026-09-14T23:59:00+09:00"
+            }
+          ],
+          "source": "livepocket",
+          "sourceUrl": "https://livepocket.jp/e/dnqhf"
+        },
+        {
+          "name": "整理番号券",
+          "type": "先着",
+          "status": "販売前",
+          "price": "¥3,500",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
+            }
+          ],
+          "source": "livepocket",
+          "sourceUrl": "https://livepocket.jp/e/dnqhf"
+        },
+        {
+          "name": "（税込）",
+          "type": "先着",
+          "status": "販売前",
+          "price": "",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
+            }
+          ],
+          "source": "livepocket",
+          "sourceUrl": "https://livepocket.jp/e/dnqhf"
+        },
+        {
+          "name": "同じ販売元のイベント",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
             }
           ],
           "source": "livepocket",
@@ -20887,16 +21299,16 @@
           "price": "",
           "remaining": null,
           "remainingText": "",
-          "saleStartAt": "2026-09-04T22:30:00+09:00",
-          "saleEndAt": "2026-09-14T23:59:00+09:00",
-          "saleCategory": "advance",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
           "saleLabel": "",
           "salePeriods": [
             {
-              "category": "advance",
+              "category": "first_come",
               "label": "",
-              "startAt": "2026-09-04T22:30:00+09:00",
-              "endAt": "2026-09-14T23:59:00+09:00"
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
             }
           ],
           "source": "livepocket",
@@ -20909,16 +21321,16 @@
           "price": "",
           "remaining": null,
           "remainingText": "",
-          "saleStartAt": "2026-09-04T22:30:00+09:00",
-          "saleEndAt": "2026-09-14T23:59:00+09:00",
-          "saleCategory": "advance",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
           "saleLabel": "",
           "salePeriods": [
             {
-              "category": "advance",
+              "category": "first_come",
               "label": "",
-              "startAt": "2026-09-04T22:30:00+09:00",
-              "endAt": "2026-09-14T23:59:00+09:00"
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
             }
           ],
           "source": "livepocket",
@@ -20995,6 +21407,14 @@
           "label": "",
           "startAt": "2026-09-04T22:30:00+09:00",
           "endAt": "2026-09-14T23:59:00+09:00",
+          "source": "livepocket",
+          "sourceUrl": "https://livepocket.jp/e/dnqhf"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-09-25T23:05:00+09:00",
+          "endAt": "2026-10-12T19:00:00+09:00",
           "source": "livepocket",
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         }
@@ -21374,9 +21794,9 @@
               ]
             },
             {
-              "name": "同じ販売元のイベント",
+              "name": "（税込）",
               "type": "先着",
-              "status": "販売中",
+              "status": "販売前",
               "price": "",
               "remaining": null,
               "remainingText": "",
@@ -21390,6 +21810,66 @@
                   "label": "",
                   "startAt": "2026-09-04T22:30:00+09:00",
                   "endAt": "2026-09-14T23:59:00+09:00"
+                }
+              ]
+            },
+            {
+              "name": "整理番号券",
+              "type": "先着",
+              "status": "販売前",
+              "price": "¥3,500",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-09-25T23:05:00+09:00",
+              "saleEndAt": "2026-10-12T19:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "",
+                  "startAt": "2026-09-25T23:05:00+09:00",
+                  "endAt": "2026-10-12T19:00:00+09:00"
+                }
+              ]
+            },
+            {
+              "name": "（税込）",
+              "type": "先着",
+              "status": "販売前",
+              "price": "",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-09-25T23:05:00+09:00",
+              "saleEndAt": "2026-10-12T19:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "",
+                  "startAt": "2026-09-25T23:05:00+09:00",
+                  "endAt": "2026-10-12T19:00:00+09:00"
+                }
+              ]
+            },
+            {
+              "name": "同じ販売元のイベント",
+              "type": "先着",
+              "status": "販売中",
+              "price": "",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-09-25T23:05:00+09:00",
+              "saleEndAt": "2026-10-12T19:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "",
+                  "startAt": "2026-09-25T23:05:00+09:00",
+                  "endAt": "2026-10-12T19:00:00+09:00"
                 }
               ]
             },
@@ -21400,16 +21880,16 @@
               "price": "",
               "remaining": null,
               "remainingText": "",
-              "saleStartAt": "2026-09-04T22:30:00+09:00",
-              "saleEndAt": "2026-09-14T23:59:00+09:00",
-              "saleCategory": "advance",
+              "saleStartAt": "2026-09-25T23:05:00+09:00",
+              "saleEndAt": "2026-10-12T19:00:00+09:00",
+              "saleCategory": "first_come",
               "saleLabel": "",
               "salePeriods": [
                 {
-                  "category": "advance",
+                  "category": "first_come",
                   "label": "",
-                  "startAt": "2026-09-04T22:30:00+09:00",
-                  "endAt": "2026-09-14T23:59:00+09:00"
+                  "startAt": "2026-09-25T23:05:00+09:00",
+                  "endAt": "2026-10-12T19:00:00+09:00"
                 }
               ]
             },
@@ -21420,16 +21900,16 @@
               "price": "",
               "remaining": null,
               "remainingText": "",
-              "saleStartAt": "2026-09-04T22:30:00+09:00",
-              "saleEndAt": "2026-09-14T23:59:00+09:00",
-              "saleCategory": "advance",
+              "saleStartAt": "2026-09-25T23:05:00+09:00",
+              "saleEndAt": "2026-10-12T19:00:00+09:00",
+              "saleCategory": "first_come",
               "saleLabel": "",
               "salePeriods": [
                 {
-                  "category": "advance",
+                  "category": "first_come",
                   "label": "",
-                  "startAt": "2026-09-04T22:30:00+09:00",
-                  "endAt": "2026-09-14T23:59:00+09:00"
+                  "startAt": "2026-09-25T23:05:00+09:00",
+                  "endAt": "2026-10-12T19:00:00+09:00"
                 }
               ]
             }
@@ -21440,11 +21920,17 @@
               "label": "",
               "startAt": "2026-09-04T22:30:00+09:00",
               "endAt": "2026-09-14T23:59:00+09:00"
+            },
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
             }
           ],
-          "saleStartAt": "2026-09-04T22:30:00+09:00",
-          "saleEndAt": "2026-09-14T23:59:00+09:00",
-          "saleCategory": "advance",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
           "saleLabel": ""
         }
       ],
@@ -21583,9 +22069,9 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "同じ販売元のイベント",
+          "name": "（税込）",
           "type": "先着",
-          "status": "販売中",
+          "status": "販売前",
           "price": "",
           "remaining": null,
           "remainingText": "",
@@ -21599,6 +22085,72 @@
               "label": "",
               "startAt": "2026-09-04T22:30:00+09:00",
               "endAt": "2026-09-14T23:59:00+09:00"
+            }
+          ],
+          "source": "livepocket",
+          "sourceUrl": "https://livepocket.jp/e/dnqhf"
+        },
+        {
+          "name": "整理番号券",
+          "type": "先着",
+          "status": "販売前",
+          "price": "¥3,500",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
+            }
+          ],
+          "source": "livepocket",
+          "sourceUrl": "https://livepocket.jp/e/dnqhf"
+        },
+        {
+          "name": "（税込）",
+          "type": "先着",
+          "status": "販売前",
+          "price": "",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
+            }
+          ],
+          "source": "livepocket",
+          "sourceUrl": "https://livepocket.jp/e/dnqhf"
+        },
+        {
+          "name": "同じ販売元のイベント",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
             }
           ],
           "source": "livepocket",
@@ -21611,16 +22163,16 @@
           "price": "",
           "remaining": null,
           "remainingText": "",
-          "saleStartAt": "2026-09-04T22:30:00+09:00",
-          "saleEndAt": "2026-09-14T23:59:00+09:00",
-          "saleCategory": "advance",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
           "saleLabel": "",
           "salePeriods": [
             {
-              "category": "advance",
+              "category": "first_come",
               "label": "",
-              "startAt": "2026-09-04T22:30:00+09:00",
-              "endAt": "2026-09-14T23:59:00+09:00"
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
             }
           ],
           "source": "livepocket",
@@ -21633,16 +22185,16 @@
           "price": "",
           "remaining": null,
           "remainingText": "",
-          "saleStartAt": "2026-09-04T22:30:00+09:00",
-          "saleEndAt": "2026-09-14T23:59:00+09:00",
-          "saleCategory": "advance",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
           "saleLabel": "",
           "salePeriods": [
             {
-              "category": "advance",
+              "category": "first_come",
               "label": "",
-              "startAt": "2026-09-04T22:30:00+09:00",
-              "endAt": "2026-09-14T23:59:00+09:00"
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
             }
           ],
           "source": "livepocket",
@@ -21719,6 +22271,14 @@
           "label": "",
           "startAt": "2026-09-04T22:30:00+09:00",
           "endAt": "2026-09-14T23:59:00+09:00",
+          "source": "livepocket",
+          "sourceUrl": "https://livepocket.jp/e/dnqhf"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-09-25T23:05:00+09:00",
+          "endAt": "2026-10-12T19:00:00+09:00",
           "source": "livepocket",
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         }
