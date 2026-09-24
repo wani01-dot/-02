@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-24T01:05:23.733969+00:00",
+  "syncedAt": "2026-09-24T01:15:29.202373+00:00",
   "performers": [
     {
       "id": "maison",
@@ -6683,25 +6683,6 @@
           ]
         },
         {
-          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-09-04T22:30:00+09:00",
-          "saleEndAt": "2026-09-14T23:59:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-09-04T22:30:00+09:00",
-              "endAt": "2026-09-14T23:59:00+09:00",
-              "saleKey": "livepocket|maison|dnqhf|東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵|先着|advance|2026-09-04T22:30:00+09:00"
-            }
-          ]
-        },
-        {
           "name": "東山 / 無尽蔵",
           "type": "先着",
           "status": "販売中",
@@ -6717,6 +6698,25 @@
               "startAt": "2026-09-04T22:30:00+09:00",
               "endAt": "2026-09-14T23:59:00+09:00",
               "saleKey": "livepocket|maison|dnqhf|東山 / 無尽蔵|先着|advance|2026-09-04T22:30:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "東山 / らくちんペクチン / 江頭一馬",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-09-04T22:30:00+09:00",
+          "saleEndAt": "2026-09-14T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-09-04T22:30:00+09:00",
+              "endAt": "2026-09-14T23:59:00+09:00",
+              "saleKey": "livepocket|maison|dnqhf|東山 / らくちんペクチン / 江頭一馬|先着|advance|2026-09-04T22:30:00+09:00"
             }
           ]
         }
@@ -11854,6 +11854,46 @@
       ]
     },
     {
+      "performerId": "maison",
+      "date": "2026-11-01",
+      "openTime": "10:45",
+      "startTime": "11:00",
+      "title": "渋谷マンゲキお笑いライブ",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68410/54287",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]ダブルヒガシ",
+        "めぞん",
+        "ミカボ",
+        "軟水",
+        "ピュート",
+        "ボブのコーラ",
+        "ガクテンソク",
+        "サルゴリラ"
+      ],
+      "firstSeenAt": "2026-09-24T01:15:29.199665+00:00",
+      "newUntil": "2026-09-26T01:15:29.199675+00:00",
+      "trackedPerformers": [
+        "maison",
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
       "performerId": "nansui",
       "date": "2026-11-01",
       "openTime": "10:45",
@@ -11888,6 +11928,7 @@
       "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
       "newUntil": "2026-09-26T01:05:23.730497+00:00",
       "trackedPerformers": [
+        "maison",
         "pyuto",
         "nansui"
       ]
@@ -11927,6 +11968,47 @@
       "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
       "newUntil": "2026-09-26T01:05:23.730497+00:00",
       "trackedPerformers": [
+        "maison",
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-01",
+      "openTime": "12:30",
+      "startTime": "12:45",
+      "title": "渋谷マンゲキお笑いライブ",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68410/54288",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]ダブルヒガシ",
+        "めぞん",
+        "ミカボ",
+        "軟水",
+        "ピュート",
+        "ボブのコーラ",
+        "ガクテンソク",
+        "サルゴリラ"
+      ],
+      "firstSeenAt": "2026-09-24T01:15:29.199665+00:00",
+      "newUntil": "2026-09-26T01:15:29.199675+00:00",
+      "trackedPerformers": [
+        "maison",
         "pyuto",
         "nansui"
       ]
@@ -11966,6 +12048,7 @@
       "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
       "newUntil": "2026-09-26T01:05:23.730497+00:00",
       "trackedPerformers": [
+        "maison",
         "pyuto",
         "nansui"
       ]
@@ -12005,6 +12088,47 @@
       "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
       "newUntil": "2026-09-26T01:05:23.730497+00:00",
       "trackedPerformers": [
+        "maison",
+        "pyuto",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-01",
+      "openTime": "14:15",
+      "startTime": "14:30",
+      "title": "渋谷マンゲキお笑いライブ",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68410/54289",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]ダブルヒガシ",
+        "めぞん",
+        "ミカボ",
+        "軟水",
+        "ピュート",
+        "ボブのコーラ",
+        "ガクテンソク",
+        "サルゴリラ"
+      ],
+      "firstSeenAt": "2026-09-24T01:15:29.199665+00:00",
+      "newUntil": "2026-09-26T01:15:29.199675+00:00",
+      "trackedPerformers": [
+        "maison",
         "pyuto",
         "nansui"
       ]
@@ -12044,6 +12168,7 @@
       "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
       "newUntil": "2026-09-26T01:05:23.730497+00:00",
       "trackedPerformers": [
+        "maison",
         "pyuto",
         "nansui"
       ]
@@ -12083,6 +12208,7 @@
       "firstSeenAt": "2026-09-24T01:05:23.730482+00:00",
       "newUntil": "2026-09-26T01:05:23.730497+00:00",
       "trackedPerformers": [
+        "maison",
         "pyuto",
         "nansui"
       ]
@@ -12158,6 +12284,74 @@
       ]
     },
     {
+      "performerId": "maison",
+      "date": "2026-11-04",
+      "openTime": "17:15",
+      "startTime": "17:30",
+      "title": "神保町Kakeru翔SP",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/67757/53876",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "めぞん",
+        "インテイク",
+        "大王",
+        "セカンドロット"
+      ],
+      "firstSeenAt": "2026-09-24T01:15:29.199665+00:00",
+      "newUntil": "2026-09-26T01:15:29.199675+00:00",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-04",
+      "openTime": "19:00",
+      "startTime": "19:15",
+      "title": "ただならぬ刀肝入り『ゴリラパンチ』",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/67790/53902",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "ただならぬ刀",
+        "めぞん",
+        "インテイク",
+        "喫茶ムーン"
+      ],
+      "firstSeenAt": "2026-09-24T01:15:29.199665+00:00",
+      "newUntil": "2026-09-26T01:15:29.199675+00:00",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
       "performerId": "nansui",
       "date": "2026-11-05",
       "openTime": "16:45",
@@ -12191,6 +12385,44 @@
       "newUntil": "2026-09-26T01:05:23.730497+00:00",
       "trackedPerformers": [
         "nansui"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-05",
+      "openTime": "20:45",
+      "startTime": "21:00",
+      "title": "どうしたんだよ、デイビット！",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/67793/53905",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "ヨネダ2000",
+        "めぞん",
+        "イチゴ",
+        "隠れドキュン",
+        "あなたとネ",
+        "出目金",
+        "大石",
+        "カー・ショー"
+      ],
+      "firstSeenAt": "2026-09-24T01:15:29.199665+00:00",
+      "newUntil": "2026-09-26T01:15:29.199675+00:00",
+      "trackedPerformers": [
+        "maison"
       ]
     },
     {
@@ -12945,6 +13177,44 @@
       ]
     },
     {
+      "performerId": "maison",
+      "date": "2026-11-09",
+      "openTime": "17:00",
+      "startTime": "17:15",
+      "title": "渋谷Kiwami極LIVEプラス＋",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68414/54322",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]ダンビラムーチョ",
+        "めぞん",
+        "やさしいズ",
+        "からし蓮根",
+        "ケビンス",
+        "九条ジョー",
+        "赤嶺総理",
+        "ド桜"
+      ],
+      "firstSeenAt": "2026-09-24T01:15:29.199665+00:00",
+      "newUntil": "2026-09-26T01:15:29.199675+00:00",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
       "performerId": "pyuto",
       "date": "2026-11-09",
       "openTime": "20:45",
@@ -13017,6 +13287,44 @@
       "newUntil": "2026-09-26T01:05:23.730497+00:00",
       "trackedPerformers": [
         "pyuto"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-11",
+      "openTime": "17:00",
+      "startTime": "17:15",
+      "title": "渋谷Kiwami極LIVE",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68014/54009",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]ゆにばーす",
+        "カベポスター",
+        "めぞん",
+        "シカゴ実業",
+        "キンボシ",
+        "ぱろぱろ",
+        "オフローズ",
+        "太鵬"
+      ],
+      "firstSeenAt": "2026-09-24T01:15:29.199665+00:00",
+      "newUntil": "2026-09-26T01:15:29.199675+00:00",
+      "trackedPerformers": [
+        "maison"
       ]
     },
     {
@@ -13261,6 +13569,82 @@
       "newUntil": "2026-09-26T01:05:23.730497+00:00",
       "trackedPerformers": [
         "pyuto"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-15",
+      "openTime": "16:30",
+      "startTime": "16:45",
+      "title": "超時空笑塞メゾロス",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68259/54215",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "めぞん",
+        "金魚番長",
+        "兄弟",
+        "King Boy",
+        "ゾンビのアトリエ",
+        "タケゾウ",
+        "美バンブー",
+        "ネネネ",
+        "MC：ビューティフルトーキョーマンズ 鈴木バイダン"
+      ],
+      "firstSeenAt": "2026-09-24T01:15:29.199665+00:00",
+      "newUntil": "2026-09-26T01:15:29.199675+00:00",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-15",
+      "openTime": "20:45",
+      "startTime": "21:00",
+      "title": "思い出の扉",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/67753/53874",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "めぞん",
+        "世界クジラ 和泉",
+        "狛犬 櫛野",
+        "兄弟 体制",
+        "ボブのコーラ とあ",
+        "おとうふ 山中伸之",
+        "江頭一馬"
+      ],
+      "firstSeenAt": "2026-09-24T01:15:29.199665+00:00",
+      "newUntil": "2026-09-26T01:15:29.199675+00:00",
+      "trackedPerformers": [
+        "maison"
       ]
     },
     {
@@ -13614,6 +13998,44 @@
       ]
     },
     {
+      "performerId": "maison",
+      "date": "2026-11-22",
+      "openTime": "10:45",
+      "startTime": "11:00",
+      "title": "渋谷マンゲキお笑いライブ",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68410/54308",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]さや香",
+        "めぞん",
+        "今井らいぱち",
+        "やさしいズ",
+        "ケビンス",
+        "世間知らズ",
+        "アズーロ24",
+        "ヘンダーソン"
+      ],
+      "firstSeenAt": "2026-09-24T01:15:29.199665+00:00",
+      "newUntil": "2026-09-26T01:15:29.199675+00:00",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
       "performerId": "pyuto",
       "date": "2026-11-22",
       "openTime": "10:45",
@@ -13651,6 +14073,82 @@
       ]
     },
     {
+      "performerId": "maison",
+      "date": "2026-11-22",
+      "openTime": "12:30",
+      "startTime": "12:45",
+      "title": "渋谷マンゲキお笑いライブ",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68410/54309",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]さや香",
+        "めぞん",
+        "今井らいぱち",
+        "やさしいズ",
+        "ケビンス",
+        "世間知らズ",
+        "アズーロ24",
+        "ヘンダーソン"
+      ],
+      "firstSeenAt": "2026-09-24T01:15:29.199665+00:00",
+      "newUntil": "2026-09-26T01:15:29.199675+00:00",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-22",
+      "openTime": "14:15",
+      "startTime": "14:30",
+      "title": "渋谷マンゲキお笑いライブ",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68410/54310",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]さや香",
+        "めぞん",
+        "今井らいぱち",
+        "やさしいズ",
+        "ケビンス",
+        "世間知らズ",
+        "アメリカンBBチキン",
+        "ヘンダーソン"
+      ],
+      "firstSeenAt": "2026-09-24T01:15:29.199665+00:00",
+      "newUntil": "2026-09-26T01:15:29.199675+00:00",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
       "performerId": "pyuto",
       "date": "2026-11-22",
       "openTime": "17:00",
@@ -13685,6 +14183,42 @@
       ]
     },
     {
+      "performerId": "maison",
+      "date": "2026-11-22",
+      "openTime": "20:30",
+      "startTime": "20:45",
+      "title": "激！エデン化計画",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68271/54221",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "めぞん",
+        "九条ジョー",
+        "おミュータンツ",
+        "狛犬 櫛野",
+        "伝書鳩",
+        "カゲヤマ"
+      ],
+      "firstSeenAt": "2026-09-24T01:15:29.199665+00:00",
+      "newUntil": "2026-09-26T01:15:29.199675+00:00",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
       "performerId": "nansui",
       "date": "2026-11-23",
       "openTime": "18:45",
@@ -13714,6 +14248,44 @@
       "newUntil": "2026-09-26T01:05:23.730497+00:00",
       "trackedPerformers": [
         "nansui"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-26",
+      "openTime": "17:00",
+      "startTime": "17:15",
+      "title": "渋谷Kiwami極LIVE",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68014/54012",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "[ネタ＆コーナーライブ]ダンビラムーチョ",
+        "ゆにばーす",
+        "めぞん",
+        "ヨネダ2000",
+        "カラタチ",
+        "官兵衛",
+        "太鵬",
+        "鉄人小町"
+      ],
+      "firstSeenAt": "2026-09-24T01:15:29.199665+00:00",
+      "newUntil": "2026-09-26T01:15:29.199675+00:00",
+      "trackedPerformers": [
+        "maison"
       ]
     },
     {
@@ -13789,6 +14361,123 @@
       ],
       "firstSeenAt": "2026-09-23T22:14:45.549847+00:00",
       "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-28",
+      "openTime": "10:45",
+      "startTime": "11:00",
+      "title": "神保町マンゲキお笑いライブ",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68027/54034",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "ダブルヒガシ",
+        "めぞん",
+        "やさしいズ",
+        "ぶったま",
+        "ド桜",
+        "太鵬",
+        "イワサキ",
+        "ボブのコーラ",
+        "ぐろう"
+      ],
+      "firstSeenAt": "2026-09-24T01:15:29.199665+00:00",
+      "newUntil": "2026-09-26T01:15:29.199675+00:00",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-28",
+      "openTime": "12:45",
+      "startTime": "13:00",
+      "title": "神保町マンゲキお笑いライブ",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68027/54033",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "ダブルヒガシ",
+        "めぞん",
+        "やさしいズ",
+        "ぶったま",
+        "ド桜",
+        "太鵬",
+        "イワサキ",
+        "ボブのコーラ",
+        "ぐろう"
+      ],
+      "firstSeenAt": "2026-09-24T01:15:29.199665+00:00",
+      "newUntil": "2026-09-26T01:15:29.199675+00:00",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-28",
+      "openTime": "14:45",
+      "startTime": "15:00",
+      "title": "神保町マンゲキお笑いライブ",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68027/54058",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "ダブルヒガシ",
+        "めぞん",
+        "セッツァー",
+        "やさしいズ",
+        "ド桜",
+        "太鵬",
+        "イワサキ",
+        "ボブのコーラ",
+        "ぐろう"
+      ],
+      "firstSeenAt": "2026-09-24T01:15:29.199665+00:00",
+      "newUntil": "2026-09-26T01:15:29.199675+00:00",
       "trackedPerformers": [
         "maison"
       ]
@@ -14185,6 +14874,40 @@
       "trackedPerformers": [
         "pyuto",
         "nansui"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-30",
+      "openTime": "20:45",
+      "startTime": "21:00",
+      "title": "チームバイブスデカマグマ二次元ギャルズ",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68280/54228",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-25T11:00:00+09:00",
+      "saleEndAt": "2026-09-28T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-25T11:00:00+09:00",
+          "endAt": "2026-09-28T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "生ファラオ",
+        "エルフ",
+        "ビューティフルトーキョーマンズ 鈴木バイダン",
+        "めぞん"
+      ],
+      "firstSeenAt": "2026-09-24T01:15:29.199665+00:00",
+      "newUntil": "2026-09-26T01:15:29.199675+00:00",
+      "trackedPerformers": [
+        "maison"
       ]
     }
   ]
