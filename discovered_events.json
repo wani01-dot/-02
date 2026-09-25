@@ -1,9 +1,9 @@
 {
-  "syncedAt": "2026-09-25T12:47:51.763959+00:00",
+  "syncedAt": "2026-09-25T13:44:08.764462+00:00",
   "total": 181,
   "ticketListedCount": 180,
   "ticketUnlistedCount": 1,
-  "ticketOptionCount": 318,
+  "ticketOptionCount": 323,
   "salePeriodCount": 720,
   "events": [
     {
@@ -15516,12 +15516,12 @@
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "14:45",
           "startTime": "15:00",
-          "ticketStatus": "残りわずか",
+          "ticketStatus": "予定数終了",
           "ticketOptions": [
             {
               "name": "全席指定",
               "type": "前売",
-              "status": "残りわずか",
+              "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
               "remainingText": "",
@@ -15790,6 +15790,28 @@
           ],
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/64655/52237"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-11T13:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-11T13:00:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/64655/52238"
         },
         {
           "name": "全席指定",
@@ -16130,12 +16152,12 @@
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "14:45",
           "startTime": "15:00",
-          "ticketStatus": "残りわずか",
+          "ticketStatus": "予定数終了",
           "ticketOptions": [
             {
               "name": "全席指定",
               "type": "前売",
-              "status": "残りわずか",
+              "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
               "remainingText": "",
@@ -16409,6 +16431,28 @@
           "name": "全席指定",
           "type": "前売",
           "status": "予定数終了",
+          "price": "￥2,500",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-11T13:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-11T13:00:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/64655/52238"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
           "price": "￥1,500",
           "remaining": null,
           "remainingText": "",
@@ -16600,12 +16644,12 @@
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "14:45",
           "startTime": "15:00",
-          "ticketStatus": "残りわずか",
+          "ticketStatus": "予定数終了",
           "ticketOptions": [
             {
               "name": "全席指定",
               "type": "前売",
-              "status": "残りわずか",
+              "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
               "remainingText": "",
@@ -16956,7 +17000,7 @@
         {
           "name": "全席指定",
           "type": "前売",
-          "status": "残りわずか",
+          "status": "予定数終了",
           "price": "￥2,500",
           "remaining": null,
           "remainingText": "",
@@ -17018,6 +17062,28 @@
           ],
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/64655/52236"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "残りわずか",
+          "price": "￥2,500",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-11T11:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-11T11:00:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/64655/52237"
         },
         {
           "name": "全席指定",
@@ -17169,7 +17235,7 @@
         }
       ],
       "status": "ticket_listed",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "予定数終了",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64655/52238",
       "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -17428,12 +17494,12 @@
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "14:45",
           "startTime": "15:00",
-          "ticketStatus": "残りわずか",
+          "ticketStatus": "予定数終了",
           "ticketOptions": [
             {
               "name": "全席指定",
               "type": "前売",
-              "status": "残りわずか",
+              "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
               "remainingText": "",
@@ -17602,6 +17668,28 @@
           ],
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/64655/52237"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-11T13:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-11T13:00:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/64655/52238"
         }
       ],
       "salePeriods": [
@@ -17930,12 +18018,12 @@
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "14:45",
           "startTime": "15:00",
-          "ticketStatus": "残りわずか",
+          "ticketStatus": "予定数終了",
           "ticketOptions": [
             {
               "name": "全席指定",
               "type": "前売",
-              "status": "残りわずか",
+              "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
               "remainingText": "",
@@ -18104,6 +18192,28 @@
           ],
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/64655/52237"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-11T13:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-11T13:00:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/64655/52238"
         }
       ],
       "salePeriods": [
@@ -18627,9 +18737,9 @@
               ]
             },
             {
-              "name": "東山 / 無尽蔵",
+              "name": "東山 / らくちんペクチン / 江頭一馬",
               "type": "先着",
-              "status": "販売前",
+              "status": "販売中",
               "price": "",
               "remaining": null,
               "remainingText": "",
@@ -18647,9 +18757,9 @@
               ]
             },
             {
-              "name": "東山 / ねじれネジ",
+              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
               "type": "先着",
-              "status": "販売中",
+              "status": "販売前",
               "price": "",
               "remaining": null,
               "remainingText": "",
@@ -18910,9 +19020,9 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / 無尽蔵",
+          "name": "東山 / らくちんペクチン / 江頭一馬",
           "type": "先着",
-          "status": "販売前",
+          "status": "販売中",
           "price": "",
           "remaining": null,
           "remainingText": "",
@@ -18932,9 +19042,9 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ねじれネジ",
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
-          "status": "販売中",
+          "status": "販売前",
           "price": "",
           "remaining": null,
           "remainingText": "",
@@ -19491,9 +19601,9 @@
               ]
             },
             {
-              "name": "東山 / 無尽蔵",
+              "name": "東山 / らくちんペクチン / 江頭一馬",
               "type": "先着",
-              "status": "販売前",
+              "status": "販売中",
               "price": "",
               "remaining": null,
               "remainingText": "",
@@ -19511,9 +19621,9 @@
               ]
             },
             {
-              "name": "東山 / ねじれネジ",
+              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
               "type": "先着",
-              "status": "販売中",
+              "status": "販売前",
               "price": "",
               "remaining": null,
               "remainingText": "",
@@ -19774,9 +19884,9 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / 無尽蔵",
+          "name": "東山 / らくちんペクチン / 江頭一馬",
           "type": "先着",
-          "status": "販売前",
+          "status": "販売中",
           "price": "",
           "remaining": null,
           "remainingText": "",
@@ -19796,9 +19906,9 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ねじれネジ",
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
-          "status": "販売中",
+          "status": "販売前",
           "price": "",
           "remaining": null,
           "remainingText": "",
@@ -20355,9 +20465,9 @@
               ]
             },
             {
-              "name": "東山 / 無尽蔵",
+              "name": "東山 / らくちんペクチン / 江頭一馬",
               "type": "先着",
-              "status": "販売前",
+              "status": "販売中",
               "price": "",
               "remaining": null,
               "remainingText": "",
@@ -20375,9 +20485,9 @@
               ]
             },
             {
-              "name": "東山 / ねじれネジ",
+              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
               "type": "先着",
-              "status": "販売中",
+              "status": "販売前",
               "price": "",
               "remaining": null,
               "remainingText": "",
@@ -20638,9 +20748,9 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / 無尽蔵",
+          "name": "東山 / らくちんペクチン / 江頭一馬",
           "type": "先着",
-          "status": "販売前",
+          "status": "販売中",
           "price": "",
           "remaining": null,
           "remainingText": "",
@@ -20660,9 +20770,9 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ねじれネジ",
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
-          "status": "販売中",
+          "status": "販売前",
           "price": "",
           "remaining": null,
           "remainingText": "",
@@ -21219,9 +21329,9 @@
               ]
             },
             {
-              "name": "東山 / 無尽蔵",
+              "name": "東山 / らくちんペクチン / 江頭一馬",
               "type": "先着",
-              "status": "販売前",
+              "status": "販売中",
               "price": "",
               "remaining": null,
               "remainingText": "",
@@ -21239,9 +21349,9 @@
               ]
             },
             {
-              "name": "東山 / ねじれネジ",
+              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
               "type": "先着",
-              "status": "販売中",
+              "status": "販売前",
               "price": "",
               "remaining": null,
               "remainingText": "",
@@ -21502,9 +21612,9 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / 無尽蔵",
+          "name": "東山 / らくちんペクチン / 江頭一馬",
           "type": "先着",
-          "status": "販売前",
+          "status": "販売中",
           "price": "",
           "remaining": null,
           "remainingText": "",
@@ -21524,9 +21634,9 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ねじれネジ",
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
-          "status": "販売中",
+          "status": "販売前",
           "price": "",
           "remaining": null,
           "remainingText": "",
