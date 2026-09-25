@@ -1,645 +1,11 @@
 {
-  "syncedAt": "2026-09-25T14:44:20.090930+00:00",
-  "total": 181,
-  "ticketListedCount": 180,
+  "syncedAt": "2026-09-25T15:42:35.332287+00:00",
+  "total": 176,
+  "ticketListedCount": 175,
   "ticketUnlistedCount": 1,
-  "ticketOptionCount": 314,
-  "salePeriodCount": 720,
+  "ticketOptionCount": 317,
+  "salePeriodCount": 704,
   "events": [
-    {
-      "performerId": "nansui",
-      "date": "2026-09-25",
-      "openTime": "17:00",
-      "startTime": "17:15",
-      "title": "渋谷Kiwami極LIVE",
-      "venue": "渋谷よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "shibuya",
-      "theaterName": "渋谷",
-      "performersText": [
-        "[ネタ＆コーナーライブ]CITY／スロッピ／セッツァー／入間国際宣言／kento fukaya／まんじろう／世間知らズ／ブラゴーリ／太鵬／軟水／マリーマリー [ コーナー出演者]MC：世間知らズ／ブラゴーリ／太鵬／軟水／マリーマリー"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "performerId": "nansui",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60592/49454",
-          "title": "渋谷Kiwami極LIVE",
-          "date": "2026-09-25",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "",
-          "ticketOptions": [],
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "抽選",
-              "startAt": "2026-07-25T11:00:00+09:00",
-              "endAt": "2026-07-28T11:00:00+09:00"
-            },
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-07-25T11:00:00+09:00",
-              "endAt": "2026-07-28T11:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-07-25T11:00:00+09:00",
-          "saleEndAt": "2026-07-28T11:00:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": ""
-        },
-        {
-          "score": 10,
-          "performerId": "nansui",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61183/49773",
-          "title": "ファティゲなおばあちゃん",
-          "date": "2026-09-25",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "21:00",
-          "startTime": "21:15",
-          "ticketStatus": "",
-          "ticketOptions": [],
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "抽選",
-              "startAt": "2026-07-25T11:00:00+09:00",
-              "endAt": "2026-07-28T11:00:00+09:00"
-            },
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-07-25T11:00:00+09:00",
-              "endAt": "2026-07-28T11:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-07-25T11:00:00+09:00",
-          "saleEndAt": "2026-07-28T11:00:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": ""
-        }
-      ],
-      "ticketListed": true,
-      "ticketOptions": [],
-      "salePeriods": [
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-07-25T11:00:00+09:00",
-          "endAt": "2026-07-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60592/49454"
-        },
-        {
-          "category": "advance",
-          "label": "",
-          "startAt": "2026-07-25T11:00:00+09:00",
-          "endAt": "2026-07-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60592/49454"
-        }
-      ],
-      "status": "ticket_listed",
-      "ticketStatus": "",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/60592/49454",
-      "saleStartAt": "2026-07-25T11:00:00+09:00",
-      "saleEndAt": "2026-07-28T11:00:00+09:00",
-      "saleCategory": "advance",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "pyuto",
-      "date": "2026-09-25",
-      "openTime": "17:15",
-      "startTime": "17:30",
-      "title": "六本木コントライブNEXT！ ※コントパス対象※",
-      "venue": "よしもと六本木シアター",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
-      "theaterId": "roppongi",
-      "theaterName": "六本木",
-      "performersText": [
-        "ライス／しずる／サルゴリラ／ななまがり／ネルソンズ／インポッシブル／スパイク／11月のリサ／ピュート／定点計画 【コーナー出演者】 MC：ななまがり／インポッシブル／11月のリサ"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://roppongi.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "performerId": "pyuto",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61290/49802",
-          "title": "六本木コントライブNEXT！",
-          "date": "2026-09-25",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "17:15",
-          "startTime": "17:30",
-          "ticketStatus": "",
-          "ticketOptions": [],
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "抽選",
-              "startAt": "2026-07-25T11:00:00+09:00",
-              "endAt": "2026-07-28T11:00:00+09:00"
-            },
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-07-25T11:00:00+09:00",
-              "endAt": "2026-07-28T11:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-07-25T11:00:00+09:00",
-          "saleEndAt": "2026-07-28T11:00:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": ""
-        },
-        {
-          "score": 10,
-          "performerId": "pyuto",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/62122/50364",
-          "title": "ピュートvs11月のリサ",
-          "date": "2026-09-25",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "20:45",
-          "startTime": "21:00",
-          "ticketStatus": "",
-          "ticketOptions": [],
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "抽選",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-07-31T11:00:00+09:00"
-            },
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-07-31T11:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-07-31T11:00:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": ""
-        }
-      ],
-      "ticketListed": true,
-      "ticketOptions": [],
-      "salePeriods": [
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-07-25T11:00:00+09:00",
-          "endAt": "2026-07-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61290/49802"
-        },
-        {
-          "category": "advance",
-          "label": "",
-          "startAt": "2026-07-25T11:00:00+09:00",
-          "endAt": "2026-07-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61290/49802"
-        },
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-07-31T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/62122/50364"
-        },
-        {
-          "category": "advance",
-          "label": "",
-          "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-07-31T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/62122/50364"
-        }
-      ],
-      "status": "ticket_listed",
-      "ticketStatus": "",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/61290/49802",
-      "saleStartAt": "2026-07-25T11:00:00+09:00",
-      "saleEndAt": "2026-07-28T11:00:00+09:00",
-      "saleCategory": "advance",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "pyuto",
-      "date": "2026-09-25",
-      "openTime": "19:15",
-      "startTime": "19:30",
-      "title": "コント師とエモい十五夜を過ごそう",
-      "venue": "よしもと六本木シアター",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
-      "theaterId": "roppongi",
-      "theaterName": "六本木",
-      "performersText": [
-        "サルゴリラ／うるとらブギーズ／GAG／ななまがり／エレガント人生／ゼロカラン",
-        "ピュートvs11月のリサ"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://roppongi.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [
-        {
-          "score": 10,
-          "performerId": "pyuto",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61290/49802",
-          "title": "六本木コントライブNEXT！",
-          "date": "2026-09-25",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "17:15",
-          "startTime": "17:30",
-          "ticketStatus": "",
-          "ticketOptions": [],
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "抽選",
-              "startAt": "2026-07-25T11:00:00+09:00",
-              "endAt": "2026-07-28T11:00:00+09:00"
-            },
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-07-25T11:00:00+09:00",
-              "endAt": "2026-07-28T11:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-07-25T11:00:00+09:00",
-          "saleEndAt": "2026-07-28T11:00:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": ""
-        },
-        {
-          "score": 10,
-          "performerId": "pyuto",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/62122/50364",
-          "title": "ピュートvs11月のリサ",
-          "date": "2026-09-25",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "20:45",
-          "startTime": "21:00",
-          "ticketStatus": "",
-          "ticketOptions": [],
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "抽選",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-07-31T11:00:00+09:00"
-            },
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-07-31T11:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-07-31T11:00:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": ""
-        }
-      ],
-      "ticketListed": true,
-      "ticketOptions": [],
-      "salePeriods": [
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-07-25T11:00:00+09:00",
-          "endAt": "2026-07-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61290/49802"
-        },
-        {
-          "category": "advance",
-          "label": "",
-          "startAt": "2026-07-25T11:00:00+09:00",
-          "endAt": "2026-07-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61290/49802"
-        },
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-07-31T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/62122/50364"
-        },
-        {
-          "category": "advance",
-          "label": "",
-          "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-07-31T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/62122/50364"
-        }
-      ],
-      "status": "ticket_listed",
-      "ticketStatus": "",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/61290/49802",
-      "saleStartAt": "2026-07-25T11:00:00+09:00",
-      "saleEndAt": "2026-07-28T11:00:00+09:00",
-      "saleCategory": "advance",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "pyuto",
-      "date": "2026-09-25",
-      "openTime": "20:45",
-      "startTime": "21:00",
-      "title": "ピュートvs11月のリサ",
-      "venue": "よしもと六本木シアター",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
-      "theaterId": "roppongi",
-      "theaterName": "六本木",
-      "performersText": [
-        "ピュート／11月のリサ／MC：てぃーし"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://roppongi.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "performerId": "pyuto",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/62122/50364",
-          "title": "ピュートvs11月のリサ",
-          "date": "2026-09-25",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "20:45",
-          "startTime": "21:00",
-          "ticketStatus": "",
-          "ticketOptions": [],
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "抽選",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-07-31T11:00:00+09:00"
-            },
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-07-29T11:00:00+09:00",
-              "endAt": "2026-07-31T11:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-07-29T11:00:00+09:00",
-          "saleEndAt": "2026-07-31T11:00:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": ""
-        },
-        {
-          "score": 10,
-          "performerId": "pyuto",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61290/49802",
-          "title": "六本木コントライブNEXT！",
-          "date": "2026-09-25",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "17:15",
-          "startTime": "17:30",
-          "ticketStatus": "",
-          "ticketOptions": [],
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "抽選",
-              "startAt": "2026-07-25T11:00:00+09:00",
-              "endAt": "2026-07-28T11:00:00+09:00"
-            },
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-07-25T11:00:00+09:00",
-              "endAt": "2026-07-28T11:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-07-25T11:00:00+09:00",
-          "saleEndAt": "2026-07-28T11:00:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": ""
-        }
-      ],
-      "ticketListed": true,
-      "ticketOptions": [],
-      "salePeriods": [
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-07-31T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/62122/50364"
-        },
-        {
-          "category": "advance",
-          "label": "",
-          "startAt": "2026-07-29T11:00:00+09:00",
-          "endAt": "2026-07-31T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/62122/50364"
-        },
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-07-25T11:00:00+09:00",
-          "endAt": "2026-07-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61290/49802"
-        },
-        {
-          "category": "advance",
-          "label": "",
-          "startAt": "2026-07-25T11:00:00+09:00",
-          "endAt": "2026-07-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61290/49802"
-        }
-      ],
-      "status": "ticket_listed",
-      "ticketStatus": "",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/62122/50364",
-      "saleStartAt": "2026-07-29T11:00:00+09:00",
-      "saleEndAt": "2026-07-31T11:00:00+09:00",
-      "saleCategory": "advance",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-09-25",
-      "openTime": "21:00",
-      "startTime": "21:15",
-      "title": "ファティゲなおばあちゃん",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[企画ライブ]軟水／ぺ／伝書鳩"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "performerId": "nansui",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61183/49773",
-          "title": "ファティゲなおばあちゃん",
-          "date": "2026-09-25",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "21:00",
-          "startTime": "21:15",
-          "ticketStatus": "",
-          "ticketOptions": [],
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "抽選",
-              "startAt": "2026-07-25T11:00:00+09:00",
-              "endAt": "2026-07-28T11:00:00+09:00"
-            },
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-07-25T11:00:00+09:00",
-              "endAt": "2026-07-28T11:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-07-25T11:00:00+09:00",
-          "saleEndAt": "2026-07-28T11:00:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": ""
-        },
-        {
-          "score": 10,
-          "performerId": "nansui",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60592/49454",
-          "title": "渋谷Kiwami極LIVE",
-          "date": "2026-09-25",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "",
-          "ticketOptions": [],
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "抽選",
-              "startAt": "2026-07-25T11:00:00+09:00",
-              "endAt": "2026-07-28T11:00:00+09:00"
-            },
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-07-25T11:00:00+09:00",
-              "endAt": "2026-07-28T11:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-07-25T11:00:00+09:00",
-          "saleEndAt": "2026-07-28T11:00:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": ""
-        }
-      ],
-      "ticketListed": true,
-      "ticketOptions": [],
-      "salePeriods": [
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-07-25T11:00:00+09:00",
-          "endAt": "2026-07-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61183/49773"
-        },
-        {
-          "category": "advance",
-          "label": "",
-          "startAt": "2026-07-25T11:00:00+09:00",
-          "endAt": "2026-07-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61183/49773"
-        }
-      ],
-      "status": "ticket_listed",
-      "ticketStatus": "",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/61183/49773",
-      "saleStartAt": "2026-07-25T11:00:00+09:00",
-      "saleEndAt": "2026-07-28T11:00:00+09:00",
-      "saleCategory": "advance",
-      "saleLabel": ""
-    },
     {
       "performerId": "maison",
       "date": "2026-09-26",
@@ -680,9 +46,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥2,500",
+              "price": "￥2,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -700,7 +66,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
@@ -752,9 +118,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥2,500",
+              "price": "￥2,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -772,7 +138,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
@@ -820,13 +186,13 @@
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "14:45",
           "startTime": "15:00",
-          "ticketStatus": "一部予定数終了",
+          "ticketStatus": "残りわずか",
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
-              "status": "販売中",
-              "price": "￥2,500",
+              "type": "当日",
+              "status": "残りわずか",
+              "price": "￥2,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -844,7 +210,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
@@ -896,9 +262,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥2,000",
+              "price": "￥2,500",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -948,9 +314,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥3,000",
+              "price": "￥3,500",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-23T10:00:00+09:00",
@@ -991,9 +357,9 @@
       "ticketOptions": [
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥2,500",
+          "price": "￥2,800",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -1013,7 +379,7 @@
         },
         {
           "name": "立見（整理番号付）",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
           "price": "￥2,500",
           "remaining": null,
@@ -1035,9 +401,31 @@
         },
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
+          "status": "残りわずか",
+          "price": "￥2,800",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-26T13:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-26T13:00:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/61274/49850"
+        },
+        {
+          "name": "全席指定",
+          "type": "当日",
           "status": "予定数終了",
-          "price": "￥2,000",
+          "price": "￥2,500",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -1057,9 +445,9 @@
         },
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
-          "price": "￥3,000",
+          "price": "￥3,500",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-08-23T10:00:00+09:00",
@@ -1208,9 +596,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥2,500",
+              "price": "￥2,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -1228,7 +616,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
@@ -1280,9 +668,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥2,500",
+              "price": "￥2,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -1300,7 +688,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
@@ -1348,13 +736,13 @@
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "14:45",
           "startTime": "15:00",
-          "ticketStatus": "一部予定数終了",
+          "ticketStatus": "残りわずか",
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
-              "status": "販売中",
-              "price": "￥2,500",
+              "type": "当日",
+              "status": "残りわずか",
+              "price": "￥2,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -1372,7 +760,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
@@ -1415,9 +803,9 @@
       "ticketOptions": [
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥2,500",
+          "price": "￥2,800",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -1437,7 +825,7 @@
         },
         {
           "name": "立見（整理番号付）",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
           "price": "￥2,500",
           "remaining": null,
@@ -1456,6 +844,28 @@
           ],
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/61274/49838"
+        },
+        {
+          "name": "全席指定",
+          "type": "当日",
+          "status": "残りわずか",
+          "price": "￥2,800",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-26T13:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-26T13:00:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/61274/49850"
         }
       ],
       "salePeriods": [
@@ -1556,9 +966,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥3,000",
+              "price": "￥3,500",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -1576,7 +986,7 @@
             },
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
               "price": "￥2,300",
               "remaining": null,
@@ -1648,9 +1058,9 @@
           "ticketOptions": [
             {
               "name": "整理番号付き自由席",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥2,500",
+              "price": "￥3,000",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -1691,9 +1101,9 @@
       "ticketOptions": [
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥3,000",
+          "price": "￥3,500",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -1713,7 +1123,7 @@
         },
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
           "price": "￥2,300",
           "remaining": null,
@@ -1757,9 +1167,9 @@
         },
         {
           "name": "整理番号付き自由席",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥2,500",
+          "price": "￥3,000",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -1858,13 +1268,13 @@
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "14:45",
           "startTime": "15:00",
-          "ticketStatus": "一部予定数終了",
+          "ticketStatus": "残りわずか",
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
-              "status": "販売中",
-              "price": "￥2,500",
+              "type": "当日",
+              "status": "残りわずか",
+              "price": "￥2,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -1882,7 +1292,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
@@ -1934,9 +1344,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥2,500",
+              "price": "￥2,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -1954,7 +1364,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
@@ -2006,9 +1416,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥2,500",
+              "price": "￥2,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -2026,7 +1436,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
@@ -2078,9 +1488,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥2,000",
+              "price": "￥2,500",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -2130,9 +1540,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥3,000",
+              "price": "￥3,500",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-23T10:00:00+09:00",
@@ -2173,9 +1583,9 @@
       "ticketOptions": [
         {
           "name": "全席指定",
-          "type": "前売",
-          "status": "販売中",
-          "price": "￥2,500",
+          "type": "当日",
+          "status": "残りわずか",
+          "price": "￥2,800",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -2195,7 +1605,7 @@
         },
         {
           "name": "立見（整理番号付）",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
           "price": "￥2,500",
           "remaining": null,
@@ -2217,9 +1627,31 @@
         },
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
+          "status": "販売中",
+          "price": "￥2,800",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-08-05T10:00:00+09:00",
+          "saleEndAt": "2026-09-26T09:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-05T10:00:00+09:00",
+              "endAt": "2026-09-26T09:00:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/61274/49839"
+        },
+        {
+          "name": "全席指定",
+          "type": "当日",
           "status": "予定数終了",
-          "price": "￥2,000",
+          "price": "￥2,500",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -2239,9 +1671,9 @@
         },
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
-          "price": "￥3,000",
+          "price": "￥3,500",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-08-23T10:00:00+09:00",
@@ -2343,7 +1775,7 @@
         }
       ],
       "status": "ticket_listed",
-      "ticketStatus": "一部予定数終了",
+      "ticketStatus": "残りわずか",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/61274/49850",
       "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -2391,9 +1823,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥2,000",
+              "price": "￥2,500",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -2443,9 +1875,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥2,500",
+              "price": "￥2,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -2463,7 +1895,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
@@ -2515,9 +1947,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥3,000",
+              "price": "￥3,500",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-23T10:00:00+09:00",
@@ -2558,9 +1990,9 @@
       "ticketOptions": [
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
-          "price": "￥2,000",
+          "price": "￥2,500",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -2580,9 +2012,9 @@
         },
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥2,500",
+          "price": "￥2,800",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -2602,7 +2034,7 @@
         },
         {
           "name": "立見（整理番号付）",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
           "price": "￥2,500",
           "remaining": null,
@@ -2624,9 +2056,9 @@
         },
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
-          "price": "￥3,000",
+          "price": "￥3,500",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-08-23T10:00:00+09:00",
@@ -2743,9 +2175,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥3,000",
+              "price": "￥3,500",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-23T10:00:00+09:00",
@@ -2795,9 +2227,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥2,500",
+              "price": "￥2,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -2815,7 +2247,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
@@ -2867,9 +2299,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥2,000",
+              "price": "￥2,500",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -2910,9 +2342,9 @@
       "ticketOptions": [
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
-          "price": "￥3,000",
+          "price": "￥3,500",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-08-23T10:00:00+09:00",
@@ -2932,9 +2364,9 @@
         },
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥2,500",
+          "price": "￥2,800",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -2954,7 +2386,7 @@
         },
         {
           "name": "立見（整理番号付）",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
           "price": "￥2,500",
           "remaining": null,
@@ -2976,9 +2408,9 @@
         },
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
-          "price": "￥2,000",
+          "price": "￥2,500",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -3095,9 +2527,9 @@
           "ticketOptions": [
             {
               "name": "整理番号付き自由席",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥2,500",
+              "price": "￥3,000",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -3147,9 +2579,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥3,000",
+              "price": "￥3,500",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -3167,7 +2599,7 @@
             },
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
               "price": "￥2,300",
               "remaining": null,
@@ -3230,9 +2662,9 @@
       "ticketOptions": [
         {
           "name": "整理番号付き自由席",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥2,500",
+          "price": "￥3,000",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -3252,9 +2684,9 @@
         },
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥3,000",
+          "price": "￥3,500",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -3274,7 +2706,7 @@
         },
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
           "price": "￥2,300",
           "remaining": null,
@@ -18607,7 +18039,7 @@
               ]
             },
             {
-              "name": "東山 / らくちんペクチン / 江頭一馬",
+              "name": "東山 / 無尽蔵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -18627,7 +18059,7 @@
               ]
             },
             {
-              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+              "name": "東山 / らくちんペクチン / 江頭一馬",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -18868,7 +18300,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / らくちんペクチン / 江頭一馬",
+          "name": "東山 / 無尽蔵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -18890,7 +18322,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+          "name": "東山 / らくちんペクチン / 江頭一馬",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -19429,7 +18861,7 @@
               ]
             },
             {
-              "name": "東山 / らくちんペクチン / 江頭一馬",
+              "name": "東山 / 無尽蔵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -19449,7 +18881,7 @@
               ]
             },
             {
-              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+              "name": "東山 / らくちんペクチン / 江頭一馬",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -19690,7 +19122,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / らくちんペクチン / 江頭一馬",
+          "name": "東山 / 無尽蔵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -19712,7 +19144,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+          "name": "東山 / らくちんペクチン / 江頭一馬",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -20251,7 +19683,7 @@
               ]
             },
             {
-              "name": "東山 / らくちんペクチン / 江頭一馬",
+              "name": "東山 / 無尽蔵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -20271,7 +19703,7 @@
               ]
             },
             {
-              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+              "name": "東山 / らくちんペクチン / 江頭一馬",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -20512,7 +19944,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / らくちんペクチン / 江頭一馬",
+          "name": "東山 / 無尽蔵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -20534,7 +19966,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+          "name": "東山 / らくちんペクチン / 江頭一馬",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -21073,7 +20505,7 @@
               ]
             },
             {
-              "name": "東山 / らくちんペクチン / 江頭一馬",
+              "name": "東山 / 無尽蔵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -21093,7 +20525,7 @@
               ]
             },
             {
-              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+              "name": "東山 / らくちんペクチン / 江頭一馬",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -21334,7 +20766,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / らくちんペクチン / 江頭一馬",
+          "name": "東山 / 無尽蔵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -21356,7 +20788,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+          "name": "東山 / らくちんペクチン / 江頭一馬",
           "type": "先着",
           "status": "販売中",
           "price": "",
