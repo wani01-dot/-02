@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-25T09:58:11.681613+00:00",
+  "syncedAt": "2026-09-25T10:05:12.186914+00:00",
   "performers": [
     {
       "id": "maison",
@@ -142,50 +142,24 @@
       "title": "ピュートvs11月のリサ",
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/62134/50364",
-      "ticketStatus": "販売中",
-      "ticketOptions": [
-        {
-          "name": "整理番号付き自由席",
-          "type": "当日",
-          "status": "販売中",
-          "price": "￥2,500",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-25T19:00:00+09:00",
-              "saleKey": "fany|pyuto|62134|50364|整理番号付き自由席|当日|first_come|2026-08-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-25T19:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-08-05T10:00:00+09:00",
-      "saleEndAt": "2026-09-25T19:00:00+09:00",
-      "saleCategory": "first_come",
+      "sourceUrl": "https://ticket.fany.lol/reception/62122/50364",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-07-29T11:00:00+09:00",
+      "saleEndAt": "2026-07-31T11:00:00+09:00",
+      "saleCategory": "advance",
       "salePeriods": [
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-08-05T10:00:00+09:00",
-          "endAt": "2026-09-25T19:00:00+09:00"
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-07-29T11:00:00+09:00",
+          "endAt": "2026-07-31T11:00:00+09:00"
         }
       ],
       "performersText": [
         "ピュート",
         "11月のリサ",
-        "MC：てぃーし",
-        "・1回の先着申込で申込可能な公演数は『",
-        "1公演",
-        "』",
-        "枚数は『",
-        "10枚まで",
-        "・座席番号や整理番号は"
+        "MC：てぃーし"
       ],
       "firstSeenAt": "2026-09-25T06:06:37.139747+00:00",
       "newUntil": "",
@@ -6586,7 +6560,7 @@
           ]
         },
         {
-          "name": "東山 / らくちんペクチン / 江頭一馬",
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -6600,12 +6574,12 @@
               "label": "",
               "startAt": "2026-09-25T23:05:00+09:00",
               "endAt": "2026-10-12T19:00:00+09:00",
-              "saleKey": "livepocket|maison|dnqhf|東山 / らくちんペクチン / 江頭一馬|先着|first_come|2026-09-25T23:05:00+09:00"
+              "saleKey": "livepocket|maison|dnqhf|東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵|先着|first_come|2026-09-25T23:05:00+09:00"
             }
           ]
         },
         {
-          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+          "name": "東山 / らくちんペクチン / 江頭一馬",
           "type": "先着",
           "status": "販売前",
           "price": "",
@@ -6619,7 +6593,7 @@
               "label": "",
               "startAt": "2026-09-25T23:05:00+09:00",
               "endAt": "2026-10-12T19:00:00+09:00",
-              "saleKey": "livepocket|maison|dnqhf|東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵|先着|first_come|2026-09-25T23:05:00+09:00"
+              "saleKey": "livepocket|maison|dnqhf|東山 / らくちんペクチン / 江頭一馬|先着|first_come|2026-09-25T23:05:00+09:00"
             }
           ]
         }
