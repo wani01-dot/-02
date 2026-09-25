@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-25T18:27:57.786972+00:00",
+  "syncedAt": "2026-09-25T18:40:56.526843+00:00",
   "performers": [
     {
       "id": "maison",
@@ -6352,7 +6352,7 @@
           ]
         },
         {
-          "name": "東山 / 無尽蔵",
+          "name": "東山 / ねじれネジ",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -6366,7 +6366,7 @@
               "label": "",
               "startAt": "2026-09-04T22:30:00+09:00",
               "endAt": "2026-09-14T23:59:00+09:00",
-              "saleKey": "livepocket|maison|dnqhf|東山 / 無尽蔵|先着|advance|2026-09-04T22:30:00+09:00"
+              "saleKey": "livepocket|maison|dnqhf|東山 / ねじれネジ|先着|advance|2026-09-04T22:30:00+09:00"
             }
           ]
         },
@@ -10087,24 +10087,11 @@
       "sourceUrl": "https://ticket.fany.lol/reception/68880/54671",
       "ticketStatus": "",
       "ticketOptions": [],
-      "saleStartAt": "2026-09-27T11:00:00+09:00",
-      "saleEndAt": "2026-09-30T11:00:00+09:00",
-      "saleCategory": "advance",
-      "salePeriods": [
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-09-27T11:00:00+09:00",
-          "endAt": "2026-09-30T11:00:00+09:00"
-        }
-      ],
-      "performersText": [
-        "吉野おいなり君（めぞん）",
-        "King Boy（アケガラス）",
-        "青空（からし蓮根）",
-        "八木崇（うるとらブギーズ）",
-        "なんぶ"
-      ],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [],
       "firstSeenAt": "2026-09-22T15:07:33.175294+00:00",
       "newUntil": "2026-09-24T15:07:33.175309+00:00",
       "trackedPerformers": [
