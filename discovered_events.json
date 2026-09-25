@@ -1,10 +1,10 @@
 {
-  "syncedAt": "2026-09-25T10:43:02.652601+00:00",
+  "syncedAt": "2026-09-25T11:42:58.676250+00:00",
   "total": 181,
   "ticketListedCount": 180,
   "ticketUnlistedCount": 1,
-  "ticketOptionCount": 322,
-  "salePeriodCount": 724,
+  "ticketOptionCount": 318,
+  "salePeriodCount": 720,
   "events": [
     {
       "performerId": "nansui",
@@ -66,122 +66,36 @@
           "score": 10,
           "performerId": "nansui",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61209/49773",
+          "sourceUrl": "https://ticket.fany.lol/reception/61183/49773",
           "title": "ファティゲなおばあちゃん",
           "date": "2026-09-25",
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "21:00",
           "startTime": "21:15",
-          "ticketStatus": "予定数終了",
-          "ticketOptions": [
-            {
-              "name": "全席指定",
-              "type": "当日",
-              "status": "予定数終了",
-              "price": "￥2,000",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-08-05T10:00:00+09:00",
-              "saleEndAt": "2026-09-25T19:15:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-08-05T10:00:00+09:00",
-                  "endAt": "2026-09-25T19:15:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "立見（整理番号付）",
-              "type": "当日",
-              "status": "予定数終了",
-              "price": "￥1,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-08-05T10:00:00+09:00",
-              "saleEndAt": "2026-09-25T19:15:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-08-05T10:00:00+09:00",
-                  "endAt": "2026-09-25T19:15:00+09:00"
-                }
-              ]
-            }
-          ],
+          "ticketStatus": "",
+          "ticketOptions": [],
           "salePeriods": [
             {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-25T19:15:00+09:00"
+              "category": "advance",
+              "label": "抽選",
+              "startAt": "2026-07-25T11:00:00+09:00",
+              "endAt": "2026-07-28T11:00:00+09:00"
             },
             {
-              "category": "first_come",
+              "category": "advance",
               "label": "",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-25T19:15:00+09:00"
+              "startAt": "2026-07-25T11:00:00+09:00",
+              "endAt": "2026-07-28T11:00:00+09:00"
             }
           ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-25T19:15:00+09:00",
-          "saleCategory": "first_come",
+          "saleStartAt": "2026-07-25T11:00:00+09:00",
+          "saleEndAt": "2026-07-28T11:00:00+09:00",
+          "saleCategory": "advance",
           "saleLabel": ""
         }
       ],
       "ticketListed": true,
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "予定数終了",
-          "price": "￥2,000",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-25T19:15:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-25T19:15:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61209/49773"
-        },
-        {
-          "name": "立見（整理番号付）",
-          "type": "当日",
-          "status": "予定数終了",
-          "price": "￥1,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-25T19:15:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-25T19:15:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61209/49773"
-        }
-      ],
+      "ticketOptions": [],
       "salePeriods": [
         {
           "category": "advance",
@@ -198,22 +112,6 @@
           "endAt": "2026-07-28T11:00:00+09:00",
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/60592/49454"
-        },
-        {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-08-05T10:00:00+09:00",
-          "endAt": "2026-09-25T19:15:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61209/49773"
-        },
-        {
-          "category": "first_come",
-          "label": "",
-          "startAt": "2026-08-05T10:00:00+09:00",
-          "endAt": "2026-09-25T19:15:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61209/49773"
         }
       ],
       "status": "ticket_listed",
@@ -654,72 +552,31 @@
           "score": 24,
           "performerId": "nansui",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61209/49773",
+          "sourceUrl": "https://ticket.fany.lol/reception/61183/49773",
           "title": "ファティゲなおばあちゃん",
           "date": "2026-09-25",
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "21:00",
           "startTime": "21:15",
-          "ticketStatus": "予定数終了",
-          "ticketOptions": [
-            {
-              "name": "全席指定",
-              "type": "当日",
-              "status": "予定数終了",
-              "price": "￥2,000",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-08-05T10:00:00+09:00",
-              "saleEndAt": "2026-09-25T19:15:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-08-05T10:00:00+09:00",
-                  "endAt": "2026-09-25T19:15:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "立見（整理番号付）",
-              "type": "当日",
-              "status": "予定数終了",
-              "price": "￥1,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-08-05T10:00:00+09:00",
-              "saleEndAt": "2026-09-25T19:15:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-08-05T10:00:00+09:00",
-                  "endAt": "2026-09-25T19:15:00+09:00"
-                }
-              ]
-            }
-          ],
+          "ticketStatus": "",
+          "ticketOptions": [],
           "salePeriods": [
             {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-25T19:15:00+09:00"
+              "category": "advance",
+              "label": "抽選",
+              "startAt": "2026-07-25T11:00:00+09:00",
+              "endAt": "2026-07-28T11:00:00+09:00"
             },
             {
-              "category": "first_come",
+              "category": "advance",
               "label": "",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-25T19:15:00+09:00"
+              "startAt": "2026-07-25T11:00:00+09:00",
+              "endAt": "2026-07-28T11:00:00+09:00"
             }
           ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-25T19:15:00+09:00",
-          "saleCategory": "first_come",
+          "saleStartAt": "2026-07-25T11:00:00+09:00",
+          "saleEndAt": "2026-07-28T11:00:00+09:00",
+          "saleCategory": "advance",
           "saleLabel": ""
         },
         {
@@ -755,76 +612,15 @@
         }
       ],
       "ticketListed": true,
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "予定数終了",
-          "price": "￥2,000",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-25T19:15:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-25T19:15:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61209/49773"
-        },
-        {
-          "name": "立見（整理番号付）",
-          "type": "当日",
-          "status": "予定数終了",
-          "price": "￥1,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-25T19:15:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-25T19:15:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61209/49773"
-        }
-      ],
+      "ticketOptions": [],
       "salePeriods": [
-        {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-08-05T10:00:00+09:00",
-          "endAt": "2026-09-25T19:15:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61209/49773"
-        },
-        {
-          "category": "first_come",
-          "label": "",
-          "startAt": "2026-08-05T10:00:00+09:00",
-          "endAt": "2026-09-25T19:15:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/61209/49773"
-        },
         {
           "category": "advance",
           "label": "抽選",
           "startAt": "2026-07-25T11:00:00+09:00",
           "endAt": "2026-07-28T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60592/49454"
+          "sourceUrl": "https://ticket.fany.lol/reception/61183/49773"
         },
         {
           "category": "advance",
@@ -832,16 +628,16 @@
           "startAt": "2026-07-25T11:00:00+09:00",
           "endAt": "2026-07-28T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/60592/49454"
+          "sourceUrl": "https://ticket.fany.lol/reception/61183/49773"
         }
       ],
       "status": "ticket_listed",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/61209/49773",
-      "saleStartAt": "2026-08-05T10:00:00+09:00",
-      "saleEndAt": "2026-09-25T19:15:00+09:00",
-      "saleCategory": "first_come",
+      "sourceUrl": "https://ticket.fany.lol/reception/61183/49773",
+      "saleStartAt": "2026-07-25T11:00:00+09:00",
+      "saleEndAt": "2026-07-28T11:00:00+09:00",
+      "saleCategory": "advance",
       "saleLabel": ""
     },
     {
@@ -18813,47 +18609,47 @@
             {
               "name": "同じ販売元のイベント",
               "type": "先着",
+              "status": "販売中",
+              "price": "",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-09-25T23:05:00+09:00",
+              "saleEndAt": "2026-10-12T19:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "",
+                  "startAt": "2026-09-25T23:05:00+09:00",
+                  "endAt": "2026-10-12T19:00:00+09:00"
+                }
+              ]
+            },
+            {
+              "name": "東山 / 無尽蔵",
+              "type": "先着",
+              "status": "販売中",
+              "price": "",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-09-25T23:05:00+09:00",
+              "saleEndAt": "2026-10-12T19:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "",
+                  "startAt": "2026-09-25T23:05:00+09:00",
+                  "endAt": "2026-10-12T19:00:00+09:00"
+                }
+              ]
+            },
+            {
+              "name": "東山 / らくちんペクチン / 江頭一馬",
+              "type": "先着",
               "status": "販売前",
-              "price": "",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-25T23:05:00+09:00",
-              "saleEndAt": "2026-10-12T19:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "",
-                  "startAt": "2026-09-25T23:05:00+09:00",
-                  "endAt": "2026-10-12T19:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "東山 / ねじれネジ",
-              "type": "先着",
-              "status": "販売中",
-              "price": "",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-25T23:05:00+09:00",
-              "saleEndAt": "2026-10-12T19:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "",
-                  "startAt": "2026-09-25T23:05:00+09:00",
-                  "endAt": "2026-10-12T19:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
-              "type": "先着",
-              "status": "販売中",
               "price": "",
               "remaining": null,
               "remainingText": "",
@@ -19094,51 +18890,51 @@
         {
           "name": "同じ販売元のイベント",
           "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
+            }
+          ],
+          "source": "livepocket",
+          "sourceUrl": "https://livepocket.jp/e/dnqhf"
+        },
+        {
+          "name": "東山 / 無尽蔵",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
+            }
+          ],
+          "source": "livepocket",
+          "sourceUrl": "https://livepocket.jp/e/dnqhf"
+        },
+        {
+          "name": "東山 / らくちんペクチン / 江頭一馬",
+          "type": "先着",
           "status": "販売前",
-          "price": "",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-25T23:05:00+09:00",
-          "saleEndAt": "2026-10-12T19:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-09-25T23:05:00+09:00",
-              "endAt": "2026-10-12T19:00:00+09:00"
-            }
-          ],
-          "source": "livepocket",
-          "sourceUrl": "https://livepocket.jp/e/dnqhf"
-        },
-        {
-          "name": "東山 / ねじれネジ",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-25T23:05:00+09:00",
-          "saleEndAt": "2026-10-12T19:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-09-25T23:05:00+09:00",
-              "endAt": "2026-10-12T19:00:00+09:00"
-            }
-          ],
-          "source": "livepocket",
-          "sourceUrl": "https://livepocket.jp/e/dnqhf"
-        },
-        {
-          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
-          "type": "先着",
-          "status": "販売中",
           "price": "",
           "remaining": null,
           "remainingText": "",
@@ -19677,47 +19473,47 @@
             {
               "name": "同じ販売元のイベント",
               "type": "先着",
+              "status": "販売中",
+              "price": "",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-09-25T23:05:00+09:00",
+              "saleEndAt": "2026-10-12T19:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "",
+                  "startAt": "2026-09-25T23:05:00+09:00",
+                  "endAt": "2026-10-12T19:00:00+09:00"
+                }
+              ]
+            },
+            {
+              "name": "東山 / 無尽蔵",
+              "type": "先着",
+              "status": "販売中",
+              "price": "",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-09-25T23:05:00+09:00",
+              "saleEndAt": "2026-10-12T19:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "",
+                  "startAt": "2026-09-25T23:05:00+09:00",
+                  "endAt": "2026-10-12T19:00:00+09:00"
+                }
+              ]
+            },
+            {
+              "name": "東山 / らくちんペクチン / 江頭一馬",
+              "type": "先着",
               "status": "販売前",
-              "price": "",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-25T23:05:00+09:00",
-              "saleEndAt": "2026-10-12T19:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "",
-                  "startAt": "2026-09-25T23:05:00+09:00",
-                  "endAt": "2026-10-12T19:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "東山 / ねじれネジ",
-              "type": "先着",
-              "status": "販売中",
-              "price": "",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-25T23:05:00+09:00",
-              "saleEndAt": "2026-10-12T19:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "",
-                  "startAt": "2026-09-25T23:05:00+09:00",
-                  "endAt": "2026-10-12T19:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
-              "type": "先着",
-              "status": "販売中",
               "price": "",
               "remaining": null,
               "remainingText": "",
@@ -19958,51 +19754,51 @@
         {
           "name": "同じ販売元のイベント",
           "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
+            }
+          ],
+          "source": "livepocket",
+          "sourceUrl": "https://livepocket.jp/e/dnqhf"
+        },
+        {
+          "name": "東山 / 無尽蔵",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
+            }
+          ],
+          "source": "livepocket",
+          "sourceUrl": "https://livepocket.jp/e/dnqhf"
+        },
+        {
+          "name": "東山 / らくちんペクチン / 江頭一馬",
+          "type": "先着",
           "status": "販売前",
-          "price": "",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-25T23:05:00+09:00",
-          "saleEndAt": "2026-10-12T19:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-09-25T23:05:00+09:00",
-              "endAt": "2026-10-12T19:00:00+09:00"
-            }
-          ],
-          "source": "livepocket",
-          "sourceUrl": "https://livepocket.jp/e/dnqhf"
-        },
-        {
-          "name": "東山 / ねじれネジ",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-25T23:05:00+09:00",
-          "saleEndAt": "2026-10-12T19:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-09-25T23:05:00+09:00",
-              "endAt": "2026-10-12T19:00:00+09:00"
-            }
-          ],
-          "source": "livepocket",
-          "sourceUrl": "https://livepocket.jp/e/dnqhf"
-        },
-        {
-          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
-          "type": "先着",
-          "status": "販売中",
           "price": "",
           "remaining": null,
           "remainingText": "",
@@ -20541,47 +20337,47 @@
             {
               "name": "同じ販売元のイベント",
               "type": "先着",
+              "status": "販売中",
+              "price": "",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-09-25T23:05:00+09:00",
+              "saleEndAt": "2026-10-12T19:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "",
+                  "startAt": "2026-09-25T23:05:00+09:00",
+                  "endAt": "2026-10-12T19:00:00+09:00"
+                }
+              ]
+            },
+            {
+              "name": "東山 / 無尽蔵",
+              "type": "先着",
+              "status": "販売中",
+              "price": "",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-09-25T23:05:00+09:00",
+              "saleEndAt": "2026-10-12T19:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "",
+                  "startAt": "2026-09-25T23:05:00+09:00",
+                  "endAt": "2026-10-12T19:00:00+09:00"
+                }
+              ]
+            },
+            {
+              "name": "東山 / らくちんペクチン / 江頭一馬",
+              "type": "先着",
               "status": "販売前",
-              "price": "",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-25T23:05:00+09:00",
-              "saleEndAt": "2026-10-12T19:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "",
-                  "startAt": "2026-09-25T23:05:00+09:00",
-                  "endAt": "2026-10-12T19:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "東山 / ねじれネジ",
-              "type": "先着",
-              "status": "販売中",
-              "price": "",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-25T23:05:00+09:00",
-              "saleEndAt": "2026-10-12T19:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "",
-                  "startAt": "2026-09-25T23:05:00+09:00",
-                  "endAt": "2026-10-12T19:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
-              "type": "先着",
-              "status": "販売中",
               "price": "",
               "remaining": null,
               "remainingText": "",
@@ -20822,51 +20618,51 @@
         {
           "name": "同じ販売元のイベント",
           "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
+            }
+          ],
+          "source": "livepocket",
+          "sourceUrl": "https://livepocket.jp/e/dnqhf"
+        },
+        {
+          "name": "東山 / 無尽蔵",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
+            }
+          ],
+          "source": "livepocket",
+          "sourceUrl": "https://livepocket.jp/e/dnqhf"
+        },
+        {
+          "name": "東山 / らくちんペクチン / 江頭一馬",
+          "type": "先着",
           "status": "販売前",
-          "price": "",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-25T23:05:00+09:00",
-          "saleEndAt": "2026-10-12T19:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-09-25T23:05:00+09:00",
-              "endAt": "2026-10-12T19:00:00+09:00"
-            }
-          ],
-          "source": "livepocket",
-          "sourceUrl": "https://livepocket.jp/e/dnqhf"
-        },
-        {
-          "name": "東山 / ねじれネジ",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-25T23:05:00+09:00",
-          "saleEndAt": "2026-10-12T19:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-09-25T23:05:00+09:00",
-              "endAt": "2026-10-12T19:00:00+09:00"
-            }
-          ],
-          "source": "livepocket",
-          "sourceUrl": "https://livepocket.jp/e/dnqhf"
-        },
-        {
-          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
-          "type": "先着",
-          "status": "販売中",
           "price": "",
           "remaining": null,
           "remainingText": "",
@@ -21405,47 +21201,47 @@
             {
               "name": "同じ販売元のイベント",
               "type": "先着",
+              "status": "販売中",
+              "price": "",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-09-25T23:05:00+09:00",
+              "saleEndAt": "2026-10-12T19:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "",
+                  "startAt": "2026-09-25T23:05:00+09:00",
+                  "endAt": "2026-10-12T19:00:00+09:00"
+                }
+              ]
+            },
+            {
+              "name": "東山 / 無尽蔵",
+              "type": "先着",
+              "status": "販売中",
+              "price": "",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-09-25T23:05:00+09:00",
+              "saleEndAt": "2026-10-12T19:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "",
+                  "startAt": "2026-09-25T23:05:00+09:00",
+                  "endAt": "2026-10-12T19:00:00+09:00"
+                }
+              ]
+            },
+            {
+              "name": "東山 / らくちんペクチン / 江頭一馬",
+              "type": "先着",
               "status": "販売前",
-              "price": "",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-25T23:05:00+09:00",
-              "saleEndAt": "2026-10-12T19:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "",
-                  "startAt": "2026-09-25T23:05:00+09:00",
-                  "endAt": "2026-10-12T19:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "東山 / ねじれネジ",
-              "type": "先着",
-              "status": "販売中",
-              "price": "",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-25T23:05:00+09:00",
-              "saleEndAt": "2026-10-12T19:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "",
-                  "startAt": "2026-09-25T23:05:00+09:00",
-                  "endAt": "2026-10-12T19:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
-              "type": "先着",
-              "status": "販売中",
               "price": "",
               "remaining": null,
               "remainingText": "",
@@ -21686,51 +21482,51 @@
         {
           "name": "同じ販売元のイベント",
           "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
+            }
+          ],
+          "source": "livepocket",
+          "sourceUrl": "https://livepocket.jp/e/dnqhf"
+        },
+        {
+          "name": "東山 / 無尽蔵",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00"
+            }
+          ],
+          "source": "livepocket",
+          "sourceUrl": "https://livepocket.jp/e/dnqhf"
+        },
+        {
+          "name": "東山 / らくちんペクチン / 江頭一馬",
+          "type": "先着",
           "status": "販売前",
-          "price": "",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-25T23:05:00+09:00",
-          "saleEndAt": "2026-10-12T19:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-09-25T23:05:00+09:00",
-              "endAt": "2026-10-12T19:00:00+09:00"
-            }
-          ],
-          "source": "livepocket",
-          "sourceUrl": "https://livepocket.jp/e/dnqhf"
-        },
-        {
-          "name": "東山 / ねじれネジ",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-25T23:05:00+09:00",
-          "saleEndAt": "2026-10-12T19:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-09-25T23:05:00+09:00",
-              "endAt": "2026-10-12T19:00:00+09:00"
-            }
-          ],
-          "source": "livepocket",
-          "sourceUrl": "https://livepocket.jp/e/dnqhf"
-        },
-        {
-          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
-          "type": "先着",
-          "status": "販売中",
           "price": "",
           "remaining": null,
           "remainingText": "",
