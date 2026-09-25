@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-25T20:18:01.745341+00:00",
+  "syncedAt": "2026-09-25T20:28:43.755623+00:00",
   "performers": [
     {
       "id": "maison",
@@ -2715,12 +2715,12 @@
       "venue": "大宮ラクーンよしもと劇場（埼玉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/67342/53666",
-      "ticketStatus": "販売中",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [
         {
           "name": "全席指定",
           "type": "前売",
-          "status": "販売中",
+          "status": "残りわずか",
           "price": "￥2,100",
           "salePeriods": [
             {
@@ -6352,6 +6352,25 @@
           ]
         },
         {
+          "name": "東山 / 無尽蔵",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-09-04T22:30:00+09:00",
+          "saleEndAt": "2026-09-14T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-09-04T22:30:00+09:00",
+              "endAt": "2026-09-14T23:59:00+09:00",
+              "saleKey": "livepocket|maison|dnqhf|東山 / 無尽蔵|先着|advance|2026-09-04T22:30:00+09:00"
+            }
+          ]
+        },
+        {
           "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
@@ -6367,25 +6386,6 @@
               "startAt": "2026-09-04T22:30:00+09:00",
               "endAt": "2026-09-14T23:59:00+09:00",
               "saleKey": "livepocket|maison|dnqhf|東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵|先着|advance|2026-09-04T22:30:00+09:00"
-            }
-          ]
-        },
-        {
-          "name": "東山 / ねじれネジ",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-09-04T22:30:00+09:00",
-          "saleEndAt": "2026-09-14T23:59:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-09-04T22:30:00+09:00",
-              "endAt": "2026-09-14T23:59:00+09:00",
-              "saleKey": "livepocket|maison|dnqhf|東山 / ねじれネジ|先着|advance|2026-09-04T22:30:00+09:00"
             }
           ]
         }
