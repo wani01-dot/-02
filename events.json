@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-25T01:01:00.191611+00:00",
+  "syncedAt": "2026-09-25T01:07:43.338221+00:00",
   "performers": [
     {
       "id": "maison",
@@ -6636,25 +6636,6 @@
         {
           "name": "同じ販売元のイベント",
           "type": "先着",
-          "status": "販売前",
-          "price": "",
-          "saleStartAt": "2026-09-25T23:05:00+09:00",
-          "saleEndAt": "2026-10-12T19:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-09-25T23:05:00+09:00",
-              "endAt": "2026-10-12T19:00:00+09:00",
-              "saleKey": "livepocket|maison|dnqhf|同じ販売元のイベント|先着|first_come|2026-09-25T23:05:00+09:00"
-            }
-          ]
-        },
-        {
-          "name": "東山 / ねじれネジ",
-          "type": "先着",
           "status": "販売中",
           "price": "",
           "saleStartAt": "2026-09-25T23:05:00+09:00",
@@ -6667,7 +6648,7 @@
               "label": "",
               "startAt": "2026-09-25T23:05:00+09:00",
               "endAt": "2026-10-12T19:00:00+09:00",
-              "saleKey": "livepocket|maison|dnqhf|東山 / ねじれネジ|先着|first_come|2026-09-25T23:05:00+09:00"
+              "saleKey": "livepocket|maison|dnqhf|同じ販売元のイベント|先着|first_come|2026-09-25T23:05:00+09:00"
             }
           ]
         },
@@ -6687,6 +6668,25 @@
               "startAt": "2026-09-25T23:05:00+09:00",
               "endAt": "2026-10-12T19:00:00+09:00",
               "saleKey": "livepocket|maison|dnqhf|東山 / らくちんペクチン / 江頭一馬|先着|first_come|2026-09-25T23:05:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "東山 / 無尽蔵",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-09-25T23:05:00+09:00",
+          "saleEndAt": "2026-10-12T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-25T23:05:00+09:00",
+              "endAt": "2026-10-12T19:00:00+09:00",
+              "saleKey": "livepocket|maison|dnqhf|東山 / 無尽蔵|先着|first_come|2026-09-25T23:05:00+09:00"
             }
           ]
         }
@@ -13906,6 +13906,43 @@
       "newUntil": "2026-09-26T09:51:56.864418+00:00",
       "trackedPerformers": [
         "pyuto"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-12",
+      "openTime": "19:00",
+      "startTime": "19:15",
+      "title": "漫才ライブ「阿吽」",
+      "venue": "渋谷よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68450/54433",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-26T11:00:00+09:00",
+      "saleEndAt": "2026-09-30T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-26T11:00:00+09:00",
+          "endAt": "2026-09-30T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "エバース",
+        "ド桜",
+        "めぞん",
+        "ただし",
+        "本公演のチケットについて",
+        "公式リセールサービス",
+        "を実施した際に"
+      ],
+      "firstSeenAt": "2026-09-25T01:07:43.333737+00:00",
+      "newUntil": "2026-09-27T01:07:43.333750+00:00",
+      "trackedPerformers": [
+        "maison"
       ]
     },
     {
