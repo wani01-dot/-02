@@ -2405,15 +2405,435 @@
 
   async function loadData() {
 
-    try {
+  try {
 
-      const response =
-        await fetch(
-          `events.json?t=${Date.now()}`,
-          {
-            cache:
-              "no-store",
+    /*
+      =========================================
+      1. events.json と discovered_events.json
+         を両方読み込む
+      =========================================
+    */
+
+    const [
+      eventsResult,
+      discoveredResult,
+    ] = await Promise.allSettled([
+
+      fetch(
+        `events.json?t=${Date.now()}`,
+        {
+          cache: "no-store",
+        }
+      ),
+
+      fetch(
+        `discovered_events.json?t=${Date.now()}`,
+        {
+          cache: "no-store",
+        }
+      ),
+
+    ]);
+
+
+    /*
+      =========================================
+      2. events.json
+      =========================================
+    */
+
+    let eventsData = [];
+
+    let eventsConfigPerformers = [];
+
+
+    if (
+      eventsResult.status
+      ===
+      "fulfilled"
+      &&
+      eventsResult.value.ok
+    ) {
+
+      try {
+
+        const data =
+          await eventsResult
+            .value
+            .json();
+
+
+        eventsData =
+          Array.isArray(
+            data
+          )
+            ?
+            data
+            :
+            (
+              Array.isArray(
+                data.events
+              )
+                ?
+                data.events
+                :
+                []
+            );
+
+
+        eventsConfigPerformers =
+          (
+            !Array.isArray(
+              data
+            )
+            &&
+            Array.isArray(
+              data.performers
+            )
+          )
+            ?
+            data.performers
+            :
+            [];
+
+
+        console.log(
+          `events.json: ${eventsData.length}件`
+        );
+
+      } catch (
+        error
+      ) {
+
+        console.warn(
+          "events.json の解析に失敗しました。",
+          error
+        );
+      }
+
+    } else {
+
+      console.warn(
+        "events.json を読み込めませんでした。"
+      );
+    }
+
+
+    /*
+      =========================================
+      3. discovered_events.json
+      =========================================
+    */
+
+    let discoveredData = [];
+
+    let discoveredConfigPerformers = [];
+
+
+    if (
+      discoveredResult.status
+      ===
+      "fulfilled"
+      &&
+      discoveredResult.value.ok
+    ) {
+
+      try {
+
+        const data =
+          await discoveredResult
+            .value
+            .json();
+
+
+        discoveredData =
+          Array.isArray(
+            data
+          )
+            ?
+            data
+            :
+            (
+              Array.isArray(
+                data.events
+              )
+                ?
+                data.events
+                :
+                []
+            );
+
+
+        discoveredConfigPerformers =
+          (
+            !Array.isArray(
+              data
+            )
+            &&
+            Array.isArray(
+              data.performers
+            )
+          )
+            ?
+            data.performers
+            :
+            [];
+
+
+        console.log(
+          `discovered_events.json: ${discoveredData.length}件`
+        );
+
+      } catch (
+        error
+      ) {
+
+        console.warn(
+          "discovered_events.json の解析に失敗しました。",
+          error
+        );
+      }
+
+    } else {
+
+      /*
+        discovered_events.json が
+        まだ存在しない段階でも
+        サイト自体は普通に動かす
+      */
+
+      console.info(
+        "discovered_events.json はまだありません。"
+      );
+    }
+
+
+    /*
+      =========================================
+      4. 2つのJSONを合流
+      =========================================
+    */
+
+    rawEvents = [
+      ...eventsData,
+      ...discoveredData,
+    ];
+
+
+    /*
+      =========================================
+      5. 完全に同一のデータが入っていた場合は
+         重複を軽く除去
+      =========================================
+    */
+
+    const seenEvents =
+      new Set();
+
+
+    rawEvents =
+      rawEvents.filter(
+        event => {
+
+          const key = [
+
+            event.date
+            ||
+            "",
+
+            event.startTime
+            ||
+            "",
+
+            normalizeTitle(
+              event.title
+            ),
+
+            normalizeVenue(
+              event.venue
+            ),
+
+            event.performerId
+            ||
+            "",
+
+            event.source
+            ||
+            "",
+
+            event.sourceUrl
+            ||
+            "",
+
+          ].join(
+            "|"
+          );
+
+
+          if (
+            seenEvents.has(
+              key
+            )
+          ) {
+
+            return false;
           }
+
+
+          seenEvents.add(
+            key
+          );
+
+
+          return true;
+        }
+      );
+
+
+    console.log(
+      `合流後: ${rawEvents.length}件`
+    );
+
+
+    /*
+      =========================================
+      6. performers設定も合流
+      =========================================
+    */
+
+    const configPerformers = [
+      ...eventsConfigPerformers,
+      ...discoveredConfigPerformers,
+    ];
+
+
+    performers =
+      DEFAULT_PERFORMERS.map(
+        fallback => {
+
+          /*
+            後から読み込んだ設定を優先する
+          */
+
+          const found =
+            [
+              ...configPerformers,
+            ]
+              .reverse()
+              .find(
+                item =>
+                  item.id
+                  ===
+                  fallback.id
+              );
+
+
+          return {
+            ...fallback,
+            ...(found || {}),
+
+            /*
+              め / ピ / 軟 は
+              現在の表示を維持
+            */
+
+            short:
+              fallback.short,
+          };
+        }
+      );
+
+
+    performerMap =
+      Object.fromEntries(
+        performers.map(
+          performer => [
+            performer.id,
+            performer,
+          ]
+        )
+      );
+
+
+    /*
+      =========================================
+      7. 初回表示設定
+      =========================================
+    */
+
+    if (
+      visiblePerformers.size
+      ===
+      0
+    ) {
+
+      visiblePerformers =
+        new Set(
+          performers.map(
+            performer =>
+              performer.id
+          )
+        );
+
+
+      saveVisible();
+    }
+
+
+    /*
+      =========================================
+      8. 既存処理へ渡す
+      =========================================
+    */
+
+    groups =
+      buildGroups(
+        rawEvents
+      );
+
+
+    renderAll();
+
+
+    /*
+      =========================================
+      9. 両方とも取得できなかった場合だけ
+         エラー表示
+      =========================================
+    */
+
+    if (
+      eventsData.length
+      ===
+      0
+      &&
+      discoveredData.length
+      ===
+      0
+    ) {
+
+      console.warn(
+        "読み込めるライブデータがありません。"
+      );
+    }
+
+  } catch (
+    error
+  ) {
+
+    console.error(
+      "ライブデータ読み込みエラー:",
+      error
+    );
+
+
+    daySection.innerHTML = `
+      <div class="empty-message">
+        ライブデータの読み込みに失敗しました。
+      </div>
+    `;
+  }
+}
         );
 
 
