@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-25T23:58:11.950409+00:00",
+  "syncedAt": "2026-09-26T00:05:22.776561+00:00",
   "performers": [
     {
       "id": "maison",
@@ -73,7 +73,7 @@
               "label": "先着",
               "startAt": "2026-08-05T10:00:00+09:00",
               "endAt": "2026-09-26T09:00:00+09:00",
-              "saleKey": "fany|nansui|61274|49839|全席指定|当日|first_come|2026-08-05T10:00:00+09:00"
+              "saleKey": "fany|maison|61274|49839|全席指定|当日|first_come|2026-08-05T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -92,7 +92,7 @@
               "label": "先着",
               "startAt": "2026-08-05T10:00:00+09:00",
               "endAt": "2026-09-26T09:00:00+09:00",
-              "saleKey": "fany|nansui|61274|49839|立見（整理番号付）|当日|first_come|2026-08-05T10:00:00+09:00"
+              "saleKey": "fany|maison|61274|49839|立見（整理番号付）|当日|first_come|2026-08-05T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-05T10:00:00+09:00",
@@ -147,57 +147,18 @@
       "title": "神保町マンゲキお笑いライブ",
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/61274/49839",
-      "ticketStatus": "一部予定数終了",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "販売中",
-          "price": "￥2,800",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-26T09:00:00+09:00",
-              "saleKey": "fany|nansui|61274|49839|全席指定|当日|first_come|2026-08-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-26T09:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        },
-        {
-          "name": "立見（整理番号付）",
-          "type": "当日",
-          "status": "予定数終了",
-          "price": "￥2,500",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-05T10:00:00+09:00",
-              "endAt": "2026-09-26T09:00:00+09:00",
-              "saleKey": "fany|nansui|61274|49839|立見（整理番号付）|当日|first_come|2026-08-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-05T10:00:00+09:00",
-          "saleEndAt": "2026-09-26T09:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-08-05T10:00:00+09:00",
-      "saleEndAt": "2026-09-26T09:00:00+09:00",
-      "saleCategory": "first_come",
+      "sourceUrl": "https://ticket.fany.lol/reception/61272/49839",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-07-25T11:00:00+09:00",
+      "saleEndAt": "2026-07-28T11:00:00+09:00",
+      "saleCategory": "advance",
       "salePeriods": [
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-08-05T10:00:00+09:00",
-          "endAt": "2026-09-26T09:00:00+09:00"
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-07-25T11:00:00+09:00",
+          "endAt": "2026-07-28T11:00:00+09:00"
         }
       ],
       "performersText": [
@@ -212,13 +173,7 @@
         "大王",
         "兄弟",
         "イワサキ",
-        "MC：大王",
-        "・1回の先着申込で申込可能な公演数は『",
-        "1公演",
-        "』",
-        "枚数は『",
-        "10枚まで",
-        "・座席番号や整理番号は"
+        "MC：大王"
       ],
       "firstSeenAt": "2026-09-19T01:35:00.443801+00:00",
       "newUntil": "",
@@ -6352,7 +6307,7 @@
           ]
         },
         {
-          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+          "name": "東山 / ねじれネジ",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -6366,12 +6321,12 @@
               "label": "",
               "startAt": "2026-09-04T22:30:00+09:00",
               "endAt": "2026-09-14T23:59:00+09:00",
-              "saleKey": "livepocket|maison|dnqhf|東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵|先着|advance|2026-09-04T22:30:00+09:00"
+              "saleKey": "livepocket|maison|dnqhf|東山 / ねじれネジ|先着|advance|2026-09-04T22:30:00+09:00"
             }
           ]
         },
         {
-          "name": "東山 / 無尽蔵",
+          "name": "東山 / らくちんペクチン / 江頭一馬",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -6385,7 +6340,7 @@
               "label": "",
               "startAt": "2026-09-04T22:30:00+09:00",
               "endAt": "2026-09-14T23:59:00+09:00",
-              "saleKey": "livepocket|maison|dnqhf|東山 / 無尽蔵|先着|advance|2026-09-04T22:30:00+09:00"
+              "saleKey": "livepocket|maison|dnqhf|東山 / らくちんペクチン / 江頭一馬|先着|advance|2026-09-04T22:30:00+09:00"
             }
           ]
         }
