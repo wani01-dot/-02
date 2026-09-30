@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-30T15:22:35.898001+00:00",
+  "syncedAt": "2026-09-30T20:08:50.740389+00:00",
   "performers": [
     {
       "id": "maison",
@@ -3283,7 +3283,7 @@
       "venue": "ハイジアV-1(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/523374",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -4904,25 +4904,6 @@
           ]
         },
         {
-          "name": "東山 / 無尽蔵",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-09-04T22:30:00+09:00",
-          "saleEndAt": "2026-09-14T23:59:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-09-04T22:30:00+09:00",
-              "endAt": "2026-09-14T23:59:00+09:00",
-              "saleKey": "livepocket|maison|dnqhf|東山 / 無尽蔵|先着|advance|2026-09-04T22:30:00+09:00"
-            }
-          ]
-        },
-        {
           "name": "東山 / ねじれネジ",
           "type": "先着",
           "status": "販売中",
@@ -4938,6 +4919,25 @@
               "startAt": "2026-09-04T22:30:00+09:00",
               "endAt": "2026-09-14T23:59:00+09:00",
               "saleKey": "livepocket|maison|dnqhf|東山 / ねじれネジ|先着|advance|2026-09-04T22:30:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-09-04T22:30:00+09:00",
+          "saleEndAt": "2026-09-14T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-09-04T22:30:00+09:00",
+              "endAt": "2026-09-14T23:59:00+09:00",
+              "saleKey": "livepocket|maison|dnqhf|東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵|先着|advance|2026-09-04T22:30:00+09:00"
             }
           ]
         }
