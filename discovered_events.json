@@ -1,9 +1,9 @@
 {
-  "syncedAt": "2026-10-01T06:01:17.739092+00:00",
+  "syncedAt": "2026-10-01T13:02:57.561018+00:00",
   "total": 166,
   "ticketListedCount": 166,
   "ticketUnlistedCount": 0,
-  "ticketOptionCount": 285,
+  "ticketOptionCount": 279,
   "salePeriodCount": 852,
   "events": [
     {
@@ -35,52 +35,31 @@
           "score": 24,
           "performerId": "maison",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66201/52714",
+          "sourceUrl": "https://ticket.fany.lol/reception/66199/52714",
           "title": "めぞん×ヨネダ2000ツーマンライブ「よす～」",
           "date": "2026-10-01",
           "venue": "大宮ラクーンよしもと劇場（埼玉県）",
           "openTime": "17:20",
           "startTime": "17:30",
-          "ticketStatus": "予定数終了",
-          "ticketOptions": [
-            {
-              "name": "全席指定",
-              "type": "当日",
-              "status": "予定数終了",
-              "price": "￥2,800",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-02T10:00:00+09:00",
-              "saleEndAt": "2026-10-01T15:30:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-09-02T10:00:00+09:00",
-                  "endAt": "2026-10-01T15:30:00+09:00"
-                }
-              ]
-            }
-          ],
+          "ticketStatus": "",
+          "ticketOptions": [],
           "salePeriods": [
             {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-02T10:00:00+09:00",
-              "endAt": "2026-10-01T15:30:00+09:00"
+              "category": "advance",
+              "label": "抽選",
+              "startAt": "2026-08-29T11:00:00+09:00",
+              "endAt": "2026-08-31T11:00:00+09:00"
             },
             {
-              "category": "first_come",
+              "category": "advance",
               "label": "",
-              "startAt": "2026-09-02T10:00:00+09:00",
-              "endAt": "2026-10-01T15:30:00+09:00"
+              "startAt": "2026-08-29T11:00:00+09:00",
+              "endAt": "2026-08-31T11:00:00+09:00"
             }
           ],
-          "saleStartAt": "2026-09-02T10:00:00+09:00",
-          "saleEndAt": "2026-10-01T15:30:00+09:00",
-          "saleCategory": "first_come",
+          "saleStartAt": "2026-08-29T11:00:00+09:00",
+          "saleEndAt": "2026-08-31T11:00:00+09:00",
+          "saleCategory": "advance",
           "saleLabel": ""
         },
         {
@@ -93,29 +72,8 @@
           "venue": "大宮ラクーンよしもと劇場（埼玉県）",
           "openTime": "18:50",
           "startTime": "19:00",
-          "ticketStatus": "残りわずか",
-          "ticketOptions": [
-            {
-              "name": "全席指定",
-              "type": "当日",
-              "status": "残りわずか",
-              "price": "￥2,600",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-06T10:00:00+09:00",
-              "saleEndAt": "2026-10-01T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-09-06T10:00:00+09:00",
-                  "endAt": "2026-10-01T17:00:00+09:00"
-                }
-              ]
-            }
-          ],
+          "ticketStatus": "",
+          "ticketOptions": [],
           "salePeriods": [
             {
               "category": "first_come",
@@ -193,50 +151,6 @@
         {
           "name": "全席指定",
           "type": "当日",
-          "status": "予定数終了",
-          "price": "￥2,800",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-02T10:00:00+09:00",
-          "saleEndAt": "2026-10-01T15:30:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-02T10:00:00+09:00",
-              "endAt": "2026-10-01T15:30:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66201/52714"
-        },
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "残りわずか",
-          "price": "￥2,600",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-06T10:00:00+09:00",
-          "saleEndAt": "2026-10-01T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-06T10:00:00+09:00",
-              "endAt": "2026-10-01T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66476/52833"
-        },
-        {
-          "name": "全席指定",
-          "type": "当日",
           "status": "販売中",
           "price": "￥2,600",
           "remaining": null,
@@ -259,20 +173,20 @@
       ],
       "salePeriods": [
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-09-02T10:00:00+09:00",
-          "endAt": "2026-10-01T15:30:00+09:00",
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-08-29T11:00:00+09:00",
+          "endAt": "2026-08-31T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66201/52714"
+          "sourceUrl": "https://ticket.fany.lol/reception/66199/52714"
         },
         {
-          "category": "first_come",
+          "category": "advance",
           "label": "",
-          "startAt": "2026-09-02T10:00:00+09:00",
-          "endAt": "2026-10-01T15:30:00+09:00",
+          "startAt": "2026-08-29T11:00:00+09:00",
+          "endAt": "2026-08-31T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66201/52714"
+          "sourceUrl": "https://ticket.fany.lol/reception/66199/52714"
         },
         {
           "category": "first_come",
@@ -308,12 +222,12 @@
         }
       ],
       "status": "ticket_listed",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/66201/52714",
-      "saleStartAt": "2026-09-02T10:00:00+09:00",
-      "saleEndAt": "2026-10-01T15:30:00+09:00",
-      "saleCategory": "first_come",
+      "sourceUrl": "https://ticket.fany.lol/reception/66199/52714",
+      "saleStartAt": "2026-08-29T11:00:00+09:00",
+      "saleEndAt": "2026-08-31T11:00:00+09:00",
+      "saleCategory": "advance",
       "saleLabel": ""
     },
     {
@@ -351,29 +265,8 @@
           "venue": "大宮ラクーンよしもと劇場（埼玉県）",
           "openTime": "18:50",
           "startTime": "19:00",
-          "ticketStatus": "残りわずか",
-          "ticketOptions": [
-            {
-              "name": "全席指定",
-              "type": "当日",
-              "status": "残りわずか",
-              "price": "￥2,600",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-06T10:00:00+09:00",
-              "saleEndAt": "2026-10-01T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-09-06T10:00:00+09:00",
-                  "endAt": "2026-10-01T17:00:00+09:00"
-                }
-              ]
-            }
-          ],
+          "ticketStatus": "",
+          "ticketOptions": [],
           "salePeriods": [
             {
               "category": "first_come",
@@ -397,52 +290,31 @@
           "score": 14,
           "performerId": "maison",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66201/52714",
+          "sourceUrl": "https://ticket.fany.lol/reception/66199/52714",
           "title": "めぞん×ヨネダ2000ツーマンライブ「よす～」",
           "date": "2026-10-01",
           "venue": "大宮ラクーンよしもと劇場（埼玉県）",
           "openTime": "17:20",
           "startTime": "17:30",
-          "ticketStatus": "予定数終了",
-          "ticketOptions": [
-            {
-              "name": "全席指定",
-              "type": "当日",
-              "status": "予定数終了",
-              "price": "￥2,800",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-02T10:00:00+09:00",
-              "saleEndAt": "2026-10-01T15:30:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-09-02T10:00:00+09:00",
-                  "endAt": "2026-10-01T15:30:00+09:00"
-                }
-              ]
-            }
-          ],
+          "ticketStatus": "",
+          "ticketOptions": [],
           "salePeriods": [
             {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-02T10:00:00+09:00",
-              "endAt": "2026-10-01T15:30:00+09:00"
+              "category": "advance",
+              "label": "抽選",
+              "startAt": "2026-08-29T11:00:00+09:00",
+              "endAt": "2026-08-31T11:00:00+09:00"
             },
             {
-              "category": "first_come",
+              "category": "advance",
               "label": "",
-              "startAt": "2026-09-02T10:00:00+09:00",
-              "endAt": "2026-10-01T15:30:00+09:00"
+              "startAt": "2026-08-29T11:00:00+09:00",
+              "endAt": "2026-08-31T11:00:00+09:00"
             }
           ],
-          "saleStartAt": "2026-09-02T10:00:00+09:00",
-          "saleEndAt": "2026-10-01T15:30:00+09:00",
-          "saleCategory": "first_come",
+          "saleStartAt": "2026-08-29T11:00:00+09:00",
+          "saleEndAt": "2026-08-31T11:00:00+09:00",
+          "saleCategory": "advance",
           "saleLabel": ""
         },
         {
@@ -503,50 +375,6 @@
         {
           "name": "全席指定",
           "type": "当日",
-          "status": "残りわずか",
-          "price": "￥2,600",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-06T10:00:00+09:00",
-          "saleEndAt": "2026-10-01T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-06T10:00:00+09:00",
-              "endAt": "2026-10-01T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66476/52833"
-        },
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "予定数終了",
-          "price": "￥2,800",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-02T10:00:00+09:00",
-          "saleEndAt": "2026-10-01T15:30:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-02T10:00:00+09:00",
-              "endAt": "2026-10-01T15:30:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66201/52714"
-        },
-        {
-          "name": "全席指定",
-          "type": "当日",
           "status": "販売中",
           "price": "￥2,600",
           "remaining": null,
@@ -585,20 +413,20 @@
           "sourceUrl": "https://ticket.fany.lol/reception/66476/52833"
         },
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-09-02T10:00:00+09:00",
-          "endAt": "2026-10-01T15:30:00+09:00",
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-08-29T11:00:00+09:00",
+          "endAt": "2026-08-31T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66201/52714"
+          "sourceUrl": "https://ticket.fany.lol/reception/66199/52714"
         },
         {
-          "category": "first_come",
+          "category": "advance",
           "label": "",
-          "startAt": "2026-09-02T10:00:00+09:00",
-          "endAt": "2026-10-01T15:30:00+09:00",
+          "startAt": "2026-08-29T11:00:00+09:00",
+          "endAt": "2026-08-31T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66201/52714"
+          "sourceUrl": "https://ticket.fany.lol/reception/66199/52714"
         },
         {
           "category": "first_come",
@@ -618,7 +446,7 @@
         }
       ],
       "status": "ticket_listed",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/66476/52833",
       "saleStartAt": "2026-09-06T10:00:00+09:00",
@@ -707,52 +535,31 @@
           "score": 14,
           "performerId": "maison",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66201/52714",
+          "sourceUrl": "https://ticket.fany.lol/reception/66199/52714",
           "title": "めぞん×ヨネダ2000ツーマンライブ「よす～」",
           "date": "2026-10-01",
           "venue": "大宮ラクーンよしもと劇場（埼玉県）",
           "openTime": "17:20",
           "startTime": "17:30",
-          "ticketStatus": "予定数終了",
-          "ticketOptions": [
-            {
-              "name": "全席指定",
-              "type": "当日",
-              "status": "予定数終了",
-              "price": "￥2,800",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-02T10:00:00+09:00",
-              "saleEndAt": "2026-10-01T15:30:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-09-02T10:00:00+09:00",
-                  "endAt": "2026-10-01T15:30:00+09:00"
-                }
-              ]
-            }
-          ],
+          "ticketStatus": "",
+          "ticketOptions": [],
           "salePeriods": [
             {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-02T10:00:00+09:00",
-              "endAt": "2026-10-01T15:30:00+09:00"
+              "category": "advance",
+              "label": "抽選",
+              "startAt": "2026-08-29T11:00:00+09:00",
+              "endAt": "2026-08-31T11:00:00+09:00"
             },
             {
-              "category": "first_come",
+              "category": "advance",
               "label": "",
-              "startAt": "2026-09-02T10:00:00+09:00",
-              "endAt": "2026-10-01T15:30:00+09:00"
+              "startAt": "2026-08-29T11:00:00+09:00",
+              "endAt": "2026-08-31T11:00:00+09:00"
             }
           ],
-          "saleStartAt": "2026-09-02T10:00:00+09:00",
-          "saleEndAt": "2026-10-01T15:30:00+09:00",
-          "saleCategory": "first_come",
+          "saleStartAt": "2026-08-29T11:00:00+09:00",
+          "saleEndAt": "2026-08-31T11:00:00+09:00",
+          "saleCategory": "advance",
           "saleLabel": ""
         },
         {
@@ -765,29 +572,8 @@
           "venue": "大宮ラクーンよしもと劇場（埼玉県）",
           "openTime": "18:50",
           "startTime": "19:00",
-          "ticketStatus": "残りわずか",
-          "ticketOptions": [
-            {
-              "name": "全席指定",
-              "type": "当日",
-              "status": "残りわずか",
-              "price": "￥2,600",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-06T10:00:00+09:00",
-              "saleEndAt": "2026-10-01T17:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-09-06T10:00:00+09:00",
-                  "endAt": "2026-10-01T17:00:00+09:00"
-                }
-              ]
-            }
-          ],
+          "ticketStatus": "",
+          "ticketOptions": [],
           "salePeriods": [
             {
               "category": "first_come",
@@ -831,50 +617,6 @@
           ],
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/66484/52832"
-        },
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "予定数終了",
-          "price": "￥2,800",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-02T10:00:00+09:00",
-          "saleEndAt": "2026-10-01T15:30:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-02T10:00:00+09:00",
-              "endAt": "2026-10-01T15:30:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66201/52714"
-        },
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "残りわずか",
-          "price": "￥2,600",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-06T10:00:00+09:00",
-          "saleEndAt": "2026-10-01T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-06T10:00:00+09:00",
-              "endAt": "2026-10-01T17:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66476/52833"
         }
       ],
       "salePeriods": [
@@ -895,20 +637,20 @@
           "sourceUrl": "https://ticket.fany.lol/reception/66484/52832"
         },
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-09-02T10:00:00+09:00",
-          "endAt": "2026-10-01T15:30:00+09:00",
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-08-29T11:00:00+09:00",
+          "endAt": "2026-08-31T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66201/52714"
+          "sourceUrl": "https://ticket.fany.lol/reception/66199/52714"
         },
         {
-          "category": "first_come",
+          "category": "advance",
           "label": "",
-          "startAt": "2026-09-02T10:00:00+09:00",
-          "endAt": "2026-10-01T15:30:00+09:00",
+          "startAt": "2026-08-29T11:00:00+09:00",
+          "endAt": "2026-08-31T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66201/52714"
+          "sourceUrl": "https://ticket.fany.lol/reception/66199/52714"
         },
         {
           "category": "first_come",
@@ -5807,7 +5549,7 @@
       "theaterId": "jimbocho",
       "theaterName": "神保町",
       "performersText": [
-        "[ネタ出演者]ダブルヒガシ／くらげ／シモリュウ／田津原理音／オダウエダ／太鵬／軟水／インテイク／とりせん／生姜猫／他"
+        "[ネタ出演者]ダブルヒガシ／くらげ／シモリュウ／田津原理音／オダウエダ／太鵬／軟水／インテイク／とりせん／照山おうちごはん／生姜猫 [コーナー出演者]MC：シモリュウ／オダウエダ／太鵬／照山おうちごはん"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -6567,7 +6309,7 @@
       "theaterId": "jimbocho",
       "theaterName": "神保町",
       "performersText": [
-        "[ネタ出演者]ダブルヒガシ／くらげ／シモリュウ／田津原理音／オダウエダ／太鵬／軟水／インテイク／とりせん／生姜猫／他"
+        "[ネタ出演者]ダブルヒガシ／くらげ／シモリュウ／田津原理音／オダウエダ／太鵬／軟水／インテイク／とりせん／照山おうちごはん／生姜猫 [コーナー出演者]MC：くらげ／田津原理音／インテイク／生姜猫"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -7327,7 +7069,7 @@
       "theaterId": "jimbocho",
       "theaterName": "神保町",
       "performersText": [
-        "[ネタ出演者]ダブルヒガシ／くらげ／シモリュウ／田津原理音／オダウエダ／太鵬／軟水／インテイク／とりせん／生姜猫／他"
+        "[ネタ出演者]ダブルヒガシ／くらげ／シモリュウ／田津原理音／オダウエダ／太鵬／軟水／インテイク／とりせん／照山おうちごはん／生姜猫 [コーナー出演者]MC：ダブルヒガシ／軟水／インテイク／とりせん"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -13850,7 +13592,7 @@
               ]
             },
             {
-              "name": "東山 / ねじれネジ",
+              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -14113,7 +13855,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ねじれネジ",
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -14672,7 +14414,7 @@
               ]
             },
             {
-              "name": "東山 / ねじれネジ",
+              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -14935,7 +14677,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ねじれネジ",
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -15494,7 +15236,7 @@
               ]
             },
             {
-              "name": "東山 / ねじれネジ",
+              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -15757,7 +15499,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ねじれネジ",
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -16316,7 +16058,7 @@
               ]
             },
             {
-              "name": "東山 / ねじれネジ",
+              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -16579,7 +16321,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ねじれネジ",
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -18523,7 +18265,7 @@
       "theaterId": "jimbocho",
       "theaterName": "神保町",
       "performersText": [
-        "[ネタ出演者]滝音／エルフ／めぞん／シカゴ実業／ミカボ／アズーロ24／マリーマリー／インテイク／ゼロカラン／他"
+        "[ネタ出演者]滝音／エルフ／めぞん／シカゴ実業／ミカボ／アズーロ24／マリーマリー／インテイク／ゼロカラン／あなたとネ／他"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -19219,7 +18961,7 @@
       "theaterId": "jimbocho",
       "theaterName": "神保町",
       "performersText": [
-        "[ネタ出演者]滝音／エルフ／めぞん／シカゴ実業／ミカボ／アズーロ24／マリーマリー／インテイク／ゼロカラン／他"
+        "[ネタ出演者]滝音／エルフ／めぞん／シカゴ実業／ミカボ／アズーロ24／マリーマリー／インテイク／ゼロカラン／ド天国／他"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -23032,7 +22774,7 @@
       "theaterId": "makuhari",
       "theaterName": "幕張",
       "performersText": [
-        "ザ・パンチ／めぞん"
+        "ザ・パンチ／５ＧＡＰ／めぞん／他"
       ],
       "newUntil": "",
       "trackedPerformers": [
