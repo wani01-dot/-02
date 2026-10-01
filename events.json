@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-01T02:28:23.200746+00:00",
+  "syncedAt": "2026-10-01T09:11:54.310440+00:00",
   "performers": [
     {
       "id": "maison",
@@ -59,49 +59,23 @@
       "title": "めぞん×ヨネダ2000ツーマンライブ「よす～」",
       "venue": "大宮ラクーンよしもと劇場（埼玉県）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/66201/52714",
-      "ticketStatus": "予定数終了",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "予定数終了",
-          "price": "￥2,800",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-02T10:00:00+09:00",
-              "endAt": "2026-10-01T15:30:00+09:00",
-              "saleKey": "fany|maison|66201|52714|全席指定|当日|first_come|2026-09-02T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-09-02T10:00:00+09:00",
-          "saleEndAt": "2026-10-01T15:30:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-09-02T10:00:00+09:00",
-      "saleEndAt": "2026-10-01T15:30:00+09:00",
-      "saleCategory": "first_come",
+      "sourceUrl": "https://ticket.fany.lol/reception/66199/52714",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-08-29T11:00:00+09:00",
+      "saleEndAt": "2026-08-31T11:00:00+09:00",
+      "saleCategory": "advance",
       "salePeriods": [
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-09-02T10:00:00+09:00",
-          "endAt": "2026-10-01T15:30:00+09:00"
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-08-29T11:00:00+09:00",
+          "endAt": "2026-08-31T11:00:00+09:00"
         }
       ],
       "performersText": [
         "めぞん",
-        "ヨネダ2000",
-        "・1回の先着申込で申込可能な公演数は『",
-        "1公演",
-        "』",
-        "枚数は『",
-        "4枚まで",
-        "・座席番号や整理番号は"
+        "ヨネダ2000"
       ],
       "firstSeenAt": "2026-09-19T01:59:49.145065+00:00",
       "newUntil": "",
@@ -118,28 +92,8 @@
       "venue": "大宮ラクーンよしもと劇場（埼玉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/66476/52833",
-      "ticketStatus": "残りわずか",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "残りわずか",
-          "price": "￥2,600",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-06T10:00:00+09:00",
-              "endAt": "2026-10-01T17:00:00+09:00",
-              "saleKey": "fany|maison|66476|52833|全席指定|当日|first_come|2026-09-06T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-09-06T10:00:00+09:00",
-          "saleEndAt": "2026-10-01T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
+      "ticketStatus": "",
+      "ticketOptions": [],
       "saleStartAt": "2026-09-06T10:00:00+09:00",
       "saleEndAt": "2026-10-01T17:00:00+09:00",
       "saleCategory": "first_come",
@@ -1566,7 +1520,9 @@
         "軟水",
         "インテイク",
         "とりせん",
+        "照山おうちごはん",
         "生姜猫",
+        "MC：シモリュウ",
         "・1回の先着申込で申込可能な公演数は『",
         "1公演",
         "』",
@@ -1756,7 +1712,9 @@
         "軟水",
         "インテイク",
         "とりせん",
+        "照山おうちごはん",
         "生姜猫",
+        "MC：くらげ",
         "・1回の先着申込で申込可能な公演数は『",
         "1公演",
         "』",
@@ -2008,7 +1966,9 @@
         "軟水",
         "インテイク",
         "とりせん",
+        "照山おうちごはん",
         "生姜猫",
+        "MC：ダブルヒガシ",
         "・1回の先着申込で申込可能な公演数は『",
         "1公演",
         "』",
@@ -2258,9 +2218,9 @@
         "ぶたマンモス",
         "フランツ",
         "まんじゅう大帝国 竹内",
-        "ミネ",
         "サツマカワRPG",
         "ひつじねいり",
+        "公民館",
         "ネタと企画orトークの約2時間のライブを予定しています✨"
       ],
       "firstSeenAt": "2026-09-22T00:13:00.978241+00:00",
@@ -3290,7 +3250,6 @@
       "saleCategory": "",
       "salePeriods": [],
       "performersText": [
-        "青色1号",
         "エビカレンダー",
         "オッパショ石",
         "鬼塚ムソウ",
@@ -3450,7 +3409,7 @@
       "venue": "ハイジアV-1(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/523376",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -3468,10 +3427,11 @@
         "ピュート",
         "フランスピアノ",
         "まんじゅう大帝国",
-        "ミネ",
         "百恵",
         "ねじれネジ",
         "ハナフダ",
+        "公民館",
+        "こてつ園田",
         "ネタと企画orトークの約2時間のライブを予定しています✨"
       ],
       "firstSeenAt": "2026-09-22T00:13:00.978241+00:00",
@@ -4904,25 +4864,6 @@
           ]
         },
         {
-          "name": "東山 / 無尽蔵",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-09-04T22:30:00+09:00",
-          "saleEndAt": "2026-09-14T23:59:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-09-04T22:30:00+09:00",
-              "endAt": "2026-09-14T23:59:00+09:00",
-              "saleKey": "livepocket|maison|dnqhf|東山 / 無尽蔵|先着|advance|2026-09-04T22:30:00+09:00"
-            }
-          ]
-        },
-        {
           "name": "東山 / ねじれネジ",
           "type": "先着",
           "status": "販売中",
@@ -4938,6 +4879,25 @@
               "startAt": "2026-09-04T22:30:00+09:00",
               "endAt": "2026-09-14T23:59:00+09:00",
               "saleKey": "livepocket|maison|dnqhf|東山 / ねじれネジ|先着|advance|2026-09-04T22:30:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-09-04T22:30:00+09:00",
+          "saleEndAt": "2026-09-14T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-09-04T22:30:00+09:00",
+              "endAt": "2026-09-14T23:59:00+09:00",
+              "saleKey": "livepocket|maison|dnqhf|東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵|先着|advance|2026-09-04T22:30:00+09:00"
             }
           ]
         }
@@ -5701,6 +5661,42 @@
       ]
     },
     {
+      "performerId": "pyuto",
+      "date": "2026-10-15",
+      "openTime": "18:30",
+      "startTime": "19:00",
+      "title": "ケイダッシュゴールドライブ",
+      "venue": "新宿バティオス(東京都)",
+      "source": "tiget",
+      "sourceUrl": "https://tiget.net/events/523550",
+      "ticketStatus": "予定数終了",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "オッパショ石",
+        "マードック",
+        "ジャガモンド",
+        "おミルク",
+        "どんぐりたけし",
+        "出山",
+        "ファイティングボンバー",
+        "ハルヨ",
+        "ピュート",
+        "≪出演予定≫",
+        "【ＭＣ】未定",
+        "ハルヨ 他",
+        "ピュート（吉本興業）"
+      ],
+      "firstSeenAt": "2026-10-01T09:11:54.306555+00:00",
+      "newUntil": "2026-10-03T09:11:54.306567+00:00",
+      "trackedPerformers": [
+        "pyuto"
+      ]
+    },
+    {
       "performerId": "maison",
       "date": "2026-10-15",
       "openTime": "20:45",
@@ -5857,6 +5853,7 @@
         "マリーマリー",
         "インテイク",
         "ゼロカラン",
+        "あなたとネ",
         "・1回の先着申込で申込可能な公演数は『",
         "1公演",
         "』",
@@ -6025,6 +6022,7 @@
         "マリーマリー",
         "インテイク",
         "ゼロカラン",
+        "ド天国",
         "・1回の先着申込で申込可能な公演数は『",
         "1公演",
         "』",
@@ -7616,6 +7614,7 @@
       ],
       "performersText": [
         "ザ・パンチ",
+        "５ＧＡＰ",
         "めぞん",
         "・1回の先着申込で申込可能な公演数は『",
         "1公演",
