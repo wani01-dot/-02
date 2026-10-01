@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-01T09:24:21.762402+00:00",
+  "syncedAt": "2026-10-01T16:25:33.613379+00:00",
   "performers": [
     {
       "id": "maison",
@@ -53,214 +53,24 @@
   "events": [
     {
       "performerId": "maison",
-      "date": "2026-10-01",
-      "openTime": "17:20",
-      "startTime": "17:30",
-      "title": "めぞん×ヨネダ2000ツーマンライブ「よす～」",
-      "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/66199/52714",
-      "ticketStatus": "",
-      "ticketOptions": [],
-      "saleStartAt": "2026-08-29T11:00:00+09:00",
-      "saleEndAt": "2026-08-31T11:00:00+09:00",
-      "saleCategory": "advance",
-      "salePeriods": [
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-08-29T11:00:00+09:00",
-          "endAt": "2026-08-31T11:00:00+09:00"
-        }
-      ],
-      "performersText": [
-        "めぞん",
-        "ヨネダ2000"
-      ],
-      "firstSeenAt": "2026-09-19T01:59:49.145065+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison"
-      ]
-    },
-    {
-      "performerId": "maison",
-      "date": "2026-10-01",
-      "openTime": "18:50",
-      "startTime": "19:00",
-      "title": "決勝進出者だらけの激アツ寄席",
-      "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/66476/52833",
-      "ticketStatus": "",
-      "ticketOptions": [],
-      "saleStartAt": "2026-09-06T10:00:00+09:00",
-      "saleEndAt": "2026-10-01T17:00:00+09:00",
-      "saleCategory": "first_come",
-      "salePeriods": [
-        {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-09-06T10:00:00+09:00",
-          "endAt": "2026-10-01T17:00:00+09:00"
-        }
-      ],
-      "performersText": [
-        "ツートライブ",
-        "ビスケットブラザーズ",
-        "kento fukaya",
-        "めぞん",
-        "ヨネダ2000",
-        "・1回の先着申込で申込可能な公演数は『",
-        "1公演",
-        "』",
-        "枚数は『",
-        "4枚まで",
-        "・座席番号や整理番号は"
-      ],
-      "firstSeenAt": "2026-09-19T01:59:49.145065+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison"
-      ]
-    },
-    {
-      "performerId": "pyuto",
-      "date": "2026-10-01",
-      "openTime": "19:10",
-      "startTime": "19:30",
-      "title": "10/1(木) なぞの芸能小劇場3",
-      "venue": "なかの芸能小劇場(東京都)",
-      "source": "tiget",
-      "sourceUrl": "https://tiget.net/events/520272",
-      "ticketStatus": "予定数終了",
-      "ticketOptions": [],
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "salePeriods": [],
-      "performersText": [
-        "インテイク",
-        "サツマカワRPG",
-        "ストレッチーズ",
-        "ピュート",
-        "ヤッホイ",
-        "リバーマン",
-        "🕵️💡“謎解き”お笑いライブ💡🧩",
-        "前回大好評につき",
-        "第3弾となる新たな公演となります‼️",
-        "これはライブなのか",
-        "謎解きなのか——",
-        "ネタと企画の公演です！",
-        "＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝"
-      ],
-      "firstSeenAt": "2026-09-22T00:13:00.978241+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto"
-      ]
-    },
-    {
-      "performerId": "maison",
-      "date": "2026-10-01",
-      "openTime": "20:20",
-      "startTime": "20:30",
-      "title": "おおみやなかよし診断～最強のなかよしコンビを決めよう！～",
-      "venue": "大宮ラクーンよしもと劇場（埼玉県）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/66484/52832",
-      "ticketStatus": "販売中",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "販売中",
-          "price": "￥2,600",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-06T10:00:00+09:00",
-              "endAt": "2026-10-01T18:30:00+09:00",
-              "saleKey": "fany|maison|66484|52832|全席指定|当日|first_come|2026-09-06T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-09-06T10:00:00+09:00",
-          "saleEndAt": "2026-10-01T18:30:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-09-06T10:00:00+09:00",
-      "saleEndAt": "2026-10-01T18:30:00+09:00",
-      "saleCategory": "first_come",
-      "salePeriods": [
-        {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-09-06T10:00:00+09:00",
-          "endAt": "2026-10-01T18:30:00+09:00"
-        }
-      ],
-      "performersText": [
-        "ツートライブ",
-        "ビスケットブラザーズ",
-        "kento fukaya",
-        "めぞん",
-        "ヨネダ2000",
-        "・1回の先着申込で申込可能な公演数は『",
-        "1公演",
-        "』",
-        "枚数は『",
-        "4枚まで",
-        "・座席番号や整理番号は"
-      ],
-      "firstSeenAt": "2026-09-19T01:59:49.145065+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison"
-      ]
-    },
-    {
-      "performerId": "maison",
       "date": "2026-10-02",
       "openTime": "18:30",
       "startTime": "19:00",
       "title": "よしもとお笑いライブin八千代2026 ～秋の夜長を笑い飛ばせ！～",
       "venue": "八千代市市民会館 大ホール（千葉県）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/63313/50890",
-      "ticketStatus": "販売中",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "前売",
-          "status": "販売中",
-          "price": "￥4,500",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-15T10:00:00+09:00",
-              "endAt": "2026-10-01T23:59:00+09:00",
-              "saleKey": "fany|maison|63313|50890|全席指定|前売|first_come|2026-08-15T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-15T10:00:00+09:00",
-          "saleEndAt": "2026-10-01T23:59:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-08-15T10:00:00+09:00",
-      "saleEndAt": "2026-10-01T23:59:00+09:00",
-      "saleCategory": "first_come",
+      "sourceUrl": "https://ticket.fany.lol/reception/63311/50890",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-08-08T11:00:00+09:00",
+      "saleEndAt": "2026-08-10T11:00:00+09:00",
+      "saleCategory": "advance",
       "salePeriods": [
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-08-15T10:00:00+09:00",
-          "endAt": "2026-10-01T23:59:00+09:00"
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-08-08T11:00:00+09:00",
+          "endAt": "2026-08-10T11:00:00+09:00"
         }
       ],
       "performersText": [
@@ -273,13 +83,7 @@
         "ネルソンズ",
         "セルライトスパ",
         "ゆにばーす",
-        "めぞん",
-        "・1回の先着申込で申込可能な公演数は『",
-        "1公演",
-        "』",
-        "枚数は『",
-        "10枚まで",
-        "・座席番号や整理番号は"
+        "めぞん"
       ],
       "firstSeenAt": "2026-09-19T01:59:49.145065+00:00",
       "newUntil": "",
@@ -376,16 +180,16 @@
       "ticketOptions": [
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
-          "price": "￥1,500",
+          "price": "￥2,000",
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-09-05T10:00:00+09:00",
               "endAt": "2026-10-02T19:15:00+09:00",
-              "saleKey": "fany|nansui|65052|52415|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+              "saleKey": "fany|nansui|65052|52415|全席指定|当日|first_come|2026-09-05T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -395,7 +199,7 @@
         },
         {
           "name": "立見（整理番号付）",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
           "price": "￥1,500",
           "salePeriods": [
@@ -404,7 +208,7 @@
               "label": "先着",
               "startAt": "2026-09-05T10:00:00+09:00",
               "endAt": "2026-10-02T19:15:00+09:00",
-              "saleKey": "fany|nansui|65052|52415|立見（整理番号付）|前売|first_come|2026-09-05T10:00:00+09:00"
+              "saleKey": "fany|nansui|65052|52415|立見（整理番号付）|当日|first_come|2026-09-05T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -462,16 +266,16 @@
       "ticketOptions": [
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
-          "price": "￥1,500",
+          "price": "￥2,000",
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-09-05T10:00:00+09:00",
               "endAt": "2026-10-02T19:15:00+09:00",
-              "saleKey": "fany|nansui|65052|52415|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+              "saleKey": "fany|nansui|65052|52415|全席指定|当日|first_come|2026-09-05T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -481,7 +285,7 @@
         },
         {
           "name": "立見（整理番号付）",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
           "price": "￥1,500",
           "salePeriods": [
@@ -490,7 +294,7 @@
               "label": "先着",
               "startAt": "2026-09-05T10:00:00+09:00",
               "endAt": "2026-10-02T19:15:00+09:00",
-              "saleKey": "fany|nansui|65052|52415|立見（整理番号付）|前売|first_come|2026-09-05T10:00:00+09:00"
+              "saleKey": "fany|nansui|65052|52415|立見（整理番号付）|当日|first_come|2026-09-05T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -2197,7 +2001,7 @@
       "venue": "ハイジアV-1(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/523371",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -4864,25 +4668,6 @@
           ]
         },
         {
-          "name": "東山 / 無尽蔵",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-09-04T22:30:00+09:00",
-          "saleEndAt": "2026-09-14T23:59:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-09-04T22:30:00+09:00",
-              "endAt": "2026-09-14T23:59:00+09:00",
-              "saleKey": "livepocket|maison|dnqhf|東山 / 無尽蔵|先着|advance|2026-09-04T22:30:00+09:00"
-            }
-          ]
-        },
-        {
           "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
@@ -4898,6 +4683,25 @@
               "startAt": "2026-09-04T22:30:00+09:00",
               "endAt": "2026-09-14T23:59:00+09:00",
               "saleKey": "livepocket|maison|dnqhf|東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵|先着|advance|2026-09-04T22:30:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "東山 / ねじれネジ",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-09-04T22:30:00+09:00",
+          "saleEndAt": "2026-09-14T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-09-04T22:30:00+09:00",
+              "endAt": "2026-09-14T23:59:00+09:00",
+              "saleKey": "livepocket|maison|dnqhf|東山 / ねじれネジ|先着|advance|2026-09-04T22:30:00+09:00"
             }
           ]
         }
@@ -8938,7 +8742,7 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64608/52150",
-      "ticketStatus": "一部予定数終了",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [
         {
           "name": "全席指定",
@@ -8962,7 +8766,7 @@
         {
           "name": "立見（整理番号付）",
           "type": "前売",
-          "status": "販売中",
+          "status": "残りわずか",
           "price": "￥2,000",
           "salePeriods": [
             {
