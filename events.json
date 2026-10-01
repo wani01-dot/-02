@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-30T23:45:17.555274+00:00",
+  "syncedAt": "2026-10-01T02:28:23.200746+00:00",
   "performers": [
     {
       "id": "maison",
@@ -418,12 +418,12 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/65052/52415",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "予定数終了",
       "ticketOptions": [
         {
           "name": "全席指定",
           "type": "前売",
-          "status": "残りわずか",
+          "status": "予定数終了",
           "price": "￥1,500",
           "salePeriods": [
             {
@@ -504,12 +504,12 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/65052/52415",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "予定数終了",
       "ticketOptions": [
         {
           "name": "全席指定",
           "type": "前売",
-          "status": "残りわずか",
+          "status": "予定数終了",
           "price": "￥1,500",
           "salePeriods": [
             {
@@ -3283,7 +3283,7 @@
       "venue": "ハイジアV-1(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/523374",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "予定数終了",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -4904,25 +4904,6 @@
           ]
         },
         {
-          "name": "東山 / ねじれネジ",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-09-04T22:30:00+09:00",
-          "saleEndAt": "2026-09-14T23:59:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-09-04T22:30:00+09:00",
-              "endAt": "2026-09-14T23:59:00+09:00",
-              "saleKey": "livepocket|maison|dnqhf|東山 / ねじれネジ|先着|advance|2026-09-04T22:30:00+09:00"
-            }
-          ]
-        },
-        {
           "name": "東山 / 無尽蔵",
           "type": "先着",
           "status": "販売中",
@@ -4938,6 +4919,25 @@
               "startAt": "2026-09-04T22:30:00+09:00",
               "endAt": "2026-09-14T23:59:00+09:00",
               "saleKey": "livepocket|maison|dnqhf|東山 / 無尽蔵|先着|advance|2026-09-04T22:30:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "東山 / ねじれネジ",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-09-04T22:30:00+09:00",
+          "saleEndAt": "2026-09-14T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-09-04T22:30:00+09:00",
+              "endAt": "2026-09-14T23:59:00+09:00",
+              "saleKey": "livepocket|maison|dnqhf|東山 / ねじれネジ|先着|advance|2026-09-04T22:30:00+09:00"
             }
           ]
         }
@@ -7581,8 +7581,28 @@
       "venue": "よしもと幕張イオンモール劇場（千葉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/69698/54949",
-      "ticketStatus": "",
-      "ticketOptions": [],
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-01T10:00:00+09:00",
+              "endAt": "2026-10-24T17:00:00+09:00",
+              "saleKey": "fany|maison|69698|54949|全席指定|前売|first_come|2026-10-01T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-10-01T10:00:00+09:00",
+          "saleEndAt": "2026-10-24T17:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
       "saleStartAt": "2026-10-01T10:00:00+09:00",
       "saleEndAt": "2026-10-24T17:00:00+09:00",
       "saleCategory": "first_come",
@@ -12866,7 +12886,7 @@
         {
           "name": "2F指定席",
           "type": "前売",
-          "status": "残りわずか",
+          "status": "予定数終了",
           "price": "￥5,500",
           "salePeriods": [
             {
