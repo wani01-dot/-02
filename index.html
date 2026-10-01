@@ -2870,22 +2870,19 @@
 
 
   function calendarKey(
-    event
-  ) {
+  event
+) {
 
-    return [
-      event.date || "",
-      event.startTime || "",
-      normalizeTitle(
-        event.title
-      ),
-      normalizeVenue(
-        event.venue
-      ),
-    ].join(
-      "|"
-    );
-  }
+  return [
+    event.date || "",
+    event.startTime || "",
+    normalizeTitle(
+      event.title
+    ),
+  ].join(
+    "|"
+  );
+}
 
 
   function buildGroups(
