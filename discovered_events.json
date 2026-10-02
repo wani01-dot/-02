@@ -1,10 +1,10 @@
 {
-  "syncedAt": "2026-10-02T08:53:15.145966+00:00",
-  "total": 164,
-  "ticketListedCount": 163,
+  "syncedAt": "2026-10-02T15:39:28.620340+00:00",
+  "total": 168,
+  "ticketListedCount": 167,
   "ticketUnlistedCount": 1,
-  "ticketOptionCount": 282,
-  "salePeriodCount": 840,
+  "ticketOptionCount": 275,
+  "salePeriodCount": 856,
   "events": [
     {
       "performerId": "nansui",
@@ -36,72 +36,31 @@
           "score": 24,
           "performerId": "nansui",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65052/52415",
+          "sourceUrl": "https://ticket.fany.lol/reception/65022/52415",
           "title": "エレクトリカルコーナーライブ",
           "date": "2026-10-02",
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "21:00",
           "startTime": "21:15",
-          "ticketStatus": "予定数終了",
-          "ticketOptions": [
-            {
-              "name": "全席指定",
-              "type": "当日",
-              "status": "予定数終了",
-              "price": "￥2,000",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-05T10:00:00+09:00",
-              "saleEndAt": "2026-10-02T19:15:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-09-05T10:00:00+09:00",
-                  "endAt": "2026-10-02T19:15:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "立見（整理番号付）",
-              "type": "当日",
-              "status": "予定数終了",
-              "price": "￥1,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-05T10:00:00+09:00",
-              "saleEndAt": "2026-10-02T19:15:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-09-05T10:00:00+09:00",
-                  "endAt": "2026-10-02T19:15:00+09:00"
-                }
-              ]
-            }
-          ],
+          "ticketStatus": "",
+          "ticketOptions": [],
           "salePeriods": [
             {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-02T19:15:00+09:00"
+              "category": "advance",
+              "label": "抽選",
+              "startAt": "2026-08-25T11:00:00+09:00",
+              "endAt": "2026-08-28T11:00:00+09:00"
             },
             {
-              "category": "first_come",
+              "category": "advance",
               "label": "",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-02T19:15:00+09:00"
+              "startAt": "2026-08-25T11:00:00+09:00",
+              "endAt": "2026-08-28T11:00:00+09:00"
             }
           ],
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-02T19:15:00+09:00",
-          "saleCategory": "first_come",
+          "saleStartAt": "2026-08-25T11:00:00+09:00",
+          "saleEndAt": "2026-08-28T11:00:00+09:00",
+          "saleCategory": "advance",
           "saleLabel": ""
         },
         {
@@ -124,77 +83,32 @@
         }
       ],
       "ticketListed": true,
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "予定数終了",
-          "price": "￥2,000",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-02T19:15:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-02T19:15:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65052/52415"
-        },
-        {
-          "name": "立見（整理番号付）",
-          "type": "当日",
-          "status": "予定数終了",
-          "price": "￥1,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-02T19:15:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-02T19:15:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65052/52415"
-        }
-      ],
+      "ticketOptions": [],
       "salePeriods": [
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-09-05T10:00:00+09:00",
-          "endAt": "2026-10-02T19:15:00+09:00",
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-08-25T11:00:00+09:00",
+          "endAt": "2026-08-28T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65052/52415"
+          "sourceUrl": "https://ticket.fany.lol/reception/65022/52415"
         },
         {
-          "category": "first_come",
+          "category": "advance",
           "label": "",
-          "startAt": "2026-09-05T10:00:00+09:00",
-          "endAt": "2026-10-02T19:15:00+09:00",
+          "startAt": "2026-08-25T11:00:00+09:00",
+          "endAt": "2026-08-28T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65052/52415"
+          "sourceUrl": "https://ticket.fany.lol/reception/65022/52415"
         }
       ],
       "status": "ticket_listed",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/65052/52415",
-      "saleStartAt": "2026-09-05T10:00:00+09:00",
-      "saleEndAt": "2026-10-02T19:15:00+09:00",
-      "saleCategory": "first_come",
+      "sourceUrl": "https://ticket.fany.lol/reception/65022/52415",
+      "saleStartAt": "2026-08-25T11:00:00+09:00",
+      "saleEndAt": "2026-08-28T11:00:00+09:00",
+      "saleCategory": "advance",
       "saleLabel": ""
     },
     {
@@ -7445,7 +7359,7 @@
       "theaterId": "jimbocho",
       "theaterName": "神保町",
       "performersText": [
-        "[企画ライブ]イチゴ／大王／めぞん／大石／イザナミン／美バンブー"
+        "[企画ライブ]イチゴ／大王／めぞん／ジュン(大石・宮原健斗)／イザナミン／美バンブー"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -9140,7 +9054,7 @@
       "theaterId": "makuhari",
       "theaterName": "幕張",
       "performersText": [
-        "めぞん／カゲヤマ／生ファラオ／ソマオ・ミートボール／プリズンクイズチャンネル／ボブのコーラ／【MC】ビューティフルトーキョーマンズ 鈴木バイダン"
+        "めぞん／カゲヤマ／生ファラオ／ソマオ・ミートボール／プリズンクイズチャンネル／【MC】ビューティフルトーキョーマンズ 鈴木バイダン"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -9775,12 +9689,12 @@
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "10:45",
           "startTime": "11:00",
-          "ticketStatus": "残りわずか",
+          "ticketStatus": "予定数終了",
           "ticketOptions": [
             {
               "name": "全席指定",
               "type": "前売",
-              "status": "残りわずか",
+              "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
               "remainingText": "",
@@ -10131,7 +10045,7 @@
         {
           "name": "全席指定",
           "type": "前売",
-          "status": "残りわずか",
+          "status": "予定数終了",
           "price": "￥2,500",
           "remaining": null,
           "remainingText": "",
@@ -10171,28 +10085,6 @@
           ],
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/64655/52236"
-        },
-        {
-          "name": "全席指定",
-          "type": "前売",
-          "status": "予定数終了",
-          "price": "￥2,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-11T11:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-11T11:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52237"
         },
         {
           "name": "全席指定",
@@ -10344,7 +10236,7 @@
         }
       ],
       "status": "ticket_listed",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "予定数終了",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64655/52236",
       "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -10461,12 +10353,12 @@
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "10:45",
           "startTime": "11:00",
-          "ticketStatus": "残りわずか",
+          "ticketStatus": "予定数終了",
           "ticketOptions": [
             {
               "name": "全席指定",
               "type": "前売",
-              "status": "残りわずか",
+              "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
               "remainingText": "",
@@ -10785,28 +10677,6 @@
           ],
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/64655/52237"
-        },
-        {
-          "name": "全席指定",
-          "type": "前売",
-          "status": "残りわずか",
-          "price": "￥2,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-11T09:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-11T09:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52236"
         },
         {
           "name": "全席指定",
@@ -11075,12 +10945,12 @@
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "10:45",
           "startTime": "11:00",
-          "ticketStatus": "残りわずか",
+          "ticketStatus": "予定数終了",
           "ticketOptions": [
             {
               "name": "全席指定",
               "type": "前売",
-              "status": "残りわずか",
+              "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
               "remainingText": "",
@@ -11403,28 +11273,6 @@
         {
           "name": "全席指定",
           "type": "前売",
-          "status": "残りわずか",
-          "price": "￥2,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-11T09:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-11T09:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52236"
-        },
-        {
-          "name": "全席指定",
-          "type": "前売",
           "status": "予定数終了",
           "price": "￥1,500",
           "remaining": null,
@@ -11687,12 +11535,12 @@
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "10:45",
           "startTime": "11:00",
-          "ticketStatus": "残りわずか",
+          "ticketStatus": "予定数終了",
           "ticketOptions": [
             {
               "name": "全席指定",
               "type": "前売",
-              "status": "残りわずか",
+              "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
               "remainingText": "",
@@ -11943,7 +11791,7 @@
         {
           "name": "全席指定",
           "type": "前売",
-          "status": "残りわずか",
+          "status": "予定数終了",
           "price": "￥2,500",
           "remaining": null,
           "remainingText": "",
@@ -11983,28 +11831,6 @@
           ],
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/64655/52236"
-        },
-        {
-          "name": "全席指定",
-          "type": "前売",
-          "status": "予定数終了",
-          "price": "￥2,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-11T11:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-11T11:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52237"
         }
       ],
       "salePeriods": [
@@ -12189,12 +12015,12 @@
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "10:45",
           "startTime": "11:00",
-          "ticketStatus": "残りわずか",
+          "ticketStatus": "予定数終了",
           "ticketOptions": [
             {
               "name": "全席指定",
               "type": "前売",
-              "status": "残りわずか",
+              "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
               "remainingText": "",
@@ -12445,7 +12271,7 @@
         {
           "name": "全席指定",
           "type": "前売",
-          "status": "残りわずか",
+          "status": "予定数終了",
           "price": "￥2,500",
           "remaining": null,
           "remainingText": "",
@@ -12485,28 +12311,6 @@
           ],
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/64655/52236"
-        },
-        {
-          "name": "全席指定",
-          "type": "前売",
-          "status": "予定数終了",
-          "price": "￥2,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-11T11:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-11T11:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52237"
         }
       ],
       "salePeriods": [
@@ -13010,7 +12814,7 @@
               ]
             },
             {
-              "name": "東山 / ねじれネジ",
+              "name": "東山 / 無尽蔵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -13030,7 +12834,7 @@
               ]
             },
             {
-              "name": "東山 / 無尽蔵",
+              "name": "東山 / ねじれネジ",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -13271,7 +13075,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ねじれネジ",
+          "name": "東山 / 無尽蔵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -13293,7 +13097,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / 無尽蔵",
+          "name": "東山 / ねじれネジ",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -13832,7 +13636,7 @@
               ]
             },
             {
-              "name": "東山 / ねじれネジ",
+              "name": "東山 / 無尽蔵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -13852,7 +13656,7 @@
               ]
             },
             {
-              "name": "東山 / 無尽蔵",
+              "name": "東山 / ねじれネジ",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -14093,7 +13897,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ねじれネジ",
+          "name": "東山 / 無尽蔵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -14115,7 +13919,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / 無尽蔵",
+          "name": "東山 / ねじれネジ",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -14654,7 +14458,7 @@
               ]
             },
             {
-              "name": "東山 / ねじれネジ",
+              "name": "東山 / 無尽蔵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -14674,7 +14478,7 @@
               ]
             },
             {
-              "name": "東山 / 無尽蔵",
+              "name": "東山 / ねじれネジ",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -14915,7 +14719,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ねじれネジ",
+          "name": "東山 / 無尽蔵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -14937,7 +14741,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / 無尽蔵",
+          "name": "東山 / ねじれネジ",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -15476,7 +15280,7 @@
               ]
             },
             {
-              "name": "東山 / ねじれネジ",
+              "name": "東山 / 無尽蔵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -15496,7 +15300,7 @@
               ]
             },
             {
-              "name": "東山 / 無尽蔵",
+              "name": "東山 / ねじれネジ",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -15737,7 +15541,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ねじれネジ",
+          "name": "東山 / 無尽蔵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -15759,7 +15563,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / 無尽蔵",
+          "name": "東山 / ねじれネジ",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -26013,7 +25817,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]めぞん／いぬ／CITY／マルセイユ／官兵衛／キンボシ／まちるだ／シンクロニシティ／他"
+        "[ネタ＆コーナーライブ]ドンデコルテ／めぞん／いぬ／CITY／マルセイユ／官兵衛／キンボシ／まちるだ／シンクロニシティ／他"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -33873,6 +33677,666 @@
     {
       "performerId": "maison",
       "date": "2026-11-15",
+      "openTime": "10:15",
+      "startTime": "10:30",
+      "title": "渋谷よしもと漫才劇場 特別寄席",
+      "venue": "渋谷よしもと漫才劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "shibuya",
+      "theaterName": "渋谷",
+      "performersText": [
+        "[ネタライブ]滝音／エバース／めぞん／オフローズ／軟水／ゼロカラン／ザ・パンチ／サルゴリラ／チェリー大作戦／他"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison",
+        "nansui"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [
+        {
+          "score": 14,
+          "performerId": "maison",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68339/54215",
+          "title": "超時空笑塞メゾロス",
+          "date": "2026-11-15",
+          "venue": "渋谷よしもと漫才劇場（東京都）",
+          "openTime": "16:30",
+          "startTime": "16:45",
+          "ticketStatus": "",
+          "ticketOptions": [],
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-05T10:00:00+09:00",
+              "endAt": "2026-11-15T14:45:00+09:00"
+            },
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-10-05T10:00:00+09:00",
+              "endAt": "2026-11-15T14:45:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-10-05T10:00:00+09:00",
+          "saleEndAt": "2026-11-15T14:45:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": ""
+        },
+        {
+          "score": 14,
+          "performerId": "nansui",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68341/54211",
+          "title": "スマイルキング",
+          "date": "2026-11-15",
+          "venue": "渋谷よしもと漫才劇場（東京都）",
+          "openTime": "20:45",
+          "startTime": "21:00",
+          "ticketStatus": "",
+          "ticketOptions": [],
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-05T10:00:00+09:00",
+              "endAt": "2026-11-15T19:00:00+09:00"
+            },
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-10-05T10:00:00+09:00",
+              "endAt": "2026-11-15T19:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-10-05T10:00:00+09:00",
+          "saleEndAt": "2026-11-15T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": ""
+        },
+        {
+          "score": 10,
+          "performerId": "maison",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/67755/53874",
+          "title": "思い出の扉",
+          "date": "2026-11-15",
+          "venue": "神保町よしもと漫才劇場（東京都）",
+          "openTime": "20:45",
+          "startTime": "21:00",
+          "ticketStatus": "",
+          "ticketOptions": [],
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-05T10:00:00+09:00",
+              "endAt": "2026-11-15T19:00:00+09:00"
+            },
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-10-05T10:00:00+09:00",
+              "endAt": "2026-11-15T19:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-10-05T10:00:00+09:00",
+          "saleEndAt": "2026-11-15T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": ""
+        }
+      ],
+      "ticketListed": true,
+      "ticketOptions": [],
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-10-05T10:00:00+09:00",
+          "endAt": "2026-11-15T14:45:00+09:00",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68339/54215"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-10-05T10:00:00+09:00",
+          "endAt": "2026-11-15T14:45:00+09:00",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68339/54215"
+        },
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-10-05T10:00:00+09:00",
+          "endAt": "2026-11-15T19:00:00+09:00",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68341/54211"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-10-05T10:00:00+09:00",
+          "endAt": "2026-11-15T19:00:00+09:00",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68341/54211"
+        }
+      ],
+      "status": "ticket_listed",
+      "ticketStatus": "",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68339/54215",
+      "saleStartAt": "2026-10-05T10:00:00+09:00",
+      "saleEndAt": "2026-11-15T14:45:00+09:00",
+      "saleCategory": "first_come",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-15",
+      "openTime": "11:45",
+      "startTime": "12:00",
+      "title": "渋谷よしもと漫才劇場 特別寄席",
+      "venue": "渋谷よしもと漫才劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "shibuya",
+      "theaterName": "渋谷",
+      "performersText": [
+        "[ネタライブ]滝音／エバース／めぞん／オフローズ／軟水／ゼロカラン／ザ・パンチ／サルゴリラ／チェリー大作戦／他"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison",
+        "nansui"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [
+        {
+          "score": 14,
+          "performerId": "maison",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68339/54215",
+          "title": "超時空笑塞メゾロス",
+          "date": "2026-11-15",
+          "venue": "渋谷よしもと漫才劇場（東京都）",
+          "openTime": "16:30",
+          "startTime": "16:45",
+          "ticketStatus": "",
+          "ticketOptions": [],
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-05T10:00:00+09:00",
+              "endAt": "2026-11-15T14:45:00+09:00"
+            },
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-10-05T10:00:00+09:00",
+              "endAt": "2026-11-15T14:45:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-10-05T10:00:00+09:00",
+          "saleEndAt": "2026-11-15T14:45:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": ""
+        },
+        {
+          "score": 14,
+          "performerId": "nansui",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68341/54211",
+          "title": "スマイルキング",
+          "date": "2026-11-15",
+          "venue": "渋谷よしもと漫才劇場（東京都）",
+          "openTime": "20:45",
+          "startTime": "21:00",
+          "ticketStatus": "",
+          "ticketOptions": [],
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-05T10:00:00+09:00",
+              "endAt": "2026-11-15T19:00:00+09:00"
+            },
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-10-05T10:00:00+09:00",
+              "endAt": "2026-11-15T19:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-10-05T10:00:00+09:00",
+          "saleEndAt": "2026-11-15T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": ""
+        },
+        {
+          "score": 10,
+          "performerId": "maison",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/67755/53874",
+          "title": "思い出の扉",
+          "date": "2026-11-15",
+          "venue": "神保町よしもと漫才劇場（東京都）",
+          "openTime": "20:45",
+          "startTime": "21:00",
+          "ticketStatus": "",
+          "ticketOptions": [],
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-05T10:00:00+09:00",
+              "endAt": "2026-11-15T19:00:00+09:00"
+            },
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-10-05T10:00:00+09:00",
+              "endAt": "2026-11-15T19:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-10-05T10:00:00+09:00",
+          "saleEndAt": "2026-11-15T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": ""
+        }
+      ],
+      "ticketListed": true,
+      "ticketOptions": [],
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-10-05T10:00:00+09:00",
+          "endAt": "2026-11-15T14:45:00+09:00",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68339/54215"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-10-05T10:00:00+09:00",
+          "endAt": "2026-11-15T14:45:00+09:00",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68339/54215"
+        },
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-10-05T10:00:00+09:00",
+          "endAt": "2026-11-15T19:00:00+09:00",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68341/54211"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-10-05T10:00:00+09:00",
+          "endAt": "2026-11-15T19:00:00+09:00",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68341/54211"
+        }
+      ],
+      "status": "ticket_listed",
+      "ticketStatus": "",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68339/54215",
+      "saleStartAt": "2026-10-05T10:00:00+09:00",
+      "saleEndAt": "2026-11-15T14:45:00+09:00",
+      "saleCategory": "first_come",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-15",
+      "openTime": "13:15",
+      "startTime": "13:30",
+      "title": "渋谷よしもと漫才劇場 特別寄席",
+      "venue": "渋谷よしもと漫才劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "shibuya",
+      "theaterName": "渋谷",
+      "performersText": [
+        "[ネタライブ]滝音／エバース／めぞん／オフローズ／軟水／ゼロカラン／ザ・パンチ／サルゴリラ／チェリー大作戦／他"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison",
+        "nansui"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [
+        {
+          "score": 14,
+          "performerId": "maison",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68339/54215",
+          "title": "超時空笑塞メゾロス",
+          "date": "2026-11-15",
+          "venue": "渋谷よしもと漫才劇場（東京都）",
+          "openTime": "16:30",
+          "startTime": "16:45",
+          "ticketStatus": "",
+          "ticketOptions": [],
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-05T10:00:00+09:00",
+              "endAt": "2026-11-15T14:45:00+09:00"
+            },
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-10-05T10:00:00+09:00",
+              "endAt": "2026-11-15T14:45:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-10-05T10:00:00+09:00",
+          "saleEndAt": "2026-11-15T14:45:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": ""
+        },
+        {
+          "score": 14,
+          "performerId": "nansui",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68341/54211",
+          "title": "スマイルキング",
+          "date": "2026-11-15",
+          "venue": "渋谷よしもと漫才劇場（東京都）",
+          "openTime": "20:45",
+          "startTime": "21:00",
+          "ticketStatus": "",
+          "ticketOptions": [],
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-05T10:00:00+09:00",
+              "endAt": "2026-11-15T19:00:00+09:00"
+            },
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-10-05T10:00:00+09:00",
+              "endAt": "2026-11-15T19:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-10-05T10:00:00+09:00",
+          "saleEndAt": "2026-11-15T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": ""
+        },
+        {
+          "score": 10,
+          "performerId": "maison",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/67755/53874",
+          "title": "思い出の扉",
+          "date": "2026-11-15",
+          "venue": "神保町よしもと漫才劇場（東京都）",
+          "openTime": "20:45",
+          "startTime": "21:00",
+          "ticketStatus": "",
+          "ticketOptions": [],
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-05T10:00:00+09:00",
+              "endAt": "2026-11-15T19:00:00+09:00"
+            },
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-10-05T10:00:00+09:00",
+              "endAt": "2026-11-15T19:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-10-05T10:00:00+09:00",
+          "saleEndAt": "2026-11-15T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": ""
+        }
+      ],
+      "ticketListed": true,
+      "ticketOptions": [],
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-10-05T10:00:00+09:00",
+          "endAt": "2026-11-15T14:45:00+09:00",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68339/54215"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-10-05T10:00:00+09:00",
+          "endAt": "2026-11-15T14:45:00+09:00",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68339/54215"
+        },
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-10-05T10:00:00+09:00",
+          "endAt": "2026-11-15T19:00:00+09:00",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68341/54211"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-10-05T10:00:00+09:00",
+          "endAt": "2026-11-15T19:00:00+09:00",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68341/54211"
+        }
+      ],
+      "status": "ticket_listed",
+      "ticketStatus": "",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68339/54215",
+      "saleStartAt": "2026-10-05T10:00:00+09:00",
+      "saleEndAt": "2026-11-15T14:45:00+09:00",
+      "saleCategory": "first_come",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-15",
+      "openTime": "14:45",
+      "startTime": "15:00",
+      "title": "渋谷よしもと漫才劇場 特別寄席",
+      "venue": "渋谷よしもと漫才劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "shibuya",
+      "theaterName": "渋谷",
+      "performersText": [
+        "[ネタライブ]滝音／エバース／めぞん／オフローズ／軟水／ゼロカラン／ザ・パンチ／サルゴリラ／チェリー大作戦／他"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison",
+        "nansui"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [
+        {
+          "score": 14,
+          "performerId": "maison",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68339/54215",
+          "title": "超時空笑塞メゾロス",
+          "date": "2026-11-15",
+          "venue": "渋谷よしもと漫才劇場（東京都）",
+          "openTime": "16:30",
+          "startTime": "16:45",
+          "ticketStatus": "",
+          "ticketOptions": [],
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-05T10:00:00+09:00",
+              "endAt": "2026-11-15T14:45:00+09:00"
+            },
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-10-05T10:00:00+09:00",
+              "endAt": "2026-11-15T14:45:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-10-05T10:00:00+09:00",
+          "saleEndAt": "2026-11-15T14:45:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": ""
+        },
+        {
+          "score": 14,
+          "performerId": "nansui",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68341/54211",
+          "title": "スマイルキング",
+          "date": "2026-11-15",
+          "venue": "渋谷よしもと漫才劇場（東京都）",
+          "openTime": "20:45",
+          "startTime": "21:00",
+          "ticketStatus": "",
+          "ticketOptions": [],
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-05T10:00:00+09:00",
+              "endAt": "2026-11-15T19:00:00+09:00"
+            },
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-10-05T10:00:00+09:00",
+              "endAt": "2026-11-15T19:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-10-05T10:00:00+09:00",
+          "saleEndAt": "2026-11-15T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": ""
+        },
+        {
+          "score": 10,
+          "performerId": "maison",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/67755/53874",
+          "title": "思い出の扉",
+          "date": "2026-11-15",
+          "venue": "神保町よしもと漫才劇場（東京都）",
+          "openTime": "20:45",
+          "startTime": "21:00",
+          "ticketStatus": "",
+          "ticketOptions": [],
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-05T10:00:00+09:00",
+              "endAt": "2026-11-15T19:00:00+09:00"
+            },
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-10-05T10:00:00+09:00",
+              "endAt": "2026-11-15T19:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-10-05T10:00:00+09:00",
+          "saleEndAt": "2026-11-15T19:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": ""
+        }
+      ],
+      "ticketListed": true,
+      "ticketOptions": [],
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-10-05T10:00:00+09:00",
+          "endAt": "2026-11-15T14:45:00+09:00",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68339/54215"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-10-05T10:00:00+09:00",
+          "endAt": "2026-11-15T14:45:00+09:00",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68339/54215"
+        },
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-10-05T10:00:00+09:00",
+          "endAt": "2026-11-15T19:00:00+09:00",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68341/54211"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-10-05T10:00:00+09:00",
+          "endAt": "2026-11-15T19:00:00+09:00",
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/68341/54211"
+        }
+      ],
+      "status": "ticket_listed",
+      "ticketStatus": "",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/68339/54215",
+      "saleStartAt": "2026-10-05T10:00:00+09:00",
+      "saleEndAt": "2026-11-15T14:45:00+09:00",
+      "saleCategory": "first_come",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-15",
       "openTime": "16:30",
       "startTime": "16:45",
       "title": "超時空笑塞メゾロス",
@@ -37038,7 +37502,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]さや香／めぞん／今井らいぱち／やさしいズ／ケビンス／世間知らズ／アメリカンBBチキン／ヘンダーソン／他"
+        "[ネタ＆コーナーライブ]さや香／めぞん／今井らいぱち／やさしいズ／ケビンス／世間知らズ／アメリカンBBチキン／ヘンダーソン／カゲヤマ／他"
       ],
       "newUntil": "",
       "trackedPerformers": [
