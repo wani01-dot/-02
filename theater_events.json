@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-02T06:13:56.934997+00:00",
+  "syncedAt": "2026-10-02T12:30:46.048465+00:00",
   "events": [
     {
       "performerId": "nansui",
@@ -545,7 +545,7 @@
       "saleCategory": "",
       "salePeriods": [],
       "performersText": [
-        "[企画ライブ]イチゴ／大王／めぞん／大石／イザナミン／美バンブー"
+        "[企画ライブ]イチゴ／大王／めぞん／ジュン(大石・宮原健斗)／イザナミン／美バンブー"
       ],
       "publishedVia": "theater",
       "hasStreaming": false,
@@ -795,7 +795,7 @@
       "saleCategory": "",
       "salePeriods": [],
       "performersText": [
-        "めぞん／カゲヤマ／生ファラオ／ソマオ・ミートボール／プリズンクイズチャンネル／ボブのコーラ／【MC】ビューティフルトーキョーマンズ 鈴木バイダン"
+        "めぞん／カゲヤマ／生ファラオ／ソマオ・ミートボール／プリズンクイズチャンネル／【MC】ビューティフルトーキョーマンズ 鈴木バイダン"
       ],
       "publishedVia": "theater",
       "hasStreaming": false,
@@ -2495,7 +2495,7 @@
       "saleCategory": "",
       "salePeriods": [],
       "performersText": [
-        "[ネタ＆コーナーライブ]めぞん／いぬ／CITY／マルセイユ／官兵衛／キンボシ／まちるだ／シンクロニシティ／他"
+        "[ネタ＆コーナーライブ]ドンデコルテ／めぞん／いぬ／CITY／マルセイユ／官兵衛／キンボシ／まちるだ／シンクロニシティ／他"
       ],
       "publishedVia": "theater",
       "hasStreaming": false,
@@ -3982,6 +3982,206 @@
     {
       "performerId": "maison",
       "date": "2026-11-15",
+      "openTime": "10:15",
+      "startTime": "10:30",
+      "title": "渋谷よしもと漫才劇場 特別寄席",
+      "venue": "渋谷よしもと漫才劇場",
+      "source": "theater",
+      "sourceUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "shibuya",
+      "theaterName": "渋谷",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "[ネタライブ]滝音／エバース／めぞん／オフローズ／軟水／ゼロカラン／ザ・パンチ／サルゴリラ／チェリー大作戦／他"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|shibuya|maison|2026-11-15|10:30|渋谷よしもと漫才劇場特別寄席"
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-11-15",
+      "openTime": "10:15",
+      "startTime": "10:30",
+      "title": "渋谷よしもと漫才劇場 特別寄席",
+      "venue": "渋谷よしもと漫才劇場",
+      "source": "theater",
+      "sourceUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "shibuya",
+      "theaterName": "渋谷",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "[ネタライブ]滝音／エバース／めぞん／オフローズ／軟水／ゼロカラン／ザ・パンチ／サルゴリラ／チェリー大作戦／他"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|shibuya|nansui|2026-11-15|10:30|渋谷よしもと漫才劇場特別寄席"
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-15",
+      "openTime": "11:45",
+      "startTime": "12:00",
+      "title": "渋谷よしもと漫才劇場 特別寄席",
+      "venue": "渋谷よしもと漫才劇場",
+      "source": "theater",
+      "sourceUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "shibuya",
+      "theaterName": "渋谷",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "[ネタライブ]滝音／エバース／めぞん／オフローズ／軟水／ゼロカラン／ザ・パンチ／サルゴリラ／チェリー大作戦／他"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|shibuya|maison|2026-11-15|12:00|渋谷よしもと漫才劇場特別寄席"
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-11-15",
+      "openTime": "11:45",
+      "startTime": "12:00",
+      "title": "渋谷よしもと漫才劇場 特別寄席",
+      "venue": "渋谷よしもと漫才劇場",
+      "source": "theater",
+      "sourceUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "shibuya",
+      "theaterName": "渋谷",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "[ネタライブ]滝音／エバース／めぞん／オフローズ／軟水／ゼロカラン／ザ・パンチ／サルゴリラ／チェリー大作戦／他"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|shibuya|nansui|2026-11-15|12:00|渋谷よしもと漫才劇場特別寄席"
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-15",
+      "openTime": "13:15",
+      "startTime": "13:30",
+      "title": "渋谷よしもと漫才劇場 特別寄席",
+      "venue": "渋谷よしもと漫才劇場",
+      "source": "theater",
+      "sourceUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "shibuya",
+      "theaterName": "渋谷",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "[ネタライブ]滝音／エバース／めぞん／オフローズ／軟水／ゼロカラン／ザ・パンチ／サルゴリラ／チェリー大作戦／他"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|shibuya|maison|2026-11-15|13:30|渋谷よしもと漫才劇場特別寄席"
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-11-15",
+      "openTime": "13:15",
+      "startTime": "13:30",
+      "title": "渋谷よしもと漫才劇場 特別寄席",
+      "venue": "渋谷よしもと漫才劇場",
+      "source": "theater",
+      "sourceUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "shibuya",
+      "theaterName": "渋谷",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "[ネタライブ]滝音／エバース／めぞん／オフローズ／軟水／ゼロカラン／ザ・パンチ／サルゴリラ／チェリー大作戦／他"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|shibuya|nansui|2026-11-15|13:30|渋谷よしもと漫才劇場特別寄席"
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-15",
+      "openTime": "14:45",
+      "startTime": "15:00",
+      "title": "渋谷よしもと漫才劇場 特別寄席",
+      "venue": "渋谷よしもと漫才劇場",
+      "source": "theater",
+      "sourceUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "shibuya",
+      "theaterName": "渋谷",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "[ネタライブ]滝音／エバース／めぞん／オフローズ／軟水／ゼロカラン／ザ・パンチ／サルゴリラ／チェリー大作戦／他"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|shibuya|maison|2026-11-15|15:00|渋谷よしもと漫才劇場特別寄席"
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-11-15",
+      "openTime": "14:45",
+      "startTime": "15:00",
+      "title": "渋谷よしもと漫才劇場 特別寄席",
+      "venue": "渋谷よしもと漫才劇場",
+      "source": "theater",
+      "sourceUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "shibuya",
+      "theaterName": "渋谷",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "[ネタライブ]滝音／エバース／めぞん／オフローズ／軟水／ゼロカラン／ザ・パンチ／サルゴリラ／チェリー大作戦／他"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|shibuya|nansui|2026-11-15|15:00|渋谷よしもと漫才劇場特別寄席"
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-15",
       "openTime": "16:30",
       "startTime": "16:45",
       "title": "超時空笑塞メゾロス",
@@ -4447,7 +4647,7 @@
       "saleCategory": "",
       "salePeriods": [],
       "performersText": [
-        "[ネタ＆コーナーライブ]さや香／めぞん／今井らいぱち／やさしいズ／ケビンス／世間知らズ／アメリカンBBチキン／ヘンダーソン／他"
+        "[ネタ＆コーナーライブ]さや香／めぞん／今井らいぱち／やさしいズ／ケビンス／世間知らズ／アメリカンBBチキン／ヘンダーソン／カゲヤマ／他"
       ],
       "publishedVia": "theater",
       "hasStreaming": false,
