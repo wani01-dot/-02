@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-02T00:45:44.491742+00:00",
+  "syncedAt": "2026-10-02T06:15:27.897828+00:00",
   "performers": [
     {
       "id": "maison",
@@ -2001,7 +2001,7 @@
       "venue": "ハイジアV-1(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/523371",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -4668,7 +4668,7 @@
           ]
         },
         {
-          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+          "name": "東山 / ねじれネジ",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -4682,7 +4682,7 @@
               "label": "",
               "startAt": "2026-09-04T22:30:00+09:00",
               "endAt": "2026-09-14T23:59:00+09:00",
-              "saleKey": "livepocket|maison|dnqhf|東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵|先着|advance|2026-09-04T22:30:00+09:00"
+              "saleKey": "livepocket|maison|dnqhf|東山 / ねじれネジ|先着|advance|2026-09-04T22:30:00+09:00"
             }
           ]
         },
@@ -7419,6 +7419,7 @@
       "performersText": [
         "ザ・パンチ",
         "５ＧＡＰ",
+        "スパイク",
         "めぞん",
         "・1回の先着申込で申込可能な公演数は『",
         "1公演",
@@ -10530,6 +10531,84 @@
       ]
     },
     {
+      "performerId": "maison",
+      "date": "2026-11-01",
+      "openTime": "18:30",
+      "startTime": "19:00",
+      "title": "ルミネtheよしもと 若手ネタフェスティバル",
+      "venue": "ルミネtheよしもと（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/69930/55018",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-10-03T11:00:00+09:00",
+      "saleEndAt": "2026-10-05T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-10-03T11:00:00+09:00",
+          "endAt": "2026-10-05T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "ダブルヒガシ",
+        "ミカボ",
+        "9番街レトロ",
+        "めぞん",
+        "大王",
+        "軟水",
+        "金魚番長",
+        "ゼロカラン"
+      ],
+      "firstSeenAt": "2026-10-02T06:15:27.895349+00:00",
+      "newUntil": "2026-10-04T06:15:27.895363+00:00",
+      "trackedPerformers": [
+        "maison",
+        "nansui"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-11-01",
+      "openTime": "18:30",
+      "startTime": "19:00",
+      "title": "ルミネtheよしもと 若手ネタフェスティバル",
+      "venue": "ルミネtheよしもと（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/69930/55018",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-10-03T11:00:00+09:00",
+      "saleEndAt": "2026-10-05T11:00:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-10-03T11:00:00+09:00",
+          "endAt": "2026-10-05T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "ダブルヒガシ",
+        "ミカボ",
+        "9番街レトロ",
+        "めぞん",
+        "大王",
+        "軟水",
+        "金魚番長",
+        "ゼロカラン"
+      ],
+      "firstSeenAt": "2026-10-02T06:15:27.895349+00:00",
+      "newUntil": "2026-10-04T06:15:27.895363+00:00",
+      "trackedPerformers": [
+        "maison",
+        "nansui"
+      ]
+    },
+    {
       "performerId": "pyuto",
       "date": "2026-11-02",
       "openTime": "18:45",
@@ -12498,18 +12577,18 @@
       "title": "イワサキリュウpresents お客様のお悩み解決！コント・・・",
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/69652/54934",
+      "sourceUrl": "https://ticket.fany.lol/reception/69668/54934",
       "ticketStatus": "",
       "ticketOptions": [],
-      "saleStartAt": "2026-09-30T11:00:00+09:00",
-      "saleEndAt": "2026-10-02T11:00:00+09:00",
-      "saleCategory": "advance",
+      "saleStartAt": "2026-10-05T10:00:00+09:00",
+      "saleEndAt": "2026-11-12T19:15:00+09:00",
+      "saleCategory": "first_come",
       "salePeriods": [
         {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-09-30T11:00:00+09:00",
-          "endAt": "2026-10-02T11:00:00+09:00"
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-10-05T10:00:00+09:00",
+          "endAt": "2026-11-12T19:15:00+09:00"
         }
       ],
       "performersText": [
@@ -12518,7 +12597,13 @@
         "世間知らズ",
         "ブラゴーリ",
         "軟水",
-        "鉄人小町"
+        "鉄人小町",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
       ],
       "firstSeenAt": "2026-09-29T02:45:07.817465+00:00",
       "newUntil": "2026-10-01T02:45:07.817478+00:00",
@@ -12593,6 +12678,7 @@
       ],
       "performersText": [
         "ただならぬ刀",
+        "エルフ",
         "ピュート",
         "エグい速さ",
         "・1回の先着申込で申込可能な公演数は『",
@@ -13184,8 +13270,28 @@
       "venue": "大宮ラクーンよしもと劇場（埼玉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/69547/54812",
-      "ticketStatus": "",
-      "ticketOptions": [],
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-02T10:00:00+09:00",
+              "endAt": "2026-11-19T17:00:00+09:00",
+              "saleKey": "fany|maison|69547|54812|全席指定|前売|first_come|2026-10-02T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-10-02T10:00:00+09:00",
+          "saleEndAt": "2026-11-19T17:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
       "saleStartAt": "2026-10-02T10:00:00+09:00",
       "saleEndAt": "2026-11-19T17:00:00+09:00",
       "saleCategory": "first_come",
@@ -13984,24 +14090,30 @@
       "title": "チョコレートプラネットコントセッション",
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/69655/54931",
+      "sourceUrl": "https://ticket.fany.lol/reception/69671/54931",
       "ticketStatus": "",
       "ticketOptions": [],
-      "saleStartAt": "2026-09-30T11:00:00+09:00",
-      "saleEndAt": "2026-10-02T11:00:00+09:00",
-      "saleCategory": "advance",
+      "saleStartAt": "2026-10-05T10:00:00+09:00",
+      "saleEndAt": "2026-11-26T17:00:00+09:00",
+      "saleCategory": "first_come",
       "salePeriods": [
         {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-09-30T11:00:00+09:00",
-          "endAt": "2026-10-02T11:00:00+09:00"
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-10-05T10:00:00+09:00",
+          "endAt": "2026-11-26T17:00:00+09:00"
         }
       ],
       "performersText": [
         "チョコレートプラネット",
         "ぶったま",
-        "ピュート"
+        "ピュート",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
       ],
       "firstSeenAt": "2026-09-29T02:45:07.817465+00:00",
       "newUntil": "2026-10-01T02:45:07.817478+00:00",
@@ -14126,18 +14238,18 @@
       "title": "360°コント",
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/69656/54932",
+      "sourceUrl": "https://ticket.fany.lol/reception/69672/54932",
       "ticketStatus": "",
       "ticketOptions": [],
-      "saleStartAt": "2026-09-30T11:00:00+09:00",
-      "saleEndAt": "2026-10-02T11:00:00+09:00",
-      "saleCategory": "advance",
+      "saleStartAt": "2026-10-05T10:00:00+09:00",
+      "saleEndAt": "2026-11-27T18:00:00+09:00",
+      "saleCategory": "first_come",
       "salePeriods": [
         {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-09-30T11:00:00+09:00",
-          "endAt": "2026-10-02T11:00:00+09:00"
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-10-05T10:00:00+09:00",
+          "endAt": "2026-11-27T18:00:00+09:00"
         }
       ],
       "performersText": [
@@ -14145,7 +14257,13 @@
         "ピュート",
         "ザンゾウ",
         "DOG FOOD PARTY",
-        "エグい速さ"
+        "エグい速さ",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
       ],
       "firstSeenAt": "2026-09-29T02:45:07.817465+00:00",
       "newUntil": "2026-10-01T02:45:07.817478+00:00",
@@ -14162,18 +14280,18 @@
       "title": "360°コント",
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/69656/54932",
+      "sourceUrl": "https://ticket.fany.lol/reception/69672/54932",
       "ticketStatus": "",
       "ticketOptions": [],
-      "saleStartAt": "2026-09-30T11:00:00+09:00",
-      "saleEndAt": "2026-10-02T11:00:00+09:00",
-      "saleCategory": "advance",
+      "saleStartAt": "2026-10-05T10:00:00+09:00",
+      "saleEndAt": "2026-11-27T18:00:00+09:00",
+      "saleCategory": "first_come",
       "salePeriods": [
         {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-09-30T11:00:00+09:00",
-          "endAt": "2026-10-02T11:00:00+09:00"
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-10-05T10:00:00+09:00",
+          "endAt": "2026-11-27T18:00:00+09:00"
         }
       ],
       "performersText": [
@@ -14181,7 +14299,13 @@
         "ピュート",
         "ザンゾウ",
         "DOG FOOD PARTY",
-        "エグい速さ"
+        "エグい速さ",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
       ],
       "firstSeenAt": "2026-09-29T02:45:07.817465+00:00",
       "newUntil": "2026-10-01T02:45:07.817478+00:00",
