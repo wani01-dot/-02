@@ -1,9 +1,9 @@
 {
-  "syncedAt": "2026-10-01T23:03:56.843319+00:00",
+  "syncedAt": "2026-10-02T02:18:16.214701+00:00",
   "total": 163,
   "ticketListedCount": 163,
   "ticketUnlistedCount": 0,
-  "ticketOptionCount": 276,
+  "ticketOptionCount": 281,
   "salePeriodCount": 834,
   "events": [
     {
@@ -9775,12 +9775,12 @@
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "10:45",
           "startTime": "11:00",
-          "ticketStatus": "予定数終了",
+          "ticketStatus": "残りわずか",
           "ticketOptions": [
             {
               "name": "全席指定",
               "type": "前売",
-              "status": "予定数終了",
+              "status": "残りわずか",
               "price": "￥2,500",
               "remaining": null,
               "remainingText": "",
@@ -10131,7 +10131,7 @@
         {
           "name": "全席指定",
           "type": "前売",
-          "status": "予定数終了",
+          "status": "残りわずか",
           "price": "￥2,500",
           "remaining": null,
           "remainingText": "",
@@ -10171,6 +10171,28 @@
           ],
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/64655/52236"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-11T11:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-11T11:00:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/64655/52237"
         },
         {
           "name": "全席指定",
@@ -10322,7 +10344,7 @@
         }
       ],
       "status": "ticket_listed",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "残りわずか",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64655/52236",
       "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -10439,12 +10461,12 @@
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "10:45",
           "startTime": "11:00",
-          "ticketStatus": "予定数終了",
+          "ticketStatus": "残りわずか",
           "ticketOptions": [
             {
               "name": "全席指定",
               "type": "前売",
-              "status": "予定数終了",
+              "status": "残りわずか",
               "price": "￥2,500",
               "remaining": null,
               "remainingText": "",
@@ -10763,6 +10785,28 @@
           ],
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/64655/52237"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "残りわずか",
+          "price": "￥2,500",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-11T09:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-11T09:00:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/64655/52236"
         },
         {
           "name": "全席指定",
@@ -11031,12 +11075,12 @@
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "10:45",
           "startTime": "11:00",
-          "ticketStatus": "予定数終了",
+          "ticketStatus": "残りわずか",
           "ticketOptions": [
             {
               "name": "全席指定",
               "type": "前売",
-              "status": "予定数終了",
+              "status": "残りわずか",
               "price": "￥2,500",
               "remaining": null,
               "remainingText": "",
@@ -11359,6 +11403,28 @@
         {
           "name": "全席指定",
           "type": "前売",
+          "status": "残りわずか",
+          "price": "￥2,500",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-11T09:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-11T09:00:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/64655/52236"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
           "status": "予定数終了",
           "price": "￥1,500",
           "remaining": null,
@@ -11621,12 +11687,12 @@
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "10:45",
           "startTime": "11:00",
-          "ticketStatus": "予定数終了",
+          "ticketStatus": "残りわずか",
           "ticketOptions": [
             {
               "name": "全席指定",
               "type": "前売",
-              "status": "予定数終了",
+              "status": "残りわずか",
               "price": "￥2,500",
               "remaining": null,
               "remainingText": "",
@@ -11877,7 +11943,7 @@
         {
           "name": "全席指定",
           "type": "前売",
-          "status": "予定数終了",
+          "status": "残りわずか",
           "price": "￥2,500",
           "remaining": null,
           "remainingText": "",
@@ -11917,6 +11983,28 @@
           ],
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/64655/52236"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-11T11:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-11T11:00:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/64655/52237"
         }
       ],
       "salePeriods": [
@@ -12101,12 +12189,12 @@
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "10:45",
           "startTime": "11:00",
-          "ticketStatus": "予定数終了",
+          "ticketStatus": "残りわずか",
           "ticketOptions": [
             {
               "name": "全席指定",
               "type": "前売",
-              "status": "予定数終了",
+              "status": "残りわずか",
               "price": "￥2,500",
               "remaining": null,
               "remainingText": "",
@@ -12357,7 +12445,7 @@
         {
           "name": "全席指定",
           "type": "前売",
-          "status": "予定数終了",
+          "status": "残りわずか",
           "price": "￥2,500",
           "remaining": null,
           "remainingText": "",
@@ -12397,6 +12485,28 @@
           ],
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/64655/52236"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥2,500",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-09-05T10:00:00+09:00",
+          "saleEndAt": "2026-10-11T11:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-09-05T10:00:00+09:00",
+              "endAt": "2026-10-11T11:00:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/64655/52237"
         }
       ],
       "salePeriods": [
@@ -12900,7 +13010,7 @@
               ]
             },
             {
-              "name": "東山 / ねじれネジ",
+              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -13161,7 +13271,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ねじれネジ",
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -13722,7 +13832,7 @@
               ]
             },
             {
-              "name": "東山 / ねじれネジ",
+              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -13983,7 +14093,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ねじれネジ",
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -14544,7 +14654,7 @@
               ]
             },
             {
-              "name": "東山 / ねじれネジ",
+              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -14805,7 +14915,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ねじれネジ",
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -15366,7 +15476,7 @@
               ]
             },
             {
-              "name": "東山 / ねじれネジ",
+              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -15627,7 +15737,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ねじれネジ",
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
           "price": "",
