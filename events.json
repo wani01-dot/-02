@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-03T05:48:16.526227+00:00",
+  "syncedAt": "2026-10-03T10:42:51.939027+00:00",
   "performers": [
     {
       "id": "maison",
@@ -388,51 +388,25 @@
       "title": "ごきげん会？ポポポポーン？",
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/64819/52170",
-      "ticketStatus": "販売中",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "販売中",
-          "price": "￥2,000",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-03T15:15:00+09:00",
-              "saleKey": "fany|nansui|64819|52170|全席指定|当日|first_come|2026-09-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-03T15:15:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-09-05T10:00:00+09:00",
-      "saleEndAt": "2026-10-03T15:15:00+09:00",
-      "saleCategory": "first_come",
+      "sourceUrl": "https://ticket.fany.lol/reception/64727/52170",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-08-25T11:00:00+09:00",
+      "saleEndAt": "2026-08-28T11:00:00+09:00",
+      "saleCategory": "advance",
       "salePeriods": [
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-09-05T10:00:00+09:00",
-          "endAt": "2026-10-03T15:15:00+09:00"
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-08-25T11:00:00+09:00",
+          "endAt": "2026-08-28T11:00:00+09:00"
         }
       ],
       "performersText": [
         "軟水",
         "シンクロニシティ",
         "ぎょうぶ",
-        "うただ",
-        "・1回の先着申込で申込可能な公演数は『",
-        "1公演",
-        "』",
-        "枚数は『",
-        "10枚まで",
-        "・座席番号や整理番号は"
+        "うただ"
       ],
       "firstSeenAt": "2026-09-19T01:35:00.443801+00:00",
       "newUntil": "",
@@ -449,28 +423,8 @@
       "venue": "大宮ラクーンよしもと劇場（埼玉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/66667/52965",
-      "ticketStatus": "販売中",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "販売中",
-          "price": "￥2,100",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-08T10:00:00+09:00",
-              "endAt": "2026-10-03T16:30:00+09:00",
-              "saleKey": "fany|maison|66667|52965|全席指定|当日|first_come|2026-09-08T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-09-08T10:00:00+09:00",
-          "saleEndAt": "2026-10-03T16:30:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
+      "ticketStatus": "",
+      "ticketOptions": [],
       "saleStartAt": "2026-09-08T10:00:00+09:00",
       "saleEndAt": "2026-10-03T16:30:00+09:00",
       "saleCategory": "first_come",
@@ -515,70 +469,25 @@
       "title": "新ネタ音曲漫才 ～ゲストを交えてネタ＆トーク～",
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/65054/52417",
-      "ticketStatus": "一部予定数終了",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "販売中",
-          "price": "￥2,000",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-03T18:45:00+09:00",
-              "saleKey": "fany|pyuto|65054|52417|全席指定|当日|first_come|2026-09-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-03T18:45:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        },
-        {
-          "name": "立見（整理番号付）",
-          "type": "当日",
-          "status": "予定数終了",
-          "price": "￥1,500",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-03T18:45:00+09:00",
-              "saleKey": "fany|pyuto|65054|52417|立見（整理番号付）|当日|first_come|2026-09-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-03T18:45:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-09-05T10:00:00+09:00",
-      "saleEndAt": "2026-10-03T18:45:00+09:00",
-      "saleCategory": "first_come",
+      "sourceUrl": "https://ticket.fany.lol/reception/65024/52417",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-08-25T11:00:00+09:00",
+      "saleEndAt": "2026-08-28T11:00:00+09:00",
+      "saleCategory": "advance",
       "salePeriods": [
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-09-05T10:00:00+09:00",
-          "endAt": "2026-10-03T18:45:00+09:00"
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-08-25T11:00:00+09:00",
+          "endAt": "2026-08-28T11:00:00+09:00"
         }
       ],
       "performersText": [
         "ラニーノーズ",
         "ピュート",
         "酒井孝太",
-        "ヘンダーソン",
-        "・1回の先着申込で申込可能な公演数は『",
-        "1公演",
-        "』",
-        "枚数は『",
-        "10枚まで",
-        "・座席番号や整理番号は"
+        "ヘンダーソン"
       ],
       "firstSeenAt": "2026-09-19T01:52:13.188696+00:00",
       "newUntil": "",
@@ -594,38 +503,18 @@
       "title": "六本木ブラゴーリパーク",
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/67247/53623",
-      "ticketStatus": "販売中",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "販売中",
-          "price": "￥3,000",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-17T10:00:00+09:00",
-              "endAt": "2026-10-03T19:00:00+09:00",
-              "saleKey": "fany|nansui|67247|53623|全席指定|当日|first_come|2026-09-17T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-09-17T10:00:00+09:00",
-          "saleEndAt": "2026-10-03T19:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-09-17T10:00:00+09:00",
-      "saleEndAt": "2026-10-03T19:00:00+09:00",
-      "saleCategory": "first_come",
+      "sourceUrl": "https://ticket.fany.lol/reception/67245/53623",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-09-13T11:00:00+09:00",
+      "saleEndAt": "2026-09-15T11:00:00+09:00",
+      "saleCategory": "advance",
       "salePeriods": [
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-09-17T10:00:00+09:00",
-          "endAt": "2026-10-03T19:00:00+09:00"
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-09-13T11:00:00+09:00",
+          "endAt": "2026-09-15T11:00:00+09:00"
         }
       ],
       "performersText": [
@@ -635,13 +524,7 @@
         "素敵じゃないか 柏木",
         "世間知らズ",
         "ミカボ 山田",
-        "軟水",
-        "・1回の先着申込で申込可能な公演数は『",
-        "1公演",
-        "』",
-        "枚数は『",
-        "10枚まで",
-        "・座席番号や整理番号は"
+        "軟水"
       ],
       "firstSeenAt": "2026-09-19T01:35:00.443801+00:00",
       "newUntil": "",
@@ -1399,7 +1282,7 @@
       "venue": "ハイジアV-1(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/523371",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -2375,12 +2258,12 @@
       "venue": "仙台PIT（宮城県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/62814/50566",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "販売中",
       "ticketOptions": [
         {
           "name": "1Fスタンディング（整理番号付）",
           "type": "前売",
-          "status": "予定数終了",
+          "status": "販売中",
           "price": "￥5,000",
           "salePeriods": [
             {
@@ -4067,6 +3950,25 @@
           ]
         },
         {
+          "name": "東山 / 無尽蔵",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-09-04T22:30:00+09:00",
+          "saleEndAt": "2026-09-14T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-09-04T22:30:00+09:00",
+              "endAt": "2026-09-14T23:59:00+09:00",
+              "saleKey": "livepocket|maison|dnqhf|東山 / 無尽蔵|先着|advance|2026-09-04T22:30:00+09:00"
+            }
+          ]
+        },
+        {
           "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
@@ -4082,25 +3984,6 @@
               "startAt": "2026-09-04T22:30:00+09:00",
               "endAt": "2026-09-14T23:59:00+09:00",
               "saleKey": "livepocket|maison|dnqhf|東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵|先着|advance|2026-09-04T22:30:00+09:00"
-            }
-          ]
-        },
-        {
-          "name": "東山 / ねじれネジ",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-09-04T22:30:00+09:00",
-          "saleEndAt": "2026-09-14T23:59:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-09-04T22:30:00+09:00",
-              "endAt": "2026-09-14T23:59:00+09:00",
-              "saleKey": "livepocket|maison|dnqhf|東山 / ねじれネジ|先着|advance|2026-09-04T22:30:00+09:00"
             }
           ]
         }
