@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-04T15:03:50.842778+00:00",
+  "syncedAt": "2026-10-04T18:35:48.115419+00:00",
   "performers": [
     {
       "id": "maison",
@@ -146,7 +146,7 @@
       "venue": "ハイジアV-1(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/523371",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "予定数終了",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -191,16 +191,16 @@
       "ticketOptions": [
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
-          "price": "￥1,500",
+          "price": "￥2,000",
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-09-05T10:00:00+09:00",
               "endAt": "2026-10-05T19:00:00+09:00",
-              "saleKey": "fany|maison|64824|52171|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+              "saleKey": "fany|maison|64824|52171|全席指定|当日|first_come|2026-09-05T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -575,7 +575,7 @@
       "venue": "中野の劇場サッチー(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/522095",
-      "ticketStatus": "販売終了",
+      "ticketStatus": "予定数終了",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -2511,7 +2511,7 @@
       "venue": "新宿バティオス(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/523480",
-      "ticketStatus": "販売終了",
+      "ticketStatus": "予定数終了",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -2816,25 +2816,6 @@
           ]
         },
         {
-          "name": "東山 / 無尽蔵",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-09-04T22:30:00+09:00",
-          "saleEndAt": "2026-09-14T23:59:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-09-04T22:30:00+09:00",
-              "endAt": "2026-09-14T23:59:00+09:00",
-              "saleKey": "livepocket|maison|dnqhf|東山 / 無尽蔵|先着|advance|2026-09-04T22:30:00+09:00"
-            }
-          ]
-        },
-        {
           "name": "東山 / ねじれネジ",
           "type": "先着",
           "status": "販売中",
@@ -2850,6 +2831,25 @@
               "startAt": "2026-09-04T22:30:00+09:00",
               "endAt": "2026-09-14T23:59:00+09:00",
               "saleKey": "livepocket|maison|dnqhf|東山 / ねじれネジ|先着|advance|2026-09-04T22:30:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "東山 / 無尽蔵",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-09-04T22:30:00+09:00",
+          "saleEndAt": "2026-09-14T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-09-04T22:30:00+09:00",
+              "endAt": "2026-09-14T23:59:00+09:00",
+              "saleKey": "livepocket|maison|dnqhf|東山 / 無尽蔵|先着|advance|2026-09-04T22:30:00+09:00"
             }
           ]
         }
@@ -3621,7 +3621,7 @@
       "venue": "新宿バティオス(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/523550",
-      "ticketStatus": "",
+      "ticketStatus": "予定数終了",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -4586,7 +4586,7 @@
       "venue": "中野の劇場サッチー(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/522101",
-      "ticketStatus": "販売終了",
+      "ticketStatus": "予定数終了",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -5357,34 +5357,6 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison",
-        "pyuto"
-      ]
-    },
-    {
-      "performerId": "pyuto",
-      "date": "2026-10-24",
-      "openTime": "",
-      "startTime": "",
-      "title": "大喜利スパークル vol.1",
-      "venue": "歌舞伎町Sparkle(東京都)",
-      "source": "tiget",
-      "sourceUrl": "https://tiget.net/events/527669",
-      "ticketStatus": "",
-      "ticketOptions": [],
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "salePeriods": [],
-      "performersText": [
-        "フランスピアノなかがわ",
-        "警備員",
-        "ぺるとも",
-        "ピュート",
-        "ジョンソンともゆき"
-      ],
-      "firstSeenAt": "2026-10-03T05:48:16.523920+00:00",
-      "newUntil": "2026-10-05T05:48:16.523933+00:00",
-      "trackedPerformers": [
         "pyuto"
       ]
     },
@@ -6510,7 +6482,7 @@
       "venue": "新宿バティオス(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/518800",
-      "ticketStatus": "販売終了",
+      "ticketStatus": "予定数終了",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -6694,7 +6666,7 @@
       "venue": "杉並公会堂(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/526396",
-      "ticketStatus": "販売終了",
+      "ticketStatus": "予定数終了",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -7147,7 +7119,7 @@
       "venue": "千本桜ホール(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/526404",
-      "ticketStatus": "販売終了",
+      "ticketStatus": "予定数終了",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -7347,7 +7319,7 @@
       "venue": "千本桜ホール(学芸大学駅 徒歩1分/第三エスペランスビル内 3階)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/523476",
-      "ticketStatus": "",
+      "ticketStatus": "予定数終了",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
