@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-03T21:30:37.563033+00:00",
+  "syncedAt": "2026-10-04T00:00:52.550622+00:00",
   "performers": [
     {
       "id": "maison",
@@ -60,47 +60,8 @@
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/64655/52230",
-      "ticketStatus": "一部予定数終了",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "販売中",
-          "price": "￥2,800",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-04T09:00:00+09:00",
-              "saleKey": "fany|nansui|64655|52230|全席指定|当日|first_come|2026-09-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-04T09:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        },
-        {
-          "name": "立見（整理番号付）",
-          "type": "当日",
-          "status": "予定数終了",
-          "price": "￥2,500",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-04T09:00:00+09:00",
-              "saleKey": "fany|nansui|64655|52230|立見（整理番号付）|当日|first_come|2026-09-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-04T09:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
+      "ticketStatus": "",
+      "ticketOptions": [],
       "saleStartAt": "2026-09-05T10:00:00+09:00",
       "saleEndAt": "2026-10-04T09:00:00+09:00",
       "saleCategory": "first_come",
@@ -1807,7 +1768,7 @@
       "venue": "ハイジアV-1(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/523374",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -3431,7 +3392,7 @@
           ]
         },
         {
-          "name": "東山 / 無尽蔵",
+          "name": "東山 / ねじれネジ",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -3445,7 +3406,7 @@
               "label": "",
               "startAt": "2026-09-04T22:30:00+09:00",
               "endAt": "2026-09-14T23:59:00+09:00",
-              "saleKey": "livepocket|maison|dnqhf|東山 / 無尽蔵|先着|advance|2026-09-04T22:30:00+09:00"
+              "saleKey": "livepocket|maison|dnqhf|東山 / ねじれネジ|先着|advance|2026-09-04T22:30:00+09:00"
             }
           ]
         },
