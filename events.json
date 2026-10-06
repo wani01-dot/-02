@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-06T07:48:54.061793+00:00",
+  "syncedAt": "2026-10-06T14:33:32.407787+00:00",
   "performers": [
     {
       "id": "maison",
@@ -188,38 +188,18 @@
       "title": "ガチ飯コントライブ",
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/65389/52473",
-      "ticketStatus": "販売中",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "販売中",
-          "price": "￥3,000",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-06T17:15:00+09:00",
-              "saleKey": "fany|nansui|65389|52473|全席指定|当日|first_come|2026-09-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-06T17:15:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-09-05T10:00:00+09:00",
-      "saleEndAt": "2026-10-06T17:15:00+09:00",
-      "saleCategory": "first_come",
+      "sourceUrl": "https://ticket.fany.lol/reception/65363/52473",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-08-25T11:00:00+09:00",
+      "saleEndAt": "2026-08-28T11:00:00+09:00",
+      "saleCategory": "advance",
       "salePeriods": [
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-09-05T10:00:00+09:00",
-          "endAt": "2026-10-06T17:15:00+09:00"
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-08-25T11:00:00+09:00",
+          "endAt": "2026-08-28T11:00:00+09:00"
         }
       ],
       "performersText": [
@@ -228,13 +208,7 @@
         "ライス",
         "うるとらブギーズ",
         "エレガント人生",
-        "軟水",
-        "・1回の先着申込で申込可能な公演数は『",
-        "1公演",
-        "』",
-        "枚数は『",
-        "10枚まで",
-        "・座席番号や整理番号は"
+        "軟水"
       ],
       "firstSeenAt": "2026-09-19T01:35:00.443801+00:00",
       "newUntil": "",
@@ -333,6 +307,7 @@
         "軟水",
         "ピュート",
         "伝書鳩",
+        "MC：セルライトスパ",
         "・1回の先着申込で申込可能な公演数は『",
         "1公演",
         "』",
@@ -399,6 +374,7 @@
         "軟水",
         "ピュート",
         "伝書鳩",
+        "MC：セルライトスパ",
         "・1回の先着申込で申込可能な公演数は『",
         "1公演",
         "』",
@@ -798,12 +774,12 @@
       "venue": "仙台PIT（宮城県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/62814/50566",
-      "ticketStatus": "販売中",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [
         {
           "name": "1Fスタンディング（整理番号付）",
           "type": "前売",
-          "status": "販売中",
+          "status": "残りわずか",
           "price": "￥5,000",
           "salePeriods": [
             {
@@ -868,7 +844,7 @@
       "venue": "ハイジアV-1(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/523374",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "予定数終了",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -2495,25 +2471,6 @@
           ]
         },
         {
-          "name": "東山 / 無尽蔵",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-09-04T22:30:00+09:00",
-          "saleEndAt": "2026-09-14T23:59:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-09-04T22:30:00+09:00",
-              "endAt": "2026-09-14T23:59:00+09:00",
-              "saleKey": "livepocket|maison|dnqhf|東山 / 無尽蔵|先着|advance|2026-09-04T22:30:00+09:00"
-            }
-          ]
-        },
-        {
           "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
@@ -2529,6 +2486,25 @@
               "startAt": "2026-09-04T22:30:00+09:00",
               "endAt": "2026-09-14T23:59:00+09:00",
               "saleKey": "livepocket|maison|dnqhf|東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵|先着|advance|2026-09-04T22:30:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "東山 / ねじれネジ",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-09-04T22:30:00+09:00",
+          "saleEndAt": "2026-09-14T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-09-04T22:30:00+09:00",
+              "endAt": "2026-09-14T23:59:00+09:00",
+              "saleKey": "livepocket|maison|dnqhf|東山 / ねじれネジ|先着|advance|2026-09-04T22:30:00+09:00"
             }
           ]
         }
@@ -4074,6 +4050,7 @@
       ],
       "performersText": [
         "守谷日和",
+        "今井らいぱち",
         "パピヨン",
         "ケビンス",
         "ピュート",
@@ -6828,7 +6805,6 @@
       "salePeriods": [],
       "performersText": [
         "あなたとネ",
-        "おおぞらモード",
         "ガクヅケ",
         "金の国",
         "小海のムニエル",
@@ -12185,12 +12161,12 @@
       "venue": "Zepp Nagoya（愛知県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/67206/53598",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "予定数終了",
       "ticketOptions": [
         {
           "name": "1Fスタンディング（整理番号付）",
           "type": "前売",
-          "status": "残りわずか",
+          "status": "予定数終了",
           "price": "￥5,000",
           "salePeriods": [
             {
