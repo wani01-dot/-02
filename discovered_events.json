@@ -1,10 +1,10 @@
 {
-  "syncedAt": "2026-10-06T13:32:43.771600+00:00",
+  "syncedAt": "2026-10-06T19:07:05.666173+00:00",
   "total": 152,
   "ticketListedCount": 152,
   "ticketUnlistedCount": 0,
-  "ticketOptionCount": 431,
-  "salePeriodCount": 802,
+  "ticketOptionCount": 429,
+  "salePeriodCount": 798,
   "events": [
     {
       "performerId": "maison",
@@ -68,52 +68,31 @@
           "score": 10,
           "performerId": "nansui",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65389/52473",
+          "sourceUrl": "https://ticket.fany.lol/reception/65363/52473",
           "title": "ガチ飯コントライブ",
           "date": "2026-10-06",
           "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
           "openTime": "19:00",
           "startTime": "19:15",
-          "ticketStatus": "販売中",
-          "ticketOptions": [
-            {
-              "name": "全席指定",
-              "type": "当日",
-              "status": "販売中",
-              "price": "￥3,000",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-05T10:00:00+09:00",
-              "saleEndAt": "2026-10-06T17:15:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-09-05T10:00:00+09:00",
-                  "endAt": "2026-10-06T17:15:00+09:00"
-                }
-              ]
-            }
-          ],
+          "ticketStatus": "",
+          "ticketOptions": [],
           "salePeriods": [
             {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-06T17:15:00+09:00"
+              "category": "advance",
+              "label": "抽選",
+              "startAt": "2026-08-25T11:00:00+09:00",
+              "endAt": "2026-08-28T11:00:00+09:00"
             },
             {
-              "category": "first_come",
+              "category": "advance",
               "label": "",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-06T17:15:00+09:00"
+              "startAt": "2026-08-25T11:00:00+09:00",
+              "endAt": "2026-08-28T11:00:00+09:00"
             }
           ],
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-06T17:15:00+09:00",
-          "saleCategory": "first_come",
+          "saleStartAt": "2026-08-25T11:00:00+09:00",
+          "saleEndAt": "2026-08-28T11:00:00+09:00",
+          "saleCategory": "advance",
           "saleLabel": ""
         },
         {
@@ -136,30 +115,7 @@
         }
       ],
       "ticketListed": true,
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "販売中",
-          "price": "￥3,000",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-06T17:15:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-06T17:15:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65389/52473"
-        }
-      ],
+      "ticketOptions": [],
       "salePeriods": [
         {
           "category": "advance",
@@ -176,22 +132,6 @@
           "endAt": "2026-08-28T11:00:00+09:00",
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/64321/51811"
-        },
-        {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-09-05T10:00:00+09:00",
-          "endAt": "2026-10-06T17:15:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65389/52473"
-        },
-        {
-          "category": "first_come",
-          "label": "",
-          "startAt": "2026-09-05T10:00:00+09:00",
-          "endAt": "2026-10-06T17:15:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65389/52473"
         }
       ],
       "status": "ticket_listed",
@@ -232,52 +172,31 @@
           "score": 20,
           "performerId": "nansui",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65389/52473",
+          "sourceUrl": "https://ticket.fany.lol/reception/65363/52473",
           "title": "ガチ飯コントライブ",
           "date": "2026-10-06",
           "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
           "openTime": "19:00",
           "startTime": "19:15",
-          "ticketStatus": "販売中",
-          "ticketOptions": [
-            {
-              "name": "全席指定",
-              "type": "当日",
-              "status": "販売中",
-              "price": "￥3,000",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-05T10:00:00+09:00",
-              "saleEndAt": "2026-10-06T17:15:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-09-05T10:00:00+09:00",
-                  "endAt": "2026-10-06T17:15:00+09:00"
-                }
-              ]
-            }
-          ],
+          "ticketStatus": "",
+          "ticketOptions": [],
           "salePeriods": [
             {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-06T17:15:00+09:00"
+              "category": "advance",
+              "label": "抽選",
+              "startAt": "2026-08-25T11:00:00+09:00",
+              "endAt": "2026-08-28T11:00:00+09:00"
             },
             {
-              "category": "first_come",
+              "category": "advance",
               "label": "",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-06T17:15:00+09:00"
+              "startAt": "2026-08-25T11:00:00+09:00",
+              "endAt": "2026-08-28T11:00:00+09:00"
             }
           ],
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-06T17:15:00+09:00",
-          "saleCategory": "first_come",
+          "saleStartAt": "2026-08-25T11:00:00+09:00",
+          "saleEndAt": "2026-08-28T11:00:00+09:00",
+          "saleCategory": "advance",
           "saleLabel": ""
         },
         {
@@ -331,54 +250,15 @@
         }
       ],
       "ticketListed": true,
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "販売中",
-          "price": "￥3,000",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-06T17:15:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-06T17:15:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65389/52473"
-        }
-      ],
+      "ticketOptions": [],
       "salePeriods": [
-        {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-09-05T10:00:00+09:00",
-          "endAt": "2026-10-06T17:15:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65389/52473"
-        },
-        {
-          "category": "first_come",
-          "label": "",
-          "startAt": "2026-09-05T10:00:00+09:00",
-          "endAt": "2026-10-06T17:15:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65389/52473"
-        },
         {
           "category": "advance",
           "label": "抽選",
           "startAt": "2026-08-25T11:00:00+09:00",
           "endAt": "2026-08-28T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64321/51811"
+          "sourceUrl": "https://ticket.fany.lol/reception/65363/52473"
         },
         {
           "category": "advance",
@@ -386,16 +266,16 @@
           "startAt": "2026-08-25T11:00:00+09:00",
           "endAt": "2026-08-28T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64321/51811"
+          "sourceUrl": "https://ticket.fany.lol/reception/65363/52473"
         }
       ],
       "status": "ticket_listed",
-      "ticketStatus": "販売中",
+      "ticketStatus": "",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/65389/52473",
-      "saleStartAt": "2026-09-05T10:00:00+09:00",
-      "saleEndAt": "2026-10-06T17:15:00+09:00",
-      "saleCategory": "first_come",
+      "sourceUrl": "https://ticket.fany.lol/reception/65363/52473",
+      "saleStartAt": "2026-08-25T11:00:00+09:00",
+      "saleEndAt": "2026-08-28T11:00:00+09:00",
+      "saleCategory": "advance",
       "saleLabel": ""
     },
     {
@@ -410,7 +290,7 @@
       "theaterId": "roppongi",
       "theaterName": "六本木",
       "performersText": [
-        "ニッポンの社長／セルライトスパ／いぬ／ビスケットブラザーズ／蛙亭／オフローズ／軟水／ピュート／伝書鳩"
+        "ニッポンの社長／セルライトスパ／いぬ／ビスケットブラザーズ／蛙亭／オフローズ／軟水／ピュート／伝書鳩 【コーナー出演者】 MC：セルライトスパ／オフローズ／伝書鳩"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -5173,7 +5053,7 @@
               ]
             },
             {
-              "name": "東山 / 無尽蔵",
+              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -5193,7 +5073,7 @@
               ]
             },
             {
-              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+              "name": "東山 / ねじれネジ",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -5434,7 +5314,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / 無尽蔵",
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -5456,7 +5336,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+          "name": "東山 / ねじれネジ",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -5995,7 +5875,7 @@
               ]
             },
             {
-              "name": "東山 / 無尽蔵",
+              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -6015,7 +5895,7 @@
               ]
             },
             {
-              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+              "name": "東山 / ねじれネジ",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -6256,7 +6136,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / 無尽蔵",
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -6278,7 +6158,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+          "name": "東山 / ねじれネジ",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -6817,7 +6697,7 @@
               ]
             },
             {
-              "name": "東山 / 無尽蔵",
+              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -6837,7 +6717,7 @@
               ]
             },
             {
-              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+              "name": "東山 / ねじれネジ",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -7078,7 +6958,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / 無尽蔵",
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -7100,7 +6980,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+          "name": "東山 / ねじれネジ",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -7639,7 +7519,7 @@
               ]
             },
             {
-              "name": "東山 / 無尽蔵",
+              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -7659,7 +7539,7 @@
               ]
             },
             {
-              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+              "name": "東山 / ねじれネジ",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -7900,7 +7780,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / 無尽蔵",
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -7922,7 +7802,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+          "name": "東山 / ねじれネジ",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -11345,7 +11225,7 @@
       "theaterId": "roppongi",
       "theaterName": "六本木",
       "performersText": [
-        "守谷日和／パピヨン／ケビンス／ピュート／イチゴ／伝書鳩"
+        "守谷日和／今井らいぱち／パピヨン／ケビンス／ピュート／イチゴ／伝書鳩"
       ],
       "newUntil": "",
       "trackedPerformers": [
