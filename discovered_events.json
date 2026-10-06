@@ -1,183 +1,11 @@
 {
-  "syncedAt": "2026-10-06T00:09:23.200280+00:00",
-  "total": 154,
-  "ticketListedCount": 154,
+  "syncedAt": "2026-10-06T06:26:21.656129+00:00",
+  "total": 152,
+  "ticketListedCount": 152,
   "ticketUnlistedCount": 0,
   "ticketOptionCount": 435,
-  "salePeriodCount": 806,
+  "salePeriodCount": 802,
   "events": [
-    {
-      "performerId": "nansui",
-      "date": "2026-10-05",
-      "openTime": "17:00",
-      "startTime": "17:15",
-      "title": "渋谷Kiwami極LIVEプラス＋",
-      "venue": "渋谷よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "shibuya",
-      "theaterName": "渋谷",
-      "performersText": [
-        "[ネタ＆コーナーライブ]CITY／今井らいぱち／ゆにばーす／シモリュウ／オダウエダ／ぶったま／オフローズ／軟水／マリーマリー／サンタモニカ [ コーナー出演者]MC:CITY／今井らいぱち／オダウエダ／オフローズ／軟水"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "performerId": "nansui",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64331/51825",
-          "title": "渋谷Kiwami極LIVEプラス＋",
-          "date": "2026-10-05",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "",
-          "ticketOptions": [],
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "抽選",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            },
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-25T11:00:00+09:00",
-          "saleEndAt": "2026-08-28T11:00:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": ""
-        }
-      ],
-      "ticketListed": true,
-      "ticketOptions": [],
-      "salePeriods": [
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-08-25T11:00:00+09:00",
-          "endAt": "2026-08-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64331/51825"
-        },
-        {
-          "category": "advance",
-          "label": "",
-          "startAt": "2026-08-25T11:00:00+09:00",
-          "endAt": "2026-08-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64331/51825"
-        }
-      ],
-      "status": "ticket_listed",
-      "ticketStatus": "",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/64331/51825",
-      "saleStartAt": "2026-08-25T11:00:00+09:00",
-      "saleEndAt": "2026-08-28T11:00:00+09:00",
-      "saleCategory": "advance",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "maison",
-      "date": "2026-10-05",
-      "openTime": "20:45",
-      "startTime": "21:00",
-      "title": "漫才小学校",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[企画ライブ]イチゴ／大王／めぞん／ジュン(大石・宮原健斗)／イザナミン／美バンブー"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "performerId": "maison",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64732/52171",
-          "title": "漫才小学校",
-          "date": "2026-10-05",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "20:45",
-          "startTime": "21:00",
-          "ticketStatus": "",
-          "ticketOptions": [],
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "抽選",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            },
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-25T11:00:00+09:00",
-          "saleEndAt": "2026-08-28T11:00:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": ""
-        }
-      ],
-      "ticketListed": true,
-      "ticketOptions": [],
-      "salePeriods": [
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-08-25T11:00:00+09:00",
-          "endAt": "2026-08-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64732/52171"
-        },
-        {
-          "category": "advance",
-          "label": "",
-          "startAt": "2026-08-25T11:00:00+09:00",
-          "endAt": "2026-08-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64732/52171"
-        }
-      ],
-      "status": "ticket_listed",
-      "ticketStatus": "",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/64732/52171",
-      "saleStartAt": "2026-08-25T11:00:00+09:00",
-      "saleEndAt": "2026-08-28T11:00:00+09:00",
-      "saleCategory": "advance",
-      "saleLabel": ""
-    },
     {
       "performerId": "maison",
       "date": "2026-10-06",
@@ -219,9 +47,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥1,500",
+              "price": "￥1,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -239,9 +67,9 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥1,500",
+              "price": "￥1,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -291,9 +119,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥2,500",
+              "price": "￥3,000",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -352,9 +180,9 @@
       "ticketOptions": [
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥1,500",
+          "price": "￥1,800",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -374,9 +202,9 @@
         },
         {
           "name": "立見（整理番号付）",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥1,500",
+          "price": "￥1,800",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -396,9 +224,9 @@
         },
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥2,500",
+          "price": "￥3,000",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -499,9 +327,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥2,500",
+              "price": "￥3,000",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -551,9 +379,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥1,500",
+              "price": "￥1,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -571,9 +399,9 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥1,500",
+              "price": "￥1,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -632,9 +460,9 @@
       "ticketOptions": [
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥2,500",
+          "price": "￥3,000",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -654,9 +482,9 @@
         },
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥1,500",
+          "price": "￥1,800",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -676,9 +504,9 @@
         },
         {
           "name": "立見（整理番号付）",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥1,500",
+          "price": "￥1,800",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -5101,7 +4929,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]ツートライブ／ビスケットブラザーズ／ドンデコルテ／めぞん／ケビンス／シカゴ実業／キンボシ／まんじろう／スーパーサイズ・ミー／大王／他"
+        "[ネタ＆コーナーライブ]ツートライブ／ビスケットブラザーズ／ドンデコルテ／めぞん／ケビンス／シカゴ実業／キンボシ／まんじろう／スーパーサイズ・ミー／ド桜／大王"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -5515,7 +5343,7 @@
               ]
             },
             {
-              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+              "name": "東山 / ねじれネジ",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -5535,7 +5363,7 @@
               ]
             },
             {
-              "name": "東山 / ねじれネジ",
+              "name": "東山 / 無尽蔵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -5776,7 +5604,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+          "name": "東山 / ねじれネジ",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -5798,7 +5626,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ねじれネジ",
+          "name": "東山 / 無尽蔵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -6337,7 +6165,7 @@
               ]
             },
             {
-              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+              "name": "東山 / ねじれネジ",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -6357,7 +6185,7 @@
               ]
             },
             {
-              "name": "東山 / ねじれネジ",
+              "name": "東山 / 無尽蔵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -6598,7 +6426,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+          "name": "東山 / ねじれネジ",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -6620,7 +6448,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ねじれネジ",
+          "name": "東山 / 無尽蔵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -6745,7 +6573,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]ツートライブ／ビスケットブラザーズ／ドンデコルテ／めぞん／ケビンス／シカゴ実業／キンボシ／まんじろう／スーパーサイズ・ミー／大王／他"
+        "[ネタ＆コーナーライブ]ツートライブ／ビスケットブラザーズ／ドンデコルテ／めぞん／ケビンス／シカゴ実業／キンボシ／まんじろう／田津原理音／スーパーサイズ・ミー／大王"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -7159,7 +6987,7 @@
               ]
             },
             {
-              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+              "name": "東山 / ねじれネジ",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -7179,7 +7007,7 @@
               ]
             },
             {
-              "name": "東山 / ねじれネジ",
+              "name": "東山 / 無尽蔵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -7420,7 +7248,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+          "name": "東山 / ねじれネジ",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -7442,7 +7270,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ねじれネジ",
+          "name": "東山 / 無尽蔵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -7567,7 +7395,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[企画ライブ]めぞん／九条ジョー／おミュータンツ／狛犬 櫛野／伝書鳩／ツートライブ／カゲヤマ"
+        "[企画ライブ]めぞん／九条ジョー／おミュータンツ／狛犬／伝書鳩／ツートライブ／カゲヤマ"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -7981,7 +7809,7 @@
               ]
             },
             {
-              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+              "name": "東山 / ねじれネジ",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -8001,7 +7829,7 @@
               ]
             },
             {
-              "name": "東山 / ねじれネジ",
+              "name": "東山 / 無尽蔵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -8242,7 +8070,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+          "name": "東山 / ねじれネジ",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -8264,7 +8092,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ねじれネジ",
+          "name": "東山 / 無尽蔵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -42071,7 +41899,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[企画ライブ]めぞん／九条ジョー／おミュータンツ／狛犬 櫛野／伝書鳩／カゲヤマ"
+        "[企画ライブ]めぞん／九条ジョー／おミュータンツ／狛犬／伝書鳩／カゲヤマ"
       ],
       "newUntil": "",
       "trackedPerformers": [
