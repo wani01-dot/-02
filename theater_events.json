@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-07T02:26:41.860099+00:00",
+  "syncedAt": "2026-10-07T08:56:20.718971+00:00",
   "events": [
     {
       "performerId": "nansui",
@@ -19,7 +19,7 @@
       "saleCategory": "",
       "salePeriods": [],
       "performersText": [
-        "ニッポンの社長／セルライトスパ／いぬ／ビスケットブラザーズ／蛙亭／オフローズ／軟水／ピュート／伝書鳩 【コーナー出演者】 MC：セルライトスパ／オフローズ／伝書鳩"
+        "セルライトスパ／いぬ／ビスケットブラザーズ／今井らいぱち／蛙亭／オフローズ／軟水／ピュート／伝書鳩 【コーナー出演者】 MC：セルライトスパ／オフローズ／伝書鳩"
       ],
       "publishedVia": "theater",
       "hasStreaming": false,
@@ -44,7 +44,7 @@
       "saleCategory": "",
       "salePeriods": [],
       "performersText": [
-        "ニッポンの社長／セルライトスパ／いぬ／ビスケットブラザーズ／蛙亭／オフローズ／軟水／ピュート／伝書鳩 【コーナー出演者】 MC：セルライトスパ／オフローズ／伝書鳩"
+        "セルライトスパ／いぬ／ビスケットブラザーズ／今井らいぱち／蛙亭／オフローズ／軟水／ピュート／伝書鳩 【コーナー出演者】 MC：セルライトスパ／オフローズ／伝書鳩"
       ],
       "publishedVia": "theater",
       "hasStreaming": false,
@@ -469,7 +469,7 @@
       "saleCategory": "",
       "salePeriods": [],
       "performersText": [
-        "[企画ライブ]伝書鳩／軟水／兄弟／他"
+        "[企画ライブ]伝書鳩／軟水／ゼロカラン／兄弟"
       ],
       "publishedVia": "theater",
       "hasStreaming": false,
@@ -1902,6 +1902,31 @@
       "theaterSourceKey": "theater|shibuya|pyuto|2026-10-29|19:15|ポイントキングダム"
     },
     {
+      "performerId": "maison",
+      "date": "2026-10-30",
+      "openTime": "18:00",
+      "startTime": "18:15",
+      "title": "18:15開演『福岡プレミアムナイト～第1部～』",
+      "venue": "よしもと福岡 大和証券劇場",
+      "source": "theater",
+      "sourceUrl": "https://fukuokagekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "fukuoka",
+      "theaterName": "福岡",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "囲碁将棋／金属バット／バッテリィズ／たくろう／めぞん／アイラブ地球／気になるあの娘／メタルラック／太宰"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|fukuoka|maison|2026-10-30|18:15|1815開演福岡プレミアムナイト第1部"
+    },
+    {
       "performerId": "pyuto",
       "date": "2026-10-30",
       "openTime": "18:00",
@@ -2426,6 +2451,31 @@
       "hasStreaming": false,
       "streamingPrice": "",
       "theaterSourceKey": "theater|jimbocho|pyuto|2026-11-02|19:00|ピュート×セカンドロットツーマンライブオールグリーン"
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-03",
+      "openTime": "17:30",
+      "startTime": "18:00",
+      "title": "レイザーラモンと金属バット、芸風の全く違う２組が若手のネタを見てアドバイス！？するライブ",
+      "venue": "よしもと幕張イオンモール劇場",
+      "source": "theater",
+      "sourceUrl": "https://makuhari.yoshimoto.co.jp/schedule/",
+      "theaterId": "makuhari",
+      "theaterName": "幕張",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "レイザーラモン／金属バット／めぞん／他"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|makuhari|maison|2026-11-03|18:00|レイザーラモンと金属バット、芸風の全く違う２組が若手のネタを見てアドバイスするライブ"
     },
     {
       "performerId": "nansui",
@@ -3321,7 +3371,7 @@
       "saleCategory": "",
       "salePeriods": [],
       "performersText": [
-        "[企画ライブ]kento fukaya／ゼロカラン／軟水／イチゴ"
+        "[企画ライブ]kento fukaya／軟水／イチゴ／ゼロカラン"
       ],
       "publishedVia": "theater",
       "hasStreaming": false,
