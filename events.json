@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-08T13:49:00.990833+00:00",
+  "syncedAt": "2026-10-08T19:31:41.208063+00:00",
   "performers": [
     {
       "id": "maison",
@@ -52,53 +52,6 @@
   ],
   "events": [
     {
-      "performerId": "nansui",
-      "date": "2026-10-08",
-      "openTime": "19:45",
-      "startTime": "20:00",
-      "title": "つるまる軍団トークライブ",
-      "venue": "ハイジアV-1（東京都）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/65494/52545",
-      "ticketStatus": "",
-      "ticketOptions": [],
-      "saleStartAt": "2026-08-27T10:00:00+09:00",
-      "saleEndAt": "2026-10-07T23:59:00+09:00",
-      "saleCategory": "first_come",
-      "salePeriods": [
-        {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-08-27T10:00:00+09:00",
-          "endAt": "2026-10-07T23:59:00+09:00"
-        }
-      ],
-      "performersText": [
-        "軟水 つるまる",
-        "世界クジラ 和泉",
-        "サンタモニカ ポール",
-        "狛犬 櫛野",
-        "金魚番長 古市",
-        "大王 山内",
-        "今夜はブルース タニグチ",
-        "ほの字 Bりょう",
-        "シングシング 森主",
-        "デジタルバッハ 加藤",
-        "兄弟 体制",
-        "・1回の先着申込で申込可能な公演数は『",
-        "1公演",
-        "』",
-        "枚数は『",
-        "10枚まで",
-        "・座席番号や整理番号は"
-      ],
-      "firstSeenAt": "2026-09-19T01:35:00.443801+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ]
-    },
-    {
       "performerId": "maison",
       "date": "2026-10-09",
       "openTime": "13:30",
@@ -111,16 +64,16 @@
       "ticketOptions": [
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥2,500",
+          "price": "￥3,000",
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-09-05T10:00:00+09:00",
               "endAt": "2026-10-09T12:00:00+09:00",
-              "saleKey": "fany|maison|64915|52277|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+              "saleKey": "fany|maison|64915|52277|全席指定|当日|first_come|2026-09-05T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -130,16 +83,16 @@
         },
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥1,300",
+          "price": "￥1,800",
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-09-05T10:00:00+09:00",
               "endAt": "2026-10-09T12:00:00+09:00",
-              "saleKey": "fany|maison|64915|52277|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+              "saleKey": "fany|maison|64915|52277|全席指定|当日|first_come|2026-09-05T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -194,16 +147,16 @@
       "ticketOptions": [
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥2,500",
+          "price": "￥3,000",
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-09-05T10:00:00+09:00",
               "endAt": "2026-10-09T14:00:00+09:00",
-              "saleKey": "fany|maison|64915|52278|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+              "saleKey": "fany|maison|64915|52278|全席指定|当日|first_come|2026-09-05T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -213,16 +166,16 @@
         },
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥1,300",
+          "price": "￥1,800",
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-09-05T10:00:00+09:00",
               "endAt": "2026-10-09T14:00:00+09:00",
-              "saleKey": "fany|maison|64915|52278|全席指定|前売|first_come|2026-09-05T10:00:00+09:00"
+              "saleKey": "fany|maison|64915|52278|全席指定|当日|first_come|2026-09-05T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -277,16 +230,16 @@
       "ticketOptions": [
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥2,300",
+          "price": "￥2,800",
           "salePeriods": [
             {
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-08-30T10:00:00+09:00",
               "endAt": "2026-10-09T16:00:00+09:00",
-              "saleKey": "fany|maison|65353|52479|全席指定|前売|first_come|2026-08-30T10:00:00+09:00"
+              "saleKey": "fany|maison|65353|52479|全席指定|当日|first_come|2026-08-30T10:00:00+09:00"
             }
           ],
           "saleStartAt": "2026-08-30T10:00:00+09:00",
@@ -336,7 +289,7 @@
       "venue": "歌舞伎町Sparkle(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/527669",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "予定数終了",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -1769,7 +1722,7 @@
       "venue": "新宿バティオス(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/523480",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "予定数終了",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -2098,7 +2051,7 @@
           ]
         },
         {
-          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+          "name": "東山 / 無尽蔵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -2112,7 +2065,7 @@
               "label": "",
               "startAt": "2026-09-04T22:30:00+09:00",
               "endAt": "2026-09-14T23:59:00+09:00",
-              "saleKey": "livepocket|maison|dnqhf|東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵|先着|advance|2026-09-04T22:30:00+09:00"
+              "saleKey": "livepocket|maison|dnqhf|東山 / 無尽蔵|先着|advance|2026-09-04T22:30:00+09:00"
             }
           ]
         }
@@ -3854,7 +3807,7 @@
       "venue": "中野の劇場サッチー(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/522101",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "予定数終了",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -3891,12 +3844,12 @@
       "venue": "西荻地域区民センター ホール (東京都)",
       "source": "livepocket",
       "sourceUrl": "https://livepocket.jp/e/gakkatsu",
-      "ticketStatus": "販売中",
+      "ticketStatus": "",
       "ticketOptions": [
         {
           "name": "最高の学活",
           "type": "先着",
-          "status": "販売中",
+          "status": "販売終了",
           "price": "¥3,000",
           "saleStartAt": "2026-10-07T00:00:00+09:00",
           "saleEndAt": "2026-10-08T23:59:00+09:00",
@@ -3909,6 +3862,25 @@
               "startAt": "2026-10-07T00:00:00+09:00",
               "endAt": "2026-10-08T23:59:00+09:00",
               "saleKey": "livepocket|nansui|gakkatsu|最高の学活|先着|advance|2026-10-07T00:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "（税込）",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-10-07T00:00:00+09:00",
+          "saleEndAt": "2026-10-08T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-10-07T00:00:00+09:00",
+              "endAt": "2026-10-08T23:59:00+09:00",
+              "saleKey": "livepocket|nansui|gakkatsu|（税込）|先着|advance|2026-10-07T00:00:00+09:00"
             }
           ]
         },
@@ -4014,12 +3986,12 @@
       "venue": "西荻地域区民センター ホール (東京都)",
       "source": "livepocket",
       "sourceUrl": "https://livepocket.jp/e/gakkatsu",
-      "ticketStatus": "販売中",
+      "ticketStatus": "",
       "ticketOptions": [
         {
           "name": "最高の学活",
           "type": "先着",
-          "status": "販売中",
+          "status": "販売終了",
           "price": "¥3,000",
           "saleStartAt": "2026-10-07T00:00:00+09:00",
           "saleEndAt": "2026-10-08T23:59:00+09:00",
@@ -4032,6 +4004,25 @@
               "startAt": "2026-10-07T00:00:00+09:00",
               "endAt": "2026-10-08T23:59:00+09:00",
               "saleKey": "livepocket|pyuto|gakkatsu|最高の学活|先着|advance|2026-10-07T00:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "（税込）",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-10-07T00:00:00+09:00",
+          "saleEndAt": "2026-10-08T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-10-07T00:00:00+09:00",
+              "endAt": "2026-10-08T23:59:00+09:00",
+              "saleKey": "livepocket|pyuto|gakkatsu|（税込）|先着|advance|2026-10-07T00:00:00+09:00"
             }
           ]
         },
@@ -6078,7 +6069,7 @@
       "venue": "新宿バティオス(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/518800",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "予定数終了",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -6262,7 +6253,7 @@
       "venue": "杉並公会堂(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/526396",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "予定数終了",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -6735,7 +6726,7 @@
       "venue": "千本桜ホール(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/526404",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "予定数終了",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -6934,7 +6925,7 @@
       "venue": "千本桜ホール(学芸大学駅 徒歩1分/第三エスペランスビル内 3階)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/523476",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "予定数終了",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -9003,7 +8994,7 @@
       "venue": "歌舞伎町Sparkle(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/528554",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "予定数終了",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -11130,12 +11121,12 @@
       "venue": "有楽町朝日ホール（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/67259/53651",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "予定数終了",
       "ticketOptions": [
         {
           "name": "全席指定",
           "type": "前売",
-          "status": "残りわずか",
+          "status": "予定数終了",
           "price": "￥4,000",
           "salePeriods": [
             {
