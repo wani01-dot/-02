@@ -38,7 +38,7 @@ jobs:
       # ======================================
       - name: Fast FANY scraping
         run: |
-          python -u fast_fany_scraper.py
+          python -u fast_fany.py
 
       # ======================================
       # 新規公演を判定
