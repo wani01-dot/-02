@@ -1,5 +1,5 @@
 
-name: Fast FANY test
+name: Fast notification test
 
 on:
   workflow_dispatch:
@@ -33,20 +33,28 @@ jobs:
         run: |
           python -m playwright install chromium
 
-      - name: Test FANY scraper speed
+      # ======================================
+      # FANYを3組並列で高速取得
+      # ======================================
+      - name: Fast FANY scraping
+        run: |
+          python -u fast_fany_scraper.py
+
+      # ======================================
+      # 新規公演を判定
+      # LINEは送信しない
+      # ======================================
+      - name: Preview new FANY notifications
+        run: |
+          python -u fast_fany_notify.py
+
+      # ======================================
+      # 結果確認
+      # ======================================
+      - name: Test completed
         run: |
           echo "================================"
-          echo "FANY 高速取得テスト開始"
-          echo "================================"
-
-          START_TIME=$(date +%s)
-
-          python -u fast_fany.py
-
-          END_TIME=$(date +%s)
-
-          ELAPSED=$((END_TIME - START_TIME))
-
-          echo "================================"
-          echo "FANY取得処理時間: ${ELAPSED}秒"
+          echo "FANY高速通知テスト完了"
+          echo "LINE送信なし"
+          echo "通知履歴の変更なし"
           echo "================================"
