@@ -1,5 +1,5 @@
 
-name: Fast notification test
+name: Fast FANY test
 
 on:
   workflow_dispatch:
@@ -33,33 +33,20 @@ jobs:
         run: |
           python -m playwright install chromium
 
-      - name: Check notification environment
-        env:
-          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
-          LINE_TO: ${{ secrets.LINE_TO }}
+      - name: Test FANY scraper speed
         run: |
-          python - <<'PY'
-          import os
+          echo "================================"
+          echo "FANY 高速取得テスト開始"
+          echo "================================"
 
-          token = bool(
-              os.environ.get(
-                  "LINE_CHANNEL_ACCESS_TOKEN"
-              )
-          )
+          START_TIME=$(date +%s)
 
-          destination = bool(
-              os.environ.get(
-                  "LINE_TO"
-              )
-          )
+          python -u fast_fany.py
 
-          print("LINE token configured:", token)
-          print("LINE destination configured:", destination)
+          END_TIME=$(date +%s)
 
-          if not token or not destination:
-              raise SystemExit(
-                  "LINE notification settings are missing"
-              )
+          ELAPSED=$((END_TIME - START_TIME))
 
-          print("Fast notification preparation OK")
-          PY
+          echo "================================"
+          echo "FANY取得処理時間: ${ELAPSED}秒"
+          echo "================================"
