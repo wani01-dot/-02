@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-08T23:54:14.810711+00:00",
+  "syncedAt": "2026-10-09T03:12:26.075729+00:00",
   "performers": [
     {
       "id": "maison",
@@ -59,57 +59,18 @@
       "title": "幕張平日ネタＳＰ１４時",
       "venue": "よしもと幕張イオンモール劇場（千葉県）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/64915/52277",
-      "ticketStatus": "販売中",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "販売中",
-          "price": "￥3,000",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-09T12:00:00+09:00",
-              "saleKey": "fany|maison|64915|52277|全席指定|当日|first_come|2026-09-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-09T12:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        },
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "販売中",
-          "price": "￥1,800",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-09T12:00:00+09:00",
-              "saleKey": "fany|maison|64915|52277|全席指定|当日|first_come|2026-09-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-09T12:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-09-05T10:00:00+09:00",
-      "saleEndAt": "2026-10-09T12:00:00+09:00",
-      "saleCategory": "first_come",
+      "sourceUrl": "https://ticket.fany.lol/reception/64913/52277",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-08-25T11:00:00+09:00",
+      "saleEndAt": "2026-08-28T11:00:00+09:00",
+      "saleCategory": "advance",
       "salePeriods": [
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-09-05T10:00:00+09:00",
-          "endAt": "2026-10-09T12:00:00+09:00"
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-08-25T11:00:00+09:00",
+          "endAt": "2026-08-28T11:00:00+09:00"
         }
       ],
       "performersText": [
@@ -120,13 +81,7 @@
         "ビスケットブラザーズ",
         "オズワルド",
         "蛙亭",
-        "めぞん",
-        "・1回の先着申込で申込可能な公演数は『",
-        "1公演",
-        "』",
-        "枚数は『",
-        "10枚まで",
-        "・座席番号や整理番号は"
+        "めぞん"
       ],
       "firstSeenAt": "2026-09-30T08:47:36.309223+00:00",
       "newUntil": "",
@@ -387,7 +342,7 @@
       "venue": "ハイジアV-1(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/523374",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -581,6 +536,8 @@
         "ノザアミ",
         "しんみ",
         "あなたとネ",
+        "カリスマ3",
+        "マタンゴ",
         "ネタと企画orトークの約2時間のライブを予定しています✨"
       ],
       "firstSeenAt": "2026-09-22T00:13:00.978241+00:00",
@@ -2051,7 +2008,7 @@
           ]
         },
         {
-          "name": "東山 / 無尽蔵",
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -2065,7 +2022,7 @@
               "label": "",
               "startAt": "2026-09-04T22:30:00+09:00",
               "endAt": "2026-09-14T23:59:00+09:00",
-              "saleKey": "livepocket|maison|dnqhf|東山 / 無尽蔵|先着|advance|2026-09-04T22:30:00+09:00"
+              "saleKey": "livepocket|maison|dnqhf|東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵|先着|advance|2026-09-04T22:30:00+09:00"
             }
           ]
         }
@@ -5951,18 +5908,18 @@
       "title": "よしもと粗品劇場",
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/69273/54792",
+      "sourceUrl": "https://ticket.fany.lol/reception/69275/54792",
       "ticketStatus": "",
       "ticketOptions": [],
-      "saleStartAt": "2026-09-27T22:30:00+09:00",
-      "saleEndAt": "2026-10-01T11:00:00+09:00",
+      "saleStartAt": "2026-10-10T11:00:00+09:00",
+      "saleEndAt": "2026-10-14T11:00:00+09:00",
       "saleCategory": "advance",
       "salePeriods": [
         {
           "category": "advance",
           "label": "抽選",
-          "startAt": "2026-09-27T22:30:00+09:00",
-          "endAt": "2026-10-01T11:00:00+09:00"
+          "startAt": "2026-10-10T11:00:00+09:00",
+          "endAt": "2026-10-14T11:00:00+09:00"
         }
       ],
       "performersText": [
@@ -10554,8 +10511,28 @@
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/70150/55158",
-      "ticketStatus": "",
-      "ticketOptions": [],
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,000",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-09T10:00:00+09:00",
+              "endAt": "2026-11-07T18:30:00+09:00",
+              "saleKey": "fany|pyuto|70150|55158|全席指定|前売|first_come|2026-10-09T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-10-09T10:00:00+09:00",
+          "saleEndAt": "2026-11-07T18:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
       "saleStartAt": "2026-10-09T10:00:00+09:00",
       "saleEndAt": "2026-11-07T18:30:00+09:00",
       "saleCategory": "first_come",
@@ -11440,12 +11417,12 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/68332/54205",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "一部予定数終了",
       "ticketOptions": [
         {
           "name": "全席指定",
           "type": "前売",
-          "status": "残りわずか",
+          "status": "予定数終了",
           "price": "￥2,500",
           "salePeriods": [
             {
@@ -11869,18 +11846,18 @@
       "title": "漫才ライブ「阿吽」",
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/68452/54433",
+      "sourceUrl": "https://ticket.fany.lol/reception/68450/54433",
       "ticketStatus": "",
       "ticketOptions": [],
-      "saleStartAt": "2026-10-05T11:00:00+09:00",
-      "saleEndAt": "2026-10-09T11:00:00+09:00",
+      "saleStartAt": "2026-09-26T11:00:00+09:00",
+      "saleEndAt": "2026-09-30T11:00:00+09:00",
       "saleCategory": "advance",
       "salePeriods": [
         {
           "category": "advance",
           "label": "抽選",
-          "startAt": "2026-10-05T11:00:00+09:00",
-          "endAt": "2026-10-09T11:00:00+09:00"
+          "startAt": "2026-09-26T11:00:00+09:00",
+          "endAt": "2026-09-30T11:00:00+09:00"
         }
       ],
       "performersText": [

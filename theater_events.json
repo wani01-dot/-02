@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-08T23:53:21.123083+00:00",
+  "syncedAt": "2026-10-09T03:12:02.955746+00:00",
   "events": [
     {
       "performerId": "maison",
@@ -4453,6 +4453,57 @@
       "hasStreaming": false,
       "streamingPrice": "",
       "theaterSourceKey": "theater|jimbocho|maison|2026-11-28|15:00|神保町マンゲキお笑いライブ"
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-11-28",
+      "openTime": "17:00",
+      "startTime": "17:15",
+      "title": "伝書鳩ネタとか企画とかライブ「デリバリースター」",
+      "venue": "神保町よしもと漫才劇場",
+      "source": "theater",
+      "sourceUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "jimbocho",
+      "theaterName": "神保町",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "[企画ライブ]伝書鳩／ゲスト：九条ジョー／そいつどいつ",
+        "マリーマリー×軟水ツーマンライブ 『ハイビーム PIRAN』"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|jimbocho|nansui|2026-11-28|17:15|伝書鳩ネタとか企画とかライブデリバリースター"
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-11-28",
+      "openTime": "18:45",
+      "startTime": "19:00",
+      "title": "マリーマリー×軟水ツーマンライブ 『ハイビーム PIRAN』",
+      "venue": "神保町よしもと漫才劇場",
+      "source": "theater",
+      "sourceUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "jimbocho",
+      "theaterName": "神保町",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "[企画ライブ]マリーマリー／軟水"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|jimbocho|nansui|2026-11-28|19:00|マリーマリー×軟水ツーマンライブハイビームpiran"
     },
     {
       "performerId": "maison",
