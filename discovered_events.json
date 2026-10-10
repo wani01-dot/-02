@@ -1,183 +1,11 @@
 {
-  "syncedAt": "2026-10-10T16:21:01.864719+00:00",
-  "total": 154,
-  "ticketListedCount": 154,
+  "syncedAt": "2026-10-10T20:16:32.354093+00:00",
+  "total": 152,
+  "ticketListedCount": 152,
   "ticketUnlistedCount": 0,
   "ticketOptionCount": 470,
-  "salePeriodCount": 832,
+  "salePeriodCount": 828,
   "events": [
-    {
-      "performerId": "nansui",
-      "date": "2026-10-10",
-      "openTime": "14:00",
-      "startTime": "14:40",
-      "title": "ytv「にけつッ！！」収録",
-      "venue": "よしもと六本木シアター",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
-      "theaterId": "roppongi",
-      "theaterName": "六本木",
-      "performersText": [
-        "軟水新ネタライブ「兄弟かと思いました！」"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://roppongi.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [
-        {
-          "score": 10,
-          "performerId": "nansui",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65366/52466",
-          "title": "軟水新ネタライブ「兄弟かと思いました！」",
-          "date": "2026-10-10",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "18:45",
-          "startTime": "19:00",
-          "ticketStatus": "",
-          "ticketOptions": [],
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "抽選",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            },
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-25T11:00:00+09:00",
-          "saleEndAt": "2026-08-28T11:00:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": ""
-        }
-      ],
-      "ticketListed": true,
-      "ticketOptions": [],
-      "salePeriods": [
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-08-25T11:00:00+09:00",
-          "endAt": "2026-08-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65366/52466"
-        },
-        {
-          "category": "advance",
-          "label": "",
-          "startAt": "2026-08-25T11:00:00+09:00",
-          "endAt": "2026-08-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65366/52466"
-        }
-      ],
-      "status": "ticket_listed",
-      "ticketStatus": "",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/65366/52466",
-      "saleStartAt": "2026-08-25T11:00:00+09:00",
-      "saleEndAt": "2026-08-28T11:00:00+09:00",
-      "saleCategory": "advance",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-10-10",
-      "openTime": "18:45",
-      "startTime": "19:00",
-      "title": "軟水新ネタライブ「兄弟かと思いました！」",
-      "venue": "よしもと六本木シアター",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
-      "theaterId": "roppongi",
-      "theaterName": "六本木",
-      "performersText": [
-        "軟水／ブラゴーリ／アリハガ"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://roppongi.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [
-        {
-          "score": 20,
-          "performerId": "nansui",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65366/52466",
-          "title": "軟水新ネタライブ「兄弟かと思いました！」",
-          "date": "2026-10-10",
-          "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-          "openTime": "18:45",
-          "startTime": "19:00",
-          "ticketStatus": "",
-          "ticketOptions": [],
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "抽選",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            },
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-25T11:00:00+09:00",
-          "saleEndAt": "2026-08-28T11:00:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": ""
-        }
-      ],
-      "ticketListed": true,
-      "ticketOptions": [],
-      "salePeriods": [
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-08-25T11:00:00+09:00",
-          "endAt": "2026-08-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65366/52466"
-        },
-        {
-          "category": "advance",
-          "label": "",
-          "startAt": "2026-08-25T11:00:00+09:00",
-          "endAt": "2026-08-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65366/52466"
-        }
-      ],
-      "status": "ticket_listed",
-      "ticketStatus": "",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/65366/52466",
-      "saleStartAt": "2026-08-25T11:00:00+09:00",
-      "saleEndAt": "2026-08-28T11:00:00+09:00",
-      "saleCategory": "advance",
-      "saleLabel": ""
-    },
     {
       "performerId": "maison",
       "date": "2026-10-11",
@@ -219,9 +47,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥2,500",
+              "price": "￥2,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -239,7 +67,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
@@ -291,9 +119,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥2,500",
+              "price": "￥2,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -311,7 +139,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
@@ -363,9 +191,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥2,500",
+              "price": "￥2,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -383,7 +211,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
@@ -435,9 +263,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥1,500",
+              "price": "￥2,000",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -455,7 +283,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥1,500",
               "remaining": null,
@@ -507,9 +335,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥1,500",
+              "price": "￥2,000",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -527,7 +355,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥1,500",
               "remaining": null,
@@ -570,9 +398,9 @@
       "ticketOptions": [
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
-          "price": "￥2,500",
+          "price": "￥2,800",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -592,7 +420,7 @@
         },
         {
           "name": "立見（整理番号付）",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
           "price": "￥2,500",
           "remaining": null,
@@ -614,9 +442,9 @@
         },
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
-          "price": "￥1,500",
+          "price": "￥2,000",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -636,7 +464,7 @@
         },
         {
           "name": "立見（整理番号付）",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
           "price": "￥1,500",
           "remaining": null,
@@ -658,9 +486,9 @@
         },
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥1,500",
+          "price": "￥2,000",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -811,9 +639,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥2,500",
+              "price": "￥2,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -831,7 +659,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
@@ -883,9 +711,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥2,500",
+              "price": "￥2,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -903,7 +731,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
@@ -955,9 +783,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥2,500",
+              "price": "￥2,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -975,7 +803,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
@@ -1027,9 +855,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥1,500",
+              "price": "￥2,000",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -1047,7 +875,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥1,500",
               "remaining": null,
@@ -1099,9 +927,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥1,500",
+              "price": "￥2,000",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -1119,7 +947,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥1,500",
               "remaining": null,
@@ -1162,9 +990,9 @@
       "ticketOptions": [
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
-          "price": "￥2,500",
+          "price": "￥2,800",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -1184,7 +1012,7 @@
         },
         {
           "name": "立見（整理番号付）",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
           "price": "￥2,500",
           "remaining": null,
@@ -1206,9 +1034,9 @@
         },
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
-          "price": "￥1,500",
+          "price": "￥2,000",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -1228,7 +1056,7 @@
         },
         {
           "name": "立見（整理番号付）",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
           "price": "￥1,500",
           "remaining": null,
@@ -1250,9 +1078,9 @@
         },
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥1,500",
+          "price": "￥2,000",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -1403,9 +1231,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥2,500",
+              "price": "￥2,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -1423,7 +1251,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
@@ -1475,9 +1303,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥2,500",
+              "price": "￥2,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -1495,7 +1323,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
@@ -1547,9 +1375,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥2,500",
+              "price": "￥2,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -1567,7 +1395,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
@@ -1619,9 +1447,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥1,500",
+              "price": "￥2,000",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -1639,7 +1467,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥1,500",
               "remaining": null,
@@ -1691,9 +1519,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥1,500",
+              "price": "￥2,000",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -1711,7 +1539,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥1,500",
               "remaining": null,
@@ -1754,9 +1582,9 @@
       "ticketOptions": [
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
-          "price": "￥2,500",
+          "price": "￥2,800",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -1776,7 +1604,7 @@
         },
         {
           "name": "立見（整理番号付）",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
           "price": "￥2,500",
           "remaining": null,
@@ -1798,9 +1626,9 @@
         },
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
-          "price": "￥1,500",
+          "price": "￥2,000",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -1820,7 +1648,7 @@
         },
         {
           "name": "立見（整理番号付）",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
           "price": "￥1,500",
           "remaining": null,
@@ -1842,9 +1670,9 @@
         },
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥1,500",
+          "price": "￥2,000",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -1993,9 +1821,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥1,500",
+              "price": "￥2,000",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -2013,7 +1841,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥1,500",
               "remaining": null,
@@ -2065,9 +1893,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥2,500",
+              "price": "￥2,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -2085,7 +1913,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
@@ -2137,9 +1965,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥2,500",
+              "price": "￥2,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -2157,7 +1985,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
@@ -2209,9 +2037,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥2,500",
+              "price": "￥2,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -2229,7 +2057,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
@@ -2272,9 +2100,9 @@
       "ticketOptions": [
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥1,500",
+          "price": "￥2,000",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -2294,7 +2122,7 @@
         },
         {
           "name": "立見（整理番号付）",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
           "price": "￥1,500",
           "remaining": null,
@@ -2316,9 +2144,9 @@
         },
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
-          "price": "￥2,500",
+          "price": "￥2,800",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -2338,7 +2166,7 @@
         },
         {
           "name": "立見（整理番号付）",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
           "price": "￥2,500",
           "remaining": null,
@@ -2473,9 +2301,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥1,500",
+              "price": "￥2,000",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -2493,7 +2321,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥1,500",
               "remaining": null,
@@ -2545,9 +2373,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥2,500",
+              "price": "￥2,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -2565,7 +2393,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
@@ -2617,9 +2445,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥2,500",
+              "price": "￥2,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -2637,7 +2465,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
@@ -2689,9 +2517,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥2,500",
+              "price": "￥2,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -2709,7 +2537,7 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
@@ -2752,9 +2580,9 @@
       "ticketOptions": [
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
-          "price": "￥1,500",
+          "price": "￥2,000",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -2774,7 +2602,7 @@
         },
         {
           "name": "立見（整理番号付）",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
           "price": "￥1,500",
           "remaining": null,
@@ -2796,9 +2624,9 @@
         },
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
-          "price": "￥2,500",
+          "price": "￥2,800",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -2818,7 +2646,7 @@
         },
         {
           "name": "立見（整理番号付）",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
           "price": "￥2,500",
           "remaining": null,
@@ -3340,7 +3168,7 @@
               ]
             },
             {
-              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+              "name": "東山 / ねじれネジ / ニライカナイ / キンピラゴボウ / ちみもうりょう",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -3360,7 +3188,7 @@
               ]
             },
             {
-              "name": "東山 / ねじれネジ / ニライカナイ / キンピラゴボウ / ちみもうりょう",
+              "name": "東山 / 無尽蔵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -3601,7 +3429,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+          "name": "東山 / ねじれネジ / ニライカナイ / キンピラゴボウ / ちみもうりょう",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -3623,7 +3451,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ねじれネジ / ニライカナイ / キンピラゴボウ / ちみもうりょう",
+          "name": "東山 / 無尽蔵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -4162,7 +3990,7 @@
               ]
             },
             {
-              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+              "name": "東山 / ねじれネジ / ニライカナイ / キンピラゴボウ / ちみもうりょう",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -4182,7 +4010,7 @@
               ]
             },
             {
-              "name": "東山 / ねじれネジ / ニライカナイ / キンピラゴボウ / ちみもうりょう",
+              "name": "東山 / 無尽蔵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -4423,7 +4251,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+          "name": "東山 / ねじれネジ / ニライカナイ / キンピラゴボウ / ちみもうりょう",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -4445,7 +4273,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ねじれネジ / ニライカナイ / キンピラゴボウ / ちみもうりょう",
+          "name": "東山 / 無尽蔵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -4984,7 +4812,7 @@
               ]
             },
             {
-              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+              "name": "東山 / ねじれネジ / ニライカナイ / キンピラゴボウ / ちみもうりょう",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -5004,7 +4832,7 @@
               ]
             },
             {
-              "name": "東山 / ねじれネジ / ニライカナイ / キンピラゴボウ / ちみもうりょう",
+              "name": "東山 / 無尽蔵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -5245,7 +5073,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+          "name": "東山 / ねじれネジ / ニライカナイ / キンピラゴボウ / ちみもうりょう",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -5267,7 +5095,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ねじれネジ / ニライカナイ / キンピラゴボウ / ちみもうりょう",
+          "name": "東山 / 無尽蔵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -5806,7 +5634,7 @@
               ]
             },
             {
-              "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+              "name": "東山 / ねじれネジ / ニライカナイ / キンピラゴボウ / ちみもうりょう",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -5826,7 +5654,7 @@
               ]
             },
             {
-              "name": "東山 / ねじれネジ / ニライカナイ / キンピラゴボウ / ちみもうりょう",
+              "name": "東山 / 無尽蔵",
               "type": "先着",
               "status": "販売中",
               "price": "",
@@ -6067,7 +5895,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+          "name": "東山 / ねじれネジ / ニライカナイ / キンピラゴボウ / ちみもうりょう",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -6089,7 +5917,7 @@
           "sourceUrl": "https://livepocket.jp/e/dnqhf"
         },
         {
-          "name": "東山 / ねじれネジ / ニライカナイ / キンピラゴボウ / ちみもうりょう",
+          "name": "東山 / 無尽蔵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -20014,7 +19842,7 @@
           "venue": "歌舞伎町Sparkle(東京都)",
           "openTime": "18:45",
           "startTime": "19:00",
-          "ticketStatus": "残りわずか",
+          "ticketStatus": "予定数終了",
           "ticketOptions": [],
           "salePeriods": [],
           "saleStartAt": "",
@@ -20472,7 +20300,7 @@
           "venue": "歌舞伎町Sparkle(東京都)",
           "openTime": "18:45",
           "startTime": "19:00",
-          "ticketStatus": "残りわずか",
+          "ticketStatus": "予定数終了",
           "ticketOptions": [],
           "salePeriods": [],
           "saleStartAt": "",
@@ -20930,7 +20758,7 @@
           "venue": "歌舞伎町Sparkle(東京都)",
           "openTime": "18:45",
           "startTime": "19:00",
-          "ticketStatus": "残りわずか",
+          "ticketStatus": "予定数終了",
           "ticketOptions": [],
           "salePeriods": [],
           "saleStartAt": "",
