@@ -1,0 +1,192 @@
+name: Sync events and deploy Pages
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/5 * * * *"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: sync-events-and-pages
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Update to latest main
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 playwright
+
+      - name: Install Chromium
+        run: |
+          python -m playwright install chromium
+
+      - name: Check parallel scraper files
+        run: |
+          python -m py_compile scraper.py parallel_scraper_helper.py parallel_main.py
+          test -f theater_scraper.py
+          test -f notify_line.py
+
+      - name: Scrape ticket sites and theaters in parallel
+        shell: bash
+        run: |
+          echo "================================"
+          echo "通常サイト（芸人別並列） + 劇場公式 同時取得開始"
+          echo "================================"
+
+          python -u parallel_main.py > /tmp/ticket_scraper.log 2>&1 &
+          TICKET_PID=$!
+
+          python -u theater_scraper.py > /tmp/theater_scraper.log 2>&1 &
+          THEATER_PID=$!
+
+          set +e
+          wait "$TICKET_PID"
+          TICKET_STATUS=$?
+          wait "$THEATER_PID"
+          THEATER_STATUS=$?
+          set -e
+
+          echo "================================"
+          echo "通常サイト取得ログ"
+          echo "================================"
+          cat /tmp/ticket_scraper.log
+
+          echo "================================"
+          echo "劇場公式取得ログ"
+          echo "================================"
+          cat /tmp/theater_scraper.log
+
+          echo "================================"
+          echo "取得結果"
+          echo "================================"
+          echo "通常サイト status: $TICKET_STATUS"
+          echo "劇場公式 status: $THEATER_STATUS"
+
+          if [ "$TICKET_STATUS" -ne 0 ]; then
+            echo "通常サイト取得に失敗しました。通知・保存・デプロイを中止します。"
+            exit 1
+          fi
+
+          if [ "$THEATER_STATUS" -ne 0 ]; then
+            echo "劇場公式取得に失敗しました。誤通知を避けるため処理を中止します。"
+            exit 1
+          fi
+
+          test -s events.json
+          test -s new_events.json
+          test -s theater_events.json
+
+      - name: Show scrape summary
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          for filename in ('events.json', 'new_events.json', 'theater_events.json'):
+              data = json.loads(Path(filename).read_text(encoding='utf-8'))
+              events = data if isinstance(data, list) else data.get('events', [])
+              print(f'{filename}: {len(events)} 件')
+          PY
+
+      - name: Notify LINE
+        env:
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          LINE_TO: ${{ secrets.LINE_TO }}
+        run: |
+          python -u notify_line.py
+
+      - name: Save updated data
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          mkdir -p /tmp/sync-data
+          cp events.json /tmp/sync-data/events.json
+          cp notified_events.json /tmp/sync-data/notified_events.json
+          cp theater_events.json /tmp/sync-data/theater_events.json
+          if [ -f theater_notified_events.json ]; then
+            cp theater_notified_events.json /tmp/sync-data/theater_notified_events.json
+          fi
+
+          SAVED=0
+          for ATTEMPT in 1 2 3; do
+            echo "保存試行: $ATTEMPT"
+            git fetch origin main
+            git reset --hard origin/main
+
+            cp /tmp/sync-data/events.json events.json
+            cp /tmp/sync-data/notified_events.json notified_events.json
+            cp /tmp/sync-data/theater_events.json theater_events.json
+            if [ -f /tmp/sync-data/theater_notified_events.json ]; then
+              cp /tmp/sync-data/theater_notified_events.json theater_notified_events.json
+            fi
+
+            git add events.json notified_events.json theater_events.json
+            if [ -f theater_notified_events.json ]; then
+              git add theater_notified_events.json
+            fi
+
+            if git diff --cached --quiet; then
+              echo "変更なし。保存完了。"
+              SAVED=1
+              break
+            fi
+
+            git commit -m "Update events and notification history"
+            if git push origin HEAD:main; then
+              echo "保存完了。"
+              SAVED=1
+              break
+            fi
+            sleep 2
+          done
+
+          if [ "$SAVED" -ne 1 ]; then
+            echo "GitHubへの保存に失敗しました。"
+            exit 1
+          fi
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: "."
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: sync
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
