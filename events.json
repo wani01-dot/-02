@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-10T07:02:58.120003+00:00",
+  "syncedAt": "2026-10-10T13:23:23.079355+00:00",
   "performers": [
     {
       "id": "maison",
@@ -51,34 +51,6 @@
     }
   ],
   "events": [
-    {
-      "performerId": "pyuto",
-      "date": "2026-10-10",
-      "openTime": "",
-      "startTime": "",
-      "title": "大喜利スパークル vol.1",
-      "venue": "歌舞伎町Sparkle(東京都)",
-      "source": "tiget",
-      "sourceUrl": "https://tiget.net/events/527669",
-      "ticketStatus": "予定数終了",
-      "ticketOptions": [],
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "salePeriods": [],
-      "performersText": [
-        "フランスピアノなかがわ",
-        "警備員",
-        "ぺるとも",
-        "ピュート",
-        "ジョンソンともゆき"
-      ],
-      "firstSeenAt": "2026-10-06T01:31:54.374099+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto"
-      ]
-    },
     {
       "performerId": "maison",
       "date": "2026-10-10",
@@ -215,50 +187,24 @@
       "title": "軟水新ネタライブ「兄弟かと思いました！」",
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/65392/52466",
-      "ticketStatus": "販売中",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "販売中",
-          "price": "￥2,500",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-10T17:00:00+09:00",
-              "saleKey": "fany|nansui|65392|52466|全席指定|当日|first_come|2026-09-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-10T17:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-09-05T10:00:00+09:00",
-      "saleEndAt": "2026-10-10T17:00:00+09:00",
-      "saleCategory": "first_come",
+      "sourceUrl": "https://ticket.fany.lol/reception/65366/52466",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-08-25T11:00:00+09:00",
+      "saleEndAt": "2026-08-28T11:00:00+09:00",
+      "saleCategory": "advance",
       "salePeriods": [
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-09-05T10:00:00+09:00",
-          "endAt": "2026-10-10T17:00:00+09:00"
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-08-25T11:00:00+09:00",
+          "endAt": "2026-08-28T11:00:00+09:00"
         }
       ],
       "performersText": [
         "軟水",
         "ブラゴーリ",
-        "アリハガ",
-        "・1回の先着申込で申込可能な公演数は『",
-        "1公演",
-        "』",
-        "枚数は『",
-        "10枚まで",
-        "・座席番号や整理番号は"
+        "アリハガ"
       ],
       "firstSeenAt": "2026-10-10T04:12:55.091976+00:00",
       "newUntil": "",
@@ -275,7 +221,7 @@
       "venue": "ハイジアV-1(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/523376",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "予定数終了",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -295,7 +241,6 @@
         "百恵",
         "ねじれネジ",
         "ハナフダ",
-        "公民館",
         "こてつ園田",
         "ノザアミ",
         "しんみ",
@@ -1559,7 +1504,7 @@
         "まんじろう",
         "田津原理音",
         "スーパーサイズ・ミー",
-        "大王",
+        "狛犬",
         "[ コーナー出演者]MC：ケビンス",
         "・1回の先着申込で申込可能な公演数は『",
         "1公演",
@@ -1763,6 +1708,25 @@
           ]
         },
         {
+          "name": "東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-09-04T22:30:00+09:00",
+          "saleEndAt": "2026-09-14T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-09-04T22:30:00+09:00",
+              "endAt": "2026-09-14T23:59:00+09:00",
+              "saleKey": "livepocket|maison|dnqhf|東山 / ブロードキャスト！！吉村 / 無尽蔵 / 盛庵|先着|advance|2026-09-04T22:30:00+09:00"
+            }
+          ]
+        },
+        {
           "name": "東山 / ねじれネジ / ニライカナイ / キンピラゴボウ / ちみもうりょう",
           "type": "先着",
           "status": "販売中",
@@ -1778,25 +1742,6 @@
               "startAt": "2026-09-04T22:30:00+09:00",
               "endAt": "2026-09-14T23:59:00+09:00",
               "saleKey": "livepocket|maison|dnqhf|東山 / ねじれネジ / ニライカナイ / キンピラゴボウ / ちみもうりょう|先着|advance|2026-09-04T22:30:00+09:00"
-            }
-          ]
-        },
-        {
-          "name": "東山 / 無尽蔵",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-09-04T22:30:00+09:00",
-          "saleEndAt": "2026-09-14T23:59:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-09-04T22:30:00+09:00",
-              "endAt": "2026-09-14T23:59:00+09:00",
-              "saleKey": "livepocket|maison|dnqhf|東山 / 無尽蔵|先着|advance|2026-09-04T22:30:00+09:00"
             }
           ]
         }
@@ -2542,10 +2487,12 @@
       ],
       "performersText": [
         "佐久間一行",
+        "ヒューマン中村",
         "大谷健太",
         "しずる",
         "kento fukaya",
         "やさしいズ",
+        "ぶったま",
         "軟水",
         "ナユタ",
         "・1回の先着申込で申込可能な公演数は『",
@@ -8573,6 +8520,34 @@
     },
     {
       "performerId": "pyuto",
+      "date": "2026-11-01",
+      "openTime": "18:45",
+      "startTime": "19:00",
+      "title": "大喜利スパークル vol.1",
+      "venue": "歌舞伎町Sparkle(東京都)",
+      "source": "tiget",
+      "sourceUrl": "https://tiget.net/events/527669",
+      "ticketStatus": "残りわずか",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "フランスピアノなかがわ",
+        "警備員",
+        "ぺるとも",
+        "ピュート",
+        "ジョンソンともゆき"
+      ],
+      "firstSeenAt": "2026-10-06T01:31:54.374099+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "pyuto"
+      ]
+    },
+    {
+      "performerId": "pyuto",
       "date": "2026-11-02",
       "openTime": "18:45",
       "startTime": "19:00",
@@ -10684,12 +10659,15 @@
         }
       ],
       "performersText": [
+        "ジャルジャル",
         "ジャングルポケット",
         "うるとらブギーズ",
         "ネルソンズ",
-        "いぬ",
         "コロコロチキチキペッパーズ",
         "やさしいズ",
+        "そいつどいつ",
+        "おミュータンツ",
+        "オフローズ",
         "ピュート",
         "・1回の先着申込で申込可能な公演数は『",
         "1公演",
