@@ -1,0 +1,47 @@
+
+name: Test parallel scraper
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 playwright
+
+      - name: Install Chromium
+        run: |
+          python -m playwright install chromium
+
+      - name: Run parallel scraper test
+        run: |
+          python -u fast_scraper.py
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: parallel-scraper-results
+          path: |
+            fast_scraper_test_events.json
+            fast_scraper_report.json
+          if-no-files-found: warn
+          retention-days: 3
