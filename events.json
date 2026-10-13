@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-12T19:05:09.751460+00:00",
+  "syncedAt": "2026-10-13T01:15:15.141550+00:00",
   "performers": [
     {
       "id": "maison",
@@ -4815,8 +4815,28 @@
       "venue": "よしもと福岡 大和証券劇場（福岡県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/70324/55233",
-      "ticketStatus": "",
-      "ticketOptions": [],
+      "ticketStatus": "販売中",
+      "ticketOptions": [
+        {
+          "name": "指定席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-13T10:00:00+09:00",
+              "endAt": "2026-10-30T16:15:00+09:00",
+              "saleKey": "fany|maison|70324|55233|指定席|前売|first_come|2026-10-13T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-10-13T10:00:00+09:00",
+          "saleEndAt": "2026-10-30T16:15:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
       "saleStartAt": "2026-10-13T10:00:00+09:00",
       "saleEndAt": "2026-10-30T16:15:00+09:00",
       "saleCategory": "first_come",
