@@ -1,9 +1,9 @@
 {
-  "syncedAt": "2026-10-12T19:22:25.636642+00:00",
+  "syncedAt": "2026-10-13T01:34:44.481865+00:00",
   "total": 143,
   "ticketListedCount": 143,
   "ticketUnlistedCount": 0,
-  "ticketOptionCount": 410,
+  "ticketOptionCount": 411,
   "salePeriodCount": 750,
   "events": [
     {
@@ -11030,8 +11030,29 @@
           "venue": "よしもと福岡 大和証券劇場（福岡県）",
           "openTime": "18:00",
           "startTime": "18:15",
-          "ticketStatus": "",
-          "ticketOptions": [],
+          "ticketStatus": "販売中",
+          "ticketOptions": [
+            {
+              "name": "指定席",
+              "type": "前売",
+              "status": "販売中",
+              "price": "￥2,500",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-10-13T10:00:00+09:00",
+              "saleEndAt": "2026-10-30T16:15:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "先着",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "先着",
+                  "startAt": "2026-10-13T10:00:00+09:00",
+                  "endAt": "2026-10-30T16:15:00+09:00"
+                }
+              ]
+            }
+          ],
           "salePeriods": [
             {
               "category": "first_come",
@@ -11239,6 +11260,28 @@
       "ticketListed": true,
       "ticketOptions": [
         {
+          "name": "指定席",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,500",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-10-13T10:00:00+09:00",
+          "saleEndAt": "2026-10-30T16:15:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-13T10:00:00+09:00",
+              "endAt": "2026-10-30T16:15:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/70324/55233"
+        },
+        {
           "name": "1Fスタンディング（整理番号付）",
           "type": "前売",
           "status": "販売中",
@@ -11340,7 +11383,7 @@
         }
       ],
       "status": "ticket_listed",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/70324/55233",
       "saleStartAt": "2026-10-13T10:00:00+09:00",
