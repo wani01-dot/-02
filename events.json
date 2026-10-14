@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-14T21:02:26.650254+00:00",
+  "syncedAt": "2026-10-14T23:46:29.235642+00:00",
   "performers": [
     {
       "id": "maison",
@@ -213,7 +213,7 @@
       "venue": "新宿バティオス(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/523550",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "予定数終了",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -4547,7 +4547,7 @@
       "venue": "Zepp Fukuoka（福岡県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/62826/50570",
-      "ticketStatus": "一部予定数終了",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [
         {
           "name": "1Fスタンディング（整理番号付）",
@@ -4571,7 +4571,7 @@
         {
           "name": "2Fスタンディング（整理番号付）",
           "type": "前売",
-          "status": "予定数終了",
+          "status": "残りわずか",
           "price": "￥5,000",
           "salePeriods": [
             {
@@ -7462,6 +7462,202 @@
       ]
     },
     {
+      "performerId": "maison",
+      "date": "2026-11-07",
+      "openTime": "09:30",
+      "startTime": "11:00",
+      "title": "たくろう万博",
+      "venue": "万博公園もみじ川芝生広場（大阪府）",
+      "source": "eplus",
+      "sourceUrl": "https://eplus.jp/sf/detail/4565990001-P0030001P021001?P1=0175",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-08-01T10:00:00+09:00",
+          "saleEndAt": "2026-11-05T18:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-08-01T10:00:00+09:00",
+              "endAt": "2026-11-05T18:00:00+09:00",
+              "saleKey": "eplus|maison|4565990001-P0030001P021001|先着|先着|first_come|2026-08-01T10:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-07-18T11:00:00+09:00",
+          "saleEndAt": "2026-07-31T11:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-18T11:00:00+09:00",
+              "endAt": "2026-07-31T11:00:00+09:00",
+              "saleKey": "eplus|maison|4565990001-P0030001P021001|先着|先着|first_come|2026-07-18T11:00:00+09:00"
+            }
+          ]
+        }
+      ],
+      "saleStartAt": "2026-07-18T11:00:00+09:00",
+      "saleEndAt": "2026-07-31T11:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-08-01T10:00:00+09:00",
+          "endAt": "2026-11-05T18:00:00+09:00"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-18T11:00:00+09:00",
+          "endAt": "2026-07-31T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "たくろう",
+        "11",
+        "7(土)",
+        "■漫才万博",
+        "ミルクボーイ",
+        "見取り図",
+        "ロングコートダディ",
+        "ニッポンの社長",
+        "滝音",
+        "紅しょうが",
+        "ドンデコルテ",
+        "豪快キャプテン",
+        "カベポスター",
+        "ダブルヒガシ",
+        "ドーナツ･ピーナツ",
+        "バッテリィズ",
+        "天才ピアニスト",
+        "フースーヤ",
+        "めぞん",
+        "ヨネダ2000",
+        "■リバイバル万博",
+        "レイザーラモンRG",
+        "兼光タカシ"
+      ],
+      "firstSeenAt": "2026-10-14T23:46:29.229082+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-07",
+      "openTime": "",
+      "startTime": "11:01",
+      "title": "たくろう万博",
+      "venue": "万博公園もみじ川芝生広場（大阪府）",
+      "source": "eplus",
+      "sourceUrl": "https://eplus.jp/sf/detail/4565990001-P0030001P021003?P1=0175",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-08-01T10:00:00+09:00",
+          "saleEndAt": "2026-11-05T18:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-08-01T10:00:00+09:00",
+              "endAt": "2026-11-05T18:00:00+09:00",
+              "saleKey": "eplus|maison|4565990001-P0030001P021003|先着|先着|first_come|2026-08-01T10:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-07-18T11:00:00+09:00",
+          "saleEndAt": "2026-07-31T11:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-18T11:00:00+09:00",
+              "endAt": "2026-07-31T11:00:00+09:00",
+              "saleKey": "eplus|maison|4565990001-P0030001P021003|先着|先着|first_come|2026-07-18T11:00:00+09:00"
+            }
+          ]
+        }
+      ],
+      "saleStartAt": "2026-07-18T11:00:00+09:00",
+      "saleEndAt": "2026-07-31T11:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-08-01T10:00:00+09:00",
+          "endAt": "2026-11-05T18:00:00+09:00"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-18T11:00:00+09:00",
+          "endAt": "2026-07-31T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "たくろう",
+        "11",
+        "7(土)",
+        "■漫才万博",
+        "ミルクボーイ",
+        "見取り図",
+        "ロングコートダディ",
+        "ニッポンの社長",
+        "滝音",
+        "紅しょうが",
+        "ドンデコルテ",
+        "豪快キャプテン",
+        "カベポスター",
+        "ダブルヒガシ",
+        "ドーナツ･ピーナツ",
+        "バッテリィズ",
+        "天才ピアニスト",
+        "フースーヤ",
+        "めぞん",
+        "ヨネダ2000",
+        "■リバイバル万博",
+        "レイザーラモンRG",
+        "兼光タカシ"
+      ],
+      "firstSeenAt": "2026-10-14T23:46:29.229082+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
       "performerId": "nansui",
       "date": "2026-11-07",
       "openTime": "11:45",
@@ -8029,6 +8225,104 @@
       ]
     },
     {
+      "performerId": "maison",
+      "date": "2026-11-08",
+      "openTime": "09:30",
+      "startTime": "11:00",
+      "title": "たくろう万博",
+      "venue": "万博公園もみじ川芝生広場（大阪府）",
+      "source": "eplus",
+      "sourceUrl": "https://eplus.jp/sf/detail/4565990001-P0030001P021002?P1=0175",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-08-01T10:00:00+09:00",
+          "saleEndAt": "2026-11-06T18:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-08-01T10:00:00+09:00",
+              "endAt": "2026-11-06T18:00:00+09:00",
+              "saleKey": "eplus|maison|4565990001-P0030001P021002|先着|先着|first_come|2026-08-01T10:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-07-18T11:00:00+09:00",
+          "saleEndAt": "2026-07-31T11:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-07-18T11:00:00+09:00",
+              "endAt": "2026-07-31T11:00:00+09:00",
+              "saleKey": "eplus|maison|4565990001-P0030001P021002|先着|先着|first_come|2026-07-18T11:00:00+09:00"
+            }
+          ]
+        }
+      ],
+      "saleStartAt": "2026-07-18T11:00:00+09:00",
+      "saleEndAt": "2026-07-31T11:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-08-01T10:00:00+09:00",
+          "endAt": "2026-11-06T18:00:00+09:00"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-07-18T11:00:00+09:00",
+          "endAt": "2026-07-31T11:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "たくろう",
+        "11",
+        "7(土)",
+        "■漫才万博",
+        "ミルクボーイ",
+        "見取り図",
+        "ロングコートダディ",
+        "ニッポンの社長",
+        "滝音",
+        "紅しょうが",
+        "ドンデコルテ",
+        "豪快キャプテン",
+        "カベポスター",
+        "ダブルヒガシ",
+        "ドーナツ･ピーナツ",
+        "バッテリィズ",
+        "天才ピアニスト",
+        "フースーヤ",
+        "めぞん",
+        "ヨネダ2000",
+        "■リバイバル万博",
+        "レイザーラモンRG",
+        "兼光タカシ"
+      ],
+      "firstSeenAt": "2026-10-14T23:46:29.229082+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
       "performerId": "nansui",
       "date": "2026-11-08",
       "openTime": "10:45",
@@ -8431,6 +8725,61 @@
         "枚数は『",
         "10枚まで",
         "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-10-14T21:02:26.645869+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-08",
+      "openTime": "15:15",
+      "startTime": "15:45",
+      "title": "教育おたのしみ会～笑いとげんじつ～ 【東京公演】",
+      "venue": "有楽町朝日ホール（東京都）",
+      "source": "eplus",
+      "sourceUrl": "https://eplus.jp/sf/detail/4604090001-P0030001P021001?P1=0175",
+      "ticketStatus": "予定数終了",
+      "ticketOptions": [
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "予定数終了",
+          "price": "",
+          "saleStartAt": "2026-09-19T10:00:00+09:00",
+          "saleEndAt": "2026-11-06T18:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-09-19T10:00:00+09:00",
+              "endAt": "2026-11-06T18:00:00+09:00",
+              "saleKey": "eplus|maison|4604090001-P0030001P021001|先着|先着|first_come|2026-09-19T10:00:00+09:00"
+            }
+          ]
+        }
+      ],
+      "saleStartAt": "2026-09-19T10:00:00+09:00",
+      "saleEndAt": "2026-11-06T18:00:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-09-19T10:00:00+09:00",
+          "endAt": "2026-11-06T18:00:00+09:00"
+        }
+      ],
+      "performersText": [
+        "ケビンス",
+        "めぞん",
+        "大王",
+        "カナメストーン(マセキ芸能社)",
+        "タマ(教育番組)"
       ],
       "firstSeenAt": "2026-10-14T21:02:26.645869+00:00",
       "newUntil": "",
