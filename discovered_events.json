@@ -1,9 +1,9 @@
 {
-  "syncedAt": "2026-10-14T22:40:55.446309+00:00",
+  "syncedAt": "2026-10-15T00:56:34.047040+00:00",
   "total": 140,
   "ticketListedCount": 140,
   "ticketUnlistedCount": 0,
-  "ticketOptionCount": 402,
+  "ticketOptionCount": 403,
   "salePeriodCount": 732,
   "events": [
     {
@@ -10242,7 +10242,7 @@
           "venue": "Zepp Fukuoka（福岡県）",
           "openTime": "18:15",
           "startTime": "19:00",
-          "ticketStatus": "一部予定数終了",
+          "ticketStatus": "残りわずか",
           "ticketOptions": [
             {
               "name": "1Fスタンディング（整理番号付）",
@@ -10267,7 +10267,7 @@
             {
               "name": "2Fスタンディング（整理番号付）",
               "type": "前売",
-              "status": "予定数終了",
+              "status": "残りわずか",
               "price": "￥5,000",
               "remaining": null,
               "remainingText": "",
@@ -10414,6 +10414,28 @@
           ],
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/62826/50569"
+        },
+        {
+          "name": "2Fスタンディング（整理番号付）",
+          "type": "前売",
+          "status": "残りわずか",
+          "price": "￥5,000",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-08-08T10:00:00+09:00",
+          "saleEndAt": "2026-10-29T23:59:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-08-08T10:00:00+09:00",
+              "endAt": "2026-10-29T23:59:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/62826/50570"
         }
       ],
       "salePeriods": [
