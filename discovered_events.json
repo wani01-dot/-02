@@ -1,9 +1,9 @@
 {
-  "syncedAt": "2026-10-15T00:56:34.047040+00:00",
+  "syncedAt": "2026-10-15T05:45:26.806366+00:00",
   "total": 140,
   "ticketListedCount": 140,
   "ticketUnlistedCount": 0,
-  "ticketOptionCount": 403,
+  "ticketOptionCount": 409,
   "salePeriodCount": 732,
   "events": [
     {
@@ -10242,7 +10242,7 @@
           "venue": "Zepp Fukuoka（福岡県）",
           "openTime": "18:15",
           "startTime": "19:00",
-          "ticketStatus": "残りわずか",
+          "ticketStatus": "一部予定数終了",
           "ticketOptions": [
             {
               "name": "1Fスタンディング（整理番号付）",
@@ -10267,7 +10267,7 @@
             {
               "name": "2Fスタンディング（整理番号付）",
               "type": "前売",
-              "status": "残りわずか",
+              "status": "予定数終了",
               "price": "￥5,000",
               "remaining": null,
               "remainingText": "",
@@ -10414,28 +10414,6 @@
           ],
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/62826/50569"
-        },
-        {
-          "name": "2Fスタンディング（整理番号付）",
-          "type": "前売",
-          "status": "残りわずか",
-          "price": "￥5,000",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-08-08T10:00:00+09:00",
-          "saleEndAt": "2026-10-29T23:59:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-08-08T10:00:00+09:00",
-              "endAt": "2026-10-29T23:59:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/62826/50570"
         }
       ],
       "salePeriods": [
@@ -14167,8 +14145,29 @@
           "venue": "よしもと幕張イオンモール劇場（千葉県）",
           "openTime": "17:30",
           "startTime": "18:00",
-          "ticketStatus": "",
-          "ticketOptions": [],
+          "ticketStatus": "販売中",
+          "ticketOptions": [
+            {
+              "name": "全席指定",
+              "type": "前売",
+              "status": "販売中",
+              "price": "￥2,300",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-10-15T10:00:00+09:00",
+              "saleEndAt": "2026-11-03T16:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "先着",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "先着",
+                  "startAt": "2026-10-15T10:00:00+09:00",
+                  "endAt": "2026-11-03T16:00:00+09:00"
+                }
+              ]
+            }
+          ],
           "salePeriods": [
             {
               "category": "first_come",
@@ -14190,7 +14189,30 @@
         }
       ],
       "ticketListed": true,
-      "ticketOptions": [],
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥2,300",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-10-15T10:00:00+09:00",
+          "saleEndAt": "2026-11-03T16:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-15T10:00:00+09:00",
+              "endAt": "2026-11-03T16:00:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/70340/55345"
+        }
+      ],
       "salePeriods": [
         {
           "category": "first_come",
@@ -14210,7 +14232,7 @@
         }
       ],
       "status": "ticket_listed",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/70340/55345",
       "saleStartAt": "2026-10-15T10:00:00+09:00",
@@ -30244,8 +30266,29 @@
           "venue": "大宮ラクーンよしもと劇場（埼玉県）",
           "openTime": "17:20",
           "startTime": "17:30",
-          "ticketStatus": "",
-          "ticketOptions": [],
+          "ticketStatus": "販売中",
+          "ticketOptions": [
+            {
+              "name": "全席指定",
+              "type": "前売",
+              "status": "販売中",
+              "price": "￥1,800",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-10-15T10:00:00+09:00",
+              "saleEndAt": "2026-11-19T15:30:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "先着",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "先着",
+                  "startAt": "2026-10-15T10:00:00+09:00",
+                  "endAt": "2026-11-19T15:30:00+09:00"
+                }
+              ]
+            }
+          ],
           "salePeriods": [
             {
               "category": "first_come",
@@ -30324,6 +30367,28 @@
           "name": "全席指定",
           "type": "前売",
           "status": "販売中",
+          "price": "￥1,800",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-10-15T10:00:00+09:00",
+          "saleEndAt": "2026-11-19T15:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-15T10:00:00+09:00",
+              "endAt": "2026-11-19T15:30:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/70596/55478"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
           "price": "￥2,000",
           "remaining": null,
           "remainingText": "",
@@ -30378,7 +30443,7 @@
         }
       ],
       "status": "ticket_listed",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/70596/55478",
       "saleStartAt": "2026-10-15T10:00:00+09:00",
@@ -30473,8 +30538,29 @@
           "venue": "大宮ラクーンよしもと劇場（埼玉県）",
           "openTime": "17:20",
           "startTime": "17:30",
-          "ticketStatus": "",
-          "ticketOptions": [],
+          "ticketStatus": "販売中",
+          "ticketOptions": [
+            {
+              "name": "全席指定",
+              "type": "前売",
+              "status": "販売中",
+              "price": "￥1,800",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-10-15T10:00:00+09:00",
+              "saleEndAt": "2026-11-19T15:30:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "先着",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "先着",
+                  "startAt": "2026-10-15T10:00:00+09:00",
+                  "endAt": "2026-11-19T15:30:00+09:00"
+                }
+              ]
+            }
+          ],
           "salePeriods": [
             {
               "category": "first_come",
@@ -30518,6 +30604,28 @@
           ],
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/69547/54812"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,800",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-10-15T10:00:00+09:00",
+          "saleEndAt": "2026-11-19T15:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-15T10:00:00+09:00",
+              "endAt": "2026-11-19T15:30:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/70596/55478"
         }
       ],
       "salePeriods": [
@@ -40225,8 +40333,29 @@
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "18:45",
           "startTime": "19:00",
-          "ticketStatus": "",
-          "ticketOptions": [],
+          "ticketStatus": "販売中",
+          "ticketOptions": [
+            {
+              "name": "全席指定",
+              "type": "前売",
+              "status": "販売中",
+              "price": "￥1,500",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-10-15T10:00:00+09:00",
+              "saleEndAt": "2026-11-28T17:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "先着",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "先着",
+                  "startAt": "2026-10-15T10:00:00+09:00",
+                  "endAt": "2026-11-28T17:00:00+09:00"
+                }
+              ]
+            }
+          ],
           "salePeriods": [
             {
               "category": "first_come",
@@ -40314,6 +40443,28 @@
           ],
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/68070/54087"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-10-15T10:00:00+09:00",
+          "saleEndAt": "2026-11-28T17:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-15T10:00:00+09:00",
+              "endAt": "2026-11-28T17:00:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/70502/55430"
         }
       ],
       "salePeriods": [
@@ -40942,8 +41093,29 @@
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "18:45",
           "startTime": "19:00",
-          "ticketStatus": "",
-          "ticketOptions": [],
+          "ticketStatus": "販売中",
+          "ticketOptions": [
+            {
+              "name": "全席指定",
+              "type": "前売",
+              "status": "販売中",
+              "price": "￥1,500",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-10-15T10:00:00+09:00",
+              "saleEndAt": "2026-11-28T17:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "先着",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "先着",
+                  "startAt": "2026-10-15T10:00:00+09:00",
+                  "endAt": "2026-11-28T17:00:00+09:00"
+                }
+              ]
+            }
+          ],
           "salePeriods": [
             {
               "category": "first_come",
@@ -41031,6 +41203,28 @@
           ],
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/68070/54094"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,500",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-10-15T10:00:00+09:00",
+          "saleEndAt": "2026-11-28T17:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-15T10:00:00+09:00",
+              "endAt": "2026-11-28T17:00:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/70502/55430"
         }
       ],
       "salePeriods": [
@@ -41476,8 +41670,29 @@
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "18:45",
           "startTime": "19:00",
-          "ticketStatus": "",
-          "ticketOptions": [],
+          "ticketStatus": "販売中",
+          "ticketOptions": [
+            {
+              "name": "全席指定",
+              "type": "前売",
+              "status": "販売中",
+              "price": "￥1,500",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-10-15T10:00:00+09:00",
+              "saleEndAt": "2026-11-28T17:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "先着",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "先着",
+                  "startAt": "2026-10-15T10:00:00+09:00",
+                  "endAt": "2026-11-28T17:00:00+09:00"
+                }
+              ]
+            }
+          ],
           "salePeriods": [
             {
               "category": "first_come",
@@ -41688,6 +41903,28 @@
           "name": "全席指定",
           "type": "前売",
           "status": "販売中",
+          "price": "￥1,500",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-10-15T10:00:00+09:00",
+          "saleEndAt": "2026-11-28T17:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-15T10:00:00+09:00",
+              "endAt": "2026-11-28T17:00:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/70502/55430"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
           "price": "￥3,000",
           "remaining": null,
           "remainingText": "",
@@ -41802,7 +42039,7 @@
         }
       ],
       "status": "ticket_listed",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/70502/55430",
       "saleStartAt": "2026-10-15T10:00:00+09:00",
@@ -41845,8 +42082,29 @@
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "18:45",
           "startTime": "19:00",
-          "ticketStatus": "",
-          "ticketOptions": [],
+          "ticketStatus": "販売中",
+          "ticketOptions": [
+            {
+              "name": "全席指定",
+              "type": "前売",
+              "status": "販売中",
+              "price": "￥1,500",
+              "remaining": null,
+              "remainingText": "",
+              "saleStartAt": "2026-10-15T10:00:00+09:00",
+              "saleEndAt": "2026-11-28T17:00:00+09:00",
+              "saleCategory": "first_come",
+              "saleLabel": "先着",
+              "salePeriods": [
+                {
+                  "category": "first_come",
+                  "label": "先着",
+                  "startAt": "2026-10-15T10:00:00+09:00",
+                  "endAt": "2026-11-28T17:00:00+09:00"
+                }
+              ]
+            }
+          ],
           "salePeriods": [
             {
               "category": "first_come",
@@ -42057,6 +42315,28 @@
           "name": "全席指定",
           "type": "前売",
           "status": "販売中",
+          "price": "￥1,500",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-10-15T10:00:00+09:00",
+          "saleEndAt": "2026-11-28T17:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-15T10:00:00+09:00",
+              "endAt": "2026-11-28T17:00:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/70502/55430"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
           "price": "￥3,000",
           "remaining": null,
           "remainingText": "",
@@ -42171,7 +42451,7 @@
         }
       ],
       "status": "ticket_listed",
-      "ticketStatus": "",
+      "ticketStatus": "販売中",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/70502/55430",
       "saleStartAt": "2026-10-15T10:00:00+09:00",
