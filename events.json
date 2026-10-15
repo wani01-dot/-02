@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-15T12:01:00.966923+00:00",
+  "syncedAt": "2026-10-15T16:14:12.993928+00:00",
   "performers": [
     {
       "id": "maison",
@@ -51,169 +51,6 @@
     }
   ],
   "events": [
-    {
-      "performerId": "maison",
-      "date": "2026-10-15",
-      "openTime": "17:00",
-      "startTime": "17:15",
-      "title": "渋谷Kiwami極LIVEプラス＋",
-      "venue": "渋谷よしもと漫才劇場（東京都）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/64331/51827",
-      "ticketStatus": "",
-      "ticketOptions": [],
-      "saleStartAt": "2026-08-25T11:00:00+09:00",
-      "saleEndAt": "2026-08-28T11:00:00+09:00",
-      "saleCategory": "advance",
-      "salePeriods": [
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-08-25T11:00:00+09:00",
-          "endAt": "2026-08-28T11:00:00+09:00"
-        }
-      ],
-      "performersText": [
-        "[ネタ＆コーナーライブ]滝音",
-        "9番街レトロ",
-        "めぞん",
-        "ヨネダ2000",
-        "セッツァー",
-        "入間国際宣言",
-        "ラニーノーズ",
-        "アメリカンBBチキン",
-        "オフローズ",
-        "アズーロ24",
-        "鉄人小町",
-        "[ コーナー出演者]MC：滝音"
-      ],
-      "firstSeenAt": "2026-10-14T21:02:26.645869+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison"
-      ]
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-10-15",
-      "openTime": "17:15",
-      "startTime": "17:30",
-      "title": "六本木コントライブNEXT！",
-      "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/64357/51902",
-      "ticketStatus": "",
-      "ticketOptions": [],
-      "saleStartAt": "2026-08-25T11:00:00+09:00",
-      "saleEndAt": "2026-08-28T11:00:00+09:00",
-      "saleCategory": "advance",
-      "salePeriods": [
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-08-25T11:00:00+09:00",
-          "endAt": "2026-08-28T11:00:00+09:00"
-        }
-      ],
-      "performersText": [
-        "佐久間一行",
-        "ヒューマン中村",
-        "しずる",
-        "大谷健太",
-        "やさしいズ",
-        "kento fukaya",
-        "そいつどいつ",
-        "ぶったま",
-        "軟水",
-        "ナユタ",
-        "MC：やさしいズ"
-      ],
-      "firstSeenAt": "2026-10-14T21:02:26.645869+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ]
-    },
-    {
-      "performerId": "pyuto",
-      "date": "2026-10-15",
-      "openTime": "18:30",
-      "startTime": "19:00",
-      "title": "ケイダッシュゴールドライブ",
-      "venue": "新宿バティオス(東京都)",
-      "source": "tiget",
-      "sourceUrl": "https://tiget.net/events/523550",
-      "ticketStatus": "予定数終了",
-      "ticketOptions": [],
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "salePeriods": [],
-      "performersText": [
-        "オッパショ石",
-        "マードック",
-        "ジャガモンド",
-        "おミルク",
-        "どんぐりたけし",
-        "出山",
-        "ファイティングボンバー",
-        "ハルヨ",
-        "ピュート",
-        "てんぱねら",
-        "コイオドリ",
-        "ヤーレンズ",
-        "サツマカワRPG",
-        "≪出演予定≫",
-        "【ＭＣ】ヤーレンズ",
-        "ピュート（吉本興業）"
-      ],
-      "firstSeenAt": "2026-10-01T09:11:54.306555+00:00",
-      "newUntil": "2026-10-03T09:11:54.306567+00:00",
-      "trackedPerformers": [
-        "pyuto"
-      ]
-    },
-    {
-      "performerId": "maison",
-      "date": "2026-10-15",
-      "openTime": "20:45",
-      "startTime": "21:00",
-      "title": "超時空笑塞メゾロス",
-      "venue": "渋谷よしもと漫才劇場（東京都）",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/64516/52157",
-      "ticketStatus": "",
-      "ticketOptions": [],
-      "saleStartAt": "2026-08-25T11:00:00+09:00",
-      "saleEndAt": "2026-08-28T11:00:00+09:00",
-      "saleCategory": "advance",
-      "salePeriods": [
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-08-25T11:00:00+09:00",
-          "endAt": "2026-08-28T11:00:00+09:00"
-        }
-      ],
-      "performersText": [
-        "めぞん",
-        "ヨネダ2000",
-        "金魚番長",
-        "兄弟",
-        "江頭一馬",
-        "ゾンビのアトリエ",
-        "タケゾウ",
-        "ネネネ",
-        "美バンブー",
-        "スピード",
-        "MC：ビューティフルトーキョーマンズ 鈴木バイダン"
-      ],
-      "firstSeenAt": "2026-10-14T21:02:26.645869+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison"
-      ]
-    },
     {
       "performerId": "maison",
       "date": "2026-10-17",
@@ -3487,7 +3324,7 @@
       "venue": "杉並公会堂(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/526396",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "予定数終了",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
