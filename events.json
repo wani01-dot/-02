@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-16T09:37:04.013352+00:00",
+  "syncedAt": "2026-10-16T14:12:29.795186+00:00",
   "performers": [
     {
       "id": "maison",
@@ -3327,7 +3327,7 @@
       "venue": "杉並公会堂(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/526396",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -3353,6 +3353,7 @@
         "エルボー",
         "ヤーレンズ",
         "鬼塚ムソウ",
+        "ﾚﾅﾁｮ",
         "お腹いっぱいになるまで“漫才”を食べるように浴びられる漫才オンリーライブです！"
       ],
       "firstSeenAt": "2026-09-28T11:08:57.732173+00:00",
@@ -8738,12 +8739,12 @@
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/68332/54205",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "一部予定数終了",
       "ticketOptions": [
         {
           "name": "全席指定",
           "type": "前売",
-          "status": "残りわずか",
+          "status": "予定数終了",
           "price": "￥2,500",
           "salePeriods": [
             {
@@ -11275,25 +11276,6 @@
           ]
         },
         {
-          "name": "ねじれネジ / パスタとパスタ / 喜喜かいばしら / 9番街レトロ なかむらしゅん",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-10-15T19:00:00+09:00",
-          "saleEndAt": "2026-10-21T23:59:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-10-15T19:00:00+09:00",
-              "endAt": "2026-10-21T23:59:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|ねじれネジ / パスタとパスタ / 喜喜かいばしら / 9番街レトロ なかむらしゅん|先着|advance|2026-10-15T19:00:00+09:00"
-            }
-          ]
-        },
-        {
           "name": "十九人 / ４０００ / 無尽蔵",
           "type": "先着",
           "status": "販売中",
@@ -11309,6 +11291,25 @@
               "startAt": "2026-10-15T19:00:00+09:00",
               "endAt": "2026-10-21T23:59:00+09:00",
               "saleKey": "livepocket|maison|z2nvo|十九人 / ４０００ / 無尽蔵|先着|advance|2026-10-15T19:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "ウィークリー習慣 / ポテトカレッジ / ダンゴ虫たち",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-10-15T19:00:00+09:00",
+          "saleEndAt": "2026-10-21T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-10-15T19:00:00+09:00",
+              "endAt": "2026-10-21T23:59:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|ウィークリー習慣 / ポテトカレッジ / ダンゴ虫たち|先着|advance|2026-10-15T19:00:00+09:00"
             }
           ]
         }
