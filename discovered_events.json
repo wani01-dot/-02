@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-16T23:57:58.633767+00:00",
+  "syncedAt": "2026-10-17T04:09:34.643696+00:00",
   "total": 137,
   "ticketListedCount": 137,
   "ticketUnlistedCount": 0,
@@ -35,72 +35,31 @@
           "score": 24,
           "performerId": "maison",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52242",
+          "sourceUrl": "https://ticket.fany.lol/reception/64653/52242",
           "title": "神保町マンゲキお笑いライブ",
           "date": "2026-10-17",
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "10:45",
           "startTime": "11:00",
-          "ticketStatus": "一部予定数終了",
-          "ticketOptions": [
-            {
-              "name": "全席指定",
-              "type": "当日",
-              "status": "販売中",
-              "price": "￥2,800",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-05T10:00:00+09:00",
-              "saleEndAt": "2026-10-17T09:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-09-05T10:00:00+09:00",
-                  "endAt": "2026-10-17T09:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "立見（整理番号付）",
-              "type": "当日",
-              "status": "予定数終了",
-              "price": "￥2,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-05T10:00:00+09:00",
-              "saleEndAt": "2026-10-17T09:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-09-05T10:00:00+09:00",
-                  "endAt": "2026-10-17T09:00:00+09:00"
-                }
-              ]
-            }
-          ],
+          "ticketStatus": "",
+          "ticketOptions": [],
           "salePeriods": [
             {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-17T09:00:00+09:00"
+              "category": "advance",
+              "label": "抽選",
+              "startAt": "2026-08-25T11:00:00+09:00",
+              "endAt": "2026-08-28T11:00:00+09:00"
             },
             {
-              "category": "first_come",
+              "category": "advance",
               "label": "",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-17T09:00:00+09:00"
+              "startAt": "2026-08-25T11:00:00+09:00",
+              "endAt": "2026-08-28T11:00:00+09:00"
             }
           ],
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-17T09:00:00+09:00",
-          "saleCategory": "first_come",
+          "saleStartAt": "2026-08-25T11:00:00+09:00",
+          "saleEndAt": "2026-08-28T11:00:00+09:00",
+          "saleCategory": "advance",
           "saleLabel": ""
         },
         {
@@ -258,7 +217,7 @@
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-17T09:00:00+09:00",
+          "saleEndAt": "2026-10-17T11:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着",
           "salePeriods": [
@@ -266,11 +225,11 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-17T09:00:00+09:00"
+              "endAt": "2026-10-17T11:00:00+09:00"
             }
           ],
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52242"
+          "sourceUrl": "https://ticket.fany.lol/reception/64655/52243"
         },
         {
           "name": "立見（整理番号付）",
@@ -280,7 +239,7 @@
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-17T09:00:00+09:00",
+          "saleEndAt": "2026-10-17T11:00:00+09:00",
           "saleCategory": "first_come",
           "saleLabel": "先着",
           "salePeriods": [
@@ -288,29 +247,29 @@
               "category": "first_come",
               "label": "先着",
               "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-17T09:00:00+09:00"
+              "endAt": "2026-10-17T11:00:00+09:00"
             }
           ],
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52242"
+          "sourceUrl": "https://ticket.fany.lol/reception/64655/52243"
         }
       ],
       "salePeriods": [
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-09-05T10:00:00+09:00",
-          "endAt": "2026-10-17T09:00:00+09:00",
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-08-25T11:00:00+09:00",
+          "endAt": "2026-08-28T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52242"
+          "sourceUrl": "https://ticket.fany.lol/reception/64653/52242"
         },
         {
-          "category": "first_come",
+          "category": "advance",
           "label": "",
-          "startAt": "2026-09-05T10:00:00+09:00",
-          "endAt": "2026-10-17T09:00:00+09:00",
+          "startAt": "2026-08-25T11:00:00+09:00",
+          "endAt": "2026-08-28T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52242"
+          "sourceUrl": "https://ticket.fany.lol/reception/64653/52242"
         },
         {
           "category": "first_come",
@@ -346,12 +305,12 @@
         }
       ],
       "status": "ticket_listed",
-      "ticketStatus": "一部予定数終了",
+      "ticketStatus": "",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/64655/52242",
-      "saleStartAt": "2026-09-05T10:00:00+09:00",
-      "saleEndAt": "2026-10-17T09:00:00+09:00",
-      "saleCategory": "first_come",
+      "sourceUrl": "https://ticket.fany.lol/reception/64653/52242",
+      "saleStartAt": "2026-08-25T11:00:00+09:00",
+      "saleEndAt": "2026-08-28T11:00:00+09:00",
+      "saleCategory": "advance",
       "saleLabel": ""
     },
     {
@@ -455,72 +414,31 @@
           "score": 20,
           "performerId": "maison",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52242",
+          "sourceUrl": "https://ticket.fany.lol/reception/64653/52242",
           "title": "神保町マンゲキお笑いライブ",
           "date": "2026-10-17",
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "10:45",
           "startTime": "11:00",
-          "ticketStatus": "一部予定数終了",
-          "ticketOptions": [
-            {
-              "name": "全席指定",
-              "type": "当日",
-              "status": "販売中",
-              "price": "￥2,800",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-05T10:00:00+09:00",
-              "saleEndAt": "2026-10-17T09:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-09-05T10:00:00+09:00",
-                  "endAt": "2026-10-17T09:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "立見（整理番号付）",
-              "type": "当日",
-              "status": "予定数終了",
-              "price": "￥2,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-05T10:00:00+09:00",
-              "saleEndAt": "2026-10-17T09:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-09-05T10:00:00+09:00",
-                  "endAt": "2026-10-17T09:00:00+09:00"
-                }
-              ]
-            }
-          ],
+          "ticketStatus": "",
+          "ticketOptions": [],
           "salePeriods": [
             {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-17T09:00:00+09:00"
+              "category": "advance",
+              "label": "抽選",
+              "startAt": "2026-08-25T11:00:00+09:00",
+              "endAt": "2026-08-28T11:00:00+09:00"
             },
             {
-              "category": "first_come",
+              "category": "advance",
               "label": "",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-17T09:00:00+09:00"
+              "startAt": "2026-08-25T11:00:00+09:00",
+              "endAt": "2026-08-28T11:00:00+09:00"
             }
           ],
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-17T09:00:00+09:00",
-          "saleCategory": "first_come",
+          "saleStartAt": "2026-08-25T11:00:00+09:00",
+          "saleEndAt": "2026-08-28T11:00:00+09:00",
+          "saleCategory": "advance",
           "saleLabel": ""
         },
         {
@@ -661,20 +579,20 @@
           "sourceUrl": "https://ticket.fany.lol/reception/64655/52243"
         },
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-09-05T10:00:00+09:00",
-          "endAt": "2026-10-17T09:00:00+09:00",
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-08-25T11:00:00+09:00",
+          "endAt": "2026-08-28T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52242"
+          "sourceUrl": "https://ticket.fany.lol/reception/64653/52242"
         },
         {
-          "category": "first_come",
+          "category": "advance",
           "label": "",
-          "startAt": "2026-09-05T10:00:00+09:00",
-          "endAt": "2026-10-17T09:00:00+09:00",
+          "startAt": "2026-08-25T11:00:00+09:00",
+          "endAt": "2026-08-28T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52242"
+          "sourceUrl": "https://ticket.fany.lol/reception/64653/52242"
         },
         {
           "category": "first_come",
@@ -803,72 +721,31 @@
           "score": 20,
           "performerId": "maison",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52242",
+          "sourceUrl": "https://ticket.fany.lol/reception/64653/52242",
           "title": "神保町マンゲキお笑いライブ",
           "date": "2026-10-17",
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "10:45",
           "startTime": "11:00",
-          "ticketStatus": "一部予定数終了",
-          "ticketOptions": [
-            {
-              "name": "全席指定",
-              "type": "当日",
-              "status": "販売中",
-              "price": "￥2,800",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-05T10:00:00+09:00",
-              "saleEndAt": "2026-10-17T09:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-09-05T10:00:00+09:00",
-                  "endAt": "2026-10-17T09:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "立見（整理番号付）",
-              "type": "当日",
-              "status": "予定数終了",
-              "price": "￥2,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-05T10:00:00+09:00",
-              "saleEndAt": "2026-10-17T09:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-09-05T10:00:00+09:00",
-                  "endAt": "2026-10-17T09:00:00+09:00"
-                }
-              ]
-            }
-          ],
+          "ticketStatus": "",
+          "ticketOptions": [],
           "salePeriods": [
             {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-17T09:00:00+09:00"
+              "category": "advance",
+              "label": "抽選",
+              "startAt": "2026-08-25T11:00:00+09:00",
+              "endAt": "2026-08-28T11:00:00+09:00"
             },
             {
-              "category": "first_come",
+              "category": "advance",
               "label": "",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-17T09:00:00+09:00"
+              "startAt": "2026-08-25T11:00:00+09:00",
+              "endAt": "2026-08-28T11:00:00+09:00"
             }
           ],
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-17T09:00:00+09:00",
-          "saleCategory": "first_come",
+          "saleStartAt": "2026-08-25T11:00:00+09:00",
+          "saleEndAt": "2026-08-28T11:00:00+09:00",
+          "saleCategory": "advance",
           "saleLabel": ""
         },
         {
@@ -1009,20 +886,20 @@
           "sourceUrl": "https://ticket.fany.lol/reception/64655/52244"
         },
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-09-05T10:00:00+09:00",
-          "endAt": "2026-10-17T09:00:00+09:00",
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-08-25T11:00:00+09:00",
+          "endAt": "2026-08-28T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52242"
+          "sourceUrl": "https://ticket.fany.lol/reception/64653/52242"
         },
         {
-          "category": "first_come",
+          "category": "advance",
           "label": "",
-          "startAt": "2026-09-05T10:00:00+09:00",
-          "endAt": "2026-10-17T09:00:00+09:00",
+          "startAt": "2026-08-25T11:00:00+09:00",
+          "endAt": "2026-08-28T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64655/52242"
+          "sourceUrl": "https://ticket.fany.lol/reception/64653/52242"
         },
         {
           "category": "first_come",
