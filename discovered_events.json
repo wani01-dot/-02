@@ -1,541 +1,11 @@
 {
-  "syncedAt": "2026-10-17T15:51:47.661591+00:00",
-  "total": 137,
-  "ticketListedCount": 137,
+  "syncedAt": "2026-10-17T18:20:47.641831+00:00",
+  "total": 133,
+  "ticketListedCount": 133,
   "ticketUnlistedCount": 0,
   "ticketOptionCount": 399,
-  "salePeriodCount": 710,
+  "salePeriodCount": 702,
   "events": [
-    {
-      "performerId": "maison",
-      "date": "2026-10-17",
-      "openTime": "10:45",
-      "startTime": "11:00",
-      "title": "神保町マンゲキお笑いライブ",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[ネタ出演者]滝音／エルフ／めぞん／シカゴ実業／ミカボ／アズーロ24／マリーマリー／インテイク／ゼロカラン／ただならぬ刀／あなたとネ [コーナー出演者]MC：ゼロカラン／エルフ／めぞん／あなたとネ"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "performerId": "maison",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64653/52242",
-          "title": "神保町マンゲキお笑いライブ",
-          "date": "2026-10-17",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "",
-          "ticketOptions": [],
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "抽選",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            },
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-25T11:00:00+09:00",
-          "saleEndAt": "2026-08-28T11:00:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": ""
-        },
-        {
-          "score": 20,
-          "performerId": "maison",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64653/52243",
-          "title": "神保町マンゲキお笑いライブ",
-          "date": "2026-10-17",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "12:45",
-          "startTime": "13:00",
-          "ticketStatus": "",
-          "ticketOptions": [],
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "抽選",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            },
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-25T11:00:00+09:00",
-          "saleEndAt": "2026-08-28T11:00:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": ""
-        },
-        {
-          "score": 20,
-          "performerId": "maison",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64653/52244",
-          "title": "神保町マンゲキお笑いライブ",
-          "date": "2026-10-17",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "14:45",
-          "startTime": "15:00",
-          "ticketStatus": "",
-          "ticketOptions": [],
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "抽選",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            },
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-25T11:00:00+09:00",
-          "saleEndAt": "2026-08-28T11:00:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": ""
-        }
-      ],
-      "ticketListed": true,
-      "ticketOptions": [],
-      "salePeriods": [
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-08-25T11:00:00+09:00",
-          "endAt": "2026-08-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64653/52242"
-        },
-        {
-          "category": "advance",
-          "label": "",
-          "startAt": "2026-08-25T11:00:00+09:00",
-          "endAt": "2026-08-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64653/52242"
-        }
-      ],
-      "status": "ticket_listed",
-      "ticketStatus": "",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/64653/52242",
-      "saleStartAt": "2026-08-25T11:00:00+09:00",
-      "saleEndAt": "2026-08-28T11:00:00+09:00",
-      "saleCategory": "advance",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "maison",
-      "date": "2026-10-17",
-      "openTime": "12:45",
-      "startTime": "13:00",
-      "title": "神保町マンゲキお笑いライブ",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[ネタ出演者]滝音／エルフ／めぞん／シカゴ実業／ミカボ／アズーロ24／マリーマリー／インテイク／ゼロカラン／ニコミハジメテ／ただならぬ刀 [コーナー出演者]MC：ミカボ／マリーマリー／ニコミハジメテ／ただならぬ刀"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "performerId": "maison",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64653/52243",
-          "title": "神保町マンゲキお笑いライブ",
-          "date": "2026-10-17",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "12:45",
-          "startTime": "13:00",
-          "ticketStatus": "",
-          "ticketOptions": [],
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "抽選",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            },
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-25T11:00:00+09:00",
-          "saleEndAt": "2026-08-28T11:00:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": ""
-        },
-        {
-          "score": 20,
-          "performerId": "maison",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64653/52242",
-          "title": "神保町マンゲキお笑いライブ",
-          "date": "2026-10-17",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "",
-          "ticketOptions": [],
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "抽選",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            },
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-25T11:00:00+09:00",
-          "saleEndAt": "2026-08-28T11:00:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": ""
-        },
-        {
-          "score": 20,
-          "performerId": "maison",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64653/52244",
-          "title": "神保町マンゲキお笑いライブ",
-          "date": "2026-10-17",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "14:45",
-          "startTime": "15:00",
-          "ticketStatus": "",
-          "ticketOptions": [],
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "抽選",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            },
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-25T11:00:00+09:00",
-          "saleEndAt": "2026-08-28T11:00:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": ""
-        }
-      ],
-      "ticketListed": true,
-      "ticketOptions": [],
-      "salePeriods": [
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-08-25T11:00:00+09:00",
-          "endAt": "2026-08-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64653/52243"
-        },
-        {
-          "category": "advance",
-          "label": "",
-          "startAt": "2026-08-25T11:00:00+09:00",
-          "endAt": "2026-08-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64653/52243"
-        }
-      ],
-      "status": "ticket_listed",
-      "ticketStatus": "",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/64653/52243",
-      "saleStartAt": "2026-08-25T11:00:00+09:00",
-      "saleEndAt": "2026-08-28T11:00:00+09:00",
-      "saleCategory": "advance",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "maison",
-      "date": "2026-10-17",
-      "openTime": "14:45",
-      "startTime": "15:00",
-      "title": "神保町マンゲキお笑いライブ",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[ネタ出演者]滝音／エルフ／めぞん／シカゴ実業／ミカボ／アズーロ24／マリーマリー／インテイク／ゼロカラン／ド天国／パパパジャマ [コーナー出演者]MC：インテイク／滝音／アズーロ24／ド天国"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "performerId": "maison",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64653/52244",
-          "title": "神保町マンゲキお笑いライブ",
-          "date": "2026-10-17",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "14:45",
-          "startTime": "15:00",
-          "ticketStatus": "",
-          "ticketOptions": [],
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "抽選",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            },
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-25T11:00:00+09:00",
-          "saleEndAt": "2026-08-28T11:00:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": ""
-        },
-        {
-          "score": 20,
-          "performerId": "maison",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64653/52242",
-          "title": "神保町マンゲキお笑いライブ",
-          "date": "2026-10-17",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "10:45",
-          "startTime": "11:00",
-          "ticketStatus": "",
-          "ticketOptions": [],
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "抽選",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            },
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-25T11:00:00+09:00",
-          "saleEndAt": "2026-08-28T11:00:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": ""
-        },
-        {
-          "score": 20,
-          "performerId": "maison",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64653/52243",
-          "title": "神保町マンゲキお笑いライブ",
-          "date": "2026-10-17",
-          "venue": "神保町よしもと漫才劇場（東京都）",
-          "openTime": "12:45",
-          "startTime": "13:00",
-          "ticketStatus": "",
-          "ticketOptions": [],
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "抽選",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            },
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-25T11:00:00+09:00",
-          "saleEndAt": "2026-08-28T11:00:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": ""
-        }
-      ],
-      "ticketListed": true,
-      "ticketOptions": [],
-      "salePeriods": [
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-08-25T11:00:00+09:00",
-          "endAt": "2026-08-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64653/52244"
-        },
-        {
-          "category": "advance",
-          "label": "",
-          "startAt": "2026-08-25T11:00:00+09:00",
-          "endAt": "2026-08-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64653/52244"
-        }
-      ],
-      "status": "ticket_listed",
-      "ticketStatus": "",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/64653/52244",
-      "saleStartAt": "2026-08-25T11:00:00+09:00",
-      "saleEndAt": "2026-08-28T11:00:00+09:00",
-      "saleCategory": "advance",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "pyuto",
-      "date": "2026-10-17",
-      "openTime": "20:00",
-      "startTime": "20:15",
-      "title": "グランドバトルEAST 第二部",
-      "venue": "渋谷よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "shibuya",
-      "theaterName": "渋谷",
-      "performersText": [
-        "[ランキングバトルライブ]CITY／今井らいぱち／入間国際宣言／官兵衛／kento fukaya／鶴亀／やさしいズ／滝音／まちるだ／まんじろう／からし蓮根／ケビンス／ぱろぱろ／エバース／エルフ／ド桜／シンクロニシティ／ピュート／サンタモニカ／パピヨン／おとうふ MC：LLR"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "performerId": "pyuto",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64353/51911",
-          "title": "グランドバトルEAST 第二部",
-          "date": "2026-10-17",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "20:00",
-          "startTime": "20:15",
-          "ticketStatus": "",
-          "ticketOptions": [],
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "抽選",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            },
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-25T11:00:00+09:00",
-          "saleEndAt": "2026-08-28T11:00:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": ""
-        }
-      ],
-      "ticketListed": true,
-      "ticketOptions": [],
-      "salePeriods": [
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-08-25T11:00:00+09:00",
-          "endAt": "2026-08-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64353/51911"
-        },
-        {
-          "category": "advance",
-          "label": "",
-          "startAt": "2026-08-25T11:00:00+09:00",
-          "endAt": "2026-08-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64353/51911"
-        }
-      ],
-      "status": "ticket_listed",
-      "ticketStatus": "",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/64353/51911",
-      "saleStartAt": "2026-08-25T11:00:00+09:00",
-      "saleEndAt": "2026-08-28T11:00:00+09:00",
-      "saleCategory": "advance",
-      "saleLabel": ""
-    },
     {
       "performerId": "maison",
       "date": "2026-10-18",
@@ -576,9 +46,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥2,300",
+              "price": "￥2,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -596,9 +66,9 @@
             },
             {
               "name": "立見（整理番号付）",
-              "type": "前売",
+              "type": "当日",
               "status": "予定数終了",
-              "price": "￥2,300",
+              "price": "￥2,800",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -648,9 +118,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥3,000",
+              "price": "￥3,500",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-09T10:00:00+09:00",
@@ -691,9 +161,9 @@
       "ticketOptions": [
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
-          "price": "￥2,300",
+          "price": "￥2,800",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -713,9 +183,9 @@
         },
         {
           "name": "立見（整理番号付）",
-          "type": "前売",
+          "type": "当日",
           "status": "予定数終了",
-          "price": "￥2,300",
+          "price": "￥2,800",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-09-05T10:00:00+09:00",
@@ -735,9 +205,9 @@
         },
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥3,000",
+          "price": "￥3,500",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-09-09T10:00:00+09:00",
@@ -838,9 +308,9 @@
           "ticketOptions": [
             {
               "name": "全席指定",
-              "type": "前売",
+              "type": "当日",
               "status": "販売中",
-              "price": "￥2,500",
+              "price": "￥3,000",
               "remaining": null,
               "remainingText": "",
               "saleStartAt": "2026-09-18T10:00:00+09:00",
@@ -881,9 +351,9 @@
       "ticketOptions": [
         {
           "name": "全席指定",
-          "type": "前売",
+          "type": "当日",
           "status": "販売中",
-          "price": "￥2,500",
+          "price": "￥3,000",
           "remaining": null,
           "remainingText": "",
           "saleStartAt": "2026-09-18T10:00:00+09:00",
