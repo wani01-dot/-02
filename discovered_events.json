@@ -1,9 +1,9 @@
 {
-  "syncedAt": "2026-10-17T08:36:34.492620+00:00",
+  "syncedAt": "2026-10-17T12:27:05.973810+00:00",
   "total": 137,
   "ticketListedCount": 137,
   "ticketUnlistedCount": 0,
-  "ticketOptionCount": 394,
+  "ticketOptionCount": 399,
   "salePeriodCount": 710,
   "events": [
     {
@@ -479,147 +479,61 @@
           "score": 24,
           "performerId": "pyuto",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64355/51911",
+          "sourceUrl": "https://ticket.fany.lol/reception/64353/51911",
           "title": "グランドバトルEAST 第二部",
           "date": "2026-10-17",
           "venue": "渋谷よしもと漫才劇場（東京都）",
           "openTime": "20:00",
           "startTime": "20:15",
-          "ticketStatus": "予定数終了",
-          "ticketOptions": [
-            {
-              "name": "全席指定",
-              "type": "当日",
-              "status": "予定数終了",
-              "price": "￥2,800",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-05T10:00:00+09:00",
-              "saleEndAt": "2026-10-17T18:15:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-09-05T10:00:00+09:00",
-                  "endAt": "2026-10-17T18:15:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "立見（整理番号付）",
-              "type": "当日",
-              "status": "予定数終了",
-              "price": "￥2,800",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-05T10:00:00+09:00",
-              "saleEndAt": "2026-10-17T18:15:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-09-05T10:00:00+09:00",
-                  "endAt": "2026-10-17T18:15:00+09:00"
-                }
-              ]
-            }
-          ],
+          "ticketStatus": "",
+          "ticketOptions": [],
           "salePeriods": [
             {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-17T18:15:00+09:00"
+              "category": "advance",
+              "label": "抽選",
+              "startAt": "2026-08-25T11:00:00+09:00",
+              "endAt": "2026-08-28T11:00:00+09:00"
             },
             {
-              "category": "first_come",
+              "category": "advance",
               "label": "",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-17T18:15:00+09:00"
+              "startAt": "2026-08-25T11:00:00+09:00",
+              "endAt": "2026-08-28T11:00:00+09:00"
             }
           ],
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-17T18:15:00+09:00",
-          "saleCategory": "first_come",
+          "saleStartAt": "2026-08-25T11:00:00+09:00",
+          "saleEndAt": "2026-08-28T11:00:00+09:00",
+          "saleCategory": "advance",
           "saleLabel": ""
         }
       ],
       "ticketListed": true,
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "予定数終了",
-          "price": "￥2,800",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-17T18:15:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-17T18:15:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64355/51911"
-        },
-        {
-          "name": "立見（整理番号付）",
-          "type": "当日",
-          "status": "予定数終了",
-          "price": "￥2,800",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-17T18:15:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-17T18:15:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64355/51911"
-        }
-      ],
+      "ticketOptions": [],
       "salePeriods": [
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-09-05T10:00:00+09:00",
-          "endAt": "2026-10-17T18:15:00+09:00",
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-08-25T11:00:00+09:00",
+          "endAt": "2026-08-28T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64355/51911"
+          "sourceUrl": "https://ticket.fany.lol/reception/64353/51911"
         },
         {
-          "category": "first_come",
+          "category": "advance",
           "label": "",
-          "startAt": "2026-09-05T10:00:00+09:00",
-          "endAt": "2026-10-17T18:15:00+09:00",
+          "startAt": "2026-08-25T11:00:00+09:00",
+          "endAt": "2026-08-28T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64355/51911"
+          "sourceUrl": "https://ticket.fany.lol/reception/64353/51911"
         }
       ],
       "status": "ticket_listed",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/64355/51911",
-      "saleStartAt": "2026-09-05T10:00:00+09:00",
-      "saleEndAt": "2026-10-17T18:15:00+09:00",
-      "saleCategory": "first_come",
+      "sourceUrl": "https://ticket.fany.lol/reception/64353/51911",
+      "saleStartAt": "2026-08-25T11:00:00+09:00",
+      "saleEndAt": "2026-08-28T11:00:00+09:00",
+      "saleCategory": "advance",
       "saleLabel": ""
     },
     {
@@ -23423,12 +23337,12 @@
           "venue": "渋谷よしもと漫才劇場（東京都）",
           "openTime": "14:45",
           "startTime": "15:00",
-          "ticketStatus": "販売中",
+          "ticketStatus": "残りわずか",
           "ticketOptions": [
             {
               "name": "全席指定",
               "type": "前売",
-              "status": "販売中",
+              "status": "残りわずか",
               "price": "￥3,000",
               "remaining": null,
               "remainingText": "",
@@ -23727,6 +23641,28 @@
           ],
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/70035/55081"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "残りわずか",
+          "price": "￥3,000",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-10-10T10:00:00+09:00",
+          "saleEndAt": "2026-11-15T13:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-10T10:00:00+09:00",
+              "endAt": "2026-11-15T13:00:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/70035/55084"
         },
         {
           "name": "全席指定",
@@ -24176,12 +24112,12 @@
           "venue": "渋谷よしもと漫才劇場（東京都）",
           "openTime": "14:45",
           "startTime": "15:00",
-          "ticketStatus": "販売中",
+          "ticketStatus": "残りわずか",
           "ticketOptions": [
             {
               "name": "全席指定",
               "type": "前売",
-              "status": "販売中",
+              "status": "残りわずか",
               "price": "￥3,000",
               "remaining": null,
               "remainingText": "",
@@ -24480,6 +24416,28 @@
           ],
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/70035/55082"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "残りわずか",
+          "price": "￥3,000",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-10-10T10:00:00+09:00",
+          "saleEndAt": "2026-11-15T13:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-10T10:00:00+09:00",
+              "endAt": "2026-11-15T13:00:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/70035/55084"
         },
         {
           "name": "全席指定",
@@ -24929,12 +24887,12 @@
           "venue": "渋谷よしもと漫才劇場（東京都）",
           "openTime": "14:45",
           "startTime": "15:00",
-          "ticketStatus": "販売中",
+          "ticketStatus": "残りわずか",
           "ticketOptions": [
             {
               "name": "全席指定",
               "type": "前売",
-              "status": "販売中",
+              "status": "残りわずか",
               "price": "￥3,000",
               "remaining": null,
               "remainingText": "",
@@ -25237,6 +25195,28 @@
         {
           "name": "全席指定",
           "type": "前売",
+          "status": "残りわずか",
+          "price": "￥3,000",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-10-10T10:00:00+09:00",
+          "saleEndAt": "2026-11-15T13:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-10T10:00:00+09:00",
+              "endAt": "2026-11-15T13:00:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/70035/55084"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
           "status": "販売中",
           "price": "￥2,000",
           "remaining": null,
@@ -25466,12 +25446,12 @@
           "venue": "渋谷よしもと漫才劇場（東京都）",
           "openTime": "14:45",
           "startTime": "15:00",
-          "ticketStatus": "販売中",
+          "ticketStatus": "残りわずか",
           "ticketOptions": [
             {
               "name": "全席指定",
               "type": "前売",
-              "status": "販売中",
+              "status": "残りわずか",
               "price": "￥3,000",
               "remaining": null,
               "remainingText": "",
@@ -25946,7 +25926,7 @@
         {
           "name": "全席指定",
           "type": "前売",
-          "status": "販売中",
+          "status": "残りわずか",
           "price": "￥3,000",
           "remaining": null,
           "remainingText": "",
@@ -25986,6 +25966,28 @@
           ],
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/70035/55084"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥3,000",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-10-10T10:00:00+09:00",
+          "saleEndAt": "2026-11-15T08:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-10T10:00:00+09:00",
+              "endAt": "2026-11-15T08:30:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/70035/55081"
         },
         {
           "name": "全席指定",
@@ -26175,7 +26177,7 @@
         }
       ],
       "status": "ticket_listed",
-      "ticketStatus": "販売中",
+      "ticketStatus": "残りわずか",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/70035/55084",
       "saleStartAt": "2026-10-10T10:00:00+09:00",
@@ -26506,12 +26508,12 @@
           "venue": "渋谷よしもと漫才劇場（東京都）",
           "openTime": "14:45",
           "startTime": "15:00",
-          "ticketStatus": "販売中",
+          "ticketStatus": "残りわずか",
           "ticketOptions": [
             {
               "name": "全席指定",
               "type": "前売",
-              "status": "販売中",
+              "status": "残りわずか",
               "price": "￥3,000",
               "remaining": null,
               "remainingText": "",
@@ -26710,6 +26712,28 @@
           ],
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/70035/55081"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "残りわずか",
+          "price": "￥3,000",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-10-10T10:00:00+09:00",
+          "saleEndAt": "2026-11-15T13:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-10T10:00:00+09:00",
+              "endAt": "2026-11-15T13:00:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/70035/55084"
         },
         {
           "name": "全席指定",
@@ -27164,12 +27188,12 @@
           "venue": "渋谷よしもと漫才劇場（東京都）",
           "openTime": "14:45",
           "startTime": "15:00",
-          "ticketStatus": "販売中",
+          "ticketStatus": "残りわずか",
           "ticketOptions": [
             {
               "name": "全席指定",
               "type": "前売",
-              "status": "販売中",
+              "status": "残りわずか",
               "price": "￥3,000",
               "remaining": null,
               "remainingText": "",
@@ -27316,6 +27340,28 @@
           ],
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/70035/55081"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "残りわずか",
+          "price": "￥3,000",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-10-10T10:00:00+09:00",
+          "saleEndAt": "2026-11-15T13:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-10T10:00:00+09:00",
+              "endAt": "2026-11-15T13:00:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/70035/55084"
         }
       ],
       "salePeriods": [
@@ -27712,12 +27758,12 @@
           "venue": "渋谷よしもと漫才劇場（東京都）",
           "openTime": "14:45",
           "startTime": "15:00",
-          "ticketStatus": "販売中",
+          "ticketStatus": "残りわずか",
           "ticketOptions": [
             {
               "name": "全席指定",
               "type": "前売",
-              "status": "販売中",
+              "status": "残りわずか",
               "price": "￥3,000",
               "remaining": null,
               "remainingText": "",
@@ -27914,6 +27960,28 @@
           ],
           "source": "fany",
           "sourceUrl": "https://ticket.fany.lol/reception/70035/55081"
+        },
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "残りわずか",
+          "price": "￥3,000",
+          "remaining": null,
+          "remainingText": "",
+          "saleStartAt": "2026-10-10T10:00:00+09:00",
+          "saleEndAt": "2026-11-15T13:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-10T10:00:00+09:00",
+              "endAt": "2026-11-15T13:00:00+09:00"
+            }
+          ],
+          "source": "fany",
+          "sourceUrl": "https://ticket.fany.lol/reception/70035/55084"
         },
         {
           "name": "全席指定",
