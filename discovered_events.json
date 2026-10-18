@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-18T09:55:17.703258+00:00",
+  "syncedAt": "2026-10-18T13:53:32.954626+00:00",
   "total": 133,
   "ticketListedCount": 133,
   "ticketUnlistedCount": 0,
@@ -152,7 +152,7 @@
       "theaterId": "roppongi",
       "theaterName": "六本木",
       "performersText": [
-        "守谷日和／今井らいぱち／パピヨン／ケビンス／ピュート ポイント／イチゴ／伝書鳩"
+        "守谷日和／パピヨン／今井らいぱち／ケビンス／ピュート ポイント／喫茶ムーン／イチゴ／伝書鳩"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -3731,12 +3731,12 @@
           "venue": "神保町よしもと漫才劇場（東京都）",
           "openTime": "19:00",
           "startTime": "19:15",
-          "ticketStatus": "残りわずか",
+          "ticketStatus": "予定数終了",
           "ticketOptions": [
             {
               "name": "全席指定",
               "type": "前売",
-              "status": "残りわずか",
+              "status": "予定数終了",
               "price": "￥1,500",
               "remaining": null,
               "remainingText": "",
@@ -3799,7 +3799,7 @@
         {
           "name": "全席指定",
           "type": "前売",
-          "status": "残りわずか",
+          "status": "予定数終了",
           "price": "￥1,500",
           "remaining": null,
           "remainingText": "",
@@ -3860,7 +3860,7 @@
         }
       ],
       "status": "ticket_listed",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "予定数終了",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/65063/52414",
       "saleStartAt": "2026-09-05T10:00:00+09:00",
