@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-18T21:05:25.492154+00:00",
+  "syncedAt": "2026-10-18T23:00:14.210583+00:00",
   "performers": [
     {
       "id": "maison",
@@ -5150,12 +5150,12 @@
       "venue": "ルミネtheよしもと（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/69932/55018",
-      "ticketStatus": "販売中",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [
         {
           "name": "全席指定",
           "type": "前売",
-          "status": "販売中",
+          "status": "残りわずか",
           "price": "￥2,500",
           "salePeriods": [
             {
@@ -5216,12 +5216,12 @@
       "venue": "ルミネtheよしもと（東京都）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/69932/55018",
-      "ticketStatus": "販売中",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [
         {
           "name": "全席指定",
           "type": "前売",
-          "status": "販売中",
+          "status": "残りわずか",
           "price": "￥2,500",
           "salePeriods": [
             {
@@ -10588,25 +10588,6 @@
           ]
         },
         {
-          "name": "たまゆら学園 / TCクラクション / まんじゅう大帝国",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-10-15T19:00:00+09:00",
-          "saleEndAt": "2026-10-21T23:59:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-10-15T19:00:00+09:00",
-              "endAt": "2026-10-21T23:59:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|たまゆら学園 / TCクラクション / まんじゅう大帝国|先着|advance|2026-10-15T19:00:00+09:00"
-            }
-          ]
-        },
-        {
           "name": "ねじれネジ / パスタとパスタ / 喜喜かいばしら / 9番街レトロ なかむらしゅん",
           "type": "先着",
           "status": "販売中",
@@ -10622,6 +10603,25 @@
               "startAt": "2026-10-15T19:00:00+09:00",
               "endAt": "2026-10-21T23:59:00+09:00",
               "saleKey": "livepocket|maison|z2nvo|ねじれネジ / パスタとパスタ / 喜喜かいばしら / 9番街レトロ なかむらしゅん|先着|advance|2026-10-15T19:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "十九人 / ４０００ / 無尽蔵",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-10-15T19:00:00+09:00",
+          "saleEndAt": "2026-10-21T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-10-15T19:00:00+09:00",
+              "endAt": "2026-10-21T23:59:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|十九人 / ４０００ / 無尽蔵|先着|advance|2026-10-15T19:00:00+09:00"
             }
           ]
         }
