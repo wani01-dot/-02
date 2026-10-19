@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-19T05:23:03.845790+00:00",
+  "syncedAt": "2026-10-19T10:56:33.317942+00:00",
   "performers": [
     {
       "id": "maison",
@@ -59,57 +59,18 @@
       "title": "渋谷Kiwami極LIVE",
       "venue": "渋谷よしもと漫才劇場（東京都）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/64323/51815",
-      "ticketStatus": "販売中",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "販売中",
-          "price": "￥1,800",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-19T15:15:00+09:00",
-              "saleKey": "fany|maison|64323|51815|全席指定|当日|first_come|2026-09-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-19T15:15:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        },
-        {
-          "name": "立見（整理番号付）",
-          "type": "当日",
-          "status": "販売中",
-          "price": "￥1,800",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-19T15:15:00+09:00",
-              "saleKey": "fany|maison|64323|51815|立見（整理番号付）|当日|first_come|2026-09-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-19T15:15:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-09-05T10:00:00+09:00",
-      "saleEndAt": "2026-10-19T15:15:00+09:00",
-      "saleCategory": "first_come",
+      "sourceUrl": "https://ticket.fany.lol/reception/64321/51815",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-08-25T11:00:00+09:00",
+      "saleEndAt": "2026-08-28T11:00:00+09:00",
+      "saleCategory": "advance",
       "salePeriods": [
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-09-05T10:00:00+09:00",
-          "endAt": "2026-10-19T15:15:00+09:00"
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-08-25T11:00:00+09:00",
+          "endAt": "2026-08-28T11:00:00+09:00"
         }
       ],
       "performersText": [
@@ -124,13 +85,7 @@
         "cacao",
         "シスター",
         "[ コーナー出演者]MC:からし蓮根",
-        "めぞん",
-        "・1回の先着申込で申込可能な公演数は『",
-        "1公演",
-        "』",
-        "枚数は『",
-        "10枚まで",
-        "・座席番号や整理番号は"
+        "めぞん"
       ],
       "firstSeenAt": "2026-10-14T21:02:26.645869+00:00",
       "newUntil": "",
@@ -146,57 +101,18 @@
       "title": "マンゲキメンバーでオーダー組んで寄席してみました",
       "venue": "よしもと漫才劇場（大阪府）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/65884/52102",
-      "ticketStatus": "一部予定数終了",
-      "ticketOptions": [
-        {
-          "name": "指定席",
-          "type": "当日",
-          "status": "販売中",
-          "price": "￥2,200",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-19T17:30:00+09:00",
-              "saleKey": "fany|nansui|65884|52102|指定席|当日|first_come|2026-09-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-19T17:30:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        },
-        {
-          "name": "立見（整理番号）",
-          "type": "当日",
-          "status": "予定数終了",
-          "price": "￥2,200",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-19T17:30:00+09:00",
-              "saleKey": "fany|nansui|65884|52102|立見（整理番号）|当日|first_come|2026-09-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-19T17:30:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-09-05T10:00:00+09:00",
-      "saleEndAt": "2026-10-19T17:30:00+09:00",
-      "saleCategory": "first_come",
+      "sourceUrl": "https://ticket.fany.lol/reception/65762/52102",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-08-25T11:00:00+09:00",
+      "saleEndAt": "2026-08-28T11:00:00+09:00",
+      "saleCategory": "advance",
       "salePeriods": [
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-09-05T10:00:00+09:00",
-          "endAt": "2026-10-19T17:30:00+09:00"
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-08-25T11:00:00+09:00",
+          "endAt": "2026-08-28T11:00:00+09:00"
         }
       ],
       "performersText": [
@@ -208,13 +124,7 @@
         "愛凛冴",
         "ぎょうぶ",
         "軟水",
-        "銀鬼",
-        "・1回の先着申込で申込可能な公演数は『",
-        "1公演",
-        "』",
-        "枚数は『",
-        "10枚まで",
-        "・座席番号や整理番号は"
+        "銀鬼"
       ],
       "firstSeenAt": "2026-10-14T21:02:26.645869+00:00",
       "newUntil": "",
@@ -245,11 +155,11 @@
         "コイオドリ",
         "サノライブ",
         "鉄筋くらぶ57",
-        "positive!",
-        "牛女 しらす",
-        "大久保八億",
         "右手でグーパンチ",
         "めぞん",
+        "------",
+        "[10",
+        "19]",
         "仕事帰りにふらっと見に来れるお笑いライブ！",
         "これからの若手芸人がたくさん見られます！"
       ],
@@ -833,12 +743,12 @@
       "venue": "大宮ラクーンよしもと劇場（埼玉県）",
       "source": "fany",
       "sourceUrl": "https://ticket.fany.lol/reception/66807/53117",
-      "ticketStatus": "販売中",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [
         {
           "name": "全席指定",
           "type": "前売",
-          "status": "販売中",
+          "status": "残りわずか",
           "price": "￥2,100",
           "salePeriods": [
             {
@@ -3118,7 +3028,7 @@
       "venue": "千本桜ホール(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/526404",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -10615,7 +10525,7 @@
         {
           "name": "同じ販売元のイベント",
           "type": "先着",
-          "status": "販売中",
+          "status": "販売前",
           "price": "",
           "saleStartAt": "2026-10-15T19:00:00+09:00",
           "saleEndAt": "2026-10-21T23:59:00+09:00",
@@ -10632,7 +10542,7 @@
           ]
         },
         {
-          "name": "ねじれネジ / パスタとパスタ / 喜喜かいばしら / 9番街レトロ なかむらしゅん",
+          "name": "動物男児 / ツェ大野 / やゆよ / しらせ / すぎる / パスタとパスタ まなべ / ヤング / ねじれネジ",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -10646,7 +10556,7 @@
               "label": "",
               "startAt": "2026-10-15T19:00:00+09:00",
               "endAt": "2026-10-21T23:59:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|ねじれネジ / パスタとパスタ / 喜喜かいばしら / 9番街レトロ なかむらしゅん|先着|advance|2026-10-15T19:00:00+09:00"
+              "saleKey": "livepocket|maison|z2nvo|動物男児 / ツェ大野 / やゆよ / しらせ / すぎる / パスタとパスタ まなべ / ヤング / ねじれネジ|先着|advance|2026-10-15T19:00:00+09:00"
             }
           ]
         },
