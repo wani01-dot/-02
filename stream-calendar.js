@@ -86,7 +86,7 @@
 
       .calendar-mode-switch {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
 
         gap: 5px;
 
@@ -1364,7 +1364,10 @@
         id="streamCalendarMode"
         class="calendar-mode-button"
       >
-        ▶ 配信カレンダー
+        ▶ 配信
+      </button>
+      <button id="presaleCalendarMode" class="calendar-mode-button" type="button">
+        🎫 発売前
       </button>
     `;
 
@@ -1389,6 +1392,8 @@
         }
       );
 
+
+    document.getElementById("presaleCalendarMode")?.addEventListener("click", () => setCalendarMode("presale"));
 
     document
       .getElementById(
@@ -1763,6 +1768,24 @@
         "pageSection"
       );
 
+
+    const presaleButton = document.getElementById("presaleCalendarMode");
+    const presaleView = document.getElementById("presaleCalendarView");
+    presaleButton?.classList.toggle("active", mode === "presale");
+    presaleView?.classList.toggle("show", mode === "presale");
+    if (mode === "presale") {
+      liveButton?.classList.remove("active");
+      streamButton?.classList.remove("active", "stream-active");
+      if (legend) legend.style.display = "none";
+      if (calendarView) calendarView.style.display = "none";
+      if (pageSection) {
+        pageSection.classList.remove("show");
+        pageSection.style.display = "none";
+      }
+      streamView?.classList.remove("show");
+      document.dispatchEvent(new CustomEvent("warai:presale-open"));
+      return;
+    }
 
     if (
       mode === "stream"
