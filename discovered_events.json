@@ -1,201 +1,11 @@
 {
-  "syncedAt": "2026-10-19T15:00:26.290149+00:00",
-  "total": 131,
-  "ticketListedCount": 131,
+  "syncedAt": "2026-10-19T20:32:02.210944+00:00",
+  "total": 129,
+  "ticketListedCount": 129,
   "ticketUnlistedCount": 0,
   "ticketOptionCount": 391,
-  "salePeriodCount": 696,
+  "salePeriodCount": 692,
   "events": [
-    {
-      "performerId": "maison",
-      "date": "2026-10-19",
-      "openTime": "17:00",
-      "startTime": "17:15",
-      "title": "渋谷Kiwami極LIVE",
-      "venue": "渋谷よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "shibuya",
-      "theaterName": "渋谷",
-      "performersText": [
-        "[ネタ＆コーナーライブ]めぞん／くらげ／からし蓮根／田津原理音／ドッチモドッチ／赤嶺総理／ド桜／シンクロニシティ／cacao／シスター [ コーナー出演者]MC:からし蓮根／田津原理音／ド桜／シンクロニシティ／めぞん"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "performerId": "maison",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64321/51815",
-          "title": "渋谷Kiwami極LIVE",
-          "date": "2026-10-19",
-          "venue": "渋谷よしもと漫才劇場（東京都）",
-          "openTime": "17:00",
-          "startTime": "17:15",
-          "ticketStatus": "",
-          "ticketOptions": [],
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "抽選",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            },
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-25T11:00:00+09:00",
-          "saleEndAt": "2026-08-28T11:00:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": ""
-        },
-        {
-          "score": 10,
-          "performerId": "maison",
-          "source": "tiget",
-          "sourceUrl": "https://tiget.net/events/522101",
-          "title": "YOIYOSE 179 @中野の劇場サッチー",
-          "date": "2026-10-19",
-          "venue": "中野の劇場サッチー(東京都)",
-          "openTime": "21:15",
-          "startTime": "21:30",
-          "ticketStatus": "予定数終了",
-          "ticketOptions": [],
-          "salePeriods": [],
-          "saleStartAt": "",
-          "saleEndAt": "",
-          "saleCategory": "",
-          "saleLabel": ""
-        }
-      ],
-      "ticketListed": true,
-      "ticketOptions": [],
-      "salePeriods": [
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-08-25T11:00:00+09:00",
-          "endAt": "2026-08-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64321/51815"
-        },
-        {
-          "category": "advance",
-          "label": "",
-          "startAt": "2026-08-25T11:00:00+09:00",
-          "endAt": "2026-08-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/64321/51815"
-        }
-      ],
-      "status": "ticket_listed",
-      "ticketStatus": "",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/64321/51815",
-      "saleStartAt": "2026-08-25T11:00:00+09:00",
-      "saleEndAt": "2026-08-28T11:00:00+09:00",
-      "saleCategory": "advance",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-10-19",
-      "openTime": "19:15",
-      "startTime": "19:30",
-      "title": "19：30開演/「マンゲキメンバーでオーダー組んで寄席してみました」",
-      "venue": "よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "manzaigekijyo",
-      "theaterName": "よしもと漫才劇場",
-      "performersText": [
-        "三遊間／バッテリィズ／華山／豪快キャプテン／ドーナツ・ピーナツ／愛凛冴／ぎょうぶ／軟水／銀鬼"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [
-        {
-          "score": 24,
-          "performerId": "nansui",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65762/52102",
-          "title": "マンゲキメンバーでオーダー組んで寄席してみました",
-          "date": "2026-10-19",
-          "venue": "よしもと漫才劇場（大阪府）",
-          "openTime": "19:15",
-          "startTime": "19:30",
-          "ticketStatus": "",
-          "ticketOptions": [],
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "抽選",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            },
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-08-25T11:00:00+09:00",
-              "endAt": "2026-08-28T11:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-08-25T11:00:00+09:00",
-          "saleEndAt": "2026-08-28T11:00:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": ""
-        }
-      ],
-      "ticketListed": true,
-      "ticketOptions": [],
-      "salePeriods": [
-        {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-08-25T11:00:00+09:00",
-          "endAt": "2026-08-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65762/52102"
-        },
-        {
-          "category": "advance",
-          "label": "",
-          "startAt": "2026-08-25T11:00:00+09:00",
-          "endAt": "2026-08-28T11:00:00+09:00",
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/65762/52102"
-        }
-      ],
-      "status": "ticket_listed",
-      "ticketStatus": "",
-      "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/65762/52102",
-      "saleStartAt": "2026-08-25T11:00:00+09:00",
-      "saleEndAt": "2026-08-28T11:00:00+09:00",
-      "saleCategory": "advance",
-      "saleLabel": ""
-    },
     {
       "performerId": "nansui",
       "date": "2026-10-21",
@@ -3708,7 +3518,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]しずる／めぞん／マルセイユ／シモリュウ／太鵬／軟水／インテイク／イチゴ／他"
+        "[ネタ＆コーナーライブ]しずる／めぞん／マルセイユ／シモリュウ／太鵬／軟水／インテイク／イチゴ／うるとらブギーズ／他"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -4302,7 +4112,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]しずる／めぞん／マルセイユ／シモリュウ／太鵬／軟水／インテイク／イチゴ／他"
+        "[ネタ＆コーナーライブ]しずる／めぞん／マルセイユ／シモリュウ／太鵬／軟水／インテイク／イチゴ／うるとらブギーズ／他"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -4896,7 +4706,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]しずる／めぞん／マルセイユ／シモリュウ／太鵬／シンクロニシティ／軟水／インテイク／イチゴ／他"
+        "[ネタ＆コーナーライブ]しずる／めぞん／マルセイユ／シモリュウ／太鵬／シンクロニシティ／軟水／インテイク／イチゴ／うるとらブギーズ／他"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -10209,12 +10019,12 @@
           "venue": "ルミネtheよしもと（東京都）",
           "openTime": "18:30",
           "startTime": "19:00",
-          "ticketStatus": "残りわずか",
+          "ticketStatus": "予定数終了",
           "ticketOptions": [
             {
               "name": "全席指定",
               "type": "前売",
-              "status": "残りわずか",
+              "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
               "remainingText": "",
@@ -10319,7 +10129,7 @@
         {
           "name": "全席指定",
           "type": "前売",
-          "status": "残りわずか",
+          "status": "予定数終了",
           "price": "￥2,500",
           "remaining": null,
           "remainingText": "",
@@ -10667,12 +10477,12 @@
           "venue": "ルミネtheよしもと（東京都）",
           "openTime": "18:30",
           "startTime": "19:00",
-          "ticketStatus": "残りわずか",
+          "ticketStatus": "予定数終了",
           "ticketOptions": [
             {
               "name": "全席指定",
               "type": "前売",
-              "status": "残りわずか",
+              "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
               "remainingText": "",
@@ -10777,7 +10587,7 @@
         {
           "name": "全席指定",
           "type": "前売",
-          "status": "残りわずか",
+          "status": "予定数終了",
           "price": "￥2,500",
           "remaining": null,
           "remainingText": "",
@@ -11125,12 +10935,12 @@
           "venue": "ルミネtheよしもと（東京都）",
           "openTime": "18:30",
           "startTime": "19:00",
-          "ticketStatus": "残りわずか",
+          "ticketStatus": "予定数終了",
           "ticketOptions": [
             {
               "name": "全席指定",
               "type": "前売",
-              "status": "残りわずか",
+              "status": "予定数終了",
               "price": "￥2,500",
               "remaining": null,
               "remainingText": "",
@@ -11235,7 +11045,7 @@
         {
           "name": "全席指定",
           "type": "前売",
-          "status": "残りわずか",
+          "status": "予定数終了",
           "price": "￥2,500",
           "remaining": null,
           "remainingText": "",
