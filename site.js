@@ -2091,90 +2091,24 @@
   }
 
 
-  function getCompactPerformerText(
-    group
-  ) {
-
-    const values =
-      [];
-
-
-    group.performersText
-      .forEach(
-        text => {
-
-          clean(
-            text
-          )
-            .split(
-              /[／/、,，]+/
-            )
-            .forEach(
-              part => {
-
-                const value =
-                  clean(
-                    part
-                  );
-
-
-                if (
-                  value
-                  &&
-                  !values.includes(
-                    value
-                  )
-                ) {
-
-                  values.push(
-                    value
-                  );
-                }
-              }
-            );
-        }
-      );
-
-
-    if (
-      values.length
-      ===
-      0
-    ) {
-
-      group
-        .trackedPerformers
-        .forEach(
-          id => {
-
-            const name =
-              getPerformer(
-                id
-              ).name;
-
-
-            if (
-              name
-              &&
-              !values.includes(
-                name
-              )
-            ) {
-
-              values.push(
-                name
-              );
-            }
-          }
-        );
+  function getCompactPerformerText(group) {
+    const names = [];
+    const add = raw => {
+      let value = clean(raw).replace(/^[\[【(（]+(?:キャプテン|MC|ゲスト|出演|司会)[\]】)）]+\s*/g, "").trim();
+      value = value.replace(/^[\[【(（]+|[\]】)）]+$/g, "").trim();
+      if (!value || value.length > 38 || /[。！？!?：:『』「」]/.test(value)) return;
+      if (/(?:申込|枚数|座席|整理番号|公演数|チケット|受付|販売|先着|抽選|購入|注意事項|まで|可能|開演|開場|ご案内|料金|入場|詳細|お問い合わせ)/.test(value)) return;
+      if (/^(?:\d+|・|前売|当日|キャプテン|MC)$/.test(value)) return;
+      if (!names.includes(value)) names.push(value);
+    };
+    for (const text of group.performersText || []) {
+      // Scrapers sometimes supply a Python-list-like string instead of an array.
+      const parts = clean(text).replace(/^\[|\]$/g, "").split(/[／/、,，]+/);
+      for (const part of parts) add(part.replace(/^[\s'"\[\]]+|[\s'"\[\]]+$/g, ""));
     }
-
-
-    return values.join(
-      " / "
-    );
+    for (const id of group.trackedPerformers || []) add(getPerformer(id).name);
+    return names.join(" / ");
   }
-
 
   function openEventSheet(
     group
