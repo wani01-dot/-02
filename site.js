@@ -796,15 +796,43 @@
 }
 
 
-  // 同日・同タイトルでも別の開演回は別公演として保持する。
-  // 会場表記の都道府県補足などは比較から除外する。
-  // 同じタイトル・日付・開演時刻は媒体や芸人が違っても一公演。
-  // 開演時刻が違う回は混ぜない。
+  // 販売サイト間の表記ゆれを吸収。日時・会場・題名の組合せで判定。
+  function matchTitle(value) {
+    return String(value || "").normalize("NFKC").toLowerCase()
+      .replace(/^\s*\d{1,2}[:：]\d{2}\s*(?:開演|開場)?\s*/g, "")
+      .replace(/※[\s\S]*$/, "")
+      .replace(/[.…]+$/g, "")
+      .replace(/[\s　「」『』【】（）()・!！?？:：～〜\-―–]/g, "");
+  }
+  function matchVenue(value) {
+    return String(value || "").normalize("NFKC").toLowerCase()
+      .replace(/[（(](?:東京都|大阪府|京都府|北海道|.{2,3}県)[）)]/g, "")
+      .replace(/よしもと福岡\s*大和証券劇場/g, "福岡よしもと劇場")
+      .replace(/yoshimoto\s*roppongi\s*theater/g, "六本木よしもと劇場")
+      .replace(/よしもと六本木シアター/g, "六本木よしもと劇場")
+      .replace(/[\s　・（）()]/g, "");
+  }
+  function similarTitle(a,b) {
+    const x=matchTitle(a),y=matchTitle(b);
+    if(!x || !y)return false;
+    if(x===y)return true;
+    const short=x.length<y.length?x:y, long=x.length<y.length?y:x;
+    if(short.length>=6 && long.includes(short))return true;
+    let prefix=0;
+    while(prefix<Math.min(x.length,y.length)&&x[prefix]===y[prefix])prefix++;
+    return prefix>=6 && prefix/short.length>=0.65;
+  }
+  function samePerformance(a,b) {
+    if(a.date!==b.date)return false;
+    const at=String(a.startTime||"").replace(/[^0-9]/g, "");
+    const bt=String(b.startTime||"").replace(/[^0-9]/g, "");
+    if(at&&bt&&at!==bt)return false;
+    const av=matchVenue(a.venue),bv=matchVenue(b.venue);
+    if(av&&bv&&av!==bv)return false;
+    return similarTitle(a.title,b.title);
+  }
   function calendarKey(event) {
-    const title = normalizeTitle(event.title)
-      .replace(/[\\s\\-ー―–（）()「」『』【】・:：]/g, "");
-    const time = clean(event.startTime).replace(/[^0-9]/g, "");
-    return [event.date || "", title, time].join("|");
+    return [event.date||"",matchTitle(event.title),String(event.startTime||"").replace(/[^0-9]/g, "")].join("|");
   }
 
   function buildGroups(
@@ -819,25 +847,10 @@
       event => {
 
         let key = calendarKey(event);
-
-        // 公式サイト側に開演時刻がない場合だけ、同じ日・同タイトルの
-        // 時刻付き公演と照合する。複数回公演なら推測で統合しない。
-        const eventTime = clean(event.startTime);
-        const prefix = [event.date || "", normalizeTitle(event.title)
-          .replace(/[\\s\\-ー―–（）()「」『』【】・:：]/g, "")].join("|") + "|";
-        if (!map.has(key)) {
-          const candidates = [...map.keys()].filter(k => k.startsWith(prefix));
-          if (!eventTime && candidates.length === 1) {
-            key = candidates[0];
-          } else if (eventTime && candidates.length === 1 && candidates[0] === prefix) {
-            const existing = map.get(candidates[0]);
-            map.delete(candidates[0]);
-            key = calendarKey(event);
-            existing.key = key;
-            existing.startTime = event.startTime;
-            map.set(key, existing);
-          }
-        }
+        // 時刻・会場・タイトルが一致または類似する既存公演を探す。
+        const matching=[...map.values()].filter(g=>samePerformance(g,event));
+        if(matching.length===1)key=matching[0].key;
+        // 開演時刻の欠落がある場合、複数候補を推測で統合しない。
 
         if (
           !map.has(

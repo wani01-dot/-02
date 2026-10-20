@@ -16,7 +16,30 @@
   // 販売元が同じ受付を「指定席」「先着販売」「同じ販売元のイベント」
   // など複数のチケット名で返すことがある。受付そのものを単位として扱う。
   const text = value => String(value ?? "").normalize("NFKC").trim();
-  const compact = value => text(value).toLowerCase().replace(/[\\s　「」『』【】（）()・.,，。:：!！?？～〜\\-ー―–]/g, "");
+  const compact = value => text(value).toLowerCase().replace(/^[\s　]*\d{1,2}[:：]\d{2}\s*(?:開演|開場)?/, "").replace(/※[\s\S]*$/, "").replace(/[.…]+$/, "").replace(/[\s　「」『』【】（）()・.,，。:：!！?？～〜\-ー―–]/g, "");
+  const venueKey = value => text(value).toLowerCase()
+    .replace(/[（(](?:東京都|大阪府|京都府|北海道|.{2,3}県)[）)]/g, "")
+    .replace(/よしもと福岡\s*大和証券劇場/g, "福岡よしもと劇場")
+    .replace(/yoshimoto\s*roppongi\s*theater/g, "六本木よしもと劇場")
+    .replace(/よしもと六本木シアター/g, "六本木よしもと劇場")
+    .replace(/[\s　・（）()]/g, "");
+  function similarTitle(a,b) {
+    const x=compact(a),y=compact(b);
+    if(!x||!y)return false;
+    if(x===y)return true;
+    const short=x.length<y.length?x:y, long=x.length<y.length?y:x;
+    if(short.length>=6&&long.includes(short))return true;
+    let n=0;while(n<Math.min(x.length,y.length)&&x[n]===y[n])n++;
+    return n>=6&&n/short.length>=0.65;
+  }
+  function sameReception(a,b) {
+    if(a.date!==b.date||a.start.getTime()!==b.start.getTime()||a.kind!==b.kind||a.round!==b.round)return false;
+    const at=text(a.startTime).replace(/[^0-9]/g, ""),bt=text(b.startTime).replace(/[^0-9]/g, "");
+    if(at&&bt&&at!==bt)return false;
+    const av=venueKey(a.venue),bv=venueKey(b.venue);
+    if(av&&bv&&av!==bv)return false;
+    return similarTitle(a.title,b.title);
+  }
   const round = value => {
     const t = text(value);
     const m = t.match(/(?:第\\s*([0-9]+)\\s*次|([0-9]+)\\s*次|([0-9]+)\\s*回目)/);
@@ -57,28 +80,26 @@
     }).filter(Boolean);
   }
   function unique(items) {
-    const seen=new Map();
+    const groups=[];
     for(const e of items) {
-      // チケット種別名は識別子に含めない。日時と販売方式が同じなら
-      // 同一受付として扱う。一次・二次など明示的な別回は残す。
-      const key=[compact(e.title),e.date,e.start.getTime(),e.kind,e.round].join("|");
-      if(!seen.has(key)) seen.set(key,e);
-      else {
-        const old=seen.get(key);
-        old.performerIds=[...new Set([...old.performerIds,...e.performerIds])];
-        if(!old.url && e.url) old.url=e.url;
-        const generic=v=>!v||/^(指定席|自由席|先着|先着販売|抽選受付|抽選|同じ販売元のイベント|advance)$/.test(text(v));
-        if(generic(old.label) && !generic(e.label) && /先着|抽選|販売|受付|先行|プレオーダー/.test(e.label)) old.label=e.label;
-        if(!old.end && e.end) old.end=e.end;
-        if(!old.openTime && e.openTime) old.openTime=e.openTime;
-        if(!old.startTime && e.startTime) old.startTime=e.startTime;
-        if(!old.venue && e.venue) old.venue=e.venue;
-        const existing=Array.isArray(old.performersText)?old.performersText:[old.performersText];
-        const incoming=Array.isArray(e.performersText)?e.performersText:[e.performersText];
-        old.performersText=[...new Set([...existing,...incoming].filter(Boolean))];
-      }
+      const matches=groups.filter(g=>sameReception(g,e));
+      if(matches.length!==1){groups.push(e);continue;}
+      const old=matches[0];
+      old.performerIds=[...new Set([...old.performerIds,...e.performerIds])];
+      if(!old.url&&e.url)old.url=e.url;
+      const generic=v=>!v||/^(指定席|自由席|先着|先着販売|抽選受付|抽選|同じ販売元のイベント|advance)$/.test(text(v));
+      if(generic(old.label)&&!generic(e.label)&&/先着|抽選|販売|受付|先行|プレオーダー/.test(e.label))old.label=e.label;
+      if(!old.end&&e.end)old.end=e.end;
+      if(!old.openTime&&e.openTime)old.openTime=e.openTime;
+      if(!old.startTime&&e.startTime)old.startTime=e.startTime;
+      if(!old.venue&&e.venue)old.venue=e.venue;
+      // 省略タイトルより正式タイトルを優先
+      if(compact(e.title).length>compact(old.title).length)old.title=e.title;
+      const existing=Array.isArray(old.performersText)?old.performersText:[old.performersText];
+      const incoming=Array.isArray(e.performersText)?e.performersText:[e.performersText];
+      old.performersText=[...new Set([...existing,...incoming].filter(Boolean))];
     }
-    return [...seen.values()].sort((a,b)=>a.start-b.start);
+    return groups.sort((a,b)=>a.start-b.start);
   }
   function ensureView() {
     if(document.getElementById("presaleCalendarView"))return;
