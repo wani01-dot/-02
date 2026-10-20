@@ -649,79 +649,11 @@
 
 
     /*
-      =========================================
-      5. 完全に同一のデータが入っていた場合は
-         重複を軽く除去
-      =========================================
+      同じ公演の複数媒体・複数芸人レコードは buildGroups で統合する。
+      ここで source / URL / performerId を比較してしまうと
+      同じ公演が重複表示されるため、情報を捨てずに渡す。
     */
-
-    const seenEvents =
-      new Set();
-
-
-    rawEvents =
-      rawEvents.filter(
-        event => {
-
-          const key = [
-
-            event.date
-            ||
-            "",
-
-            event.startTime
-            ||
-            "",
-
-            normalizeTitle(
-              event.title
-            ),
-
-            normalizeVenue(
-              event.venue
-            ),
-
-            event.performerId
-            ||
-            "",
-
-            event.source
-            ||
-            "",
-
-            event.sourceUrl
-            ||
-            "",
-
-          ].join(
-            "|"
-          );
-
-
-          if (
-            seenEvents.has(
-              key
-            )
-          ) {
-
-            return false;
-          }
-
-
-          seenEvents.add(
-            key
-          );
-
-
-          return true;
-        }
-      );
-
-
-    console.log(
-      `合流後: ${rawEvents.length}件`
-    );
-
+    console.log(`取得した公演レコード: ${rawEvents.length}件`);
 
     /*
       =========================================
@@ -864,21 +796,16 @@
 }
 
 
-  function calendarKey(
-  event
-) {
-
-  return [
-    event.date || "",
-    event.startTime || "",
-    normalizeTitle(
-      event.title
-    ),
-  ].join(
-    "|"
-  );
-}
-
+  // 同日・同タイトルでも別の開演回は別公演として保持する。
+  // 会場表記の都道府県補足などは比較から除外する。
+  // 同じタイトル・日付・開演時刻は媒体や芸人が違っても一公演。
+  // 開演時刻が違う回は混ぜない。
+  function calendarKey(event) {
+    const title = normalizeTitle(event.title)
+      .replace(/[\\s\\-ー―–（）()「」『』【】・:：]/g, "");
+    const time = clean(event.startTime).replace(/[^0-9]/g, "");
+    return [event.date || "", title, time].join("|");
+  }
 
   function buildGroups(
     events
@@ -891,11 +818,26 @@
     events.forEach(
       event => {
 
-        const key =
-          calendarKey(
-            event
-          );
+        let key = calendarKey(event);
 
+        // 公式サイト側に開演時刻がない場合だけ、同じ日・同タイトルの
+        // 時刻付き公演と照合する。複数回公演なら推測で統合しない。
+        const eventTime = clean(event.startTime);
+        const prefix = [event.date || "", normalizeTitle(event.title)
+          .replace(/[\\s\\-ー―–（）()「」『』【】・:：]/g, "")].join("|") + "|";
+        if (!map.has(key)) {
+          const candidates = [...map.keys()].filter(k => k.startsWith(prefix));
+          if (!eventTime && candidates.length === 1) {
+            key = candidates[0];
+          } else if (eventTime && candidates.length === 1 && candidates[0] === prefix) {
+            const existing = map.get(candidates[0]);
+            map.delete(candidates[0]);
+            key = calendarKey(event);
+            existing.key = key;
+            existing.startTime = event.startTime;
+            map.set(key, existing);
+          }
+        }
 
         if (
           !map.has(

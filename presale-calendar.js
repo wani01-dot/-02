@@ -28,7 +28,7 @@
       const start=new Date(p.startAt||p.start||"");
       if (!Number.isFinite(start.getTime())) return null;
       const end=new Date(p.endAt||p.end||"");
-      return {title:e.title||"公演名未設定",date:e.date||"",venue:e.venue||"",url,
+      return {title:e.title||"公演名未設定",date:e.date||"",venue:e.venue||"",url:p.sourceUrl||url,
         performerIds, start, end:Number.isFinite(end.getTime())?end:null,
         label:p.label||p.name||(kind(p)==="lottery"?"抽選受付":"先着販売"),kind:kind(p)};
     }).filter(Boolean);
@@ -43,6 +43,8 @@
         const old=seen.get(key);
         old.performerIds=[...new Set([...old.performerIds,...e.performerIds])];
         if(!old.url && e.url) old.url=e.url;
+        if((!old.label || old.label==="抽選受付" || old.label==="先着販売" || old.label==="advance") && e.label) old.label=e.label;
+        if(!old.end && e.end) old.end=e.end;
       }
     }
     return [...seen.values()].sort((a,b)=>a.start-b.start);
