@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-20T00:34:29.861769+00:00",
+  "syncedAt": "2026-10-20T05:11:42.081928+00:00",
   "performers": [
     {
       "id": "maison",
@@ -5328,7 +5328,7 @@
       "venue": "歌舞伎町Sparkle(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/528554",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -7975,18 +7975,18 @@
       "title": "若手芸人HIPHOP同好会 2026年11月号",
       "venue": "下北沢ろくでもない夜（東京都）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/70873/55825",
+      "sourceUrl": "https://ticket.fany.lol/reception/70875/55825",
       "ticketStatus": "",
       "ticketOptions": [],
-      "saleStartAt": "2026-10-17T11:00:00+09:00",
-      "saleEndAt": "2026-10-20T11:00:00+09:00",
-      "saleCategory": "advance",
+      "saleStartAt": "2026-10-25T10:00:00+09:00",
+      "saleEndAt": "2026-11-09T23:59:00+09:00",
+      "saleCategory": "first_come",
       "salePeriods": [
         {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-10-17T11:00:00+09:00",
-          "endAt": "2026-10-20T11:00:00+09:00"
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-10-25T10:00:00+09:00",
+          "endAt": "2026-11-09T23:59:00+09:00"
         }
       ],
       "performersText": [
@@ -7997,7 +7997,13 @@
         "青空（からし蓮根）",
         "八木崇（うるとらブギーズ）",
         "なんぶ",
-        "わせお☆ミレニアム（マルティンス）"
+        "わせお☆ミレニアム（マルティンス）",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
       ],
       "firstSeenAt": "2026-10-14T21:02:26.645869+00:00",
       "newUntil": "",
@@ -8014,18 +8020,18 @@
       "title": "若手芸人HIPHOP同好会 2026年11月号",
       "venue": "下北沢ろくでもない夜（東京都）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/70873/55825",
+      "sourceUrl": "https://ticket.fany.lol/reception/70875/55825",
       "ticketStatus": "",
       "ticketOptions": [],
-      "saleStartAt": "2026-10-17T11:00:00+09:00",
-      "saleEndAt": "2026-10-20T11:00:00+09:00",
-      "saleCategory": "advance",
+      "saleStartAt": "2026-10-25T10:00:00+09:00",
+      "saleEndAt": "2026-11-09T23:59:00+09:00",
+      "saleCategory": "first_come",
       "salePeriods": [
         {
-          "category": "advance",
-          "label": "抽選",
-          "startAt": "2026-10-17T11:00:00+09:00",
-          "endAt": "2026-10-20T11:00:00+09:00"
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-10-25T10:00:00+09:00",
+          "endAt": "2026-11-09T23:59:00+09:00"
         }
       ],
       "performersText": [
@@ -8036,7 +8042,13 @@
         "青空（からし蓮根）",
         "八木崇（うるとらブギーズ）",
         "なんぶ",
-        "わせお☆ミレニアム（マルティンス）"
+        "わせお☆ミレニアム（マルティンス）",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
       ],
       "firstSeenAt": "2026-10-14T21:02:26.645869+00:00",
       "newUntil": "",
@@ -10413,25 +10425,6 @@
         {
           "name": "同じ販売元のイベント",
           "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-10-15T19:00:00+09:00",
-          "saleEndAt": "2026-10-21T23:59:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-10-15T19:00:00+09:00",
-              "endAt": "2026-10-21T23:59:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|同じ販売元のイベント|先着|advance|2026-10-15T19:00:00+09:00"
-            }
-          ]
-        },
-        {
-          "name": "十九人 / ４０００ / 無尽蔵",
-          "type": "先着",
           "status": "販売前",
           "price": "",
           "saleStartAt": "2026-10-15T19:00:00+09:00",
@@ -10444,7 +10437,7 @@
               "label": "",
               "startAt": "2026-10-15T19:00:00+09:00",
               "endAt": "2026-10-21T23:59:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|十九人 / ４０００ / 無尽蔵|先着|advance|2026-10-15T19:00:00+09:00"
+              "saleKey": "livepocket|maison|z2nvo|同じ販売元のイベント|先着|advance|2026-10-15T19:00:00+09:00"
             }
           ]
         },
@@ -10464,6 +10457,25 @@
               "startAt": "2026-10-15T19:00:00+09:00",
               "endAt": "2026-10-21T23:59:00+09:00",
               "saleKey": "livepocket|maison|z2nvo|動物男児 / ツェ大野 / やゆよ / しらせ / すぎる / パスタとパスタ まなべ / ヤング / ねじれネジ|先着|advance|2026-10-15T19:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "十九人 / ４０００ / 無尽蔵",
+          "type": "先着",
+          "status": "販売前",
+          "price": "",
+          "saleStartAt": "2026-10-15T19:00:00+09:00",
+          "saleEndAt": "2026-10-21T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-10-15T19:00:00+09:00",
+              "endAt": "2026-10-21T23:59:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|十九人 / ４０００ / 無尽蔵|先着|advance|2026-10-15T19:00:00+09:00"
             }
           ]
         }
