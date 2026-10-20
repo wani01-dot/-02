@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-20T05:11:42.081928+00:00",
+  "syncedAt": "2026-10-20T10:01:03.079473+00:00",
   "performers": [
     {
       "id": "maison",
@@ -60,46 +60,8 @@
       "venue": "西荻地域区民センター ホール (東京都)",
       "source": "livepocket",
       "sourceUrl": "https://livepocket.jp/e/gakkatsu",
-      "ticketStatus": "一部予定数終了",
+      "ticketStatus": "販売終了",
       "ticketOptions": [
-        {
-          "name": "最高の学活",
-          "type": "先着",
-          "status": "販売中",
-          "price": "¥3,000",
-          "saleStartAt": "2026-10-10T12:00:00+09:00",
-          "saleEndAt": "2026-10-20T18:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-10-10T12:00:00+09:00",
-              "endAt": "2026-10-20T18:00:00+09:00",
-              "saleKey": "livepocket|nansui|gakkatsu|最高の学活|先着|first_come|2026-10-10T12:00:00+09:00"
-            }
-          ]
-        },
-        {
-          "name": "（税込）",
-          "type": "先着",
-          "status": "販売終了",
-          "price": "",
-          "saleStartAt": "2026-10-10T12:00:00+09:00",
-          "saleEndAt": "2026-10-20T18:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-10-10T12:00:00+09:00",
-              "endAt": "2026-10-20T18:00:00+09:00",
-              "saleKey": "livepocket|nansui|gakkatsu|（税込）|先着|first_come|2026-10-10T12:00:00+09:00"
-            }
-          ]
-        },
         {
           "name": "最高の学活",
           "type": "先着",
@@ -137,6 +99,44 @@
               "saleKey": "livepocket|nansui|gakkatsu|（税込）|先着|advance|2026-10-07T00:00:00+09:00"
             }
           ]
+        },
+        {
+          "name": "最高の学活",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "¥3,000",
+          "saleStartAt": "2026-10-10T12:00:00+09:00",
+          "saleEndAt": "2026-10-20T18:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-10-10T12:00:00+09:00",
+              "endAt": "2026-10-20T18:00:00+09:00",
+              "saleKey": "livepocket|nansui|gakkatsu|最高の学活|先着|first_come|2026-10-10T12:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "（税込）",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-10-10T12:00:00+09:00",
+          "saleEndAt": "2026-10-20T18:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-10-10T12:00:00+09:00",
+              "endAt": "2026-10-20T18:00:00+09:00",
+              "saleKey": "livepocket|nansui|gakkatsu|（税込）|先着|first_come|2026-10-10T12:00:00+09:00"
+            }
+          ]
         }
       ],
       "saleStartAt": "2026-10-10T12:00:00+09:00",
@@ -144,16 +144,16 @@
       "saleCategory": "first_come",
       "salePeriods": [
         {
-          "category": "first_come",
-          "label": "",
-          "startAt": "2026-10-10T12:00:00+09:00",
-          "endAt": "2026-10-20T18:00:00+09:00"
-        },
-        {
           "category": "advance",
           "label": "",
           "startAt": "2026-10-07T00:00:00+09:00",
           "endAt": "2026-10-08T23:59:00+09:00"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-10-10T12:00:00+09:00",
+          "endAt": "2026-10-20T18:00:00+09:00"
         }
       ],
       "performersText": [
@@ -183,46 +183,8 @@
       "venue": "西荻地域区民センター ホール (東京都)",
       "source": "livepocket",
       "sourceUrl": "https://livepocket.jp/e/gakkatsu",
-      "ticketStatus": "一部予定数終了",
+      "ticketStatus": "販売終了",
       "ticketOptions": [
-        {
-          "name": "最高の学活",
-          "type": "先着",
-          "status": "販売中",
-          "price": "¥3,000",
-          "saleStartAt": "2026-10-10T12:00:00+09:00",
-          "saleEndAt": "2026-10-20T18:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-10-10T12:00:00+09:00",
-              "endAt": "2026-10-20T18:00:00+09:00",
-              "saleKey": "livepocket|pyuto|gakkatsu|最高の学活|先着|first_come|2026-10-10T12:00:00+09:00"
-            }
-          ]
-        },
-        {
-          "name": "（税込）",
-          "type": "先着",
-          "status": "販売終了",
-          "price": "",
-          "saleStartAt": "2026-10-10T12:00:00+09:00",
-          "saleEndAt": "2026-10-20T18:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-10-10T12:00:00+09:00",
-              "endAt": "2026-10-20T18:00:00+09:00",
-              "saleKey": "livepocket|pyuto|gakkatsu|（税込）|先着|first_come|2026-10-10T12:00:00+09:00"
-            }
-          ]
-        },
         {
           "name": "最高の学活",
           "type": "先着",
@@ -260,6 +222,44 @@
               "saleKey": "livepocket|pyuto|gakkatsu|（税込）|先着|advance|2026-10-07T00:00:00+09:00"
             }
           ]
+        },
+        {
+          "name": "最高の学活",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "¥3,000",
+          "saleStartAt": "2026-10-10T12:00:00+09:00",
+          "saleEndAt": "2026-10-20T18:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-10-10T12:00:00+09:00",
+              "endAt": "2026-10-20T18:00:00+09:00",
+              "saleKey": "livepocket|pyuto|gakkatsu|最高の学活|先着|first_come|2026-10-10T12:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "（税込）",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-10-10T12:00:00+09:00",
+          "saleEndAt": "2026-10-20T18:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-10-10T12:00:00+09:00",
+              "endAt": "2026-10-20T18:00:00+09:00",
+              "saleKey": "livepocket|pyuto|gakkatsu|（税込）|先着|first_come|2026-10-10T12:00:00+09:00"
+            }
+          ]
         }
       ],
       "saleStartAt": "2026-10-10T12:00:00+09:00",
@@ -267,16 +267,16 @@
       "saleCategory": "first_come",
       "salePeriods": [
         {
-          "category": "first_come",
-          "label": "",
-          "startAt": "2026-10-10T12:00:00+09:00",
-          "endAt": "2026-10-20T18:00:00+09:00"
-        },
-        {
           "category": "advance",
           "label": "",
           "startAt": "2026-10-07T00:00:00+09:00",
           "endAt": "2026-10-08T23:59:00+09:00"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-10-10T12:00:00+09:00",
+          "endAt": "2026-10-20T18:00:00+09:00"
         }
       ],
       "performersText": [
@@ -5250,6 +5250,7 @@
         "ファイヤーサンダー",
         "フランツ",
         "ぺ",
+        "ハマノとヘンミ",
         "ネタと企画orトークの約2時間のライブを予定しています✨"
       ],
       "firstSeenAt": "2026-10-19T05:23:03.842081+00:00",
@@ -6039,8 +6040,9 @@
         "囲碁将棋",
         "ウエストランド",
         "エバース",
-        "カナメストーン",
+        "怪奇！YesどんぐりRPG",
         "ガクテンソク",
+        "カナメストーン",
         "9番街レトロ",
         "黒帯",
         "さや香",
@@ -8818,7 +8820,9 @@
         "カナメストーン",
         "金魚番長",
         "金属バット",
+        "ぐろう",
         "三四郎",
+        "ジョックロック",
         "たくろう",
         "ダンビラムーチョ",
         "ツートライブ",
@@ -8826,7 +8830,6 @@
         "バッテリィズ",
         "紅しょうが",
         "めぞん",
-        "他2組",
         "・1回の先着申込で申込可能な公演数は『",
         "1公演",
         "』",
@@ -10425,7 +10428,7 @@
         {
           "name": "同じ販売元のイベント",
           "type": "先着",
-          "status": "販売前",
+          "status": "販売中",
           "price": "",
           "saleStartAt": "2026-10-15T19:00:00+09:00",
           "saleEndAt": "2026-10-21T23:59:00+09:00",
@@ -10438,6 +10441,25 @@
               "startAt": "2026-10-15T19:00:00+09:00",
               "endAt": "2026-10-21T23:59:00+09:00",
               "saleKey": "livepocket|maison|z2nvo|同じ販売元のイベント|先着|advance|2026-10-15T19:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "ねじれネジ / パスタとパスタ / 喜喜かいばしら / 9番街レトロ なかむらしゅん",
+          "type": "先着",
+          "status": "販売前",
+          "price": "",
+          "saleStartAt": "2026-10-15T19:00:00+09:00",
+          "saleEndAt": "2026-10-21T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-10-15T19:00:00+09:00",
+              "endAt": "2026-10-21T23:59:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|ねじれネジ / パスタとパスタ / 喜喜かいばしら / 9番街レトロ なかむらしゅん|先着|advance|2026-10-15T19:00:00+09:00"
             }
           ]
         },
@@ -10457,25 +10479,6 @@
               "startAt": "2026-10-15T19:00:00+09:00",
               "endAt": "2026-10-21T23:59:00+09:00",
               "saleKey": "livepocket|maison|z2nvo|動物男児 / ツェ大野 / やゆよ / しらせ / すぎる / パスタとパスタ まなべ / ヤング / ねじれネジ|先着|advance|2026-10-15T19:00:00+09:00"
-            }
-          ]
-        },
-        {
-          "name": "十九人 / ４０００ / 無尽蔵",
-          "type": "先着",
-          "status": "販売前",
-          "price": "",
-          "saleStartAt": "2026-10-15T19:00:00+09:00",
-          "saleEndAt": "2026-10-21T23:59:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-10-15T19:00:00+09:00",
-              "endAt": "2026-10-21T23:59:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|十九人 / ４０００ / 無尽蔵|先着|advance|2026-10-15T19:00:00+09:00"
             }
           ]
         }
