@@ -13,43 +13,68 @@
     if (/抽選|先行|lottery|advance/.test(s) && !/先着|一般|first.?come/.test(s)) return "lottery";
     return "first";
   };
+  // 販売元が同じ受付を「指定席」「先着販売」「同じ販売元のイベント」
+  // など複数のチケット名で返すことがある。受付そのものを単位として扱う。
+  const text = value => String(value ?? "").normalize("NFKC").trim();
+  const compact = value => text(value).toLowerCase().replace(/[\\s　「」『』【】（）()・.,，。:：!！?？～〜\\-ー―–]/g, "");
+  const round = value => {
+    const t = text(value);
+    const m = t.match(/(?:第\\s*([0-9]+)\\s*次|([0-9]+)\\s*次|([0-9]+)\\s*回目)/);
+    return m ? (m[1]||m[2]||m[3]) : "";
+  };
+  const isLot = value => /抽選|lottery|プレオーダー|先行抽選/.test(text(value).toLowerCase());
+  const isFirst = value => /先着|一般発売|先着販売|first.?come/.test(text(value).toLowerCase());
+  function classify(period, option) {
+    // advance / 先行だけでは抽選とは限らない
+    const fields=[period.type,option.type,period.label,option.saleLabel,period.category,option.saleCategory];
+    if(fields.some(isFirst)) return "first";
+    if(fields.some(isLot)) return "lottery";
+    return "first";
+  }
   function periods(e) {
-    let list = Array.isArray(e.salePeriods) ? e.salePeriods : [];
-    if (!list.length && e.saleStartAt) list=[{startAt:e.saleStartAt,endAt:e.saleEndAt,category:e.saleCategory,label:e.saleCategory}];
-    for (const opt of (Array.isArray(e.ticketOptions)?e.ticketOptions:[])) {
-      if (Array.isArray(opt.salePeriods)) list=list.concat(opt.salePeriods.map(p=>({...p, label:p.label||opt.name||opt.label})));
+    const list=[];
+    const base=Array.isArray(e.salePeriods)?e.salePeriods:[];
+    for(const p of base)list.push({period:p,option:{}});
+    if(!base.length && e.saleStartAt)list.push({period:{startAt:e.saleStartAt,endAt:e.saleEndAt,category:e.saleCategory},option:{}});
+    for(const opt of (Array.isArray(e.ticketOptions)?e.ticketOptions:[])){
+      const opts=Array.isArray(opt.salePeriods)&&opt.salePeriods.length?opt.salePeriods:(opt.saleStartAt?[{startAt:opt.saleStartAt,endAt:opt.saleEndAt,category:opt.saleCategory}]:[]);
+      for(const p of opts)list.push({period:p,option:opt});
     }
     return list;
   }
   function normalize(e) {
     const url=e.sourceUrl||e.ticketUrl||e.url||"";
     const performerIds=Array.isArray(e.trackedPerformers)&&e.trackedPerformers.length?e.trackedPerformers:[e.performerId].filter(Boolean);
-    return periods(e).map(p=>{
+    return periods(e).map(({period:p,option:o})=>{
       const start=new Date(p.startAt||p.start||"");
       if (!Number.isFinite(start.getTime())) return null;
       const end=new Date(p.endAt||p.end||"");
+      const type=classify(p,o);
+      const label=p.label||o.saleLabel||p.name||o.name||(type==="lottery"?"抽選受付":"先着販売");
       return {title:e.title||"公演名未設定",date:e.date||"",openTime:e.openTime||"",startTime:e.startTime||"",venue:e.venue||"",performersText:e.performersText||[],url:p.sourceUrl||url,
         performerIds, start, end:Number.isFinite(end.getTime())?end:null,
-        label:p.label||p.name||(kind(p)==="lottery"?"抽選受付":"先着販売"),kind:kind(p)};
+        label,kind:type,round:round([p.label,o.saleLabel,p.name].join(" ")),saleKey:p.saleKey||""};
     }).filter(Boolean);
   }
   function unique(items) {
     const seen=new Map();
     for(const e of items) {
-      // 同じ公演・同じ受付は統合。受付開始日時と方式が違えば別件。
-      const key=[e.title.trim().replace(/\s+/g,""),e.date,e.start.getTime(),e.kind,e.label.trim()].join("|");
+      // チケット種別名は識別子に含めない。日時と販売方式が同じなら
+      // 同一受付として扱う。一次・二次など明示的な別回は残す。
+      const key=[compact(e.title),e.date,e.start.getTime(),e.kind,e.round].join("|");
       if(!seen.has(key)) seen.set(key,e);
       else {
         const old=seen.get(key);
         old.performerIds=[...new Set([...old.performerIds,...e.performerIds])];
         if(!old.url && e.url) old.url=e.url;
-        if((!old.label || old.label==="抽選受付" || old.label==="先着販売" || old.label==="advance") && e.label) old.label=e.label;
+        const generic=v=>!v||/^(指定席|自由席|先着|先着販売|抽選受付|抽選|同じ販売元のイベント|advance)$/.test(text(v));
+        if(generic(old.label) && !generic(e.label) && /先着|抽選|販売|受付|先行|プレオーダー/.test(e.label)) old.label=e.label;
         if(!old.end && e.end) old.end=e.end;
         if(!old.openTime && e.openTime) old.openTime=e.openTime;
         if(!old.startTime && e.startTime) old.startTime=e.startTime;
         if(!old.venue && e.venue) old.venue=e.venue;
-        const existing = Array.isArray(old.performersText)?old.performersText:[old.performersText];
-        const incoming = Array.isArray(e.performersText)?e.performersText:[e.performersText];
+        const existing=Array.isArray(old.performersText)?old.performersText:[old.performersText];
+        const incoming=Array.isArray(e.performersText)?e.performersText:[e.performersText];
         old.performersText=[...new Set([...existing,...incoming].filter(Boolean))];
       }
     }
