@@ -1,9 +1,9 @@
 {
-  "syncedAt": "2026-10-21T10:16:06.501744+00:00",
+  "syncedAt": "2026-10-21T15:22:03.513718+00:00",
   "total": 130,
   "ticketListedCount": 130,
   "ticketUnlistedCount": 0,
-  "ticketOptionCount": 394,
+  "ticketOptionCount": 392,
   "salePeriodCount": 698,
   "events": [
     {
@@ -66,80 +66,36 @@
           "score": 10,
           "performerId": "nansui",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66155/52699",
+          "sourceUrl": "https://ticket.fany.lol/reception/66137/52699",
           "title": "トイレッツ",
           "date": "2026-10-21",
           "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
           "openTime": "20:45",
           "startTime": "21:00",
-          "ticketStatus": "販売中",
-          "ticketOptions": [
-            {
-              "name": "全席指定",
-              "type": "当日",
-              "status": "販売中",
-              "price": "￥2,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-05T10:00:00+09:00",
-              "saleEndAt": "2026-10-21T19:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-09-05T10:00:00+09:00",
-                  "endAt": "2026-10-21T19:00:00+09:00"
-                }
-              ]
-            }
-          ],
+          "ticketStatus": "",
+          "ticketOptions": [],
           "salePeriods": [
             {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-21T19:00:00+09:00"
+              "category": "advance",
+              "label": "抽選",
+              "startAt": "2026-08-30T11:00:00+09:00",
+              "endAt": "2026-09-01T11:00:00+09:00"
             },
             {
-              "category": "first_come",
+              "category": "advance",
               "label": "",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-21T19:00:00+09:00"
+              "startAt": "2026-08-30T11:00:00+09:00",
+              "endAt": "2026-09-01T11:00:00+09:00"
             }
           ],
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-21T19:00:00+09:00",
-          "saleCategory": "first_come",
+          "saleStartAt": "2026-08-30T11:00:00+09:00",
+          "saleEndAt": "2026-09-01T11:00:00+09:00",
+          "saleCategory": "advance",
           "saleLabel": ""
         }
       ],
       "ticketListed": true,
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "販売中",
-          "price": "￥2,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-21T19:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-21T19:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66155/52699"
-        }
-      ],
+      "ticketOptions": [],
       "salePeriods": [
         {
           "category": "advance",
@@ -158,20 +114,20 @@
           "sourceUrl": "https://ticket.fany.lol/reception/64357/51905"
         },
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-09-05T10:00:00+09:00",
-          "endAt": "2026-10-21T19:00:00+09:00",
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-08-30T11:00:00+09:00",
+          "endAt": "2026-09-01T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66155/52699"
+          "sourceUrl": "https://ticket.fany.lol/reception/66137/52699"
         },
         {
-          "category": "first_come",
+          "category": "advance",
           "label": "",
-          "startAt": "2026-09-05T10:00:00+09:00",
-          "endAt": "2026-10-21T19:00:00+09:00",
+          "startAt": "2026-08-30T11:00:00+09:00",
+          "endAt": "2026-09-01T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66155/52699"
+          "sourceUrl": "https://ticket.fany.lol/reception/66137/52699"
         }
       ],
       "status": "ticket_listed",
@@ -298,52 +254,31 @@
           "score": 20,
           "performerId": "nansui",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66155/52699",
+          "sourceUrl": "https://ticket.fany.lol/reception/66137/52699",
           "title": "トイレッツ",
           "date": "2026-10-21",
           "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
           "openTime": "20:45",
           "startTime": "21:00",
-          "ticketStatus": "販売中",
-          "ticketOptions": [
-            {
-              "name": "全席指定",
-              "type": "当日",
-              "status": "販売中",
-              "price": "￥2,500",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-05T10:00:00+09:00",
-              "saleEndAt": "2026-10-21T19:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "先着",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "先着",
-                  "startAt": "2026-09-05T10:00:00+09:00",
-                  "endAt": "2026-10-21T19:00:00+09:00"
-                }
-              ]
-            }
-          ],
+          "ticketStatus": "",
+          "ticketOptions": [],
           "salePeriods": [
             {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-21T19:00:00+09:00"
+              "category": "advance",
+              "label": "抽選",
+              "startAt": "2026-08-30T11:00:00+09:00",
+              "endAt": "2026-09-01T11:00:00+09:00"
             },
             {
-              "category": "first_come",
+              "category": "advance",
               "label": "",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-21T19:00:00+09:00"
+              "startAt": "2026-08-30T11:00:00+09:00",
+              "endAt": "2026-09-01T11:00:00+09:00"
             }
           ],
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-21T19:00:00+09:00",
-          "saleCategory": "first_come",
+          "saleStartAt": "2026-08-30T11:00:00+09:00",
+          "saleEndAt": "2026-09-01T11:00:00+09:00",
+          "saleCategory": "advance",
           "saleLabel": ""
         },
         {
@@ -379,46 +314,23 @@
         }
       ],
       "ticketListed": true,
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "販売中",
-          "price": "￥2,500",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-21T19:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-21T19:00:00+09:00"
-            }
-          ],
-          "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66155/52699"
-        }
-      ],
+      "ticketOptions": [],
       "salePeriods": [
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-09-05T10:00:00+09:00",
-          "endAt": "2026-10-21T19:00:00+09:00",
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-08-30T11:00:00+09:00",
+          "endAt": "2026-09-01T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66155/52699"
+          "sourceUrl": "https://ticket.fany.lol/reception/66137/52699"
         },
         {
-          "category": "first_come",
+          "category": "advance",
           "label": "",
-          "startAt": "2026-09-05T10:00:00+09:00",
-          "endAt": "2026-10-21T19:00:00+09:00",
+          "startAt": "2026-08-30T11:00:00+09:00",
+          "endAt": "2026-09-01T11:00:00+09:00",
           "source": "fany",
-          "sourceUrl": "https://ticket.fany.lol/reception/66155/52699"
+          "sourceUrl": "https://ticket.fany.lol/reception/66137/52699"
         },
         {
           "category": "advance",
@@ -438,12 +350,12 @@
         }
       ],
       "status": "ticket_listed",
-      "ticketStatus": "販売中",
+      "ticketStatus": "",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/66155/52699",
-      "saleStartAt": "2026-09-05T10:00:00+09:00",
-      "saleEndAt": "2026-10-21T19:00:00+09:00",
-      "saleCategory": "first_come",
+      "sourceUrl": "https://ticket.fany.lol/reception/66137/52699",
+      "saleStartAt": "2026-08-30T11:00:00+09:00",
+      "saleEndAt": "2026-09-01T11:00:00+09:00",
+      "saleCategory": "advance",
       "saleLabel": ""
     },
     {
@@ -1029,7 +941,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]さや香／いぬ／ワラバランス／素敵じゃないか／世間知らズ／ミカボ／オフローズ／軟水／他 [ コーナー出演者]MC:素敵じゃないか／さや香／オフローズ／軟水／他"
+        "[ネタ＆コーナーライブ]さや香／いぬ／ワラバランス／素敵じゃないか／世間知らズ／ミカボ／オフローズ／シンクロニシティ／軟水／他 [ コーナー出演者]MC:素敵じゃないか／さや香／世間知らズ／オフローズ／軟水"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -7672,7 +7584,7 @@
       "theaterId": "fukuoka",
       "theaterName": "福岡",
       "performersText": [
-        "囲碁将棋／金属バット／バッテリィズ／たくろう／めぞん／アイラブ地球／気になるあの娘／メタルラック／太宰"
+        "囲碁将棋／金属バット／バッテリィズ／たくろう／めぞん／アイラブ地球／気になるあの娘／メタルラック／パゴス"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -24443,7 +24355,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタライブ]滝音／エバース／9番街レトロ／めぞん／オフローズ／軟水／ゼロカラン／ザ・パンチ／サルゴリラ／ミルクボーイ／チェリー大作戦／他"
+        "[ネタライブ]滝音／エバース／9番街レトロ／めぞん／オフローズ／軟水／ゼロカラン／ザ・パンチ／サルゴリラ／ミルクボーイ／チェリー大作戦"
       ],
       "newUntil": "",
       "trackedPerformers": [
