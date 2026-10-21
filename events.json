@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-21T04:40:46.727821+00:00",
+  "syncedAt": "2026-10-21T09:37:42.856487+00:00",
   "performers": [
     {
       "id": "maison",
@@ -59,38 +59,18 @@
       "title": "六本木コントライブNEXT！",
       "venue": "YOSHIMOTO ROPPONGI THEATER（東京都）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/64359/51905",
-      "ticketStatus": "販売中",
-      "ticketOptions": [
-        {
-          "name": "整理番号付き自由席",
-          "type": "当日",
-          "status": "販売中",
-          "price": "￥2,300",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-21T15:30:00+09:00",
-              "saleKey": "fany|nansui|64359|51905|整理番号付き自由席|当日|first_come|2026-09-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-21T15:30:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-09-05T10:00:00+09:00",
-      "saleEndAt": "2026-10-21T15:30:00+09:00",
-      "saleCategory": "first_come",
+      "sourceUrl": "https://ticket.fany.lol/reception/64357/51905",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-08-25T11:00:00+09:00",
+      "saleEndAt": "2026-08-28T11:00:00+09:00",
+      "saleCategory": "advance",
       "salePeriods": [
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-09-05T10:00:00+09:00",
-          "endAt": "2026-10-21T15:30:00+09:00"
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-08-25T11:00:00+09:00",
+          "endAt": "2026-08-28T11:00:00+09:00"
         }
       ],
       "performersText": [
@@ -103,13 +83,7 @@
         "スクールゾーン",
         "軟水",
         "伝書鳩",
-        "MC：スクールゾーン",
-        "・1回の先着申込で申込可能な公演数は『",
-        "1公演",
-        "』",
-        "枚数は『",
-        "10枚まで",
-        "・座席番号や整理番号は"
+        "MC：スクールゾーン"
       ],
       "firstSeenAt": "2026-10-14T21:02:26.645869+00:00",
       "newUntil": "",
@@ -125,38 +99,18 @@
       "title": "VSバラエティ",
       "venue": "神保町よしもと漫才劇場（東京都）",
       "source": "fany",
-      "sourceUrl": "https://ticket.fany.lol/reception/64847/52188",
-      "ticketStatus": "残りわずか",
-      "ticketOptions": [
-        {
-          "name": "全席指定",
-          "type": "当日",
-          "status": "残りわずか",
-          "price": "￥2,000",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "先着",
-              "startAt": "2026-09-05T10:00:00+09:00",
-              "endAt": "2026-10-21T17:30:00+09:00",
-              "saleKey": "fany|maison|64847|52188|全席指定|当日|first_come|2026-09-05T10:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-09-05T10:00:00+09:00",
-          "saleEndAt": "2026-10-21T17:30:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "先着"
-        }
-      ],
-      "saleStartAt": "2026-09-05T10:00:00+09:00",
-      "saleEndAt": "2026-10-21T17:30:00+09:00",
-      "saleCategory": "first_come",
+      "sourceUrl": "https://ticket.fany.lol/reception/64755/52188",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "2026-08-25T11:00:00+09:00",
+      "saleEndAt": "2026-08-28T11:00:00+09:00",
+      "saleCategory": "advance",
       "salePeriods": [
         {
-          "category": "first_come",
-          "label": "先着",
-          "startAt": "2026-09-05T10:00:00+09:00",
-          "endAt": "2026-10-21T17:30:00+09:00"
+          "category": "advance",
+          "label": "抽選",
+          "startAt": "2026-08-25T11:00:00+09:00",
+          "endAt": "2026-08-28T11:00:00+09:00"
         }
       ],
       "performersText": [
@@ -164,13 +118,7 @@
         "生ファラオ",
         "めぞん",
         "しんや",
-        "ナユタ",
-        "・1回の先着申込で申込可能な公演数は『",
-        "1公演",
-        "』",
-        "枚数は『",
-        "10枚まで",
-        "・座席番号や整理番号は"
+        "ナユタ"
       ],
       "firstSeenAt": "2026-10-14T21:02:26.645869+00:00",
       "newUntil": "",
@@ -1045,6 +993,91 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison"
+      ]
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-10-24",
+      "openTime": "17:00",
+      "startTime": "17:15",
+      "title": "ジンゲキNETAラッシュ",
+      "venue": "神保町よしもと漫才劇場（東京都）",
+      "source": "fany",
+      "sourceUrl": "https://ticket.fany.lol/reception/70735/55540",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "全席指定",
+          "type": "前売",
+          "status": "販売中",
+          "price": "￥1,800",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-13T10:00:00+09:00",
+              "endAt": "2026-10-24T15:15:00+09:00",
+              "saleKey": "fany|nansui|70735|55540|全席指定|前売|first_come|2026-10-13T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-10-13T10:00:00+09:00",
+          "saleEndAt": "2026-10-24T15:15:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        },
+        {
+          "name": "立見（整理番号付）",
+          "type": "前売",
+          "status": "予定数終了",
+          "price": "￥1,800",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "先着",
+              "startAt": "2026-10-13T10:00:00+09:00",
+              "endAt": "2026-10-24T15:15:00+09:00",
+              "saleKey": "fany|nansui|70735|55540|立見（整理番号付）|前売|first_come|2026-10-13T10:00:00+09:00"
+            }
+          ],
+          "saleStartAt": "2026-10-13T10:00:00+09:00",
+          "saleEndAt": "2026-10-24T15:15:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "先着"
+        }
+      ],
+      "saleStartAt": "2026-10-13T10:00:00+09:00",
+      "saleEndAt": "2026-10-24T15:15:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "先着",
+          "startAt": "2026-10-13T10:00:00+09:00",
+          "endAt": "2026-10-24T15:15:00+09:00"
+        }
+      ],
+      "performersText": [
+        "くらげ",
+        "九条ジョー",
+        "ラニーノーズ",
+        "世間知らズ",
+        "軟水",
+        "イチゴ",
+        "狛犬",
+        "ぺ",
+        "私東京",
+        "あなたとネ",
+        "・1回の先着申込で申込可能な公演数は『",
+        "1公演",
+        "』",
+        "枚数は『",
+        "10枚まで",
+        "・座席番号や整理番号は"
+      ],
+      "firstSeenAt": "2026-10-21T09:37:42.852790+00:00",
+      "newUntil": "2026-10-23T09:37:42.852802+00:00",
+      "trackedPerformers": [
+        "nansui"
       ]
     },
     {
@@ -10205,25 +10238,6 @@
           ]
         },
         {
-          "name": "たまゆら学園 / TCクラクション / まんじゅう大帝国",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-10-15T19:00:00+09:00",
-          "saleEndAt": "2026-10-21T23:59:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-10-15T19:00:00+09:00",
-              "endAt": "2026-10-21T23:59:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|たまゆら学園 / TCクラクション / まんじゅう大帝国|先着|advance|2026-10-15T19:00:00+09:00"
-            }
-          ]
-        },
-        {
           "name": "喜喜かいばしら / パスタとパスタ / パンたべる / ツェ大野 / やゆよ / ヤング / ねじれネジ",
           "type": "先着",
           "status": "販売中",
@@ -10239,6 +10253,25 @@
               "startAt": "2026-10-15T19:00:00+09:00",
               "endAt": "2026-10-21T23:59:00+09:00",
               "saleKey": "livepocket|maison|z2nvo|喜喜かいばしら / パスタとパスタ / パンたべる / ツェ大野 / やゆよ / ヤング / ねじれネジ|先着|advance|2026-10-15T19:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "ねじれネジ / パスタとパスタ / 喜喜かいばしら / 9番街レトロ なかむらしゅん",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-10-15T19:00:00+09:00",
+          "saleEndAt": "2026-10-21T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-10-15T19:00:00+09:00",
+              "endAt": "2026-10-21T23:59:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|ねじれネジ / パスタとパスタ / 喜喜かいばしら / 9番街レトロ なかむらしゅん|先着|advance|2026-10-15T19:00:00+09:00"
             }
           ]
         }
