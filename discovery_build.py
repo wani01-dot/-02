@@ -1286,6 +1286,48 @@ def group_discovered_events(
 
 
 # =========================================================
+# メンバー単独出演を所属コンビに紐付ける
+# =========================================================
+
+MEMBER_RULES = {
+    "maison": ("吉野おいなり君", "吉野おいなり", "吉野（めぞん）", "めぞん吉野"),
+    "nansui": ("つるまる", "軟水つるまる"),
+    "pyuto": ("ポイント（ピュート）", "ポイント a.k.a 村田", "ポイントa.k.a村田"),
+}
+
+
+def individual_tracked_ids(event):
+    values = event.get("performersText", [])
+    if isinstance(values, str):
+        values = [values]
+    if not isinstance(values, list):
+        values = []
+    # 公演名のみの一致では誤判定が多いので出演者欄を優先
+    text = " / ".join(str(v) for v in values)
+    result = set()
+    for performer_id, names in MEMBER_RULES.items():
+        if any(name in text for name in names):
+            result.add(performer_id)
+    # "吉野" 単独は一般的な姓なので所属の明記があるときのみ認識
+    if re.search(r"吉野\s*[（(]\s*めぞん", text):
+        result.add("maison")
+    return result
+
+
+def include_individual_ticket_events(ticket_events):
+    result = []
+    for event in ticket_events:
+        ids = individual_tracked_ids(event)
+        if not ids:
+            continue
+        for performer_id in sorted(ids):
+            item = dict(event)
+            item["performerId"] = performer_id
+            result.append(convert_discovered_event(item, "ticket-member"))
+    return result
+
+
+# =========================================================
 # チケット照合
 # =========================================================
 
@@ -1793,6 +1835,11 @@ def main():
     discovered.extend(
         extra_events
     )
+
+    # チケットサイトの出演者欄から個人出演公演を発見
+    member_events = include_individual_ticket_events(ticket_events)
+    discovered.extend(member_events)
+    print("メンバー個人出演:", len(member_events), "件")
 
     print(
         "追加発見ソース:",
