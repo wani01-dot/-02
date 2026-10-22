@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-10-22T00:56:49.024996+00:00",
-  "total": 127,
+  "syncedAt": "2026-10-22T04:10:18.681244+00:00",
+  "total": 128,
   "ticketListedCount": 3,
-  "ticketUnlistedCount": 124,
+  "ticketUnlistedCount": 125,
   "ticketOptionCount": 0,
   "salePeriodCount": 0,
   "events": [
@@ -2399,6 +2399,51 @@
       ],
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-10",
+      "openTime": "18:30",
+      "startTime": "19:00",
+      "title": "若手芸人HIPHOP同好会 2026年11月号",
+      "venue": "下北沢ろくでもない夜（東京都）",
+      "discoverySource": "fany-official",
+      "discoveryUrl": "https://ticket.fany.lol/event/detail/21943",
+      "theaterId": "",
+      "theaterName": "",
+      "performersText": [
+        "吉野おいなり君（めぞん）",
+        "King Boy（アケガラス）",
+        "つるまる（軟水）",
+        "笹本はやて（ビューティフルトーキョーマンズ）",
+        "青空（からし蓮根）",
+        "八木崇（うるとらブギーズ）",
+        "なんぶ",
+        "わせお☆ミレニアム（マルティンス）"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison",
+        "nansui"
+      ],
+      "discoverySources": [
+        "fany-official"
+      ],
+      "discoveryUrls": [
+        "https://ticket.fany.lol/event/detail/21943"
       ],
       "ticketMatches": [],
       "ticketListed": false,
