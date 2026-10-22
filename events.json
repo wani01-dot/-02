@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-22T05:10:06.745452+00:00",
+  "syncedAt": "2026-10-22T10:06:40.709062+00:00",
   "performers": [
     {
       "id": "maison",
@@ -143,7 +143,7 @@
       "venue": "千本桜ホール(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/526404",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -655,6 +655,45 @@
       ]
     },
     {
+      "performerId": "pyuto",
+      "date": "2026-11-12",
+      "openTime": "19:00",
+      "startTime": "19:20",
+      "title": "11/12(木) 漫腹〜まんぷく〜",
+      "venue": "野方区民ホール(東京都)",
+      "source": "tiget",
+      "sourceUrl": "https://tiget.net/events/532851",
+      "ticketStatus": "予定数終了",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "足腰げんき教室",
+        "鬼塚ムソウ",
+        "オフローズ",
+        "オッパショ石",
+        "カガリ",
+        "さすらいラビー",
+        "サンタモニカ",
+        "ゼロカラン",
+        "伝書鳩",
+        "ナユタ",
+        "ねじれネジ",
+        "ピュート",
+        "フランツ",
+        "まんじゅう大帝国",
+        "百恵",
+        "お腹いっぱいになるまで“漫才”を食べるように浴びられる漫才オンリーライブです！"
+      ],
+      "firstSeenAt": "2026-10-22T10:06:40.708500+00:00",
+      "newUntil": "2026-10-24T10:06:40.708516+00:00",
+      "trackedPerformers": [
+        "pyuto"
+      ]
+    },
+    {
       "performerId": "maison",
       "date": "2026-11-18",
       "openTime": "19:00",
@@ -723,7 +762,7 @@
           ]
         },
         {
-          "name": "喜喜かいばしら / パスタとパスタ / パンたべる / ツェ大野 / やゆよ / ヤング / ねじれネジ",
+          "name": "ウィークリー習慣 / ポテトカレッジ / ダンゴ虫たち",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -737,7 +776,7 @@
               "label": "",
               "startAt": "2026-10-15T19:00:00+09:00",
               "endAt": "2026-10-21T23:59:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|喜喜かいばしら / パスタとパスタ / パンたべる / ツェ大野 / やゆよ / ヤング / ねじれネジ|先着|advance|2026-10-15T19:00:00+09:00"
+              "saleKey": "livepocket|maison|z2nvo|ウィークリー習慣 / ポテトカレッジ / ダンゴ虫たち|先着|advance|2026-10-15T19:00:00+09:00"
             }
           ]
         },
