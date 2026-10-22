@@ -1,5 +1,6 @@
 """FANYで個人名を検索する補助レーダー。LINE送信は行わない。"""
 import json
+import os
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -8,15 +9,11 @@ import scraper
 
 OUTPUT = Path("member_discovery_events.json")
 # 一般的すぎる単独の姓・名は検索しない
-# 吉本興業公式プロフィールに基づく所属。検索語は本人名の明確な表記のみ。
-# 「ポイント」は一般語だがFANYの出演者検索結果として照合する。
-OFFICIAL_PROFILES = {
-    "maison": {"url": "https://profile.yoshimoto.co.jp/talent/detail?id=8835", "members": ["吉野おいなり君", "原一刻"]},
-    "nansui": {"url": "https://profile.yoshimoto.co.jp/talent/detail?id=8902", "members": ["大川内聡", "つるまる"]},
-    "pyuto": {"url": "https://profile.yoshimoto.co.jp/talent/detail?id=8773", "members": ["ポイント", "竹内智也"]},
+TARGETS = {
+    "maison": ["吉野おいなり君", "めぞん吉野"],
+    "nansui": ["つるまる", "軟水つるまる"],
+    "pyuto": ["ポイント（ピュート）"],
 }
-TARGETS = {group: data["members"] for group, data in OFFICIAL_PROFILES.items()}
-
 
 def main():
     session = requests.Session()
@@ -44,11 +41,6 @@ def main():
     # 全検索失敗の場合は既存データを消さない
     if success == 0:
         raise RuntimeError("個人名検索が全て失敗。既存ファイルは維持します")
-
-    # 全件ゼロ件はサイト側の一時的な不調の可能性があるため、既存データを維持。
-    if not collected and OUTPUT.exists():
-        print("検索結果0件。既存の個人出演データを維持します")
-        return
 
     # 一部失敗時も既存の有効な情報を維持する
     if failures and OUTPUT.exists():

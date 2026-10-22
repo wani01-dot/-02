@@ -8,6 +8,7 @@ from difflib import SequenceMatcher
 THEATER_EVENTS_FILE = "theater_events.json"
 TICKET_EVENTS_FILE = "events.json"
 EXTRA_DISCOVERY_FILE = "extra_discovery_events.json"
+MEMBER_DISCOVERY_FILE = "member_discovery_events.json"
 OUTPUT_FILE = "discovered_events.json"
 
 
@@ -1835,6 +1836,13 @@ def main():
     discovered.extend(
         extra_events
     )
+
+    # 個人名でFANYを直接検索した結果を追加。通常の公演と同じ重複整理を通す。
+    member_data = load_json(MEMBER_DISCOVERY_FILE, {"events": []})
+    member_search_events = extract_events(member_data)
+    for event in member_search_events:
+        discovered.append(convert_discovered_event(event, "fany-member"))
+    print("個人名FANY検索:", len(member_search_events), "件")
 
     # チケットサイトの出演者欄から個人出演公演を発見
     member_events = include_individual_ticket_events(ticket_events)
