@@ -16,6 +16,7 @@ concurrency:
 jobs:
   discover:
     runs-on: ubuntu-latest
+
     steps:
       - name: コードを取得
         uses: actions/checkout@v4
@@ -27,8 +28,10 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: 必要なライブラリを準備
-        run: python -m pip install requests beautifulsoup4
+      - name: 必要なライブラリをインストール
+        run: |
+          python -m pip install requests beautifulsoup4 playwright
+          python -m playwright install --with-deps chromium
 
       - name: 個人出演を検索
         run: python member_fany_discovery.py
