@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-10-22T04:16:10.515054+00:00",
-  "total": 128,
+  "syncedAt": "2026-10-22T05:56:03.451073+00:00",
+  "total": 129,
   "ticketListedCount": 3,
-  "ticketUnlistedCount": 125,
+  "ticketUnlistedCount": 126,
   "ticketOptionCount": 0,
   "salePeriodCount": 0,
   "events": [
@@ -210,6 +210,43 @@
       "trackedPerformers": [
         "maison",
         "pyuto"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-10-24",
+      "openTime": "10:45",
+      "startTime": "11:00",
+      "title": "渋谷マンゲキお笑いライブ",
+      "venue": "渋谷よしもと漫才劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "shibuya",
+      "theaterName": "渋谷",
+      "performersText": [
+        "[ネタ＆コーナーライブ]カーネーション／カベポスター／9番街レトロ／CITY／カラタチ／まんじろう／田津原理音／ド桜／ビューティフルトーキョーマンズ／軟水／鉄人小町 [ コーナー出演者]MC：9番街レトロ／ド桜／ビューティフルトーキョーマンズ／軟水"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "nansui"
       ],
       "discoverySources": [
         "theater"
@@ -501,7 +538,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]しずる／めぞん／マルセイユ／シモリュウ／太鵬／軟水／インテイク／イチゴ／うるとらブギーズ／他"
+        "[ネタ＆コーナーライブ]しずる／うるとらブギーズ／めぞん／マルセイユ／シモリュウ／生ファラオ／太鵬／軟水／インテイク／イチゴ [ コーナー出演者]"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -576,7 +613,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]しずる／めぞん／マルセイユ／シモリュウ／太鵬／軟水／インテイク／イチゴ／うるとらブギーズ／他"
+        "[ネタ＆コーナーライブ]しずる／うるとらブギーズ／めぞん／マルセイユ／シモリュウ／太鵬／軟水／インテイク／イチゴ [ コーナー出演者]"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -651,7 +688,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]しずる／めぞん／マルセイユ／シモリュウ／太鵬／シンクロニシティ／軟水／インテイク／イチゴ／うるとらブギーズ／他"
+        "[ネタ＆コーナーライブ]しずる／うるとらブギーズ／めぞん／マルセイユ／シモリュウ／太鵬／シンクロニシティ／軟水／インテイク／イチゴ [ コーナー出演者]"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -2129,7 +2166,7 @@
       "theaterId": "roppongi",
       "theaterName": "六本木",
       "performersText": [
-        "ジャルジャル／ジャングルポケット／うるとらブギーズ／ネルソンズ／コロコロチキチキペッパーズ／やさしいズ／そいつどいつ／おミュータンツ／オフローズ／ピュート"
+        "ジャルジャル／うるとらブギーズ／ジャングルポケット／やさしいズ／コロコロチキチキペッパーズ／蛙亭／そいつどいつ／おミュータンツ／オフローズ／ピュート"
       ],
       "newUntil": "",
       "trackedPerformers": [
