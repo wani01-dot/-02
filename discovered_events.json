@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-10-22T05:56:03.451073+00:00",
+  "syncedAt": "2026-10-22T11:24:28.078847+00:00",
   "total": 129,
-  "ticketListedCount": 3,
-  "ticketUnlistedCount": 126,
+  "ticketListedCount": 4,
+  "ticketUnlistedCount": 125,
   "ticketOptionCount": 0,
   "salePeriodCount": 0,
   "events": [
@@ -130,7 +130,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]さや香／いぬ／ワラバランス／素敵じゃないか／世間知らズ／ミカボ／オフローズ／シンクロニシティ／軟水／他 [ コーナー出演者]MC:素敵じゃないか／さや香／世間知らズ／オフローズ／軟水"
+        "[ネタ＆コーナーライブ]さや香／いぬ／カラタチ／ワラバランス／素敵じゃないか／世間知らズ／ミカボ／オフローズ／シンクロニシティ／軟水 [ コーナー出演者]MC:素敵じゃないか／さや香／世間知らズ／オフローズ／軟水"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -538,7 +538,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]しずる／うるとらブギーズ／めぞん／マルセイユ／シモリュウ／生ファラオ／太鵬／軟水／インテイク／イチゴ [ コーナー出演者]"
+        "[ネタ＆コーナーライブ]しずる／うるとらブギーズ／めぞん／マルセイユ／シモリュウ／もも／生ファラオ／太鵬／軟水／インテイク／イチゴ [ コーナー出演者]MC：マルセイユ／シモリュウ／もも／生ファラオ"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -613,7 +613,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]しずる／うるとらブギーズ／めぞん／マルセイユ／シモリュウ／太鵬／軟水／インテイク／イチゴ [ コーナー出演者]"
+        "[ネタ＆コーナーライブ]しずる／うるとらブギーズ／めぞん／マルセイユ／シモリュウ／そいつどいつ／もも／太鵬／軟水／インテイク／イチゴ [ コーナー出演者]MC：めぞん／そいつどいつ／インテイク／イチゴ"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -688,7 +688,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]しずる／うるとらブギーズ／めぞん／マルセイユ／シモリュウ／太鵬／シンクロニシティ／軟水／インテイク／イチゴ [ コーナー出演者]"
+        "[ネタ＆コーナーライブ]しずる／うるとらブギーズ／めぞん／マルセイユ／シモリュウ／もも／太鵬／シンクロニシティ／軟水／インテイク／イチゴ [ コーナー出演者]MC：軟水／シンクロニシティ／太鵬／めぞん"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -985,7 +985,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]ドンデコルテ／めぞん／いぬ／CITY／マルセイユ／官兵衛／キンボシ／まちるだ／シンクロニシティ／他"
+        "[ネタ＆コーナーライブ]ドンデコルテ／めぞん／いぬ／CITY／マルセイユ／官兵衛／キンボシ／まちるだ／シンクロニシティ／ドーナツ・ピーナツ／他"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -2668,14 +2668,33 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [],
-      "ticketListed": false,
+      "ticketMatches": [
+        {
+          "score": 10,
+          "performerId": "pyuto",
+          "source": "tiget",
+          "sourceUrl": "https://tiget.net/events/532851",
+          "title": "11/12(木) 漫腹〜まんぷく〜",
+          "date": "2026-11-12",
+          "venue": "野方区民ホール(東京都)",
+          "openTime": "19:00",
+          "startTime": "19:20",
+          "ticketStatus": "予定数終了",
+          "ticketOptions": [],
+          "salePeriods": [],
+          "saleStartAt": "",
+          "saleEndAt": "",
+          "saleCategory": "",
+          "saleLabel": ""
+        }
+      ],
+      "ticketListed": true,
       "ticketOptions": [],
       "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
+      "status": "ticket_listed",
+      "ticketStatus": "予定数終了",
+      "source": "tiget",
+      "sourceUrl": "https://tiget.net/events/532851",
       "saleStartAt": "",
       "saleEndAt": "",
       "saleCategory": "",
