@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-23T10:13:17.105628+00:00",
+  "syncedAt": "2026-10-23T15:03:00.501734+00:00",
   "performers": [
     {
       "id": "maison",
@@ -99,7 +99,7 @@
       "venue": "杉並公会堂(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/526396",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -694,6 +694,44 @@
       ]
     },
     {
+      "performerId": "pyuto",
+      "date": "2026-11-15",
+      "openTime": "19:00",
+      "startTime": "19:20",
+      "title": "11/15(日)V-1で#ワイガヤ《3部》",
+      "venue": "ハイジアV-1(東京都)",
+      "source": "tiget",
+      "sourceUrl": "https://tiget.net/events/533211",
+      "ticketStatus": "予定数終了",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "鬼塚ムソウ",
+        "カガリ",
+        "キュウ",
+        "GHOST",
+        "サルベース",
+        "ザンゾウ",
+        "十九人",
+        "鉄筋くらぶ57",
+        "ピュート",
+        "ブラゴーリ",
+        "ぺ",
+        "ミネ",
+        "百恵",
+        "ランパンプス",
+        "ネタと企画orトークの約2時間のライブを予定しています✨"
+      ],
+      "firstSeenAt": "2026-10-23T15:03:00.501532+00:00",
+      "newUntil": "2026-10-25T15:03:00.501542+00:00",
+      "trackedPerformers": [
+        "pyuto"
+      ]
+    },
+    {
       "performerId": "maison",
       "date": "2026-11-18",
       "openTime": "19:00",
@@ -819,6 +857,25 @@
           ]
         },
         {
+          "name": "十九人 / ４０００ / 無尽蔵",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-10-26T23:05:00+09:00",
+          "saleEndAt": "2026-11-18T19:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-10-26T23:05:00+09:00",
+              "endAt": "2026-11-18T19:30:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|十九人 / ４０００ / 無尽蔵|先着|first_come|2026-10-26T23:05:00+09:00"
+            }
+          ]
+        },
+        {
           "name": "ウィークリー習慣 / ポテトカレッジ / ダンゴ虫たち",
           "type": "先着",
           "status": "販売中",
@@ -834,25 +891,6 @@
               "startAt": "2026-10-26T23:05:00+09:00",
               "endAt": "2026-11-18T19:30:00+09:00",
               "saleKey": "livepocket|maison|z2nvo|ウィークリー習慣 / ポテトカレッジ / ダンゴ虫たち|先着|first_come|2026-10-26T23:05:00+09:00"
-            }
-          ]
-        },
-        {
-          "name": "喜喜かいばしら / パスタとパスタ / パンたべる / ツェ大野 / やゆよ / ヤング / ねじれネジ",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-10-26T23:05:00+09:00",
-          "saleEndAt": "2026-11-18T19:30:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-10-26T23:05:00+09:00",
-              "endAt": "2026-11-18T19:30:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|喜喜かいばしら / パスタとパスタ / パンたべる / ツェ大野 / やゆよ / ヤング / ねじれネジ|先着|first_come|2026-10-26T23:05:00+09:00"
             }
           ]
         }
