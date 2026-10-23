@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-23T00:42:12.301663+00:00",
+  "syncedAt": "2026-10-23T05:21:33.197384+00:00",
   "performers": [
     {
       "id": "maison",
@@ -743,9 +743,9 @@
           ]
         },
         {
-          "name": "同じ販売元のイベント",
+          "name": "（税込）",
           "type": "先着",
-          "status": "販売中",
+          "status": "販売前",
           "price": "",
           "saleStartAt": "2026-10-15T19:00:00+09:00",
           "saleEndAt": "2026-10-21T23:59:00+09:00",
@@ -757,7 +757,64 @@
               "label": "",
               "startAt": "2026-10-15T19:00:00+09:00",
               "endAt": "2026-10-21T23:59:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|同じ販売元のイベント|先着|advance|2026-10-15T19:00:00+09:00"
+              "saleKey": "livepocket|maison|z2nvo|（税込）|先着|advance|2026-10-15T19:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "指定席",
+          "type": "先着",
+          "status": "販売前",
+          "price": "¥3,000",
+          "saleStartAt": "2026-10-26T23:05:00+09:00",
+          "saleEndAt": "2026-11-18T19:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-10-26T23:05:00+09:00",
+              "endAt": "2026-11-18T19:30:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|指定席|先着|first_come|2026-10-26T23:05:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "（税込）",
+          "type": "先着",
+          "status": "販売前",
+          "price": "",
+          "saleStartAt": "2026-10-26T23:05:00+09:00",
+          "saleEndAt": "2026-11-18T19:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-10-26T23:05:00+09:00",
+              "endAt": "2026-11-18T19:30:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|（税込）|先着|first_come|2026-10-26T23:05:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "同じ販売元のイベント",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-10-26T23:05:00+09:00",
+          "saleEndAt": "2026-11-18T19:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-10-26T23:05:00+09:00",
+              "endAt": "2026-11-18T19:30:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|同じ販売元のイベント|先着|first_come|2026-10-26T23:05:00+09:00"
             }
           ]
         },
@@ -766,49 +823,55 @@
           "type": "先着",
           "status": "販売中",
           "price": "",
-          "saleStartAt": "2026-10-15T19:00:00+09:00",
-          "saleEndAt": "2026-10-21T23:59:00+09:00",
-          "saleCategory": "advance",
+          "saleStartAt": "2026-10-26T23:05:00+09:00",
+          "saleEndAt": "2026-11-18T19:30:00+09:00",
+          "saleCategory": "first_come",
           "saleLabel": "",
           "salePeriods": [
             {
-              "category": "advance",
+              "category": "first_come",
               "label": "",
-              "startAt": "2026-10-15T19:00:00+09:00",
-              "endAt": "2026-10-21T23:59:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|たまゆら学園 / TCクラクション / まんじゅう大帝国|先着|advance|2026-10-15T19:00:00+09:00"
+              "startAt": "2026-10-26T23:05:00+09:00",
+              "endAt": "2026-11-18T19:30:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|たまゆら学園 / TCクラクション / まんじゅう大帝国|先着|first_come|2026-10-26T23:05:00+09:00"
             }
           ]
         },
         {
-          "name": "ねじれネジ / パスタとパスタ / 喜喜かいばしら / 9番街レトロ なかむらしゅん",
+          "name": "十九人 / ４０００ / 無尽蔵",
           "type": "先着",
           "status": "販売中",
           "price": "",
-          "saleStartAt": "2026-10-15T19:00:00+09:00",
-          "saleEndAt": "2026-10-21T23:59:00+09:00",
-          "saleCategory": "advance",
+          "saleStartAt": "2026-10-26T23:05:00+09:00",
+          "saleEndAt": "2026-11-18T19:30:00+09:00",
+          "saleCategory": "first_come",
           "saleLabel": "",
           "salePeriods": [
             {
-              "category": "advance",
+              "category": "first_come",
               "label": "",
-              "startAt": "2026-10-15T19:00:00+09:00",
-              "endAt": "2026-10-21T23:59:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|ねじれネジ / パスタとパスタ / 喜喜かいばしら / 9番街レトロ なかむらしゅん|先着|advance|2026-10-15T19:00:00+09:00"
+              "startAt": "2026-10-26T23:05:00+09:00",
+              "endAt": "2026-11-18T19:30:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|十九人 / ４０００ / 無尽蔵|先着|first_come|2026-10-26T23:05:00+09:00"
             }
           ]
         }
       ],
-      "saleStartAt": "2026-10-15T19:00:00+09:00",
-      "saleEndAt": "2026-10-21T23:59:00+09:00",
-      "saleCategory": "advance",
+      "saleStartAt": "2026-10-26T23:05:00+09:00",
+      "saleEndAt": "2026-11-18T19:30:00+09:00",
+      "saleCategory": "first_come",
       "salePeriods": [
         {
           "category": "advance",
           "label": "",
           "startAt": "2026-10-15T19:00:00+09:00",
           "endAt": "2026-10-21T23:59:00+09:00"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-10-26T23:05:00+09:00",
+          "endAt": "2026-11-18T19:30:00+09:00"
         }
       ],
       "performersText": [
