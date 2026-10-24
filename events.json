@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-24T08:58:20.651880+00:00",
+  "syncedAt": "2026-10-24T13:02:53.517985+00:00",
   "performers": [
     {
       "id": "maison",
@@ -215,7 +215,7 @@
       "venue": "歌舞伎町Sparkle(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/527669",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -655,6 +655,45 @@
       ]
     },
     {
+      "performerId": "maison",
+      "date": "2026-11-08",
+      "openTime": "19:00",
+      "startTime": "19:20",
+      "title": "11/8(日)バティオスで#ワイガヤ《3部》",
+      "venue": "新宿バティオス(東京都)",
+      "source": "tiget",
+      "sourceUrl": "https://tiget.net/events/532846",
+      "ticketStatus": "予定数終了",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "Yes!アキト",
+        "イチゴ",
+        "鬼塚ムソウ",
+        "思わず触れたくなるよぴぴ",
+        "キュウ",
+        "世界クジラ",
+        "ドラマ☆麺",
+        "生ファラオ",
+        "ハマノとヘンミ",
+        "ファイヤーサンダー",
+        "ブラゴーリ",
+        "ぺ",
+        "めぞん",
+        "百恵",
+        "リバーマン",
+        "ネタと企画orトークの約2時間のライブを予定しています✨"
+      ],
+      "firstSeenAt": "2026-10-24T13:02:53.517670+00:00",
+      "newUntil": "2026-10-26T13:02:53.517681+00:00",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
       "performerId": "pyuto",
       "date": "2026-11-12",
       "openTime": "19:00",
@@ -729,6 +768,201 @@
       "newUntil": "2026-10-25T15:03:00.501542+00:00",
       "trackedPerformers": [
         "pyuto"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-18",
+      "openTime": "19:00",
+      "startTime": "19:30",
+      "title": "無尽蔵漫才寄席",
+      "venue": "浅草東洋館 (東京都)",
+      "source": "livepocket",
+      "sourceUrl": "https://livepocket.jp/e/z2nvo",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "指定席",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "¥3,000",
+          "saleStartAt": "2026-10-15T19:00:00+09:00",
+          "saleEndAt": "2026-10-21T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-10-15T19:00:00+09:00",
+              "endAt": "2026-10-21T23:59:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|指定席|先着|advance|2026-10-15T19:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "（税込）",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-10-15T19:00:00+09:00",
+          "saleEndAt": "2026-10-21T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-10-15T19:00:00+09:00",
+              "endAt": "2026-10-21T23:59:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|（税込）|先着|advance|2026-10-15T19:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "（税込）",
+          "type": "先着",
+          "status": "販売前",
+          "price": "",
+          "saleStartAt": "2026-10-15T19:00:00+09:00",
+          "saleEndAt": "2026-10-21T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-10-15T19:00:00+09:00",
+              "endAt": "2026-10-21T23:59:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|（税込）|先着|advance|2026-10-15T19:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "指定席",
+          "type": "先着",
+          "status": "販売前",
+          "price": "¥3,000",
+          "saleStartAt": "2026-10-26T23:05:00+09:00",
+          "saleEndAt": "2026-11-18T19:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-10-26T23:05:00+09:00",
+              "endAt": "2026-11-18T19:30:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|指定席|先着|first_come|2026-10-26T23:05:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "（税込）",
+          "type": "先着",
+          "status": "販売前",
+          "price": "",
+          "saleStartAt": "2026-10-26T23:05:00+09:00",
+          "saleEndAt": "2026-11-18T19:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-10-26T23:05:00+09:00",
+              "endAt": "2026-11-18T19:30:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|（税込）|先着|first_come|2026-10-26T23:05:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "同じ販売元のイベント",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-10-26T23:05:00+09:00",
+          "saleEndAt": "2026-11-18T19:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-10-26T23:05:00+09:00",
+              "endAt": "2026-11-18T19:30:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|同じ販売元のイベント|先着|first_come|2026-10-26T23:05:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "たまゆら学園 / TCクラクション / まんじゅう大帝国",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-10-26T23:05:00+09:00",
+          "saleEndAt": "2026-11-18T19:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-10-26T23:05:00+09:00",
+              "endAt": "2026-11-18T19:30:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|たまゆら学園 / TCクラクション / まんじゅう大帝国|先着|first_come|2026-10-26T23:05:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "ウィークリー習慣 / ポテトカレッジ / ダンゴ虫たち",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-10-26T23:05:00+09:00",
+          "saleEndAt": "2026-11-18T19:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-10-26T23:05:00+09:00",
+              "endAt": "2026-11-18T19:30:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|ウィークリー習慣 / ポテトカレッジ / ダンゴ虫たち|先着|first_come|2026-10-26T23:05:00+09:00"
+            }
+          ]
+        }
+      ],
+      "saleStartAt": "2026-10-26T23:05:00+09:00",
+      "saleEndAt": "2026-11-18T19:30:00+09:00",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "",
+          "startAt": "2026-10-15T19:00:00+09:00",
+          "endAt": "2026-10-21T23:59:00+09:00"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-10-26T23:05:00+09:00",
+          "endAt": "2026-11-18T19:30:00+09:00"
+        }
+      ],
+      "performersText": [
+        "無尽蔵",
+        "TCクラクション",
+        "ひつじねいり",
+        "めぞん",
+        "マリーマリー",
+        "ヤーレンズ"
+      ],
+      "firstSeenAt": "2026-10-24T13:02:53.517670+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
       ]
     },
     {
