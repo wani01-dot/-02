@@ -3,6 +3,8 @@ import re
 from datetime import datetime, timezone, timedelta
 
 from playwright.sync_api import sync_playwright
+from concurrent.futures import ThreadPoolExecutor, as_completed
+import time
 
 
 PERFORMERS_FILE = "performers.json"
@@ -1404,42 +1406,49 @@ def main():
         ),
     )
 
-    all_events = []
-
-    with sync_playwright() as playwright:
-        browser = (
-            playwright.chromium.launch(
-                headless=True
-            )
-        )
-
-        try:
-            for theater in THEATERS:
-                theater_events = (
-                    scrape_theater(
-                        browser,
-                        theater,
-                        performers,
-                    )
-                )
-
+    # Playwright sync APIはスレッド間でbrowserを共有できない。
+    # 各ワーカーが独立したPlaywright/Chromiumを起動して安全に並列取得。
+    # 10劇場を最大3並列にし、劇場単位の失敗はデータ上書き前に検知する。
+    def fetch_one(theater):
+        began = time.monotonic()
+        with sync_playwright() as playwright:
+            browser = playwright.chromium.launch(headless=True)
+            try:
+                events = scrape_theater(browser, theater, performers)
                 print(
-                    "劇場取得結果:",
-                    theater[
-                        "name"
-                    ],
-                    len(
-                        theater_events
-                    ),
-                    "件",
+                    f"劇場完了: {theater['name']} {len(events)}件 "
+                    f"{time.monotonic() - began:.1f}秒",
+                    flush=True,
                 )
+                return events
+            finally:
+                browser.close()
 
-                all_events.extend(
-                    theater_events
-                )
+    all_events = []
+    failures = []
+    started = time.monotonic()
+    with ThreadPoolExecutor(max_workers=3) as executor:
+        futures = {
+            executor.submit(fetch_one, theater): theater
+            for theater in THEATERS
+        }
+        for future in as_completed(futures):
+            theater = futures[future]
+            try:
+                all_events.extend(future.result())
+            except Exception as error:
+                failures.append(f"{theater['name']}: {type(error).__name__}: {error}")
+                print("劇場取得エラー:", failures[-1], flush=True)
 
-        finally:
-            browser.close()
+    if failures:
+        raise RuntimeError(
+            "劇場取得に失敗。既存のtheater_events.jsonは上書きしません。\\n"
+            + "\\n".join(failures)
+        )
+    print(
+        f"劇場10件の並列チェック終了: {time.monotonic() - started:.1f}秒",
+        flush=True,
+    )
 
     # =====================================================
     # 重複削除
