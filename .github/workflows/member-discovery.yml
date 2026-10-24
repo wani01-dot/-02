@@ -1,10 +1,9 @@
-
-name: 個人出演レーダー
+name: 個人出演レーダー（既存データ再検査）
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "12 1,7,13,19 * * *"
+    - cron: "12 1,13 * * *"
 
 permissions:
   contents: write
@@ -16,35 +15,25 @@ concurrency:
 jobs:
   discover:
     runs-on: ubuntu-latest
-
     steps:
       - name: コードを取得
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
       - name: Pythonを準備
         uses: actions/setup-python@v5
         with:
           python-version: "3.13"
-
-      - name: 必要なライブラリをインストール
-        run: |
-          python -m pip install requests beautifulsoup4 playwright
-          python -m playwright install --with-deps chromium
-
-      - name: 個人出演を検索
+      - name: 既存データから個人出演を再検査
         run: python member_fany_discovery.py
-
       - name: カレンダーデータを更新
         run: python discovery_build.py
-
-      - name: 更新結果を保存
+      - name: 変更結果を保存
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add member_discovery_events.json discovered_events.json
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m "Update individual member live discovery"
+          git commit -m "Update member appearances from existing data"
           git pull --rebase origin main
           git push
