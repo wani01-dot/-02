@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-10-24T11:58:20.415779+00:00",
-  "total": 158,
+  "syncedAt": "2026-10-24T13:22:14.789240+00:00",
+  "total": 167,
   "ticketListedCount": 5,
-  "ticketUnlistedCount": 153,
+  "ticketUnlistedCount": 162,
   "ticketOptionCount": 3,
   "salePeriodCount": 3,
   "events": [
@@ -1124,7 +1124,7 @@
           "venue": "歌舞伎町Sparkle(東京都)",
           "openTime": "18:45",
           "startTime": "19:00",
-          "ticketStatus": "予定数終了",
+          "ticketStatus": "残りわずか",
           "ticketOptions": [],
           "salePeriods": [],
           "saleStartAt": "",
@@ -1137,7 +1137,7 @@
       "ticketOptions": [],
       "salePeriods": [],
       "status": "ticket_listed",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "残りわずか",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/527669",
       "saleStartAt": "",
@@ -1182,7 +1182,7 @@
           "venue": "歌舞伎町Sparkle(東京都)",
           "openTime": "18:45",
           "startTime": "19:00",
-          "ticketStatus": "予定数終了",
+          "ticketStatus": "残りわずか",
           "ticketOptions": [],
           "salePeriods": [],
           "saleStartAt": "",
@@ -1195,7 +1195,7 @@
       "ticketOptions": [],
       "salePeriods": [],
       "status": "ticket_listed",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "残りわずか",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/527669",
       "saleStartAt": "",
@@ -1240,7 +1240,7 @@
           "venue": "歌舞伎町Sparkle(東京都)",
           "openTime": "18:45",
           "startTime": "19:00",
-          "ticketStatus": "予定数終了",
+          "ticketStatus": "残りわずか",
           "ticketOptions": [],
           "salePeriods": [],
           "saleStartAt": "",
@@ -1253,7 +1253,7 @@
       "ticketOptions": [],
       "salePeriods": [],
       "status": "ticket_listed",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "残りわずか",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/527669",
       "saleStartAt": "",
@@ -2219,6 +2219,24 @@
           "saleStartAt": "2026-09-19T10:00:00+09:00",
           "saleEndAt": "2026-11-06T18:00:00+09:00",
           "saleCategory": "first_come",
+          "saleLabel": ""
+        },
+        {
+          "score": 10,
+          "performerId": "maison",
+          "source": "tiget",
+          "sourceUrl": "https://tiget.net/events/532846",
+          "title": "11/8(日)バティオスで#ワイガヤ《3部》",
+          "date": "2026-11-08",
+          "venue": "新宿バティオス(東京都)",
+          "openTime": "19:00",
+          "startTime": "19:20",
+          "ticketStatus": "予定数終了",
+          "ticketOptions": [],
+          "salePeriods": [],
+          "saleStartAt": "",
+          "saleEndAt": "",
+          "saleCategory": "",
           "saleLabel": ""
         }
       ],
@@ -5113,6 +5131,43 @@
     {
       "performerId": "nansui",
       "date": "2026-12-02",
+      "openTime": "19:00",
+      "startTime": "19:15",
+      "title": "シチュエーションコントライブ",
+      "venue": "よしもと六本木シアター",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "performersText": [
+        "軟水／おミュータンツ／オフローズ／定点計画／ブラゴーリ／ニコミハジメテ／球技大会／あなたとネ／MC：コウミ"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "nansui"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://roppongi.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-12-02",
       "openTime": "20:45",
       "startTime": "21:00",
       "title": "スマイルキング",
@@ -5186,6 +5241,44 @@
       "saleLabel": ""
     },
     {
+      "performerId": "nansui",
+      "date": "2026-12-04",
+      "openTime": "18:45",
+      "startTime": "19:00",
+      "title": "ネルソンズ第10回単独ライブ 『フルネルソン』",
+      "venue": "よしもと六本木シアター",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "performersText": [
+        "ネルソンズ",
+        "軟水新ネタライブ「ウトウトしてただけだぜ」"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "nansui"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://roppongi.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
       "performerId": "maison",
       "date": "2026-12-04",
       "openTime": "20:45",
@@ -5208,6 +5301,43 @@
       ],
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-12-04",
+      "openTime": "21:15",
+      "startTime": "21:30",
+      "title": "軟水新ネタライブ「ウトウトしてただけだぜ」",
+      "venue": "よしもと六本木シアター",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "performersText": [
+        "軟水／ゲスト：ブラゴーリ／ミナミナミ"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "nansui"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
@@ -5319,6 +5449,43 @@
       ],
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-12-09",
+      "openTime": "19:15",
+      "startTime": "19:30",
+      "title": "軍団六本木入団試験",
+      "venue": "よしもと六本木シアター",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "performersText": [
+        "世間知らズ／軟水／マリーマリー／イチゴ"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "nansui"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
@@ -5537,7 +5704,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]しずる／ビスケットブラザーズ／ドンデコルテ／カベポスター／9番街レトロ／めぞん／ケビンス／ソマオ・ミートボール／大王／他"
+        "[ネタ＆コーナーライブ]しずる／ビスケットブラザーズ／ドンデコルテ／ダンビラムーチョ／カベポスター／9番街レトロ／めぞん／ケビンス／ソマオ・ミートボール／大王／他"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -5574,7 +5741,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]しずる／ビスケットブラザーズ／ドンデコルテ／カベポスター／9番街レトロ／めぞん／ケビンス／ソマオ・ミートボール／大王／他"
+        "[ネタ＆コーナーライブ]しずる／ビスケットブラザーズ／ドンデコルテ／ダンビラムーチョ／カベポスター／9番街レトロ／めぞん／ケビンス／ソマオ・ミートボール／大王／他"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -5611,7 +5778,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]しずる／ビスケットブラザーズ／ドンデコルテ／カベポスター／9番街レトロ／めぞん／ケビンス／ソマオ・ミートボール／大王／他"
+        "[ネタ＆コーナーライブ]しずる／ビスケットブラザーズ／ドンデコルテ／ダンビラムーチョ／カベポスター／9番街レトロ／めぞん／ケビンス／ソマオ・ミートボール／大王／他"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -5659,6 +5826,81 @@
       ],
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-12-15",
+      "openTime": "19:15",
+      "startTime": "19:30",
+      "title": "ピュっ本木コントライブNEXT！",
+      "venue": "よしもと六本木シアター",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "performersText": [
+        "ピュート／ビューティフルトーキョーマンズ／世界クジラ／兄弟／なでなでボーイ／DOG FOOD PARTY／けいごステファニー／美バンブー"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "pyuto"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://roppongi.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-12-15",
+      "openTime": "20:45",
+      "startTime": "21:00",
+      "title": "六本木デ・ザ交流戦",
+      "venue": "よしもと六本木シアター",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "performersText": [
+        "青いデルタ／ザンゾウ／ゲスト：軟水／ピュート／MC：テキセツの街 東郷"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "nansui",
+        "pyuto"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
@@ -5759,7 +6001,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]蛙亭／キンボシ／kento fukaya／からし蓮根／ドッチモドッチ／ぶったま／シンクロニシティ／他",
+        "[ネタ＆コーナーライブ]ダンビラムーチョ／蛙亭／キンボシ／kento fukaya／からし蓮根／ドッチモドッチ／ぶったま／シンクロニシティ／他",
         "めぞん×金魚番長ツーマンライブ「キンギョゾン」"
       ],
       "newUntil": "",
@@ -5847,6 +6089,43 @@
       ],
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-12-18",
+      "openTime": "20:45",
+      "startTime": "21:00",
+      "title": "オプトーバー8 第7回公演『あとはよろしくお願い師走』",
+      "venue": "よしもと六本木シアター",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "performersText": [
+        "オフローズ／ピュート／定点計画"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "pyuto"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
@@ -6225,6 +6504,81 @@
       ],
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-12-25",
+      "openTime": "12:45",
+      "startTime": "13:00",
+      "title": "六本木お笑いコントライブ！ ※子ども料金、高校生料金あり",
+      "venue": "よしもと六本木シアター",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "performersText": [
+        "佐久間一行／５ＧＡＰ／ライス／しずる／ななまがり／ヘンダーソン／スクールゾーン／空気階段／レインボー／エレガント人生／世間知らズ／ピュート"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "pyuto"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://roppongi.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-12-25",
+      "openTime": "14:45",
+      "startTime": "15:00",
+      "title": "六本木お笑いコントライブ！ ※子ども料金、高校生料金あり",
+      "venue": "よしもと六本木シアター",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "performersText": [
+        "佐久間一行／５ＧＡＰ／ライス／しずる／ななまがり／ヘンダーソン／スクールゾーン／空気階段／レインボー／エレガント人生／軟水／ピュート"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "nansui",
+        "pyuto"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
