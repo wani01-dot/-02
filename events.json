@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-24T04:24:56.768075+00:00",
+  "syncedAt": "2026-10-24T08:58:20.651880+00:00",
   "performers": [
     {
       "id": "maison",
@@ -122,10 +122,10 @@
         "まんじゅう大帝国",
         "百恵",
         "Let Me Show You THE まごころ",
-        "エルボー",
         "ヤーレンズ",
         "鬼塚ムソウ",
         "ﾚﾅﾁｮ",
+        "きしたかの",
         "お腹いっぱいになるまで“漫才”を食べるように浴びられる漫才オンリーライブです！"
       ],
       "firstSeenAt": "2026-09-28T11:08:57.732173+00:00",
@@ -729,201 +729,6 @@
       "newUntil": "2026-10-25T15:03:00.501542+00:00",
       "trackedPerformers": [
         "pyuto"
-      ]
-    },
-    {
-      "performerId": "maison",
-      "date": "2026-11-18",
-      "openTime": "19:00",
-      "startTime": "19:30",
-      "title": "無尽蔵漫才寄席",
-      "venue": "浅草東洋館 (東京都)",
-      "source": "livepocket",
-      "sourceUrl": "https://livepocket.jp/e/z2nvo",
-      "ticketStatus": "一部予定数終了",
-      "ticketOptions": [
-        {
-          "name": "指定席",
-          "type": "先着",
-          "status": "販売終了",
-          "price": "¥3,000",
-          "saleStartAt": "2026-10-15T19:00:00+09:00",
-          "saleEndAt": "2026-10-21T23:59:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-10-15T19:00:00+09:00",
-              "endAt": "2026-10-21T23:59:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|指定席|先着|advance|2026-10-15T19:00:00+09:00"
-            }
-          ]
-        },
-        {
-          "name": "（税込）",
-          "type": "先着",
-          "status": "販売終了",
-          "price": "",
-          "saleStartAt": "2026-10-15T19:00:00+09:00",
-          "saleEndAt": "2026-10-21T23:59:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-10-15T19:00:00+09:00",
-              "endAt": "2026-10-21T23:59:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|（税込）|先着|advance|2026-10-15T19:00:00+09:00"
-            }
-          ]
-        },
-        {
-          "name": "（税込）",
-          "type": "先着",
-          "status": "販売前",
-          "price": "",
-          "saleStartAt": "2026-10-15T19:00:00+09:00",
-          "saleEndAt": "2026-10-21T23:59:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-10-15T19:00:00+09:00",
-              "endAt": "2026-10-21T23:59:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|（税込）|先着|advance|2026-10-15T19:00:00+09:00"
-            }
-          ]
-        },
-        {
-          "name": "指定席",
-          "type": "先着",
-          "status": "販売前",
-          "price": "¥3,000",
-          "saleStartAt": "2026-10-26T23:05:00+09:00",
-          "saleEndAt": "2026-11-18T19:30:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-10-26T23:05:00+09:00",
-              "endAt": "2026-11-18T19:30:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|指定席|先着|first_come|2026-10-26T23:05:00+09:00"
-            }
-          ]
-        },
-        {
-          "name": "（税込）",
-          "type": "先着",
-          "status": "販売前",
-          "price": "",
-          "saleStartAt": "2026-10-26T23:05:00+09:00",
-          "saleEndAt": "2026-11-18T19:30:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-10-26T23:05:00+09:00",
-              "endAt": "2026-11-18T19:30:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|（税込）|先着|first_come|2026-10-26T23:05:00+09:00"
-            }
-          ]
-        },
-        {
-          "name": "同じ販売元のイベント",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-10-26T23:05:00+09:00",
-          "saleEndAt": "2026-11-18T19:30:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-10-26T23:05:00+09:00",
-              "endAt": "2026-11-18T19:30:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|同じ販売元のイベント|先着|first_come|2026-10-26T23:05:00+09:00"
-            }
-          ]
-        },
-        {
-          "name": "ウィークリー習慣 / ポテトカレッジ / ダンゴ虫たち",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-10-26T23:05:00+09:00",
-          "saleEndAt": "2026-11-18T19:30:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-10-26T23:05:00+09:00",
-              "endAt": "2026-11-18T19:30:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|ウィークリー習慣 / ポテトカレッジ / ダンゴ虫たち|先着|first_come|2026-10-26T23:05:00+09:00"
-            }
-          ]
-        },
-        {
-          "name": "喜喜かいばしら / パスタとパスタ / パンたべる / ツェ大野 / やゆよ / ヤング / ねじれネジ",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-10-26T23:05:00+09:00",
-          "saleEndAt": "2026-11-18T19:30:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-10-26T23:05:00+09:00",
-              "endAt": "2026-11-18T19:30:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|喜喜かいばしら / パスタとパスタ / パンたべる / ツェ大野 / やゆよ / ヤング / ねじれネジ|先着|first_come|2026-10-26T23:05:00+09:00"
-            }
-          ]
-        }
-      ],
-      "saleStartAt": "2026-10-26T23:05:00+09:00",
-      "saleEndAt": "2026-11-18T19:30:00+09:00",
-      "saleCategory": "first_come",
-      "salePeriods": [
-        {
-          "category": "advance",
-          "label": "",
-          "startAt": "2026-10-15T19:00:00+09:00",
-          "endAt": "2026-10-21T23:59:00+09:00"
-        },
-        {
-          "category": "first_come",
-          "label": "",
-          "startAt": "2026-10-26T23:05:00+09:00",
-          "endAt": "2026-11-18T19:30:00+09:00"
-        }
-      ],
-      "performersText": [
-        "無尽蔵",
-        "TCクラクション",
-        "ひつじねいり",
-        "めぞん",
-        "マリーマリー",
-        "ヤーレンズ"
-      ],
-      "firstSeenAt": "2026-10-16T05:03:41.244085+00:00",
-      "newUntil": "2026-10-18T05:03:41.244097+00:00",
-      "trackedPerformers": [
-        "maison"
       ]
     },
     {
