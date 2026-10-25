@@ -1,236 +1,11 @@
 {
-  "syncedAt": "2026-10-25T17:32:49.404829+00:00",
-  "total": 168,
-  "ticketListedCount": 5,
-  "ticketUnlistedCount": 163,
+  "syncedAt": "2026-10-25T19:59:44.562907+00:00",
+  "total": 163,
+  "ticketListedCount": 12,
+  "ticketUnlistedCount": 151,
   "ticketOptionCount": 3,
   "salePeriodCount": 3,
   "events": [
-    {
-      "performerId": "maison",
-      "date": "2026-10-25",
-      "openTime": "10:45",
-      "startTime": "11:00",
-      "title": "渋谷マンゲキお笑いライブ",
-      "venue": "渋谷よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "shibuya",
-      "theaterName": "渋谷",
-      "performersText": [
-        "[ネタ＆コーナーライブ]しずる／うるとらブギーズ／めぞん／マルセイユ／シモリュウ／もも／生ファラオ／太鵬／軟水／インテイク／イチゴ [ コーナー出演者]MC：マルセイユ／シモリュウ／もも／生ファラオ"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison",
-        "nansui"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "pyuto",
-      "date": "2026-10-25",
-      "openTime": "11:45",
-      "startTime": "12:00",
-      "title": "野澤輸出の勝負大喜利",
-      "venue": "よしもと幕張イオンモール劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://makuhari.yoshimoto.co.jp/schedule/",
-      "theaterId": "makuhari",
-      "theaterName": "幕張",
-      "performersText": [
-        "野澤輸出／ド桜／ピュート／兄弟 紅葉／【MC】兄弟 体制"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://makuhari.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "maison",
-      "date": "2026-10-25",
-      "openTime": "12:30",
-      "startTime": "12:45",
-      "title": "渋谷マンゲキお笑いライブ",
-      "venue": "渋谷よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "shibuya",
-      "theaterName": "渋谷",
-      "performersText": [
-        "[ネタ＆コーナーライブ]しずる／うるとらブギーズ／めぞん／マルセイユ／シモリュウ／そいつどいつ／もも／太鵬／軟水／インテイク／イチゴ [ コーナー出演者]MC：めぞん／そいつどいつ／インテイク／イチゴ"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison",
-        "nansui"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "pyuto",
-      "date": "2026-10-25",
-      "openTime": "13:45",
-      "startTime": "14:00",
-      "title": "ノザカラ",
-      "venue": "よしもと幕張イオンモール劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://makuhari.yoshimoto.co.jp/schedule/",
-      "theaterId": "makuhari",
-      "theaterName": "幕張",
-      "performersText": [
-        "野澤輸出／セルライトスパ ヒーゴー／ド桜／ピュート／島憂樹"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://makuhari.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "maison",
-      "date": "2026-10-25",
-      "openTime": "14:15",
-      "startTime": "14:30",
-      "title": "渋谷マンゲキお笑いライブ",
-      "venue": "渋谷よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "shibuya",
-      "theaterName": "渋谷",
-      "performersText": [
-        "[ネタ＆コーナーライブ]しずる／うるとらブギーズ／めぞん／マルセイユ／シモリュウ／もも／太鵬／シンクロニシティ／軟水／インテイク／イチゴ [ コーナー出演者]MC：軟水／シモリュウ／太鵬／めぞん"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison",
-        "nansui"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-10-25",
-      "openTime": "20:15",
-      "startTime": "20:30",
-      "title": "よしもと粗品劇場",
-      "venue": "渋谷よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "shibuya",
-      "theaterName": "渋谷",
-      "performersText": [
-        "粗品（霜降り明星） もも／軟水／イチゴ"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
     {
       "performerId": "maison",
       "date": "2026-10-26",
@@ -920,6 +695,64 @@
       "theaterName": "渋谷",
       "performersText": [
         "[ネタ＆コーナーライブ]ガクテンソク／サルゴリラ／ダブルヒガシ／めぞん／ミカボ／軟水／ピュート／他"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison",
+        "nansui",
+        "pyuto"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [
+        {
+          "score": 10,
+          "performerId": "pyuto",
+          "source": "tiget",
+          "sourceUrl": "https://tiget.net/events/527669",
+          "title": "大喜利スパークル vol.1",
+          "date": "2026-11-01",
+          "venue": "歌舞伎町Sparkle(東京都)",
+          "openTime": "18:45",
+          "startTime": "19:00",
+          "ticketStatus": "予定数終了",
+          "ticketOptions": [],
+          "salePeriods": [],
+          "saleStartAt": "",
+          "saleEndAt": "",
+          "saleCategory": "",
+          "saleLabel": ""
+        }
+      ],
+      "ticketListed": true,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_listed",
+      "ticketStatus": "予定数終了",
+      "source": "tiget",
+      "sourceUrl": "https://tiget.net/events/527669",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-01",
+      "openTime": "16:45",
+      "startTime": "17:00",
+      "title": "渋谷3分漫才ナイト",
+      "venue": "渋谷よしもと漫才劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "shibuya",
+      "theaterName": "渋谷",
+      "performersText": [
+        "[企画ライブ]ダブルヒガシ／世間知らズ／ド桜／軟水／ピュート／めぞん／インテイク／ゼロカラン／大王／あなたとネ／他"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -2767,14 +2600,33 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [],
-      "ticketListed": false,
+      "ticketMatches": [
+        {
+          "score": 10,
+          "performerId": "maison",
+          "source": "tiget",
+          "sourceUrl": "https://tiget.net/events/528632",
+          "title": "楽屋Aオーディションバトルライブ「口火vol.670｣",
+          "date": "2026-11-15",
+          "venue": "舞台袖(大阪府)",
+          "openTime": "11:45",
+          "startTime": "12:00",
+          "ticketStatus": "予定数終了",
+          "ticketOptions": [],
+          "salePeriods": [],
+          "saleStartAt": "",
+          "saleEndAt": "",
+          "saleCategory": "",
+          "saleLabel": ""
+        }
+      ],
+      "ticketListed": true,
       "ticketOptions": [],
       "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
+      "status": "ticket_listed",
+      "ticketStatus": "予定数終了",
+      "source": "tiget",
+      "sourceUrl": "https://tiget.net/events/528632",
       "saleStartAt": "",
       "saleEndAt": "",
       "saleCategory": "",
@@ -2805,14 +2657,33 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [],
-      "ticketListed": false,
+      "ticketMatches": [
+        {
+          "score": 14,
+          "performerId": "maison",
+          "source": "tiget",
+          "sourceUrl": "https://tiget.net/events/528632",
+          "title": "楽屋Aオーディションバトルライブ「口火vol.670｣",
+          "date": "2026-11-15",
+          "venue": "舞台袖(大阪府)",
+          "openTime": "11:45",
+          "startTime": "12:00",
+          "ticketStatus": "予定数終了",
+          "ticketOptions": [],
+          "salePeriods": [],
+          "saleStartAt": "",
+          "saleEndAt": "",
+          "saleCategory": "",
+          "saleLabel": ""
+        }
+      ],
+      "ticketListed": true,
       "ticketOptions": [],
       "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
+      "status": "ticket_listed",
+      "ticketStatus": "予定数終了",
+      "source": "tiget",
+      "sourceUrl": "https://tiget.net/events/528632",
       "saleStartAt": "",
       "saleEndAt": "",
       "saleCategory": "",
@@ -2843,14 +2714,33 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [],
-      "ticketListed": false,
+      "ticketMatches": [
+        {
+          "score": 10,
+          "performerId": "maison",
+          "source": "tiget",
+          "sourceUrl": "https://tiget.net/events/528632",
+          "title": "楽屋Aオーディションバトルライブ「口火vol.670｣",
+          "date": "2026-11-15",
+          "venue": "舞台袖(大阪府)",
+          "openTime": "11:45",
+          "startTime": "12:00",
+          "ticketStatus": "予定数終了",
+          "ticketOptions": [],
+          "salePeriods": [],
+          "saleStartAt": "",
+          "saleEndAt": "",
+          "saleCategory": "",
+          "saleLabel": ""
+        }
+      ],
+      "ticketListed": true,
       "ticketOptions": [],
       "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
+      "status": "ticket_listed",
+      "ticketStatus": "予定数終了",
+      "source": "tiget",
+      "sourceUrl": "https://tiget.net/events/528632",
       "saleStartAt": "",
       "saleEndAt": "",
       "saleCategory": "",
@@ -2881,14 +2771,33 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [],
-      "ticketListed": false,
+      "ticketMatches": [
+        {
+          "score": 10,
+          "performerId": "maison",
+          "source": "tiget",
+          "sourceUrl": "https://tiget.net/events/528632",
+          "title": "楽屋Aオーディションバトルライブ「口火vol.670｣",
+          "date": "2026-11-15",
+          "venue": "舞台袖(大阪府)",
+          "openTime": "11:45",
+          "startTime": "12:00",
+          "ticketStatus": "予定数終了",
+          "ticketOptions": [],
+          "salePeriods": [],
+          "saleStartAt": "",
+          "saleEndAt": "",
+          "saleCategory": "",
+          "saleLabel": ""
+        }
+      ],
+      "ticketListed": true,
       "ticketOptions": [],
       "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
+      "status": "ticket_listed",
+      "ticketStatus": "予定数終了",
+      "source": "tiget",
+      "sourceUrl": "https://tiget.net/events/528632",
       "saleStartAt": "",
       "saleEndAt": "",
       "saleCategory": "",
@@ -2918,14 +2827,33 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [],
-      "ticketListed": false,
+      "ticketMatches": [
+        {
+          "score": 10,
+          "performerId": "maison",
+          "source": "tiget",
+          "sourceUrl": "https://tiget.net/events/528632",
+          "title": "楽屋Aオーディションバトルライブ「口火vol.670｣",
+          "date": "2026-11-15",
+          "venue": "舞台袖(大阪府)",
+          "openTime": "11:45",
+          "startTime": "12:00",
+          "ticketStatus": "予定数終了",
+          "ticketOptions": [],
+          "salePeriods": [],
+          "saleStartAt": "",
+          "saleEndAt": "",
+          "saleCategory": "",
+          "saleLabel": ""
+        }
+      ],
+      "ticketListed": true,
       "ticketOptions": [],
       "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
+      "status": "ticket_listed",
+      "ticketStatus": "予定数終了",
+      "source": "tiget",
+      "sourceUrl": "https://tiget.net/events/528632",
       "saleStartAt": "",
       "saleEndAt": "",
       "saleCategory": "",
@@ -2992,14 +2920,33 @@
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [],
-      "ticketListed": false,
+      "ticketMatches": [
+        {
+          "score": 10,
+          "performerId": "maison",
+          "source": "tiget",
+          "sourceUrl": "https://tiget.net/events/528632",
+          "title": "楽屋Aオーディションバトルライブ「口火vol.670｣",
+          "date": "2026-11-15",
+          "venue": "舞台袖(大阪府)",
+          "openTime": "11:45",
+          "startTime": "12:00",
+          "ticketStatus": "予定数終了",
+          "ticketOptions": [],
+          "salePeriods": [],
+          "saleStartAt": "",
+          "saleEndAt": "",
+          "saleCategory": "",
+          "saleLabel": ""
+        }
+      ],
+      "ticketListed": true,
       "ticketOptions": [],
       "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
+      "status": "ticket_listed",
+      "ticketStatus": "予定数終了",
+      "source": "tiget",
+      "sourceUrl": "https://tiget.net/events/528632",
       "saleStartAt": "",
       "saleEndAt": "",
       "saleCategory": "",
