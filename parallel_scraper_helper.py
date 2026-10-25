@@ -28,6 +28,7 @@ def scrape_all_parallel(performers, headers, scrapers):
         cache = {}
         events = []
         errors = []
+        blocked_fany = False
         timings = {}
         started = time.monotonic()
 
@@ -46,6 +47,15 @@ def scrape_all_parallel(performers, headers, scrapers):
                         raise TypeError(f"{source} の戻り値がリストではありません")
                     events.extend(result)
                     print(f"[{name}] {source}: {len(result)} 件", flush=True)
+                except requests.HTTPError as exc:
+                    status = exc.response.status_code if exc.response is not None else None
+                    if source == "fany" and status == 403:
+                        blocked_fany = True
+                        print(f"FANY_BLOCKED: {name} / 403。既存FANY公演を維持し他の情報源を継続", flush=True)
+                    else:
+                        message = f"{name} / {source}: HTTP {status}: {exc}"
+                        errors.append(message)
+                        print(f"取得エラー: {message}", flush=True)
                 except Exception as exc:
                     message = f"{name} / {source}: {type(exc).__name__}: {exc}"
                     errors.append(message)
@@ -58,6 +68,7 @@ def scrape_all_parallel(performers, headers, scrapers):
 
         return {
             "events": events,
+            "blocked_fany": blocked_fany,
             "errors": errors,
             "timings": timings,
             "seconds": round(time.monotonic() - started, 2),
@@ -73,6 +84,7 @@ def scrape_all_parallel(performers, headers, scrapers):
             except Exception as exc:
                 result = {
                     "events": [],
+                    "blocked_fany": False,
                     "errors": [f"{performer['name']} / スレッド異常: {exc}"],
                     "timings": {},
                     "seconds": 0,
@@ -86,6 +98,10 @@ def scrape_all_parallel(performers, headers, scrapers):
         raise RuntimeError("並列取得でエラーが発生したため、既存データを維持します:\n" + "\n".join(errors))
 
     all_events = []
+    blocked_ids = set()
     for performer in valid:
-        all_events.extend(results[performer["id"]]["events"])
-    return all_events
+        item = results[performer["id"]]
+        all_events.extend(item["events"])
+        if item["blocked_fany"]:
+            blocked_ids.add(str(performer["id"]))
+    return all_events, blocked_ids

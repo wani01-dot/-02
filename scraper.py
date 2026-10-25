@@ -3179,12 +3179,8 @@ def scrape_fany_range(
         )
 
     except Exception as error:
-        print(
-            "FANY取得失敗:",
-            error,
-        )
-
-        return []
+        print("FANY取得失敗（0件として扱わない）:", error, flush=True)
+        raise
 
     if (
         block_count

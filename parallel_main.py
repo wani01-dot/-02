@@ -30,7 +30,7 @@ def main():
             source_keys.add(source_key)
 
     # No file is modified until every worker completes without a reported error.
-    all_events = scrape_all_parallel(
+    all_events, blocked_fany_ids = scrape_all_parallel(
         performers,
         core.HEADERS,
         {
@@ -40,6 +40,19 @@ def main():
             'livepocket': core.scrape_livepocket,
         },
     )
+
+    # FANY 403では古い公演を消さず、劇場・他サイトの新着は取得し続ける。
+    # 新着扱いの誤通知を防ぐため、過去のFANYレコードを元のまま保持する。
+    preserved = [
+        e for e in old_events
+        if e.get("source") == "fany"
+        and str(e.get("performerId", "")) in blocked_fany_ids
+        and core.is_today_or_future(e.get("date", ""))
+    ]
+    if preserved:
+        print(f"FANY取得拒否のため既存公演を{len(preserved)}件保護", flush=True)
+        all_events.extend(preserved)
+    print(f"FANY 403の対象: {len(blocked_fany_ids)}組", flush=True)
 
     all_events = core.sanitize_event_performers(all_events)
     all_events = [e for e in all_events if core.is_today_or_future(e.get('date', ''))]
