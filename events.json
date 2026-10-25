@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-24T23:18:17.539452+00:00",
+  "syncedAt": "2026-10-25T01:14:19.578361+00:00",
   "performers": [
     {
       "id": "maison",
@@ -896,25 +896,6 @@
           ]
         },
         {
-          "name": "喜喜かいばしら / パスタとパスタ / パンたべる / ツェ大野 / やゆよ / ヤング / ねじれネジ",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-10-26T23:05:00+09:00",
-          "saleEndAt": "2026-11-18T19:30:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-10-26T23:05:00+09:00",
-              "endAt": "2026-11-18T19:30:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|喜喜かいばしら / パスタとパスタ / パンたべる / ツェ大野 / やゆよ / ヤング / ねじれネジ|先着|first_come|2026-10-26T23:05:00+09:00"
-            }
-          ]
-        },
-        {
           "name": "ウィークリー習慣 / ポテトカレッジ / ダンゴ虫たち",
           "type": "先着",
           "status": "販売中",
@@ -930,6 +911,25 @@
               "startAt": "2026-10-26T23:05:00+09:00",
               "endAt": "2026-11-18T19:30:00+09:00",
               "saleKey": "livepocket|maison|z2nvo|ウィークリー習慣 / ポテトカレッジ / ダンゴ虫たち|先着|first_come|2026-10-26T23:05:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "喜喜かいばしら / パスタとパスタ / パンたべる / ツェ大野 / やゆよ / ヤング / ねじれネジ",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-10-26T23:05:00+09:00",
+          "saleEndAt": "2026-11-18T19:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-10-26T23:05:00+09:00",
+              "endAt": "2026-11-18T19:30:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|喜喜かいばしら / パスタとパスタ / パンたべる / ツェ大野 / やゆよ / ヤング / ねじれネジ|先着|first_come|2026-10-26T23:05:00+09:00"
             }
           ]
         }
