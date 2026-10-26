@@ -47,9 +47,13 @@ jobs:
           python -m py_compile scraper.py parallel_scraper_helper.py parallel_main.py
           test -f theater_scraper.py
           test -f notify_line.py
+          test -f fast_theater_notify.py
 
       - name: Scrape ticket sites and theaters in parallel
         shell: bash
+        env:
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          LINE_TO: ${{ secrets.LINE_TO }}
         run: |
           echo "================================"
           echo "通常サイト（芸人別並列） + 劇場公式 同時取得開始"
@@ -61,11 +65,33 @@ jobs:
           python -u theater_scraper.py > /tmp/theater_scraper.log 2>&1 &
           THEATER_PID=$!
 
+          # 劇場の収集完了を先に待ち、他チケットサイトの完了前に通知する。
+          set +e
+          wait "$THEATER_PID"
+          THEATER_STATUS=$?
+          set -e
+
+          if [ "$THEATER_STATUS" -eq 0 ] && [ -s theater_events.json ]; then
+            echo "劇場取得完了。通常チケットサイトを待たずにLINE通知を判定"
+            # 通常サイトの new_events.json が途中で書き換わっても、
+            # この先行通知では劇場の新着だけを扱う。
+            python -u fast_theater_notify.py
+            # LINE送信後の履歴を先にGitHubへ保存し、後続処理が失敗しても
+            # 次回の二重通知をできるだけ防ぐ。
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add notified_events.json theater_notified_events.json
+            if ! git diff --cached --quiet; then
+              git commit -m "Save early theater notification history"
+              git push origin HEAD:main
+            fi
+          else
+            echo "劇場取得失敗。先行LINE通知をスキップ"
+          fi
+
           set +e
           wait "$TICKET_PID"
           TICKET_STATUS=$?
-          wait "$THEATER_PID"
-          THEATER_STATUS=$?
           set -e
 
           echo "================================"
