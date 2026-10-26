@@ -1,48 +1,11 @@
 {
-  "syncedAt": "2026-10-26T00:37:41.481826+00:00",
-  "total": 163,
-  "ticketListedCount": 12,
-  "ticketUnlistedCount": 151,
-  "ticketOptionCount": 3,
-  "salePeriodCount": 3,
+  "syncedAt": "2026-10-26T05:24:18.116218+00:00",
+  "total": 118,
+  "ticketListedCount": 0,
+  "ticketUnlistedCount": 118,
+  "ticketOptionCount": 0,
+  "salePeriodCount": 0,
   "events": [
-    {
-      "performerId": "maison",
-      "date": "2026-10-26",
-      "openTime": "17:15",
-      "startTime": "17:30",
-      "title": "神保町Kakeru翔SP",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[ネタ出演者]ケビンス／オダウエダ／めぞん／大王／ウィークリー習慣／き展／球技大会／パパパジャマ [コーナー出演者]MC：大王／オダウエダ／めぞん／球技大会／パパパジャマ"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
     {
       "performerId": "nansui",
       "date": "2026-10-27",
@@ -140,43 +103,6 @@
       ],
       "discoveryUrls": [
         "https://makuhari.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "pyuto",
-      "date": "2026-10-28",
-      "openTime": "20:30",
-      "startTime": "20:45",
-      "title": "キングチャンピオン王",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[企画ライブ]ピュート／バリカタ友情飯／兄弟／アリハガ／おとうふ／ゲスト：カゲヤマ"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
@@ -379,43 +305,6 @@
     },
     {
       "performerId": "nansui",
-      "date": "2026-10-30",
-      "openTime": "19:00",
-      "startTime": "19:15",
-      "title": "世間知らズの新帝国",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[企画ライブ]世間知らズ／エルフ／軟水／イワサキ"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "nansui",
       "date": "2026-10-31",
       "openTime": "10:45",
       "startTime": "11:00",
@@ -529,44 +418,6 @@
       "saleLabel": ""
     },
     {
-      "performerId": "nansui",
-      "date": "2026-10-31",
-      "openTime": "19:00",
-      "startTime": "19:15",
-      "title": "恐怖のコントレストラン",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[企画ライブ]喫茶ムーン／オダウエダ／おミュータンツ／ぶったま／オフローズ／軟水／ピュート／エグい速さ／伝書鳩／あなたとネ"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui",
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
       "performerId": "maison",
       "date": "2026-11-01",
       "openTime": "10:45",
@@ -592,33 +443,14 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 10,
-          "performerId": "pyuto",
-          "source": "tiget",
-          "sourceUrl": "https://tiget.net/events/527669",
-          "title": "大喜利スパークル vol.1",
-          "date": "2026-11-01",
-          "venue": "歌舞伎町Sparkle(東京都)",
-          "openTime": "18:45",
-          "startTime": "19:00",
-          "ticketStatus": "予定数終了",
-          "ticketOptions": [],
-          "salePeriods": [],
-          "saleStartAt": "",
-          "saleEndAt": "",
-          "saleCategory": "",
-          "saleLabel": ""
-        }
-      ],
-      "ticketListed": true,
+      "ticketMatches": [],
+      "ticketListed": false,
       "ticketOptions": [],
       "salePeriods": [],
-      "status": "ticket_listed",
-      "ticketStatus": "予定数終了",
-      "source": "tiget",
-      "sourceUrl": "https://tiget.net/events/527669",
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
       "saleStartAt": "",
       "saleEndAt": "",
       "saleCategory": "",
@@ -650,33 +482,14 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 10,
-          "performerId": "pyuto",
-          "source": "tiget",
-          "sourceUrl": "https://tiget.net/events/527669",
-          "title": "大喜利スパークル vol.1",
-          "date": "2026-11-01",
-          "venue": "歌舞伎町Sparkle(東京都)",
-          "openTime": "18:45",
-          "startTime": "19:00",
-          "ticketStatus": "予定数終了",
-          "ticketOptions": [],
-          "salePeriods": [],
-          "saleStartAt": "",
-          "saleEndAt": "",
-          "saleCategory": "",
-          "saleLabel": ""
-        }
-      ],
-      "ticketListed": true,
+      "ticketMatches": [],
+      "ticketListed": false,
       "ticketOptions": [],
       "salePeriods": [],
-      "status": "ticket_listed",
-      "ticketStatus": "予定数終了",
-      "source": "tiget",
-      "sourceUrl": "https://tiget.net/events/527669",
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
       "saleStartAt": "",
       "saleEndAt": "",
       "saleCategory": "",
@@ -708,33 +521,14 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 10,
-          "performerId": "pyuto",
-          "source": "tiget",
-          "sourceUrl": "https://tiget.net/events/527669",
-          "title": "大喜利スパークル vol.1",
-          "date": "2026-11-01",
-          "venue": "歌舞伎町Sparkle(東京都)",
-          "openTime": "18:45",
-          "startTime": "19:00",
-          "ticketStatus": "予定数終了",
-          "ticketOptions": [],
-          "salePeriods": [],
-          "saleStartAt": "",
-          "saleEndAt": "",
-          "saleCategory": "",
-          "saleLabel": ""
-        }
-      ],
-      "ticketListed": true,
+      "ticketMatches": [],
+      "ticketListed": false,
       "ticketOptions": [],
       "salePeriods": [],
-      "status": "ticket_listed",
-      "ticketStatus": "予定数終了",
-      "source": "tiget",
-      "sourceUrl": "https://tiget.net/events/527669",
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
       "saleStartAt": "",
       "saleEndAt": "",
       "saleCategory": "",
@@ -765,100 +559,6 @@
       ],
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [
-        {
-          "score": 10,
-          "performerId": "pyuto",
-          "source": "tiget",
-          "sourceUrl": "https://tiget.net/events/527669",
-          "title": "大喜利スパークル vol.1",
-          "date": "2026-11-01",
-          "venue": "歌舞伎町Sparkle(東京都)",
-          "openTime": "18:45",
-          "startTime": "19:00",
-          "ticketStatus": "予定数終了",
-          "ticketOptions": [],
-          "salePeriods": [],
-          "saleStartAt": "",
-          "saleEndAt": "",
-          "saleCategory": "",
-          "saleLabel": ""
-        }
-      ],
-      "ticketListed": true,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_listed",
-      "ticketStatus": "予定数終了",
-      "source": "tiget",
-      "sourceUrl": "https://tiget.net/events/527669",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "pyuto",
-      "date": "2026-11-02",
-      "openTime": "16:45",
-      "startTime": "17:00",
-      "title": "神保町Kakeru翔LIVE",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[ネタ出演者]兄弟／イワサキ／エグい速さ／ミナミナミ／あなたとネ／他",
-        "ピュート×セカンドロットツーマンライブ「オールグリーン」"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "pyuto",
-      "date": "2026-11-02",
-      "openTime": "18:45",
-      "startTime": "19:00",
-      "title": "ピュート×セカンドロットツーマンライブ「オールグリーン」",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[企画ライブ]ピュート／セカンドロット"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
@@ -948,80 +648,6 @@
       "saleLabel": ""
     },
     {
-      "performerId": "maison",
-      "date": "2026-11-04",
-      "openTime": "17:15",
-      "startTime": "17:30",
-      "title": "神保町Kakeru翔SP",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[ネタ出演者]めぞん／インテイク／大王／セカンドロット／ナユタ／他"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "maison",
-      "date": "2026-11-04",
-      "openTime": "19:00",
-      "startTime": "19:15",
-      "title": "ただならぬ刀肝入り『ゴリラパンチ』",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[企画ライブ]ただならぬ刀／めぞん／インテイク／喫茶ムーン"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
       "performerId": "nansui",
       "date": "2026-11-04",
       "openTime": "19:15",
@@ -1081,80 +707,6 @@
       ],
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-11-05",
-      "openTime": "16:45",
-      "startTime": "17:00",
-      "title": "神保町Kakeru翔SP",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[ネタ出演者]ケビンス／軟水／インテイク／伝書鳩／とりせん／球技大会／他"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "maison",
-      "date": "2026-11-05",
-      "openTime": "20:45",
-      "startTime": "21:00",
-      "title": "どうしたんだよ、デイビット！",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[企画ライブ]ヨネダ2000／めぞん／イチゴ／隠れドキュン／あなたとネ／おばあちゃん／出目金／大石／カー・ショー"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
@@ -1431,43 +983,6 @@
       "saleLabel": ""
     },
     {
-      "performerId": "nansui",
-      "date": "2026-11-08",
-      "openTime": "10:45",
-      "startTime": "11:00",
-      "title": "神保町マンゲキお笑いライブ",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[ネタ出演者]マルセイユ／キンボシ／kento fukaya／まんじろう／軟水／イチゴ／あなたとネ／他"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
       "performerId": "pyuto",
       "date": "2026-11-08",
       "openTime": "11:45",
@@ -1505,117 +1020,6 @@
       "saleLabel": ""
     },
     {
-      "performerId": "nansui",
-      "date": "2026-11-08",
-      "openTime": "12:45",
-      "startTime": "13:00",
-      "title": "神保町マンゲキお笑いライブ",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[ネタ出演者]マルセイユ／キンボシ／kento fukaya／まんじろう／アズーロ24／軟水／イチゴ／あなたとネ／他"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-11-08",
-      "openTime": "14:45",
-      "startTime": "15:00",
-      "title": "神保町マンゲキお笑いライブ",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[ネタ出演者]マルセイユ／キンボシ／kento fukaya／まんじろう／アズーロ24／軟水／イチゴ／あなたとネ／他"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-11-08",
-      "openTime": "17:00",
-      "startTime": "17:15",
-      "title": "テクノ",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[企画ライブ]エグい速さ／軟水／ザンゾウ／あなたとネ"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
       "performerId": "maison",
       "date": "2026-11-08",
       "openTime": "18:15",
@@ -1638,272 +1042,6 @@
       ],
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [
-        {
-          "score": 10,
-          "performerId": "maison",
-          "source": "eplus",
-          "sourceUrl": "https://eplus.jp/sf/detail/4565990001-P0030001P021002?P1=0175",
-          "title": "たくろう万博",
-          "date": "2026-11-08",
-          "venue": "万博公園もみじ川芝生広場（大阪府）",
-          "openTime": "09:30",
-          "startTime": "11:00",
-          "ticketStatus": "一部予定数終了",
-          "ticketOptions": [
-            {
-              "name": "先着",
-              "type": "先着",
-              "status": "販売中",
-              "price": "",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-08-01T10:00:00+09:00",
-              "saleEndAt": "2026-11-06T18:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "",
-                  "startAt": "2026-08-01T10:00:00+09:00",
-                  "endAt": "2026-11-06T18:00:00+09:00"
-                }
-              ]
-            },
-            {
-              "name": "先着",
-              "type": "先着",
-              "status": "販売終了",
-              "price": "",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-07-18T11:00:00+09:00",
-              "saleEndAt": "2026-07-31T11:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "",
-                  "startAt": "2026-07-18T11:00:00+09:00",
-                  "endAt": "2026-07-31T11:00:00+09:00"
-                }
-              ]
-            }
-          ],
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-08-01T10:00:00+09:00",
-              "endAt": "2026-11-06T18:00:00+09:00"
-            },
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-07-18T11:00:00+09:00",
-              "endAt": "2026-07-31T11:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-07-18T11:00:00+09:00",
-          "saleEndAt": "2026-07-31T11:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": ""
-        },
-        {
-          "score": 10,
-          "performerId": "maison",
-          "source": "eplus",
-          "sourceUrl": "https://eplus.jp/sf/detail/4604090001-P0030001P021001?P1=0175",
-          "title": "教育おたのしみ会～笑いとげんじつ～ 【東京公演】",
-          "date": "2026-11-08",
-          "venue": "有楽町朝日ホール（東京都）",
-          "openTime": "15:15",
-          "startTime": "15:45",
-          "ticketStatus": "予定数終了",
-          "ticketOptions": [
-            {
-              "name": "先着",
-              "type": "先着",
-              "status": "予定数終了",
-              "price": "",
-              "remaining": null,
-              "remainingText": "",
-              "saleStartAt": "2026-09-19T10:00:00+09:00",
-              "saleEndAt": "2026-11-06T18:00:00+09:00",
-              "saleCategory": "first_come",
-              "saleLabel": "",
-              "salePeriods": [
-                {
-                  "category": "first_come",
-                  "label": "",
-                  "startAt": "2026-09-19T10:00:00+09:00",
-                  "endAt": "2026-11-06T18:00:00+09:00"
-                }
-              ]
-            }
-          ],
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-09-19T10:00:00+09:00",
-              "endAt": "2026-11-06T18:00:00+09:00"
-            }
-          ],
-          "saleStartAt": "2026-09-19T10:00:00+09:00",
-          "saleEndAt": "2026-11-06T18:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": ""
-        },
-        {
-          "score": 10,
-          "performerId": "maison",
-          "source": "tiget",
-          "sourceUrl": "https://tiget.net/events/532846",
-          "title": "11/8(日)バティオスで#ワイガヤ《3部》",
-          "date": "2026-11-08",
-          "venue": "新宿バティオス(東京都)",
-          "openTime": "19:00",
-          "startTime": "19:20",
-          "ticketStatus": "予定数終了",
-          "ticketOptions": [],
-          "salePeriods": [],
-          "saleStartAt": "",
-          "saleEndAt": "",
-          "saleCategory": "",
-          "saleLabel": ""
-        }
-      ],
-      "ticketListed": true,
-      "ticketOptions": [
-        {
-          "name": "先着",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-08-01T10:00:00+09:00",
-          "saleEndAt": "2026-11-06T18:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-08-01T10:00:00+09:00",
-              "endAt": "2026-11-06T18:00:00+09:00"
-            }
-          ],
-          "source": "eplus",
-          "sourceUrl": "https://eplus.jp/sf/detail/4565990001-P0030001P021002?P1=0175"
-        },
-        {
-          "name": "先着",
-          "type": "先着",
-          "status": "販売終了",
-          "price": "",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-07-18T11:00:00+09:00",
-          "saleEndAt": "2026-07-31T11:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-07-18T11:00:00+09:00",
-              "endAt": "2026-07-31T11:00:00+09:00"
-            }
-          ],
-          "source": "eplus",
-          "sourceUrl": "https://eplus.jp/sf/detail/4565990001-P0030001P021002?P1=0175"
-        },
-        {
-          "name": "先着",
-          "type": "先着",
-          "status": "予定数終了",
-          "price": "",
-          "remaining": null,
-          "remainingText": "",
-          "saleStartAt": "2026-09-19T10:00:00+09:00",
-          "saleEndAt": "2026-11-06T18:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-09-19T10:00:00+09:00",
-              "endAt": "2026-11-06T18:00:00+09:00"
-            }
-          ],
-          "source": "eplus",
-          "sourceUrl": "https://eplus.jp/sf/detail/4604090001-P0030001P021001?P1=0175"
-        }
-      ],
-      "salePeriods": [
-        {
-          "category": "first_come",
-          "label": "",
-          "startAt": "2026-08-01T10:00:00+09:00",
-          "endAt": "2026-11-06T18:00:00+09:00",
-          "source": "eplus",
-          "sourceUrl": "https://eplus.jp/sf/detail/4565990001-P0030001P021002?P1=0175"
-        },
-        {
-          "category": "first_come",
-          "label": "",
-          "startAt": "2026-07-18T11:00:00+09:00",
-          "endAt": "2026-07-31T11:00:00+09:00",
-          "source": "eplus",
-          "sourceUrl": "https://eplus.jp/sf/detail/4565990001-P0030001P021002?P1=0175"
-        },
-        {
-          "category": "first_come",
-          "label": "",
-          "startAt": "2026-09-19T10:00:00+09:00",
-          "endAt": "2026-11-06T18:00:00+09:00",
-          "source": "eplus",
-          "sourceUrl": "https://eplus.jp/sf/detail/4604090001-P0030001P021001?P1=0175"
-        }
-      ],
-      "status": "ticket_listed",
-      "ticketStatus": "一部予定数終了",
-      "source": "eplus",
-      "sourceUrl": "https://eplus.jp/sf/detail/4565990001-P0030001P021002?P1=0175",
-      "saleStartAt": "2026-07-18T11:00:00+09:00",
-      "saleEndAt": "2026-07-31T11:00:00+09:00",
-      "saleCategory": "first_come",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "pyuto",
-      "date": "2026-11-08",
-      "openTime": "18:45",
-      "startTime": "19:00",
-      "title": "絶賛工事中",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[企画ライブ]アズーロ24／ゲスト：ミカボ／ピュート／サンタモニカ"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
@@ -1978,43 +1116,6 @@
       ],
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "pyuto",
-      "date": "2026-11-10",
-      "openTime": "18:45",
-      "startTime": "19:00",
-      "title": "ウォシュレッツvol．33",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[企画ライブ]スーパーサイズ・ミー／おミュータンツ／ピュート／定点計画"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
@@ -2247,33 +1348,14 @@
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 10,
-          "performerId": "pyuto",
-          "source": "tiget",
-          "sourceUrl": "https://tiget.net/events/532851",
-          "title": "11/12(木) 漫腹〜まんぷく〜",
-          "date": "2026-11-12",
-          "venue": "野方区民ホール(東京都)",
-          "openTime": "19:00",
-          "startTime": "19:20",
-          "ticketStatus": "予定数終了",
-          "ticketOptions": [],
-          "salePeriods": [],
-          "saleStartAt": "",
-          "saleEndAt": "",
-          "saleCategory": "",
-          "saleLabel": ""
-        }
-      ],
-      "ticketListed": true,
+      "ticketMatches": [],
+      "ticketListed": false,
       "ticketOptions": [],
       "salePeriods": [],
-      "status": "ticket_listed",
-      "ticketStatus": "予定数終了",
-      "source": "tiget",
-      "sourceUrl": "https://tiget.net/events/532851",
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
       "saleStartAt": "",
       "saleEndAt": "",
       "saleCategory": "",
@@ -2376,43 +1458,6 @@
       ],
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "pyuto",
-      "date": "2026-11-13",
-      "openTime": "20:45",
-      "startTime": "21:00",
-      "title": "ただならぬ刀肝入り『漫谷コン平』",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[企画ライブ]ただならぬ刀／エルフ／ピュート／エグい速さ"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
@@ -2539,43 +1584,6 @@
       "saleLabel": ""
     },
     {
-      "performerId": "pyuto",
-      "date": "2026-11-14",
-      "openTime": "19:00",
-      "startTime": "19:15",
-      "title": "高杉箱は回したい",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[企画ライブ]定点計画／太鵬／ピュート／ゼロカラン／フジーズ"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
       "performerId": "maison",
       "date": "2026-11-15",
       "openTime": "10:15",
@@ -2600,33 +1608,14 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 10,
-          "performerId": "maison",
-          "source": "tiget",
-          "sourceUrl": "https://tiget.net/events/528632",
-          "title": "楽屋Aオーディションバトルライブ「口火vol.670｣",
-          "date": "2026-11-15",
-          "venue": "舞台袖(大阪府)",
-          "openTime": "11:45",
-          "startTime": "12:00",
-          "ticketStatus": "予定数終了",
-          "ticketOptions": [],
-          "salePeriods": [],
-          "saleStartAt": "",
-          "saleEndAt": "",
-          "saleCategory": "",
-          "saleLabel": ""
-        }
-      ],
-      "ticketListed": true,
+      "ticketMatches": [],
+      "ticketListed": false,
       "ticketOptions": [],
       "salePeriods": [],
-      "status": "ticket_listed",
-      "ticketStatus": "予定数終了",
-      "source": "tiget",
-      "sourceUrl": "https://tiget.net/events/528632",
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
       "saleStartAt": "",
       "saleEndAt": "",
       "saleCategory": "",
@@ -2657,33 +1646,14 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 14,
-          "performerId": "maison",
-          "source": "tiget",
-          "sourceUrl": "https://tiget.net/events/528632",
-          "title": "楽屋Aオーディションバトルライブ「口火vol.670｣",
-          "date": "2026-11-15",
-          "venue": "舞台袖(大阪府)",
-          "openTime": "11:45",
-          "startTime": "12:00",
-          "ticketStatus": "予定数終了",
-          "ticketOptions": [],
-          "salePeriods": [],
-          "saleStartAt": "",
-          "saleEndAt": "",
-          "saleCategory": "",
-          "saleLabel": ""
-        }
-      ],
-      "ticketListed": true,
+      "ticketMatches": [],
+      "ticketListed": false,
       "ticketOptions": [],
       "salePeriods": [],
-      "status": "ticket_listed",
-      "ticketStatus": "予定数終了",
-      "source": "tiget",
-      "sourceUrl": "https://tiget.net/events/528632",
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
       "saleStartAt": "",
       "saleEndAt": "",
       "saleCategory": "",
@@ -2714,33 +1684,14 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 10,
-          "performerId": "maison",
-          "source": "tiget",
-          "sourceUrl": "https://tiget.net/events/528632",
-          "title": "楽屋Aオーディションバトルライブ「口火vol.670｣",
-          "date": "2026-11-15",
-          "venue": "舞台袖(大阪府)",
-          "openTime": "11:45",
-          "startTime": "12:00",
-          "ticketStatus": "予定数終了",
-          "ticketOptions": [],
-          "salePeriods": [],
-          "saleStartAt": "",
-          "saleEndAt": "",
-          "saleCategory": "",
-          "saleLabel": ""
-        }
-      ],
-      "ticketListed": true,
+      "ticketMatches": [],
+      "ticketListed": false,
       "ticketOptions": [],
       "salePeriods": [],
-      "status": "ticket_listed",
-      "ticketStatus": "予定数終了",
-      "source": "tiget",
-      "sourceUrl": "https://tiget.net/events/528632",
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
       "saleStartAt": "",
       "saleEndAt": "",
       "saleCategory": "",
@@ -2771,33 +1722,14 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 10,
-          "performerId": "maison",
-          "source": "tiget",
-          "sourceUrl": "https://tiget.net/events/528632",
-          "title": "楽屋Aオーディションバトルライブ「口火vol.670｣",
-          "date": "2026-11-15",
-          "venue": "舞台袖(大阪府)",
-          "openTime": "11:45",
-          "startTime": "12:00",
-          "ticketStatus": "予定数終了",
-          "ticketOptions": [],
-          "salePeriods": [],
-          "saleStartAt": "",
-          "saleEndAt": "",
-          "saleCategory": "",
-          "saleLabel": ""
-        }
-      ],
-      "ticketListed": true,
+      "ticketMatches": [],
+      "ticketListed": false,
       "ticketOptions": [],
       "salePeriods": [],
-      "status": "ticket_listed",
-      "ticketStatus": "予定数終了",
-      "source": "tiget",
-      "sourceUrl": "https://tiget.net/events/528632",
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
       "saleStartAt": "",
       "saleEndAt": "",
       "saleCategory": "",
@@ -2827,33 +1759,14 @@
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
-      "ticketMatches": [
-        {
-          "score": 10,
-          "performerId": "maison",
-          "source": "tiget",
-          "sourceUrl": "https://tiget.net/events/528632",
-          "title": "楽屋Aオーディションバトルライブ「口火vol.670｣",
-          "date": "2026-11-15",
-          "venue": "舞台袖(大阪府)",
-          "openTime": "11:45",
-          "startTime": "12:00",
-          "ticketStatus": "予定数終了",
-          "ticketOptions": [],
-          "salePeriods": [],
-          "saleStartAt": "",
-          "saleEndAt": "",
-          "saleCategory": "",
-          "saleLabel": ""
-        }
-      ],
-      "ticketListed": true,
+      "ticketMatches": [],
+      "ticketListed": false,
       "ticketOptions": [],
       "salePeriods": [],
-      "status": "ticket_listed",
-      "ticketStatus": "予定数終了",
-      "source": "tiget",
-      "sourceUrl": "https://tiget.net/events/528632",
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
       "saleStartAt": "",
       "saleEndAt": "",
       "saleCategory": "",
@@ -2898,99 +1811,6 @@
     },
     {
       "performerId": "maison",
-      "date": "2026-11-15",
-      "openTime": "20:45",
-      "startTime": "21:00",
-      "title": "思い出の扉",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[企画ライブ]めぞん／世界クジラ 和泉／狛犬 櫛野／兄弟 体制／おとうふ 山中伸之／江頭一馬／他"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [
-        {
-          "score": 10,
-          "performerId": "maison",
-          "source": "tiget",
-          "sourceUrl": "https://tiget.net/events/528632",
-          "title": "楽屋Aオーディションバトルライブ「口火vol.670｣",
-          "date": "2026-11-15",
-          "venue": "舞台袖(大阪府)",
-          "openTime": "11:45",
-          "startTime": "12:00",
-          "ticketStatus": "予定数終了",
-          "ticketOptions": [],
-          "salePeriods": [],
-          "saleStartAt": "",
-          "saleEndAt": "",
-          "saleCategory": "",
-          "saleLabel": ""
-        }
-      ],
-      "ticketListed": true,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_listed",
-      "ticketStatus": "予定数終了",
-      "source": "tiget",
-      "sourceUrl": "https://tiget.net/events/528632",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "pyuto",
-      "date": "2026-11-16",
-      "openTime": "18:45",
-      "startTime": "19:00",
-      "title": "キングチャンピオン王",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[企画ライブ]ピュート／バリカタ友情飯／兄弟／アリハガ／おとうふ／ゲスト：今井らいぱち"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "maison",
       "date": "2026-11-17",
       "openTime": "20:00",
       "startTime": "20:30",
@@ -3012,80 +1832,6 @@
       ],
       "discoveryUrls": [
         "https://makuhari.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "pyuto",
-      "date": "2026-11-18",
-      "openTime": "17:15",
-      "startTime": "17:30",
-      "title": "神保町Kakeru翔SP",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[ネタ出演者]世間知らズ／ピュート／小虎／ぺ／ニコミハジメテ／他"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "pyuto",
-      "date": "2026-11-18",
-      "openTime": "19:00",
-      "startTime": "19:15",
-      "title": "世間知らズの新帝国",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[企画ライブ]世間知らズ／いぬ／エバース／ピュート"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
@@ -3213,191 +1959,6 @@
     },
     {
       "performerId": "nansui",
-      "date": "2026-11-20",
-      "openTime": "20:45",
-      "startTime": "21:00",
-      "title": "ファティゲなおばあちゃん",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[企画ライブ]軟水／ぺ／伝書鳩"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-11-21",
-      "openTime": "10:45",
-      "startTime": "11:00",
-      "title": "神保町マンゲキお笑いライブ",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[ネタ出演者]くらげ／そいつどいつ／オフローズ／軟水／インテイク／大王／ナユタ／他"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-11-21",
-      "openTime": "12:45",
-      "startTime": "13:00",
-      "title": "神保町マンゲキお笑いライブ",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[ネタ出演者]くらげ／そいつどいつ／オフローズ／軟水／インテイク／大王／ナユタ／他"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-11-21",
-      "openTime": "14:45",
-      "startTime": "15:00",
-      "title": "神保町マンゲキお笑いライブ",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[ネタ出演者]くらげ／そいつどいつ／オフローズ／軟水／インテイク／大王／ナユタ／他"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-11-21",
-      "openTime": "19:00",
-      "startTime": "19:15",
-      "title": "コントウォーズ EP．1～アリハガとエグい速さがゲストを呼んでバトルをするライブ～",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[企画ライブ]アリハガ／エグい速さ／軟水／オフローズ"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "nansui",
       "date": "2026-11-21",
       "openTime": "21:15",
       "startTime": "21:30",
@@ -3456,43 +2017,6 @@
       ],
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "pyuto",
-      "date": "2026-11-22",
-      "openTime": "10:45",
-      "startTime": "11:00",
-      "title": "神保町マンゲキお笑いライブ",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[ネタ出演者]ダンビラムーチョ／ゆにばーす／いぬ／九条ジョー／シモリュウ／ピュート／金魚番長／照山おうちごはん／他"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
@@ -3567,43 +2091,6 @@
       ],
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "pyuto",
-      "date": "2026-11-22",
-      "openTime": "17:00",
-      "startTime": "17:15",
-      "title": "サンタモニカ新ネタライブ｢シャングリラ｣",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[企画ライブ]サンタモニカ／九条ジョー／ピュート／セカンドロット"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
@@ -4066,43 +2553,6 @@
       "saleLabel": ""
     },
     {
-      "performerId": "maison",
-      "date": "2026-11-28",
-      "openTime": "10:45",
-      "startTime": "11:00",
-      "title": "神保町マンゲキお笑いライブ",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[ネタ出演者]ダブルヒガシ／めぞん／やさしいズ／ぶったま／ド桜／太鵬／イワサキ／ボブのコーラ／ぐろう／他"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
       "performerId": "nansui",
       "date": "2026-11-28",
       "openTime": "11:45",
@@ -4140,43 +2590,6 @@
       "saleLabel": ""
     },
     {
-      "performerId": "maison",
-      "date": "2026-11-28",
-      "openTime": "12:45",
-      "startTime": "13:00",
-      "title": "神保町マンゲキお笑いライブ",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[ネタ出演者]ダブルヒガシ／めぞん／やさしいズ／ぶったま／ド桜／太鵬／イワサキ／ボブのコーラ／ぐろう／他"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
       "performerId": "nansui",
       "date": "2026-11-28",
       "openTime": "14:15",
@@ -4199,118 +2612,6 @@
       ],
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "maison",
-      "date": "2026-11-28",
-      "openTime": "14:45",
-      "startTime": "15:00",
-      "title": "神保町マンゲキお笑いライブ",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[ネタ出演者]ダブルヒガシ／めぞん／セッツァー／やさしいズ／ド桜／太鵬／イワサキ／ボブのコーラ／ぐろう／他"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-11-28",
-      "openTime": "17:00",
-      "startTime": "17:15",
-      "title": "伝書鳩ネタとか企画とかライブ「デリバリースター」",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[企画ライブ]伝書鳩／ゲスト：九条ジョー／そいつどいつ",
-        "マリーマリー×軟水ツーマンライブ 『ハイビーム PIRAN』"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-11-28",
-      "openTime": "18:45",
-      "startTime": "19:00",
-      "title": "マリーマリー×軟水ツーマンライブ 『ハイビーム PIRAN』",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[企画ライブ]マリーマリー／軟水"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
@@ -4423,44 +2724,6 @@
       ],
       "discoveryUrls": [
         "https://fukuokagekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-11-29",
-      "openTime": "17:30",
-      "startTime": "17:45",
-      "title": "神保町お題コントバトル",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[企画ライブ]スーパーサイズ・ミー／オフローズ／軟水／ピュート／喫茶ムーン／定点計画／ザンゾウ／セカンドロット／伝書鳩／あなたとネ"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui",
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
@@ -5004,43 +3267,6 @@
       "saleLabel": ""
     },
     {
-      "performerId": "maison",
-      "date": "2026-12-04",
-      "openTime": "20:45",
-      "startTime": "21:00",
-      "title": "あなたとネの新ネタライブ",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[企画ライブ]あなたとネ／ゲスト：めぞん／兄弟／ぺ"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
       "performerId": "nansui",
       "date": "2026-12-04",
       "openTime": "21:15",
@@ -5301,43 +3527,6 @@
     },
     {
       "performerId": "nansui",
-      "date": "2026-12-08",
-      "openTime": "18:45",
-      "startTime": "19:00",
-      "title": "ファティゲなおばあちゃん",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[企画ライブ]軟水／ぺ／伝書鳩"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "nansui",
       "date": "2026-12-09",
       "openTime": "19:15",
       "startTime": "19:30",
@@ -5359,43 +3548,6 @@
       ],
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "maison",
-      "date": "2026-12-09",
-      "openTime": "20:45",
-      "startTime": "21:00",
-      "title": "大喜利ぞうさん",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[企画ライブ]めぞん／狛犬／伝書鳩／カゲヤマ／オズワルド"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
@@ -5507,123 +3659,6 @@
       ],
       "discoveryUrls": [
         "https://makuhari.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "maison",
-      "date": "2026-12-12",
-      "openTime": "10:45",
-      "startTime": "11:00",
-      "title": "神保町マンゲキお笑いライブ",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[ネタ出演者]めぞん／素敵じゃないか／軟水／ピュート／インテイク／金魚番長／ド天国／他"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison",
-        "nansui",
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "maison",
-      "date": "2026-12-12",
-      "openTime": "12:45",
-      "startTime": "13:00",
-      "title": "神保町マンゲキお笑いライブ",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[ネタ出演者]めぞん／素敵じゃないか／軟水／ピュート／インテイク／金魚番長／ド天国／他"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison",
-        "nansui",
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "maison",
-      "date": "2026-12-12",
-      "openTime": "14:45",
-      "startTime": "15:00",
-      "title": "神保町マンゲキお笑いライブ",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[ネタ出演者]めぞん／素敵じゃないか／軟水／ピュート／インテイク／金魚番長／ド天国／他"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison",
-        "nansui",
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
@@ -5922,43 +3957,6 @@
       ],
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "maison",
-      "date": "2026-12-16",
-      "openTime": "20:45",
-      "startTime": "21:00",
-      "title": "二寅会",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[企画ライブ]小虎／めぞん"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
@@ -6280,43 +4278,6 @@
     },
     {
       "performerId": "maison",
-      "date": "2026-12-21",
-      "openTime": "16:45",
-      "startTime": "17:00",
-      "title": "神保町Kakeru翔SP 冬休みSP",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[ネタ出演者]いぬ／9番街レトロ／太鵬／めぞん／兄弟／ニコミハジメテ／ド天国／他"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "maison",
       "date": "2026-12-22",
       "openTime": "16:45",
       "startTime": "17:00",
@@ -6376,81 +4337,6 @@
       ],
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-12-23",
-      "openTime": "16:15",
-      "startTime": "16:30",
-      "title": "神保町Kakeru翔SP 冬休みSP",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[ネタ出演者]からし蓮根／オダウエダ／軟水／ピュート／イチゴ／定点計画／あなたとネ／他"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui",
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "pyuto",
-      "date": "2026-12-23",
-      "openTime": "18:45",
-      "startTime": "19:00",
-      "title": "キングチャンピオン王",
-      "venue": "神保町よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "jimbocho",
-      "theaterName": "神保町",
-      "performersText": [
-        "[企画ライブ]ピュート／バリカタ友情飯／兄弟／アリハガ／おとうふ／ゲスト：カベポスター"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
