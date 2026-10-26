@@ -253,135 +253,39 @@ def title_similarity(
 # 同一公演スコア
 # =========================================================
 
-def match_score(
-    discovered,
-    ticket,
-):
-    score = 0
-
-    # 日付一致は必須
-    if (
-        clean(
-            discovered.get(
-                "date"
-            )
-        )
-        !=
-        clean(
-            ticket.get(
-                "date"
-            )
-        )
-    ):
+def match_score(discovered, ticket):
+    """別公演へのチケット誤リンクを防ぐための厳格な同一公演判定。"""
+    if clean(discovered.get("date")) != clean(ticket.get("date")):
         return 0
 
-    score += 5
+    start_a = clean(discovered.get("startTime"))
+    start_b = clean(ticket.get("startTime"))
+    # 両方に開演時間があるなら不一致は別公演。
+    if start_a and start_b and start_a != start_b:
+        return 0
 
-    # =====================================================
-    # 出演者
-    # =====================================================
+    venue_a = normalize_venue(discovered.get("venue"))
+    venue_b = normalize_venue(ticket.get("venue"))
+    # 両方に会場があるなら不一致は別公演。単なる部分一致は認めない。
+    if venue_a and venue_b and venue_a != venue_b:
+        return 0
 
-    performer_id = clean(
-        discovered.get(
-            "performerId",
-            "",
-        )
-    )
+    similarity = title_similarity(discovered.get("title"), ticket.get("title"))
+    # 同日・同じ芸人だけでは絶対に紐付けない。
+    if similarity < 0.90:
+        return 0
 
-    ticket_performer = clean(
-        ticket.get(
-            "performerId",
-            "",
-        )
-    )
+    # 会場・時間のいずれも確認できない場合も誤リンク防止を優先。
+    if not ((start_a and start_b) or (venue_a and venue_b)):
+        return 0
 
-    if (
-        performer_id
-        and performer_id
-        == ticket_performer
-    ):
+    score = 5 + 6
+    if start_a and start_b:
+        score += 4
+    if venue_a and venue_b:
+        score += 4
+    if clean(discovered.get("performerId")) == clean(ticket.get("performerId")):
         score += 5
-
-    # =====================================================
-    # 開演時間
-    # =====================================================
-
-    start_a = clean(
-        discovered.get(
-            "startTime",
-            "",
-        )
-    )
-
-    start_b = clean(
-        ticket.get(
-            "startTime",
-            "",
-        )
-    )
-
-    if (
-        start_a
-        and start_b
-        and start_a == start_b
-    ):
-        score += 4
-
-    # =====================================================
-    # 会場
-    # =====================================================
-
-    venue_a = normalize_venue(
-        discovered.get(
-            "venue",
-            "",
-        )
-    )
-
-    venue_b = normalize_venue(
-        ticket.get(
-            "venue",
-            "",
-        )
-    )
-
-    if (
-        venue_a
-        and venue_b
-    ):
-        if venue_a == venue_b:
-            score += 4
-
-        elif (
-            venue_a in venue_b
-            or venue_b in venue_a
-        ):
-            score += 3
-
-    # =====================================================
-    # タイトル
-    # =====================================================
-
-    similarity = title_similarity(
-        discovered.get(
-            "title",
-            "",
-        ),
-        ticket.get(
-            "title",
-            "",
-        ),
-    )
-
-    if similarity >= 0.90:
-        score += 6
-
-    elif similarity >= 0.75:
-        score += 4
-
-    elif similarity >= 0.55:
-        score += 2
-
     return score
 
 
