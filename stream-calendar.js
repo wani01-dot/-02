@@ -1369,6 +1369,9 @@
       <button id="presaleCalendarMode" class="calendar-mode-button" type="button">
         🎫 発売前
       </button>
+      <button id="xInfoCalendarMode" class="calendar-mode-button" type="button">
+        X出演情報
+      </button>
     `;
 
 
