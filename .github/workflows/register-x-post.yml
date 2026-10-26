@@ -1,0 +1,70 @@
+name: Register X post
+on:
+  workflow_dispatch:
+    inputs:
+      post_url:
+        description: "Xの投稿URL（指定30アカウントのみ）"
+        required: true
+        type: string
+      post_text:
+        description: "投稿本文（芸人名を含むもの）"
+        required: true
+        type: string
+      posted_at:
+        description: "投稿日時（任意・例 2026-10-26T12:00:00+09:00）"
+        required: false
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: x-post-registration
+  cancel-in-progress: false
+jobs:
+  register:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Register and validate
+        env:
+          POST_URL: ${{ inputs.post_url }}
+          POST_TEXT: ${{ inputs.post_text }}
+          POSTED_AT: ${{ inputs.posted_at }}
+        run: |
+          python register_x_post.py --url "$POST_URL" --text "$POST_TEXT" --date "$POSTED_AT"
+      - name: Save X post
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add x_posts.json
+          if git diff --cached --quiet; then
+            echo "登録済みのため変更なし"
+            exit 0
+          fi
+          git commit -m "Register X appearance post"
+          for attempt in 1 2 3 4 5; do
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "更新競合。最新のmainを取得して再登録"
+            git fetch origin main
+            git reset --hard origin/main
+            # 入力は再実行しても同じ投稿IDを重複登録しない
+            python register_x_post.py --url "$POST_URL" --text "$POST_TEXT" --date "$POSTED_AT"
+            git add x_posts.json
+            if git diff --cached --quiet; then
+              exit 0
+            fi
+            git commit -m "Register X appearance post"
+            sleep 2
+          done
+          exit 1
+        env:
+          POST_URL: ${{ inputs.post_url }}
+          POST_TEXT: ${{ inputs.post_text }}
+          POSTED_AT: ${{ inputs.posted_at }}
