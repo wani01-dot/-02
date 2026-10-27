@@ -445,6 +445,7 @@
     const [
       eventsResult,
       discoveredResult,
+      theaterResult,
     ] = await Promise.allSettled([
 
       fetch(
@@ -456,6 +457,13 @@
 
       fetch(
         `discovered_events.json?t=${Date.now()}`,
+        {
+          cache: "no-store",
+        }
+      ),
+
+      fetch(
+        `theater_events.json?t=${Date.now()}`,
         {
           cache: "no-store",
         }
@@ -642,9 +650,24 @@
       =========================================
     */
 
+    // 劇場公式データは必ず直接合流する。
+    // discovered_events.json の更新遅延や欠落があっても劇場公演を消さない。
+    let theaterData = [];
+    if (theaterResult.status === "fulfilled" && theaterResult.value.ok) {
+      try {
+        const data = await theaterResult.value.json();
+        theaterData = Array.isArray(data) ? data :
+          (Array.isArray(data.events) ? data.events : []);
+      } catch (error) {
+        console.warn("theater_events.json の解析に失敗:", error);
+      }
+    }
+    console.log(`劇場公式の直接取得: ${theaterData.length}件`);
+
     rawEvents = [
       ...eventsData,
       ...discoveredData,
+      ...theaterData,
     ];
 
 
