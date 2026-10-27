@@ -143,6 +143,21 @@ jobs:
         run: |
           python -u notify_line.py
 
+      - name: Rebuild discovery from latest theater and ticket data
+        run: |
+          python -u discovery_build.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d = json.loads(Path("discovered_events.json").read_text(encoding="utf-8"))
+          events = d if isinstance(d, list) else d.get("events", [])
+          theater = json.loads(Path("theater_events.json").read_text(encoding="utf-8"))
+          theater_events = theater if isinstance(theater, list) else theater.get("events", [])
+          if theater_events and not events:
+              raise SystemExit("劇場データがあるのに発見データが空。公開を中止")
+          print(f"発見データ再生成: {len(events)}件")
+          PY
+
       - name: Save updated data
         shell: bash
         run: |
@@ -153,6 +168,7 @@ jobs:
           cp events.json /tmp/sync-data/events.json
           cp notified_events.json /tmp/sync-data/notified_events.json
           cp theater_events.json /tmp/sync-data/theater_events.json
+          cp discovered_events.json /tmp/sync-data/discovered_events.json
           if [ -f theater_notified_events.json ]; then
             cp theater_notified_events.json /tmp/sync-data/theater_notified_events.json
           fi
@@ -166,11 +182,12 @@ jobs:
             cp /tmp/sync-data/events.json events.json
             cp /tmp/sync-data/notified_events.json notified_events.json
             cp /tmp/sync-data/theater_events.json theater_events.json
+            cp /tmp/sync-data/discovered_events.json discovered_events.json
             if [ -f /tmp/sync-data/theater_notified_events.json ]; then
               cp /tmp/sync-data/theater_notified_events.json theater_notified_events.json
             fi
 
-            git add events.json notified_events.json theater_events.json
+            git add events.json notified_events.json theater_events.json discovered_events.json
             if [ -f theater_notified_events.json ]; then
               git add theater_notified_events.json
             fi
