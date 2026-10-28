@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-28T09:55:29.600187+00:00",
+  "syncedAt": "2026-10-28T16:19:33.119483+00:00",
   "performers": [
     {
       "id": "maison",
@@ -60,7 +60,7 @@
       "venue": "千本桜ホール(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/526404",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -132,7 +132,7 @@
       "venue": "歌舞伎町Sparkle(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/527669",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -650,6 +650,53 @@
       ]
     },
     {
+      "performerId": "maison",
+      "date": "2026-11-15",
+      "openTime": "11:45",
+      "startTime": "12:00",
+      "title": "楽屋Aオーディションバトルライブ「口火vol.670｣",
+      "venue": "舞台袖(大阪府)",
+      "source": "tiget",
+      "sourceUrl": "https://tiget.net/events/528632",
+      "ticketStatus": "予定数終了",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "芦原チューバダンス",
+        "もちもち銀行",
+        "シフォン主義",
+        "マラタン",
+        "豊広ガンプ",
+        "六弦ターボ",
+        "コンビナート",
+        "恣意ラ関数",
+        "あかねめぞん",
+        "ひっさつあんバター",
+        "山中天",
+        "ぺるせぽね",
+        "11",
+        "15 楽屋Aオーディションバトルライブ「口火vol.670｣",
+        "楽屋Aランキング入りを目指した最初のオーディションライブ",
+        "1位獲得者は1",
+        "8 20:30～or 1",
+        "9 17:30〜",
+        "20:30～の",
+        "アンダー・口火入替バトルに進出",
+        "ネタ時間3分(3分半強制終了)",
+        "MCネタあり",
+        "11:45OPEN",
+        "12:00〜13:00LIVE"
+      ],
+      "firstSeenAt": "2026-10-28T16:19:33.119150+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
       "performerId": "pyuto",
       "date": "2026-11-15",
       "openTime": "19:00",
@@ -813,7 +860,7 @@
           ]
         },
         {
-          "name": "たまゆら学園 / TCクラクション / まんじゅう大帝国",
+          "name": "ねじれネジ / パスタとパスタ / 喜喜かいばしら / 9番街レトロ なかむらしゅん",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -827,7 +874,7 @@
               "label": "",
               "startAt": "2026-10-15T19:00:00+09:00",
               "endAt": "2026-10-21T23:59:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|たまゆら学園 / TCクラクション / まんじゅう大帝国|先着|advance|2026-10-15T19:00:00+09:00"
+              "saleKey": "livepocket|maison|z2nvo|ねじれネジ / パスタとパスタ / 喜喜かいばしら / 9番街レトロ なかむらしゅん|先着|advance|2026-10-15T19:00:00+09:00"
             }
           ]
         }
