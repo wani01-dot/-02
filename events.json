@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-29T19:10:44.879063+00:00",
+  "syncedAt": "2026-10-29T23:15:47.936486+00:00",
   "performers": [
     {
       "id": "maison",
@@ -722,6 +722,25 @@
           ]
         },
         {
+          "name": "たまゆら学園 / TCクラクション / まんじゅう大帝国",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-10-15T19:00:00+09:00",
+          "saleEndAt": "2026-10-21T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-10-15T19:00:00+09:00",
+              "endAt": "2026-10-21T23:59:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|たまゆら学園 / TCクラクション / まんじゅう大帝国|先着|advance|2026-10-15T19:00:00+09:00"
+            }
+          ]
+        },
+        {
           "name": "ねじれネジ / パスタとパスタ / 喜喜かいばしら / 9番街レトロ なかむらしゅん",
           "type": "先着",
           "status": "販売中",
@@ -737,25 +756,6 @@
               "startAt": "2026-10-15T19:00:00+09:00",
               "endAt": "2026-10-21T23:59:00+09:00",
               "saleKey": "livepocket|maison|z2nvo|ねじれネジ / パスタとパスタ / 喜喜かいばしら / 9番街レトロ なかむらしゅん|先着|advance|2026-10-15T19:00:00+09:00"
-            }
-          ]
-        },
-        {
-          "name": "ウィークリー習慣 / ポテトカレッジ / ダンゴ虫たち",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-10-15T19:00:00+09:00",
-          "saleEndAt": "2026-10-21T23:59:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-10-15T19:00:00+09:00",
-              "endAt": "2026-10-21T23:59:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|ウィークリー習慣 / ポテトカレッジ / ダンゴ虫たち|先着|advance|2026-10-15T19:00:00+09:00"
             }
           ]
         }
