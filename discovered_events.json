@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-10-31T12:05:29.193471+00:00",
-  "total": 158,
+  "syncedAt": "2026-10-31T14:47:26.055522+00:00",
+  "total": 159,
   "ticketListedCount": 0,
-  "ticketUnlistedCount": 158,
+  "ticketUnlistedCount": 159,
   "ticketOptionCount": 0,
   "salePeriodCount": 0,
   "events": [
@@ -4365,6 +4365,43 @@
       ],
       "discoveryUrls": [
         "https://morinomiya-manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-12-06",
+      "openTime": "11:30",
+      "startTime": "12:00",
+      "title": "よしもとお笑いレストラン 新喜劇プラス",
+      "venue": "Yogibo META VALLEY",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://dotonbori.yoshimoto.co.jp/schedule/",
+      "theaterId": "dotonbori",
+      "theaterName": "道頓堀",
+      "performersText": [
+        "[ネタ]めぞん／三遊間／生姜猫／他／[MC] 未定 [吉本新喜劇] 出演者は決まり次第発表いたします。"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://dotonbori.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
