@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-11-01T13:45:11.975170+00:00",
+  "syncedAt": "2026-11-01T18:36:18.422682+00:00",
   "performers": [
     {
       "id": "maison",
@@ -51,34 +51,6 @@
     }
   ],
   "events": [
-    {
-      "performerId": "pyuto",
-      "date": "2026-11-01",
-      "openTime": "18:45",
-      "startTime": "19:00",
-      "title": "大喜利スパークル vol.1",
-      "venue": "歌舞伎町Sparkle(東京都)",
-      "source": "tiget",
-      "sourceUrl": "https://tiget.net/events/527669",
-      "ticketStatus": "予定数終了",
-      "ticketOptions": [],
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "salePeriods": [],
-      "performersText": [
-        "フランスピアノなかがわ",
-        "警備員",
-        "ぺるとも",
-        "ピュート",
-        "ジョンソンともゆき"
-      ],
-      "firstSeenAt": "2026-10-06T01:31:54.374099+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto"
-      ]
-    },
     {
       "performerId": "nansui",
       "date": "2026-11-03",
@@ -582,6 +554,53 @@
       ]
     },
     {
+      "performerId": "maison",
+      "date": "2026-11-15",
+      "openTime": "11:45",
+      "startTime": "12:00",
+      "title": "楽屋Aオーディションバトルライブ「口火vol.670｣",
+      "venue": "舞台袖(大阪府)",
+      "source": "tiget",
+      "sourceUrl": "https://tiget.net/events/528632",
+      "ticketStatus": "予定数終了",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "芦原チューバダンス",
+        "もちもち銀行",
+        "シフォン主義",
+        "マラタン",
+        "豊広ガンプ",
+        "六弦ターボ",
+        "コンビナート",
+        "恣意ラ関数",
+        "あかねめぞん",
+        "ひっさつあんバター",
+        "山中天",
+        "ぺるせぽね",
+        "11",
+        "15 楽屋Aオーディションバトルライブ「口火vol.670｣",
+        "楽屋Aランキング入りを目指した最初のオーディションライブ",
+        "1位獲得者は1",
+        "8 20:30～or 1",
+        "9 17:30〜",
+        "20:30～の",
+        "アンダー・口火入替バトルに進出",
+        "ネタ時間3分(3分半強制終了)",
+        "MCネタあり",
+        "11:45OPEN",
+        "12:00〜13:00LIVE"
+      ],
+      "firstSeenAt": "2026-11-01T18:36:18.422387+00:00",
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ]
+    },
+    {
       "performerId": "pyuto",
       "date": "2026-11-15",
       "openTime": "19:00",
@@ -727,25 +746,6 @@
           ]
         },
         {
-          "name": "喜喜かいばしら / パスタとパスタ / パンたべる / ツェ大野 / やゆよ / ヤング / ねじれネジ",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-10-15T19:00:00+09:00",
-          "saleEndAt": "2026-10-21T23:59:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-10-15T19:00:00+09:00",
-              "endAt": "2026-10-21T23:59:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|喜喜かいばしら / パスタとパスタ / パンたべる / ツェ大野 / やゆよ / ヤング / ねじれネジ|先着|advance|2026-10-15T19:00:00+09:00"
-            }
-          ]
-        },
-        {
           "name": "ねじれネジ / パスタとパスタ / 喜喜かいばしら / 9番街レトロ なかむらしゅん / D兄さん / パッチワークパンダ",
           "type": "先着",
           "status": "販売中",
@@ -761,6 +761,25 @@
               "startAt": "2026-10-15T19:00:00+09:00",
               "endAt": "2026-10-21T23:59:00+09:00",
               "saleKey": "livepocket|maison|z2nvo|ねじれネジ / パスタとパスタ / 喜喜かいばしら / 9番街レトロ なかむらしゅん / D兄さん / パッチワークパンダ|先着|advance|2026-10-15T19:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "動物男児 / ツェ大野 / やゆよ / しらせ / すぎる / パスタとパスタ まなべ / ヤング / ねじれネジ",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-10-15T19:00:00+09:00",
+          "saleEndAt": "2026-10-21T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-10-15T19:00:00+09:00",
+              "endAt": "2026-10-21T23:59:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|動物男児 / ツェ大野 / やゆよ / しらせ / すぎる / パスタとパスタ まなべ / ヤング / ねじれネジ|先着|advance|2026-10-15T19:00:00+09:00"
             }
           ]
         }
