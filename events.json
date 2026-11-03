@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-11-03T07:21:24.798660+00:00",
+  "syncedAt": "2026-11-03T15:19:48.263100+00:00",
   "performers": [
     {
       "id": "maison",
@@ -51,78 +51,6 @@
     }
   ],
   "events": [
-    {
-      "performerId": "nansui",
-      "date": "2026-11-03",
-      "openTime": "15:50",
-      "startTime": "16:10",
-      "title": "11/3(火祝)V-1で#ワイガヤ《2部》",
-      "venue": "ハイジアV-1(東京都)",
-      "source": "tiget",
-      "sourceUrl": "https://tiget.net/events/532075",
-      "ticketStatus": "予定数終了",
-      "ticketOptions": [],
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "salePeriods": [],
-      "performersText": [
-        "鬼塚ムソウ",
-        "相性はいいよね",
-        "あなたとネ",
-        "海老車",
-        "風イリュージョズ",
-        "ガクヅケ",
-        "さんだる",
-        "ジャンク",
-        "世界クジラ",
-        "寺田寛明",
-        "軟水",
-        "ハマノとヘンミ",
-        "ファイヤーサンダー",
-        "フランツ",
-        "ペ",
-        "まんじゅう大帝国 竹内",
-        "ネタと企画orトークの約2時間のライブを予定しています✨"
-      ],
-      "firstSeenAt": "2026-11-02T18:14:02.816305+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "nansui"
-      ]
-    },
-    {
-      "performerId": "nansui",
-      "date": "2026-11-03",
-      "openTime": "18:45",
-      "startTime": "19:00",
-      "title": "ザイざい才！３",
-      "venue": "歌舞伎町Sparkle(東京都)",
-      "source": "tiget",
-      "sourceUrl": "https://tiget.net/events/528554",
-      "ticketStatus": "残りわずか",
-      "ticketOptions": [],
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "salePeriods": [],
-      "performersText": [
-        "兄弟",
-        "ザ・パーフェクト",
-        "ゼスト",
-        "たまゆら学園",
-        "デッチボックス",
-        "軟水",
-        "ライオンロック",
-        "ぺ",
-        "つめたいごはん"
-      ],
-      "firstSeenAt": "2026-10-07T15:54:25.283192+00:00",
-      "newUntil": "2026-10-09T15:54:25.283205+00:00",
-      "trackedPerformers": [
-        "nansui"
-      ]
-    },
     {
       "performerId": "maison",
       "date": "2026-11-07",
@@ -700,25 +628,6 @@
           ]
         },
         {
-          "name": "動物男児 / ツェ大野 / やゆよ / しらせ / すぎる / パスタとパスタ まなべ / ヤング / ねじれネジ",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-10-15T19:00:00+09:00",
-          "saleEndAt": "2026-10-21T23:59:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-10-15T19:00:00+09:00",
-              "endAt": "2026-10-21T23:59:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|動物男児 / ツェ大野 / やゆよ / しらせ / すぎる / パスタとパスタ まなべ / ヤング / ねじれネジ|先着|advance|2026-10-15T19:00:00+09:00"
-            }
-          ]
-        },
-        {
           "name": "喜喜かいばしら / パスタとパスタ / パンたべる / ツェ大野 / やゆよ / ヤング / ねじれネジ",
           "type": "先着",
           "status": "販売中",
@@ -734,6 +643,25 @@
               "startAt": "2026-10-15T19:00:00+09:00",
               "endAt": "2026-10-21T23:59:00+09:00",
               "saleKey": "livepocket|maison|z2nvo|喜喜かいばしら / パスタとパスタ / パンたべる / ツェ大野 / やゆよ / ヤング / ねじれネジ|先着|advance|2026-10-15T19:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "ねじれネジ / パスタとパスタ / 喜喜かいばしら / 9番街レトロ なかむらしゅん / D兄さん / パッチワークパンダ",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-10-15T19:00:00+09:00",
+          "saleEndAt": "2026-10-21T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-10-15T19:00:00+09:00",
+              "endAt": "2026-10-21T23:59:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|ねじれネジ / パスタとパスタ / 喜喜かいばしら / 9番街レトロ なかむらしゅん / D兄さん / パッチワークパンダ|先着|advance|2026-10-15T19:00:00+09:00"
             }
           ]
         }
