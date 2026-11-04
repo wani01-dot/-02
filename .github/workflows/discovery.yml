@@ -22,6 +22,11 @@ jobs:
         with:
           python-version: "3.13"
 
+      - name: TicketDive公開ページ取得
+        run: |
+          python -m pip install -r requirements.txt
+          python ticketdive_scraper.py
+
       - name: 発見データ作成
         run: |
           python discovery_build.py
@@ -35,7 +40,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add discovered_events.json
+          git add discovered_events.json ticketdive_events.json
 
           if git diff --cached --quiet; then
             echo "変更なし"
