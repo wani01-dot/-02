@@ -2980,8 +2980,29 @@
           );
 
 
-      streamEvents =
-        events;
+      // FANY配信を保持したまま、外部音声配信を追加する。
+      // 外部JSONが取得できなくてもFANY配信は消さない。
+      let extraStreams = [];
+      try {
+        const extraResponse = await fetch(
+          `external_stream_events.json?t=${Date.now()}`,
+          { cache: "no-store" }
+        );
+        if (extraResponse.ok) {
+          const extraData = await extraResponse.json();
+          extraStreams = Array.isArray(extraData) ? extraData :
+            (Array.isArray(extraData.events) ? extraData.events : []);
+        }
+      } catch (extraError) {
+        console.warn("外部配信の取得失敗:", extraError);
+      }
+      const seenStreamIds = new Set();
+      streamEvents = [...events, ...extraStreams].filter((item) => {
+        const key = item.id || `${item.date}|${item.startTime}|${item.title}`;
+        if (seenStreamIds.has(key)) return false;
+        seenStreamIds.add(key);
+        return true;
+      });
 
 
       if (status) {
