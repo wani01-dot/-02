@@ -9,6 +9,7 @@ THEATER_EVENTS_FILE = "theater_events.json"
 TICKET_EVENTS_FILE = "events.json"
 EXTRA_DISCOVERY_FILE = "extra_discovery_events.json"
 MEMBER_DISCOVERY_FILE = "member_discovery_events.json"
+TICKETDIVE_DISCOVERY_FILE = "ticketdive_events.json"
 OUTPUT_FILE = "discovered_events.json"
 
 
@@ -1747,6 +1748,13 @@ def main():
     for event in member_search_events:
         discovered.append(convert_discovered_event(event, "fany-member"))
     print("個人名FANY検索:", len(member_search_events), "件")
+
+    # TicketDive公式の出演者ページ・検索結果から見つけた公演。
+    ticketdive_data = load_json(TICKETDIVE_DISCOVERY_FILE, {"events": []})
+    ticketdive_events = extract_events(ticketdive_data)
+    for event in ticketdive_events:
+        discovered.append(convert_discovered_event(event, "ticketdive-official"))
+    print("TicketDive出演公演:", len(ticketdive_events), "件")
 
     # チケットサイトの出演者欄から個人出演公演を発見
     member_events = include_individual_ticket_events(ticket_events)
