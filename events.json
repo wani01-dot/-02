@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-11-05T08:27:38.987261+00:00",
+  "syncedAt": "2026-11-05T16:37:43.483165+00:00",
   "performers": [
     {
       "id": "maison",
@@ -60,27 +60,8 @@
       "venue": "万博公園もみじ川芝生広場（大阪府）",
       "source": "eplus",
       "sourceUrl": "https://eplus.jp/sf/detail/4565990001-P0030001P021001?P1=0175",
-      "ticketStatus": "一部予定数終了",
+      "ticketStatus": "販売終了",
       "ticketOptions": [
-        {
-          "name": "先着",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-08-01T10:00:00+09:00",
-          "saleEndAt": "2026-11-05T18:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-08-01T10:00:00+09:00",
-              "endAt": "2026-11-05T18:00:00+09:00",
-              "saleKey": "eplus|maison|4565990001-P0030001P021001|先着|先着|first_come|2026-08-01T10:00:00+09:00"
-            }
-          ]
-        },
         {
           "name": "先着",
           "type": "先着",
@@ -99,6 +80,25 @@
               "saleKey": "eplus|maison|4565990001-P0030001P021001|先着|先着|first_come|2026-07-18T11:00:00+09:00"
             }
           ]
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-08-01T10:00:00+09:00",
+          "saleEndAt": "2026-11-05T18:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-08-01T10:00:00+09:00",
+              "endAt": "2026-11-05T18:00:00+09:00",
+              "saleKey": "eplus|maison|4565990001-P0030001P021001|先着|先着|first_come|2026-08-01T10:00:00+09:00"
+            }
+          ]
         }
       ],
       "saleStartAt": "2026-07-18T11:00:00+09:00",
@@ -108,14 +108,14 @@
         {
           "category": "first_come",
           "label": "",
-          "startAt": "2026-08-01T10:00:00+09:00",
-          "endAt": "2026-11-05T18:00:00+09:00"
+          "startAt": "2026-07-18T11:00:00+09:00",
+          "endAt": "2026-07-31T11:00:00+09:00"
         },
         {
           "category": "first_come",
           "label": "",
-          "startAt": "2026-07-18T11:00:00+09:00",
-          "endAt": "2026-07-31T11:00:00+09:00"
+          "startAt": "2026-08-01T10:00:00+09:00",
+          "endAt": "2026-11-05T18:00:00+09:00"
         }
       ],
       "performersText": [
@@ -158,27 +158,8 @@
       "venue": "万博公園もみじ川芝生広場（大阪府）",
       "source": "eplus",
       "sourceUrl": "https://eplus.jp/sf/detail/4565990001-P0030001P021003?P1=0175",
-      "ticketStatus": "一部予定数終了",
+      "ticketStatus": "販売終了",
       "ticketOptions": [
-        {
-          "name": "先着",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-08-01T10:00:00+09:00",
-          "saleEndAt": "2026-11-05T18:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-08-01T10:00:00+09:00",
-              "endAt": "2026-11-05T18:00:00+09:00",
-              "saleKey": "eplus|maison|4565990001-P0030001P021003|先着|先着|first_come|2026-08-01T10:00:00+09:00"
-            }
-          ]
-        },
         {
           "name": "先着",
           "type": "先着",
@@ -197,6 +178,25 @@
               "saleKey": "eplus|maison|4565990001-P0030001P021003|先着|先着|first_come|2026-07-18T11:00:00+09:00"
             }
           ]
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-08-01T10:00:00+09:00",
+          "saleEndAt": "2026-11-05T18:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-08-01T10:00:00+09:00",
+              "endAt": "2026-11-05T18:00:00+09:00",
+              "saleKey": "eplus|maison|4565990001-P0030001P021003|先着|先着|first_come|2026-08-01T10:00:00+09:00"
+            }
+          ]
         }
       ],
       "saleStartAt": "2026-07-18T11:00:00+09:00",
@@ -206,14 +206,14 @@
         {
           "category": "first_come",
           "label": "",
-          "startAt": "2026-08-01T10:00:00+09:00",
-          "endAt": "2026-11-05T18:00:00+09:00"
+          "startAt": "2026-07-18T11:00:00+09:00",
+          "endAt": "2026-07-31T11:00:00+09:00"
         },
         {
           "category": "first_come",
           "label": "",
-          "startAt": "2026-07-18T11:00:00+09:00",
-          "endAt": "2026-07-31T11:00:00+09:00"
+          "startAt": "2026-08-01T10:00:00+09:00",
+          "endAt": "2026-11-05T18:00:00+09:00"
         }
       ],
       "performersText": [
@@ -630,7 +630,7 @@
         {
           "name": "ねじれネジ / パスタとパスタ / 喜喜かいばしら / 9番街レトロ なかむらしゅん / D兄さん / パッチワークパンダ",
           "type": "先着",
-          "status": "販売中",
+          "status": "販売終了",
           "price": "",
           "saleStartAt": "2026-10-15T19:00:00+09:00",
           "saleEndAt": "2026-10-21T23:59:00+09:00",
@@ -647,7 +647,7 @@
           ]
         },
         {
-          "name": "動物男児 / ツェ大野 / やゆよ / しらせ / すぎる / パスタとパスタ まなべ / ヤング / ねじれネジ",
+          "name": "ヤーレンズ / たまゆら学園 / らくちんペクチン / 偽ビートルズ",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -661,7 +661,7 @@
               "label": "",
               "startAt": "2026-10-15T19:00:00+09:00",
               "endAt": "2026-10-21T23:59:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|動物男児 / ツェ大野 / やゆよ / しらせ / すぎる / パスタとパスタ まなべ / ヤング / ねじれネジ|先着|advance|2026-10-15T19:00:00+09:00"
+              "saleKey": "livepocket|maison|z2nvo|ヤーレンズ / たまゆら学園 / らくちんペクチン / 偽ビートルズ|先着|advance|2026-10-15T19:00:00+09:00"
             }
           ]
         }
