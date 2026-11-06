@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-11-06T02:26:06.176062+00:00",
+  "syncedAt": "2026-11-06T09:34:16.715295+00:00",
   "performers": [
     {
       "id": "maison",
@@ -256,27 +256,8 @@
       "venue": "万博公園もみじ川芝生広場（大阪府）",
       "source": "eplus",
       "sourceUrl": "https://eplus.jp/sf/detail/4565990001-P0030001P021002?P1=0175",
-      "ticketStatus": "一部予定数終了",
+      "ticketStatus": "販売終了",
       "ticketOptions": [
-        {
-          "name": "先着",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-08-01T10:00:00+09:00",
-          "saleEndAt": "2026-11-06T18:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-08-01T10:00:00+09:00",
-              "endAt": "2026-11-06T18:00:00+09:00",
-              "saleKey": "eplus|maison|4565990001-P0030001P021002|先着|先着|first_come|2026-08-01T10:00:00+09:00"
-            }
-          ]
-        },
         {
           "name": "先着",
           "type": "先着",
@@ -295,6 +276,25 @@
               "saleKey": "eplus|maison|4565990001-P0030001P021002|先着|先着|first_come|2026-07-18T11:00:00+09:00"
             }
           ]
+        },
+        {
+          "name": "先着",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-08-01T10:00:00+09:00",
+          "saleEndAt": "2026-11-06T18:00:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-08-01T10:00:00+09:00",
+              "endAt": "2026-11-06T18:00:00+09:00",
+              "saleKey": "eplus|maison|4565990001-P0030001P021002|先着|先着|first_come|2026-08-01T10:00:00+09:00"
+            }
+          ]
         }
       ],
       "saleStartAt": "2026-07-18T11:00:00+09:00",
@@ -304,14 +304,14 @@
         {
           "category": "first_come",
           "label": "",
-          "startAt": "2026-08-01T10:00:00+09:00",
-          "endAt": "2026-11-06T18:00:00+09:00"
+          "startAt": "2026-07-18T11:00:00+09:00",
+          "endAt": "2026-07-31T11:00:00+09:00"
         },
         {
           "category": "first_come",
           "label": "",
-          "startAt": "2026-07-18T11:00:00+09:00",
-          "endAt": "2026-07-31T11:00:00+09:00"
+          "startAt": "2026-08-01T10:00:00+09:00",
+          "endAt": "2026-11-06T18:00:00+09:00"
         }
       ],
       "performersText": [
@@ -354,12 +354,12 @@
       "venue": "有楽町朝日ホール（東京都）",
       "source": "eplus",
       "sourceUrl": "https://eplus.jp/sf/detail/4604090001-P0030001P021001?P1=0175",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "販売終了",
       "ticketOptions": [
         {
           "name": "先着",
           "type": "先着",
-          "status": "予定数終了",
+          "status": "販売終了",
           "price": "",
           "saleStartAt": "2026-09-19T10:00:00+09:00",
           "saleEndAt": "2026-11-06T18:00:00+09:00",
@@ -409,7 +409,7 @@
       "venue": "新宿バティオス(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/532846",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -630,7 +630,7 @@
         {
           "name": "喜喜かいばしら / パスタとパスタ / パンたべる / ツェ大野 / やゆよ / ヤング / ねじれネジ",
           "type": "先着",
-          "status": "販売終了",
+          "status": "販売前",
           "price": "",
           "saleStartAt": "2026-10-15T19:00:00+09:00",
           "saleEndAt": "2026-10-21T23:59:00+09:00",
@@ -647,7 +647,7 @@
           ]
         },
         {
-          "name": "ヤーレンズ / たまゆら学園 / らくちんペクチン / 偽ビートルズ",
+          "name": "動物男児 / ツェ大野 / やゆよ / しらせ / すぎる / パスタとパスタ まなべ / ドラマ☆麺",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -661,7 +661,7 @@
               "label": "",
               "startAt": "2026-10-15T19:00:00+09:00",
               "endAt": "2026-10-21T23:59:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|ヤーレンズ / たまゆら学園 / らくちんペクチン / 偽ビートルズ|先着|advance|2026-10-15T19:00:00+09:00"
+              "saleKey": "livepocket|maison|z2nvo|動物男児 / ツェ大野 / やゆよ / しらせ / すぎる / パスタとパスタ まなべ / ドラマ☆麺|先着|advance|2026-10-15T19:00:00+09:00"
             }
           ]
         }
