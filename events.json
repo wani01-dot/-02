@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-11-07T13:59:40.698161+00:00",
+  "syncedAt": "2026-11-07T18:28:13.873369+00:00",
   "performers": [
     {
       "id": "maison",
@@ -51,202 +51,6 @@
     }
   ],
   "events": [
-    {
-      "performerId": "maison",
-      "date": "2026-11-07",
-      "openTime": "09:30",
-      "startTime": "11:00",
-      "title": "たくろう万博",
-      "venue": "万博公園もみじ川芝生広場（大阪府）",
-      "source": "eplus",
-      "sourceUrl": "https://eplus.jp/sf/detail/4565990001-P0030001P021001?P1=0175",
-      "ticketStatus": "販売終了",
-      "ticketOptions": [
-        {
-          "name": "先着",
-          "type": "先着",
-          "status": "販売終了",
-          "price": "",
-          "saleStartAt": "2026-07-18T11:00:00+09:00",
-          "saleEndAt": "2026-07-31T11:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-07-18T11:00:00+09:00",
-              "endAt": "2026-07-31T11:00:00+09:00",
-              "saleKey": "eplus|maison|4565990001-P0030001P021001|先着|先着|first_come|2026-07-18T11:00:00+09:00"
-            }
-          ]
-        },
-        {
-          "name": "先着",
-          "type": "先着",
-          "status": "販売終了",
-          "price": "",
-          "saleStartAt": "2026-08-01T10:00:00+09:00",
-          "saleEndAt": "2026-11-05T18:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-08-01T10:00:00+09:00",
-              "endAt": "2026-11-05T18:00:00+09:00",
-              "saleKey": "eplus|maison|4565990001-P0030001P021001|先着|先着|first_come|2026-08-01T10:00:00+09:00"
-            }
-          ]
-        }
-      ],
-      "saleStartAt": "2026-07-18T11:00:00+09:00",
-      "saleEndAt": "2026-07-31T11:00:00+09:00",
-      "saleCategory": "first_come",
-      "salePeriods": [
-        {
-          "category": "first_come",
-          "label": "",
-          "startAt": "2026-07-18T11:00:00+09:00",
-          "endAt": "2026-07-31T11:00:00+09:00"
-        },
-        {
-          "category": "first_come",
-          "label": "",
-          "startAt": "2026-08-01T10:00:00+09:00",
-          "endAt": "2026-11-05T18:00:00+09:00"
-        }
-      ],
-      "performersText": [
-        "たくろう",
-        "11",
-        "7(土)",
-        "■漫才万博",
-        "ミルクボーイ",
-        "見取り図",
-        "ロングコートダディ",
-        "ニッポンの社長",
-        "滝音",
-        "紅しょうが",
-        "ドンデコルテ",
-        "豪快キャプテン",
-        "カベポスター",
-        "ダブルヒガシ",
-        "ドーナツ･ピーナツ",
-        "バッテリィズ",
-        "天才ピアニスト",
-        "フースーヤ",
-        "めぞん",
-        "ヨネダ2000",
-        "■リバイバル万博",
-        "レイザーラモンRG",
-        "兼光タカシ"
-      ],
-      "firstSeenAt": "2026-10-14T23:46:29.229082+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison"
-      ]
-    },
-    {
-      "performerId": "maison",
-      "date": "2026-11-07",
-      "openTime": "",
-      "startTime": "11:01",
-      "title": "たくろう万博",
-      "venue": "万博公園もみじ川芝生広場（大阪府）",
-      "source": "eplus",
-      "sourceUrl": "https://eplus.jp/sf/detail/4565990001-P0030001P021003?P1=0175",
-      "ticketStatus": "販売終了",
-      "ticketOptions": [
-        {
-          "name": "先着",
-          "type": "先着",
-          "status": "販売終了",
-          "price": "",
-          "saleStartAt": "2026-07-18T11:00:00+09:00",
-          "saleEndAt": "2026-07-31T11:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-07-18T11:00:00+09:00",
-              "endAt": "2026-07-31T11:00:00+09:00",
-              "saleKey": "eplus|maison|4565990001-P0030001P021003|先着|先着|first_come|2026-07-18T11:00:00+09:00"
-            }
-          ]
-        },
-        {
-          "name": "先着",
-          "type": "先着",
-          "status": "販売終了",
-          "price": "",
-          "saleStartAt": "2026-08-01T10:00:00+09:00",
-          "saleEndAt": "2026-11-05T18:00:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-08-01T10:00:00+09:00",
-              "endAt": "2026-11-05T18:00:00+09:00",
-              "saleKey": "eplus|maison|4565990001-P0030001P021003|先着|先着|first_come|2026-08-01T10:00:00+09:00"
-            }
-          ]
-        }
-      ],
-      "saleStartAt": "2026-07-18T11:00:00+09:00",
-      "saleEndAt": "2026-07-31T11:00:00+09:00",
-      "saleCategory": "first_come",
-      "salePeriods": [
-        {
-          "category": "first_come",
-          "label": "",
-          "startAt": "2026-07-18T11:00:00+09:00",
-          "endAt": "2026-07-31T11:00:00+09:00"
-        },
-        {
-          "category": "first_come",
-          "label": "",
-          "startAt": "2026-08-01T10:00:00+09:00",
-          "endAt": "2026-11-05T18:00:00+09:00"
-        }
-      ],
-      "performersText": [
-        "たくろう",
-        "11",
-        "7(土)",
-        "■漫才万博",
-        "ミルクボーイ",
-        "見取り図",
-        "ロングコートダディ",
-        "ニッポンの社長",
-        "滝音",
-        "紅しょうが",
-        "ドンデコルテ",
-        "豪快キャプテン",
-        "カベポスター",
-        "ダブルヒガシ",
-        "ドーナツ･ピーナツ",
-        "バッテリィズ",
-        "天才ピアニスト",
-        "フースーヤ",
-        "めぞん",
-        "ヨネダ2000",
-        "■リバイバル万博",
-        "レイザーラモンRG",
-        "兼光タカシ"
-      ],
-      "firstSeenAt": "2026-10-14T23:46:29.229082+00:00",
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison"
-      ]
-    },
     {
       "performerId": "maison",
       "date": "2026-11-08",
@@ -409,7 +213,7 @@
       "venue": "新宿バティオス(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/532846",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "予定数終了",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -492,7 +296,7 @@
       "venue": "ハイジアV-1(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/533211",
-      "ticketStatus": "予定数終了",
+      "ticketStatus": "残りわずか",
       "ticketOptions": [],
       "saleStartAt": "",
       "saleEndAt": "",
@@ -612,7 +416,7 @@
         {
           "name": "同じ販売元のイベント",
           "type": "先着",
-          "status": "販売終了",
+          "status": "販売中",
           "price": "",
           "saleStartAt": "2026-10-15T19:00:00+09:00",
           "saleEndAt": "2026-10-21T23:59:00+09:00",
@@ -625,6 +429,25 @@
               "startAt": "2026-10-15T19:00:00+09:00",
               "endAt": "2026-10-21T23:59:00+09:00",
               "saleKey": "livepocket|maison|z2nvo|同じ販売元のイベント|先着|advance|2026-10-15T19:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "喜喜かいばしら / パスタとパスタ / パンたべる / ツェ大野 / ドラマ☆麺 / 太宰 てつ",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-10-15T19:00:00+09:00",
+          "saleEndAt": "2026-10-21T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-10-15T19:00:00+09:00",
+              "endAt": "2026-10-21T23:59:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|喜喜かいばしら / パスタとパスタ / パンたべる / ツェ大野 / ドラマ☆麺 / 太宰 てつ|先着|advance|2026-10-15T19:00:00+09:00"
             }
           ]
         },
@@ -644,25 +467,6 @@
               "startAt": "2026-10-15T19:00:00+09:00",
               "endAt": "2026-10-21T23:59:00+09:00",
               "saleKey": "livepocket|maison|z2nvo|ヤーレンズ / たまゆら学園 / らくちんペクチン / 偽ビートルズ|先着|advance|2026-10-15T19:00:00+09:00"
-            }
-          ]
-        },
-        {
-          "name": "喜喜かいばしら / パスタとパスタ / パンたべる / ツェ大野 / ドラマ☆麺 / 太宰 てつ",
-          "type": "先着",
-          "status": "販売中",
-          "price": "",
-          "saleStartAt": "2026-10-15T19:00:00+09:00",
-          "saleEndAt": "2026-10-21T23:59:00+09:00",
-          "saleCategory": "advance",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "advance",
-              "label": "",
-              "startAt": "2026-10-15T19:00:00+09:00",
-              "endAt": "2026-10-21T23:59:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|喜喜かいばしら / パスタとパスタ / パンたべる / ツェ大野 / ドラマ☆麺 / 太宰 てつ|先着|advance|2026-10-15T19:00:00+09:00"
             }
           ]
         }
