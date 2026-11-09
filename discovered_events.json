@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-11-09T15:55:14.479030+00:00",
-  "total": 141,
+  "syncedAt": "2026-11-09T19:10:42.300971+00:00",
+  "total": 140,
   "ticketListedCount": 0,
-  "ticketUnlistedCount": 141,
+  "ticketUnlistedCount": 140,
   "ticketOptionCount": 0,
   "salePeriodCount": 0,
   "events": [
@@ -141,80 +141,6 @@
       ],
       "discoveryUrls": [
         "https://ticketdive.com/event/WARASPO1107"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "maison",
-      "date": "2026-11-09",
-      "openTime": "17:00",
-      "startTime": "17:15",
-      "title": "渋谷Kiwami極LIVEプラス＋",
-      "venue": "渋谷よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "shibuya",
-      "theaterName": "渋谷",
-      "performersText": [
-        "[ネタ＆コーナーライブ]ダンビラムーチョ／めぞん／やさしいズ／からし蓮根／ケビンス／九条ジョー／赤嶺総理／ミカボ／ド桜／太鵬 [ コーナー出演者]やさしいズ／ダンビラムーチョ／ケビンス／ミカボ／めぞん"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "maison"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
-      ],
-      "ticketMatches": [],
-      "ticketListed": false,
-      "ticketOptions": [],
-      "salePeriods": [],
-      "status": "ticket_unlisted",
-      "ticketStatus": "チケットサイト公開待ち",
-      "source": "discovery",
-      "sourceUrl": "",
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "saleLabel": ""
-    },
-    {
-      "performerId": "pyuto",
-      "date": "2026-11-09",
-      "openTime": "20:45",
-      "startTime": "21:00",
-      "title": "やさしいズタイpresents 「パドック大喜利 ～目指せ喜利馬記念～」",
-      "venue": "渋谷よしもと漫才劇場",
-      "discoverySource": "theater",
-      "discoveryUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "shibuya",
-      "theaterName": "渋谷",
-      "performersText": [
-        "[企画ライブ]やさしいズ／マルセイユ／今井らいぱち／キンボシ／kento fukaya／ダンビラムーチョ／滝音／ケビンス／ミカボ／9番街レトロ／ナイチンゲールダンス 中野なかるてぃん／ピュート"
-      ],
-      "newUntil": "",
-      "trackedPerformers": [
-        "pyuto"
-      ],
-      "discoverySources": [
-        "theater"
-      ],
-      "discoveryUrls": [
-        "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
@@ -5337,6 +5263,43 @@
       "theaterName": "六本木",
       "performersText": [
         "ロジャー沖縄／木本悠斗／そいつどいつ／軟水／他"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "nansui"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://roppongi.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-12-29",
+      "openTime": "16:45",
+      "startTime": "17:00",
+      "title": "六本木お笑いコントライブ！ ※子ども料金、高校生料金あり",
+      "venue": "よしもと六本木シアター",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "performersText": [
+        "レインボー／そいつどいつ／いぬ／カゲヤマ／アイロンヘッド／9番街レトロ／軟水／他 【コーナー出演者】 MC：木本悠斗"
       ],
       "newUntil": "",
       "trackedPerformers": [

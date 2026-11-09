@@ -1,56 +1,6 @@
 {
-  "syncedAt": "2026-11-09T08:45:38.287262+00:00",
+  "syncedAt": "2026-11-09T19:10:39.202915+00:00",
   "events": [
-    {
-      "performerId": "maison",
-      "date": "2026-11-09",
-      "openTime": "17:00",
-      "startTime": "17:15",
-      "title": "渋谷Kiwami極LIVEプラス＋",
-      "venue": "渋谷よしもと漫才劇場",
-      "source": "theater",
-      "sourceUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "shibuya",
-      "theaterName": "渋谷",
-      "ticketStatus": "",
-      "ticketOptions": [],
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "salePeriods": [],
-      "performersText": [
-        "[ネタ＆コーナーライブ]ダンビラムーチョ／めぞん／やさしいズ／からし蓮根／ケビンス／九条ジョー／赤嶺総理／ミカボ／ド桜／太鵬 [ コーナー出演者]やさしいズ／ダンビラムーチョ／ケビンス／ミカボ／めぞん"
-      ],
-      "publishedVia": "theater",
-      "hasStreaming": false,
-      "streamingPrice": "",
-      "theaterSourceKey": "theater|shibuya|maison|2026-11-09|17:15|渋谷kiwami極liveプラス＋"
-    },
-    {
-      "performerId": "pyuto",
-      "date": "2026-11-09",
-      "openTime": "20:45",
-      "startTime": "21:00",
-      "title": "やさしいズタイpresents 「パドック大喜利 ～目指せ喜利馬記念～」",
-      "venue": "渋谷よしもと漫才劇場",
-      "source": "theater",
-      "sourceUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
-      "theaterId": "shibuya",
-      "theaterName": "渋谷",
-      "ticketStatus": "",
-      "ticketOptions": [],
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "salePeriods": [],
-      "performersText": [
-        "[企画ライブ]やさしいズ／マルセイユ／今井らいぱち／キンボシ／kento fukaya／ダンビラムーチョ／滝音／ケビンス／ミカボ／9番街レトロ／ナイチンゲールダンス 中野なかるてぃん／ピュート"
-      ],
-      "publishedVia": "theater",
-      "hasStreaming": false,
-      "streamingPrice": "",
-      "theaterSourceKey": "theater|shibuya|pyuto|2026-11-09|21:00|やさしいズタイpresentsパドック大喜利目指せ喜利馬記念"
-    },
     {
       "performerId": "pyuto",
       "date": "2026-11-10",
@@ -4116,6 +4066,31 @@
       "hasStreaming": false,
       "streamingPrice": "",
       "theaterSourceKey": "theater|roppongi|nansui|2026-12-29|15:00|六本木スカッとシアター"
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-12-29",
+      "openTime": "16:45",
+      "startTime": "17:00",
+      "title": "六本木お笑いコントライブ！ ※子ども料金、高校生料金あり",
+      "venue": "よしもと六本木シアター",
+      "source": "theater",
+      "sourceUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "レインボー／そいつどいつ／いぬ／カゲヤマ／アイロンヘッド／9番街レトロ／軟水／他 【コーナー出演者】 MC：木本悠斗"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|roppongi|nansui|2026-12-29|17:00|六本木お笑いコントライブ※子ども料金、高校生料金あり"
     }
   ]
 }
