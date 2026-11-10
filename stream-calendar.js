@@ -2996,8 +2996,17 @@
       } catch (extraError) {
         console.warn("外部配信の取得失敗:", extraError);
       }
+      let manualStreams = [];
+      try {
+        const res = await fetch(`manual_events.json?t=${Date.now()}`, {cache: "no-store"});
+        if (res.ok) {
+          const d = await res.json();
+          manualStreams = (Array.isArray(d) ? d : (d.events || []))
+            .filter(e => e.category === "stream");
+        }
+      } catch (error) { console.warn("手動配信取得失敗:", error); }
       const seenStreamIds = new Set();
-      streamEvents = [...events, ...extraStreams].filter((item) => {
+      streamEvents = [...events, ...extraStreams, ...manualStreams].filter((item) => {
         const key = item.id || `${item.date}|${item.startTime}|${item.title}`;
         if (seenStreamIds.has(key)) return false;
         seenStreamIds.add(key);
@@ -3008,7 +3017,7 @@
       if (status) {
 
         status.textContent =
-          `▶ FANY配信 ${events.length}件`;
+          `▶ 配信 ${streamEvents.length}件（FANY ${events.length}件）`;
 
         status.style.background =
           "#e8f5ec";

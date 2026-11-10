@@ -446,6 +446,7 @@
       eventsResult,
       discoveredResult,
       theaterResult,
+      manualResult,
     ] = await Promise.allSettled([
 
       fetch(
@@ -468,6 +469,7 @@
           cache: "no-store",
         }
       ),
+      fetch(`manual_events.json?t=${Date.now()}`, {cache: "no-store"}),
 
     ]);
 
@@ -664,10 +666,18 @@
     }
     console.log(`劇場公式の直接取得: ${theaterData.length}件`);
 
+    let manualData = [];
+    if (manualResult.status === "fulfilled" && manualResult.value.ok) {
+      try {
+        const d = await manualResult.value.json();
+        manualData = Array.isArray(d) ? d : (Array.isArray(d.events) ? d.events : []);
+      } catch (e) { console.warn("手動予定を読み込めません:", e); }
+    }
     rawEvents = [
       ...eventsData,
       ...discoveredData,
       ...theaterData,
+      ...manualData.filter(e => e.category !== "stream"),
     ];
 
 

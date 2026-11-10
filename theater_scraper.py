@@ -1458,6 +1458,19 @@ def main():
         all_events
     )
 
+    # 公開済みの過去公演と、今回見つからなかった公演を保持する。
+    # 公式情報の一時的な掲載停止や取得漏れで履歴を失わない。
+    previous = load_json(OUTPUT_FILE, {"events": []})
+    old_events = previous if isinstance(previous, list) else previous.get("events", [])
+    def history_key(e):
+        return (str(e.get("theaterSourceKey") or ""), str(e.get("performerId") or ""),
+                str(e.get("date") or ""), str(e.get("startTime") or ""),
+                str(e.get("title") or ""))
+    merged = {history_key(e): e for e in old_events if isinstance(e, dict)}
+    merged.update({history_key(e): e for e in all_events})
+    all_events = list(merged.values())
+    print(f"劇場公演履歴保持: 既存{len(old_events)}件 / 統合後{len(all_events)}件")
+
     # =====================================================
     # 並び替え
     # =====================================================
@@ -1485,61 +1498,6 @@ def main():
             ),
         )
     )
-
-    # =====================================================
-    # 取得漏れ保護: 既存の未来公演を最大14日間保持する
-    # =====================================================
-    # 劇場サイトで翌月タブが一時的に消えたり、読み込みが不完全でも
-    # 公演を即削除しない。再取得された公演は通常レコードに戻る。
-    old_data = load_json(OUTPUT_FILE, {"events": []})
-    old_events = old_data.get("events", []) if isinstance(old_data, dict) else []
-    now = datetime.now(timezone.utc)
-    cutoff = today_jst().isoformat()
-    existing_keys = set()
-
-    def identity(e):
-        return (
-            str(e.get("performerId", "")),
-            str(e.get("date", "")),
-            str(e.get("startTime", "")),
-            normalize_title(e.get("title", "")),
-            str(e.get("theaterId", "")),
-        )
-
-    for e in all_events:
-        existing_keys.add(identity(e))
-        e.pop("missingSince", None)
-
-    preserved = 0
-    for e in old_events:
-        if not isinstance(e, dict) or str(e.get("date", "")) < cutoff:
-            continue
-        key = identity(e)
-        if key in existing_keys:
-            continue
-        missing_since = e.get("missingSince") or now.isoformat()
-        try:
-            age = now - datetime.fromisoformat(missing_since.replace("Z", "+00:00"))
-        except (ValueError, TypeError):
-            missing_since = now.isoformat()
-            age = timedelta(0)
-        if age > timedelta(days=14):
-            continue
-        kept = dict(e)
-        kept["missingSince"] = missing_since
-        all_events.append(kept)
-        existing_keys.add(key)
-        preserved += 1
-    if preserved:
-        print(f"取得漏れ保護: 既存の未来公演 {preserved}件を一時保持", flush=True)
-    all_events.sort(key=lambda e: (e.get("date", ""), e.get("startTime", ""), e.get("theaterId", ""), e.get("performerId", "")))
-
-    # 月別の取得件数をログに出し、翌月の不足を発見しやすくする。
-    by_month = {}
-    for e in all_events:
-        month = str(e.get("date", ""))[:7]
-        by_month[month] = by_month.get(month, 0) + 1
-    print("劇場公演・月別:", json.dumps(by_month, ensure_ascii=False), flush=True)
 
     # =====================================================
     # 保存

@@ -1738,20 +1738,16 @@ def main():
 
     for event in events_by_url.values():
 
-        if (
-            event.get(
-                "date",
-                ""
-            )
-            <
-            today_text
-        ):
-
-            continue
-
-
+        # 過去の配信も履歴として残す
         events.append(event)
 
+
+    # FANY側の掲載終了後も過去の配信を保持する。
+    known_urls = {e.get("sourceUrl") for e in events if e.get("sourceUrl")}
+    for old in previous_events.values():
+        if old.get("sourceUrl") not in known_urls:
+            events.append(old)
+    print(f"配信履歴保持: {len(previous_events)}件 / 統合後{len(events)}件")
 
     events = deduplicate_events(
         events
