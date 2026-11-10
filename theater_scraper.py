@@ -1487,6 +1487,61 @@ def main():
     )
 
     # =====================================================
+    # 取得漏れ保護: 既存の未来公演を最大14日間保持する
+    # =====================================================
+    # 劇場サイトで翌月タブが一時的に消えたり、読み込みが不完全でも
+    # 公演を即削除しない。再取得された公演は通常レコードに戻る。
+    old_data = load_json(OUTPUT_FILE, {"events": []})
+    old_events = old_data.get("events", []) if isinstance(old_data, dict) else []
+    now = datetime.now(timezone.utc)
+    cutoff = today_jst().isoformat()
+    existing_keys = set()
+
+    def identity(e):
+        return (
+            str(e.get("performerId", "")),
+            str(e.get("date", "")),
+            str(e.get("startTime", "")),
+            normalize_title(e.get("title", "")),
+            str(e.get("theaterId", "")),
+        )
+
+    for e in all_events:
+        existing_keys.add(identity(e))
+        e.pop("missingSince", None)
+
+    preserved = 0
+    for e in old_events:
+        if not isinstance(e, dict) or str(e.get("date", "")) < cutoff:
+            continue
+        key = identity(e)
+        if key in existing_keys:
+            continue
+        missing_since = e.get("missingSince") or now.isoformat()
+        try:
+            age = now - datetime.fromisoformat(missing_since.replace("Z", "+00:00"))
+        except (ValueError, TypeError):
+            missing_since = now.isoformat()
+            age = timedelta(0)
+        if age > timedelta(days=14):
+            continue
+        kept = dict(e)
+        kept["missingSince"] = missing_since
+        all_events.append(kept)
+        existing_keys.add(key)
+        preserved += 1
+    if preserved:
+        print(f"取得漏れ保護: 既存の未来公演 {preserved}件を一時保持", flush=True)
+    all_events.sort(key=lambda e: (e.get("date", ""), e.get("startTime", ""), e.get("theaterId", ""), e.get("performerId", "")))
+
+    # 月別の取得件数をログに出し、翌月の不足を発見しやすくする。
+    by_month = {}
+    for e in all_events:
+        month = str(e.get("date", ""))[:7]
+        by_month[month] = by_month.get(month, 0) + 1
+    print("劇場公演・月別:", json.dumps(by_month, ensure_ascii=False), flush=True)
+
+    # =====================================================
     # 保存
     # =====================================================
 

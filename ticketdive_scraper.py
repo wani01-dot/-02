@@ -7,7 +7,7 @@ import re
 import sys
 from datetime import date, datetime, timedelta
 from pathlib import Path
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urljoin, urlparse, quote
 
 import requests
 from bs4 import BeautifulSoup
@@ -17,7 +17,7 @@ SOURCES = [
     'https://ticketdive.com/artist/JMVCHy5NpmIxdL7Erlbv',
     'https://ticketdive.com/artist/nhAsXH2rnZI0MMDHvuza',
     'https://ticketdive.com/artist/xiqDN7AtBDkbTAIKrVFS',
-    'https://ticketdive.com/search?q=%E3%83%94%E3%83%A5%E3%83%BC%E3%83%88',
+    *['https://ticketdive.com/search?q=' + quote(name) for name in ('めぞん', 'ピュート', '軟水', '吉野おいなり君', '竹内智也', 'つるまる')],
 ]
 OUTPUT = Path('ticketdive_events.json')
 IDS = {'めぞん': 'maison', 'ピュート': 'pyuto', '軟水': 'nansui'}
@@ -43,6 +43,24 @@ def event_links(soup):
         parsed = urlparse(url)
         if parsed.hostname == 'ticketdive.com' and re.fullmatch(r'/event/[^/]+', parsed.path):
             found.add(url)
+    return found
+
+
+def pagination_links(soup, current_url):
+    """Follow only actual TicketDive pagination links, never guess URLs."""
+    found = set()
+    current = urlparse(current_url)
+    for a in soup.select('a[href]'):
+        label = clean(a.get_text(' ', strip=True)).lower()
+        rel = [str(v).lower() for v in a.get('rel', [])]
+        href = urljoin(current_url, a['href']).split('#')[0]
+        parsed = urlparse(href)
+        if parsed.hostname != 'ticketdive.com' or parsed.path != current.path:
+            continue
+        if href == current_url:
+            continue
+        if 'next' in rel or label in ('次へ', '次のページ', 'next', '>', '›', '→'):
+            found.add(href)
     return found
 
 
@@ -115,10 +133,20 @@ def main():
     succeeded = 0
     for url in SOURCES:
         try:
-            soup = fetch(url)
-            new = event_links(soup)
-            print(f'SOURCE {url}: {len(new)} event links')
-            links.update(new)
+            # Pagination is followed only when the page explicitly links to it.
+            pending = [url]
+            visited = set()
+            source_links = set()
+            while pending and len(visited) < 4:
+                page_url = pending.pop(0)
+                if page_url in visited:
+                    continue
+                visited.add(page_url)
+                soup = fetch(page_url)
+                source_links.update(event_links(soup))
+                pending.extend(sorted(pagination_links(soup, page_url) - visited - set(pending)))
+            print(f'SOURCE {url}: {len(source_links)} event links ({len(visited)} pages)')
+            links.update(source_links)
             succeeded += 1
         except requests.RequestException as exc:
             print(f'WARN source fetch failed: {url}: {exc}', file=sys.stderr)
