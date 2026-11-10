@@ -1,0 +1,78 @@
+name: 手動で公演を追加
+on:
+  workflow_dispatch:
+    inputs:
+      title:
+        description: "公演名"
+        required: true
+        type: string
+      date:
+        description: "開催日 YYYY-MM-DD"
+        required: true
+        type: string
+      time:
+        description: "開演時刻 HH:MM"
+        required: true
+        type: string
+      performers:
+        description: "出演者（めぞん・ピュート・軟水の名前を含む）"
+        required: true
+        type: string
+      venue:
+        description: "会場"
+        type: string
+      url:
+        description: "公式チケットURL（省略可）"
+        type: string
+      category:
+        description: "通常ライブ / 配信"
+        required: true
+        type: choice
+        options:
+          - live
+          - stream
+concurrency:
+  group: manual-event-registration
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: 公演を追加
+        env:
+          TITLE: ${{ inputs.title }}
+          DATE: ${{ inputs.date }}
+          TIME: ${{ inputs.time }}
+          PERFORMERS: ${{ inputs.performers }}
+          VENUE: ${{ inputs.venue }}
+          URL: ${{ inputs.url }}
+          CATEGORY: ${{ inputs.category }}
+        run: |
+          python - <<'PY'
+          import os,subprocess
+          fields=['title','date','time','performers','venue','url','category']
+          cmd=['python','manual_add.py']
+          for f in fields:cmd.extend(['--'+f,os.environ[f.upper()]])
+          subprocess.run(cmd,check=True)
+          PY
+      - name: 保存
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          cp manual_events.json /tmp/manual_events.json
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            cp /tmp/manual_events.json manual_events.json
+            git add manual_events.json
+            if git diff --cached --quiet; then exit 0; fi
+            git commit -m "Add manual live event"
+            if git push origin HEAD:main; then exit 0; fi
+            sleep 2
+          done
+          exit 1
