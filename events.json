@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-11-10T04:17:30.900099+00:00",
+  "syncedAt": "2026-11-10T07:14:38.958007+00:00",
   "performers": [
     {
       "id": "maison",
@@ -92,6 +92,136 @@
       "newUntil": "2026-10-24T10:06:40.708516+00:00",
       "trackedPerformers": [
         "pyuto"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-13",
+      "openTime": "19:00",
+      "startTime": "19:30",
+      "title": "ヤーレンズ寄席#22",
+      "venue": "野方区民ホール (東京都)",
+      "source": "livepocket",
+      "sourceUrl": "https://livepocket.jp/e/4hf1l",
+      "ticketStatus": "一部予定数終了",
+      "ticketOptions": [
+        {
+          "name": "ヤーレンズ寄席#22",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "¥3,500",
+          "saleStartAt": "2026-11-07T12:00:00+09:00",
+          "saleEndAt": "2026-11-09T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-11-07T12:00:00+09:00",
+              "endAt": "2026-11-09T23:59:00+09:00",
+              "saleKey": "livepocket|maison|4hf1l|ヤーレンズ寄席#22|先着|advance|2026-11-07T12:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "（税込）",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-11-07T12:00:00+09:00",
+          "saleEndAt": "2026-11-09T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-11-07T12:00:00+09:00",
+              "endAt": "2026-11-09T23:59:00+09:00",
+              "saleKey": "livepocket|maison|4hf1l|（税込）|先着|advance|2026-11-07T12:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "同じ販売元のイベント",
+          "type": "先着",
+          "status": "販売終了",
+          "price": "",
+          "saleStartAt": "2026-11-07T12:00:00+09:00",
+          "saleEndAt": "2026-11-09T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-11-07T12:00:00+09:00",
+              "endAt": "2026-11-09T23:59:00+09:00",
+              "saleKey": "livepocket|maison|4hf1l|同じ販売元のイベント|先着|advance|2026-11-07T12:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "オードリー / はなわ / ハマカーン / トム・ブラウン / ヤーレンズ",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-11-07T12:00:00+09:00",
+          "saleEndAt": "2026-11-09T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-11-07T12:00:00+09:00",
+              "endAt": "2026-11-09T23:59:00+09:00",
+              "saleKey": "livepocket|maison|4hf1l|オードリー / はなわ / ハマカーン / トム・ブラウン / ヤーレンズ|先着|advance|2026-11-07T12:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "トム・ブラウン / クロコップ / ヤーレンズ / サツマカワRPG",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-11-07T12:00:00+09:00",
+          "saleEndAt": "2026-11-09T23:59:00+09:00",
+          "saleCategory": "advance",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "advance",
+              "label": "",
+              "startAt": "2026-11-07T12:00:00+09:00",
+              "endAt": "2026-11-09T23:59:00+09:00",
+              "saleKey": "livepocket|maison|4hf1l|トム・ブラウン / クロコップ / ヤーレンズ / サツマカワRPG|先着|advance|2026-11-07T12:00:00+09:00"
+            }
+          ]
+        }
+      ],
+      "saleStartAt": "2026-11-07T12:00:00+09:00",
+      "saleEndAt": "2026-11-09T23:59:00+09:00",
+      "saleCategory": "advance",
+      "salePeriods": [
+        {
+          "category": "advance",
+          "label": "",
+          "startAt": "2026-11-07T12:00:00+09:00",
+          "endAt": "2026-11-09T23:59:00+09:00"
+        }
+      ],
+      "performersText": [
+        "ヤーレンズ",
+        "キュウ",
+        "さすらいラビー",
+        "めぞん"
+      ],
+      "firstSeenAt": "2026-11-10T07:14:38.957763+00:00",
+      "newUntil": "2026-11-12T07:14:38.957772+00:00",
+      "trackedPerformers": [
+        "maison"
       ]
     },
     {
@@ -242,7 +372,7 @@
         {
           "name": "ねじれネジ / パスタとパスタ / 喜喜かいばしら / 9番街レトロ なかむらしゅん / D兄さん / パッチワークパンダ / おほしんたろう",
           "type": "先着",
-          "status": "販売終了",
+          "status": "販売中",
           "price": "",
           "saleStartAt": "2026-10-15T19:00:00+09:00",
           "saleEndAt": "2026-10-21T23:59:00+09:00",
@@ -259,7 +389,7 @@
           ]
         },
         {
-          "name": "ヤーレンズ / たまゆら学園 / らくちんペクチン / 偽ビートルズ",
+          "name": "無尽蔵",
           "type": "先着",
           "status": "販売中",
           "price": "",
@@ -273,7 +403,7 @@
               "label": "",
               "startAt": "2026-10-15T19:00:00+09:00",
               "endAt": "2026-10-21T23:59:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|ヤーレンズ / たまゆら学園 / らくちんペクチン / 偽ビートルズ|先着|advance|2026-10-15T19:00:00+09:00"
+              "saleKey": "livepocket|maison|z2nvo|無尽蔵|先着|advance|2026-10-15T19:00:00+09:00"
             }
           ]
         }
