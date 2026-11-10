@@ -31,6 +31,24 @@ jobs:
         run: |
           python discovery_build.py
 
+      - name: 月別公演数チェック
+        run: |
+          python - <<'PYCODE'
+          import json
+          from collections import Counter
+          from datetime import datetime, timedelta, timezone
+          today = datetime.now(timezone(timedelta(hours=9))).date()
+          next_month = (today.replace(day=28) + timedelta(days=4)).replace(day=1).strftime('%Y-%m')
+          for name in ('theater_events.json', 'ticketdive_events.json', 'discovered_events.json'):
+              with open(name, encoding='utf-8') as f:
+                  data = json.load(f)
+              events = data if isinstance(data, list) else data.get('events', [])
+              counts = Counter(str(e.get('date', ''))[:7] for e in events)
+              print(name, dict(sorted(counts.items())))
+              if counts.get(next_month, 0) == 0:
+                  print(f'WARNING: {name} に翌月 {next_month} の公演が0件です')
+          PYCODE
+
       - name: 変更確認
         run: |
           git status
