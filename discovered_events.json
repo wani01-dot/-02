@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-11-10T15:44:05.306603+00:00",
-  "total": 142,
+  "syncedAt": "2026-11-10T17:10:00.915744+00:00",
+  "total": 147,
   "ticketListedCount": 0,
-  "ticketUnlistedCount": 142,
+  "ticketUnlistedCount": 147,
   "ticketOptionCount": 0,
   "salePeriodCount": 0,
   "events": [
@@ -275,7 +275,7 @@
       "saleLabel": ""
     },
     {
-      "performerId": "pyuto",
+      "performerId": "nansui",
       "date": "2026-11-11",
       "openTime": "17:15",
       "startTime": "17:30",
@@ -286,10 +286,11 @@
       "theaterId": "roppongi",
       "theaterName": "六本木",
       "performersText": [
-        "しずる／ライス／ヘンダーソン／セルライトスパ／やさしいズ／田津原理音／ピュート／ナユタ／ド天国 【コーナー出演者】 MC：アイラブ地球／ヘンダーソン／セルライトスパ"
+        "しずる／ライス／ヘンダーソン／セルライトスパ／やさしいズ／田津原理音／軟水／ピュート／ナユタ／ド天国 【コーナー出演者】 MC：アイラブ地球／ヘンダーソン／セルライトスパ"
       ],
       "newUntil": "",
       "trackedPerformers": [
+        "nansui",
         "pyuto"
       ],
       "discoverySources": [
@@ -323,7 +324,7 @@
       "theaterId": "roppongi",
       "theaterName": "六本木",
       "performersText": [
-        "セルライトスパ ヒーゴー／アイラブ地球／ロングコートダディ 堂前／kento fukaya／フースーヤ",
+        "セルライトスパ ヒーゴー／しずる 池田／アイラブ地球／ロングコートダディ 堂前／kento fukaya／フースーヤ",
         "軟水新ネタライブ「俺の人生エンタメにしねぇよ！」"
       ],
       "newUntil": "",
@@ -483,7 +484,7 @@
       "theaterId": "roppongi",
       "theaterName": "六本木",
       "performersText": [
-        "しずる／ななまがり／ジェラードン／バンビーノ／やさしいズ／空気階段／ピュート／軟水／青いデルタ／ただならぬ刀"
+        "しずる／ななまがり／ジェラードン／バンビーノ／やさしいズ／空気階段／ピュート／軟水／青いデルタ／ただならぬ刀 【コーナー出演者】 MC：やさしいズ／軟水／ただならぬ刀"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -3078,7 +3079,7 @@
       "theaterId": "makuhari",
       "theaterName": "幕張",
       "performersText": [
-        "ザ・パンチ／すゑひろがりず／ネルソンズ／オズワルド／空気階段／ガンバレルーヤ／めぞん／他"
+        "チャンス大城／ザ・パンチ／すゑひろがりず／ネルソンズ／オズワルド／空気階段／ガンバレルーヤ／めぞん"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -3115,7 +3116,7 @@
       "theaterId": "makuhari",
       "theaterName": "幕張",
       "performersText": [
-        "ザ・パンチ／すゑひろがりず／ネルソンズ／オズワルド／空気階段／ガンバレルーヤ／めぞん／他"
+        "チャンス大城／ザ・パンチ／すゑひろがりず／ネルソンズ／オズワルド／空気階段／ガンバレルーヤ／めぞん"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -5319,6 +5320,118 @@
     },
     {
       "performerId": "nansui",
+      "date": "2026-12-26",
+      "openTime": "20:45",
+      "startTime": "21:00",
+      "title": "神保町お題コントバトル",
+      "venue": "神保町よしもと漫才劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "jimbocho",
+      "theaterName": "神保町",
+      "performersText": [
+        "[企画ライブ]スーパーサイズ・ミー／オフローズ／軟水／ピュート／喫茶ムーン／定点計画／ザンゾウ／セカンドロット／伝書鳩／あなたとネ"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "nansui",
+        "pyuto"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-12-27",
+      "openTime": "21:00",
+      "startTime": "21:15",
+      "title": "ぺ新ネタライブ「シンペタ」",
+      "venue": "神保町よしもと漫才劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "jimbocho",
+      "theaterName": "神保町",
+      "performersText": [
+        "[企画ライブ]ぺ／めぞん／インテイク"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-12-28",
+      "openTime": "20:45",
+      "startTime": "21:00",
+      "title": "KARIZIN～町田軍団vsタコス軍団～",
+      "venue": "渋谷よしもと漫才劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "shibuya",
+      "theaterName": "渋谷",
+      "performersText": [
+        "[企画ライブ]エバース／マリーマリー／ぶったま ガッパー／大王 渡辺／軟水／金魚番長 箕輪／ほの字 Bりょう"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "nansui"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "nansui",
       "date": "2026-12-29",
       "openTime": "14:45",
       "startTime": "15:00",
@@ -5377,6 +5490,81 @@
       ],
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-12-29",
+      "openTime": "17:00",
+      "startTime": "17:15",
+      "title": "NEW（?）generation",
+      "venue": "神保町よしもと漫才劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "jimbocho",
+      "theaterName": "神保町",
+      "performersText": [
+        "[企画ライブ]イワサキ／ボブのコーラ／伝書鳩／ド天国／とりせん／ナユタ",
+        "ピュート×イワサキツーマンライブ「五右衛門」"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "pyuto"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-12-29",
+      "openTime": "19:00",
+      "startTime": "19:15",
+      "title": "ピュート×イワサキツーマンライブ「五右衛門」",
+      "venue": "神保町よしもと漫才劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "jimbocho",
+      "theaterName": "神保町",
+      "performersText": [
+        "[企画ライブ]ピュート／イワサキ"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "pyuto"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
