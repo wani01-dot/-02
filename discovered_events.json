@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-11-10T07:24:22.977672+00:00",
-  "total": 140,
+  "syncedAt": "2026-11-10T09:21:54.755677+00:00",
+  "total": 141,
   "ticketListedCount": 0,
-  "ticketUnlistedCount": 140,
+  "ticketUnlistedCount": 141,
   "ticketOptionCount": 0,
   "salePeriodCount": 0,
   "events": [
@@ -249,7 +249,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]ゆにばーす／カベポスター／めぞん／シカゴ実業／キンボシ／ぱろぱろ／オフローズ／太鵬／他 [ コーナー出演者]ゆにばーす／オフローズ／太鵬／めぞん／他"
+        "[ネタ＆コーナーライブ]ゆにばーす／カベポスター／めぞん／シカゴ実業／マルセイユ／キンボシ／ぱろぱろ／オフローズ／太鵬／マリーマリー／鉄人小町 [ コーナー出演者]ゆにばーす／カベポスター／オフローズ／太鵬／めぞん"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -420,6 +420,43 @@
       ],
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-12",
+      "openTime": "17:00",
+      "startTime": "17:15",
+      "title": "渋谷Kiwami極LIVEプラス＋",
+      "venue": "渋谷よしもと漫才劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "shibuya",
+      "theaterName": "渋谷",
+      "performersText": [
+        "[ネタ＆コーナーライブ]ダンビラムーチョ／蛙亭／さや香／エバース／めぞん／黄昏の森／ぶったま／ペッパーGuys／バリカタ友情飯／インテイク／世界クジラ [ コーナー出演者]さや香／蛙亭／エバース／インテイク／バリカタ友情飯"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
@@ -932,7 +969,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[企画ライブ]めぞん／金魚番長／兄弟／King Boy／江頭一馬／ゾンビのアトリエ／タケゾウ／美バンブー／ネネネ／MC：ビューティフルトーキョーマンズ 鈴木バイダン"
+        "[企画ライブ]めぞん／金魚番長／兄弟／King Boy／木本悠斗／江頭一馬／ゾンビのアトリエ／タケゾウ／美バンブー／ネネネ／MC：ビューティフルトーキョーマンズ 鈴木バイダン"
       ],
       "newUntil": "",
       "trackedPerformers": [
