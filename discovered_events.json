@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-11-10T09:21:54.755677+00:00",
-  "total": 141,
+  "syncedAt": "2026-11-10T15:44:05.306603+00:00",
+  "total": 142,
   "ticketListedCount": 0,
-  "ticketUnlistedCount": 141,
+  "ticketUnlistedCount": 142,
   "ticketOptionCount": 0,
   "salePeriodCount": 0,
   "events": [
@@ -3720,6 +3720,51 @@
       ],
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-12-07",
+      "openTime": "19:00",
+      "startTime": "19:15",
+      "title": "販売情報",
+      "venue": "としま区民センター多目的ホール",
+      "discoverySource": "ticketdive-official",
+      "discoveryUrl": "https://ticketdive.com/event/P4IFM6fKr4hu2NZTRz2U",
+      "theaterId": "",
+      "theaterName": "",
+      "performersText": [
+        "タワー",
+        "ドラマ☆麺",
+        "めぞん",
+        "金の国",
+        "キュウ",
+        "フランツ",
+        "パンプキンポテトフライ",
+        "ルシファー吉岡",
+        "破壊ありがとう"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ],
+      "discoverySources": [
+        "ticketdive-official"
+      ],
+      "discoveryUrls": [
+        "https://ticketdive.com/event/P4IFM6fKr4hu2NZTRz2U"
       ],
       "ticketMatches": [],
       "ticketListed": false,
