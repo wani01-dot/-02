@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-11-11T16:18:17.820419+00:00",
-  "total": 146,
+  "syncedAt": "2026-11-11T16:40:19.011629+00:00",
+  "total": 148,
   "ticketListedCount": 0,
-  "ticketUnlistedCount": 146,
+  "ticketUnlistedCount": 148,
   "ticketOptionCount": 0,
   "salePeriodCount": 0,
   "events": [
@@ -403,7 +403,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]ダンビラムーチョ／蛙亭／さや香／エバース／めぞん／黄昏の森／ぶったま／ペッパーGuys／バリカタ友情飯／インテイク／世界クジラ [ コーナー出演者]さや香／蛙亭／エバース／インテイク／バリカタ友情飯"
+        "[ネタ＆コーナーライブ]ダンビラムーチョ／蛙亭／さや香／エバース／めぞん／黄昏の森／ぶったま／ペッパーGuys／バリカタ友情飯／インテイク／世界クジラ [ コーナー出演者]MC：さや香／蛙亭／エバース／バリカタ友情飯／インテイク"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -615,6 +615,43 @@
       "saleLabel": ""
     },
     {
+      "performerId": "pyuto",
+      "date": "2026-11-14",
+      "openTime": "10:45",
+      "startTime": "11:00",
+      "title": "渋谷マンゲキお笑いライブ",
+      "venue": "渋谷よしもと漫才劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "shibuya",
+      "theaterName": "渋谷",
+      "performersText": [
+        "[ネタ＆コーナーライブ]相席スタート／ゆにばーす／エルフ／ヨネダ2000／CITY／マルセイユ／kento fukaya／ブラゴーリ／ド桜／ピュート／大王 [ コーナー出演者]MC：ゆにばーす／kento fukaya／ピュート／大王"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "pyuto"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
       "performerId": "nansui",
       "date": "2026-11-14",
       "openTime": "11:45",
@@ -774,7 +811,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタライブ]ザ・パンチ／サルゴリラ／ミルクボーイ／滝音／エバース／めぞん／オフローズ／軟水／ゼロカラン／チェリー大作戦／他"
+        "[ネタライブ]ザ・パンチ／サルゴリラ／ミルクボーイ／滝音／エバース／めぞん／ヨネダ2000／オフローズ／軟水／ゼロカラン／チェリー大作戦／他"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -812,7 +849,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタライブ]ザ・パンチ／サルゴリラ／滝音／エバース／9番街レトロ／めぞん／オフローズ／軟水／ゼロカラン／チェリー大作戦／他"
+        "[ネタライブ]ザ・パンチ／サルゴリラ／滝音／エバース／9番街レトロ／めぞん／ヨネダ2000／オフローズ／軟水／ゼロカラン／チェリー大作戦／他"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -850,7 +887,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタライブ]ザ・パンチ／サルゴリラ／ミルクボーイ／滝音／エバース／めぞん／オフローズ／軟水／ゼロカラン／チェリー大作戦／他"
+        "[ネタライブ]ザ・パンチ／サルゴリラ／ミルクボーイ／滝音／エバース／めぞん／ヨネダ2000／からし蓮根／オフローズ／軟水／ゼロカラン／チェリー大作戦"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -888,7 +925,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタライブ]ザ・パンチ／サルゴリラ／ミルクボーイ／滝音／エバース／9番街レトロ／めぞん／オフローズ／軟水／ゼロカラン／チェリー大作戦"
+        "[ネタライブ]ザ・パンチ／サルゴリラ／ミルクボーイ／滝音／エバース／9番街レトロ／めぞん／マルセイユ／オフローズ／軟水／ゼロカラン／チェリー大作戦"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -2284,7 +2321,7 @@
       "theaterId": "roppongi",
       "theaterName": "六本木",
       "performersText": [
-        "おいでやす小田／GAG／ななまがり／アイロンヘッド／ドンデコルテ／カゲヤマ／ダンビラムーチョ／ZAZY／エレガント人生／軟水／他"
+        "おいでやす小田／GAG／ななまがり／アイロンヘッド／ドンデコルテ／カゲヤマ／ダンビラムーチョ／ZAZY／エレガント人生／軟水／オニイチャン／エグい速さ"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -2358,7 +2395,7 @@
       "theaterId": "roppongi",
       "theaterName": "六本木",
       "performersText": [
-        "おいでやす小田／GAG／ななまがり／アイロンヘッド／ドンデコルテ／カゲヤマ／ダンビラムーチョ／ZAZY／エレガント人生／軟水／他"
+        "おいでやす小田／GAG／ななまがり／アイロンヘッド／ドンデコルテ／カゲヤマ／ダンビラムーチョ／ZAZY／エレガント人生／軟水／シスター／エグい速さ"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -4128,6 +4165,43 @@
       "trackedPerformers": [
         "maison",
         "nansui",
+        "pyuto"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-12-12",
+      "openTime": "17:00",
+      "startTime": "17:15",
+      "title": "フジーズの『うち弁慶』",
+      "venue": "神保町よしもと漫才劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "jimbocho",
+      "theaterName": "神保町",
+      "performersText": [
+        "[企画ライブ]フジーズ／ピュート／金魚番長／他"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
         "pyuto"
       ],
       "discoverySources": [
