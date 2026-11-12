@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-11-11T23:00:55.249306+00:00",
+  "syncedAt": "2026-11-12T03:38:57.794412+00:00",
   "performers": [
     {
       "id": "maison",
@@ -56,7 +56,7 @@
       "date": "2026-11-12",
       "openTime": "19:00",
       "startTime": "19:20",
-      "title": "11/12(木) 漫腹〜まんぷく〜 開催 2026年11月12日(木) 出演 足腰げんき教室 / 鬼塚ムソウ / オフローズ / オッパショ石 / カガリ / さすらいラビー / サンタモニカ / ゼロカラン / 伝書鳩 / ナユタ / ねじれネジ / ピュート / フランツ / まんじゅう大帝国 / 百恵 / からし蓮根 / ランパンプス / ボーヨー 場所 東京都 あと11時間",
+      "title": "11/12(木) 漫腹〜まんぷく〜 開催 2026年11月12日(木) 出演 足腰げんき教室 / 鬼塚ムソウ / オフローズ / オッパショ石 / カガリ / さすらいラビー / サンタモニカ / ゼロカラン / 伝書鳩 / ナユタ / ねじれネジ / ピュート / フランツ / まんじゅう大帝国 / 百恵 / からし蓮根 / ランパンプス / ボーヨー 場所 東京都 あと6時間",
       "venue": "野方区民ホール(東京都)",
       "source": "tiget",
       "sourceUrl": "https://tiget.net/events/532851",
@@ -145,7 +145,7 @@
         {
           "name": "同じ販売元のイベント",
           "type": "先着",
-          "status": "販売中",
+          "status": "販売終了",
           "price": "",
           "saleStartAt": "2026-11-07T12:00:00+09:00",
           "saleEndAt": "2026-11-09T23:59:00+09:00",
@@ -162,7 +162,7 @@
           ]
         },
         {
-          "name": "トム・ブラウン / クロコップ / ヤーレンズ / サツマカワRPG",
+          "name": "オードリー / はなわ / ハマカーン / トム・ブラウン / ヤーレンズ",
           "type": "先着",
           "status": "予定数終了",
           "price": "",
@@ -176,14 +176,14 @@
               "label": "",
               "startAt": "2026-11-07T12:00:00+09:00",
               "endAt": "2026-11-09T23:59:00+09:00",
-              "saleKey": "livepocket|maison|4hf1l|トム・ブラウン / クロコップ / ヤーレンズ / サツマカワRPG|先着|advance|2026-11-07T12:00:00+09:00"
+              "saleKey": "livepocket|maison|4hf1l|オードリー / はなわ / ハマカーン / トム・ブラウン / ヤーレンズ|先着|advance|2026-11-07T12:00:00+09:00"
             }
           ]
         },
         {
           "name": "トム・ブラウン / クロコップ / ヤーレンズ / サツマカワRPG",
           "type": "先着",
-          "status": "販売終了",
+          "status": "販売中",
           "price": "",
           "saleStartAt": "2026-11-07T12:00:00+09:00",
           "saleEndAt": "2026-11-09T23:59:00+09:00",
@@ -272,29 +272,10 @@
       "venue": "浅草東洋館 (東京都)",
       "source": "livepocket",
       "sourceUrl": "https://livepocket.jp/e/z2nvo",
-      "ticketStatus": "残りわずか",
+      "ticketStatus": "一部予定数終了",
       "ticketOptions": [
         {
-          "name": "指定席",
-          "type": "先着",
-          "status": "残りわずか",
-          "price": "¥3,000",
-          "saleStartAt": "2026-10-26T23:05:00+09:00",
-          "saleEndAt": "2026-11-18T19:30:00+09:00",
-          "saleCategory": "first_come",
-          "saleLabel": "",
-          "salePeriods": [
-            {
-              "category": "first_come",
-              "label": "",
-              "startAt": "2026-10-26T23:05:00+09:00",
-              "endAt": "2026-11-18T19:30:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|指定席|先着|first_come|2026-10-26T23:05:00+09:00"
-            }
-          ]
-        },
-        {
-          "name": "（税込）",
+          "name": "予定販売枚数終了",
           "type": "先着",
           "status": "販売終了",
           "price": "",
@@ -308,7 +289,7 @@
               "label": "",
               "startAt": "2026-10-26T23:05:00+09:00",
               "endAt": "2026-11-18T19:30:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|（税込）|先着|first_come|2026-10-26T23:05:00+09:00"
+              "saleKey": "livepocket|maison|z2nvo|予定販売枚数終了|先着|first_come|2026-10-26T23:05:00+09:00"
             }
           ]
         },
@@ -351,9 +332,9 @@
           ]
         },
         {
-          "name": "同じ販売元のイベント",
+          "name": "（税込）",
           "type": "先着",
-          "status": "販売中",
+          "status": "販売前",
           "price": "",
           "saleStartAt": "2026-10-15T19:00:00+09:00",
           "saleEndAt": "2026-10-21T23:59:00+09:00",
@@ -365,7 +346,102 @@
               "label": "",
               "startAt": "2026-10-15T19:00:00+09:00",
               "endAt": "2026-10-21T23:59:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|同じ販売元のイベント|先着|advance|2026-10-15T19:00:00+09:00"
+              "saleKey": "livepocket|maison|z2nvo|（税込）|先着|advance|2026-10-15T19:00:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "当日引き換え指定席",
+          "type": "先着",
+          "status": "販売前",
+          "price": "¥3,000",
+          "saleStartAt": "2026-11-12T23:05:00+09:00",
+          "saleEndAt": "2026-11-18T19:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-11-12T23:05:00+09:00",
+              "endAt": "2026-11-18T19:30:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|当日引き換え指定席|先着|first_come|2026-11-12T23:05:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "座席場所は当日お知らせしますのでスタッフにお声がけください。",
+          "type": "先着",
+          "status": "販売前",
+          "price": "",
+          "saleStartAt": "2026-11-12T23:05:00+09:00",
+          "saleEndAt": "2026-11-18T19:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-11-12T23:05:00+09:00",
+              "endAt": "2026-11-18T19:30:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|座席場所は当日お知らせしますのでスタッフにお声がけください。|先着|first_come|2026-11-12T23:05:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "整理番号付き立見席",
+          "type": "先着",
+          "status": "販売前",
+          "price": "¥3,000",
+          "saleStartAt": "2026-11-15T23:05:00+09:00",
+          "saleEndAt": "2026-11-18T19:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-11-15T23:05:00+09:00",
+              "endAt": "2026-11-18T19:30:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|整理番号付き立見席|先着|first_come|2026-11-15T23:05:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "ご了承の上、ご購入ください。",
+          "type": "先着",
+          "status": "販売前",
+          "price": "",
+          "saleStartAt": "2026-11-15T23:05:00+09:00",
+          "saleEndAt": "2026-11-18T19:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-11-15T23:05:00+09:00",
+              "endAt": "2026-11-18T19:30:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|ご了承の上、ご購入ください。|先着|first_come|2026-11-15T23:05:00+09:00"
+            }
+          ]
+        },
+        {
+          "name": "同じ販売元のイベント",
+          "type": "先着",
+          "status": "販売中",
+          "price": "",
+          "saleStartAt": "2026-11-15T23:05:00+09:00",
+          "saleEndAt": "2026-11-18T19:30:00+09:00",
+          "saleCategory": "first_come",
+          "saleLabel": "",
+          "salePeriods": [
+            {
+              "category": "first_come",
+              "label": "",
+              "startAt": "2026-11-15T23:05:00+09:00",
+              "endAt": "2026-11-18T19:30:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|同じ販売元のイベント|先着|first_come|2026-11-15T23:05:00+09:00"
             }
           ]
         },
@@ -374,36 +450,36 @@
           "type": "先着",
           "status": "販売中",
           "price": "",
-          "saleStartAt": "2026-10-15T19:00:00+09:00",
-          "saleEndAt": "2026-10-21T23:59:00+09:00",
-          "saleCategory": "advance",
+          "saleStartAt": "2026-11-15T23:05:00+09:00",
+          "saleEndAt": "2026-11-18T19:30:00+09:00",
+          "saleCategory": "first_come",
           "saleLabel": "",
           "salePeriods": [
             {
-              "category": "advance",
+              "category": "first_come",
               "label": "",
-              "startAt": "2026-10-15T19:00:00+09:00",
-              "endAt": "2026-10-21T23:59:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|喜喜かいばしら / パスタとパスタ / パンたべる / ツェ大野 / やゆよ / ヤング / ねじれネジ|先着|advance|2026-10-15T19:00:00+09:00"
+              "startAt": "2026-11-15T23:05:00+09:00",
+              "endAt": "2026-11-18T19:30:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|喜喜かいばしら / パスタとパスタ / パンたべる / ツェ大野 / やゆよ / ヤング / ねじれネジ|先着|first_come|2026-11-15T23:05:00+09:00"
             }
           ]
         },
         {
-          "name": "喜喜かいばしら / パスタとパスタ / パンたべる / ツェ大野 / ドラマ☆麺 / 太宰 てつ",
+          "name": "動物男児 / ツェ大野 / やゆよ / しらせ / すぎる / パスタとパスタ まなべ / ドラマ☆麺",
           "type": "先着",
           "status": "販売中",
           "price": "",
-          "saleStartAt": "2026-10-15T19:00:00+09:00",
-          "saleEndAt": "2026-10-21T23:59:00+09:00",
-          "saleCategory": "advance",
+          "saleStartAt": "2026-11-15T23:05:00+09:00",
+          "saleEndAt": "2026-11-18T19:30:00+09:00",
+          "saleCategory": "first_come",
           "saleLabel": "",
           "salePeriods": [
             {
-              "category": "advance",
+              "category": "first_come",
               "label": "",
-              "startAt": "2026-10-15T19:00:00+09:00",
-              "endAt": "2026-10-21T23:59:00+09:00",
-              "saleKey": "livepocket|maison|z2nvo|喜喜かいばしら / パスタとパスタ / パンたべる / ツェ大野 / ドラマ☆麺 / 太宰 てつ|先着|advance|2026-10-15T19:00:00+09:00"
+              "startAt": "2026-11-15T23:05:00+09:00",
+              "endAt": "2026-11-18T19:30:00+09:00",
+              "saleKey": "livepocket|maison|z2nvo|動物男児 / ツェ大野 / やゆよ / しらせ / すぎる / パスタとパスタ まなべ / ドラマ☆麺|先着|first_come|2026-11-15T23:05:00+09:00"
             }
           ]
         }
@@ -423,6 +499,18 @@
           "label": "",
           "startAt": "2026-10-15T19:00:00+09:00",
           "endAt": "2026-10-21T23:59:00+09:00"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-11-12T23:05:00+09:00",
+          "endAt": "2026-11-18T19:30:00+09:00"
+        },
+        {
+          "category": "first_come",
+          "label": "",
+          "startAt": "2026-11-15T23:05:00+09:00",
+          "endAt": "2026-11-18T19:30:00+09:00"
         }
       ],
       "performersText": [
