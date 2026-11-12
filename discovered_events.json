@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-11-12T11:54:02.746732+00:00",
-  "total": 148,
+  "syncedAt": "2026-11-12T19:11:01.500813+00:00",
+  "total": 150,
   "ticketListedCount": 0,
-  "ticketUnlistedCount": 148,
+  "ticketUnlistedCount": 150,
   "ticketOptionCount": 0,
   "salePeriodCount": 0,
   "events": [
@@ -5147,6 +5147,82 @@
       ],
       "discoveryUrls": [
         "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-12-24",
+      "openTime": "18:50",
+      "startTime": "19:00",
+      "title": "大宮ネタとトーク「劇場報告会議2026～最近の劇場、知ってます？～」",
+      "venue": "大宮ラクーンよしもと劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://omiya.yoshimoto.co.jp/schedule/",
+      "theaterId": "omiya",
+      "theaterName": "大宮",
+      "performersText": [
+        "ちょんまげラーメン／オズワルド／軟水／めぞん／他"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison",
+        "nansui"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://omiya.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-12-24",
+      "openTime": "20:20",
+      "startTime": "20:30",
+      "title": "雪がとけるほど笑いたい～芸人サンタからのクリスマスプレゼント～",
+      "venue": "大宮ラクーンよしもと劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://omiya.yoshimoto.co.jp/schedule/",
+      "theaterId": "omiya",
+      "theaterName": "大宮",
+      "performersText": [
+        "ちょんまげラーメン／オズワルド／軟水／めぞん／他"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison",
+        "nansui"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://omiya.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
