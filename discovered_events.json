@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-11-13T00:44:09.154228+00:00",
-  "total": 150,
+  "syncedAt": "2026-11-13T06:42:29.278992+00:00",
+  "total": 152,
   "ticketListedCount": 0,
-  "ticketUnlistedCount": 150,
+  "ticketUnlistedCount": 152,
   "ticketOptionCount": 0,
   "salePeriodCount": 0,
   "events": [
@@ -811,7 +811,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタライブ]ザ・パンチ／サルゴリラ／ミルクボーイ／滝音／エバース／めぞん／ヨネダ2000／オフローズ／軟水／ゼロカラン／チェリー大作戦／他"
+        "[ネタライブ]ザ・パンチ／サルゴリラ／ミルクボーイ／滝音／エバース／めぞん／ヨネダ2000／ブラゴーリ／オフローズ／軟水／ゼロカラン／チェリー大作戦"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -849,12 +849,13 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタライブ]ザ・パンチ／サルゴリラ／滝音／エバース／9番街レトロ／めぞん／ヨネダ2000／オフローズ／軟水／ゼロカラン／チェリー大作戦／他"
+        "[ネタライブ]ザ・パンチ／サルゴリラ／滝音／エバース／9番街レトロ／めぞん／ヨネダ2000／オフローズ／軟水／ピュート／ゼロカラン／チェリー大作戦"
       ],
       "newUntil": "",
       "trackedPerformers": [
         "maison",
-        "nansui"
+        "nansui",
+        "pyuto"
       ],
       "discoverySources": [
         "theater"
@@ -1148,7 +1149,7 @@
       "theaterId": "jimbocho",
       "theaterName": "神保町",
       "performersText": [
-        "[ネタ出演者]世間知らズ／ピュート／イチゴ／小虎／狛犬／ぺ／ニコミハジメテ／伝書鳩"
+        "[ネタ出演者]世間知らズ／ピュート／イチゴ／小虎／狛犬／ぺ／ニコミハジメテ／伝書鳩 [コーナー出演者]MC：狛犬／世間知らズ／イチゴ／ニコミハジメテ／伝書鳩"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -1592,7 +1593,7 @@
       "theaterId": "jimbocho",
       "theaterName": "神保町",
       "performersText": [
-        "[ネタ出演者]ダンビラムーチョ／ゆにばーす／いぬ／九条ジョー／シモリュウ／ピュート／金魚番長／照山おうちごはん／他"
+        "[ネタ出演者]ダンビラムーチョ／ゆにばーす／いぬ／九条ジョー／シモリュウ／ピュート／金魚番長／ボブのコーラ／照山おうちごはん／他"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -3470,6 +3471,81 @@
       "saleLabel": ""
     },
     {
+      "performerId": "pyuto",
+      "date": "2026-12-05",
+      "openTime": "11:30",
+      "startTime": "12:00",
+      "title": "RGが60分あるある歌い続け、中野なかるてぃんがピンネタし続ける会",
+      "venue": "よしもと幕張イオンモール劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://makuhari.yoshimoto.co.jp/schedule/",
+      "theaterId": "makuhari",
+      "theaterName": "幕張",
+      "performersText": [
+        "レイザーラモン RG／ナイチンゲールダンス 中野なかるてぃん",
+        "CITYとマリーマリーとピュートとぶったまはRGのあるあるを当てるまで幕張から帰れません！"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "pyuto"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://makuhari.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-12-05",
+      "openTime": "13:30",
+      "startTime": "14:00",
+      "title": "CITYとマリーマリーとピュートとぶったまはRGのあるあるを当てるまで幕張から帰れません！",
+      "venue": "よしもと幕張イオンモール劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://makuhari.yoshimoto.co.jp/schedule/",
+      "theaterId": "makuhari",
+      "theaterName": "幕張",
+      "performersText": [
+        "レイザーラモン RG／CITY／ぶったま／ピュート／マリーマリー"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "pyuto"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://makuhari.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
       "performerId": "maison",
       "date": "2026-12-06",
       "openTime": "10:45",
@@ -3518,7 +3594,7 @@
       "theaterId": "dotonbori",
       "theaterName": "道頓堀",
       "performersText": [
-        "[ネタ]めぞん／三遊間／生姜猫／他／[MC] 祇園／ [吉本新喜劇] はじめ／高井俊彦／タックルながい。／小林ゆう／入澤弘喜／菅野智義／井上果音"
+        "[ネタ]華山／めぞん／三遊間／生姜猫／他／[MC] 祇園／ [吉本新喜劇] はじめ／高井俊彦／タックルながい。／小林ゆう／入澤弘喜／菅野智義／井上果音"
       ],
       "newUntil": "",
       "trackedPerformers": [
