@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-11-13T21:03:16.005373+00:00",
+  "syncedAt": "2026-11-14T01:22:25.502287+00:00",
   "events": [
     {
       "performerId": "pyuto",
@@ -2751,6 +2751,31 @@
       "hasStreaming": false,
       "streamingPrice": "",
       "theaterSourceKey": "theater|jimbocho|maison|2026-12-09|21:00|大喜利ぞうさん"
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-12-10",
+      "openTime": "18:30",
+      "startTime": "19:00",
+      "title": "サンパチライブ",
+      "venue": "なんばグランド花月",
+      "source": "theater",
+      "sourceUrl": "https://ngk.yoshimoto.co.jp/schedule/",
+      "theaterId": "ngk",
+      "theaterName": "なんばグランド花月",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "テンダラー／タカアンドトシ／ギャロップ／スマイル／祇園／ラフ次元／金属バット／ツートライブ／アイラブ地球／ネイビーズアフロ／ミキ／豪快キャプテン／めぞん／例えば炎／三遊間"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|ngk|maison|2026-12-10|19:00|サンパチライブ"
     },
     {
       "performerId": "maison",

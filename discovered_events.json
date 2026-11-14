@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-11-13T21:40:26.542068+00:00",
-  "total": 152,
+  "syncedAt": "2026-11-14T01:22:25.961863+00:00",
+  "total": 153,
   "ticketListedCount": 0,
-  "ticketUnlistedCount": 152,
+  "ticketUnlistedCount": 153,
   "ticketOptionCount": 0,
   "salePeriodCount": 0,
   "events": [
@@ -3983,6 +3983,43 @@
       ],
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-12-10",
+      "openTime": "18:30",
+      "startTime": "19:00",
+      "title": "サンパチライブ",
+      "venue": "なんばグランド花月",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://ngk.yoshimoto.co.jp/schedule/",
+      "theaterId": "ngk",
+      "theaterName": "なんばグランド花月",
+      "performersText": [
+        "テンダラー／タカアンドトシ／ギャロップ／スマイル／祇園／ラフ次元／金属バット／ツートライブ／アイラブ地球／ネイビーズアフロ／ミキ／豪快キャプテン／めぞん／例えば炎／三遊間"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://ngk.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
