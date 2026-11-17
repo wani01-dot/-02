@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-11-17T08:36:52.755788+00:00",
+  "syncedAt": "2026-11-17T17:51:29.616065+00:00",
   "events": [
     {
       "performerId": "pyuto",
@@ -1270,7 +1270,7 @@
       "saleCategory": "",
       "salePeriods": [],
       "performersText": [
-        "イシバシハザマ／シマッシュレコード／西村ヒロチョ／トニーフランク／ラニーノーズ／ぶったま／ピュート／バリカタ友情飯／イワサキ／DOG FOOD PARTY／ボブのコーラ／照山おうちごはん／他"
+        "イシバシハザマ／シマッシュレコード／西村ヒロチョ／トニーフランク／ラニーノーズ／ぶったま／ピュート／バリカタ友情飯／イワサキ／DOG FOOD PARTY／ボブのコーラ／照山おうちごはん／他／シカゴ実業"
       ],
       "publishedVia": "theater",
       "hasStreaming": false,
@@ -1571,7 +1571,7 @@
       "saleCategory": "",
       "salePeriods": [],
       "performersText": [
-        "軟水／ピュート／ザンゾウ／DOG FOOD PARTY／エグい速さ"
+        "軟水／ピュート／ザンゾウ／DOG FOOD PARTY／エグい速さ／ドンココ"
       ],
       "publishedVia": "theater",
       "hasStreaming": false,
@@ -1596,7 +1596,7 @@
       "saleCategory": "",
       "salePeriods": [],
       "performersText": [
-        "軟水／ピュート／ザンゾウ／DOG FOOD PARTY／エグい速さ"
+        "軟水／ピュート／ザンゾウ／DOG FOOD PARTY／エグい速さ／ドンココ"
       ],
       "publishedVia": "theater",
       "hasStreaming": false,
@@ -2826,6 +2826,31 @@
       "hasStreaming": false,
       "streamingPrice": "",
       "theaterSourceKey": "theater|jimbocho|maison|2026-12-09|21:00|大喜利ぞうさん"
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-12-10",
+      "openTime": "18:45",
+      "startTime": "19:00",
+      "title": "お笑いライブ ドンガラガッシャン",
+      "venue": "Yogibo META VALLEY",
+      "source": "theater",
+      "sourceUrl": "https://dotonbori.yoshimoto.co.jp/schedule/",
+      "theaterId": "dotonbori",
+      "theaterName": "道頓堀",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "ダブルアート／豪快キャプテン／ドーナツ・ピーナツ／ぎょうぶ／ぐろう／[ゲスト]カベポスター 浜田／めぞん（ネタ出演のみ）"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|dotonbori|maison|2026-12-10|19:00|お笑いライブドンガラガッシャン"
     },
     {
       "performerId": "maison",
@@ -4352,6 +4377,31 @@
       "hasStreaming": false,
       "streamingPrice": "",
       "theaterSourceKey": "theater|makuhari|maison|2026-12-25|16:00|幕張平日ネタsp16時"
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-12-25",
+      "openTime": "17:00",
+      "startTime": "17:15",
+      "title": "今年も来ました！長谷川マモルと瀬古オトハのX'masパーティー",
+      "venue": "よしもと六本木シアター",
+      "source": "theater",
+      "sourceUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "長谷川マモル／瀬古オトハ／【ゲスト】オダウエダ／ピュート"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|roppongi|pyuto|2026-12-25|17:15|今年も来ました長谷川マモルと瀬古オトハのx'masパーティー"
     },
     {
       "performerId": "maison",

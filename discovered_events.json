@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-11-17T12:31:10.189411+00:00",
-  "total": 158,
+  "syncedAt": "2026-11-17T17:51:32.025818+00:00",
+  "total": 160,
   "ticketListedCount": 0,
-  "ticketUnlistedCount": 158,
+  "ticketUnlistedCount": 160,
   "ticketOptionCount": 0,
   "salePeriodCount": 0,
   "events": [
@@ -1804,7 +1804,7 @@
       "theaterId": "makuhari",
       "theaterName": "幕張",
       "performersText": [
-        "イシバシハザマ／シマッシュレコード／西村ヒロチョ／トニーフランク／ラニーノーズ／ぶったま／ピュート／バリカタ友情飯／イワサキ／DOG FOOD PARTY／ボブのコーラ／照山おうちごはん／他"
+        "イシバシハザマ／シマッシュレコード／西村ヒロチョ／トニーフランク／ラニーノーズ／ぶったま／ピュート／バリカタ友情飯／イワサキ／DOG FOOD PARTY／ボブのコーラ／照山おうちごはん／他／シカゴ実業"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -2273,7 +2273,7 @@
       "theaterId": "roppongi",
       "theaterName": "六本木",
       "performersText": [
-        "軟水／ピュート／ザンゾウ／DOG FOOD PARTY／エグい速さ"
+        "軟水／ピュート／ザンゾウ／DOG FOOD PARTY／エグい速さ／ドンココ"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -4103,6 +4103,43 @@
     {
       "performerId": "maison",
       "date": "2026-12-10",
+      "openTime": "18:45",
+      "startTime": "19:00",
+      "title": "お笑いライブ ドンガラガッシャン",
+      "venue": "Yogibo META VALLEY",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://dotonbori.yoshimoto.co.jp/schedule/",
+      "theaterId": "dotonbori",
+      "theaterName": "道頓堀",
+      "performersText": [
+        "ダブルアート／豪快キャプテン／ドーナツ・ピーナツ／ぎょうぶ／ぐろう／[ゲスト]カベポスター 浜田／めぞん（ネタ出演のみ）"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://dotonbori.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-12-10",
       "openTime": "18:30",
       "startTime": "19:00",
       "title": "サンパチライブ",
@@ -5633,6 +5670,43 @@
       ],
       "discoveryUrls": [
         "https://makuhari.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-12-25",
+      "openTime": "17:00",
+      "startTime": "17:15",
+      "title": "今年も来ました！長谷川マモルと瀬古オトハのX'masパーティー",
+      "venue": "よしもと六本木シアター",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "performersText": [
+        "長谷川マモル／瀬古オトハ／【ゲスト】オダウエダ／ピュート"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "pyuto"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
