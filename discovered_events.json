@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-11-20T08:18:41.410206+00:00",
-  "total": 167,
+  "syncedAt": "2026-11-20T09:15:09.850944+00:00",
+  "total": 169,
   "ticketListedCount": 0,
-  "ticketUnlistedCount": 167,
+  "ticketUnlistedCount": 169,
   "ticketOptionCount": 0,
   "salePeriodCount": 0,
   "events": [
@@ -3213,7 +3213,7 @@
       "theaterId": "roppongi",
       "theaterName": "六本木",
       "performersText": [
-        "GAG／ネルソンズ／スパイク／おかずクラブ／田津原理音／ブラゴーリ／軟水／ニコミハジメテ／あなたとネ"
+        "GAG／ネルソンズ／スパイク／セルライトスパ／おかずクラブ／田津原理音／ブラゴーリ／軟水／ニコミハジメテ／あなたとネ"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -3686,6 +3686,43 @@
       "saleLabel": ""
     },
     {
+      "performerId": "pyuto",
+      "date": "2026-12-06",
+      "openTime": "11:45",
+      "startTime": "12:00",
+      "title": "六本木お笑いコントライブ！ ※子ども料金、高校生料金あり",
+      "venue": "よしもと六本木シアター",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "performersText": [
+        "サルゴリラ／バイク川崎バイク／守谷日和／GAG／セルライトスパ／ニッポンの社長／スクールゾーン／今井らいぱち／エレガント人生／ピュート／ヨネダ2000／喫茶ムーン"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "pyuto"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://roppongi.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
       "performerId": "maison",
       "date": "2026-12-06",
       "openTime": "13:15",
@@ -3708,6 +3745,43 @@
       ],
       "discoveryUrls": [
         "https://morinomiya-manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-12-06",
+      "openTime": "14:15",
+      "startTime": "14:30",
+      "title": "六本木お笑いコントライブ！ ※子ども料金、高校生料金あり",
+      "venue": "よしもと六本木シアター",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "performersText": [
+        "サルゴリラ／バイク川崎バイク／守谷日和／GAG／セルライトスパ／ニッポンの社長／スクールゾーン／今井らいぱち／エレガント人生／ピュート／ヨネダ2000／喫茶ムーン"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "pyuto"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://roppongi.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
