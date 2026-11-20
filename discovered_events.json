@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-11-20T01:52:07.097939+00:00",
-  "total": 166,
+  "syncedAt": "2026-11-20T08:18:41.410206+00:00",
+  "total": 167,
   "ticketListedCount": 0,
-  "ticketUnlistedCount": 166,
+  "ticketUnlistedCount": 167,
   "ticketOptionCount": 0,
   "salePeriodCount": 0,
   "events": [
@@ -3890,7 +3890,8 @@
         "フランツ",
         "パンプキンポテトフライ",
         "ルシファー吉岡",
-        "破壊ありがとう"
+        "破壊ありがとう",
+        "ネコニスズ"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -4086,6 +4087,51 @@
       ],
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-12-10",
+      "openTime": "16:45",
+      "startTime": "17:00",
+      "title": "販売情報",
+      "venue": "新宿バッシュ!!",
+      "discoverySource": "ticketdive-official",
+      "discoveryUrl": "https://ticketdive.com/event/261210luminous_1",
+      "theaterId": "",
+      "theaterName": "",
+      "performersText": [
+        "軟水",
+        "ジャンク",
+        "あくびぼうや",
+        "アルバカーキ",
+        "群青団地",
+        "デジタルバッハ",
+        "ガチ銀河",
+        "ネネネ",
+        "寿司東京"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "nansui"
+      ],
+      "discoverySources": [
+        "ticketdive-official"
+      ],
+      "discoveryUrls": [
+        "https://ticketdive.com/event/261210luminous_1"
       ],
       "ticketMatches": [],
       "ticketListed": false,
