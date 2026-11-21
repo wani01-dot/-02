@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-11-21T12:26:41.509931+00:00",
+  "syncedAt": "2026-11-21T19:34:23.173632+00:00",
   "performers": [
     {
       "id": "maison",
@@ -51,35 +51,6 @@
     }
   ],
   "events": [
-    {
-      "performerId": "maison",
-      "date": "2026-11-21",
-      "openTime": "21:50",
-      "startTime": "22:00",
-      "title": "世襲のネタライブ“親子漫才” 開催 2026年11月21日(土) 出演 世襲 / ストレッチーズ / めぞん 場所 東京都 残りわずか 開催間近",
-      "venue": "シアターミネルヴァ(東京都)",
-      "source": "tiget",
-      "sourceUrl": "https://tiget.net/events/535690",
-      "ticketStatus": "残りわずか",
-      "ticketOptions": [],
-      "saleStartAt": "",
-      "saleEndAt": "",
-      "saleCategory": "",
-      "salePeriods": [],
-      "performersText": [
-        "世襲",
-        "ストレッチーズ",
-        "めぞん",
-        "世襲のネタ3本＋ゲスト各ネタ1本＋トークのライブ！",
-        "ゲストはストレッチーズさん",
-        "めぞんさんです！"
-      ],
-      "firstSeenAt": "2026-11-15T16:39:18.997159+00:00",
-      "newUntil": "2026-11-17T16:39:18.997171+00:00",
-      "trackedPerformers": [
-        "maison"
-      ]
-    },
     {
       "performerId": "pyuto",
       "date": "2026-11-23",
@@ -191,6 +162,53 @@
       "newUntil": "2026-11-02T18:47:54.312251+00:00",
       "trackedPerformers": [
         "pyuto"
+      ]
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-12-05",
+      "openTime": "11:45",
+      "startTime": "12:00",
+      "title": "楽屋Aオーディションバトルライブ「口火vol.684｣ 開催 2026年12月05日(土) 出演 第3キャッチャー / さかいや / ツバサ / どあ / あかねめぞん / 薬不足 / ♡♡♡ / かけたまま / 五目サーフィン / 💡 / 浪速のシルバーウルフポップ / 檜皮ちょき 場所 大阪府 あと13日",
+      "venue": "お笑いLIVE BAR 楽屋A(大阪府)",
+      "source": "tiget",
+      "sourceUrl": "https://tiget.net/events/536304",
+      "ticketStatus": "予定数終了",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "第3キャッチャー",
+        "さかいや",
+        "ツバサ",
+        "どあ",
+        "あかねめぞん",
+        "薬不足",
+        "♡♡♡",
+        "かけたまま",
+        "五目サーフィン",
+        "💡",
+        "浪速のシルバーウルフポップ",
+        "檜皮ちょき",
+        "12",
+        "5 楽屋Aオーディションバトルライブ「口火vol.684｣",
+        "楽屋Aランキング入りを目指した最初のオーディションライブ",
+        "1位獲得者は1",
+        "8 20:30～or 1",
+        "9 17:30〜",
+        "20:30～の",
+        "アンダー・口火入替バトルに進出",
+        "ネタ時間3分(3分半強制終了)",
+        "MCネタあり",
+        "11:45OPEN",
+        "12:00〜13:00LIVE"
+      ],
+      "firstSeenAt": "2026-11-21T19:34:23.173498+00:00",
+      "newUntil": "2026-11-23T19:34:23.173508+00:00",
+      "trackedPerformers": [
+        "maison"
       ]
     }
   ]
