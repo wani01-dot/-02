@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-11-21T04:04:40.268719+00:00",
-  "total": 169,
+  "syncedAt": "2026-11-21T12:26:57.230171+00:00",
+  "total": 170,
   "ticketListedCount": 0,
-  "ticketUnlistedCount": 169,
+  "ticketUnlistedCount": 170,
   "ticketOptionCount": 0,
   "salePeriodCount": 0,
   "events": [
@@ -5591,7 +5591,7 @@
       "theaterId": "omiya",
       "theaterName": "大宮",
       "performersText": [
-        "ちょんまげラーメン／オズワルド／軟水／めぞん／他"
+        "ちょんまげラーメン／オズワルド／軟水／めぞん／太鵬"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -5629,7 +5629,7 @@
       "theaterId": "omiya",
       "theaterName": "大宮",
       "performersText": [
-        "ちょんまげラーメン／オズワルド／軟水／めぞん／他"
+        "ちょんまげラーメン／オズワルド／軟水／めぞん／太鵬"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -6385,6 +6385,44 @@
       "theaterName": "六本木",
       "performersText": [
         "サルゴリラ／しずる／ネルソンズ／ビスケットブラザーズ／滝音／空気階段／蛙亭／軟水／ピュート／cacao／シカノシンプ／生姜猫"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "nansui",
+        "pyuto"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://roppongi.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "nansui",
+      "date": "2027-01-05",
+      "openTime": "18:00",
+      "startTime": "18:15",
+      "title": "THE CONTEへの道2027",
+      "venue": "よしもと六本木シアター",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "performersText": [
+        "軟水／ピュート／cacao／喫茶ムーン／シカノシンプ／ぺ／エグい速さ／生姜猫／伝書鳩／あなたとネ／金の国（ワタナベエンターテインメント）／ツンツクツン万博（グレープカンパニー）／群青団地（太田プロダクション）／もめんと（マセキ芸能社）／江戸川ジャンクジャンク（ワタナベエンターテインメント）／ヤッホイ（グレープカンパニー）／相性はいいよね（サンミュージック）／じゅんじゅんズ（ホリプロコム）／花ブービー（プロダクション人力舎）／おむかいの葉っぱ洋食店（松竹芸能）"
       ],
       "newUntil": "",
       "trackedPerformers": [
