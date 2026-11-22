@@ -537,65 +537,71 @@ def theater_notification_key(event):
 # LINE
 # =========================================================
 
+def split_line_text(text, max_chars=4500):
+    """Split LINE text without dropping content; prefer event boundaries."""
+    text = str(text or "")
+    if not text:
+        return []
+    chunks = []
+    current = ""
+    # Prefer paragraph breaks; fall back to line breaks and character slicing.
+    for paragraph in text.split("\n\n"):
+        pieces = [paragraph]
+        if len(paragraph) > max_chars:
+            pieces = []
+            for line in paragraph.split("\n"):
+                if len(line) > max_chars:
+                    pieces.extend(line[i:i + max_chars] for i in range(0, len(line), max_chars))
+                else:
+                    pieces.append(line)
+        for piece in pieces:
+            if len(piece) > max_chars:
+                subdivisions = [piece[i:i + max_chars] for i in range(0, len(piece), max_chars)]
+            else:
+                subdivisions = [piece]
+            for part in subdivisions:
+                separator = "\n\n" if current and len(paragraph) <= max_chars else "\n" if current else ""
+                if len(current) + len(separator) + len(part) > max_chars:
+                    chunks.append(current)
+                    current = part
+                else:
+                    current += separator + part
+    if current:
+        chunks.append(current)
+    return chunks
+
+
 def send_line(text):
-
     if not LINE_TOKEN:
-
-        raise RuntimeError(
-            "LINE_CHANNEL_ACCESS_TOKEN がありません"
-        )
-
-
+        raise RuntimeError("LINE_CHANNEL_ACCESS_TOKEN がありません")
     if not LINE_TO:
+        raise RuntimeError("LINE_TO がありません")
 
-        raise RuntimeError(
-            "LINE_TO がありません"
+    parts = split_line_text(text)
+    if not parts:
+        print("LINE送信対象の文章が空です。")
+        return
+
+    print(f"LINE分割送信: {len(parts)}通 / 合計{len(text)}文字", flush=True)
+    # LINE push API permits up to five message objects per request.
+    # Send each separately so failures are easy to locate.
+    for index, part in enumerate(parts, start=1):
+        response = requests.post(
+            LINE_API_URL,
+            headers={
+                "Authorization": f"Bearer {LINE_TOKEN}",
+                "Content-Type": "application/json",
+            },
+            json={
+                "to": LINE_TO,
+                "messages": [{"type": "text", "text": part}],
+            },
+            timeout=30,
         )
-
-
-    response = requests.post(
-        LINE_API_URL,
-
-        headers={
-            "Authorization":
-                f"Bearer {LINE_TOKEN}",
-
-            "Content-Type":
-                "application/json",
-        },
-
-        json={
-            "to":
-                LINE_TO,
-
-            "messages": [
-                {
-                    "type":
-                        "text",
-
-                    "text":
-                        text,
-                }
-            ],
-        },
-
-        timeout=30,
-    )
-
-
-    print(
-        "LINE status:",
-        response.status_code,
-    )
-
-
-    print(
-        "LINE response:",
-        response.text,
-    )
-
-
-    response.raise_for_status()
+        print(f"LINE {index}/{len(parts)}: status {response.status_code} ({len(part)}文字)", flush=True)
+        if not response.ok:
+            print("LINE response:", response.text, flush=True)
+        response.raise_for_status()
 
 
 # =========================================================
