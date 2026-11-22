@@ -7,6 +7,8 @@ from difflib import SequenceMatcher
 
 import requests
 
+from notification_dedup import matches_any
+
 
 NEW_EVENTS_FILE = "new_events.json"
 THEATER_EVENTS_FILE = "theater_events.json"
@@ -1981,6 +1983,105 @@ def main():
 
 
     # =====================================================
+    # 劇場公式とFANY等の重複通知防止
+    # =====================================================
+    # 先行劇場通知では、前回保存された通常公演も照合する。
+    # 通常通知では、劇場の通知済み公演だけを照合する。
+    # 同じ公演は出演者・日付・開始時刻・タイトルで判定。
+    ticket_data = load_json("events.json", {"events": []})
+    known_ticket_events = (
+        ticket_data if isinstance(ticket_data, list)
+        else ticket_data.get("events", [])
+    )
+    if not isinstance(known_ticket_events, list):
+        known_ticket_events = []
+
+    # 既存の通常通知履歴に登録された公演に限定する。
+    notified_ticket_events = [
+        e for e in known_ticket_events
+        if (
+            stable_notification_key(e) in stable_keys
+            or loose_notification_key(e) in loose_keys
+            or (
+                source_notification_key(e)
+                and source_notification_key(e) in source_keys
+            )
+        )
+    ]
+
+    # 先行通知で既に送った劇場公演は、通常サイト側から除外。
+    notified_theater_events = [
+        e for e in theater_events
+        if theater_notification_key(e) in theater_keys
+    ]
+
+    candidate_ticket_events = list(ticket_send_events)
+    candidate_theater_events = list(theater_send_events)
+    original_ticket_count = len(ticket_send_events)
+    ticket_send_events = [
+        e for e in ticket_send_events
+        if not matches_any(e, notified_theater_events)
+    ]
+
+    original_theater_count = len(theater_send_events)
+    theater_send_events = [
+        e for e in theater_send_events
+        if not matches_any(e, notified_ticket_events)
+        and not matches_any(e, ticket_send_events)
+    ]
+
+    # 同一回で複数サイトから同じ公演を取得した場合も抑止。
+    def unique_shows(events):
+        selected = []
+        for event in events:
+            if not matches_any(event, selected):
+                selected.append(event)
+        return selected
+
+    ticket_send_events = unique_shows(ticket_send_events)
+    theater_send_events = unique_shows(theater_send_events)
+
+    # 省略した候補の通知履歴も記録して、後日再通知されるのを防ぐ。
+    suppressed_tickets = [
+        e for e in candidate_ticket_events
+        if e not in ticket_send_events
+    ]
+    suppressed_theaters = [
+        e for e in candidate_theater_events
+        if e not in theater_send_events
+    ]
+
+    def record_suppressed():
+        for event in suppressed_tickets:
+            stable_keys.add(stable_notification_key(event))
+            loose_keys.add(loose_notification_key(event))
+            source_key = source_notification_key(event)
+            if source_key:
+                source_keys.add(source_key)
+        for event in suppressed_theaters:
+            key = theater_notification_key(event)
+            if key:
+                theater_keys.add(key)
+
+    def save_histories():
+        save_json(NOTIFIED_FILE, {
+            "stableKeys": sorted(stable_keys),
+            "looseKeys": sorted(loose_keys),
+            "sourceKeys": sorted(source_keys),
+        })
+        save_json(THEATER_NOTIFIED_FILE, {
+            "theaterKeys": sorted(theater_keys),
+        })
+
+    print(
+        "重複通知除外: 通常",
+        original_ticket_count - len(ticket_send_events),
+        "件 / 劇場",
+        original_theater_count - len(theater_send_events),
+        "件",
+    )
+
+    # =====================================================
     # 何もない
     # =====================================================
 
@@ -1993,7 +2094,9 @@ def main():
         print(
             "通知対象の新規公演はありません。"
         )
-
+        record_suppressed()
+        if suppressed_tickets or suppressed_theaters:
+            save_histories()
         return
 
 
@@ -2037,6 +2140,8 @@ def main():
         message
     )
 
+
+    record_suppressed()
 
     # =====================================================
     # LINE送信成功後
