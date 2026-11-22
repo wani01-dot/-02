@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-11-21T23:57:24.291747+00:00",
-  "total": 170,
+  "syncedAt": "2026-11-22T03:34:02.770365+00:00",
+  "total": 171,
   "ticketListedCount": 0,
-  "ticketUnlistedCount": 170,
+  "ticketUnlistedCount": 171,
   "ticketOptionCount": 0,
   "salePeriodCount": 0,
   "events": [
@@ -3109,6 +3109,43 @@
       "newUntil": "",
       "trackedPerformers": [
         "maison"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "nansui",
+      "date": "2026-12-01",
+      "openTime": "17:00",
+      "startTime": "17:15",
+      "title": "渋谷Kiwami極LIVEプラス＋",
+      "venue": "渋谷よしもと漫才劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "shibuya",
+      "theaterName": "渋谷",
+      "performersText": [
+        "[ネタ＆コーナーライブ]ダブルヒガシ／ドンデコルテ／マルセイユ／九条ジョー／スーパーサイズ・ミー／アズーロ24／軟水／世界クジラ／鉄人小町"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "nansui"
       ],
       "discoverySources": [
         "theater"
