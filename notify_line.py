@@ -2131,10 +2131,36 @@ def main():
     )
 
 
-    message = (
-        "\n\n".join(
-            blocks
+    # 読みやすさ優先: 先頭に件数、各公演に番号、間に区切り線。
+    # 既存の公演詳細・URL・配信情報・通知履歴の処理は維持。
+    total = len(blocks)
+    summary = (
+        "🎭 ワラいどっとこむ｜新着ライブ\n"
+        f"新着 {total} 公演"
+        f"（劇場公式 {len(theater_send_events)}件・"
+        f"チケットサイト {len(ticket_send_events)}件）\n"
+        "出演：めぞん／ピュート／軟水\n"
+        "━━━━━━━━━━━━"
+    )
+    numbered_blocks = []
+    for index, block in enumerate(blocks, start=1):
+        lines = block.split("\n")
+        # 元の「【○○で公開】」を末尾の掲載元に集約し、冒頭は公演番号を強調。
+        if lines and lines[0].startswith("【") and lines[0].endswith("】"):
+            lines = lines[1:]
+        # 連続する空行を整理。
+        clean_lines = []
+        for line in lines:
+            if not line.strip() and (not clean_lines or not clean_lines[-1].strip()):
+                continue
+            clean_lines.append(line)
+        while clean_lines and not clean_lines[-1].strip():
+            clean_lines.pop()
+        numbered_blocks.append(
+            f"【{index}/{total}】\n" + "\n".join(clean_lines)
         )
+    message = summary + "\n\n" + (
+        "\n\n━━━━━━━━━━━━\n\n".join(numbered_blocks)
     )
 
 
