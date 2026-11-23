@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-11-22T23:50:28.344327+00:00",
+  "syncedAt": "2026-11-23T04:05:03.674549+00:00",
   "events": [
     {
       "performerId": "pyuto",
@@ -1429,6 +1429,31 @@
       "theaterSourceKey": "theater|roppongi|pyuto|2026-11-24|18:00|シチュエーションコントライブ"
     },
     {
+      "performerId": "maison",
+      "date": "2026-11-25",
+      "openTime": "17:00",
+      "startTime": "17:15",
+      "title": "渋谷Kiwami極LIVEプラス＋",
+      "venue": "渋谷よしもと漫才劇場",
+      "source": "theater",
+      "sourceUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "shibuya",
+      "theaterName": "渋谷",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "[ネタ＆コーナーライブ]ドンデコルテ／9番街レトロ／西村ヒロチョ／くらげ／スーパーサイズ・ミー／素敵じゃないか／世間知らズ／おミュータンツ／シンクロニシティ／めぞん [ コーナー出演者]MC：9番街レトロ／スーパーサイズ・ミー／素敵じゃないか／世間知らズ／ドンデコルテ"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|shibuya|maison|2026-11-25|17:15|渋谷kiwami極liveプラス＋"
+    },
+    {
       "performerId": "pyuto",
       "date": "2026-11-26",
       "openTime": "16:45",
@@ -1471,7 +1496,7 @@
       "saleCategory": "",
       "salePeriods": [],
       "performersText": [
-        "[ネタ＆コーナーライブ]ダンビラムーチョ／ゆにばーす／カベポスター／めぞん／ヨネダ2000／カラタチ／官兵衛／太鵬／鉄人小町／他"
+        "[ネタ＆コーナーライブ]ダンビラムーチョ／ゆにばーす／ケビンス／カベポスター／めぞん／ヨネダ2000／カラタチ／官兵衛／太鵬／鉄人小町 [ コーナー出演者]MC：ゆにばーす／カラタチ／ダンビラムーチョ／めぞん／ヨネダ2000"
       ],
       "publishedVia": "theater",
       "hasStreaming": false,
@@ -1521,7 +1546,7 @@
       "saleCategory": "",
       "salePeriods": [],
       "performersText": [
-        "[ネタ＆コーナーライブ]さや香／マルセイユ／九条ジョー／ケビンス／オダウエダ／軟水／マリーマリー／他"
+        "[ネタ＆コーナーライブ]さや香／マルセイユ／九条ジョー／ケビンス／オダウエダ／軟水／マリーマリー／インテイク [ コーナー出演者]MC：九条ジョー／ケビンス／さや香／オダウエダ／他"
       ],
       "publishedVia": "theater",
       "hasStreaming": false,
@@ -4446,7 +4471,8 @@
       "saleCategory": "",
       "salePeriods": [],
       "performersText": [
-        "ショウショウ／もりやすバンバンビガロ／サルゴリラ／カーネーション／オズワルド／蛙亭／めぞん／他"
+        "ショウショウ／もりやすバンバンビガロ／サルゴリラ／カーネーション／オズワルド／蛙亭／めぞん／他",
+        "オズめぞんクリスマス"
       ],
       "publishedVia": "theater",
       "hasStreaming": false,
@@ -4477,6 +4503,31 @@
       "hasStreaming": false,
       "streamingPrice": "",
       "theaterSourceKey": "theater|roppongi|pyuto|2026-12-25|17:15|今年も来ました長谷川マモルと瀬古オトハのx'masパーティー"
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-12-25",
+      "openTime": "17:30",
+      "startTime": "18:00",
+      "title": "オズめぞんクリスマス",
+      "venue": "よしもと幕張イオンモール劇場",
+      "source": "theater",
+      "sourceUrl": "https://makuhari.yoshimoto.co.jp/schedule/",
+      "theaterId": "makuhari",
+      "theaterName": "幕張",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "オズワルド／めぞん"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|makuhari|maison|2026-12-25|18:00|オズめぞんクリスマス"
     },
     {
       "performerId": "maison",
@@ -4978,6 +5029,31 @@
       "hasStreaming": false,
       "streamingPrice": "",
       "theaterSourceKey": "theater|roppongi|pyuto|2027-01-02|17:00|六本木お笑いコントライブお正月sp※子ども料金、高校生料金あり"
+    },
+    {
+      "performerId": "maison",
+      "date": "2027-01-02",
+      "openTime": "17:45",
+      "startTime": "18:00",
+      "title": "新春！大宮で初笑いライブ！～ネタとお正月コーナーのおめでたい90分！～",
+      "venue": "大宮ラクーンよしもと劇場",
+      "source": "theater",
+      "sourceUrl": "https://omiya.yoshimoto.co.jp/schedule/",
+      "theaterId": "omiya",
+      "theaterName": "大宮",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "ケビンス／めぞん／他"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|omiya|maison|2027-01-02|18:00|新春大宮で初笑いライブネタとお正月コーナーのおめでたい90分"
     },
     {
       "performerId": "nansui",

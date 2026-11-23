@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-11-23T01:32:31.659264+00:00",
-  "total": 171,
+  "syncedAt": "2026-11-23T04:05:05.808130+00:00",
+  "total": 174,
   "ticketListedCount": 0,
-  "ticketUnlistedCount": 171,
+  "ticketUnlistedCount": 174,
   "ticketOptionCount": 0,
   "salePeriodCount": 0,
   "events": [
@@ -1982,6 +1982,43 @@
     {
       "performerId": "maison",
       "date": "2026-11-25",
+      "openTime": "17:00",
+      "startTime": "17:15",
+      "title": "渋谷Kiwami極LIVEプラス＋",
+      "venue": "渋谷よしもと漫才劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "shibuya",
+      "theaterName": "渋谷",
+      "performersText": [
+        "[ネタ＆コーナーライブ]ドンデコルテ／9番街レトロ／西村ヒロチョ／くらげ／スーパーサイズ・ミー／素敵じゃないか／世間知らズ／おミュータンツ／シンクロニシティ／めぞん [ コーナー出演者]MC：9番街レトロ／スーパーサイズ・ミー／素敵じゃないか／世間知らズ／ドンデコルテ"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-11-25",
       "openTime": "19:00",
       "startTime": "19:30",
       "title": "販売情報",
@@ -2076,7 +2113,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]ダンビラムーチョ／ゆにばーす／カベポスター／めぞん／ヨネダ2000／カラタチ／官兵衛／太鵬／鉄人小町／他"
+        "[ネタ＆コーナーライブ]ダンビラムーチョ／ゆにばーす／ケビンス／カベポスター／めぞん／ヨネダ2000／カラタチ／官兵衛／太鵬／鉄人小町 [ コーナー出演者]MC：ゆにばーす／カラタチ／ダンビラムーチョ／めぞん／ヨネダ2000"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -2201,7 +2238,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]さや香／マルセイユ／九条ジョー／ケビンス／オダウエダ／軟水／マリーマリー／他"
+        "[ネタ＆コーナーライブ]さや香／マルセイユ／九条ジョー／ケビンス／オダウエダ／軟水／マリーマリー／インテイク [ コーナー出演者]MC：九条ジョー／ケビンス／さや香／オダウエダ／他"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -5818,7 +5855,8 @@
       "theaterId": "makuhari",
       "theaterName": "幕張",
       "performersText": [
-        "ショウショウ／もりやすバンバンビガロ／サルゴリラ／カーネーション／オズワルド／蛙亭／めぞん／他"
+        "ショウショウ／もりやすバンバンビガロ／サルゴリラ／カーネーション／オズワルド／蛙亭／めぞん／他",
+        "オズめぞんクリスマス"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -5866,6 +5904,43 @@
       ],
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "maison",
+      "date": "2026-12-25",
+      "openTime": "17:30",
+      "startTime": "18:00",
+      "title": "オズめぞんクリスマス",
+      "venue": "よしもと幕張イオンモール劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://makuhari.yoshimoto.co.jp/schedule/",
+      "theaterId": "makuhari",
+      "theaterName": "幕張",
+      "performersText": [
+        "オズワルド／めぞん"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://makuhari.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
@@ -6397,6 +6472,43 @@
       ],
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "maison",
+      "date": "2027-01-02",
+      "openTime": "17:45",
+      "startTime": "18:00",
+      "title": "新春！大宮で初笑いライブ！～ネタとお正月コーナーのおめでたい90分！～",
+      "venue": "大宮ラクーンよしもと劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://omiya.yoshimoto.co.jp/schedule/",
+      "theaterId": "omiya",
+      "theaterName": "大宮",
+      "performersText": [
+        "ケビンス／めぞん／他"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://omiya.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
