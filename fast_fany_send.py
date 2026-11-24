@@ -1,4 +1,5 @@
 
+import json
 import os
 
 from notify_line import (
@@ -9,7 +10,7 @@ from notify_line import (
     stable_notification_key,
     loose_notification_key,
     get_ticket_send_events,
-    build_ticket_blocks,
+    build_line_digest,
     load_stream_events,
 )
 
@@ -199,72 +200,24 @@ def main():
         print("通知する新着公演はありません")
         return
 
-    blocks = build_ticket_blocks(
-        unique,
-        performer_map,
-        load_stream_events(),
-    )
-
+    message = build_line_digest(unique, [], load_stream_events())
     if not SEND_ENABLED:
-        for index, block in enumerate(
-            blocks,
-            start=1,
-        ):
-            print("")
-            print(f"通知プレビュー {index}")
-            print(block)
-
-        print("")
+        print(json.dumps(message, ensure_ascii=False, indent=2))
         print("LINE送信なし")
         print("通知履歴の変更なし")
         return
 
-    # LINEテキストメッセージの上限を確認
-    # 送信できない長文は送信前に停止する
-    for block in blocks:
-        if len(block) > 5000:
-            raise RuntimeError(
-                "LINEメッセージが5000文字を超えています"
-            )
-
-    # 1公演グループずつ送信する
-    # 送信成功後、対応する公演を通知済みに登録
-    from notify_line import group_ticket_events
-
-    groups = list(
-        group_ticket_events(unique).values()
+    send_line(message)
+    for event in unique:
+        register_event(event, source_keys, stable_keys, loose_keys)
+    save_json(
+        NOTIFIED_FILE,
+        {
+            "stableKeys": sorted(stable_keys),
+            "looseKeys": sorted(loose_keys),
+            "sourceKeys": sorted(source_keys),
+        },
     )
-
-    if len(groups) != len(blocks):
-        raise RuntimeError(
-            "通知グループの数が一致しません"
-        )
-
-    for group, block in zip(groups, blocks):
-        send_line(block)
-
-        for event in group["events"]:
-            register_event(
-                event,
-                source_keys,
-                stable_keys,
-                loose_keys,
-            )
-
-        save_json(
-            NOTIFIED_FILE,
-            {
-                "stableKeys": sorted(stable_keys),
-                "looseKeys": sorted(loose_keys),
-                "sourceKeys": sorted(source_keys),
-            },
-        )
-
-        print(
-            "LINE送信成功・履歴をローカル保存:",
-            len(group["events"]),
-            "件",
-        )
 
     print("FANY高速LINE通知処理完了")
 

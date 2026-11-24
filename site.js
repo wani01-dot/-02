@@ -75,8 +75,17 @@
     );
 
 
-  let activePerformerFilters =
-    new Set();
+  const linkedPerformer = new URLSearchParams(window.location.search).get("performer");
+  const linkedPerformerIds = DEFAULT_PERFORMERS.map(performer => performer.id);
+  if (linkedPerformer === "all") {
+    visiblePerformers = new Set(linkedPerformerIds);
+  } else if (linkedPerformerIds.includes(linkedPerformer)) {
+    visiblePerformers.add(linkedPerformer);
+  }
+
+  let activePerformerFilters = new Set(
+    linkedPerformerIds.includes(linkedPerformer) ? [linkedPerformer] : []
+  );
 
 
   let currentMonth =

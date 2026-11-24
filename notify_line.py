@@ -2,12 +2,14 @@ import json
 import os
 import re
 
-from datetime import datetime
+from datetime import datetime, timedelta
 from difflib import SequenceMatcher
+from urllib.parse import parse_qsl, urlencode, urlsplit
+from zoneinfo import ZoneInfo
 
 import requests
 
-from notification_dedup import matches_any
+from notification_dedup import matches_any, same_show
 
 
 NEW_EVENTS_FILE = "new_events.json"
@@ -38,20 +40,6 @@ LINE_API_URL = (
 # =========================================================
 # 通知表示設定
 # =========================================================
-
-PERFORMER_NOTIFICATION_ORDER = [
-    "nansui",
-    "pyuto",
-    "maison",
-]
-
-
-PERFORMER_EMOJI = {
-    "nansui": "🔵",
-    "pyuto": "🟡",
-    "maison": "🔴",
-}
-
 
 WEEKDAYS_JA = [
     "月",
@@ -240,59 +228,6 @@ def format_notification_date(
     except ValueError:
 
         return value
-
-
-# =========================================================
-# 開場 / 開演表示
-# =========================================================
-
-def format_time_line(
-    event,
-):
-
-    open_time = clean(
-        event.get(
-            "openTime",
-            "",
-        )
-    )
-
-    start_time = clean(
-        event.get(
-            "startTime",
-            "",
-        )
-    )
-
-    parts = []
-
-    if open_time:
-
-        parts.append(
-            "開場"
-            +
-            open_time
-        )
-
-    if start_time:
-
-        parts.append(
-            "開演"
-            +
-            start_time
-        )
-
-    if not parts:
-
-        return ""
-
-    return (
-        "⏰ "
-        +
-        " / ".join(
-            parts
-        )
-    )
 
 
 # =========================================================
@@ -537,101 +472,22 @@ def theater_notification_key(event):
 # LINE
 # =========================================================
 
-def split_line_text(text, max_chars=4500):
-    """Split LINE text without dropping content; prefer event boundaries."""
-    text = str(text or "")
-    if not text:
-        return []
-    chunks = []
-    current = ""
-    # Prefer paragraph breaks; fall back to line breaks and character slicing.
-    for paragraph in text.split("\n\n"):
-        pieces = [paragraph]
-        if len(paragraph) > max_chars:
-            pieces = []
-            for line in paragraph.split("\n"):
-                if len(line) > max_chars:
-                    pieces.extend(line[i:i + max_chars] for i in range(0, len(line), max_chars))
-                else:
-                    pieces.append(line)
-        for piece in pieces:
-            if len(piece) > max_chars:
-                subdivisions = [piece[i:i + max_chars] for i in range(0, len(piece), max_chars)]
-            else:
-                subdivisions = [piece]
-            for part in subdivisions:
-                separator = "\n\n" if current and len(paragraph) <= max_chars else "\n" if current else ""
-                if len(current) + len(separator) + len(part) > max_chars:
-                    chunks.append(current)
-                    current = part
-                else:
-                    current += separator + part
-    if current:
-        chunks.append(current)
-    return chunks
-
-
-def send_line(text):
+def send_line(message):
     if not LINE_TOKEN:
         raise RuntimeError("LINE_CHANNEL_ACCESS_TOKEN がありません")
     if not LINE_TO:
         raise RuntimeError("LINE_TO がありません")
 
-    parts = split_line_text(text)
-    if not parts:
-        print("LINE送信対象の文章が空です。")
-        return
-
-    print(f"LINE分割送信: {len(parts)}通 / 合計{len(text)}文字", flush=True)
-    # LINE push API permits up to five message objects per request.
-    # Send each separately so failures are easy to locate.
-    for index, part in enumerate(parts, start=1):
-        response = requests.post(
-            LINE_API_URL,
-            headers={
-                "Authorization": f"Bearer {LINE_TOKEN}",
-                "Content-Type": "application/json",
-            },
-            json={
-                "to": LINE_TO,
-                "messages": [{"type": "text", "text": part}],
-            },
-            timeout=30,
-        )
-        print(f"LINE {index}/{len(parts)}: status {response.status_code} ({len(part)}文字)", flush=True)
-        if not response.ok:
-            print("LINE response:", response.text, flush=True)
-        response.raise_for_status()
-
-
-# =========================================================
-# 掲載元名称
-# =========================================================
-
-def source_display_name(source):
-
-    mapping = {
-        "fany":
-            "FANY",
-
-        "tiget":
-            "TIGET",
-
-        "eplus":
-            "イープラス",
-
-        "livepocket":
-            "LivePocket",
-
-        "theater":
-            "劇場公式",
-    }
-
-
-    return mapping.get(
-        source,
-        source.upper(),
+    response = requests.post(
+        LINE_API_URL,
+        headers={"Authorization": f"Bearer {LINE_TOKEN}"},
+        json={"to": LINE_TO, "messages": [message]},
+        timeout=30,
     )
+    print(f"LINE Flex送信: status {response.status_code}", flush=True)
+    if not response.ok:
+        print("LINE response:", response.text, flush=True)
+    response.raise_for_status()
 
 
 # =========================================================
@@ -1258,471 +1114,186 @@ def group_theater_events(
     return grouped
 
 
-# =========================================================
-# 通知に表示する追跡芸人
-#
-# 表示順：
-# 🔵軟水 / 🟡ピュート / 🔴めぞん
-# =========================================================
+CALENDAR_URL = os.environ.get(
+    "LINE_CALENDAR_URL", "https://wani01-dot.github.io/-02/"
+)
+DIGEST_PERFORMERS = {
+    "maison": "🔴めぞん",
+    "pyuto": "🟡ピュート",
+    "nansui": "🔵軟水",
+}
+JST = ZoneInfo("Asia/Tokyo")
+DIGEST_LIMIT = 6
+SALE_NEAR_DAYS = 7
 
-def get_group_performer_ids(
-    events,
-):
 
-    ids = []
+def sale_datetime(value):
+    try:
+        result = datetime.fromisoformat(clean(value))
+    except ValueError:
+        return None
+    if result.tzinfo is None:
+        return result.replace(tzinfo=JST)
+    return result.astimezone(JST)
 
 
-    for item in events:
+def digest_sale(events, now):
+    upcoming = []
+    inferred = []
+    statuses = []
+    for event in events:
+        for record in [event, *(event.get("ticketOptions") or [])]:
+            if not isinstance(record, dict):
+                continue
+            statuses.append(clean(record.get("status") or record.get("ticketStatus")))
+            periods = [
+                {
+                    "startAt": record.get("saleStartAt"),
+                    "endAt": record.get("saleEndAt"),
+                    "label": record.get("saleLabel"),
+                },
+                *(record.get("salePeriods") or []),
+            ]
+            for period in periods:
+                if not isinstance(period, dict):
+                    continue
+                start = sale_datetime(period.get("startAt"))
+                end = sale_datetime(period.get("endAt"))
+                label = clean(period.get("label")) or "発売"
+                if end and end <= now:
+                    inferred.append("受付期間終了")
+                elif start and start > now:
+                    upcoming.append((start, label))
+                elif start:
+                    inferred.append("受付期間中")
 
-        performer_id = clean(
-            item.get(
-                "performerId",
-                "",
-            )
+    statuses = unique_strings(statuses) or unique_strings(inferred)
+    if upcoming:
+        start, label = min(upcoming)
+        timing = "発売間近" if start <= now + timedelta(days=SALE_NEAR_DAYS) else "発売予定"
+        status = f"{timing} {start:%m/%d %H:%M}（{label}）"
+        if statuses:
+            status += " / " + "・".join(statuses)
+        return start, status
+    return None, "・".join(statuses) or "発売状況未確認"
+
+
+def flex_text(text, **style):
+    return {"type": "text", "text": text, "wrap": True, **style}
+
+
+def calendar_button(label, performer, style="link"):
+    url = urlsplit(CALENDAR_URL)
+    query = dict(parse_qsl(url.query, keep_blank_values=True))
+    query["performer"] = performer
+    return {
+        "type": "button",
+        "style": style,
+        "height": "sm",
+        "action": {
+            "type": "uri",
+            "label": label,
+            "uri": url._replace(query=urlencode(query)).geturl(),
+        },
+    }
+
+
+def build_line_digest(ticket_events, theater_events, stream_events, *, related=(), now=None):
+    now = now or datetime.now(JST)
+    groups = [
+        *group_ticket_events(ticket_events).values(),
+        *group_theater_events(theater_events).values(),
+    ]
+    if not groups:
+        return None
+
+    counts = dict.fromkeys(DIGEST_PERFORMERS, 0)
+    shows = []
+    for group in groups:
+        event = group["event"]
+        records = group["events"] + [item for item in related if same_show(event, item)]
+        ids = {pid for item in records for pid in event_performer_ids(item)}
+        for pid in counts.keys() & ids:
+            counts[pid] += 1
+        streaming = any(
+            item.get("hasStreaming") is True or has_streaming(item, stream_events)
+            for item in records
         )
-
-
-        if (
-            performer_id
-            and
-            performer_id not in ids
-        ):
-
-            ids.append(
-                performer_id
-            )
-
-
-        tracked = item.get(
-            "trackedPerformers",
-            [],
-        )
-
-
-        if isinstance(
-            tracked,
-            list,
-        ):
-
-            for tracked_id in tracked:
-
-                tracked_id = clean(
-                    tracked_id
-                )
-
-                if (
-                    tracked_id
-                    and
-                    tracked_id not in ids
-                ):
-
-                    ids.append(
-                        tracked_id
-                    )
-
-
-    ordered = []
-
-
-    for performer_id in (
-        PERFORMER_NOTIFICATION_ORDER
-    ):
-
-        if performer_id in ids:
-
-            ordered.append(
-                performer_id
-            )
-
-
-    for performer_id in ids:
-
-        if (
-            performer_id
-            not in ordered
-        ):
-
-            ordered.append(
-                performer_id
-            )
-
-
-    return ordered
-
-
-def format_group_performers(
-    events,
-    performer_map,
-):
-
-    performer_ids = (
-        get_group_performer_ids(
-            events
-        )
-    )
-
-
-    labels = []
-
-
-    for performer_id in performer_ids:
-
-        performer = performer_map.get(
-            performer_id,
-            {},
-        )
-
-
-        name = (
-            performer.get(
-                "name"
-            )
-            or
-            performer_id
-        )
-
-
-        emoji = (
-            PERFORMER_EMOJI.get(
-                performer_id,
-                "⚪"
-            )
-        )
-
-
-        labels.append(
-            emoji
-            +
-            name
-        )
-
-
-    if not labels:
-
-        return "🎙 出演者不明"
-
-
-    return " / ".join(
-        labels
-    )
-
-
-# =========================================================
-# 通常チケットサイト メッセージ
-# =========================================================
-
-def build_ticket_blocks(
-    send_events,
-    performer_map,
-    stream_events,
-):
-
-    blocks = []
-
-
-    grouped = group_ticket_events(
-        send_events
-    )
-
-
-    for group in grouped.values():
-
-        event = group[
-            "event"
-        ]
-
-
-        source = event.get(
-            "source",
-            "",
-        )
-
-
-        source_name = (
-            source_display_name(
-                source
-            )
-        )
-
-
-        performer_line = (
-            format_group_performers(
-                group[
-                    "events"
-                ],
-                performer_map,
-            )
-        )
-
-
-        date_line = (
-            "📅 "
-            +
-            format_notification_date(
-                event.get(
-                    "date",
-                    "",
-                )
-            )
-        )
-
-
-        title_line = (
-            "🎫 "
-            +
-            event.get(
-                "title",
-                "公演名不明",
-            )
-        )
-
-
-        lines = [
-            "【"
-            +
-            source_name
-            +
-            "で公開】",
-
-            performer_line,
-
-            "",
-
-            date_line,
-
-            title_line,
-        ]
-
-
-        venue = clean(
-            event.get(
-                "venue",
-                "",
-            )
-        )
-
-
+        sale_start, sale_status = digest_sale(records, now)
+        shows.append((event, ids, streaming, sale_start, sale_status))
+
+    def sort_key(show):
+        event, _, streaming, start, _ = show
+        if start and start <= now + timedelta(days=SALE_NEAR_DAYS):
+            return (0, start, "", "")
+        return (1 if streaming else 2, now, event.get("date") or "", event.get("startTime") or "")
+
+    shows.sort(key=sort_key)
+    total = len(shows)
+    streaming_count = sum(show[2] for show in shows)
+    body = [
+        flex_text(f"📡 配信あり {streaming_count}件", size="sm", color="#355766"),
+    ]
+
+    preview = shows[:DIGEST_LIMIT]
+    if streaming_count and not any(show[2] for show in preview):
+        stream_event = next(show[0] for show in shows if show[2])
+        title = clean(stream_event.get("title")) or "公演名不明"
+        body.append(flex_text(f"配信公演：{title[:100]}", size="sm", maxLines=2))
+
+    for event, ids, streaming, _, sale_status in preview:
+        names = " / ".join(label for pid, label in DIGEST_PERFORMERS.items() if pid in ids)
+        date = format_notification_date(event.get("date")) or "公演日未定"
+        start = clean(event.get("startTime"))
+        details = " ".join(filter(None, [date, start, names]))
+        title = flex_text((clean(event.get("title")) or "公演名不明")[:100], weight="bold", maxLines=2)
+        source_url = clean(event.get("sourceUrl"))
+        if source_url.startswith(("https://", "http://")) and len(source_url) <= 1000:
+            title["action"] = {"type": "uri", "label": "公演詳細", "uri": source_url}
+
+        body.extend([
+            {"type": "separator", "color": "#DEE7EB"},
+            title,
+            flex_text(details, size="xs", color="#425866"),
+        ])
+        venue = clean(event.get("venue"))
         if venue:
+            body.append(flex_text(venue[:100], size="xs", color="#425866", maxLines=2))
+        body.append(flex_text(sale_status[:120], size="sm", color="#234E60", maxLines=3))
+        if streaming:
+            body.append(flex_text("📡 配信あり", size="xs", color="#17654E"))
 
-            lines.append(
-                "📍 "
-                +
-                venue
-            )
+    if total > DIGEST_LIMIT:
+        body.append(flex_text(f"ほか {total - DIGEST_LIMIT}件はカレンダーへ", size="sm", color="#425866"))
 
-
-        time_line = format_time_line(
-            event
-        )
-
-
-        if time_line:
-
-            lines.append(
-                time_line
-            )
-
-
-        if has_streaming(
-            event,
-            stream_events,
-        ):
-
-            lines.append(
-                "📡 配信あり"
-            )
-
-        else:
-
-            lines.append(
-                "📡 配信なし"
-            )
-
-
-        lines.append(
-            ""
-        )
-
-
-        lines.append(
-            "掲載元："
-            +
-            source_name
-        )
-
-
-        source_url = clean(
-            event.get(
-                "sourceUrl",
-                "",
-            )
-        )
-
-
-        if source_url:
-
-            lines.append(
-                "🔗 "
-                +
-                source_url
-            )
-
-
-        blocks.append(
-            "\n".join(
-                lines
-            )
-        )
-
-
-    return blocks
-
-
-# =========================================================
-# 劇場公式 メッセージ
-# =========================================================
-
-def build_theater_blocks(
-    send_events,
-    performer_map,
-    stream_events,
-):
-
-    blocks = []
-
-
-    grouped = group_theater_events(
-        send_events
-    )
-
-
-    for group in grouped.values():
-
-        event = group[
-            "event"
-        ]
-
-
-        performer_line = (
-            format_group_performers(
-                group[
-                    "events"
+    return {
+        "type": "flex",
+        "altText": f"ワラいどっとこむ｜新着 {total} 公演",
+        "contents": {
+            "type": "bubble",
+            "size": "mega",
+            "header": {
+                "type": "box",
+                "layout": "vertical",
+                "backgroundColor": "#123744",
+                "spacing": "sm",
+                "contents": [
+                    flex_text("ワラいどっとこむ｜新着ライブ", size="sm", color="#D5EEF0"),
+                    flex_text(f"新着 {total} 公演", size="xl", weight="bold", color="#FFFFFF"),
                 ],
-                performer_map,
-            )
-        )
+            },
+            "body": {"type": "box", "layout": "vertical", "spacing": "sm", "contents": body},
+            "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    *(calendar_button(f"{label} {counts[pid]}件", pid) for pid, label in DIGEST_PERFORMERS.items()),
+                    calendar_button("全公演をカレンダーで確認", "all", "primary"),
+                ],
+            },
+        },
+    }
 
-
-        theater_name = (
-            event.get(
-                "theaterName"
-            )
-            or
-            event.get(
-                "venue"
-            )
-            or
-            "劇場"
-        )
-
-
-        lines = [
-            "【劇場公式で公開】",
-
-            performer_line,
-
-            "",
-
-            "📅 "
-            +
-            format_notification_date(
-                event.get(
-                    "date",
-                    "",
-                )
-            ),
-
-            "🎫 "
-            +
-            event.get(
-                "title",
-                "公演名不明",
-            ),
-
-            "📍 "
-            +
-            theater_name,
-        ]
-
-
-        time_line = format_time_line(
-            event
-        )
-
-
-        if time_line:
-
-            lines.append(
-                time_line
-            )
-
-
-        if has_streaming(
-            event,
-            stream_events,
-        ):
-
-            lines.append(
-                "📡 配信あり"
-            )
-
-        else:
-
-            lines.append(
-                "📡 配信なし"
-            )
-
-
-        lines.append(
-            ""
-        )
-
-
-        lines.append(
-            "掲載元：劇場公式"
-        )
-
-
-        source_url = clean(
-            event.get(
-                "sourceUrl",
-                "",
-            )
-        )
-
-
-        if source_url:
-
-            lines.append(
-                "🔗 "
-                +
-                source_url
-            )
-
-
-        blocks.append(
-            "\n".join(
-                lines
-            )
-        )
-
-
-    return blocks
-
-
-# =========================================================
-# MAIN
-# =========================================================
 
 def main():
 
@@ -2110,68 +1681,13 @@ def main():
     # メッセージ作成
     # =====================================================
 
-    blocks = []
-
-
-    blocks.extend(
-        build_theater_blocks(
-            theater_send_events,
-            performer_map,
-            stream_events,
-        )
+    message = build_line_digest(
+        ticket_send_events,
+        theater_send_events,
+        stream_events,
+        related=suppressed_tickets + suppressed_theaters,
     )
-
-
-    blocks.extend(
-        build_ticket_blocks(
-            ticket_send_events,
-            performer_map,
-            stream_events,
-        )
-    )
-
-
-    # 読みやすさ優先: 先頭に件数、各公演に番号、間に区切り線。
-    # 既存の公演詳細・URL・配信情報・通知履歴の処理は維持。
-    total = len(blocks)
-    summary = (
-        "🎭 ワラいどっとこむ｜新着ライブ\n"
-        f"新着 {total} 公演"
-        f"（劇場公式 {len(theater_send_events)}件・"
-        f"チケットサイト {len(ticket_send_events)}件）\n"
-        "出演：めぞん／ピュート／軟水\n"
-        "━━━━━━━━━━━━"
-    )
-    numbered_blocks = []
-    for index, block in enumerate(blocks, start=1):
-        lines = block.split("\n")
-        # 元の「【○○で公開】」を末尾の掲載元に集約し、冒頭は公演番号を強調。
-        if lines and lines[0].startswith("【") and lines[0].endswith("】"):
-            lines = lines[1:]
-        # 連続する空行を整理。
-        clean_lines = []
-        for line in lines:
-            if not line.strip() and (not clean_lines or not clean_lines[-1].strip()):
-                continue
-            clean_lines.append(line)
-        while clean_lines and not clean_lines[-1].strip():
-            clean_lines.pop()
-        numbered_blocks.append(
-            f"【{index}/{total}】\n" + "\n".join(clean_lines)
-        )
-    message = summary + "\n\n" + (
-        "\n\n━━━━━━━━━━━━\n\n".join(numbered_blocks)
-    )
-
-
-    # =====================================================
-    # LINE送信
-    # =====================================================
-
-    send_line(
-        message
-    )
-
+    send_line(message)
 
     record_suppressed()
 

@@ -7,7 +7,7 @@ from notify_line import (
     stable_notification_key,
     loose_notification_key,
     get_ticket_send_events,
-    build_ticket_blocks,
+    build_line_digest,
     load_stream_events,
 )
 
@@ -181,23 +181,9 @@ def main():
         "件",
     )
 
-    # 既存のLINE表示形式でプレビュー
-    blocks = build_ticket_blocks(
-        unique,
-        performer_map,
-        load_stream_events(),
-    )
-
-    for index, block in enumerate(
-        blocks,
-        start=1,
-    ):
-        print("")
-        print(
-            "通知プレビュー",
-            index,
-        )
-        print(block)
+    message = build_line_digest(unique, [], load_stream_events())
+    if message:
+        print(json.dumps(message, ensure_ascii=False, indent=2))
 
     print("")
     print("================================")
