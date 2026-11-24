@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-11-24T13:19:25.642083+00:00",
+  "syncedAt": "2026-11-24T21:30:18.359584+00:00",
   "events": [
     {
       "performerId": "pyuto",
@@ -2595,7 +2595,7 @@
       "saleCategory": "",
       "salePeriods": [],
       "performersText": [
-        "しずる／ミルクボーイ／ななまがり／ツートライブ／ビスケットブラザーズ／ゆにばーす／めぞん／黒帯／ネイビーズアフロ／豪快キャプテン／cacao"
+        "しずる／ミルクボーイ／ななまがり／ツートライブ／ビスケットブラザーズ／ゆにばーす／めぞん／田津原理音／黒帯／ネイビーズアフロ／豪快キャプテン／cacao／MC：おもしろジャンケン"
       ],
       "publishedVia": "theater",
       "hasStreaming": false,
@@ -2670,7 +2670,7 @@
       "saleCategory": "",
       "salePeriods": [],
       "performersText": [
-        "しずる／ミルクボーイ／ななまがり／ツートライブ／ビスケットブラザーズ／ゆにばーす／めぞん／黒帯／ドーナツ・ピーナツ／フースーヤ／cacao"
+        "しずる／ミルクボーイ／ななまがり／ツートライブ／ビスケットブラザーズ／ゆにばーす／めぞん／田津原理音／黒帯／ドーナツ・ピーナツ／フースーヤ／cacao／MC：おもしろジャンケン"
       ],
       "publishedVia": "theater",
       "hasStreaming": false,
@@ -2720,7 +2720,7 @@
       "saleCategory": "",
       "salePeriods": [],
       "performersText": [
-        "しずる／ミルクボーイ／ななまがり／ツートライブ／ビスケットブラザーズ／ゆにばーす／めぞん／ネイビーズアフロ／豪快キャプテン／もも／愛凛冴／cacao"
+        "しずる／ミルクボーイ／ななまがり／ツートライブ／ビスケットブラザーズ／ゆにばーす／めぞん／ネイビーズアフロ／豪快キャプテン／もも／愛凛冴／cacao／MC：おもしろジャンケン"
       ],
       "publishedVia": "theater",
       "hasStreaming": false,
@@ -3470,7 +3470,7 @@
       "saleCategory": "",
       "salePeriods": [],
       "performersText": [
-        "[ランキングバトルライブ]セッツァー／マルセイユ／官兵衛／キンボシ／やさしいズ／まちるだ／ドッチモドッチ／赤嶺総理／カベポスター／11月のリサ／スーパーサイズ・ミー／ドンデコルテ／生ファラオ／エルフ／オフローズ／9番街レトロ／スパジーニ／めぞん／鉄人小町／パピヨン／ヒューマン中村"
+        "[ランキングバトルライブ]セッツァー／マルセイユ／官兵衛／キンボシ／やさしいズ／まちるだ／ドッチモドッチ／赤嶺総理／カベポスター／11月のリサ／スーパーサイズ・ミー／ドンデコルテ／生ファラオ／エルフ／オフローズ／9番街レトロ／スパジーニ／めぞん／鉄人小町／パピヨン／MC：ヒューマン中村"
       ],
       "publishedVia": "theater",
       "hasStreaming": false,
@@ -6309,6 +6309,31 @@
     },
     {
       "performerId": "pyuto",
+      "date": "2027-01-07",
+      "openTime": "21:00",
+      "startTime": "21:15",
+      "title": "ピュっ本木コントライブNEXT！",
+      "venue": "よしもと六本木シアター",
+      "source": "theater",
+      "sourceUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "ピュート／プリズンクイズチャンネル／喫茶ムーン／定点計画／ぺ／ド天国／ナユタ／ガシヒ"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|roppongi|pyuto|2027-01-07|21:15|ピュっ本木コントライブnext"
+    },
+    {
+      "performerId": "pyuto",
       "date": "2027-01-08",
       "openTime": "16:45",
       "startTime": "17:00",
@@ -6381,6 +6406,56 @@
       "hasStreaming": false,
       "streamingPrice": "",
       "theaterSourceKey": "theater|jimbocho|pyuto|2027-01-08|21:00|11月のリサの漫才漫才&コント編"
+    },
+    {
+      "performerId": "nansui",
+      "date": "2027-01-09",
+      "openTime": "19:00",
+      "startTime": "19:15",
+      "title": "椎木の世界",
+      "venue": "よしもと六本木シアター",
+      "source": "theater",
+      "sourceUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "世間知らズ／ミカボ／軟水／ピュート"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|roppongi|nansui|2027-01-09|19:15|椎木の世界"
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2027-01-09",
+      "openTime": "19:00",
+      "startTime": "19:15",
+      "title": "椎木の世界",
+      "venue": "よしもと六本木シアター",
+      "source": "theater",
+      "sourceUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "世間知らズ／ミカボ／軟水／ピュート"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|roppongi|pyuto|2027-01-09|19:15|椎木の世界"
     },
     {
       "performerId": "maison",
@@ -6531,6 +6606,56 @@
       "hasStreaming": false,
       "streamingPrice": "",
       "theaterSourceKey": "theater|shibuya|maison|2027-01-15|17:15|渋谷kiwami極live"
+    },
+    {
+      "performerId": "nansui",
+      "date": "2027-01-15",
+      "openTime": "17:45",
+      "startTime": "18:00",
+      "title": "シチュエーションコントライブ",
+      "venue": "よしもと六本木シアター",
+      "source": "theater",
+      "sourceUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "軟水／11月のリサ／スーパーサイズ・ミー／おミュータンツ／オフローズ／ピュート／他／MC：コウミ"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|roppongi|nansui|2027-01-15|18:00|シチュエーションコントライブ"
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2027-01-15",
+      "openTime": "17:45",
+      "startTime": "18:00",
+      "title": "シチュエーションコントライブ",
+      "venue": "よしもと六本木シアター",
+      "source": "theater",
+      "sourceUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "軟水／11月のリサ／スーパーサイズ・ミー／おミュータンツ／オフローズ／ピュート／他／MC：コウミ"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|roppongi|pyuto|2027-01-15|18:00|シチュエーションコントライブ"
     },
     {
       "performerId": "maison",
@@ -6725,7 +6850,7 @@
       "saleCategory": "",
       "salePeriods": [],
       "performersText": [
-        "[ネタ＆コーナーライブ]ななまがり／ダンビラムーチョ／ドンデコルテ／エバース／ドーナツ・ピーナツ／CITY／カラタチ／スーパーサイズ・ミー／ピュート／ド天国"
+        "[ネタ＆コーナーライブ]ななまがり／ダンビラムーチョ／エバース／ドーナツ・ピーナツ／CITY／カラタチ／スーパーサイズ・ミー／ピュート／ド天国"
       ],
       "publishedVia": "theater",
       "hasStreaming": false,
@@ -6750,7 +6875,7 @@
       "saleCategory": "",
       "salePeriods": [],
       "performersText": [
-        "[ネタ＆コーナーライブ]ななまがり／ダンビラムーチョ／ドンデコルテ／エバース／ドーナツ・ピーナツ／CITY／カラタチ／スーパーサイズ・ミー／ピュート／あなたとネ"
+        "[ネタ＆コーナーライブ]ななまがり／ダンビラムーチョ／エバース／ドーナツ・ピーナツ／CITY／カラタチ／スーパーサイズ・ミー／ピュート／あなたとネ"
       ],
       "publishedVia": "theater",
       "hasStreaming": false,
@@ -6800,7 +6925,7 @@
       "saleCategory": "",
       "salePeriods": [],
       "performersText": [
-        "[ネタ＆コーナーライブ]ななまがり／ダンビラムーチョ／ドンデコルテ／エバース／ドーナツ・ピーナツ／CITY／カラタチ／スーパーサイズ・ミー／ピュート／喫茶ムーン"
+        "[ネタ＆コーナーライブ]ななまがり／ダンビラムーチョ／エバース／ドーナツ・ピーナツ／CITY／カラタチ／スーパーサイズ・ミー／ピュート／喫茶ムーン"
       ],
       "publishedVia": "theater",
       "hasStreaming": false,
@@ -6858,6 +6983,31 @@
       "theaterSourceKey": "theater|jimbocho|maison|2027-01-17|17:15|サンタモニカ新ネタライブ｢シャングリラ｣"
     },
     {
+      "performerId": "nansui",
+      "date": "2027-01-17",
+      "openTime": "18:15",
+      "startTime": "18:30",
+      "title": "イワサキリュウpresents お客様のお悩み解決！コント「お悩み相談室」",
+      "venue": "よしもと六本木シアター",
+      "source": "theater",
+      "sourceUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "イワサキ／エレガント人生／世間知らズ／ブラゴーリ／軟水／鉄人小町"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|roppongi|nansui|2027-01-17|18:30|イワサキリュウpresentsお客様のお悩み解決コントお悩み相談室"
+    },
+    {
       "performerId": "pyuto",
       "date": "2027-01-17",
       "openTime": "18:45",
@@ -6909,6 +7059,57 @@
     },
     {
       "performerId": "pyuto",
+      "date": "2027-01-19",
+      "openTime": "17:15",
+      "startTime": "17:30",
+      "title": "六本木コントライブNEXT！ ※コントパス対象※",
+      "venue": "よしもと六本木シアター",
+      "source": "theater",
+      "sourceUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "サルゴリラ／ライス／しずる／他",
+        "11月のリサvsピュート"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|roppongi|pyuto|2027-01-19|17:30|六本木コントライブnext※コントパス対象※"
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2027-01-19",
+      "openTime": "19:15",
+      "startTime": "19:30",
+      "title": "11月のリサvsピュート",
+      "venue": "よしもと六本木シアター",
+      "source": "theater",
+      "sourceUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "11月のリサ／ピュート"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|roppongi|pyuto|2027-01-19|19:30|11月のリサvsピュート"
+    },
+    {
+      "performerId": "pyuto",
       "date": "2027-01-21",
       "openTime": "17:00",
       "startTime": "17:15",
@@ -6931,6 +7132,57 @@
       "hasStreaming": false,
       "streamingPrice": "",
       "theaterSourceKey": "theater|shibuya|pyuto|2027-01-21|17:15|渋谷kiwami極liveプラス＋"
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2027-01-21",
+      "openTime": "19:00",
+      "startTime": "19:15",
+      "title": "ダイタク×9番街レトロコントライブ「待ってろ！自動車学校」",
+      "venue": "よしもと六本木シアター",
+      "source": "theater",
+      "sourceUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "ダイタク／9番街レトロ",
+        "新ネタピュートライブ"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|roppongi|pyuto|2027-01-21|19:15|ダイタク×9番街レトロコントライブ待ってろ自動車学校"
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2027-01-21",
+      "openTime": "20:45",
+      "startTime": "21:00",
+      "title": "新ネタピュートライブ",
+      "venue": "よしもと六本木シアター",
+      "source": "theater",
+      "sourceUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "ピュート／ゲスト：ビューティフルトーキョーマンズ／狛犬／あなたとネ"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|roppongi|pyuto|2027-01-21|21:00|新ネタピュートライブ"
     },
     {
       "performerId": "maison",
@@ -7183,6 +7435,31 @@
       "theaterSourceKey": "theater|jimbocho|pyuto|2027-01-23|15:00|神保町マンゲキお笑いライブ"
     },
     {
+      "performerId": "nansui",
+      "date": "2027-01-23",
+      "openTime": "21:15",
+      "startTime": "21:30",
+      "title": "トイレッツ",
+      "venue": "よしもと六本木シアター",
+      "source": "theater",
+      "sourceUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "ぶったま／ペッパーGuys／オフローズ／軟水／伝書鳩"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|roppongi|nansui|2027-01-23|21:30|トイレッツ"
+    },
+    {
       "performerId": "maison",
       "date": "2027-01-24",
       "openTime": "17:00",
@@ -7206,6 +7483,31 @@
       "hasStreaming": false,
       "streamingPrice": "",
       "theaterSourceKey": "theater|jimbocho|maison|2027-01-24|17:15|漫才小学校"
+    },
+    {
+      "performerId": "nansui",
+      "date": "2027-01-24",
+      "openTime": "19:15",
+      "startTime": "19:30",
+      "title": "19：30開演/「ごきげん会？ポポポポーン？」",
+      "venue": "よしもと漫才劇場",
+      "source": "theater",
+      "sourceUrl": "https://manzaigekijyo.yoshimoto.co.jp/schedule/",
+      "theaterId": "manzaigekijyo",
+      "theaterName": "よしもと漫才劇場",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "ぎょうぶ／うただ／軟水／シンクロニシティ"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|manzaigekijyo|nansui|2027-01-24|19:30|1930開演/ごきげん会ポポポポーン"
     },
     {
       "performerId": "pyuto",
@@ -7258,6 +7560,32 @@
       "theaterSourceKey": "theater|shibuya|maison|2027-01-26|17:15|渋谷kiwami極live"
     },
     {
+      "performerId": "nansui",
+      "date": "2027-01-26",
+      "openTime": "17:15",
+      "startTime": "17:30",
+      "title": "六本木コントライブNEXT！ ※コントパス対象※",
+      "venue": "よしもと六本木シアター",
+      "source": "theater",
+      "sourceUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "５ＧＡＰ／うるとらブギーズ／他",
+        "軟水新ネタライブ「2分ないんだよね」"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|roppongi|nansui|2027-01-26|17:30|六本木コントライブnext※コントパス対象※"
+    },
+    {
       "performerId": "pyuto",
       "date": "2027-01-26",
       "openTime": "18:30",
@@ -7282,6 +7610,31 @@
       "hasStreaming": false,
       "streamingPrice": "",
       "theaterSourceKey": "theater|jimbocho|pyuto|2027-01-26|18:45|new（）generation"
+    },
+    {
+      "performerId": "nansui",
+      "date": "2027-01-26",
+      "openTime": "19:00",
+      "startTime": "19:15",
+      "title": "軟水新ネタライブ「2分ないんだよね」",
+      "venue": "よしもと六本木シアター",
+      "source": "theater",
+      "sourceUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "軟水／ゲスト：ブラゴーリ／他"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|roppongi|nansui|2027-01-26|19:15|軟水新ネタライブ2分ないんだよね"
     },
     {
       "performerId": "pyuto",
@@ -7485,6 +7838,56 @@
       "hasStreaming": false,
       "streamingPrice": "",
       "theaterSourceKey": "theater|shibuya|pyuto|2027-01-27|21:00|city×ピュートツーマンライブシティート"
+    },
+    {
+      "performerId": "nansui",
+      "date": "2027-01-28",
+      "openTime": "19:15",
+      "startTime": "19:30",
+      "title": "コントのキャラがコーナーに出てくるライブ",
+      "venue": "よしもと六本木シアター",
+      "source": "theater",
+      "sourceUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "ブラゴーリ／ソマオ・ミートボール／軟水／ピュート／ドンココ"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|roppongi|nansui|2027-01-28|19:30|コントのキャラがコーナーに出てくるライブ"
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2027-01-28",
+      "openTime": "19:15",
+      "startTime": "19:30",
+      "title": "コントのキャラがコーナーに出てくるライブ",
+      "venue": "よしもと六本木シアター",
+      "source": "theater",
+      "sourceUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "ブラゴーリ／ソマオ・ミートボール／軟水／ピュート／ドンココ"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|roppongi|pyuto|2027-01-28|19:30|コントのキャラがコーナーに出てくるライブ"
     },
     {
       "performerId": "maison",
