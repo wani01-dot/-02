@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-11-24T05:35:36.988085+00:00",
-  "total": 243,
+  "syncedAt": "2026-11-24T11:39:11.071437+00:00",
+  "total": 251,
   "ticketListedCount": 0,
-  "ticketUnlistedCount": 243,
+  "ticketUnlistedCount": 251,
   "ticketOptionCount": 0,
   "salePeriodCount": 0,
   "events": [
@@ -3127,7 +3127,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[企画ライブ]生ファラオ／エルフ／ビューティフルトーキョーマンズ／めぞん",
+        "[企画ライブ]生ファラオ／エルフ／ビューティフルトーキョーマンズ／めぞん／King Boy",
         "トップ",
         "お知らせ",
         "スケジュール",
@@ -3216,7 +3216,7 @@
       "theaterId": "makuhari",
       "theaterName": "幕張",
       "performersText": [
-        "チャンス大城／ザ・パンチ／すゑひろがりず／ネルソンズ／オズワルド／空気階段／ガンバレルーヤ／めぞん"
+        "チャンス大城／ザ・パンチ／すゑひろがりず／ネルソンズ／オズワルド／空気階段／ガンバレルーヤ／めぞん／少女仮面（木本悠斗／江頭一馬）"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -3253,7 +3253,7 @@
       "theaterId": "makuhari",
       "theaterName": "幕張",
       "performersText": [
-        "チャンス大城／ザ・パンチ／すゑひろがりず／ネルソンズ／オズワルド／空気階段／ガンバレルーヤ／めぞん"
+        "チャンス大城／ザ・パンチ／すゑひろがりず／ネルソンズ／オズワルド／空気階段／ガンバレルーヤ／めぞん／少女仮面（木本悠斗／江頭一馬）"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -4730,7 +4730,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ランキングバトルライブ]スロッピ／TEAM近藤／入間国際宣言／ワラバランス／そいつどいつ／九条ジョー／ケビンス／黄昏の森／ラニーノーズ／オダウエダ／おミュータンツ／ぶったま／ブラゴーリ／ミカボ／軟水／ピュート／マリーマリー／インテイク／ヨネダ2000／ジェーン"
+        "[ランキングバトルライブ]スロッピ／TEAM近藤／入間国際宣言／ワラバランス／そいつどいつ／九条ジョー／ケビンス／黄昏の森／ラニーノーズ／オダウエダ／おミュータンツ／ぶったま／ブラゴーリ／ミカボ／軟水／ピュート／マリーマリー／インテイク／ヨネダ2000／ジェーン／MC：シシガシラ"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -4879,7 +4879,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ランキングバトルライブ]セッツァー／マルセイユ／官兵衛／キンボシ／やさしいズ／まちるだ／ドッチモドッチ／赤嶺総理／カベポスター／11月のリサ／スーパーサイズ・ミー／ドンデコルテ／生ファラオ／エルフ／オフローズ／9番街レトロ／スパジーニ／めぞん／鉄人小町／パピヨン"
+        "[ランキングバトルライブ]セッツァー／マルセイユ／官兵衛／キンボシ／やさしいズ／まちるだ／ドッチモドッチ／赤嶺総理／カベポスター／11月のリサ／スーパーサイズ・ミー／ドンデコルテ／生ファラオ／エルフ／オフローズ／9番街レトロ／スパジーニ／めぞん／鉄人小町／パピヨン／ヒューマン中村"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -5894,7 +5894,7 @@
       "theaterId": "roppongi",
       "theaterName": "六本木",
       "performersText": [
-        "長谷川マモル／瀬古オトハ／【ゲスト】オダウエダ／ピュート"
+        "長谷川マモル／瀬古オトハ／【ゲスト】からし蓮根／オダウエダ／ピュート"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -6532,6 +6532,43 @@
       "saleLabel": ""
     },
     {
+      "performerId": "nansui",
+      "date": "2026-12-30",
+      "openTime": "13:45",
+      "startTime": "14:00",
+      "title": "トイレッツ",
+      "venue": "よしもと六本木シアター",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "performersText": [
+        "ぶったま／ペッパーGuys／オフローズ／軟水／伝書鳩"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "nansui"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://roppongi.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
       "performerId": "maison",
       "date": "2027-01-01",
       "openTime": "10:45",
@@ -6794,6 +6831,80 @@
       "saleLabel": ""
     },
     {
+      "performerId": "maison",
+      "date": "2027-01-02",
+      "openTime": "11:45",
+      "startTime": "12:00",
+      "title": "大宮よしもと新春寄席 その壱",
+      "venue": "大宮ラクーンよしもと劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://omiya.yoshimoto.co.jp/schedule/",
+      "theaterId": "omiya",
+      "theaterName": "大宮",
+      "performersText": [
+        "ぼる塾／ニッポンの社長／めぞん／ケビンス／他"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://omiya.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "maison",
+      "date": "2027-01-02",
+      "openTime": "13:45",
+      "startTime": "14:00",
+      "title": "大宮よしもと新春寄席 その弐",
+      "venue": "大宮ラクーンよしもと劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://omiya.yoshimoto.co.jp/schedule/",
+      "theaterId": "omiya",
+      "theaterName": "大宮",
+      "performersText": [
+        "ぼる塾／ニッポンの社長／めぞん／ケビンス／他"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://omiya.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
       "performerId": "nansui",
       "date": "2027-01-02",
       "openTime": "14:15",
@@ -6817,6 +6928,43 @@
       ],
       "discoveryUrls": [
         "https://roppongi.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "maison",
+      "date": "2027-01-02",
+      "openTime": "15:45",
+      "startTime": "16:00",
+      "title": "大宮よしもと新春寄席 その参",
+      "venue": "大宮ラクーンよしもと劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://omiya.yoshimoto.co.jp/schedule/",
+      "theaterId": "omiya",
+      "theaterName": "大宮",
+      "performersText": [
+        "ぼる塾／ニッポンの社長／めぞん／ケビンス／他"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://omiya.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
@@ -6955,7 +7103,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]エバース／ダンビラムーチョ／めぞん／大王／いぬ／今井らいぱち／オダウエダ／ぶったま"
+        "[ネタ＆コーナーライブ]エバース／ダンビラムーチョ／めぞん／大王／いぬ／シカゴ実業／今井らいぱち／オダウエダ／ぶったま"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -6992,7 +7140,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]エバース／ダンビラムーチョ／めぞん／大王／いぬ／今井らいぱち／オダウエダ／ぶったま"
+        "[ネタ＆コーナーライブ]エバース／ダンビラムーチョ／めぞん／大王／いぬ／シカゴ実業／今井らいぱち／オダウエダ／ぶったま"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -7029,7 +7177,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]エバース／ダンビラムーチョ／めぞん／大王／いぬ／今井らいぱち／オダウエダ／ぶったま",
+        "[ネタ＆コーナーライブ]エバース／ダンビラムーチョ／めぞん／大王／いぬ／シカゴ実業／今井らいぱち／オダウエダ／ぶったま",
         "太鵬×ピュートツーマンライブ「ビーフカレー」"
       ],
       "newUntil": "",
@@ -7169,6 +7317,43 @@
       "saleLabel": ""
     },
     {
+      "performerId": "maison",
+      "date": "2027-01-04",
+      "openTime": "12:15",
+      "startTime": "12:30",
+      "title": "大宮ラクーンよしもと寄席 その壱【県民割引あり】",
+      "venue": "大宮ラクーンよしもと劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://omiya.yoshimoto.co.jp/schedule/",
+      "theaterId": "omiya",
+      "theaterName": "大宮",
+      "performersText": [
+        "パンクブーブー／ライス／デルマパンゲ／相席スタート／ツートライブ／オズワルド／めぞん／他"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://omiya.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
       "performerId": "nansui",
       "date": "2027-01-04",
       "openTime": "12:45",
@@ -7192,6 +7377,43 @@
       ],
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "maison",
+      "date": "2027-01-04",
+      "openTime": "14:15",
+      "startTime": "14:30",
+      "title": "大宮ラクーンよしもと寄席 その弐【県民割引あり】",
+      "venue": "大宮ラクーンよしもと劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://omiya.yoshimoto.co.jp/schedule/",
+      "theaterId": "omiya",
+      "theaterName": "大宮",
+      "performersText": [
+        "パンクブーブー／ライス／デルマパンゲ／相席スタート／ツートライブ／オズワルド／めぞん／他"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://omiya.yoshimoto.co.jp/schedule/"
       ],
       "ticketMatches": [],
       "ticketListed": false,
@@ -7628,7 +7850,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]ゆにばーす／滝音／めぞん／いぬ／くらげ／まんじろう／からし蓮根／アメリカンBBチキン／ソマオ・ミートボール"
+        "[ネタ＆コーナーライブ]ゆにばーす／滝音／めぞん／いぬ／くらげ／まんじろう／からし蓮根／そいつどいつ／アメリカンBBチキン／ソマオ・ミートボール"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -7777,7 +7999,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]ゆにばーす／めぞん／kento fukaya／鶴亀／ランパンプス／ラニーノーズ／アメリカンBBチキン／ペッパーGuys"
+        "[ネタ＆コーナーライブ]ゆにばーす／めぞん／kento fukaya／鶴亀／ランパンプス／そいつどいつ／ラニーノーズ／アメリカンBBチキン／ペッパーGuys"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -8332,7 +8554,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]滝音／カベポスター／ダブルヒガシ／スロッピ／シモリュウ／ソマオ・ミートボール／軟水"
+        "[ネタ＆コーナーライブ]滝音／カベポスター／ダブルヒガシ／スロッピ／シモリュウ／そいつどいつ／ソマオ・ミートボール／軟水"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -8597,7 +8819,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]ゆにばーす／9番街レトロ／まちるだ／スーパーサイズ・ミー／オフローズ／ソマオ・ミートボール／ピュート"
+        "[ネタ＆コーナーライブ]ゆにばーす／9番街レトロ／まちるだ／スーパーサイズ・ミー／アズーロ24／オフローズ／ソマオ・ミートボール／ピュート"
       ],
       "newUntil": "",
       "trackedPerformers": [
@@ -8772,6 +8994,80 @@
       "saleLabel": ""
     },
     {
+      "performerId": "maison",
+      "date": "2027-01-27",
+      "openTime": "13:30",
+      "startTime": "14:00",
+      "title": "幕張平日ネタSP14時",
+      "venue": "よしもと幕張イオンモール劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://makuhari.yoshimoto.co.jp/schedule/",
+      "theaterId": "makuhari",
+      "theaterName": "幕張",
+      "performersText": [
+        "[ネタ]LLR／もりやすバンバンビガロ／しずる／カゲヤマ／コロコロチキチキペッパーズ／空気階段／めぞん／他"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://makuhari.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "maison",
+      "date": "2027-01-27",
+      "openTime": "15:30",
+      "startTime": "16:00",
+      "title": "幕張平日ネタSP16時",
+      "venue": "よしもと幕張イオンモール劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://makuhari.yoshimoto.co.jp/schedule/",
+      "theaterId": "makuhari",
+      "theaterName": "幕張",
+      "performersText": [
+        "[ネタ]LLR／もりやすバンバンビガロ／しずる／カゲヤマ／コロコロチキチキペッパーズ／空気階段／めぞん／他"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "maison"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://makuhari.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
       "performerId": "nansui",
       "date": "2027-01-27",
       "openTime": "17:00",
@@ -8783,7 +9079,7 @@
       "theaterId": "shibuya",
       "theaterName": "渋谷",
       "performersText": [
-        "[ネタ＆コーナーライブ]CITY／鶴亀／まちるだ／ケビンス／ラニーノーズ／ミカボ／軟水／cacao／三遊間",
+        "[ネタ＆コーナーライブ]CITY／鶴亀／まちるだ／ケビンス／そいつどいつ／ラニーノーズ／ミカボ／軟水／cacao／三遊間",
         "軟水 三遊間 cacao"
       ],
       "newUntil": "",
