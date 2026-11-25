@@ -6,6 +6,8 @@ from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
 
+from performer_matching import cast_matches
+
 
 EPLUS_BASE = "https://eplus.jp"
 
@@ -1403,36 +1405,9 @@ def scrape_eplus_detail(
         )
     )
 
-    performer_name = clean(
-        performer.get(
-            "name",
-            ""
-        )
-    )
-
-    # 人物ページ由来なので原則対象。
-    # 出演者欄が取得できた場合は
-    # 念のため対象芸人を確認する。
-    if (
-        performers_text
-        and
-        performer_name
-        and
-        not any(
-            performer_name
-            in value
-            for value
-            in performers_text
-        )
-    ):
-        # ページによって出演欄が受付単位で
-        # 分断されることがあるため、
-        # ページ全文にもいなければ除外
-        if (
-            performer_name
-            not in whole_text
-        ):
-            return None
+    if not cast_matches(performers_text, performer):
+        print(f"イープラス 出演確認待ちまたは対象外: {detail_url}", flush=True)
+        return None
 
     return {
         "performerId":

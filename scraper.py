@@ -7,6 +7,8 @@ from urllib.parse import urlencode, urljoin
 import requests
 from bs4 import BeautifulSoup
 
+from performer_matching import cast_matches
+
 from eplus_scraper import scrape_eplus
 from livepocket_scraper import scrape_livepocket
 
@@ -2318,10 +2320,6 @@ def parse_fany_text_events(
         "id"
     ]
 
-    performer_name = performer[
-        "name"
-    ]
-
     event_indexes = [
         index
         for index, line in enumerate(
@@ -2381,40 +2379,8 @@ def parse_fany_text_events(
         ):
             continue
 
-        performer_text = ""
-
-        try:
-            performer_index = block.index(
-                "出演"
-            )
-
-            parts = []
-
-            for line in block[
-                performer_index + 1:
-            ]:
-                if is_sales_line(
-                    line
-                ):
-                    break
-
-                parts.append(
-                    line
-                )
-
-            performer_text = " ".join(
-                parts
-            )
-
-        except ValueError:
-            performer_text = " ".join(
-                block
-            )
-
-        if (
-            performer_name
-            not in performer_text
-        ):
+        cast = get_fany_performers(block)
+        if not cast_matches(cast, performer):
             continue
 
         start_time = ""
@@ -2542,7 +2508,7 @@ def parse_fany_text_events(
                 [],
 
             "performersText":
-                [],
+                cast,
         })
 
     return events
@@ -2619,6 +2585,14 @@ def find_reception_candidates(html):
                     line
                 )
             )
+
+            card_urls = {
+                urljoin(FANY_BASE, a["href"])
+                for a in container.find_all("a", href=True)
+                if FANY_RECEPTION_RE.search(a["href"])
+            }
+            if card_urls - {url}:
+                break
 
             if (
                 date_count == 1
@@ -2828,6 +2802,9 @@ def get_fany_performers(
 
         if not text:
             continue
+
+        if re.fullmatch(r"(?:購入|チケット(?:を)?購入(?:する)?|申込(?:む|み)?|詳細(?:を見る)?)", text):
+            break
 
         if is_detail_boundary(
             text,
@@ -3141,23 +3118,16 @@ def request_fany_range(
         response.text
     )
 
-    events = parse_fany_text_events(
-        lines,
-        performer,
-        search_url,
-    )
-
-    attach_fany_urls(
-        events,
-        response.text,
-    )
-
-    return (
-        count_fany_blocks(
-            lines
-        ),
-        events,
-    )
+    cards = find_reception_candidates(response.text)
+    events = [
+        event
+        for card in cards
+        for event in parse_fany_text_events(card["lines"], performer, card["url"])
+    ]
+    block_count = count_fany_blocks(lines)
+    if block_count and not cards:
+        raise ValueError("FANY: 公演ブロックはあるが公演カードを確認できません")
+    return block_count, events
 
 
 def scrape_fany_range(
@@ -3261,9 +3231,8 @@ def scrape_fany(
 
     for event in events:
         unique[
-            identity_key(
-                event
-            )
+            (identity_key(event), event.get("date"), event.get("startTime"),
+             event.get("venue"), event.get("title"))
         ] = event
 
     result = list(
@@ -3292,7 +3261,7 @@ def scrape_fany(
         "件",
     )
 
-    return enriched
+    return [event for event in enriched if cast_matches(event.get("performersText"), performer)]
 
 
 # =========================================================
@@ -3736,12 +3705,6 @@ def scrape_tiget(
             lines
         )
 
-        if (
-            performer_name
-            not in whole_text
-        ):
-            continue
-
         date_match = re.search(
             r"(20\d{2})年"
             r"(\d{1,2})月"
@@ -3811,6 +3774,10 @@ def scrape_tiget(
                 title,
             )
         )
+
+        if not cast_matches(performers_text, performer):
+            print(f"TIGET 出演確認待ちまたは対象外: {event_url}", flush=True)
+            continue
 
         sale_periods_raw = (
             extract_sale_periods(

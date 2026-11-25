@@ -7,13 +7,10 @@ import sys
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
+from performer_matching import OFFICIAL_PROFILES
+
 SOURCES = [Path("events.json"), Path("discovered_events.json")]
 OUTPUT = Path("member_discovery_events.json")
-OFFICIAL_PROFILES = {
-    "maison": ("https://profile.yoshimoto.co.jp/talent/detail?id=8835", ["吉野おいなり君", "めぞん吉野", "めぞん 吉野", "原一刻", "めぞん原"]),
-    "nansui": ("https://profile.yoshimoto.co.jp/talent/detail?id=8902", ["大川内聡", "軟水大川内", "軟水 大川内", "つるまる", "軟水つるまる"]),
-    "pyuto": ("https://profile.yoshimoto.co.jp/talent/detail?id=8773", ["ピュートポイント", "ピュート ポイント", "ポイント（ピュート）", "竹内智也", "ピュート竹内", "ピュート 竹内"]),
-}
 # 「ポイント」だけでは一般語と衝突するので対象にしない。
 
 def load_events(path):

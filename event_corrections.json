@@ -1,0 +1,74 @@
+{
+  "reason": "ユーザー提示の公式出演者と保存データを照合。19:15の公演に21:00の公演名が混入し、ピュート出演と誤判定。",
+  "officialSchedule": "https://roppongi.yoshimoto.co.jp/schedule/",
+  "confirmedCast": [
+    "ダイタク",
+    "9番街レトロ"
+  ],
+  "archivedRows": {
+    "theater_events.json": {
+      "performerId": "pyuto",
+      "date": "2027-01-21",
+      "openTime": "19:00",
+      "startTime": "19:15",
+      "title": "ダイタク×9番街レトロコントライブ「待ってろ！自動車学校」",
+      "venue": "よしもと六本木シアター",
+      "source": "theater",
+      "sourceUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "ticketStatus": "",
+      "ticketOptions": [],
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "salePeriods": [],
+      "performersText": [
+        "ダイタク／9番街レトロ",
+        "新ネタピュートライブ"
+      ],
+      "publishedVia": "theater",
+      "hasStreaming": false,
+      "streamingPrice": "",
+      "theaterSourceKey": "theater|roppongi|pyuto|2027-01-21|19:15|ダイタク×9番街レトロコントライブ待ってろ自動車学校"
+    },
+    "discovered_events.json": {
+      "performerId": "pyuto",
+      "date": "2027-01-21",
+      "openTime": "19:00",
+      "startTime": "19:15",
+      "title": "ダイタク×9番街レトロコントライブ「待ってろ！自動車学校」",
+      "venue": "よしもと六本木シアター",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://roppongi.yoshimoto.co.jp/schedule/",
+      "theaterId": "roppongi",
+      "theaterName": "六本木",
+      "performersText": [
+        "ダイタク／9番街レトロ",
+        "新ネタピュートライブ"
+      ],
+      "newUntil": "",
+      "trackedPerformers": [
+        "pyuto"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://roppongi.yoshimoto.co.jp/schedule/"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    }
+  }
+}

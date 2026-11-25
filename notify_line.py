@@ -472,18 +472,25 @@ def theater_notification_key(event):
 # LINE
 # =========================================================
 
-def send_line(message):
+def post_line(message, *, retry_key=None, timeout=30):
     if not LINE_TOKEN:
         raise RuntimeError("LINE_CHANNEL_ACCESS_TOKEN がありません")
     if not LINE_TO:
         raise RuntimeError("LINE_TO がありません")
 
-    response = requests.post(
+    headers = {"Authorization": f"Bearer {LINE_TOKEN}"}
+    if retry_key:
+        headers["X-Line-Retry-Key"] = retry_key
+    return requests.post(
         LINE_API_URL,
-        headers={"Authorization": f"Bearer {LINE_TOKEN}"},
+        headers=headers,
         json={"to": LINE_TO, "messages": [message]},
-        timeout=30,
+        timeout=timeout,
     )
+
+
+def send_line(message):
+    response = post_line(message)
     print(f"LINE Flex送信: status {response.status_code}", flush=True)
     if not response.ok:
         print("LINE response:", response.text, flush=True)
@@ -1198,12 +1205,13 @@ def calendar_button(label, performer, style="link"):
     }
 
 
-def build_line_digest(ticket_events, theater_events, stream_events, *, related=(), now=None):
+def build_line_digest(ticket_events, theater_events, stream_events, *, related=(), now=None, displayed=None, groups=None):
     now = now or datetime.now(JST)
-    groups = [
-        *group_ticket_events(ticket_events).values(),
-        *group_theater_events(theater_events).values(),
-    ]
+    if groups is None:
+        groups = [
+            *group_ticket_events(ticket_events).values(),
+            *group_theater_events(theater_events).values(),
+        ]
     if not groups:
         return None
 
@@ -1236,6 +1244,8 @@ def build_line_digest(ticket_events, theater_events, stream_events, *, related=(
     ]
 
     preview = shows[:DIGEST_LIMIT]
+    if displayed is not None:
+        displayed.update(id(show[0]) for show in preview)
     if streaming_count and not any(show[2] for show in preview):
         stream_event = next(show[0] for show in shows if show[2])
         title = clean(stream_event.get("title")) or "公演名不明"
