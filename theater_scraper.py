@@ -142,6 +142,7 @@ def parse_month(theater, year, month, rows, performers):
                 "ticketUrl": public_url(row.get("url1")),
                 "streamingUrl": public_url(row.get("url2")),
                 "ticketStatus": "",
+                "ticketNotice": plain(row.get("notice")),
                 "ticketOptions": [],
                 "salePeriods": [],
                 "performersText": cast,

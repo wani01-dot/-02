@@ -132,7 +132,9 @@ def run(store, performers, sources, *, persist_catalogs):
         store.data["migrationComplete"] = True
     refresh_schedule_interval(store)
     store.save()
-    delivery_ok = outbox.retry()
+    retry_keys = [key for key, batch in outbox.batches.items()
+                  if batch["status"] in ("pending", "failed")]
+    delivery_ok = True
     # Recover source data staged before a previous runner stopped after delivery.
     catalog_keys = {catalog_key(event) for event in tickets + theaters}
     recovered = [
@@ -167,6 +169,8 @@ def run(store, performers, sources, *, persist_catalogs):
         merge_catalog(tickets, new_tickets, discovered),
         merge_catalog(theaters, new_theaters, discovered),
     )
+    for key in retry_keys:
+        delivery_ok = bool(outbox.send(key)) and delivery_ok
     if not theater_success:
         raise RuntimeError("全劇場取得失敗。既存の劇場データを保持しました")
     if not delivery_ok:
