@@ -64,18 +64,26 @@ def render_summary(lines):
         elif row.get("type") == "probe_roppongi_check":
             roppongi.append(row)
 
-    succeeded = sum(results.get(source, {}).get("status") == "success" for source in SOURCES)
-    failed = sum(results.get(source, {}).get("status") == "failed" for source in SOURCES)
+    sources = dict(SOURCES)
+    labels = {"tiget": "TIGET", "eplus": "イープラス", "livepocket": "LivePocket"}
+    for source in labels:
+        for pid, name in ARTISTS.items():
+            key = f"{source}/{pid}"
+            if key in results:
+                sources[key] = f"{labels[source]}・{name}"
+
+    succeeded = sum(results.get(source, {}).get("status") == "success" for source in sources)
+    failed = sum(results.get(source, {}).get("status") == "failed" for source in sources)
     report = [
         "## 公演取得テスト",
         "",
-        f"成功 **{succeeded}** ／ 失敗 **{failed}** ／ 未実行・未確認 **{len(SOURCES) - succeeded - failed}**",
+        f"成功 **{succeeded}** ／ 失敗 **{failed}** ／ 未実行・未確認 **{len(sources) - succeeded - failed}**",
         "",
         "| 取得元 | 成否 | 取得件数 | 秒 | エラー理由 |",
         "| --- | --- | ---: | ---: | --- |",
     ]
     counts = []
-    for source, label in SOURCES.items():
+    for source, label in sources.items():
         row = results.get(source, {})
         status = row.get("status")
         seconds = row.get("acquisitionSeconds")
@@ -94,7 +102,7 @@ def render_summary(lines):
         )
         if status == "success":
             counts.append((label, row.get("counts", {})))
-    report.extend(["", "劇場の件数は「対象3組の公演数 / 公式掲載総数」。FANYは対象の公演数。"])
+    report.extend(["", "劇場の件数は「対象3組の公演数 / 公式掲載総数」。チケットサイトは対象の公演数。"])
     if counts:
         report.extend(["", "### 出演者別件数", "",
                        "| 取得元 | めぞん | ピュート | 軟水 |", "| --- | ---: | ---: | ---: |"])

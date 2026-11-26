@@ -19,14 +19,15 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: sync-events-and-pages
+  cancel-in-progress: false
+
 jobs:
   sync:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 8
-    concurrency:
-      group: sync-events-and-pages
-      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
         with:

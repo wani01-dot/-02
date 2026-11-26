@@ -1,4 +1,5 @@
 """Run the production readers and dry-run classification without writing repository state."""
+import argparse
 import json
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -43,6 +44,11 @@ def fany_result(performer):
         "months": [begin.isoformat()[:7] for begin, _ in scraper.build_month_ranges()],
         "official": None,
     }
+
+
+def other_ticket_result(source, performer):
+    events = fetch_ticket(source, performer)
+    return events, {"months": sorted({e["date"][:7] for e in events}), "official": None}
 
 
 def collect(task, *args):
@@ -104,7 +110,7 @@ def check_roppongi(evidence, events, performers):
               officialEventId=event_id, verdict=verdict, included=included, official=matches)
 
 
-def probe(performers, candidates, baseline, ticket_keys, theater_keys):
+def probe(performers, candidates, baseline, ticket_keys, theater_keys, *, other_tickets=False):
     state = SimpleNamespace(data={"records": {}, "batches": {}})
     dry_run = Outbox(state, [], performers,
                      legacy_ticket_keys=ticket_keys, legacy_theater_keys=theater_keys)
@@ -115,7 +121,9 @@ def probe(performers, candidates, baseline, ticket_keys, theater_keys):
     failures = []
     new_batches = {"fany": 0, "theater": 0}
     decisions = {}
-    with ThreadPoolExecutor(max_workers=3) as theaters, ThreadPoolExecutor(max_workers=3) as fany:
+    with (ThreadPoolExecutor(max_workers=3) as theaters,
+          ThreadPoolExecutor(max_workers=3) as fany,
+          ThreadPoolExecutor(max_workers=3) as tickets):
         jobs = {
             theaters.submit(collect, theater_result, venue, performers): f"theater/{venue['id']}"
             for venue in THEATERS
@@ -123,6 +131,16 @@ def probe(performers, candidates, baseline, ticket_keys, theater_keys):
         jobs.update({
             fany.submit(collect, fany_result, p): f"fany/{p['id']}" for p in performers
         })
+        if other_tickets:
+            for source in ("tiget", "eplus", "livepocket"):
+                new_batches[source] = 0
+                for performer in performers:
+                    if source not in performer.get("sources", ["fany", "tiget"]):
+                        continue
+                    jobs[tickets.submit(collect, other_ticket_result, source, performer)] = (
+                        f"{source}/{performer['id']}"
+                    )
+        source_total = len(jobs)
         for future in as_completed(jobs):
             source = jobs[future]
             began, completed, seconds, events, metadata, error = future.result()
@@ -173,17 +191,21 @@ def probe(performers, candidates, baseline, ticket_keys, theater_keys):
         status, matches = review(candidate, evidence.get(candidate["theaterId"]), indexed)
         audit("probe_review", status=status, stored=candidate, official=matches)
     audit("probe_summary", failures=failures, hypotheticalBatches=new_batches,
-          sourcesTotal=len(THEATERS) + len(performers), reviewRecords=len(candidates), decisions=decisions,
+          sourcesTotal=source_total, reviewRecords=len(candidates), decisions=decisions,
           reviewShows=len({(c["theaterId"], c["date"], c["startTime"], c["title"]) for c in candidates}))
     return not failures
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--other-tickets", action="store_true")
+    args = parser.parse_args()
     performers = json.loads(Path("performers.json").read_text())["performers"]
     candidates = json.loads(REVIEW_FILE.read_text())
     ok = probe(performers, candidates, read_events("events.json") + read_events("theater_events.json"),
                line.load_json("notified_events.json", {}).get("sourceKeys", []),
-               line.load_json("theater_notified_events.json", {}).get("theaterKeys", []))
+               line.load_json("theater_notified_events.json", {}).get("theaterKeys", []),
+               other_tickets=args.other_tickets)
     return 0 if ok else 1
 
 

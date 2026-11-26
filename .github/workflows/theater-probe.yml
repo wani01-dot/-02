@@ -2,6 +2,11 @@ name: FANY and theater acquisition probe
 
 on:
   workflow_dispatch:
+    inputs:
+      other_tickets:
+        description: "Also inspect TIGET, eplus, and LivePocket"
+        type: boolean
+        default: true
 
 permissions:
   contents: read
@@ -29,9 +34,13 @@ jobs:
 
       - name: Inspect public FANY and theater data
         shell: bash
+        env:
+          OTHER_TICKETS: ${{ inputs.other_tickets }}
         run: |
           set -o pipefail
-          python -u acquisition_probe.py | tee "$RUNNER_TEMP/acquisition-probe.log"
+          args=()
+          if [[ "$OTHER_TICKETS" == true ]]; then args+=(--other-tickets); fi
+          python -u acquisition_probe.py "${args[@]}" | tee "$RUNNER_TEMP/acquisition-probe.log"
 
       - name: Write acquisition summary
         if: ${{ always() && steps.setup-python.outcome == 'success' }}

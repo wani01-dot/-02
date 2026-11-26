@@ -1306,6 +1306,11 @@ def build_line_digest(ticket_events, theater_events, stream_events, *, related=(
 
 
 def main():
+    workflow_file = os.environ.get("GITHUB_WORKFLOW_REF", "").split("@", 1)[0]
+    if os.environ.get("GITHUB_ACTIONS") == "true" and workflow_file.endswith((
+        "/.github/workflows/sync.yml", "/.github/workflows/theater-probe.yml",
+    )):
+        raise RuntimeError("旧通知経路は停止済みです。notification_pipeline.py を使用してください")
 
     # =====================================================
     # 通常チケットサイト

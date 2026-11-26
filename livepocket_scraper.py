@@ -696,6 +696,8 @@ def get_livepocket_event_urls_with_page(
             "LivePocketブラウザ検索失敗:",
             error,
         )
+        if not result:
+            raise
 
     print(
         "LivePocketブラウザ取得:",
@@ -1551,8 +1553,9 @@ def scrape_livepocket_detail(
             )
         )
 
-        if browser_html:
-            html = browser_html
+        if not browser_html:
+            raise RuntimeError(f"LivePocketの出演者欄を取得できません: {event_url}")
+        html = browser_html
 
     if not html:
         print(
@@ -1833,6 +1836,7 @@ def scrape_livepocket(
         )
 
     events = []
+    detail_errors = []
     seen = set()
 
     # =====================================================
@@ -1899,6 +1903,7 @@ def scrape_livepocket(
                         )
 
                     except Exception as error:
+                        detail_errors.append(error)
                         print(
                             "LivePocket詳細取得失敗:",
                             event_url,
@@ -1967,6 +1972,13 @@ def scrape_livepocket(
             performer_name,
             error,
         )
+        if not events:
+            raise
+
+    if detail_errors and not events:
+        raise RuntimeError(
+            f"LivePocket詳細{len(detail_errors)}件の取得に失敗し、出演公演0件を確定できません"
+        ) from detail_errors[0]
 
     # =====================================================
     # 最終結果

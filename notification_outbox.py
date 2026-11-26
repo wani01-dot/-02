@@ -116,11 +116,12 @@ class GitState:
 
 
 class Outbox:
-    def __init__(self, store, stream_events, performers, *, legacy_ticket_keys=(), legacy_theater_keys=()):
+    def __init__(self, store, stream_events, performers, *, legacy_ticket_keys=(), legacy_theater_keys=(), quota=None):
         self.store = store
         self.records = store.data["records"]
         self.batches = store.data["batches"]
         self.stream_events = stream_events
+        self.quota = quota
         self.legacy_ticket_keys = set(legacy_ticket_keys)
         self.legacy_theater_keys = set(legacy_theater_keys)
         self.notify_ids = {p["id"] for p in performers if p.get("notify")}
@@ -226,12 +227,19 @@ class Outbox:
             if batch.get("definitivelyRejected"):
                 replacement = str(uuid.uuid4())
                 self.batches[replacement] = {**batch, "firstAttemptAt": None, "status": "pending"}
+                self.batches[replacement].pop("quotaMonth", None)
                 del self.batches[retry_key]
                 return self.send(replacement)
             batch["status"] = "reconciliation_required"
             self.store.save()
             audit("retry_window_expired", retryKey=retry_key, keys=batch["keys"])
             return False
+        if self.quota is not None:
+            allowed, reason = self.quota.reserve(batch)
+            if not allowed:
+                self.store.save()
+                audit("line_quota_deferred", retryKey=retry_key, keys=batch["keys"], reason=reason)
+                return True
         previously_unresolved = first_attempt is not None and not batch.get("definitivelyRejected")
         batch["firstAttemptAt"] = first_attempt or timestamp()
         batch["definitivelyRejected"] = False

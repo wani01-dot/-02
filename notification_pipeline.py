@@ -11,6 +11,7 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
 import notify_line as line
+from line_quota import LineQuota
 import scraper
 from performer_matching import cast_matches
 from notification_outbox import GitState, Outbox, audit, git, official_id, record_id, signature, timestamp
@@ -118,7 +119,7 @@ def refresh_schedule_interval(store):
     store.data["lastScheduledAt"] = started
 
 
-def run(store, performers, sources, *, persist_catalogs):
+def run(store, performers, sources, *, persist_catalogs, quota=None):
     tickets, theaters = (read_events(path) for path in CATALOGS)
     theaters = apply_reviewed_casts(theaters, performers)
     stream_events = line.load_stream_events()
@@ -126,7 +127,7 @@ def run(store, performers, sources, *, persist_catalogs):
     theater_history = line.load_json("theater_notified_events.json", {})
     outbox = Outbox(store, stream_events, performers,
                     legacy_ticket_keys=ticket_history.get("sourceKeys", []),
-                    legacy_theater_keys=theater_history.get("theaterKeys", []))
+                    legacy_theater_keys=theater_history.get("theaterKeys", []), quota=quota)
     if not store.data.get("migrationComplete"):
         # Existing listings may have been delivered by older code. Import as
         # legacy evidence without calling them API-confirmed deliveries.
@@ -212,13 +213,13 @@ def main():
     store = GitState()
     key = os.environ.get("LINE_REQUEUE_RECORD", "")
     if key:
-        outbox = Outbox(store, line.load_stream_events(), performers)
+        outbox = Outbox(store, line.load_stream_events(), performers, quota=LineQuota(store))
         outbox.requeue_confirmed_unsent(
             key, os.environ.get("LINE_REQUEUE_EVIDENCE", ""),
             confirm=os.environ.get("LINE_REQUEUE_CONFIRM") == "true",
         )
         return
-    run(store, performers, completed_sources, persist_catalogs=publish_catalogs)
+    run(store, performers, completed_sources, persist_catalogs=publish_catalogs, quota=LineQuota(store))
 
 
 if __name__ == "__main__":
