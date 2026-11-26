@@ -158,6 +158,15 @@ class Outbox:
                 )
             if migration:
                 status, decision = "legacy", "migration_existing_listing"
+            elif match and self.records[match]["status"] == "legacy":
+                prior = self.records[match]
+                prior_event = prior["event"]
+                history_key = (line.theater_notification_key(prior_event) in self.legacy_theater_keys
+                               if prior_event.get("source") == "theater"
+                               else line.source_notification_key(prior_event) in self.legacy_ticket_keys)
+                status = "legacy"
+                decision = ("migration_exact_history_key" if previously_indexed or history_key
+                            else "migration_listing_delivery_unconfirmed")
             elif match:
                 status, decision = "duplicate", reason
                 if match in new:

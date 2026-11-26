@@ -9,7 +9,7 @@ from urllib.parse import urlencode
 
 import notify_line as line
 import scraper
-from notification_outbox import Outbox, audit, official_id, timestamp
+from notification_outbox import Outbox, audit, official_id, record_id, timestamp
 from notification_pipeline import fetch_ticket, read_events
 from performer_matching import cast_matches, normalized_name
 from theater_scraper import THEATERS, cast_lines, fetch_theater, plain, time_field
@@ -73,6 +73,8 @@ def review(candidate, evidence, performers):
         return "cast_unpublished", matches
     if cast_matches(matches[0]["cast"], performers[candidate["performerId"]]):
         return "official_cast_matches", matches
+    if any(normalized_name(field.strip("／ /")) in {"他", "ほか"} for field in matches[0]["cast"]):
+        return "cast_partial_unconfirmed", matches
     # A reviewer must confirm the visible official cast is complete before correction.
     return "cast_differs_review_required", matches
 
@@ -112,6 +114,7 @@ def probe(performers, candidates, baseline, ticket_keys, theater_keys):
     roppongi_events = []
     failures = []
     new_batches = {"fany": 0, "theater": 0}
+    decisions = {}
     with ThreadPoolExecutor(max_workers=3) as theaters, ThreadPoolExecutor(max_workers=3) as fany:
         jobs = {
             theaters.submit(collect, theater_result, venue, performers): f"theater/{venue['id']}"
@@ -144,6 +147,10 @@ def probe(performers, candidates, baseline, ticket_keys, theater_keys):
                     ]
             keys = dry_run.add(events, acquired_at=completed)
             new_batches[kind] += bool(keys)
+            for event in events:
+                record = dry_run.records.get(record_id(event))
+                reason = record["reason"] if record else "not_targeted"
+                decisions[reason] = decisions.get(reason, 0) + 1
             decided = timestamp()
             elapsed = datetime.fromisoformat(decided) - datetime.fromisoformat(began)
             audit("probe_source_result", source=source, status="success", startedAt=began,
@@ -166,7 +173,7 @@ def probe(performers, candidates, baseline, ticket_keys, theater_keys):
         status, matches = review(candidate, evidence.get(candidate["theaterId"]), indexed)
         audit("probe_review", status=status, stored=candidate, official=matches)
     audit("probe_summary", failures=failures, hypotheticalBatches=new_batches,
-          sourcesTotal=len(THEATERS) + len(performers), reviewRecords=len(candidates),
+          sourcesTotal=len(THEATERS) + len(performers), reviewRecords=len(candidates), decisions=decisions,
           reviewShows=len({(c["theaterId"], c["date"], c["startTime"], c["title"]) for c in candidates}))
     return not failures
 

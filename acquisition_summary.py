@@ -23,6 +23,7 @@ SOURCES = {
 REVIEWS = {
     "official_cast_matches": "公式出演欄に一致",
     "cast_differs_review_required": "出演欄に差異・要確認",
+    "cast_partial_unconfirmed": "出演欄に「他」・維持",
     "cast_unpublished": "出演欄を確認できず",
     "not_found": "一致する公演なし・維持",
     "outside_verified_months": "確認対象月の外・維持",
@@ -52,11 +53,14 @@ def render_summary(lines):
     results = {}
     reviews = Counter()
     roppongi = []
+    decisions = {}
     for row in records(lines):
         if row.get("type") == "probe_source_result":
             results[row["source"]] = row
         elif row.get("type") == "probe_review":
             reviews[row["status"]] += 1
+        elif row.get("type") == "probe_summary":
+            decisions = row.get("decisions", {})
         elif row.get("type") == "probe_roppongi_check":
             roppongi.append(row)
 
@@ -101,6 +105,13 @@ def render_summary(lines):
                        "| 開演 | 照合結果 | 公式公演ID |", "| --- | --- | --- |"])
         for row in roppongi:
             report.append(f"| {cell(row['startTime'])} | {cell(row['status'])} | {cell(row.get('officialEventId') or '—')} |")
+    if decisions:
+        report.extend(["", "### 新着判定", "", "| 判定理由 | レコード数 |", "| --- | ---: |"])
+        labels = {"migration_exact_history_key": "旧履歴キーあり（LINE着信未証明）",
+                  "migration_listing_delivery_unconfirmed": "既存掲載あり・送信未確認",
+                  "new_show": "新着候補"}
+        for reason, count in sorted(decisions.items()):
+            report.append(f"| {cell(labels.get(reason, reason))} | {count} |")
     if reviews:
         report.extend(["", "### 残り12公演の照合", "", "| 照合結果 | 出演者レコード数 |", "| --- | ---: |"])
         for status, count in sorted(reviews.items()):

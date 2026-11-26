@@ -3112,6 +3112,12 @@ def request_fany_range(
         timeout=30,
     )
 
+    if response.status_code == 403:
+        print(
+            f"FANY HTTP 403: search denied for {performer['name']}; "
+            f"edge={response.headers.get('x-cache', 'unknown')}",
+            flush=True,
+        )
     response.raise_for_status()
 
     lines = html_to_lines(

@@ -14,6 +14,7 @@ import notify_line as line
 import scraper
 from performer_matching import cast_matches
 from notification_outbox import GitState, Outbox, audit, git, official_id, record_id, signature, timestamp
+from theater_cast_review import apply_reviewed_casts
 from theater_scraper import THEATERS, fetch_theater, make_theater_source_key
 
 SOURCES = {"fany": scraper.scrape_fany, "tiget": scraper.scrape_tiget,
@@ -119,6 +120,7 @@ def refresh_schedule_interval(store):
 
 def run(store, performers, sources, *, persist_catalogs):
     tickets, theaters = (read_events(path) for path in CATALOGS)
+    theaters = apply_reviewed_casts(theaters, performers)
     stream_events = line.load_stream_events()
     ticket_history = line.load_json("notified_events.json", {})
     theater_history = line.load_json("theater_notified_events.json", {})
@@ -153,6 +155,7 @@ def run(store, performers, sources, *, persist_catalogs):
             continue
         if label.startswith("theater/"):
             theater_success += 1
+            events = apply_reviewed_casts(events, performers)
             new_theaters.extend(events)
         else:
             for event in events:
@@ -167,7 +170,7 @@ def run(store, performers, sources, *, persist_catalogs):
     store.save()
     persist_catalogs(
         merge_catalog(tickets, new_tickets, discovered),
-        merge_catalog(theaters, new_theaters, discovered),
+        apply_reviewed_casts(merge_catalog(theaters, new_theaters, discovered), performers),
     )
     for key in retry_keys:
         delivery_ok = bool(outbox.send(key)) and delivery_ok

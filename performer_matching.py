@@ -26,6 +26,7 @@ def cast_matches(fields, performer):
     for field in fields or ():
         text = ROLES.sub("/", unicodedata.normalize("NFKC", field))
         for part in re.split(r"[/、,・\n;|]+", text):
+            part = re.sub(r"^\s*\[(?:企画ライブ|ネタ&コーナーライブ|ネタライブ)\]\s*", "", part)
             name = re.sub(r"\s*\([^()]*\)\s*$", "", part)
             if normalized_name(part) in aliases or normalized_name(name) in aliases:
                 return True
