@@ -198,7 +198,7 @@ def feed_rows(response, theater):
     return rows
 
 
-def scrape_theater(browser, theater, performers):
+def scrape_theater(browser, theater, performers, *, observe=None):
     page = browser.new_page(locale="ja-JP", timezone_id="Asia/Tokyo")
     try:
         def is_feed(response):
@@ -246,18 +246,20 @@ def scrape_theater(browser, theater, performers):
             if sorted(map(tuple, rendered)) != expected_rows:
                 raise ValueError(f"Rendered schedule does not match feed: {year}/{month}")
             events.extend(parse_month(theater, year, month, rows, performers))
+        if observe is not None:
+            observe(months, rows)
         return events
     finally:
         page.close()
 
 
-def fetch_theater(theater, performers):
+def fetch_theater(theater, performers, *, observe=None):
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=True)
         try:
             for attempt in range(2):
                 try:
-                    return scrape_theater(browser, theater, performers)
+                    return scrape_theater(browser, theater, performers, observe=observe)
                 except Exception as error:
                     if attempt:
                         raise
