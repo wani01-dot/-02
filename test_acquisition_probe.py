@@ -53,3 +53,21 @@ class AcquisitionProbeTest(unittest.TestCase):
         self.assertEqual((result["officialShowCount"], result["counts"], result["targetMonths"]),
                          (1, {"pyuto": 1}, ["2099-01"]))
         self.assertGreaterEqual(result["elapsedToDecisionSeconds"], result["acquisitionSeconds"] - 0.001)
+
+
+    def test_roppongi_regression_requires_both_official_cast_and_extraction(self):
+        official = [
+            {"date": "2027-01-21", "startTime": start, "title": title,
+             "officialEventId": str(index), "cast": ["ピュート"] if include else ["ダイタク"]}
+            for index, (start, title, include) in enumerate(probe.ROPPONGI_CASES)
+        ]
+        evidence = {"months": ["2027-01"], "official": official}
+        good = {**official[1], "performerId": "pyuto"}
+        wrong = {**official[0], "performerId": "pyuto"}
+        with patch.object(probe, "audit") as audit:
+            probe.check_roppongi(evidence, [good], {"pyuto": self.performer})
+            self.assertEqual([call.kwargs["status"] for call in audit.call_args_list], ["確認済み", "確認済み"])
+            audit.reset_mock()
+            probe.check_roppongi(evidence, [wrong], {"pyuto": self.performer})
+            self.assertEqual([call.kwargs["status"] for call in audit.call_args_list],
+                             ["抽出結果が公式出演欄と不一致"] * 2)

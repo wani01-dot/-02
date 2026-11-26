@@ -77,6 +77,31 @@ def review(candidate, evidence, performers):
     return "cast_differs_review_required", matches
 
 
+ROPPONGI_CASES = (
+    ("19:15", "ダイタク×9番街レトロコントライブ「待ってろ！自動車学校」", False),
+    ("21:00", "新ネタピュートライブ", True),
+)
+
+
+def check_roppongi(evidence, events, performers):
+    for start, title, expected in ROPPONGI_CASES:
+        candidate = {"date": "2027-01-21", "startTime": start, "title": title,
+                     "performerId": "pyuto"}
+        verdict, matches = review(candidate, evidence, performers)
+        acceptable = "official_cast_matches" if expected else "cast_differs_review_required"
+        event_id = matches[0]["officialEventId"] if len(matches) == 1 else None
+        included = any(e.get("officialEventId") == event_id and e["date"] == candidate["date"]
+                       and e["startTime"] == start and e["performerId"] == "pyuto" for e in events)
+        if verdict == acceptable:
+            result = "確認済み" if included == expected else "抽出結果が公式出演欄と不一致"
+        elif verdict in ("official_cast_matches", "cast_differs_review_required"):
+            result = "公式出演欄が従来の想定と異なる"
+        else:
+            result = "未確認"
+        audit("probe_roppongi_check", startTime=start, title=title, status=result,
+              officialEventId=event_id, verdict=verdict, included=included, official=matches)
+
+
 def probe(performers, candidates, baseline, ticket_keys, theater_keys):
     state = SimpleNamespace(data={"records": {}, "batches": {}})
     dry_run = Outbox(state, [], performers,
@@ -84,6 +109,7 @@ def probe(performers, candidates, baseline, ticket_keys, theater_keys):
     dry_run.add(baseline, migration=True)
     indexed = {p["id"]: p for p in performers}
     evidence = {}
+    roppongi_events = []
     failures = []
     new_batches = {"fany": 0, "theater": 0}
     with ThreadPoolExecutor(max_workers=3) as theaters, ThreadPoolExecutor(max_workers=3) as fany:
@@ -109,6 +135,8 @@ def probe(performers, candidates, baseline, ticket_keys, theater_keys):
             decision_started = time.monotonic()
             if kind == "theater":
                 evidence[identifier] = metadata
+                if identifier == "roppongi":
+                    roppongi_events = events
             else:
                 for event in events:
                     event["trackedPerformers"] = [
@@ -133,6 +161,7 @@ def probe(performers, candidates, baseline, ticket_keys, theater_keys):
                 audit("probe_show", source=source, officialEventId=official_id(event) or None,
                       date=event["date"], startTime=event["startTime"], title=event["title"],
                       cast=event.get("performersText"), url=event.get("sourceUrl"))
+    check_roppongi(evidence.get("roppongi"), roppongi_events, indexed)
     for candidate in candidates:
         status, matches = review(candidate, evidence.get(candidate["theaterId"]), indexed)
         audit("probe_review", status=status, stored=candidate, official=matches)

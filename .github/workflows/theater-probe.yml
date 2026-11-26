@@ -16,6 +16,7 @@ jobs:
           persist-credentials: false
 
       - uses: actions/setup-python@v5
+        id: setup-python
         with:
           python-version: "3.12"
           cache: pip
@@ -31,6 +32,11 @@ jobs:
         run: |
           set -o pipefail
           python -u acquisition_probe.py | tee "$RUNNER_TEMP/acquisition-probe.log"
+
+      - name: Write acquisition summary
+        if: ${{ always() && steps.setup-python.outcome == 'success' }}
+        run: |
+          python acquisition_summary.py "$RUNNER_TEMP/acquisition-probe.log" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Upload acquisition and comparison log
         if: always()
