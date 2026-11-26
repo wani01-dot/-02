@@ -9,7 +9,7 @@ import notification_outbox
 import notification_pipeline
 import notify_line
 from performer_matching import cast_matches
-from theater_cast_review import apply_reviewed_casts
+from theater_cast_review import apply_reviewed_casts, key
 
 ARTISTS = json.loads(Path("performers.json").read_text())["performers"]
 
@@ -22,7 +22,9 @@ class ConfirmedReviewTest(unittest.TestCase):
             live = live if isinstance(live, list) else live["events"]
             cleaned = apply_reviewed_casts(records, ARTISTS)
             self.assertEqual(cleaned, apply_reviewed_casts(cleaned, ARTISTS))
-            self.assertTrue(all(row in live for row in cleaned))
+            identities = {(key(row), row["performerId"]) for row in live}
+            self.assertTrue(all((key(row), row["performerId"]) in identities for row in cleaned))
+            self.assertEqual(live, apply_reviewed_casts(live, ARTISTS))
         same_day = [r for r in data["archivedRows"]["theater_events.json"]
                     if r["date"] == "2027-01-27" and r["title"] == "軟水 三遊間 cacao"]
         self.assertEqual([r["performerId"] for r in apply_reviewed_casts(same_day, ARTISTS)], ["nansui"])
