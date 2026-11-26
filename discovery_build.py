@@ -4,6 +4,8 @@ from copy import deepcopy
 from datetime import datetime, timezone
 from difflib import SequenceMatcher
 
+from theater_cast_review import apply_reviewed_casts
+
 
 THEATER_EVENTS_FILE = "theater_events.json"
 TICKET_EVENTS_FILE = "events.json"
@@ -1683,9 +1685,8 @@ def main():
         },
     )
 
-    theater_events = extract_events(
-        theater_data
-    )
+    performers = load_json("performers.json", {}).get("performers", [])
+    theater_events = apply_reviewed_casts(extract_events(theater_data), performers)
 
     print(
         "劇場公式:",
@@ -1802,6 +1803,7 @@ def main():
     # 並び替え
     # =====================================================
 
+    discovered = apply_reviewed_casts(discovered, performers)
     discovered.sort(
         key=lambda event: (
             event.get(

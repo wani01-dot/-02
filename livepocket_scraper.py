@@ -5,6 +5,8 @@ from urllib.parse import urljoin
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 
+from performer_matching import cast_matches
+
 
 LIVEPOCKET_BASE = "https://livepocket.jp"
 
@@ -694,6 +696,8 @@ def get_livepocket_event_urls_with_page(
             "LivePocketブラウザ検索失敗:",
             error,
         )
+        if not result:
+            raise
 
     print(
         "LivePocketブラウザ取得:",
@@ -1506,15 +1510,7 @@ def scrape_livepocket_detail(
     event_url,
     browser_page=None,
 ):
-    performer_name = clean(
-        performer.get(
-            "name",
-            ""
-        )
-    )
-
     html = ""
-
     # =====================================================
     # まずrequestsで取得
     # =====================================================
@@ -1536,28 +1532,8 @@ def scrape_livepocket_detail(
             error,
         )
 
-    request_text = ""
-
-    if html:
-        request_text = " ".join(
-            html_to_lines(
-                html
-            )
-        )
-
-    # =====================================================
-    # requests版で出演者が見えなければ
-    # Playwrightで描画後HTMLを取得
-    # =====================================================
-
-    if (
-        not html
-        or (
-            performer_name
-            and performer_name
-            not in request_text
-        )
-    ):
+    initial_cast = get_livepocket_performers(html_to_lines(html)) if html else []
+    if not cast_matches(initial_cast, performer):
         print(
             "  詳細ブラウザ取得:",
             event_url,
@@ -1577,8 +1553,9 @@ def scrape_livepocket_detail(
             )
         )
 
-        if browser_html:
-            html = browser_html
+        if not browser_html:
+            raise RuntimeError(f"LivePocketの出演者欄を取得できません: {event_url}")
+        html = browser_html
 
     if not html:
         print(
@@ -1609,23 +1586,6 @@ def scrape_livepocket_detail(
     title = get_livepocket_title(
         soup
     )
-
-    # =====================================================
-    # 出演者判定
-    # =====================================================
-
-    if (
-        performer_name
-        and performer_name
-        not in whole_text
-    ):
-        print(
-            "  × 除外:",
-            title,
-            "| 理由: 出演者名なし",
-        )
-
-        return None
 
     # =====================================================
     # 開催日
@@ -1699,6 +1659,10 @@ def scrape_livepocket_detail(
             lines
         )
     )
+
+    if not cast_matches(performers_text, performer):
+        print(f"LivePocket 出演確認待ちまたは対象外: {event_url}", flush=True)
+        return None
 
     # =====================================================
     # 販売情報
@@ -1872,6 +1836,7 @@ def scrape_livepocket(
         )
 
     events = []
+    detail_errors = []
     seen = set()
 
     # =====================================================
@@ -1938,6 +1903,7 @@ def scrape_livepocket(
                         )
 
                     except Exception as error:
+                        detail_errors.append(error)
                         print(
                             "LivePocket詳細取得失敗:",
                             event_url,
@@ -2006,6 +1972,13 @@ def scrape_livepocket(
             performer_name,
             error,
         )
+        if not events:
+            raise
+
+    if detail_errors and not events:
+        raise RuntimeError(
+            f"LivePocket詳細{len(detail_errors)}件の取得に失敗し、出演公演0件を確定できません"
+        ) from detail_errors[0]
 
     # =====================================================
     # 最終結果
