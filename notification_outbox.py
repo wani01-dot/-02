@@ -32,6 +32,15 @@ def timestamp():
     return datetime.now(timezone.utc).isoformat()
 
 
+def elapsed_seconds(start, end):
+    if not start or not end:
+        return None
+    try:
+        return round((datetime.fromisoformat(end) - datetime.fromisoformat(start)).total_seconds(), 3)
+    except (TypeError, ValueError):
+        return None
+
+
 def audit(kind, **fields):
     print(json.dumps({"type": kind, "at": timestamp(), **fields}, ensure_ascii=False), flush=True)
 
@@ -199,7 +208,7 @@ class Outbox:
                 })
         return new
 
-    def stage(self, keys):
+    def stage(self, keys, *, source_label=None, source_completed_at=None, source_decided_at=None):
         if not keys:
             return
         events = [self.records[key]["event"] for key in keys]
@@ -212,7 +221,8 @@ class Outbox:
         retry_key = str(uuid.uuid4())
         self.batches[retry_key] = {
             "keys": keys, "message": message, "createdAt": timestamp(),
-            "firstAttemptAt": None, "status": "pending",
+            "firstAttemptAt": None, "status": "pending", "sourceLabel": source_label,
+            "sourceCompletedAt": source_completed_at, "sourceDecidedAt": source_decided_at,
         }
         for key in keys:
             self.records[key]["inDigestDetails"] = id(self.records[key]["event"]) in displayed
@@ -238,7 +248,8 @@ class Outbox:
             allowed, reason = self.quota.reserve(batch)
             if not allowed:
                 self.store.save()
-                audit("line_quota_deferred", retryKey=retry_key, keys=batch["keys"], reason=reason)
+                audit("line_quota_deferred", retryKey=retry_key, keys=batch["keys"], reason=reason,
+                      source=batch.get("sourceLabel"))
                 return True
         previously_unresolved = first_attempt is not None and not batch.get("definitivelyRejected")
         batch["firstAttemptAt"] = first_attempt or timestamp()
@@ -272,6 +283,10 @@ class Outbox:
             record.update(status=batch["status"], sentAt=sent_at, lineResponse=outcome,
                           lastAttemptAt=timestamp())
         audit("line_result", retryKey=retry_key, keys=batch["keys"], status=batch["status"],
+              source=batch.get("sourceLabel"), sourceCompletedAt=batch.get("sourceCompletedAt"),
+              createdAt=batch.get("createdAt"), sourceDecidedAt=batch.get("sourceDecidedAt"),
+              completionToAcceptanceSeconds=elapsed_seconds(batch.get("sourceCompletedAt"), sent_at),
+              decisionToAcceptanceSeconds=elapsed_seconds(batch.get("sourceDecidedAt"), sent_at),
               sentAt=sent_at, detailKeys=[key for key in batch["keys"]
                                          if self.records[key]["inDigestDetails"]], **outcome)
         self.store.save()
