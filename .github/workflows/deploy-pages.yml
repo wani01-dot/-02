@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: read
+  actions: read
   pages: write
   id-token: write
 
@@ -25,21 +26,39 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Check whether synchronization was skipped
+        id: sync
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ github.event.workflow_run.id }}
+        run: |
+          if skipped=$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$RUN_ID/artifacts"              --jq '.artifacts | any(.name == "sync-skipped")'); then
+            echo "skipped=$skipped" >> "$GITHUB_OUTPUT"
+          else
+            echo 'Skip marker unavailable; continue deploying the last saved catalog.'
+          fi
+
       - uses: actions/checkout@v4
+        if: steps.sync.outputs.skipped != 'true'
         with:
           ref: main
           persist-credentials: false
 
       - uses: actions/setup-python@v5
+        if: steps.sync.outputs.skipped != 'true'
         with:
           python-version: "3.12"
 
       - name: Rebuild discovery from the published source data
+        if: steps.sync.outputs.skipped != 'true'
         run: python discovery_build.py
 
       - uses: actions/configure-pages@v5
+        if: steps.sync.outputs.skipped != 'true'
       - uses: actions/upload-pages-artifact@v4
+        if: steps.sync.outputs.skipped != 'true'
         with:
           path: "."
       - uses: actions/deploy-pages@v4
+        if: steps.sync.outputs.skipped != 'true'
         id: deployment

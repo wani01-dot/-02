@@ -13,6 +13,7 @@ from urllib3.util.retry import Retry
 import notify_line as line
 from line_quota import LineQuota
 import scraper
+from scheduler_slot import claim_slot
 from performer_matching import cast_matches
 from notification_outbox import GitState, Outbox, audit, elapsed_seconds, git, official_id, record_id, signature, timestamp
 from theater_cast_review import apply_reviewed_casts
@@ -224,9 +225,24 @@ def publish_catalogs(tickets, theaters):
 def main():
     if os.environ.get("GITHUB_ACTIONS") != "true" or os.environ.get("GITHUB_REF") != "refs/heads/main":
         raise RuntimeError("Production entry point runs only on the main Actions workflow")
-    performers = json.loads(Path("performers.json").read_text())["performers"]
-    store = GitState()
+    external = os.environ.get("EXTERNAL_SCHEDULER") == "true"
     key = os.environ.get("LINE_REQUEUE_RECORD", "")
+    if external and (key or os.environ.get("LINE_REQUEUE_EVIDENCE")
+                     or os.environ.get("LINE_REQUEUE_CONFIRM") == "true"):
+        raise ValueError("External scheduler runs cannot request a manual resend")
+    store = GitState()
+    if external or os.environ.get("GITHUB_EVENT_NAME") == "schedule":
+        observed_at = os.environ.get("SCHEDULER_OBSERVED_AT") or timestamp()
+        started, slot = claim_slot(store, os.environ.get("RUN_CREATED_AT"), observed_at)
+        audit("scheduler_slot", status="claimed" if started else "skipped",
+              trigger="external" if external else "github", slot=slot)
+        if not started:
+            output = os.environ.get("GITHUB_OUTPUT")
+            if output:
+                with Path(output).open("a", encoding="utf-8") as target:
+                    target.write("skipped=true\n")
+            return
+    performers = json.loads(Path("performers.json").read_text())["performers"]
     if key:
         outbox = Outbox(store, line.load_stream_events(), performers, quota=LineQuota(store))
         outbox.requeue_confirmed_unsent(

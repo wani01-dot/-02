@@ -33,12 +33,14 @@ def metric(value):
 
 def render_summary(log):
     starts, fetched, decisions, deliveries = {}, {}, {}, {}
-    timing, usage = {}, {}
+    timing, usage, slot = {}, {}, {}
     for row in records(log):
         kind = row.get("type")
         source = row.get("source")
         if kind == "run_timing":
             timing = row
+        elif kind == "scheduler_slot":
+            slot = row
         elif kind == "source_started" and source:
             starts[source] = row
         elif kind == "source_result" and source:
@@ -50,6 +52,10 @@ def render_summary(log):
         elif kind == "line_usage":
             usage = row
 
+    if slot.get("status") == "skipped":
+        return ("## 本番同期の状況\n\n"
+                f"**{when(slot.get('slot'))} JST の5分枠は処理済み**。"
+                "取得・通知・利用量照会をスキップしました。\n")
     schedule_interval = timing.get("scheduleIntervalSeconds")
     interval = (f"定期実行の作成間隔 **{seconds(schedule_interval)}**" if schedule_interval is not None
                 else f"同期処理の開始間隔 **{seconds(timing.get('pipelineIntervalSeconds'))}**")
@@ -58,6 +64,8 @@ def render_summary(log):
         "",
         f"実行作成 **{when(timing.get('createdAt'))}** ／ 実行開始まで **{seconds(timing.get('queueSeconds'))}**"
         f" ／ {interval}（JST）",
+        "",
+        f"5分枠 **{when(slot.get('slot'))} JST** ／ 起動元 **{cell(slot.get('trigger') or '手動')}**",
         "",
         "### LINE月間利用量",
         "",
