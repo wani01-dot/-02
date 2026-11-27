@@ -3,6 +3,14 @@ name: Sync events and deploy Pages
 on:
   workflow_dispatch:
     inputs:
+      external_scheduler:
+        description: "Automated external scheduler tick"
+        type: boolean
+        default: false
+      scheduler_dry_run:
+        description: "Check dispatch only, with no collection or delivery"
+        type: boolean
+        default: false
       requeue_record:
         description: "Exact legacy record key (leave empty for regular sync)"
         type: string
@@ -16,25 +24,48 @@ on:
   schedule:
     - cron: "4-59/5 * * * *"
 
-permissions:
-  contents: write
+permissions: {}
 
 concurrency:
-  group: sync-events-and-pages
+  group: ${{ (inputs.scheduler_dry_run || github.ref != 'refs/heads/main') && format('scheduler-check-{0}', github.run_id) || 'sync-events-and-pages' }}
   cancel-in-progress: false
 
 jobs:
+  scheduler-check:
+    if: github.event_name == 'workflow_dispatch' && inputs.external_scheduler && inputs.scheduler_dry_run
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    steps:
+      - name: Confirm read-only scheduler dispatch
+        run: |
+          echo '## 外部スケジューラーの疎通確認' >> "$GITHUB_STEP_SUMMARY"
+          echo '起動リクエストを受理しました。取得・保存・LINE送信は実行していません。' >> "$GITHUB_STEP_SUMMARY"
+          touch "$RUNNER_TEMP/sync-skipped"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sync-skipped
+          path: ${{ runner.temp }}/sync-skipped
+          retention-days: 1
+
   sync:
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' && !inputs.scheduler_dry_run
+    permissions:
+      contents: write
+      actions: read
     runs-on: ubuntu-latest
     timeout-minutes: 8
     steps:
+      - name: Capture local start for scheduling fallback
+        run: echo "SCHEDULER_OBSERVED_AT=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_ENV"
+
       - uses: actions/checkout@v4
         with:
           ref: main
           fetch-depth: 0
 
       - uses: actions/setup-python@v5
+        id: setup-python
         with:
           python-version: "3.12"
           cache: pip
@@ -50,11 +81,42 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+      - name: Read run timing
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if timing=$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" \
+              --jq '"RUN_CREATED_AT=" + (.created_at // "") + "\nRUN_STARTED_AT=" + (.run_started_at // "")'); then
+            printf '%s\n' "$timing" >> "$GITHUB_ENV"
+          else
+            echo 'Run timing metadata is unavailable'
+          fi
+
       - name: Collect and notify as sources finish
+        id: pipeline
         env:
           LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
           LINE_TO: ${{ secrets.LINE_TO }}
+          EXTERNAL_SCHEDULER: ${{ inputs.external_scheduler }}
           LINE_REQUEUE_RECORD: ${{ inputs.requeue_record }}
           LINE_REQUEUE_EVIDENCE: ${{ inputs.requeue_evidence }}
           LINE_REQUEUE_CONFIRM: ${{ inputs.requeue_confirm }}
-        run: python -u notification_pipeline.py
+        shell: bash
+        run: |
+          set -o pipefail
+          python -u notification_pipeline.py | tee "$RUNNER_TEMP/notification-sync.log"
+
+      - name: Write sync summary
+        if: ${{ always() && steps.setup-python.outcome == 'success' }}
+        run: python sync_summary.py "$RUNNER_TEMP/notification-sync.log" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Mark duplicate tick
+        if: steps.pipeline.outputs.skipped == 'true'
+        run: touch "$RUNNER_TEMP/sync-skipped"
+
+      - uses: actions/upload-artifact@v4
+        if: steps.pipeline.outputs.skipped == 'true'
+        with:
+          name: sync-skipped
+          path: ${{ runner.temp }}/sync-skipped
+          retention-days: 1

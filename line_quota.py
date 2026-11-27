@@ -5,6 +5,7 @@ from urllib.parse import quote
 import requests
 
 import notify_line as line
+from notification_outbox import audit
 
 API = "https://api.line.me/v2/bot"
 FREE_MONTHLY_CAP = 200
@@ -27,7 +28,7 @@ class LineQuota:
         response.raise_for_status()
         return response.json()
 
-    def limits(self):
+    def account_usage(self):
         quota = self.read("/message/quota")
         consumption = self.read("/message/quota/consumption")["totalUsage"]
         if quota.get("type") == "limited":
@@ -36,6 +37,25 @@ class LineQuota:
             maximum = FREE_MONTHLY_CAP
         else:
             raise ValueError("Unexpected LINE quota response")
+        if not all(type(value) is int and value >= 0 for value in (maximum, consumption)):
+            raise ValueError("Invalid LINE quota response")
+        return maximum, consumption
+
+    def audit_usage(self):
+        month = datetime.now(line.JST).strftime("%Y-%m")
+        try:
+            maximum, consumption = self.account_usage()
+        except (requests.RequestException, KeyError, TypeError, ValueError) as error:
+            audit("line_usage", month=month, freeCap=FREE_MONTHLY_CAP, error=type(error).__name__)
+            return
+        budget = self.store.data.get("lineQuota", {})
+        projected = max(consumption, budget.get("projectedUsage", 0)) if budget.get("month") == month else consumption
+        audit("line_usage", month=month, freeCap=FREE_MONTHLY_CAP, effectiveCap=maximum,
+              consumed=consumption, freeRemaining=max(0, maximum - consumption),
+              automaticRemaining=max(0, maximum - MANUAL_RESERVE - projected))
+
+    def limits(self):
+        maximum, consumption = self.account_usage()
         target = line.LINE_TO
         if target.startswith("U"):
             recipients = 1

@@ -13,8 +13,9 @@ from urllib3.util.retry import Retry
 import notify_line as line
 from line_quota import LineQuota
 import scraper
+from scheduler_slot import claim_slot
 from performer_matching import cast_matches
-from notification_outbox import GitState, Outbox, audit, git, official_id, record_id, signature, timestamp
+from notification_outbox import GitState, Outbox, audit, elapsed_seconds, git, official_id, record_id, signature, timestamp
 from theater_cast_review import apply_reviewed_casts
 from theater_scraper import THEATERS, fetch_theater, make_theater_source_key
 
@@ -41,16 +42,20 @@ def fetch_ticket(source, performer):
 
 def timed(label, fetch, *args):
     started = time.monotonic()
+    started_at = timestamp()
+    audit("source_started", source=label, startedAt=started_at)
     try:
         events = fetch(*args)
     except Exception as error:
         # Details aid diagnosis, but requests and Playwright errors must never expose credentials.
         audit("source_result", source=label, successes=0, failures=1,
+              startedAt=started_at, completedAt=timestamp(),
               seconds=round(time.monotonic() - started, 2), error=str(error))
         raise
-    audit("source_result", source=label, successes=1, failures=0,
-          events=len(events), seconds=round(time.monotonic() - started, 2))
-    return events, timestamp()
+    completed_at = timestamp()
+    audit("source_result", source=label, successes=1, failures=0, startedAt=started_at,
+          completedAt=completed_at, events=len(events), seconds=round(time.monotonic() - started, 2))
+    return events, completed_at
 
 
 def completed_sources(performers):
@@ -109,14 +114,21 @@ def merge_catalog(old, new, discovered):
     return merged
 
 
-def refresh_schedule_interval(store):
-    if os.environ.get("GITHUB_EVENT_NAME") != "schedule":
-        return
-    started = timestamp()
-    previous = store.data["lastScheduledAt"]
-    interval = (datetime.fromisoformat(started) - datetime.fromisoformat(previous)) if previous else None
-    audit("schedule_interval", previous=previous, elapsedSeconds=interval.total_seconds() if interval else None)
-    store.data["lastScheduledAt"] = started
+def log_run_timing(store):
+    event = os.environ.get("GITHUB_EVENT_NAME")
+    created = os.environ.get("RUN_CREATED_AT") or None
+    runner_started = os.environ.get("RUN_STARTED_AT") or None
+    observed = timestamp()
+    previous = store.data.get("lastScheduledCreatedAt")
+    previous_observed = store.data.get("lastScheduledAt")
+    audit("run_timing", trigger=event, createdAt=created, runStartedAt=runner_started,
+          queueSeconds=elapsed_seconds(created, runner_started),
+          scheduleIntervalSeconds=elapsed_seconds(previous, created) if event == "schedule" else None,
+          pipelineIntervalSeconds=elapsed_seconds(previous_observed, observed) if event == "schedule" else None)
+    if event == "schedule":
+        store.data["lastScheduledAt"] = observed
+        if created:
+            store.data["lastScheduledCreatedAt"] = created
 
 
 def run(store, performers, sources, *, persist_catalogs, quota=None):
@@ -133,7 +145,7 @@ def run(store, performers, sources, *, persist_catalogs, quota=None):
         # legacy evidence without calling them API-confirmed deliveries.
         outbox.add(tickets + theaters, migration=True)
         store.data["migrationComplete"] = True
-    refresh_schedule_interval(store)
+    log_run_timing(store)
     store.save()
     retry_keys = [key for key, batch in outbox.batches.items()
                   if batch["status"] in ("pending", "failed")]
@@ -165,9 +177,13 @@ def run(store, performers, sources, *, persist_catalogs, quota=None):
                 ]
             new_tickets.extend(events)
         keys = outbox.add(events, acquired_at=acquired_at)
+        decided_at = timestamp()
+        audit("source_decision", source=label, completedAt=acquired_at, decidedAt=decided_at,
+              decisionSeconds=elapsed_seconds(acquired_at, decided_at), newShows=len(keys))
         discovered.update({key: outbox.records[key]["firstAcquiredAt"] for key in keys})
         if keys:
-            delivery_ok = bool(outbox.send(outbox.stage(keys))) and delivery_ok
+            delivery_ok = bool(outbox.send(outbox.stage(keys, source_label=label, source_completed_at=acquired_at,
+                                                      source_decided_at=decided_at))) and delivery_ok
     store.save()
     persist_catalogs(
         merge_catalog(tickets, new_tickets, discovered),
@@ -209,9 +225,24 @@ def publish_catalogs(tickets, theaters):
 def main():
     if os.environ.get("GITHUB_ACTIONS") != "true" or os.environ.get("GITHUB_REF") != "refs/heads/main":
         raise RuntimeError("Production entry point runs only on the main Actions workflow")
-    performers = json.loads(Path("performers.json").read_text())["performers"]
-    store = GitState()
+    external = os.environ.get("EXTERNAL_SCHEDULER") == "true"
     key = os.environ.get("LINE_REQUEUE_RECORD", "")
+    if external and (key or os.environ.get("LINE_REQUEUE_EVIDENCE")
+                     or os.environ.get("LINE_REQUEUE_CONFIRM") == "true"):
+        raise ValueError("External scheduler runs cannot request a manual resend")
+    store = GitState()
+    if external or os.environ.get("GITHUB_EVENT_NAME") == "schedule":
+        observed_at = os.environ.get("SCHEDULER_OBSERVED_AT") or timestamp()
+        started, slot = claim_slot(store, os.environ.get("RUN_CREATED_AT"), observed_at)
+        audit("scheduler_slot", status="claimed" if started else "skipped",
+              trigger="external" if external else "github", slot=slot)
+        if not started:
+            output = os.environ.get("GITHUB_OUTPUT")
+            if output:
+                with Path(output).open("a", encoding="utf-8") as target:
+                    target.write("skipped=true\n")
+            return
+    performers = json.loads(Path("performers.json").read_text())["performers"]
     if key:
         outbox = Outbox(store, line.load_stream_events(), performers, quota=LineQuota(store))
         outbox.requeue_confirmed_unsent(
@@ -219,7 +250,11 @@ def main():
             confirm=os.environ.get("LINE_REQUEUE_CONFIRM") == "true",
         )
         return
-    run(store, performers, completed_sources, persist_catalogs=publish_catalogs, quota=LineQuota(store))
+    quota = LineQuota(store)
+    try:
+        run(store, performers, completed_sources, persist_catalogs=publish_catalogs, quota=quota)
+    finally:
+        quota.audit_usage()
 
 
 if __name__ == "__main__":
