@@ -1370,7 +1370,7 @@
         🎫 発売前
       </button>
       <button id="xInfoCalendarMode" class="calendar-mode-button" type="button">
-        X出演情報
+        月間一覧
       </button>
     `;
 
