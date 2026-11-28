@@ -3346,18 +3346,11 @@ def get_tiget_title(
     soup,
     search_title,
 ):
-    search_title = clean_tiget_title(
-        search_title
-    )
-
-    if (
-        search_title
-        and
-        not is_bad_tiget_title(
-            search_title
-        )
-    ):
-        return search_title
+    official = soup.select_one(".pg-event__header__title")
+    if official:
+        candidate = clean_tiget_title(official.get_text(" ", strip=True))
+        if candidate and not is_bad_tiget_title(candidate):
+            return candidate
 
     og = soup.find(
         "meta",
@@ -3443,6 +3436,10 @@ def get_tiget_title(
                 ]
             ):
                 return candidate
+
+    search_title = clean_tiget_title(search_title)
+    if search_title and not is_bad_tiget_title(search_title):
+        return search_title
 
     return "公演名不明"
 
@@ -3588,6 +3585,31 @@ def get_tiget_ticket_status(lines):
     return ""
 
 
+def tiget_detail_fields(soup):
+    """Scope event facts to TIGET's labelled detail blocks."""
+    sections = soup.select("dl.pg-event__detail__section")
+    if not sections:
+        return None
+    fields = {}
+    times = []
+    for section in sections:
+        heading = section.find("dt", recursive=False)
+        content = section.find("dd", recursive=False)
+        if heading is None:
+            continue
+        label = clean(heading.get_text(" ", strip=True))
+        if "開演" in label or "開場" in label:
+            times.append(label)
+        if content is not None and label in {"開催日", "会場", "出演者", "出演"}:
+            if label in {"出演者", "出演"}:
+                fields["cast"] = [value for value in content.get_text("\n", strip=True).splitlines()
+                                  if value.strip(" /／、,")]
+            else:
+                fields[label] = clean(content.get_text(" ", strip=True))
+    fields["times"] = " ".join(times)
+    return fields
+
+
 def scrape_tiget(
     session,
     performer,
@@ -3664,6 +3686,7 @@ def scrape_tiget(
             ] = title
 
     events = []
+    detail_failures = 0
 
     for (
         event_url,
@@ -3678,7 +3701,8 @@ def scrape_tiget(
 
             response.raise_for_status()
 
-        except Exception as error:
+        except requests.RequestException as error:
+            detail_failures += 1
             print(
                 "TIGET詳細失敗:",
                 event_url,
@@ -3711,11 +3735,14 @@ def scrape_tiget(
             lines
         )
 
+        fields = tiget_detail_fields(detail_soup)
+        date_text = fields.get("開催日", "") if fields is not None else whole_text
+        time_text = fields["times"] if fields is not None else whole_text
         date_match = re.search(
             r"(20\d{2})年"
             r"(\d{1,2})月"
             r"(\d{1,2})日",
-            whole_text,
+            date_text,
         )
 
         if not date_match:
@@ -3741,7 +3768,7 @@ def scrape_tiget(
         time_match = re.search(
             r"開演\s*[:：]?\s*"
             r"(\d{1,2}:\d{2})",
-            whole_text,
+            time_text,
         )
 
         start_time = (
@@ -3753,7 +3780,7 @@ def scrape_tiget(
         open_match = re.search(
             r"開場\s*[:：]?\s*"
             r"(\d{1,2}:\d{2})",
-            whole_text,
+            time_text,
         )
 
         open_time = (
@@ -3762,24 +3789,16 @@ def scrape_tiget(
             else ""
         )
 
-        venue = clean(
-            get_next_value(
-                lines,
-                "会場",
-            )
-        )
+        venue = (fields.get("会場", "") if fields is not None
+                 else clean(get_next_value(lines, "会場")))
 
         title = get_tiget_title(
             detail_soup,
             search_title,
         )
 
-        performers_text = (
-            get_tiget_performers(
-                lines,
-                title,
-            )
-        )
+        performers_text = (fields.get("cast", []) if fields is not None
+                           else get_tiget_performers(lines, title))
 
         if not cast_matches(performers_text, performer):
             print(f"TIGET 出演確認待ちまたは対象外: {event_url}", flush=True)
@@ -3882,6 +3901,8 @@ def scrape_tiget(
         "件",
     )
 
+    if event_map and detail_failures == len(event_map):
+        raise RuntimeError(f"TIGET詳細{detail_failures}件の取得に失敗しました")
     return events
 
 

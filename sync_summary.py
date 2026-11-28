@@ -88,6 +88,8 @@ def render_summary(log):
         fetch = fetched.get(source, {})
         status = ("失敗" if fetch.get("failures") else "成功") if fetch else (
             "完了記録なし" if source in starts else "未確認")
+        if fetch.get("deferred"):
+            status = f"保留・{fetch.get('reason', '')}（{when(fetch.get('retryAt'))} JST）"
         if fetch.get("error"):
             error = fetch["error"].splitlines()[0].partition(" for url: ")[0][:100]
             status += f"・{error}"

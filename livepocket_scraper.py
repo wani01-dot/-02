@@ -1,4 +1,6 @@
 import re
+from concurrent.futures import Future
+from threading import Lock
 from datetime import datetime, timezone, timedelta
 from urllib.parse import urljoin
 
@@ -1504,6 +1506,32 @@ def get_detail_html_with_page(
 # 詳細ページ解析
 # =========================================================
 
+# Cache raw HTML, not performer-specific results. Failed requests are not cached.
+_detail_cache = {}
+_detail_lock = Lock()
+
+
+def _shared_detail(key, loader):
+    with _detail_lock:
+        future = _detail_cache.get(key)
+        owner = future is None
+        if owner:
+            future = Future()
+            _detail_cache[key] = future
+    if owner:
+        try:
+            value = loader()
+            if not value:
+                raise RuntimeError("LivePocket detail HTML unavailable")
+            future.set_result(value)
+        except BaseException as error:
+            future.set_exception(error)
+            with _detail_lock:
+                _detail_cache.pop(key, None)
+            raise
+    return future.result()
+
+
 def scrape_livepocket_detail(
     session,
     performer,
@@ -1511,51 +1539,25 @@ def scrape_livepocket_detail(
     browser_page=None,
 ):
     html = ""
-    # =====================================================
-    # まずrequestsで取得
-    # =====================================================
+
+    def fetch_http():
+        response = session.get(event_url, timeout=25)
+        response.raise_for_status()
+        return response.text
 
     try:
-        response = session.get(
-            event_url,
-            timeout=25,
-        )
-
-        response.raise_for_status()
-
-        html = response.text
-
+        html = _shared_detail(("http", event_url), fetch_http)
     except Exception as error:
-        print(
-            "  requests詳細取得失敗:",
-            event_url,
-            error,
-        )
+        print("requests詳細取得失敗:", event_url, error)
 
     initial_cast = get_livepocket_performers(html_to_lines(html)) if html else []
     if not cast_matches(initial_cast, performer):
-        print(
-            "  詳細ブラウザ取得:",
-            event_url,
-        )
-
         if browser_page is None:
-            print(
-                "  × ブラウザページなし"
-            )
-
             return None
-
-        browser_html = (
-            get_detail_html_with_page(
-                browser_page,
-                event_url,
-            )
+        html = _shared_detail(
+            ("browser", event_url),
+            lambda: get_detail_html_with_page(browser_page, event_url),
         )
-
-        if not browser_html:
-            raise RuntimeError(f"LivePocketの出演者欄を取得できません: {event_url}")
-        html = browser_html
 
     if not html:
         print(
