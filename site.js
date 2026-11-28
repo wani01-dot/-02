@@ -687,6 +687,7 @@
       ...discoveredData,
       ...theaterData,
       ...manualData.filter(e => e.category !== "stream"),
+      ...await fetch('archive_events.json',{cache:'no-store'}).then(r=>r.ok?r.json():[]).then(d=>Array.isArray(d)?d.filter(e=>e.date && e.date < new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Tokyo'}).format(new Date())).map(e=>({...e,newUntil:'',ticketOptions:[]})):[]).catch(()=>[]),
     ];
 
 
@@ -3576,158 +3577,43 @@
 
 
   function renderSearchPage() {
-
-    pageSection.innerHTML = `
-      <h2 class="page-title">
-        ライブを検索
-      </h2>
-
-      <input
-        id="searchInput"
-        class="search-input"
-        type="search"
-        placeholder="公演名・会場・出演者を検索"
-        autocomplete="off"
-      >
-
-      <div id="searchResults"></div>
-    `;
-
-
-    const input =
-      document.getElementById(
-        "searchInput"
-      );
-
-
-    const results =
-      document.getElementById(
-        "searchResults"
-      );
-
-
-    function runSearch() {
-
-      const q =
-        clean(
-          input.value
-        ).toLowerCase();
-
-
-      if (
-        !q
-      ) {
-
-        results.innerHTML = `
-          <div class="empty-message">
-            検索ワードを入力してください。
-          </div>
-        `;
-
-        return;
-      }
-
-
-      const found =
-        visibleGroups()
-          .filter(
-            group => {
-
-              const trackedNames =
-                group
-                  .trackedPerformers
-                  .map(
-                    id =>
-                      getPerformer(
-                        id
-                      ).name
-                  )
-                  .join(
-                    " "
-                  );
-
-
-              const haystack = [
-                group.title,
-                group.venue,
-                trackedNames,
-                ...group.performersText,
-              ]
-                .join(
-                  " "
-                )
-                .toLowerCase();
-
-
-              return (
-                haystack.includes(
-                  q
-                )
-              );
-            }
-          );
-
-
-      results.innerHTML =
-        found.length
-          ?
-          found.map(
-            group => `
-              <button
-                class="result-row"
-                data-event-key="${escapeHtml(
-                  group.key
-                )}"
-              >
-
-                <div class="result-date">
-                  ${escapeHtml(
-                    group.date
-                  )}
-
-                  ${escapeHtml(
-                    group.startTime
-                  )}
-                </div>
-
-                <div class="result-title">
-                  ${escapeHtml(
-                    group.title
-                  )}
-                </div>
-
-                <div class="result-sub">
-                  ${escapeHtml(
-                    group.venue
-                  )}
-                </div>
-
-              </button>
-            `
-          ).join("")
-          :
-          `
-            <div class="empty-message">
-              見つかりませんでした。
-            </div>
-          `;
-
-
-      bindEventRows(
-        results
-      );
+    pageSection.innerHTML = `<h2 class="page-title">ライブを検索</h2>
+      <input id="searchInput" class="search-input" type="search" placeholder="公演名・会場・出演者・年月" autocomplete="off" list="searchHistory">
+      <datalist id="searchHistory"></datalist>
+      <div class="archive-controls"><select id="searchPerformer"><option value="">すべて</option>${performers.map(p=>`<option value="${escapeHtml(p.id)}">${escapeHtml(p.name)}</option>`).join("")}</select>
+      <select id="searchPeriod"><option value="">全期間</option><option value="past">過去公演</option><option value="future">今後の公演</option></select>
+      <select id="searchOrder"><option value="desc">新しい順</option><option value="asc">古い順</option></select></div>
+      <div id="searchResults"></div>`;
+    const input=document.getElementById("searchInput"), results=document.getElementById("searchResults");
+    const norm=s=>String(s??"").normalize("NFKC").toLowerCase();
+    const historyKey="warai-search-history-v1";
+    let history=readStorageArray(historyKey).filter(s=>typeof s==="string").slice(0,15);
+    function updateHistory(){document.getElementById("searchHistory").innerHTML=history.map(s=>`<option value="${escapeHtml(s)}"></option>`).join("");}
+    function remember(){const q=input.value.trim();if(!q)return;history=[q,...history.filter(s=>s!==q)].slice(0,15);try{localStorage.setItem(historyKey,JSON.stringify(history));}catch{}updateHistory();}
+    function runSearch(){
+      const words=norm(input.value).trim().split(/\s+/).filter(Boolean);
+      const performer=document.getElementById("searchPerformer").value,period=document.getElementById("searchPeriod").value,order=document.getElementById("searchOrder").value;
+      const today=new Intl.DateTimeFormat("sv-SE",{timeZone:"Asia/Tokyo"}).format(new Date());
+      const found=groups.filter(g=>{
+        if(performer&&!g.trackedPerformers.includes(performer))return false;
+        if(period==="past"&&g.date>=today||period==="future"&&g.date<today)return false;
+        const hay=norm([g.title,g.venue,g.date,g.date.replace(/^(\d{4})-(\d{2})-(\d{2})$/,(m,y,mo,d)=>y+"年"+Number(mo)+"月"+Number(d)+"日"),g.startTime,...g.trackedPerformers.map(id=>getPerformer(id).name),...g.performersText,...g.records.map(r=>r.source)].join(" "));
+        return words.every(w=>hay.includes(w));
+      }).sort((a,b)=>(order==="asc"?1:-1)*(a.date+a.startTime).localeCompare(b.date+b.startTime));
+      let limit=100;
+      function draw(){results.innerHTML=`<p>${found.length}件</p>`+found.slice(0,limit).map(g=>`<div class="archive-result-date">${escapeHtml(g.date)}</div>`+renderEventRow(g)).join("")+(found.length>limit?'<button id="searchMore">もっと表示</button>':"");bindEventRows(results);document.getElementById("searchMore")?.addEventListener("click",()=>{limit+=100;draw();});}
+      draw();
     }
-
-
-    input.addEventListener(
-      "input",
-      runSearch
-    );
-
-
-    runSearch();
+    updateHistory();input.addEventListener("input",runSearch);input.addEventListener("change",remember);input.addEventListener("keydown",e=>{if(e.key==="Enter")remember();});
+    ["searchPerformer","searchPeriod","searchOrder"].forEach(id=>document.getElementById(id).addEventListener("change",runSearch));runSearch();
   }
 
+  window.WaraiMonthly = {
+    getMonth:()=>new Date(currentMonth),
+    getGroups:()=>visibleGroups(),
+    getPerformers:()=>performers,
+    open:key=>{const g=groups.find(g=>g.key===key);if(g)openEventSheet(g);}
+  };
 
   function renderPerformersPage() {
 
@@ -4264,6 +4150,7 @@
     renderSelectedDay();
 
     updateDrawerBadges();
+    document.dispatchEvent(new Event('warai-data-updated'));
 
 
     if (
