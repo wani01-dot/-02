@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-11-28T07:11:45.011832+00:00",
+  "syncedAt": "2026-11-28T15:02:15.155986+00:00",
   "performers": [
     {
       "id": "maison",
@@ -556,6 +556,51 @@
       ],
       "firstSeenAt": "2026-11-28T07:10:46.523924+00:00",
       "newUntil": "2026-11-30T07:10:46.523924+00:00"
+    },
+    {
+      "performerId": "pyuto",
+      "date": "2026-12-08",
+      "openTime": "20:40",
+      "startTime": "20:50",
+      "title": "ハイオモ vol.85",
+      "venue": "GINZA ART BOX 7(キャビネットビル 7階)",
+      "source": "tiget",
+      "sourceUrl": "https://tiget.net/events/542985",
+      "ticketStatus": "予定数終了",
+      "ticketOptions": [],
+      "saleStartAt": "2026-12-08T20:40:00+09:00",
+      "saleEndAt": "",
+      "saleCategory": "first_come",
+      "salePeriods": [
+        {
+          "category": "first_come",
+          "label": "販売開始",
+          "startAt": "2026-12-08T20:40:00+09:00",
+          "endAt": ""
+        }
+      ],
+      "performersText": [
+        "相性はいいよね",
+        "イワサキ",
+        "オッパショ石",
+        "小海のムニエル",
+        "サノライブ",
+        "Sticky²",
+        "デッサンズ",
+        "ピュート",
+        "ファイヤーサンダー",
+        "フランスピアノ",
+        "フランツ",
+        "ミネ",
+        "百恵",
+        "リバーマン",
+        "レインマンズ"
+      ],
+      "trackedPerformers": [
+        "pyuto"
+      ],
+      "firstSeenAt": "2026-11-28T15:01:12.780183+00:00",
+      "newUntil": "2026-11-30T15:01:12.780183+00:00"
     }
   ]
 }
