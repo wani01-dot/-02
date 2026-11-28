@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-11-28T03:33:48.499771+00:00",
-  "total": 258,
+  "syncedAt": "2026-11-28T12:26:59.669301+00:00",
+  "total": 259,
   "ticketListedCount": 0,
-  "ticketUnlistedCount": 258,
+  "ticketUnlistedCount": 259,
   "ticketOptionCount": 0,
   "salePeriodCount": 0,
   "events": [
@@ -3846,9 +3846,10 @@
         "[ネタ]華山",
         "／めぞん",
         "／三遊間",
+        "／空前メテオ",
         "／ジョックロック",
         "／生姜猫",
-        "／他／[MC] 祇園",
+        "／[MC] 祇園",
         "／",
         "[吉本新喜劇] はじめ",
         "／高井俊彦",
@@ -8422,6 +8423,43 @@
       ],
       "discoveryUrls": [
         "https://jimbocho-manzaigekijyo.yoshimoto.co.jp/schedule/?id=24315"
+      ],
+      "ticketMatches": [],
+      "ticketListed": false,
+      "ticketOptions": [],
+      "salePeriods": [],
+      "status": "ticket_unlisted",
+      "ticketStatus": "チケットサイト公開待ち",
+      "source": "discovery",
+      "sourceUrl": "",
+      "saleStartAt": "",
+      "saleEndAt": "",
+      "saleCategory": "",
+      "saleLabel": ""
+    },
+    {
+      "performerId": "nansui",
+      "date": "2027-01-07",
+      "openTime": "16:45",
+      "startTime": "17:00",
+      "title": "渋谷Kiwami極LIVEプラス＋ 新春SP",
+      "venue": "渋谷よしもと漫才劇場",
+      "discoverySource": "theater",
+      "discoveryUrl": "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/?id=24565",
+      "theaterId": "shibuya",
+      "theaterName": "渋谷",
+      "performersText": [
+        "[ネタ＆コーナーライブ]エバース／ゆにばーす／官兵衛／ぱろぱろ／アメリカンBBチキン／ぶったま／軟水／サンタモニカ／他"
+      ],
+      "newUntil": "2026-11-30T06:20:51.373590+00:00",
+      "trackedPerformers": [
+        "nansui"
+      ],
+      "discoverySources": [
+        "theater"
+      ],
+      "discoveryUrls": [
+        "https://shibuya-manzaigekijyo.yoshimoto.co.jp/schedule/?id=24565"
       ],
       "ticketMatches": [],
       "ticketListed": false,
