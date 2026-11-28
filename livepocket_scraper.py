@@ -1,4 +1,6 @@
 import re
+from concurrent.futures import Future
+from threading import Lock
 from datetime import datetime, timezone, timedelta
 from urllib.parse import urljoin
 
@@ -1505,9 +1507,6 @@ def get_detail_html_with_page(
 # =========================================================
 
 # Cache raw HTML, not performer-specific results. Failed requests are not cached.
-from concurrent.futures import Future
-from threading import Lock
-
 _detail_cache = {}
 _detail_lock = Lock()
 

@@ -58,7 +58,10 @@ def timed(label, fetch, *args):
     return events, completed_at
 
 
-def completed_sources(performers):
+def completed_sources(performers, *, fany_state=None):
+    if fany_state is None:
+        fany_state = {}
+    now = timestamp()
     with (ThreadPoolExecutor(max_workers=3) as theaters,
           ThreadPoolExecutor(max_workers=3) as fany,
           ThreadPoolExecutor(max_workers=3) as tickets):
@@ -72,23 +75,38 @@ def completed_sources(performers):
                 if source not in performer.get("sources", ["fany", "tiget"]):
                     continue
                 label = f"{source}/{performer['id']}"
+                if source == "fany" and fany_state.get(label, "") > now:
+                    audit("source_result", source=label, deferred=True,
+                          reason="403後の再取得保留", retryAt=fany_state[label])
+                    continue
                 pending[pool.submit(timed, label, fetch_ticket, source, performer)] = label
         for future in as_completed(pending):
             label = pending[future]
             try:
                 events, acquired_at = future.result()
+            except requests.HTTPError as error:
+                if (label.startswith("fany/") and error.response is not None
+                        and error.response.status_code == 403):
+                    until = datetime.fromisoformat(timestamp()) + timedelta(hours=6)
+                    fany_state[label] = until.isoformat()
+                    audit("fany_access_deferred", source=label, retryAt=until.isoformat())
+                yield label, None, None
             except Exception:
                 yield label, None, None
             else:
+                fany_state.pop(label, None)
                 yield label, events, acquired_at
 
 
 def catalog_key(event):
+    identity = official_id(event)
     if event["source"] == "theater":
         base = make_theater_source_key(event)
+    elif event["source"] == "tiget" and identity and all(signature(event)[:3]):
+        base = event["source"], event["performerId"], signature(event)[:3]
     else:
         base = event["source"], event["performerId"], signature(event)
-    return base, official_id(event)
+    return base, identity
 
 
 def merge_catalog(old, new, discovered):
@@ -252,7 +270,9 @@ def main():
         return
     quota = LineQuota(store)
     try:
-        run(store, performers, completed_sources, persist_catalogs=publish_catalogs, quota=quota)
+        fany_state = store.data.setdefault("fanyAccessCooldown", {})
+        run(store, performers, lambda targets: completed_sources(targets, fany_state=fany_state),
+            persist_catalogs=publish_catalogs, quota=quota)
     finally:
         quota.audit_usage()
 
